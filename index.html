@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ko">
 <head>
@@ -1048,22 +1047,23 @@ function eventTitleFromName(name){
 }
 
 function transformJsonEvent(je){
+  const titleSource = je.name_ko || je.name;
   const mainCard = (je.main_card||[]).map(function(m){
     return {
       wc: m.weight || '-',
-      a: ensureRealFighter(m.fighter_a),
-      b: ensureRealFighter(m.fighter_b)
+      a: ensureRealFighter(m.fighter_a_ko || m.fighter_a),
+      b: ensureRealFighter(m.fighter_b_ko || m.fighter_b)
     };
   });
   return {
     id: slugify(je.name),
-    code: eventCodeFromName(je.name),
-    title: eventTitleFromName(je.name),
-    titleKo: eventTitleFromName(je.name),
+    code: eventCodeFromName(titleSource),
+    title: eventTitleFromName(titleSource),
+    titleKo: eventTitleFromName(titleSource),
     dateUtc: je.date_iso ? je.date_iso + 'T22:00:00Z' : new Date().toISOString(),
     kstString: je.date_kst_human || je.date_iso || '',
-    venue: je.venue || 'TBA',
-    city: je.location || '',
+    venue: je.venue_ko || je.venue || 'TBA',
+    city: je.location_ko || je.location || '',
     where: je.broadcast || 'TVING',
     rounds: 5,
     headline: '',
