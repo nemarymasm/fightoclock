@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-05-08T23:49:14+09:00",
+  "generated_at": "2026-05-09T00:00:57+09:00",
   "source": "Wikipedia: List of UFC events",
+  "translations_applied": true,
   "event_count": 8,
   "events": [
     {
@@ -9,7 +10,10 @@
       "date_iso": "2026-05-09",
       "venue": "Prudential Center",
       "location": "Newark, New Jersey, U.S.",
-      "summary_ko": "# UFC 328: Chimaev vs. Strickland 요약\n\n2026년 5월 9일, 뉴저지의 프루던셜 센터에서 개최될 UFC 328은 치마예프와 스트릭랜드의 맞대결이 메인 이벤트입니다. 두 선수 모두 웰터급의 핫한 파이터들로, 이번 경기는 누가 디비전의 최상위권에 오를지를 가르는 중요한 매치업입니다. 웰터급 패권 다툼의 전초전이 될 이 경기에서 두 선수의 스타일 충돌을 주목할 가치가 있습니다.",
+      "summary_ko": "UFC 328: Chimaev vs. Strickland는 2026년 5월 9일 미국 뉴저지 뉴어크의 프루덴셜 센터에서 개최됩니다. 이번 이벤트의 메인 이벤트는 웰터급의 강자 Chimaev와 Strickland의 대결입니다. 두 선수의 스타일 충돌이 어떤 결과를 만들어낼지가 관전 포인트입니다.",
+      "name_ko": "UFC 328: 치마예프 대 스트릭랜드",
+      "venue_ko": "프루덴셜 센터",
+      "location_ko": "미국 뉴저지 뉴어크",
       "date_kst_human": "2026년 5월 9일(토)"
     },
     {
@@ -18,7 +22,10 @@
       "date_iso": "2026-05-16",
       "venue": "Meta Apex",
       "location": "Las Vegas, Nevada, U.S.",
-      "summary_ko": "# UFC Fight Night: Allen vs. Costa 요약\n\nUFC Fight Night의 메인 이벤트에서 Allen과 Costa가 격돌합니다. 이 경기는 2026년 5월 16일 라스베이거스의 Meta Apex에서 열릴 예정입니다. 두 선수의 맞대결은 현재 디비전의 순위 경쟁에서 중요한 의미를 가질 것 같습니다. 라스베이거스에서 펼쳐질 이번 경기는 꼭 놓치지 마세요!",
+      "summary_ko": "# UFC Fight Night: Allen vs. Costa 요약\n\nUFC Fight Night의 메인 이벤트로 Allen과 Costa의 대결이 펼쳐집니다. 2026년 5월 16일 라스베이거스 Meta Apex에서 개최되는 이 경기는 양 선수의 경기력과 전술이 충돌하는 흥미로운 매치업입니다. 두 파이터의 스타일 차이가 어떤 경기를 만들어낼지 지켜볼 수 있는 경기입니다.",
+      "name_ko": "UFC Fight Night: 앨런 대 코스타",
+      "venue_ko": "Meta Apex",
+      "location_ko": "미국 네바다 라스베이거스",
       "date_kst_human": "2026년 5월 16일(토)"
     },
     {
@@ -27,7 +34,10 @@
       "date_iso": "2026-05-30",
       "venue": "Galaxy Arena",
       "location": "Macau SAR, China",
-      "summary_ko": "# UFC Fight Night: Song vs. Figueiredo\n\nUFC Fight Night가 2026년 5월 30일 중국 마카오의 Galaxy Arena에서 개최됩니다. 이번 이벤트의 메인 이벤트는 Song과 Figueiredo의 대결입니다. 두 선수의 실력이 맞붙는 만큼 박진감 넘친 경기가 펼쳐질 것으로 예상되며, 관전의 핵심은 누가 경기의 주도권을 먼저 잡느냐에 있습니다.",
+      "summary_ko": "# UFC Fight Night: Song vs. Figueiredo 요약\n\n5월 30일 마카오의 갤럭시 아레나에서 열리는 UFC Fight Night 이벤트입니다. 이번 대회의 메인 이벤트는 Song과 Figueiredo의 맞대결입니다. 두 선수 모두 최고 수준의 기술과 파이팅 스타일을 가진 만큼, 누가 주도권을 잡느냐가 경기의 핵심 포인트가 될 것입니다.",
+      "name_ko": "UFC Fight Night: Song 대 피게이레두",
+      "venue_ko": "갤럭시 아레나",
+      "location_ko": "중국 마카오",
       "date_kst_human": "2026년 5월 30일(토)"
     },
     {
@@ -36,7 +46,10 @@
       "date_iso": "2026-06-06",
       "venue": "Meta Apex",
       "location": "Las Vegas, Nevada, U.S.",
-      "summary_ko": "# UFC Fight Night: Muhammad vs. Bonfim 요약\n\n6월 6일 라스베이거스의 메타 애펙스에서 열리는 UFC Fight Night 이벤트입니다. 메인 이벤트는 Muhammad 선수와 Bonfim 선수의 매칭으로, 두 파이터의 스타일 충돌이 볼 만한 경기가 될 것 같습니다. 라스베이거스에서의 펼쳐질 흥미진진한 격투를 기대해도 좋습니다!",
+      "summary_ko": "UFC Fight Night: Muhammad vs. Bonfim이 2026년 6월 6일 라스베이거스 메타 애펙스에서 개최됩니다. 이번 이벤트의 메인 매치는 Muhammad와 Bonfim의 대결입니다. 두 선수의 기술적 스타일 차이가 만드는 흥미로운 매치업이 될 것으로 기대됩니다. UFC 팬들에게는 놓칠 수 없는 경기가 될 겁니다.",
+      "name_ko": "UFC Fight Night: 무하마드 대 Bonfim",
+      "venue_ko": "Meta Apex",
+      "location_ko": "미국 네바다 라스베이거스",
       "date_kst_human": "2026년 6월 6일(토)"
     },
     {
@@ -45,7 +58,10 @@
       "date_iso": "2026-06-14",
       "venue": "White House",
       "location": "Washington, D.C., U.S.",
-      "summary_ko": "# UFC Freedom 250 소개\n\nUFC Freedom 250이 2026년 6월 14일 미국 워싱턴 D.C.의 백악관에서 열립니다. 역사적인 장소에서 펼쳐지는 만큼 이번 이벤트는 특별한 의미를 갖는 대회입니다. 메인 이벤트의 구체적인 대전 정보는 아직 공개되지 않았지만, UFC가 대통령 관저에서 개최하는 첫 이벤트인 만큼 세계 최고의 파이터들이 모여 펼칠 화려한 경기들을 기대해도 좋습니다.",
+      "summary_ko": "# UFC Freedom 250 요약\n\n죄송하지만, 제공하신 정보에서 **메인 이벤트 선수들의 이름이 적혀있지 않아서** 정확한 요약을 작성하기 어렵습니다. \n\n메인 이벤트 선수들의 이름(한국어 표기)을 알려주시면, 한국 팬들에게 친근한 톤으로 바로 요약해드리겠습니다! 😊",
+      "name_ko": "UFC Freedom 250",
+      "venue_ko": "백악관 (가설)",
+      "location_ko": "미국 워싱턴 D.C.",
       "date_kst_human": "2026년 6월 14일(일)"
     },
     {
@@ -54,7 +70,10 @@
       "date_iso": "2026-06-20",
       "venue": "Meta Apex",
       "location": "Las Vegas, Nevada, U.S.",
-      "summary_ko": "UFC Fight Night: Kape vs. Horiguchi가 6월 20일 라스베이거스의 메타 애펙스에서 열립니다. 이번 이벤트의 메인 이벤트는 케이프와 호리구치의 대결인데, 두 선수 모두 피지컬과 스피드가 뛰어나서 정말 볼 맛 있는 경기가 될 것 같습니다. 혼신의 힘을 다한 파이팅으로 누가 상대를 제압할지 기대되는 매력적인 대전입니다.",
+      "summary_ko": "# UFC Fight Night: Kape vs. Horiguchi 요약\n\n2026년 6월 20일 라스베이거스의 메타 애펙스에서 열리는 UFC Fight Night에서 Kape와 Horiguchi의 대결이 펼쳐집니다. 두 선수 모두 뛰어난 실력으로 잘 알려져 있어서 정말 볼만한 경기가 될 것 같습니다. 이 메인 이벤트는 두 베테랑 파이터의 기술 싸움이 어떻게 펼쳐질지가 관전 포인트입니다.",
+      "name_ko": "UFC Fight Night: 카페 대 쿄지",
+      "venue_ko": "Meta Apex",
+      "location_ko": "미국 네바다 라스베이거스",
       "date_kst_human": "2026년 6월 20일(토)"
     },
     {
@@ -63,7 +82,10 @@
       "date_iso": "2026-06-27",
       "venue": "National Gymnastics Arena",
       "location": "Baku, Azerbaijan",
-      "summary_ko": "# UFC Fight Night: Fiziev vs. Torres 요약\n\nUFC Fight Night의 메인 이벤트가 2026년 6월 27일 아제르바이잔 바쿠의 국립체조경기장에서 개최됩니다. 피지예프 선수와 토레스 선수의 라이트급 대전이 펼쳐질 예정입니다. 이 경기는 라이트급 랭킹 상위권 선수들의 직접 대결로, UFC 랭킹 재편성에 영향을 미칠 중요한 매치업입니다.",
+      "summary_ko": "UFC Fight Night: Fiziev vs. Torres가 2026년 6월 27일 아제르바이잔 바쿠의 내셔널 짐내스틱스 아레나에서 열립니다. 이 이벤트는 Fiziev와 Torres의 메인 이벤트 대결을 중심으로 진행될 예정입니다. 두 선수의 스트라이킹 실력이 어떻게 충돌할지가 관전 포인트입니다.",
+      "name_ko": "UFC Fight Night: 피지에프 대 Torres",
+      "venue_ko": "내셔널 짐내스틱스 아레나",
+      "location_ko": "아제르바이잔 바쿠",
       "date_kst_human": "2026년 6월 27일(토)"
     },
     {
@@ -72,7 +94,10 @@
       "date_iso": "2026-07-11",
       "venue": "T-Mobile Arena",
       "location": "Las Vegas, Nevada, U.S.",
-      "summary_ko": "# UFC 329 개최 예정입니다\n\nUFC 329가 2026년 7월 11일 라스베이거스의 T-Mobile Arena에서 개최될 예정입니다. 라스베이거스는 UFC의 본거지나 다름없는 곳이라 항상 큰 경기들이 펼쳐지는 무대입니다. 메인 이벤트가 어떤 경기가 될지는 아직 공식 발표가 없지만, UFC의 최고 수준의 선수들이 펼칠 화려한 격투기 쇼를 기대해볼 수 있을 것 같습니다.",
+      "summary_ko": "# UFC 329 안내\n\n2026년 7월 11일 라스베이거스의 T-모바일 아레나에서 UFC 329가 개최됩니다. 이번 이벤트는 MMA 팬들이 꼭 봐야 할 카드로 준비되고 있습니다. 메인 이벤트는 톱 랭커들의 정상 도전전으로, 누가 스타덤에 올라설지가 관전 포인트입니다. 라스베이거스의 열기와 함께 뜨거운 격투들을 기대해 봐도 좋을 것 같습니다.",
+      "name_ko": "UFC 329",
+      "venue_ko": "T-모바일 아레나",
+      "location_ko": "미국 네바다 라스베이거스",
       "date_kst_human": "2026년 7월 11일(토)"
     }
   ]
