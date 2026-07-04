@@ -13,32 +13,34 @@
 <meta property="og:url" content="https://fightoclock.kr">
 <meta name="twitter:card" content="summary_large_image">
 <title>FightOclock · UFC 일정 한국어 가이드</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
 <style>
-  /* ---------- 기본 ---------- */
+  /* ---------- 기본 (시안 D · 에디토리얼 디자인 시스템) ---------- */
   *,*::before,*::after{box-sizing:border-box}
   :root{
-    --bg:#0a0a0a;
-    --bg-1:#111;
-    --bg-2:#161616;
-    --card:#171717;
-    --card-2:#1d1d1d;
-    --line:#262626;
-    --line-2:#333;
-    --text:#f5f5f5;
-    --muted:#9a9a9a;
-    --dim:#6a6a6a;
-    --red:#d20a0a;
-    --red-2:#ff2828;
-    --gold:#d4a017;
-    --gold-2:#f5c542;
-    --green:#22c55e;
-    --blue:#3b82f6;
+    --bg:#0B0B0C;
+    --bg-1:#0F0F11;
+    --bg-2:#141416;
+    --card:#111113;
+    --card-2:#16161A;
+    --line:rgba(255,255,255,.07);
+    --line-2:rgba(255,255,255,.13);
+    --text:#F2F1EE;
+    --muted:rgba(242,241,238,.56);
+    --dim:rgba(242,241,238,.34);
+    --red:#E5484D;
+    --red-2:#E5484D;
+    --gold:#C9A24B;
+    --gold-2:#D9B461;
+    --green:#37C871;
+    --blue:#5B86E5;
     --radius:14px;
     --tap:44px;
   }
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",Roboto,sans-serif;
+    font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",Roboto,sans-serif;
     -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    letter-spacing:-.011em;
     overscroll-behavior-y:none;
   }
   body{padding-bottom:calc(72px + env(safe-area-inset-bottom));min-height:100vh}
@@ -264,6 +266,65 @@
     .tabbar{position:sticky;top:0;border-top:0;border-bottom:1px solid var(--line);grid-template-columns:repeat(5,minmax(0,140px));max-width:960px;margin:0 auto}
     .topbar{padding-left:24px;padding-right:24px}
   }
+
+  /* ================================================================
+     시안 D · 에디토리얼 오버라이드 — 글로우/그라데이션/이모지 제거, 절제
+     ================================================================ */
+  /* 브랜드 마크: 글로우 제거, 평면 */
+  .brand .mark{background:var(--red)!important;box-shadow:none!important;border-radius:8px}
+  .topbar{border-bottom:1px solid var(--line);background:rgba(11,11,12,.8)}
+
+  /* 히어로: 강한 레드/골드 글로우 → 은은한 톤 + 상단 실선 포인트 */
+  .hero{background:var(--card)!important;border:1px solid var(--line);border-radius:18px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--red);opacity:.9}
+  .hero .label{color:var(--dim);letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:700}
+  .hero .label .dot{box-shadow:none!important;animation:none!important;width:6px;height:6px}
+  .hero h1{letter-spacing:-.03em}
+
+  /* 카운트다운: 골드 → 화이트(단색), tabular */
+  .countdown .num,.cd-cell .num{color:var(--text)!important;font-variant-numeric:tabular-nums;font-weight:700;letter-spacing:-.03em}
+  .cd-cell{background:transparent!important;border:0!important}
+
+  /* 버튼: 글로우 제거, 평면 */
+  .btn.primary{box-shadow:none!important;background:var(--red);color:#fff}
+  .btn{border-radius:12px}
+
+  /* 배너/파이터 히어로/챔프행: 레드·골드 그라데이션 → 평면 카드 */
+  .ev-banner,.fighter-hero{background:var(--card)!important;border:1px solid var(--line)}
+  .ev-banner{position:relative;overflow:hidden}
+  .ev-banner::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--red)}
+  .champ-row{background:transparent!important}
+
+  /* 아바타(구형 .avatar): 그라데이션 → 평면 톤 */
+  .avatar.red{background:var(--bg-2)!important;border-color:var(--line-2)!important;color:var(--text)}
+  .avatar.blue{background:var(--bg-2)!important;border-color:var(--line-2)!important;color:var(--text)}
+
+  /* 예측 바: 그라데이션 → 단색 */
+  .pred-bar{border-radius:20px;overflow:hidden}
+  .pred-bar .a{background:var(--red)!important}
+  .pred-bar .b{background:var(--blue)!important}
+
+  /* 섹션 타이틀: 얇은 액센트 바 + 자간 */
+  .section-title{font-weight:800;letter-spacing:-.02em}
+  .section-title .bar{width:3px;background:var(--red);border-radius:2px}
+
+  /* 카드/박스: 헤어라인 톤 */
+  .card,.box,.result-card,.fight-card,.event-item,.stat-cell{background:var(--card);border-color:var(--line)}
+
+  /* pill: 채움 → 아웃라인 절제 */
+  .pill{border-radius:20px;font-weight:700}
+  .pill.gold{color:var(--gold-2);background:transparent;border:1px solid var(--line-2)}
+  .pill.ghost{background:transparent;border:1px solid var(--line-2);color:var(--muted)}
+
+  /* 탭바: 이모지 제거 + 미니멀 + 액센트 점 */
+  .tabbar{background:rgba(11,11,12,.86);backdrop-filter:blur(16px)}
+  .tabbar .ic{display:none!important}
+  .tabbar a{color:var(--dim);font-weight:600;font-size:12px;gap:0;padding:4px 0}
+  .tabbar a.active{color:var(--text)}
+  .tabbar a.active::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--red);margin:5px auto 0}
+
+  /* 반응 버튼: 절제 (테두리 톤) */
+  .disclaimer{border-style:solid;border-color:var(--line)}
 </style>
 </head>
 <body>
