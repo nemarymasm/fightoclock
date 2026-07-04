@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T16:42:29+09:00",
+  "generated_at": "2026-07-04T18:15:46+09:00",
   "source": "Wikipedia: UFC rankings (Meta)",
   "division_count": 11,
   "divisions": [
@@ -11,7 +11,8 @@
         "name_ko": "톰 아스피날",
         "record": "15–3(1 NC)",
         "country": "England",
-        "country_ko": "잉글랜드"
+        "country_ko": "잉글랜드",
+        "url": "https://en.wikipedia.org/wiki/Tom_Aspinall"
       },
       "ranked": [
         {
@@ -20,6 +21,7 @@
           "record": "14–2(1 NC)",
           "country": "France",
           "country_ko": "프랑스",
+          "url": "https://en.wikipedia.org/wiki/Ciryl_Gane",
           "interim": true,
           "rank": "잠정챔프"
         },
@@ -29,6 +31,7 @@
           "record": "40–11",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Alexander_Volkov_(fighter)",
           "rank": 2
         },
         {
@@ -37,6 +40,7 @@
           "record": "21–3",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Sergei_Pavlovich",
           "rank": 3
         },
         {
@@ -45,6 +49,7 @@
           "record": "13–4",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Alex_Pereira",
           "rank": 4
         },
         {
@@ -53,6 +58,7 @@
           "record": "10–0",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Josh_Hokit",
           "rank": 5
         },
         {
@@ -61,6 +67,7 @@
           "record": "17–3",
           "country": "Dominican Republic",
           "country_ko": "Dominican Republic",
+          "url": "https://en.wikipedia.org/wiki/Waldo_Cortes-Acosta",
           "rank": 6
         },
         {
@@ -69,6 +76,7 @@
           "record": "13–3–1(1 NC)",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Rizvan_Kuniev",
           "rank": 7
         },
         {
@@ -77,6 +85,7 @@
           "record": "19–6(1 NC)",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Curtis_Blaydes",
           "rank": 8
         },
         {
@@ -85,6 +94,7 @@
           "record": "18–6",
           "country": "Moldova",
           "country_ko": "몰도바",
+          "url": "https://en.wikipedia.org/wiki/Serghei_Spivac",
           "rank": 9
         },
         {
@@ -93,6 +103,7 @@
           "record": "14–2",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Vitor_Petrino",
           "rank": 10
         },
         {
@@ -101,6 +112,7 @@
           "record": "15–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Valter_Walker",
           "rank": 11
         },
         {
@@ -109,6 +121,7 @@
           "record": "7–1",
           "country": "Australia",
           "country_ko": "호주",
+          "url": "https://en.wikipedia.org/wiki/Brando_Peričić",
           "rank": 12
         },
         {
@@ -117,6 +130,7 @@
           "record": "12–0",
           "country": "Portugal",
           "country_ko": "Portugal",
+          "url": null,
           "rank": 13
         },
         {
@@ -125,6 +139,7 @@
           "record": "10–1",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Mick_Parkin",
           "rank": 14
         },
         {
@@ -133,6 +148,7 @@
           "record": "24–11",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Ryan_Spann",
           "rank": 15
         }
       ]
@@ -145,7 +161,8 @@
         "name_ko": "카를로스 울버그",
         "record": "14–1",
         "country": "New Zealand",
-        "country_ko": "뉴질랜드"
+        "country_ko": "뉴질랜드",
+        "url": "https://en.wikipedia.org/wiki/Carlos_Ulberg"
       },
       "ranked": [
         {
@@ -154,6 +171,7 @@
           "record": "13–4",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Alex_Pereira",
           "rank": 1
         },
         {
@@ -162,6 +180,7 @@
           "record": "20–2–1(1 NC)",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Magomed_Ankalaev",
           "rank": 2
         },
         {
@@ -170,6 +189,7 @@
           "record": "32–6–1",
           "country": "Czech Republic",
           "country_ko": "체코",
+          "url": "https://en.wikipedia.org/wiki/Jiří_Procházka",
           "rank": 3
         },
         {
@@ -178,6 +198,7 @@
           "record": "16–4",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Paulo_Costa",
           "rank": 4
         },
         {
@@ -186,6 +207,7 @@
           "record": "12–4(1 NC)",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Jamahal_Hill",
           "rank": 5
         },
         {
@@ -194,6 +216,7 @@
           "record": "14–7(1 NC)",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr.",
           "rank": 6
         },
         {
@@ -202,6 +225,7 @@
           "record": "16–5",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Dominick_Reyes",
           "rank": 7
         },
         {
@@ -210,6 +234,7 @@
           "record": "21–8",
           "country": "Switzerland",
           "country_ko": "Switzerland",
+          "url": "https://en.wikipedia.org/wiki/Volkan_Oezdemir",
           "rank": 8
         },
         {
@@ -218,6 +243,7 @@
           "record": "16–1",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Azamat_Murzakanov",
           "rank": 9
         },
         {
@@ -226,6 +252,7 @@
           "record": "18–3–1",
           "country": "Uzbekistan",
           "country_ko": "Uzbekistan",
+          "url": "https://en.wikipedia.org/wiki/Bogdan_Guskov",
           "rank": 10
         },
         {
@@ -234,6 +261,7 @@
           "record": "22–8–1",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Dustin_Jacoby",
           "rank": 11
         },
         {
@@ -242,6 +270,7 @@
           "record": "10–0",
           "country": "New Zealand",
           "country_ko": "뉴질랜드",
+          "url": "https://en.wikipedia.org/wiki/Navajo_Stirling",
           "rank": 12
         },
         {
@@ -250,6 +279,7 @@
           "record": "18–6–1",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Alonzo_Menifield",
           "rank": 13
         },
         {
@@ -258,6 +288,7 @@
           "record": "22–10(1 NC)",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Johnny_Walker_(fighter)",
           "rank": 14
         },
         {
@@ -266,6 +297,7 @@
           "record": "29–11–2",
           "country": "Poland",
           "country_ko": "폴란드",
+          "url": "https://en.wikipedia.org/wiki/Jan_Błachowicz",
           "rank": 15
         }
       ]
@@ -278,7 +310,8 @@
         "name_ko": "션 스트릭랜드",
         "record": "31–7",
         "country": "United States",
-        "country_ko": "미국"
+        "country_ko": "미국",
+        "url": "https://en.wikipedia.org/wiki/Sean_Strickland"
       },
       "ranked": [
         {
@@ -287,6 +320,7 @@
           "record": "15–1",
           "country": "United Arab Emirates",
           "country_ko": "United Arab Emirates",
+          "url": "https://en.wikipedia.org/wiki/Khamzat_Chimaev",
           "rank": 1
         },
         {
@@ -295,6 +329,7 @@
           "record": "23–3",
           "country": "South Africa",
           "country_ko": "남아공",
+          "url": "https://en.wikipedia.org/wiki/Dricus_du_Plessis",
           "rank": 2
         },
         {
@@ -303,6 +338,7 @@
           "record": "17–4(1 NC)",
           "country": "France",
           "country_ko": "프랑스",
+          "url": "https://en.wikipedia.org/wiki/Nassourdine_Imavov",
           "rank": 3
         },
         {
@@ -311,6 +347,7 @@
           "record": "16–3",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Joe_Pyfer",
           "rank": 4
         },
         {
@@ -319,6 +356,7 @@
           "record": "27–7",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Brendan_Allen",
           "rank": 5
         },
         {
@@ -327,6 +365,7 @@
           "record": "18–2(1 NC)",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Caio_Borralho",
           "rank": 6
         },
         {
@@ -335,6 +374,7 @@
           "record": "15–3(1 NC)",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Anthony_Hernandez",
           "rank": 7
         },
         {
@@ -343,6 +383,7 @@
           "record": "24–6",
           "country": "Nigeria",
           "country_ko": "나이지리아",
+          "url": "https://en.wikipedia.org/wiki/Israel_Adesanya",
           "rank": 8
         },
         {
@@ -351,6 +392,7 @@
           "record": "19–6",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Gregory_Rodrigues",
           "rank": 9
         },
         {
@@ -359,6 +401,7 @@
           "record": "18–2",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Ikram_Aliskerov",
           "rank": 10
         },
         {
@@ -367,6 +410,7 @@
           "record": "18–9",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Jared_Cannonier",
           "rank": 11
         },
         {
@@ -375,6 +419,7 @@
           "record": "14–2",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Christian_Leroy_Duncan",
           "rank": 12
         },
         {
@@ -383,6 +428,7 @@
           "record": "9–1",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Bo_Nickal",
           "rank": 13
         },
         {
@@ -391,6 +437,7 @@
           "record": "16–4",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Paulo_Costa",
           "rank": 14
         },
         {
@@ -399,6 +446,7 @@
           "record": "29–7–1",
           "country": "Germany",
           "country_ko": "독일",
+          "url": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov",
           "rank": 15
         }
       ]
@@ -411,7 +459,8 @@
         "name_ko": "이슬람 마카체프",
         "record": "28–1",
         "country": "Russia",
-        "country_ko": "러시아"
+        "country_ko": "러시아",
+        "url": "https://en.wikipedia.org/wiki/Islam_Makhachev"
       },
       "ranked": [
         {
@@ -420,6 +469,7 @@
           "record": "24–7",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Prates",
           "rank": 1
         },
         {
@@ -428,6 +478,7 @@
           "record": "17–1",
           "country": "Republic of Ireland",
           "country_ko": "Republic of Ireland",
+          "url": "https://en.wikipedia.org/wiki/Ian_Machado_Garry",
           "rank": 2
         },
         {
@@ -436,6 +487,7 @@
           "record": "19–0",
           "country": "Ecuador",
           "country_ko": "에콰도르",
+          "url": "https://en.wikipedia.org/wiki/Michael_Morales_(fighter)",
           "rank": 3
         },
         {
@@ -444,6 +496,7 @@
           "record": "18–4",
           "country": "Australia",
           "country_ko": "호주",
+          "url": "https://en.wikipedia.org/wiki/Jack_Della_Maddalena",
           "rank": 4
         },
         {
@@ -452,6 +505,7 @@
           "record": "19–2",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Sean_Brady_(fighter)",
           "rank": 5
         },
         {
@@ -460,6 +514,7 @@
           "record": "20–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Gabriel_Bonfim",
           "rank": 6
         },
         {
@@ -468,6 +523,7 @@
           "record": "24–6(1 NC)",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Belal_Muhammad",
           "rank": 7
         },
         {
@@ -476,6 +532,7 @@
           "record": "22–6(1 NC)",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Leon_Edwards",
           "rank": 8
         },
         {
@@ -484,6 +541,7 @@
           "record": "21–8",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Joaquin_Buckley",
           "rank": 9
         },
         {
@@ -492,6 +550,7 @@
           "record": "21–4",
           "country": "Nigeria",
           "country_ko": "나이지리아",
+          "url": "https://en.wikipedia.org/wiki/Kamaru_Usman",
           "rank": 10
         },
         {
@@ -500,6 +559,7 @@
           "record": "14–2–1",
           "country": "Canada",
           "country_ko": "캐나다",
+          "url": "https://en.wikipedia.org/wiki/Mike_Malott",
           "rank": 11
         },
         {
@@ -508,6 +568,7 @@
           "record": "25–3",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Michael_Page",
           "rank": 12
         },
         {
@@ -516,6 +577,7 @@
           "record": "20–5",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Daniel_Rodriguez_(fighter)",
           "rank": 13
         },
         {
@@ -524,6 +586,7 @@
           "record": "13–3",
           "country": "Serbia",
           "country_ko": "Serbia",
+          "url": "https://en.wikipedia.org/wiki/Uroš_Medić",
           "rank": 14
         },
         {
@@ -532,6 +595,7 @@
           "record": "30–1",
           "country": "Ukraine",
           "country_ko": "Ukraine",
+          "url": "https://en.wikipedia.org/wiki/Yaroslav_Amosov",
           "rank": 15
         }
       ]
@@ -544,7 +608,8 @@
         "name_ko": "저스틴 게이치",
         "record": "28–5",
         "country": "United States",
-        "country_ko": "미국"
+        "country_ko": "미국",
+        "url": "https://en.wikipedia.org/wiki/Justin_Gaethje"
       },
       "ranked": [
         {
@@ -553,6 +618,7 @@
           "record": "17–1",
           "country": "Georgia (country)",
           "country_ko": "조지아",
+          "url": "https://en.wikipedia.org/wiki/Ilia_Topuria",
           "rank": 1
         },
         {
@@ -561,6 +627,7 @@
           "record": "23–3",
           "country": "Armenia",
           "country_ko": "아르메니아",
+          "url": "https://en.wikipedia.org/wiki/Arman_Tsarukyan",
           "rank": 2
         },
         {
@@ -569,6 +636,7 @@
           "record": "37–11(1 NC)",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Charles_Oliveira",
           "rank": 3
         },
         {
@@ -577,6 +645,7 @@
           "record": "27–9",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Max_Holloway",
           "rank": 4
         },
         {
@@ -585,6 +654,7 @@
           "record": "17–3(1 NC)",
           "country": "France",
           "country_ko": "프랑스",
+          "url": "https://en.wikipedia.org/wiki/Benoît_Saint_Denis",
           "rank": 5
         },
         {
@@ -593,6 +663,7 @@
           "record": "26–4(1 NC)",
           "country": "Poland",
           "country_ko": "폴란드",
+          "url": "https://en.wikipedia.org/wiki/Mateusz_Gamrot",
           "rank": 6
         },
         {
@@ -601,6 +672,7 @@
           "record": "21–7–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Renato_Moicano",
           "rank": 7
         },
         {
@@ -609,6 +681,7 @@
           "record": "12–1",
           "country": "Australia",
           "country_ko": "호주",
+          "url": "https://en.wikipedia.org/wiki/Quillan_Salkilld",
           "rank": 8
         },
         {
@@ -617,6 +690,7 @@
           "record": "23–4",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Paddy_Pimblett",
           "rank": 9
         },
         {
@@ -625,6 +699,7 @@
           "record": "14–2",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Maurício_Ruffy",
           "rank": 10
         },
         {
@@ -633,6 +708,7 @@
           "record": "24–14",
           "country": "New Zealand",
           "country_ko": "뉴질랜드",
+          "url": "https://en.wikipedia.org/wiki/Dan_Hooker",
           "rank": 11
         },
         {
@@ -641,6 +717,7 @@
           "record": "11–1",
           "country": "Australia",
           "country_ko": "호주",
+          "url": null,
           "rank": 12
         },
         {
@@ -649,6 +726,7 @@
           "record": "14–5",
           "country": "Azerbaijan",
           "country_ko": "아제르바이잔",
+          "url": "https://en.wikipedia.org/wiki/Rafael_Fiziev",
           "rank": 13
         },
         {
@@ -657,6 +735,7 @@
           "record": "24–3–1",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Grant_Dawson",
           "rank": 14
         },
         {
@@ -665,6 +744,7 @@
           "record": "18–4",
           "country": "Mexico",
           "country_ko": "멕시코",
+          "url": "https://en.wikipedia.org/wiki/Rafa_García_(fighter)",
           "rank": 15
         }
       ]
@@ -677,7 +757,8 @@
         "name_ko": "알렉산더 볼카노프스키",
         "record": "28–4",
         "country": "Australia",
-        "country_ko": "호주"
+        "country_ko": "호주",
+        "url": "https://en.wikipedia.org/wiki/Alexander_Volkanovski"
       },
       "ranked": [
         {
@@ -686,6 +767,7 @@
           "record": "20–0",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Movsar_Evloev",
           "rank": 1
         },
         {
@@ -694,6 +776,7 @@
           "record": "28–8",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Diego_Lopes_(fighter)",
           "rank": 2
         },
         {
@@ -702,6 +785,7 @@
           "record": "17–1–1",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Lerone_Murphy",
           "rank": 3
         },
         {
@@ -710,6 +794,7 @@
           "record": "26–5",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Aljamain_Sterling",
           "rank": 4
         },
         {
@@ -718,6 +803,7 @@
           "record": "21–4",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Arnold_Allen",
           "rank": 5
         },
         {
@@ -726,6 +812,7 @@
           "record": "17–3",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Jean_Silva",
           "rank": 6
         },
         {
@@ -734,6 +821,7 @@
           "record": "22–5",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Pat_Sabatini",
           "rank": 7
         },
         {
@@ -742,6 +830,7 @@
           "record": "18–6–1",
           "country": "Morocco",
           "country_ko": "Morocco",
+          "url": "https://en.wikipedia.org/wiki/Youssef_Zalal",
           "rank": 8
         },
         {
@@ -750,6 +839,7 @@
           "record": "23–6",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Nathaniel_Wood_(fighter)",
           "rank": 9
         },
         {
@@ -758,6 +848,7 @@
           "record": "18–1",
           "country": "Argentina",
           "country_ko": "아르헨티나",
+          "url": "https://en.wikipedia.org/wiki/Kevin_Vallejos",
           "rank": 10
         },
         {
@@ -766,6 +857,7 @@
           "record": "26–8",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Melquizael_Costa",
           "rank": 11
         },
         {
@@ -774,6 +866,7 @@
           "record": "19–6",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Steve_Garcia",
           "rank": 12
         },
         {
@@ -782,6 +875,7 @@
           "record": "14–5",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Aaron_Pico",
           "rank": 13
         },
         {
@@ -790,6 +884,7 @@
           "record": "19–5–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Joanderson_Brito",
           "rank": 14
         },
         {
@@ -798,6 +893,7 @@
           "record": "11–2",
           "country": "Mexico",
           "country_ko": "멕시코",
+          "url": null,
           "rank": 15
         }
       ]
@@ -810,7 +906,8 @@
         "name_ko": "페트르 얀",
         "record": "20–5",
         "country": "Russia",
-        "country_ko": "러시아"
+        "country_ko": "러시아",
+        "url": "https://en.wikipedia.org/wiki/Petr_Yan"
       },
       "ranked": [
         {
@@ -819,6 +916,7 @@
           "record": "21–5",
           "country": "Georgia (country)",
           "country_ko": "조지아",
+          "url": "https://en.wikipedia.org/wiki/Merab_Dvalishvili",
           "rank": 1
         },
         {
@@ -827,6 +925,7 @@
           "record": "20–1",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Umar_Nurmagomedov",
           "rank": 2
         },
         {
@@ -835,6 +934,7 @@
           "record": "20–3(1 NC)",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Sean_O'Malley_(fighter)",
           "rank": 3
         },
         {
@@ -843,6 +943,7 @@
           "record": "18–6",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Cory_Sandhagen",
           "rank": 4
         },
         {
@@ -851,6 +952,7 @@
           "record": "17–3",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Mario_Bautista",
           "rank": 5
         },
         {
@@ -859,6 +961,7 @@
           "record": "23–8–1(1 NC)",
           "country": "China",
           "country_ko": "중국",
+          "url": "https://en.wikipedia.org/wiki/Song_Yadong",
           "rank": 6
         },
         {
@@ -867,6 +970,7 @@
           "record": "14–1",
           "country": "Mexico",
           "country_ko": "멕시코",
+          "url": "https://en.wikipedia.org/wiki/David_Martínez_(fighter)",
           "rank": 7
         },
         {
@@ -875,6 +979,7 @@
           "record": "22–5",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Raoni_Barcelos",
           "rank": 8
         },
         {
@@ -883,6 +988,7 @@
           "record": "11–2",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Marcus_McGhee",
           "rank": 9
         },
         {
@@ -891,6 +997,7 @@
           "record": "15–0",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Farid_Basharat",
           "rank": 10
         },
         {
@@ -899,6 +1006,7 @@
           "record": "25–7–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Deiveson_Figueiredo",
           "rank": 11
         },
         {
@@ -907,6 +1015,7 @@
           "record": "14–3",
           "country": "Canada",
           "country_ko": "캐나다",
+          "url": "https://en.wikipedia.org/wiki/Aiemann_Zahabi",
           "rank": 12
         },
         {
@@ -915,6 +1024,7 @@
           "record": "18–8–1",
           "country": "Canada",
           "country_ko": "캐나다",
+          "url": "https://en.wikipedia.org/wiki/Charles_Jourdain",
           "rank": 13
         },
         {
@@ -923,6 +1033,7 @@
           "record": "19–3",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Bryce_Mitchell",
           "rank": 14
         },
         {
@@ -931,6 +1042,7 @@
           "record": "15–4",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Montel_Jackson",
           "rank": 15
         }
       ]
@@ -943,7 +1055,8 @@
         "name_ko": "Joshua Van",
         "record": "17–2",
         "country": "Myanmar",
-        "country_ko": "Myanmar"
+        "country_ko": "Myanmar",
+        "url": "https://en.wikipedia.org/wiki/Joshua_Van"
       },
       "ranked": [
         {
@@ -952,6 +1065,7 @@
           "record": "30–6",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Alexandre_Pantoja",
           "rank": 1
         },
         {
@@ -960,6 +1074,7 @@
           "record": "23–7",
           "country": "Portugal",
           "country_ko": "Portugal",
+          "url": "https://en.wikipedia.org/wiki/Manel_Kape",
           "rank": 2
         },
         {
@@ -968,6 +1083,7 @@
           "record": "18–2",
           "country": "Japan",
           "country_ko": "일본",
+          "url": "https://en.wikipedia.org/wiki/Tatsuro_Taira",
           "rank": 3
         },
         {
@@ -976,6 +1092,7 @@
           "record": "17–9",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Brandon_Royval",
           "rank": 4
         },
         {
@@ -984,6 +1101,7 @@
           "record": "10–1",
           "country": "England",
           "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Lone'er_Kavanagh",
           "rank": 5
         },
         {
@@ -992,6 +1110,7 @@
           "record": "24–3",
           "country": "Kazakhstan",
           "country_ko": "카자흐스탄",
+          "url": "https://en.wikipedia.org/wiki/Asu_Almabayev",
           "rank": 6
         },
         {
@@ -1000,6 +1119,7 @@
           "record": "36–6(1 NC)",
           "country": "Japan",
           "country_ko": "일본",
+          "url": "https://en.wikipedia.org/wiki/Kyoji_Horiguchi",
           "rank": 7
         },
         {
@@ -1008,6 +1128,7 @@
           "record": "17–3",
           "country": "Iraq",
           "country_ko": "Iraq",
+          "url": "https://en.wikipedia.org/wiki/Amir_Albazi",
           "rank": 8
         },
         {
@@ -1016,6 +1137,7 @@
           "record": "23–10–2",
           "country": "Mexico",
           "country_ko": "멕시코",
+          "url": "https://en.wikipedia.org/wiki/Brandon_Moreno",
           "rank": 9
         },
         {
@@ -1024,6 +1146,7 @@
           "record": "11–5",
           "country": "Peru",
           "country_ko": "페루",
+          "url": null,
           "rank": 10
         },
         {
@@ -1032,6 +1155,7 @@
           "record": "11–2",
           "country": "United States",
           "country_ko": "미국",
+          "url": null,
           "rank": 11
         },
         {
@@ -1040,6 +1164,7 @@
           "record": "19–7(1 NC)",
           "country": "China",
           "country_ko": "중국",
+          "url": "https://en.wikipedia.org/wiki/Su_Mudaerji",
           "rank": 12
         },
         {
@@ -1048,6 +1173,7 @@
           "record": "14–4",
           "country": "Australia",
           "country_ko": "호주",
+          "url": "https://en.wikipedia.org/wiki/Steve_Erceg",
           "rank": 13
         },
         {
@@ -1056,6 +1182,7 @@
           "record": "26–10(1 NC)",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Alex_Perez_(fighter)",
           "rank": 14
         },
         {
@@ -1064,6 +1191,7 @@
           "record": "14–2",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Joseph_Morales_(fighter)",
           "rank": 15
         }
       ]
@@ -1076,7 +1204,8 @@
         "name_ko": "케일라 해리슨",
         "record": "19–1",
         "country": "United States",
-        "country_ko": "미국"
+        "country_ko": "미국",
+        "url": "https://en.wikipedia.org/wiki/Kayla_Harrison"
       },
       "ranked": [
         {
@@ -1085,6 +1214,7 @@
           "record": "18–6",
           "country": "Panama",
           "country_ko": "Panama",
+          "url": "https://en.wikipedia.org/wiki/Joselyne_Edwards",
           "rank": 1
         },
         {
@@ -1093,6 +1223,7 @@
           "record": "13–3",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Norma_Dumont",
           "rank": 2
         },
         {
@@ -1101,6 +1232,7 @@
           "record": "11–2",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": null,
           "rank": 3
         },
         {
@@ -1109,6 +1241,7 @@
           "record": "12–6",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Julianna_Peña",
           "rank": 4
         },
         {
@@ -1117,6 +1250,7 @@
           "record": "13–2",
           "country": "Argentina",
           "country_ko": "아르헨티나",
+          "url": "https://en.wikipedia.org/wiki/Ailín_Pérez",
           "rank": 5
         },
         {
@@ -1125,6 +1259,7 @@
           "record": "17–8(1 NC)",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": "https://en.wikipedia.org/wiki/Yana_Santos",
           "rank": 6
         },
         {
@@ -1133,6 +1268,7 @@
           "record": "10–2",
           "country": "Portugal",
           "country_ko": "Portugal",
+          "url": "https://en.wikipedia.org/wiki/Jacqueline_Cavalcanti",
           "rank": 7
         },
         {
@@ -1141,6 +1277,7 @@
           "record": "8–0",
           "country": "New Zealand",
           "country_ko": "뉴질랜드",
+          "url": null,
           "rank": 8
         },
         {
@@ -1149,6 +1286,7 @@
           "record": "8–3",
           "country": "Canada",
           "country_ko": "캐나다",
+          "url": null,
           "rank": 9
         },
         {
@@ -1157,6 +1295,7 @@
           "record": "19–8",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Karol_Rosa",
           "rank": 10
         },
         {
@@ -1165,6 +1304,7 @@
           "record": "8–0",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Beatriz_Mesquita",
           "rank": 11
         },
         {
@@ -1173,6 +1313,7 @@
           "record": "15–8",
           "country": "Mexico",
           "country_ko": "멕시코",
+          "url": "https://en.wikipedia.org/wiki/Irene_Aldana",
           "rank": 12
         },
         {
@@ -1181,6 +1322,7 @@
           "record": "11–6",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Macy_Chiasson",
           "rank": 13
         },
         {
@@ -1189,6 +1331,7 @@
           "record": "10–3",
           "country": "Russia",
           "country_ko": "러시아",
+          "url": null,
           "rank": 14
         },
         {
@@ -1197,6 +1340,7 @@
           "record": "16–9",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Raquel_Pennington",
           "rank": 15
         }
       ]
@@ -1209,7 +1353,8 @@
         "name_ko": "발렌티나 셰브첸코",
         "record": "26–4–1",
         "country": "Kyrgyzstan",
-        "country_ko": "키르기스스탄"
+        "country_ko": "키르기스스탄",
+        "url": "https://en.wikipedia.org/wiki/Valentina_Shevchenko"
       },
       "ranked": [
         {
@@ -1218,6 +1363,7 @@
           "record": "20–5–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Natália_Silva_(fighter)",
           "rank": 1
         },
         {
@@ -1226,6 +1372,7 @@
           "record": "13–2",
           "country": "France",
           "country_ko": "프랑스",
+          "url": "https://en.wikipedia.org/wiki/Manon_Fiorot",
           "rank": 2
         },
         {
@@ -1234,6 +1381,7 @@
           "record": "17–5–1",
           "country": "Mexico",
           "country_ko": "멕시코",
+          "url": "https://en.wikipedia.org/wiki/Alexa_Grasso",
           "rank": 3
         },
         {
@@ -1242,6 +1390,7 @@
           "record": "14–2",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Erin_Blanchfield",
           "rank": 4
         },
         {
@@ -1250,6 +1399,7 @@
           "record": "26–4",
           "country": "China",
           "country_ko": "중국",
+          "url": "https://en.wikipedia.org/wiki/Zhang_Weili",
           "rank": 5
         },
         {
@@ -1258,6 +1408,7 @@
           "record": "15–4",
           "country": "Canada",
           "country_ko": "캐나다",
+          "url": "https://en.wikipedia.org/wiki/Jasmine_Jasudavicius",
           "rank": 6
         },
         {
@@ -1266,6 +1417,7 @@
           "record": "14–8",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Rose_Namajunas",
           "rank": 7
         },
         {
@@ -1274,6 +1426,7 @@
           "record": "12–3",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Tracy_Cortez",
           "rank": 8
         },
         {
@@ -1282,6 +1435,7 @@
           "record": "15–3",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Maycee_Barber",
           "rank": 9
         },
         {
@@ -1290,6 +1444,7 @@
           "record": "9–1",
           "country": "China",
           "country_ko": "중국",
+          "url": "https://en.wikipedia.org/wiki/Wang_Cong",
           "rank": 10
         },
         {
@@ -1298,6 +1453,7 @@
           "record": "15–6",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Miranda_Maverick",
           "rank": 11
         },
         {
@@ -1306,6 +1462,7 @@
           "record": "15–7",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/JJ_Aldrich",
           "rank": 12
         },
         {
@@ -1314,6 +1471,7 @@
           "record": "19–7",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Karine_Silva",
           "rank": 13
         },
         {
@@ -1322,6 +1480,7 @@
           "record": "12–2",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": null,
           "rank": 14
         },
         {
@@ -1330,6 +1489,7 @@
           "record": "11–2",
           "country": "Australia",
           "country_ko": "호주",
+          "url": "https://en.wikipedia.org/wiki/Casey_O'Neill",
           "rank": 15
         }
       ]
@@ -1342,7 +1502,8 @@
         "name_ko": "맥켄지 던",
         "record": "16–5",
         "country": "Brazil",
-        "country_ko": "브라질"
+        "country_ko": "브라질",
+        "url": "https://en.wikipedia.org/wiki/Mackenzie_Dern"
       },
       "ranked": [
         {
@@ -1351,6 +1512,7 @@
           "record": "26–4",
           "country": "China",
           "country_ko": "중국",
+          "url": "https://en.wikipedia.org/wiki/Zhang_Weili",
           "rank": 1
         },
         {
@@ -1359,6 +1521,7 @@
           "record": "23–4",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Virna_Jandiroba",
           "rank": 2
         },
         {
@@ -1367,6 +1530,7 @@
           "record": "12–1",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Tatiana_Suarez",
           "rank": 3
         },
         {
@@ -1375,6 +1539,7 @@
           "record": "17–8",
           "country": "Canada",
           "country_ko": "캐나다",
+          "url": "https://en.wikipedia.org/wiki/Gillian_Robertson",
           "rank": 4
         },
         {
@@ -1383,6 +1548,7 @@
           "record": "18–5(1 NC)",
           "country": "China",
           "country_ko": "중국",
+          "url": "https://en.wikipedia.org/wiki/Yan_Xiaonan",
           "rank": 5
         },
         {
@@ -1391,6 +1557,7 @@
           "record": "12–2",
           "country": "Venezuela",
           "country_ko": "Venezuela",
+          "url": null,
           "rank": 6
         },
         {
@@ -1399,6 +1566,7 @@
           "record": "12–4",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Tabatha_Ricci",
           "rank": 7
         },
         {
@@ -1407,6 +1575,7 @@
           "record": "12–3",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Denise_Gomes",
           "rank": 8
         },
         {
@@ -1415,6 +1584,7 @@
           "record": "16–6",
           "country": "Japan",
           "country_ko": "일본",
+          "url": "https://en.wikipedia.org/wiki/Mizuki_Inoue",
           "rank": 9
         },
         {
@@ -1423,6 +1593,7 @@
           "record": "14–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": null,
           "rank": 10
         },
         {
@@ -1431,6 +1602,7 @@
           "record": "15–6–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Amanda_Lemos",
           "rank": 11
         },
         {
@@ -1439,6 +1611,7 @@
           "record": "14–6",
           "country": "Mexico",
           "country_ko": "멕시코",
+          "url": "https://en.wikipedia.org/wiki/Loopy_Godinez",
           "rank": 12
         },
         {
@@ -1447,6 +1620,7 @@
           "record": "11–2",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": null,
           "rank": 13
         },
         {
@@ -1455,6 +1629,7 @@
           "record": "9–1",
           "country": "United States",
           "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Fatima_Kline",
           "rank": 14
         },
         {
@@ -1463,6 +1638,7 @@
           "record": "8–1–1",
           "country": "Brazil",
           "country_ko": "브라질",
+          "url": null,
           "rank": 15
         }
       ]

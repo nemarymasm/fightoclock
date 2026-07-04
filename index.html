@@ -842,7 +842,7 @@ function viewFighters(){
       <a href="#fighter/${f.id}" class="event-item" data-name="${f.name} ${f.en}">
         <div class="avatar red" style="width:48px;height:48px">${f.name.slice(0,1)}</div>
         <div>
-          <div class="title">${f.name} <span style="font-size:11px;color:var(--muted)">${f.en}</span></div>
+          <div class="title">${f.name}${f.en && f.en!==f.name ? ` <span style="font-size:11px;color:var(--muted)">(${f.en})</span>`:''}</div>
           <div class="meta">
             <span>${f.weight}</span>
             <span>· ${f.record}</span>
@@ -865,7 +865,7 @@ function viewFighter(id){
     <div class="av"><div class="avatar red" style="width:88px;height:88px;font-size:24px">${(f.name||'?').slice(0,1)}</div></div>
     <div>
       <h2>${f.name}</h2>
-      ${f.en && f.en!==f.name ? `<div class="nick">${f.en}</div>`:''}
+      ${f.en && f.en!==f.name ? `<div class="nick">${f.en}${f.nick?` · "${f.nick}"`:''}</div>` : (f.nick?`<div class="nick">"${f.nick}"</div>`:'')}
       <div class="rec">${f.record||'-'} · ${f.weight||'-'}</div>
       <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
         <span class="pill gold">${f.rank||'랭킹 외'}</span>
@@ -873,6 +873,14 @@ function viewFighter(id){
       </div>
     </div>
   </div>
+
+  ${(f.height||f.reach||f.stance||f.age) ? `
+  <div class="stat-grid">
+    <div class="stat-cell"><div class="k">신장</div><div class="v">${f.height||'-'}</div></div>
+    <div class="stat-cell"><div class="k">리치</div><div class="v">${f.reach||'-'}</div></div>
+    <div class="stat-cell"><div class="k">스탠스</div><div class="v">${f.stance||'-'}</div></div>
+    <div class="stat-cell"><div class="k">나이</div><div class="v">${f.age?f.age+'세':'-'}</div></div>
+  </div>`:''}
 
   ${f.next ? `
   <div class="section-title"><span class="bar"></span>다음 경기</div>
@@ -1038,8 +1046,9 @@ function transformFighter(f){
     };
   });
   return {
-    id: f.id, name: f.name_ko || f.name, en: f.name, nick: '',
-    country: f.country_ko || f.country || '', age:'-', height:'-', reach:'-', stance:'-',
+    id: f.id, name: f.name_ko || f.name, en: f.name, nick: f.nick || '',
+    country: f.country_ko || f.country || '',
+    age: f.age || '', height: f.height || '', reach: f.reach || '', stance: f.stance || '',
     record: f.record || '-', weight: f.division || '-', rank: f.rank || '랭킹 외',
     style: '', recent: recent, next: f.next || null
   };

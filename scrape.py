@@ -83,6 +83,18 @@ COUNTRY_KO = {
 }
 
 
+STANCE_KO = {
+    "orthodox": "정통", "southpaw": "사우스포", "switch": "스위치",
+    "open stance": "오픈 스탠스",
+}
+
+
+def tr_stance(s):
+    if not s:
+        return s
+    return STANCE_KO.get(s.strip().lower(), s.strip())
+
+
 def tr_weight(w):
     if not w:
         return w
@@ -197,6 +209,22 @@ def to_kst_human(date_iso):
         return f"{d.year}년 {d.month}월 {d.day}일({WEEKDAY_KO[d.weekday()]})"
     except Exception:
         return None
+
+
+def cell_link(cell):
+    """표 셀 안의 위키 링크(선수 개별 페이지) 절대 URL 반환. 없으면 None.
+    붉은링크(존재하지 않는 문서)는 제외."""
+    if not cell:
+        return None
+    a = cell.find("a")
+    if not a:
+        return None
+    href = a.get("href", "")
+    if not href or "redlink=1" in href or href.startswith("#"):
+        return None
+    if "/wiki/" not in href:
+        return None
+    return urljoin("https://en.wikipedia.org/", href)
 
 
 def slugify(s):
@@ -425,6 +453,8 @@ def parse_fight_card(soup):
             "weight": weight,
             "fighter_a": fa,
             "fighter_b": fb,
+            "fighter_a_url": cell_link(cells[1]),
+            "fighter_b_url": cell_link(cells[3]),
             "winner": winner,
             "method": method,
             "round": rnd,
@@ -566,6 +596,7 @@ def fetch_rankings():
                     "record": record,
                     "country": country,
                     "country_ko": tr_country(country),
+                    "url": cell_link(cells[fighter_i]),
                 }
                 if rank_raw.upper() in ("C", "CHAMPION"):
                     if not champion:
@@ -670,12 +701,71 @@ def fetch_recent_past_events(limit=6):
     return events
 
 
-def build_fighters(upcoming, past, divisions):
-    """랭킹 + 대진표 + 과거결과를 교차연결해 선수 디렉터리 구성 (추가 요청 없음)."""
+def fetch_fighter_detail(url):
+    """선수 개별 위키 페이지 인포박스에서 신체·전적 정보 추출.
+    반환 dict: nick, height, reach, stance, age, record (없는 항목은 생략)."""
+    out = {}
+    if not url:
+        return out
+    try:
+        html = http_get(url)
+        soup = BeautifulSoup(html, "html.parser")
+        infobox = soup.find("table", class_=lambda c: c and "infobox" in c)
+        if not infobox:
+            return out
+
+        wins = losses = None
+        for row in infobox.find_all("tr"):
+            th = row.find("th")
+            td = row.find("td")
+            if not th:
+                continue
+            label = clean_text(th.get_text()).lower()
+            val = clean_text(td.get_text()) if td else ""
+            if not val:
+                continue
+
+            if "height" in label:
+                m = re.search(r"\(([\d.]+)\s*(?:cm|m)\)", val)
+                if m:
+                    out["height"] = m.group(1).replace(".0", "") + "cm"
+            elif "reach" in label:
+                m = re.search(r"\((\d+)\s*cm\)", val)
+                if m:
+                    out["reach"] = m.group(1) + "cm"
+            elif "stance" in label:
+                out["stance"] = tr_stance(val.split("[")[0].strip())
+            elif "nickname" in label:
+                nick = val.split("[")[0].strip().strip('"')
+                if nick and nick.lower() not in ("none", "n/a"):
+                    out["nick"] = nick
+            elif "born" in label:
+                m = re.search(r"age[\s\xa0]*(\d{2})", val)
+                if m:
+                    out["age"] = m.group(1)
+            elif label in ("wins", "win"):
+                m = re.match(r"\d+", val)
+                if m:
+                    wins = m.group(0)
+            elif label in ("losses", "loss"):
+                m = re.match(r"\d+", val)
+                if m:
+                    losses = m.group(0)
+
+        if wins is not None and losses is not None:
+            out["record"] = f"{wins}승 {losses}패"
+    except Exception as e:
+        print(f"  ⚠️  선수 상세 실패 ({url.split('/')[-1]}): {e}")
+    return out
+
+
+def build_fighters(upcoming, past, divisions, detail_limit=None):
+    """랭킹 + 대진표 + 과거결과를 교차연결해 선수 디렉터리 구성.
+    detail_limit: 개별 위키 인포박스를 긁을 최대 인원(None=전원). 우선순위=랭커>다음경기>기타."""
     print("\n→ 선수 디렉터리 구성 중 (수집 데이터 교차연결)...")
     fighters = {}
 
-    def ensure(name, division_ko=""):
+    def ensure(name, division_ko="", url=None):
         if not name:
             return None
         fid = slugify(name)
@@ -684,16 +774,21 @@ def build_fighters(upcoming, past, divisions):
                 "id": fid, "name": name, "name_ko": tr_fighter(name),
                 "record": "", "country": "", "country_ko": "",
                 "division": division_ko, "rank": "랭킹 외",
+                "nick": "", "height": "", "reach": "", "stance": "", "age": "",
+                "url": url,
                 "recent": [], "next": None,
             }
-        elif division_ko and not fighters[fid]["division"]:
-            fighters[fid]["division"] = division_ko
+        else:
+            if division_ko and not fighters[fid]["division"]:
+                fighters[fid]["division"] = division_ko
+            if url and not fighters[fid].get("url"):
+                fighters[fid]["url"] = url
         return fid
 
     # 1. 랭킹 (전적/국적/랭크의 1차 출처)
     for d in divisions:
         if d.get("champion"):
-            fid = ensure(d["champion"]["name"], d["wc"])
+            fid = ensure(d["champion"]["name"], d["wc"], d["champion"].get("url"))
             f = fighters[fid]
             f["rank"] = "챔피언"
             f["record"] = d["champion"]["record"]
@@ -701,7 +796,7 @@ def build_fighters(upcoming, past, divisions):
             f["country_ko"] = d["champion"]["country_ko"]
             f["division"] = d["wc"]
         for r in d.get("ranked", []):
-            fid = ensure(r["name"], d["wc"])
+            fid = ensure(r["name"], d["wc"], r.get("url"))
             f = fighters[fid]
             if f["rank"] == "랭킹 외":
                 f["rank"] = "잠정챔프" if r.get("interim") else ("#" + str(r["rank"]))
@@ -712,12 +807,12 @@ def build_fighters(upcoming, past, divisions):
                 f["country_ko"] = r["country_ko"]
             f["division"] = d["wc"]
 
-    # 2. 대진표에 등장하는 선수 전원 등록
+    # 2. 대진표에 등장하는 선수 전원 등록 (선수별 위키 링크 포함)
     for ev in upcoming + past:
         for fight in ev.get("main_card", []) + ev.get("prelims", []):
             wc = tr_weight(fight.get("weight", ""))
-            ensure(fight["fighter_a"], wc)
-            ensure(fight["fighter_b"], wc)
+            ensure(fight["fighter_a"], wc, fight.get("fighter_a_url"))
+            ensure(fight["fighter_b"], wc, fight.get("fighter_b_url"))
 
     # 3. 최근 전적 (과거 이벤트, 최신순으로 이미 정렬됨)
     for ev in past:
@@ -754,7 +849,34 @@ def build_fighters(upcoming, past, divisions):
     for f in fighters.values():
         f["recent"] = f["recent"][:5]
 
+    # 5. 선수 상세정보 수집 (개별 위키 인포박스) — 랭커·다음경기 선수 우선
+    def priority(f):
+        if f["rank"] != "랭킹 외":
+            return 0
+        if f["next"]:
+            return 1
+        return 2
+
+    targets = sorted((f for f in fighters.values() if f.get("url")), key=priority)
+    limit = len(targets) if detail_limit is None else detail_limit
+    fetch_list = targets[:limit]
+    print(f"\n→ 선수 상세정보(전적·키·리치·스탠스·나이) 수집: {len(fetch_list)}명...")
+    for i, f in enumerate(fetch_list):
+        det = fetch_fighter_detail(f["url"])
+        for k in ("nick", "height", "reach", "stance", "age"):
+            if det.get(k):
+                f[k] = det[k]
+        if det.get("record"):
+            f["record"] = det["record"]  # 인포박스 전적이 더 정확 (NC 등 정리)
+        if (i + 1) % 25 == 0:
+            print(f"    {i+1}/{len(fetch_list)}")
+    skipped = len(targets) - len(fetch_list)
+    if skipped > 0:
+        print(f"  ⚠️ {skipped}명은 상세 생략(cap) — 전적/랭크 기본정보는 유지")
+
     result = list(fighters.values())
+    for f in result:
+        f.pop("url", None)  # 내부용 링크는 출력에서 제거
     print(f"  ✓ 선수 {len(result)}명 (랭커 + 카드 등장 선수)")
     return result
 
@@ -809,8 +931,31 @@ def main():
     for ev in past:
         apply_translations(ev)
 
-    output = {
-        "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
+    # ── 랭킹 수집 ──
+    divisions = []
+    try:
+        divisions = fetch_rankings()
+    except Exception as e:
+        print("WARN rankings 수집 실패:", e)
+
+    # ── 선수 디렉터리 구성 (events + rankings 교차연결, 개별 상세 수집) ──
+    fighters = []
+    try:
+        fighters = build_fighters(events, past, divisions)
+    except Exception as e:
+        print("WARN fighters 구성 실패:", e)
+
+    # 내부용 선수 링크는 events.json 출력에서 제거 (build_fighters 가 다 쓴 뒤)
+    for ev in events + past:
+        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+            fight.pop("fighter_a_url", None)
+            fight.pop("fighter_b_url", None)
+
+    now_iso = datetime.now(KST).isoformat(timespec="seconds")
+
+    # ── 저장 ──
+    events_out = {
+        "generated_at": now_iso,
         "source": "Wikipedia: List of UFC events",
         "translations_applied": True,
         "event_count": len(events),
@@ -818,39 +963,28 @@ def main():
         "past_count": len(past),
         "past_events": past,
     }
-    EVENTS_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    EVENTS_FILE.write_text(json.dumps(events_out, ensure_ascii=False, indent=2), encoding="utf-8")
     print("\n=== Saved:", EVENTS_FILE.name, "(upcoming " + str(len(events)) + " / past " + str(len(past)) + ") ===")
 
-    # ── 랭킹 수집 ──
-    divisions = []
-    try:
-        divisions = fetch_rankings()
-        if divisions:
-            rankings_out = {
-                "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
-                "source": "Wikipedia: UFC rankings (Meta)",
-                "division_count": len(divisions),
-                "divisions": divisions,
-            }
-            RANKINGS_FILE.write_text(json.dumps(rankings_out, ensure_ascii=False, indent=2), encoding="utf-8")
-            print("=== Saved:", RANKINGS_FILE.name, "(" + str(len(divisions)) + " divisions) ===")
-    except Exception as e:
-        print("WARN rankings 수집 실패:", e)
+    if divisions:
+        rankings_out = {
+            "generated_at": now_iso,
+            "source": "Wikipedia: UFC rankings (Meta)",
+            "division_count": len(divisions),
+            "divisions": divisions,
+        }
+        RANKINGS_FILE.write_text(json.dumps(rankings_out, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("=== Saved:", RANKINGS_FILE.name, "(" + str(len(divisions)) + " divisions) ===")
 
-    # ── 선수 디렉터리 구성 (events + rankings 교차연결) ──
-    try:
-        fighters = build_fighters(events, past, divisions)
-        if fighters:
-            fighters_out = {
-                "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
-                "source": "Wikipedia: 랭킹 + 대진표 교차연결",
-                "fighter_count": len(fighters),
-                "fighters": fighters,
-            }
-            FIGHTERS_FILE.write_text(json.dumps(fighters_out, ensure_ascii=False, indent=2), encoding="utf-8")
-            print("=== Saved:", FIGHTERS_FILE.name, "(" + str(len(fighters)) + " fighters) ===")
-    except Exception as e:
-        print("WARN fighters 구성 실패:", e)
+    if fighters:
+        fighters_out = {
+            "generated_at": now_iso,
+            "source": "Wikipedia: 랭킹 + 대진표 + 개별 인포박스",
+            "fighter_count": len(fighters),
+            "fighters": fighters,
+        }
+        FIGHTERS_FILE.write_text(json.dumps(fighters_out, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("=== Saved:", FIGHTERS_FILE.name, "(" + str(len(fighters)) + " fighters) ===")
 
 
 if __name__ == "__main__":
