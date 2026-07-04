@@ -318,7 +318,7 @@
 
   /* 탭바: 이모지 제거 + 미니멀 + 액센트 점 */
   .tabbar{background:rgba(11,11,12,.86);backdrop-filter:blur(16px)}
-  .tabbar .ic{display:none!important}
+  .ic{display:none!important}  /* 이모지 아이콘 전역 숨김(탭바·섹션헤더) */
   .tabbar a{color:var(--dim);font-weight:600;font-size:12px;gap:0;padding:4px 0}
   .tabbar a.active{color:var(--text)}
   .tabbar a.active::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--red);margin:5px auto 0}
@@ -826,7 +826,7 @@ function viewHome(){
   </div>
 
   <div class="disclaimer">
-    📡 일정·결과·랭킹·선수 정보는 <b>Wikipedia</b>(List of UFC events / UFC rankings)에서 <b>매일 오전 6시 KST</b> 자동수집한 데이터입니다. 경기 시간·대진은 변동될 수 있습니다.
+    일정·결과·랭킹·선수 정보는 <b>Wikipedia</b>(List of UFC events / UFC rankings)에서 <b>매일 오전 6시 KST</b> 자동수집한 데이터입니다. 경기 시간·대진은 변동될 수 있습니다.
   </div>
   `;
 }
@@ -1056,10 +1056,10 @@ function viewFighter(id){
 /* 이모지 반응 바 — 텍스트 없이 클릭만. 내 반응은 즉시(localStorage),
    전체 집계는 Firebase 연결 시 표시(window.getReactionCounts 존재 시). */
 const REACTIONS = [
-  {e:'🔥', k:'기대돼'},
-  {e:'😱', k:'이변각'},
+  {e:'🔥', k:'기대돼요'},
+  {e:'😱', k:'이변 예감'},
   {e:'👊', k:'KO각'},
-  {e:'🥱', k:'글쎄'},
+  {e:'🥱', k:'글쎄요'},
 ];
 function reactionBar(eventId){
   const mine = (function(){ try { return localStorage.getItem('react:'+eventId)||''; } catch(_){ return ''; } })();
@@ -1071,16 +1071,14 @@ function reactionBar(eventId){
       const active = mine===r.e;
       const c = counts ? (counts[r.e]||0) : null;
       return `<button class="react-btn" data-react="${r.e}" data-event="${eventId}"
-        style="flex:1;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:3px;
-        padding:10px 8px;border-radius:12px;border:1px solid ${active?'var(--red)':'var(--line)'};
-        background:${active?'rgba(210,10,10,.14)':'var(--bg-2)'};transition:.12s">
-        <span style="font-size:22px">${r.e}</span>
-        <span style="font-size:11px;color:${active?'var(--red-2)':'var(--muted)'}">${r.k}</span>
-        ${c!==null?`<span style="font-size:11px;font-weight:800">${c}</span>`:''}
+        style="padding:9px 15px;border-radius:22px;transition:.14s;font-size:13px;
+        border:1px solid ${active?'var(--text)':'var(--line-2)'};background:transparent;
+        color:${active?'var(--text)':'var(--muted)'};font-weight:${active?'700':'500'}">
+        ${r.k}${c!==null?` <span style="color:var(--dim)">${c}</span>`:''}
       </button>`;
     }).join('')}
   </div>
-  <div style="font-size:11px;color:var(--dim);margin:0 0 4px 2px">탭해서 반응을 남겨보세요${counts===null?' · 전체 집계는 준비 중입니다':''}</div>
+  <div style="font-size:11px;color:var(--dim);margin:2px 0 4px 2px">탭해서 반응을 남겨보세요${counts===null?' · 전체 집계는 준비 중입니다':''}</div>
   `;
 }
 
@@ -1107,14 +1105,14 @@ function newbieGuide(e){
   const sa=fStyleLabel(a), sb=fStyleLabel(b);
 
   const points=[];
-  if(isTitle)   points.push('🏆 <b>타이틀전</b> — 챔피언 벨트가 걸린 경기예요');
-  if(isRematch) points.push('🔁 <b>리매치</b> — 예전에 붙었던 둘이 다시 만나요. 결과가 바뀔지가 관전포인트');
+  if(isTitle)   points.push('<b>타이틀전</b> — 챔피언 벨트가 걸린 경기예요');
+  if(isRematch) points.push('<b>리매치</b> — 예전에 붙었던 둘이 다시 만나요. 결과가 바뀔지가 관전포인트');
   if(sa && sb && sa.label!==sb.label)
-    points.push(`${sa.ico} ${a.name}(${sa.label}) vs ${sb.ico} ${b.name}(${sb.label}) — <b>상반된 스타일</b>의 맞대결`);
+    points.push(`${a.name}(${sa.label}) vs ${b.name}(${sb.label}) — <b>상반된 스타일</b>의 맞대결`);
   else if(sa && sb && sa.label===sb.label)
-    points.push(`${sa.ico} 둘 다 <b>${sa.label}</b> — ${sa.desc}. 누가 한 수 위인지 보는 재미`);
-  [a,b].forEach(f=>{ const fr=finishRate(f); if(fr!==null && fr>=75) points.push(`💥 ${f.name} — 피니시율 <b>${fr}%</b>, 순식간에 끝낼 수 있는 선수예요`); });
-  if(bothRanked && !isTitle) points.push(`📊 ${a.rank} vs ${b.rank} — 상위 랭커들의 순위 다툼`);
+    points.push(`둘 다 <b>${sa.label}</b> — ${sa.desc}. 누가 한 수 위인지 보는 재미`);
+  [a,b].forEach(f=>{ const fr=finishRate(f); if(fr!==null && fr>=75) points.push(`${f.name} — 피니시율 <b>${fr}%</b>, 순식간에 끝낼 수 있는 선수예요`); });
+  if(bothRanked && !isTitle) points.push(`${a.rank} vs ${b.rank} — 상위 랭커들의 순위 다툼`);
 
   // 맥락 문장 (뉴비용)
   let ctx = `<b>${e.code}</b>는 ${e.city||'해외'}에서 열리는 UFC 이벤트예요. 메인 경기는 <b>${a.name}</b> 대 <b>${b.name}</b>`;
@@ -1130,10 +1128,10 @@ function newbieBlock(id){
   const e = getEvent(id); if(!e) return '';
   const g = newbieGuide(e); if(!g || !g.points.length) return '';
   return `
-  <div class="section-title"><span class="bar"></span>🔰 UFC 처음이라면?</div>
-  <div class="box" style="border-color:var(--blue)">
-    <p style="margin:0 0 10px 0;font-size:14px;line-height:1.65">${g.ctx}</p>
-    <div style="font-size:12px;color:var(--gold-2);font-weight:800;margin-bottom:6px">👀 이 경기, 이런 걸 보세요</div>
+  <div class="section-title"><span class="bar"></span>UFC 처음이라면?</div>
+  <div class="box" style="border-left:2px solid var(--red)">
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.7">${g.ctx}</p>
+    <div style="font-size:11px;color:var(--dim);font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">관전 포인트</div>
     <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.5">
       ${g.points.map(p=>`<li>${p}</li>`).join('')}
     </ul>
@@ -1145,7 +1143,7 @@ function opinionBlock(eventId){
   const op = OPINIONS[eventId];
   if(!op || !op.communities || !op.communities.length) return '';
   return `
-  <div class="section-title"><span class="bar"></span>🌍 해외 팬 반응</div>
+  <div class="section-title"><span class="bar"></span>해외 팬 반응</div>
   <div style="font-size:11px;color:var(--dim);margin:-6px 0 10px 2px">한국에선 잘 안 보이는 각국 MMA 커뮤니티 여론을 번역·요약했습니다</div>
   ${op.communities.map(c=>`
     <div class="box" style="margin-bottom:12px">
