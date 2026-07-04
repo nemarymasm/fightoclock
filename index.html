@@ -325,6 +325,38 @@
 
   /* 반응 버튼: 절제 (테두리 톤) */
   .disclaimer{border-style:solid;border-color:var(--line)}
+
+  /* ---- 홈 커버 (잡지 표지형: 톱 매치업 얼굴 크게) ---- */
+  .cover{text-align:center;padding:20px 0 10px}
+  .cover-kick{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:700}
+  .cover-faces{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;margin:18px 0 12px}
+  .cover .cf{display:flex;flex-direction:column;align-items:center;gap:9px;min-width:0}
+  .cover .cf-img{width:150px;height:150px;max-width:40vw;max-height:40vw;margin:0 auto}
+  .cover .cf-img>div{width:100%!important;height:100%!important}
+  .cover .cf-img svg{width:100%!important;height:100%!important}
+  .cover .cf-nm{font-weight:800;font-size:18px;letter-spacing:-.025em;line-height:1.15}
+  .cover .cf-rec{font-size:12px;color:var(--muted)}
+  .cover .cf-vs{font-weight:800;color:var(--dim);font-size:15px}
+  .cover-title{font-size:22px;font-weight:800;letter-spacing:-.03em;margin:8px 4px 4px}
+  .cover-meta{color:var(--muted);font-size:13px;line-height:1.5;padding:0 8px}
+  .cover-cd{margin:18px auto 14px;max-width:340px}
+  .cover .cta{justify-content:center}
+  .cover .btn.primary{width:100%;max-width:340px}
+
+  /* ---- 주요 경기 카드 (중요도 크기) ---- */
+  .bigcards{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .mcard{grid-column:span 1;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px;transition:.14s;overflow:hidden}
+  .mcard.big{grid-column:span 2}
+  .mcard:active{transform:scale(.99)}
+  .mcard-top{display:flex;justify-content:space-between;align-items:center}
+  .mcard-code{font-weight:800;font-size:13px}
+  .mcard-d{font-size:11px;color:var(--red);font-weight:700;letter-spacing:.02em}
+  .mcard-faces{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;min-width:0}
+  .mcard .mf{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+  .mcard .mf-nm{font-size:12px;font-weight:700;text-align:center;line-height:1.2;overflow:hidden;text-overflow:ellipsis;max-width:100%;white-space:nowrap}
+  .mcard.big .mf-nm{font-size:14px}
+  .mcard .mf-vs{font-size:11px;color:var(--dim);font-weight:700}
+  .mcard-sub{font-size:11px;color:var(--dim);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -734,75 +766,83 @@ function fightRow(fight, opts={}){
 }
 
 /* ---------- 뷰: 홈 ---------- */
+/* 이벤트 중요도 점수 — PPV·타이틀·랭커 기반 (진열 크기·순서용) */
+function eventScore(ev){
+  let s = 0;
+  if(/^UFC\s*\d/i.test(ev.code||'')) s += 4;            // 넘버드 PPV
+  const m = ev.mainCard && ev.mainCard[0];
+  if(m){
+    const a=getFighter(m.a), b=getFighter(m.b);
+    if(a.rank==='챔피언'||b.rank==='챔피언') s += 3;      // 타이틀전
+    if(/^#|챔피언|잠정/.test(a.rank||'')) s += 1;
+    if(/^#|챔피언|잠정/.test(b.rank||'')) s += 1;
+    if(/(?:^|\s)[2-9](?:\s|$)|리매치/.test(ev.title||'')) s += 1; // 리매치
+  }
+  return s;
+}
+function dLabel(dateUtc){
+  const days = Math.ceil((new Date(dateUtc) - new Date())/86400000);
+  if(days<=0) return 'LIVE';
+  return 'D-'+days;
+}
+
 function viewHome(){
   const e = nextEvent();
-  const ed = fmtShort(e.dateUtc);
   const cd = countdownParts(e.dateUtc);
   const main = e.mainCard?.[0];
   const a = main ? getFighter(main.a) : null;
   const b = main ? getFighter(main.b) : null;
+
+  // 커버 아래 진열: 다가오는 이벤트를 중요도순으로 (커버 이벤트 제외)
+  const rest = upcomingEvents().filter(ev=>ev.id!==e.id)
+    .sort((x,y)=>eventScore(y)-eventScore(x));
+
   return `
-  <section class="hero">
-    <div class="label"><span class="dot"></span>다음 UFC 경기</div>
-    <h1>${e.code}: ${e.titleKo||e.title}</h1>
-    <div class="sub">${e.headline||''}</div>
-
-    ${main ? `
-    <div class="matchup">
-      <div class="fighter-tile">
-        <div style="display:flex;justify-content:center">${avatarBox(a,64)}</div>
-        <div class="nm">${a.name}</div>
-        <div class="rec">${a.record} · ${a.rank}</div>
-      </div>
-      <div class="vs">VS</div>
-      <div class="fighter-tile">
-        <div style="display:flex;justify-content:center">${avatarBox(b,64)}</div>
-        <div class="nm">${b.name}</div>
-        <div class="rec">${b.record} · ${b.rank}</div>
-      </div>
-    </div>` : ''}
-
-    <div class="countdown" id="cdHero">
-      <div class="cd-cell"><div class="num" data-cd="d">${cd.d}</div><div class="lbl">DAYS</div></div>
-      <div class="cd-cell"><div class="num" data-cd="h">${String(cd.h).padStart(2,'0')}</div><div class="lbl">HOURS</div></div>
-      <div class="cd-cell"><div class="num" data-cd="m">${String(cd.m).padStart(2,'0')}</div><div class="lbl">MIN</div></div>
-      <div class="cd-cell"><div class="num" data-cd="s">${String(cd.s).padStart(2,'0')}</div><div class="lbl">SEC</div></div>
+  ${main ? `
+  <section class="cover">
+    <div class="cover-kick">다음 UFC · ${dLabel(e.dateUtc)}</div>
+    <div class="cover-faces">
+      <a class="cf" href="#fighter/${main.a}">
+        <div class="cf-img">${avatarBox(a,150)}</div>
+        <div class="cf-nm">${a.name}</div>
+        <div class="cf-rec">${a.record}${a.rank&&a.rank!=='랭킹 외'?' · '+a.rank:''}</div>
+      </a>
+      <div class="cf-vs">VS</div>
+      <a class="cf" href="#fighter/${main.b}">
+        <div class="cf-img">${avatarBox(b,150)}</div>
+        <div class="cf-nm">${b.name}</div>
+        <div class="cf-rec">${b.record}${b.rank&&b.rank!=='랭킹 외'?' · '+b.rank:''}</div>
+      </a>
     </div>
-
-    <div class="meta">
-      <div class="meta-cell"><div class="k">한국 시간</div><div class="v">${e.kstString}</div></div>
-      <div class="meta-cell"><div class="k">장소</div><div class="v">${e.venue}, ${e.city}</div></div>
-      <div class="meta-cell"><div class="k">시청처</div><div class="v">${e.where}</div></div>
-      <div class="meta-cell"><div class="k">메인이벤트</div><div class="v">${main?(getFighter(main.a).name+' vs '+getFighter(main.b).name):'TBA'}</div></div>
+    <h1 class="cover-title">${e.code}: ${e.titleKo||e.title}</h1>
+    <div class="cover-meta">${e.kstString} · ${e.venue}, ${e.city}</div>
+    <div class="countdown cover-cd" id="cdHero">
+      <div class="cd-cell"><div class="num" data-cd="d">${cd.d}</div><div class="lbl">일</div></div>
+      <div class="cd-cell"><div class="num" data-cd="h">${String(cd.h).padStart(2,'0')}</div><div class="lbl">시</div></div>
+      <div class="cd-cell"><div class="num" data-cd="m">${String(cd.m).padStart(2,'0')}</div><div class="lbl">분</div></div>
+      <div class="cd-cell"><div class="num" data-cd="s">${String(cd.s).padStart(2,'0')}</div><div class="lbl">초</div></div>
     </div>
-
-    <div class="cta">
-      <a class="btn primary" href="#event/${e.id}">자세히 보기 →</a>
-      <button class="btn ghost" onclick="alert('알림 등록되었습니다 (데모)')">🔔 시작 30분 전 알림</button>
-    </div>
-  </section>
+    <div class="cta"><a class="btn primary" href="#event/${e.id}">이 경기 자세히 보기 →</a></div>
+  </section>` : ''}
 
   ${newbieBlock(e.id)}
 
-  <div class="section-title"><span class="bar"></span>이번주 추천 경기</div>
-  ${main ? fightRow(main) : ''}
-  ${e.mainCard?.[1] ? fightRow(e.mainCard[1]) : ''}
-
-  <div class="section-title"><span class="bar"></span>다가오는 일정</div>
-  <div class="event-list">
-    ${upcomingEvents().slice(0,4).map(ev=>{
-      const d = fmtShort(ev.dateUtc);
+  <div class="section-title"><span class="bar"></span>주요 경기</div>
+  <div class="bigcards">
+    ${rest.slice(0,6).map((ev,i)=>{
       const m = ev.mainCard?.[0];
-      const m1 = m ? getFighter(m.a).name : 'TBA';
-      const m2 = m ? getFighter(m.b).name : 'TBA';
+      const fa = m?getFighter(m.a):null, fb = m?getFighter(m.b):null;
+      const big = i<2;  // 상위 2개는 크게
+      if(!m) return '';
       return `
-      <a href="#event/${ev.id}" class="event-item">
-        <div class="date-block"><div class="m">${d.m}</div><div class="d">${d.day}</div><div class="w">${d.w}</div></div>
-        <div>
-          <div class="title">${ev.code}: ${ev.titleKo||ev.title}</div>
-          <div class="meta"><span><b>${m1}</b> vs <b>${m2}</b></span><span>· ${ev.city}</span></div>
+      <a href="#event/${ev.id}" class="mcard ${big?'big':''}">
+        <div class="mcard-top"><span class="mcard-code">${ev.code}</span><span class="mcard-d">${dLabel(ev.dateUtc)}</span></div>
+        <div class="mcard-faces">
+          <div class="mf">${avatarBox(fa,big?76:52)}<div class="mf-nm">${fa.name}</div></div>
+          <div class="mf-vs">VS</div>
+          <div class="mf">${avatarBox(fb,big?76:52)}<div class="mf-nm">${fb.name}</div></div>
         </div>
-        <div class="chev">›</div>
+        <div class="mcard-sub">${ev.titleKo||ev.title} · ${ev.city}</div>
       </a>`;
     }).join('')}
   </div>
