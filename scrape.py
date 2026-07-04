@@ -1077,6 +1077,84 @@ def eventCodeFromName_py(name):
     return m.group(1).strip() if m else "UFC"
 
 
+# ────────────────────────────────────────────────────────────────
+# 도박사 배당 (여론 지표) — The Odds API
+# ────────────────────────────────────────────────────────────────
+def _surname(name):
+    parts = (name or "").strip().split()
+    return parts[-1].lower() if parts else ""
+
+
+def fetch_odds(events):
+    """The Odds API로 다가오는 이벤트 메인경기의 배당→승률% 변환.
+    ODDS_API_KEY 없으면 생략. 각 이벤트 prediction 필드에 저장(기존 UI 재사용)."""
+    key = os.environ.get("ODDS_API_KEY")
+    if not key:
+        print("\nWARN ODDS_API_KEY 없음 — 배당(여론지표) 수집 생략")
+        return
+    try:
+        r = requests.get(
+            "https://api.the-odds-api.com/v4/sports/mma_mixed_martial_arts/odds",
+            params={"apiKey": key, "regions": "us", "markets": "h2h", "oddsFormat": "decimal"},
+            headers=HEADERS, timeout=25,
+        )
+        r.raise_for_status()
+        odds_events = r.json()
+    except Exception as e:
+        print("WARN 배당 수집 실패:", e)
+        return
+
+    print(f"\n→ 배당(여론지표) 수집: {len(odds_events)}경기 매칭 중...")
+    matched = 0
+    for ev in events:
+        mc = ev.get("main_card") or []
+        if not mc:
+            continue
+        fa, fb = mc[0]["fighter_a"], mc[0]["fighter_b"]
+        sa, sb = _surname(fa), _surname(fb)
+
+        for oe in odds_events:
+            names = [oe.get("home_team", ""), oe.get("away_team", "")]
+            low = [n.lower() for n in names]
+            if not (any(sa in n for n in low) and any(sb in n for n in low)):
+                continue
+            # 여러 북메이커 배당 평균 → 내재확률 → 정규화(마진 제거)
+            probs = {}  # name → [implied prob...]
+            for bk in oe.get("bookmakers", []):
+                for mk in bk.get("markets", []):
+                    if mk.get("key") != "h2h":
+                        continue
+                    for oc in mk.get("outcomes", []):
+                        price = oc.get("price")
+                        if price and price > 1:
+                            probs.setdefault(oc["name"], []).append(1.0 / price)
+            if len(probs) < 2:
+                continue
+            avg = {n: sum(v) / len(v) for n, v in probs.items()}
+            # fa/fb에 해당하는 이름 매칭
+            def pick(surname):
+                for n in avg:
+                    if surname in n.lower():
+                        return n
+                return None
+            na, nb = pick(sa), pick(sb)
+            if not na or not nb or na == nb:
+                continue
+            total = avg[na] + avg[nb]
+            aPct = round(avg[na] / total * 100)
+            bPct = 100 - aPct
+            nbk = len(oe.get("bookmakers", []))
+            ev["prediction"] = {
+                "aId": slugify(fa), "bId": slugify(fb),
+                "aPct": aPct, "bPct": bPct,
+                "note": f"해외 북메이커 {nbk}곳의 배당을 승률로 환산한 값입니다. 시장(=베터들)이 보는 우세를 나타내는 여론 지표예요.",
+                "sources": ["The Odds API", f"북메이커 {nbk}곳 평균"],
+            }
+            matched += 1
+            break
+    print(f"  ✓ {matched}경기 배당 매칭")
+
+
 def main():
     print("=== fightoclock 데이터 수집 시작:", datetime.now(KST).isoformat(timespec="seconds"), "===")
     DATA_DIR.mkdir(exist_ok=True)
@@ -1140,6 +1218,12 @@ def main():
         fighters = build_fighters(events, past, divisions)
     except Exception as e:
         print("WARN fighters 구성 실패:", e)
+
+    # ── 도박사 배당(여론지표) 수집 → 이벤트 prediction 필드 ──
+    try:
+        fetch_odds(events)
+    except Exception as e:
+        print("WARN 배당 수집 실패:", e)
 
     # 내부용 선수 링크는 events.json 출력에서 제거 (build_fighters 가 다 쓴 뒤)
     for ev in events + past:

@@ -1155,9 +1155,9 @@ function viewEvent(id){
   </div>`:''}
 
   ${e.prediction?`
-  <div class="section-title"><span class="bar"></span>분석 / 팬 컨센서스</div>
+  <div class="section-title"><span class="bar"></span>📊 배당 기반 승률 (여론 지표)</div>
   <div class="box blue">
-    <h3><span class="ic">📊</span>커뮤니티 예측 (베팅 권유 아님)</h3>
+    <h3><span class="ic">💹</span>시장이 보는 우세 · 베팅 권유 아님</h3>
     <div class="pred">
       <div class="pred-side">
         <div class="nm">${getFighter(e.prediction.aId).name}</div>
@@ -1307,7 +1307,7 @@ function transformJsonEvent(je){
     headline: '',
     summary: je.summary_ko || '',
     keyPoints: [],
-    prediction: null,
+    prediction: je.prediction || null,
     mainCard: (je.main_card||[]).map(transformFight),
     prelims: (je.prelims||[]).map(transformFight)
   };
