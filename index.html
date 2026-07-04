@@ -597,9 +597,42 @@ function countdownParts(targetIso){
 }
 
 /* ---------- 컴포넌트 ---------- */
+/* 선수 픽토그램 (저작권 free 오리지널) — 피니시 스타일·스탠스를 색/자세로 표현
+   ko/sub/dec 승수로 파이터 유형을 색으로: 타격가=빨강, 그래플러=골드, 판정형=슬레이트 */
+function fighterStyleColor(f){
+  const ko=f.ko||0, sub=f.sub||0, dec=f.dec||0, t=ko+sub+dec;
+  if(t<=0) return {c1:'#3a3a3a', c2:'#555', glyph:''};
+  if(ko>=sub && ko>=dec)  return {c1:'#d20a0a', c2:'#ff4d4d', glyph:'👊'}; // 타격가
+  if(sub>=ko && sub>=dec) return {c1:'#b8860b', c2:'#f5c542', glyph:'🥋'}; // 그래플러
+  return {c1:'#3b5566', c2:'#6b93ad', glyph:'⚖️'};                        // 판정형
+}
+function fighterPictogram(f, size){
+  size = size || 48;
+  const s = fighterStyleColor(f);
+  const southpaw = (f.stance||'').indexOf('사우스포')>=0;
+  const uid = 'g'+(f.id||Math.random()).toString().replace(/[^a-z0-9]/gi,'').slice(0,8);
+  // 스탠스: 정통이면 왼손(잽) 앞으로, 사우스포면 오른손 앞으로 — 앞손 글러브를 살짝 위/앞으로
+  const leadUp = southpaw ? {lx:64,ly:40} : {lx:36,ly:40};
+  const backUp = southpaw ? {lx:36,ly:46} : {lx:64,ly:46};
+  return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" style="display:block;border-radius:50%">
+    <defs><radialGradient id="${uid}" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="${s.c2}"/><stop offset="100%" stop-color="${s.c1}"/>
+    </radialGradient></defs>
+    <circle cx="50" cy="50" r="50" fill="url(#${uid})"/>
+    <g fill="rgba(0,0,0,.82)">
+      <circle cx="50" cy="37" r="11"/>
+      <path d="M25,82 Q25,55 50,55 Q75,55 75,82 Z"/>
+      <circle cx="${leadUp.lx}" cy="${leadUp.ly}" r="7.5"/>
+      <circle cx="${backUp.lx}" cy="${backUp.ly}" r="7"/>
+    </g>
+  </svg>`;
+}
+function avatarBox(f, size){
+  size = size || 48;
+  return `<div style="width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;flex-shrink:0">${fighterPictogram(f,size)}</div>`;
+}
 function fighterAvatar(f, side){
-  const initials = (f.name||'?').replace(/\s/g,'').slice(0,1);
-  return `<div class="avatar ${side}">${initials}</div>`;
+  return avatarBox(f, 44);
 }
 function fightRow(fight, opts={}){
   const a = getFighter(fight.a), b = getFighter(fight.b);
@@ -651,13 +684,13 @@ function viewHome(){
     ${main ? `
     <div class="matchup">
       <div class="fighter-tile">
-        <div class="avatar red">${a.name.slice(0,1)}</div>
+        <div style="display:flex;justify-content:center">${avatarBox(a,64)}</div>
         <div class="nm">${a.name}</div>
         <div class="rec">${a.record} · ${a.rank}</div>
       </div>
       <div class="vs">VS</div>
       <div class="fighter-tile">
-        <div class="avatar blue">${b.name.slice(0,1)}</div>
+        <div style="display:flex;justify-content:center">${avatarBox(b,64)}</div>
         <div class="nm">${b.name}</div>
         <div class="rec">${b.record} · ${b.rank}</div>
       </div>
@@ -807,7 +840,7 @@ function viewRankings(){
       <div style="padding:14px 14px 10px 14px;border-bottom:1px solid var(--line)">
         <div style="font-size:11px;color:var(--gold-2);font-weight:800;letter-spacing:.06em">👑 ${g.wc} 챔피언</div>
         <a href="#fighter/${g.champ}" style="display:flex;align-items:center;gap:10px;margin-top:6px">
-          <div class="avatar red">${champ.name.slice(0,1)}</div>
+          ${avatarBox(champ,44)}
           <div>
             <div style="font-weight:800">${champ.name}</div>
             <div style="font-size:12px;color:var(--muted)">${champ.record} · ${champ.country||''}</div>
@@ -840,7 +873,7 @@ function viewFighters(){
   <div id="fList" class="event-list">
     ${items.map(f=>`
       <a href="#fighter/${f.id}" class="event-item" data-name="${f.name} ${f.en}">
-        <div class="avatar red" style="width:48px;height:48px">${f.name.slice(0,1)}</div>
+        ${avatarBox(f,48)}
         <div>
           <div class="title">${f.name}${f.en && f.en!==f.name ? ` <span style="font-size:11px;color:var(--muted)">(${f.en})</span>`:''}</div>
           <div class="meta">
@@ -904,7 +937,7 @@ function viewFighter(id){
   <div class="back-bar"><button onclick="history.back()">←</button><h3>${f.name}</h3></div>
 
   <div class="fighter-hero">
-    <div class="av"><div class="avatar red" style="width:88px;height:88px;font-size:24px">${(f.name||'?').slice(0,1)}</div></div>
+    <div class="av">${avatarBox(f,88)}</div>
     <div>
       <h2>${f.name}</h2>
       ${f.en && f.en!==f.name ? `<div class="nick">${f.en}${f.nick?` · "${f.nick}"`:''}</div>` : (f.nick?`<div class="nick">"${f.nick}"</div>`:'')}
