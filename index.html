@@ -574,15 +574,15 @@ function fmtShort(d){
 function getFighter(id){ return FIGHTERS[id] || REAL_FIGHTERS[id] || {name: (id||'TBA').replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase()), record:'-', rank:'-', recent:[], style:'데이터 수집 중'} }
 function getEvent(id){ return EVENTS.find(e=>e.id===id) }
 function nextEvent(){
-  const now = new Date('2026-05-08T00:00:00+09:00');
+  const now = new Date();
   return EVENTS.filter(e=>new Date(e.dateUtc) > now).sort((a,b)=>new Date(a.dateUtc)-new Date(b.dateUtc))[0];
 }
 function pastEvents(){
-  const now = new Date('2026-05-08T00:00:00+09:00');
+  const now = new Date();
   return EVENTS.filter(e=>new Date(e.dateUtc) <= now).sort((a,b)=>new Date(b.dateUtc)-new Date(a.dateUtc));
 }
 function upcomingEvents(){
-  const now = new Date('2026-05-08T00:00:00+09:00');
+  const now = new Date();
   return EVENTS.filter(e=>new Date(e.dateUtc) > now).sort((a,b)=>new Date(a.dateUtc)-new Date(b.dateUtc));
 }
 function countdownParts(targetIso){
@@ -725,8 +725,7 @@ function viewHome(){
   </div>
 
   <div class="disclaimer">
-    ⚠️ 본 화면은 <b>샘플 데이터</b>로 채워진 데모입니다. 실제 출시 시에는 UFCStats.com / Sherdog / Tapology 등 공개 데이터 소스를 일정한 간격으로 동기화해야 합니다.
-    예측 수치(%)는 베팅 권유가 아니며, 공개 토론/오즈를 기반으로 한 “팬 컨센서스”의 시각화입니다.
+    📡 일정·결과·랭킹·선수 정보는 <b>Wikipedia</b>(List of UFC events / UFC rankings)에서 <b>매일 오전 6시 KST</b> 자동수집한 데이터입니다. 경기 시간·대진은 변동될 수 있습니다.
   </div>
   `;
 }
@@ -859,48 +858,45 @@ function viewFighters(){
 /* ---------- 뷰: 선수 상세 ---------- */
 function viewFighter(id){
   const f = getFighter(id);
-  if(!f.recent) return `<div class="back-bar"><button onclick="history.back()">←</button><h3>찾을 수 없음</h3></div>`;
   return `
   <div class="back-bar"><button onclick="history.back()">←</button><h3>${f.name}</h3></div>
 
   <div class="fighter-hero">
-    <div class="av"><div class="avatar red" style="width:88px;height:88px;font-size:24px">${f.name.slice(0,1)}</div></div>
+    <div class="av"><div class="avatar red" style="width:88px;height:88px;font-size:24px">${(f.name||'?').slice(0,1)}</div></div>
     <div>
       <h2>${f.name}</h2>
-      ${f.nick?`<div class="nick">"${f.nick}"</div>`:''}
-      <div class="rec">${f.record} · ${f.weight}</div>
+      ${f.en && f.en!==f.name ? `<div class="nick">${f.en}</div>`:''}
+      <div class="rec">${f.record||'-'} · ${f.weight||'-'}</div>
       <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
-        <span class="pill gold">${f.rank}</span>
-        <span class="pill ghost">${f.country}</span>
+        <span class="pill gold">${f.rank||'랭킹 외'}</span>
+        ${f.country?`<span class="pill ghost">${f.country}</span>`:''}
       </div>
     </div>
   </div>
 
-  <div class="stat-grid">
-    <div class="stat-cell"><div class="k">신장</div><div class="v">${f.height||'-'}</div></div>
-    <div class="stat-cell"><div class="k">리치</div><div class="v">${f.reach||'-'}</div></div>
-    <div class="stat-cell"><div class="k">스탠스</div><div class="v">${f.stance||'-'}</div></div>
-    <div class="stat-cell"><div class="k">나이</div><div class="v">${f.age||'-'}</div></div>
-  </div>
+  ${f.next ? `
+  <div class="section-title"><span class="bar"></span>다음 경기</div>
+  <div class="box gold">
+    <h3><span class="ic">🥊</span>vs ${f.next.opp_ko||f.next.opp}</h3>
+    <p>${f.next.event||''}</p>
+  </div>`:''}
 
-  <div class="section-title"><span class="bar"></span>스타일 한 줄 요약</div>
-  <div class="box"><p>${f.style}</p></div>
-
-  <div class="section-title"><span class="bar"></span>최근 5경기</div>
+  <div class="section-title"><span class="bar"></span>최근 경기</div>
+  ${f.recent && f.recent.length ? `
   <div class="recent-list">
     ${f.recent.map(r=>`
       <div class="recent-item">
         <div class="res-tag ${r.res}">${r.res}</div>
         <div>
           <div class="opp">vs ${r.opp}</div>
-          <div class="way">${r.way}</div>
+          <div class="way">${r.way||''}</div>
         </div>
-        <div class="when">${r.when}</div>
+        <div class="when">${r.when||''}</div>
       </div>
     `).join('')}
-  </div>
+  </div>` : `<div class="box" style="color:var(--muted)">최근 경기 데이터가 아직 없습니다.</div>`}
 
-  <div class="disclaimer">선수 정보는 샘플 데이터입니다. 실제 출시 시 UFCStats.com 통계 (스트라이크/분, 테이크다운 정확도 등) 을 추가로 가져와 표시할 예정.</div>
+  <div class="disclaimer">전적·랭킹은 Wikipedia(UFC rankings / 이벤트 결과)를 매일 오전 6시 KST 자동수집한 데이터입니다.</div>
   `;
 }
 
@@ -908,7 +904,7 @@ function viewFighter(id){
 function viewEvent(id){
   const e = getEvent(id);
   if(!e) return `<div class="back-bar"><button onclick="history.back()">←</button><h3>이벤트를 찾을 수 없습니다</h3></div>`;
-  const isPast = new Date(e.dateUtc) < new Date('2026-05-08T00:00:00+09:00');
+  const isPast = new Date(e.dateUtc) < new Date();
 
   return `
   <div class="back-bar"><button onclick="history.back()">←</button><h3>${e.code}</h3></div>
@@ -1013,28 +1009,13 @@ function route(){
     });
   }
 }
-/* ---------- 실데이터 로더 (data/events.json) ---------- */
+/* ---------- 실데이터 로더 (data/*.json) ---------- */
 let REAL_FIGHTERS = {};
 
 function slugify(s){
   return (s||'').toString().toLowerCase().trim()
     .replace(/[^a-z0-9가-힣]+/g,'-')
     .replace(/^-+|-+$/g,'') || 'unknown';
-}
-
-function ensureRealFighter(name){
-  if(!name) return null;
-  const id = slugify(name);
-  if(!FIGHTERS[id] && !REAL_FIGHTERS[id]){
-    REAL_FIGHTERS[id] = {
-      id: id, name: name, en: name, nick: '',
-      country: '', age: '-', height: '-', reach: '-', stance: '-',
-      record: '-', weight: '-', rank: '미공개',
-      style: '데이터 수집 중',
-      recent: []
-    };
-  }
-  return id;
 }
 
 function eventCodeFromName(name){
@@ -1046,15 +1027,35 @@ function eventTitleFromName(name){
   return m ? m[1].trim() : (name||'');
 }
 
-function transformJsonEvent(je){
-  const titleSource = je.name_ko || je.name;
-  const mainCard = (je.main_card||[]).map(function(m){
+/* 실 선수 JSON → 내부 FIGHTERS shape */
+function transformFighter(f){
+  const recent = (f.recent||[]).map(function(r){
     return {
-      wc: m.weight || '-',
-      a: ensureRealFighter(m.fighter_a_ko || m.fighter_a),
-      b: ensureRealFighter(m.fighter_b_ko || m.fighter_b)
+      res: r.result==='win' ? 'W' : (r.result==='loss' ? 'L' : 'D'),
+      opp: r.opp_ko || r.opp || '',
+      way: r.method || '',
+      when: r.date || ''
     };
   });
+  return {
+    id: f.id, name: f.name_ko || f.name, en: f.name, nick: '',
+    country: f.country_ko || f.country || '', age:'-', height:'-', reach:'-', stance:'-',
+    record: f.record || '-', weight: f.division || '-', rank: f.rank || '랭킹 외',
+    style: '', recent: recent, next: f.next || null
+  };
+}
+
+/* 실 이벤트 JSON → 내부 fight/event shape */
+function transformFight(m){
+  const a = slugify(m.fighter_a);
+  const b = slugify(m.fighter_b);
+  const winner = m.winner==='a' ? a : (m.winner==='b' ? b : null);
+  let way = m.method || '';
+  if(m.round) way += (way?' · ':'') + 'R' + m.round + (m.time ? ' ' + m.time : '');
+  return { wc: m.weight_ko || m.weight || '', a: a, b: b, winner: winner, way: way };
+}
+function transformJsonEvent(je){
+  const titleSource = je.name_ko || je.name;
   return {
     id: slugify(je.name),
     code: eventCodeFromName(titleSource),
@@ -1070,24 +1071,60 @@ function transformJsonEvent(je){
     summary: je.summary_ko || '',
     keyPoints: [],
     prediction: null,
-    mainCard: mainCard,
-    prelims: []
+    mainCard: (je.main_card||[]).map(transformFight),
+    prelims: (je.prelims||[]).map(transformFight)
   };
 }
 
+/* 실 랭킹 JSON → 내부 RANKINGS shape */
+function transformDivision(d){
+  return {
+    wc: d.wc,
+    champ: d.champion ? slugify(d.champion.name) : null,
+    list: (d.ranked||[]).map(function(r){ return slugify(r.name); }),
+    desc: ''
+  };
+}
+
+async function loadJSON(path){
+  const res = await fetch(path, {cache:'no-cache'});
+  if(!res.ok) throw new Error('HTTP ' + res.status + ' ' + path);
+  return res.json();
+}
+
 async function loadRealData(){
+  // 1) 선수 먼저 — getFighter가 이벤트/랭킹 변환 시 이름을 찾음
   try {
-    const res = await fetch('./data/events.json', {cache: 'no-cache'});
-    if(!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    if(!data.events || !data.events.length) return;
-    EVENTS.length = 0;
-    data.events.forEach(function(je){ EVENTS.push(transformJsonEvent(je)); });
-    console.log('[fightoclock] real data:', EVENTS.length, 'events @', data.generated_at);
-    route();
-  } catch(err) {
-    console.warn('[fightoclock] real data load failed, keeping sample:', err.message);
-  }
+    const data = await loadJSON('./data/fighters.json');
+    if(data.fighters && data.fighters.length){
+      Object.keys(FIGHTERS).forEach(function(k){ delete FIGHTERS[k]; });
+      data.fighters.forEach(function(f){ FIGHTERS[f.id] = transformFighter(f); });
+      console.log('[fightoclock] fighters:', data.fighters.length);
+    }
+  } catch(err){ console.warn('[fightoclock] fighters load failed:', err.message); }
+
+  // 2) 랭킹
+  try {
+    const data = await loadJSON('./data/rankings.json');
+    if(data.divisions && data.divisions.length){
+      RANKINGS['체급별 랭킹'] = data.divisions.map(transformDivision);
+      console.log('[fightoclock] rankings:', data.divisions.length, 'divisions');
+    }
+  } catch(err){ console.warn('[fightoclock] rankings load failed:', err.message); }
+
+  // 3) 이벤트 (다가오는 + 지난 결과)
+  try {
+    const data = await loadJSON('./data/events.json');
+    const up = data.events || [];
+    const past = data.past_events || [];
+    if(up.length || past.length){
+      EVENTS.length = 0;
+      up.concat(past).forEach(function(je){ EVENTS.push(transformJsonEvent(je)); });
+      console.log('[fightoclock] events:', up.length, 'upcoming /', past.length, 'past @', data.generated_at);
+    }
+  } catch(err){ console.warn('[fightoclock] events load failed:', err.message); }
+
+  route();
 }
 
 window.addEventListener('hashchange', route);

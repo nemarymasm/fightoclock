@@ -20,6 +20,7 @@ import json
 import time
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -41,9 +42,57 @@ TODAY = datetime.now(KST).date()
 
 DATA_DIR = Path(__file__).parent / "data"
 EVENTS_FILE = DATA_DIR / "events.json"
+RANKINGS_FILE = DATA_DIR / "rankings.json"
+FIGHTERS_FILE = DATA_DIR / "fighters.json"
 TRANSLATIONS_FILE = DATA_DIR / "translations.json"
 
 WEEKDAY_KO = ["월", "화", "수", "목", "금", "토", "일"]
+
+# 체급 한국어 표기 (랭킹 체급 = 대진표 체급 공용)
+WEIGHT_KO = {
+    "Heavyweight": "헤비급",
+    "Light Heavyweight": "라이트헤비급",
+    "Middleweight": "미들급",
+    "Welterweight": "웰터급",
+    "Lightweight": "라이트급",
+    "Featherweight": "페더급",
+    "Bantamweight": "밴텀급",
+    "Flyweight": "플라이급",
+    "Women's Bantamweight": "여성 밴텀급",
+    "Women's Flyweight": "여성 플라이급",
+    "Women's Strawweight": "여성 스트로급",
+    "Women's Featherweight": "여성 페더급",
+    "Catchweight": "캐치웨이트",
+}
+
+# 국가 한국어 표기 (랭킹 국기 alt = 영문 국가명)
+COUNTRY_KO = {
+    "United States": "미국", "Brazil": "브라질", "Russia": "러시아",
+    "England": "잉글랜드", "United Kingdom": "영국", "Ireland": "아일랜드",
+    "France": "프랑스", "Georgia (country)": "조지아", "Georgia": "조지아",
+    "Dagestan": "러시아", "Australia": "호주", "New Zealand": "뉴질랜드",
+    "Canada": "캐나다", "Mexico": "멕시코", "Poland": "폴란드",
+    "Cameroon": "카메룬", "Nigeria": "나이지리아", "China": "중국",
+    "South Korea": "대한민국", "Kazakhstan": "카자흐스탄", "Kyrgyzstan": "키르기스스탄",
+    "Spain": "스페인", "Netherlands": "네덜란드", "Sweden": "스웨덴",
+    "Germany": "독일", "Ecuador": "에콰도르", "Chile": "칠레",
+    "Cuba": "쿠바", "Argentina": "아르헨티나", "Japan": "일본",
+    "South Africa": "남아공", "Suriname": "수리남", "Jamaica": "자메이카",
+    "Moldova": "몰도바", "Czech Republic": "체코", "Peru": "페루",
+    "Azerbaijan": "아제르바이잔", "Armenia": "아르메니아", "Turkey": "튀르키예",
+}
+
+
+def tr_weight(w):
+    if not w:
+        return w
+    return WEIGHT_KO.get(w.strip(), w.strip())
+
+
+def tr_country(c):
+    if not c:
+        return c
+    return COUNTRY_KO.get(c.strip(), c.strip())
 
 
 # ────────────────────────────────────────────────────────────────
@@ -150,6 +199,14 @@ def to_kst_human(date_iso):
         return None
 
 
+def slugify(s):
+    """프론트엔드 slugify와 동일 규칙 — 선수 id 생성 (링크 매칭용)."""
+    s = (s or "").lower().strip()
+    s = re.sub(r"[^a-z0-9가-힣]+", "-", s)
+    s = re.sub(r"^-+|-+$", "", s)
+    return s or "unknown"
+
+
 def clean_text(s):
     if not s:
         return ""
@@ -226,7 +283,9 @@ def fetch_upcoming_events():
             if link:
                 name = clean_text(link.get_text())
                 href = link.get("href", "")
-                wiki_url = "https://en.wikipedia.org" + href if href.startswith("/") else None
+                # 위키 링크는 '/wiki/X' 또는 '//en.wikipedia.org/wiki/X'(프로토콜 상대경로) 형태 —
+                # urljoin으로 두 경우 모두 안전하게 절대 URL로 변환 (도메인 중복 버그 방지)
+                wiki_url = urljoin("https://en.wikipedia.org/", href) if href else None
             else:
                 name = clean_text(name_cell.get_text())
                 wiki_url = None
@@ -285,14 +344,12 @@ def fetch_event_detail(event):
                 elif "attendance" in label:
                     event["attendance"] = value
 
-        # ── 메인 카드 파싱 (강화) ──
-        # 전략 1: "Main card" 라는 명시적 헤딩 찾기
-        # 전략 2: 모든 wikitable/toccolours 테이블 중 "weight class" 헤더가 있는 거 추출
-        # 결과를 합치고 첫 5개를 메인카드로 사용
-
-        main_card = parse_main_card_v2(soup)
-        if main_card:
-            event["main_card"] = main_card
+        # ── 대진표 파싱 (메인카드 + 프릴림 + 결과) ──
+        card = parse_fight_card(soup)
+        if card["main_card"]:
+            event["main_card"] = card["main_card"]
+        if card["prelims"]:
+            event["prelims"] = card["prelims"]
 
     except Exception as e:
         print(f"  ⚠️  '{event['name']}' 상세 정보 가져오기 실패: {e}")
@@ -300,80 +357,87 @@ def fetch_event_detail(event):
     return event
 
 
-def parse_main_card_v2(soup):
-    """이벤트 페이지에서 메인 카드 추출 (강화 버전)."""
-    # 1. 전체 페이지에서 "fight card" 비슷한 표 후보 모으기
-    candidate_tables = []
+def parse_fight_card(soup):
+    """이벤트 페이지의 toccolours 대진표에서 경기 추출.
 
-    # 1-a. "Main card" 헤딩 다음 테이블 우선
-    for h in soup.find_all(["h2", "h3", "h4"]):
-        text = h.get_text().lower()
-        if "main card" in text:
-            t = h.find_next("table")
-            if t:
-                candidate_tables.append(("main_card_heading", t))
-            break  # 첫 'main card' 헤딩만 사용
+    위키 대진표 구조:
+      r0: 'Main card (...)' / 'Preliminary card (...)'  ← 셀 1개, 섹션 구분
+      r1: 'Weight class | | | | Method | Round | Time | Notes'  ← 컬럼 헤더
+      r2+: '체급 | 선수A | vs./def. | 선수B | 방식 | 라운드 | 시간 | 비고'
 
-    # 1-b. "Main card" 못 찾으면 weight class 컬럼 있는 모든 wikitable
-    if not candidate_tables:
-        for table in soup.find_all("table"):
-            classes = " ".join(table.get("class") or [])
-            if "wikitable" not in classes and "toccolours" not in classes:
-                continue
-            rows = table.find_all("tr")
-            if not rows:
-                continue
-            header_text = " ".join(c.get_text().lower() for c in rows[0].find_all(["th", "td"]))
-            if "weight class" in header_text or "weight" in header_text:
-                candidate_tables.append(("weight_header", table))
+    반환: {"main_card": [...], "prelims": [...]}
+      각 경기: weight, fighter_a, fighter_b, winner('a'|'b'|None), method, round, time
+      · 구분자가 'def.' 이면 종료된 경기(선수A 승), 'vs.' 이면 예정.
+    """
+    # 'Weight class' 헤더 텍스트가 들어있는 toccolours 대진표 찾기
+    table = None
+    for t in soup.find_all("table"):
+        classes = " ".join(t.get("class") or [])
+        if "toccolours" not in classes and "wikitable" not in classes:
+            continue
+        if "weight class" in t.get_text().lower():
+            table = t
+            break
+    if not table:
+        return {"main_card": [], "prelims": []}
 
-    # 2. 후보 테이블에서 매치 추출
-    fights = []
-    for source, table in candidate_tables:
-        rows = table.find_all("tr")
-        if len(rows) < 2:
+    main_card, prelims = [], []
+    section = "main"  # main | prelim
+
+    for row in table.find_all("tr"):
+        cells = row.find_all(["td", "th"])
+
+        # 섹션 구분 행 (셀 1개 + colspan)
+        if len(cells) == 1:
+            label = clean_text(cells[0].get_text()).lower()
+            if "main card" in label:
+                section = "main"
+            elif "prelim" in label or "preliminary" in label:
+                section = "prelim"
             continue
 
-        header_cells = rows[0].find_all(["th", "td"])
-        headers_text = [clean_text(c.get_text()).lower() for c in header_cells]
+        if len(cells) < 4:
+            continue
 
-        # 컬럼 위치 자동 감지
-        wc_idx = next((i for i, h in enumerate(headers_text) if "weight" in h), 0)
-        # 보통 weight 다음이 fighter A, 그 다음 vs/def, 그 다음 fighter B
-        fa_idx = wc_idx + 1
-        vs_idx = wc_idx + 2
-        fb_idx = wc_idx + 3
+        weight = clean_text(cells[0].get_text())
+        # 컬럼 헤더 행 건너뛰기
+        if weight.lower() in ("weight class", "weight", ""):
+            continue
 
-        for row in rows[1:]:
-            cells = row.find_all(["td", "th"])
-            if len(cells) <= fb_idx:
-                continue
-            try:
-                weight = clean_text(cells[wc_idx].get_text())
-                fa_raw = clean_fighter_name(cells[fa_idx].get_text())
-                fb_raw = clean_fighter_name(cells[fb_idx].get_text())
-                vs_text = clean_text(cells[vs_idx].get_text()).lower() if vs_idx < len(cells) else ""
+        fa = clean_fighter_name(cells[1].get_text())
+        sep = clean_text(cells[2].get_text()).lower()
+        fb = clean_fighter_name(cells[3].get_text())
+        if not fa or not fb:
+            continue
+        if fa.lower() in ("vs.", "vs", "def.", "def", "tba"):
+            continue
+        if fb.lower() in ("vs.", "vs", "def.", "def", "tba"):
+            continue
 
-                if not fa_raw or not fb_raw:
-                    continue
-                if fa_raw.lower() in ("vs.", "vs", "def.", "def", "tba"):
-                    continue
-                if fb_raw.lower() in ("vs.", "vs", "def.", "def", "tba"):
-                    continue
+        method = clean_text(cells[4].get_text()) if len(cells) > 4 else ""
+        rnd = clean_text(cells[5].get_text()) if len(cells) > 5 else ""
+        tm = clean_text(cells[6].get_text()) if len(cells) > 6 else ""
 
-                fights.append({
-                    "weight": weight,
-                    "fighter_a": fa_raw,
-                    "fighter_b": fb_raw,
-                    "vs_text": vs_text,
-                })
-            except Exception:
-                continue
+        # 'def.' → 종료(선수A 승). 'vs.' → 예정.
+        winner = "a" if sep.startswith("def") else None
 
-        if fights and source == "main_card_heading":
-            break
+        fight = {
+            "weight": weight,
+            "fighter_a": fa,
+            "fighter_b": fb,
+            "winner": winner,
+            "method": method,
+            "round": rnd,
+            "time": tm,
+        }
+        (main_card if section == "main" else prelims).append(fight)
 
-    return fights[:5]
+    # 위키가 메인/프릴림을 안 나눈 경우(구분선 없이 전부 main): 앞 5경기=메인, 나머지=프릴림
+    if not prelims and len(main_card) > 6:
+        prelims = main_card[5:]
+        main_card = main_card[:5]
+
+    return {"main_card": main_card, "prelims": prelims}
 
 
 def summarize_korean(client, event):
@@ -419,6 +483,282 @@ def summarize_korean(client, event):
         return None
 
 
+def apply_translations(ev):
+    """이벤트 하나에 한국어 표기 적용 (제목/베뉴/위치/선수/날짜)."""
+    ev["name_ko"] = tr_event_title(ev["name"])
+    ev["venue_ko"] = tr_venue(ev.get("venue", ""))
+    ev["location_ko"] = tr_location(ev.get("location", ""))
+    for fight in ev.get("main_card", []) + ev.get("prelims", []):
+        fight["fighter_a_ko"] = tr_fighter(fight["fighter_a"])
+        fight["fighter_b_ko"] = tr_fighter(fight["fighter_b"])
+        fight["weight_ko"] = tr_weight(fight.get("weight", ""))
+    ev["date_kst_human"] = to_kst_human(ev["date_iso"])
+    return ev
+
+
+def fetch_rankings():
+    """UFC rankings 페이지의 Meta rankings(남 8체급 + 여 3체급) 수집."""
+    print("\n→ Wikipedia: UFC 랭킹 가져오는 중...")
+    html = http_get(WIKI + "UFC_rankings")
+    soup = BeautifulSoup(html, "html.parser")
+
+    divisions = []
+    for meta_key in ["men's meta", "women's meta"]:
+        h2 = None
+        for x in soup.find_all("h2"):
+            if meta_key in x.get_text().lower():
+                h2 = x
+                break
+        if not h2:
+            continue
+
+        # 이 h2 다음부터 다음 h2 전까지의 h3(체급) 순회
+        for node in h2.find_all_next(["h2", "h3"]):
+            if node.name == "h2":
+                break
+            wc_en = clean_text(node.get_text())
+            if wc_en not in WEIGHT_KO:
+                continue  # P4P 등 체급 아닌 건 건너뜀
+
+            table = node.find_next("table")
+            if not table:
+                continue
+            rows = table.find_all("tr")
+            if len(rows) < 2:
+                continue
+
+            headers_text = [clean_text(c.get_text()).lower() for c in rows[0].find_all(["th", "td"])]
+
+            def col(*keys):
+                for i, h in enumerate(headers_text):
+                    for k in keys:
+                        if k in h:
+                            return i
+                return -1
+
+            rank_i = col("rank")
+            fighter_i = col("fighter")
+            record_i = col("record")
+            iso_i = col("iso")
+            if fighter_i < 0:
+                continue
+
+            champion = None
+            ranked = []
+            for row in rows[1:]:
+                cells = row.find_all(["td", "th"])
+                if len(cells) <= fighter_i:
+                    continue
+                rank_raw = clean_text(cells[rank_i].get_text()) if 0 <= rank_i < len(cells) else ""
+                name = clean_text(cells[fighter_i].get_text())
+                if not name or name.lower() in ("fighter", "opponent"):
+                    continue
+                record = clean_text(cells[record_i].get_text()) if 0 <= record_i < len(cells) else ""
+                country = ""
+                if 0 <= iso_i < len(cells):
+                    img = cells[iso_i].find("img")
+                    if img:
+                        country = img.get("alt", "")
+
+                entry = {
+                    "name": name,
+                    "name_ko": tr_fighter(name),
+                    "record": record,
+                    "country": country,
+                    "country_ko": tr_country(country),
+                }
+                if rank_raw.upper() in ("C", "CHAMPION"):
+                    if not champion:
+                        champion = entry
+                elif rank_raw.upper() == "IC":
+                    entry["interim"] = True
+                    ranked.append({**entry, "rank": "잠정챔프"})
+                elif rank_raw.isdigit():
+                    ranked.append({**entry, "rank": int(rank_raw)})
+
+            divisions.append({
+                "wc": WEIGHT_KO[wc_en],
+                "wc_en": wc_en,
+                "champion": champion,
+                "ranked": ranked,
+            })
+            print(f"  ✓ {WEIGHT_KO[wc_en]}: 챔프 {'O' if champion else 'X'} / 랭커 {len(ranked)}명")
+
+    return divisions
+
+
+def fetch_recent_past_events(limit=6):
+    """List of UFC events 의 'Past events' 표에서 최근 종료 이벤트 목록.
+    표는 최신이 맨 위(내림차순)라 앞에서부터 limit 개만 취함."""
+    print("\n→ Wikipedia: 최근 종료 이벤트(결과) 가져오는 중...")
+    html = http_get(WIKI + "List_of_UFC_events")
+    soup = BeautifulSoup(html, "html.parser")
+
+    heading = None
+    for h in soup.find_all(["h2", "h3"]):
+        if "past events" in h.get_text().lower():
+            heading = h
+            break
+    if not heading:
+        print("  ⚠️  Past events 섹션 없음")
+        return []
+
+    table = heading.find_next("table")
+    if not table:
+        return []
+
+    rows = table.find_all("tr")
+    if len(rows) < 2:
+        return []
+
+    header_cells = rows[0].find_all(["th", "td"])
+    headers_text = [clean_text(c.get_text()).lower() for c in header_cells]
+
+    def find_col(*keys):
+        for i, h in enumerate(headers_text):
+            for k in keys:
+                if k in h:
+                    return i
+        return -1
+
+    name_col = find_col("event")
+    date_col = find_col("date")
+    venue_col = find_col("venue")
+    location_col = find_col("location")
+    if name_col < 0:
+        name_col = 1
+
+    events = []
+    for row in rows[1:]:
+        if len(events) >= limit:
+            break
+        cells = row.find_all(["td", "th"])
+        if len(cells) < 3:
+            continue
+        try:
+            name_cell = cells[name_col] if name_col < len(cells) else cells[1]
+            link = name_cell.find("a")
+            if link:
+                name = clean_text(link.get_text())
+                href = link.get("href", "")
+                wiki_url = urljoin("https://en.wikipedia.org/", href) if href else None
+            else:
+                name = clean_text(name_cell.get_text())
+                wiki_url = None
+            if not name:
+                continue
+
+            date_cell = cells[date_col] if 0 <= date_col < len(cells) else None
+            date_obj = parse_wiki_date(date_cell.get_text()) if date_cell else None
+            if not date_obj or date_obj >= TODAY:
+                continue
+
+            venue = clean_text(cells[venue_col].get_text()) if 0 <= venue_col < len(cells) else ""
+            location = clean_text(cells[location_col].get_text()) if 0 <= location_col < len(cells) else ""
+
+            events.append({
+                "name": name,
+                "wiki_url": wiki_url,
+                "date_iso": date_obj.isoformat(),
+                "venue": venue,
+                "location": location,
+            })
+        except Exception as e:
+            print(f"  ⚠️  행 파싱 에러: {e}")
+
+    print(f"  ✓ 최근 종료 {len(events)}개")
+    return events
+
+
+def build_fighters(upcoming, past, divisions):
+    """랭킹 + 대진표 + 과거결과를 교차연결해 선수 디렉터리 구성 (추가 요청 없음)."""
+    print("\n→ 선수 디렉터리 구성 중 (수집 데이터 교차연결)...")
+    fighters = {}
+
+    def ensure(name, division_ko=""):
+        if not name:
+            return None
+        fid = slugify(name)
+        if fid not in fighters:
+            fighters[fid] = {
+                "id": fid, "name": name, "name_ko": tr_fighter(name),
+                "record": "", "country": "", "country_ko": "",
+                "division": division_ko, "rank": "랭킹 외",
+                "recent": [], "next": None,
+            }
+        elif division_ko and not fighters[fid]["division"]:
+            fighters[fid]["division"] = division_ko
+        return fid
+
+    # 1. 랭킹 (전적/국적/랭크의 1차 출처)
+    for d in divisions:
+        if d.get("champion"):
+            fid = ensure(d["champion"]["name"], d["wc"])
+            f = fighters[fid]
+            f["rank"] = "챔피언"
+            f["record"] = d["champion"]["record"]
+            f["country"] = d["champion"]["country"]
+            f["country_ko"] = d["champion"]["country_ko"]
+            f["division"] = d["wc"]
+        for r in d.get("ranked", []):
+            fid = ensure(r["name"], d["wc"])
+            f = fighters[fid]
+            if f["rank"] == "랭킹 외":
+                f["rank"] = "잠정챔프" if r.get("interim") else ("#" + str(r["rank"]))
+            if not f["record"]:
+                f["record"] = r["record"]
+            if not f["country"]:
+                f["country"] = r["country"]
+                f["country_ko"] = r["country_ko"]
+            f["division"] = d["wc"]
+
+    # 2. 대진표에 등장하는 선수 전원 등록
+    for ev in upcoming + past:
+        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+            wc = tr_weight(fight.get("weight", ""))
+            ensure(fight["fighter_a"], wc)
+            ensure(fight["fighter_b"], wc)
+
+    # 3. 최근 전적 (과거 이벤트, 최신순으로 이미 정렬됨)
+    for ev in past:
+        ename = ev.get("name_ko") or ev.get("name")
+        edate = ev.get("date_iso")
+        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+            a, b = slugify(fight["fighter_a"]), slugify(fight["fighter_b"])
+            w = fight.get("winner")
+            method = fight.get("method", "")
+            if a in fighters:
+                fighters[a]["recent"].append({
+                    "opp": fight["fighter_b"], "opp_ko": fight.get("fighter_b_ko"),
+                    "result": "win" if w == "a" else ("loss" if w == "b" else "-"),
+                    "method": method, "event": ename, "date": edate,
+                })
+            if b in fighters:
+                fighters[b]["recent"].append({
+                    "opp": fight["fighter_a"], "opp_ko": fight.get("fighter_a_ko"),
+                    "result": "win" if w == "b" else ("loss" if w == "a" else "-"),
+                    "method": method, "event": ename, "date": edate,
+                })
+
+    # 4. 다음 경기 (다가오는 이벤트)
+    for ev in upcoming:
+        ename = ev.get("name_ko") or ev.get("name")
+        edate = ev.get("date_iso")
+        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+            a, b = slugify(fight["fighter_a"]), slugify(fight["fighter_b"])
+            if a in fighters and not fighters[a]["next"]:
+                fighters[a]["next"] = {"opp": fight["fighter_b"], "opp_ko": fight.get("fighter_b_ko"), "event": ename, "date": edate}
+            if b in fighters and not fighters[b]["next"]:
+                fighters[b]["next"] = {"opp": fight["fighter_a"], "opp_ko": fight.get("fighter_a_ko"), "event": ename, "date": edate}
+
+    for f in fighters.values():
+        f["recent"] = f["recent"][:5]
+
+    result = list(fighters.values())
+    print(f"  ✓ 선수 {len(result)}명 (랭커 + 카드 등장 선수)")
+    return result
+
+
 def main():
     print("=== fightoclock 데이터 수집 시작:", datetime.now(KST).isoformat(timespec="seconds"), "===")
     DATA_DIR.mkdir(exist_ok=True)
@@ -452,15 +792,22 @@ def main():
                 print("  [" + str(i+1) + "/" + str(len(events)) + "] OK")
             time.sleep(1)
 
+    # ── 최근 종료 이벤트(결과) 수집 ──
+    past = fetch_recent_past_events(limit=6)
+    if past:
+        print("\n-> Fetching past event results...")
+        for i, ev in enumerate(past):
+            print("  [" + str(i+1) + "/" + str(len(past)) + "]", ev["name"])
+            past[i] = fetch_event_detail(ev)
+            mc = len(past[i].get("main_card", []))
+            wins = sum(1 for f in past[i].get("main_card", []) if f.get("winner"))
+            print("      main card:", mc, "fights /", wins, "승자 확정")
+
     print("\n-> Applying translations (fighter/venue/location)...")
     for ev in events:
-        ev["name_ko"] = tr_event_title(ev["name"])
-        ev["venue_ko"] = tr_venue(ev["venue"])
-        ev["location_ko"] = tr_location(ev["location"])
-        for fight in ev.get("main_card", []):
-            fight["fighter_a_ko"] = tr_fighter(fight["fighter_a"])
-            fight["fighter_b_ko"] = tr_fighter(fight["fighter_b"])
-        ev["date_kst_human"] = to_kst_human(ev["date_iso"])
+        apply_translations(ev)
+    for ev in past:
+        apply_translations(ev)
 
     output = {
         "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
@@ -468,9 +815,42 @@ def main():
         "translations_applied": True,
         "event_count": len(events),
         "events": events,
+        "past_count": len(past),
+        "past_events": past,
     }
     EVENTS_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("\n=== Saved:", EVENTS_FILE.name, "(" + str(len(events)) + " events) ===")
+    print("\n=== Saved:", EVENTS_FILE.name, "(upcoming " + str(len(events)) + " / past " + str(len(past)) + ") ===")
+
+    # ── 랭킹 수집 ──
+    divisions = []
+    try:
+        divisions = fetch_rankings()
+        if divisions:
+            rankings_out = {
+                "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
+                "source": "Wikipedia: UFC rankings (Meta)",
+                "division_count": len(divisions),
+                "divisions": divisions,
+            }
+            RANKINGS_FILE.write_text(json.dumps(rankings_out, ensure_ascii=False, indent=2), encoding="utf-8")
+            print("=== Saved:", RANKINGS_FILE.name, "(" + str(len(divisions)) + " divisions) ===")
+    except Exception as e:
+        print("WARN rankings 수집 실패:", e)
+
+    # ── 선수 디렉터리 구성 (events + rankings 교차연결) ──
+    try:
+        fighters = build_fighters(events, past, divisions)
+        if fighters:
+            fighters_out = {
+                "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
+                "source": "Wikipedia: 랭킹 + 대진표 교차연결",
+                "fighter_count": len(fighters),
+                "fighters": fighters,
+            }
+            FIGHTERS_FILE.write_text(json.dumps(fighters_out, ensure_ascii=False, indent=2), encoding="utf-8")
+            print("=== Saved:", FIGHTERS_FILE.name, "(" + str(len(fighters)) + " fighters) ===")
+    except Exception as e:
+        print("WARN fighters 구성 실패:", e)
 
 
 if __name__ == "__main__":

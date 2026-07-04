@@ -1,0 +1,1471 @@
+{
+  "generated_at": "2026-07-04T16:42:29+09:00",
+  "source": "Wikipedia: UFC rankings (Meta)",
+  "division_count": 11,
+  "divisions": [
+    {
+      "wc": "헤비급",
+      "wc_en": "Heavyweight",
+      "champion": {
+        "name": "Tom Aspinall",
+        "name_ko": "톰 아스피날",
+        "record": "15–3(1 NC)",
+        "country": "England",
+        "country_ko": "잉글랜드"
+      },
+      "ranked": [
+        {
+          "name": "Ciryl Gane",
+          "name_ko": "시릴 가네",
+          "record": "14–2(1 NC)",
+          "country": "France",
+          "country_ko": "프랑스",
+          "interim": true,
+          "rank": "잠정챔프"
+        },
+        {
+          "name": "Alexander Volkov",
+          "name_ko": "알렉산더 볼코프",
+          "record": "40–11",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 2
+        },
+        {
+          "name": "Sergei Pavlovich",
+          "name_ko": "세르게이 파블로비치",
+          "record": "21–3",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 3
+        },
+        {
+          "name": "Alex Pereira",
+          "name_ko": "알렉스 페레이라",
+          "record": "13–4",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 4
+        },
+        {
+          "name": "Josh Hokit",
+          "name_ko": "Josh Hokit",
+          "record": "10–0",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 5
+        },
+        {
+          "name": "Waldo Cortes-Acosta",
+          "name_ko": "Waldo Cortes-Acosta",
+          "record": "17–3",
+          "country": "Dominican Republic",
+          "country_ko": "Dominican Republic",
+          "rank": 6
+        },
+        {
+          "name": "Rizvan Kuniev",
+          "name_ko": "Rizvan Kuniev",
+          "record": "13–3–1(1 NC)",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 7
+        },
+        {
+          "name": "Curtis Blaydes",
+          "name_ko": "커티스 블레이즈",
+          "record": "19–6(1 NC)",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 8
+        },
+        {
+          "name": "Serghei Spivac",
+          "name_ko": "Serghei Spivac",
+          "record": "18–6",
+          "country": "Moldova",
+          "country_ko": "몰도바",
+          "rank": 9
+        },
+        {
+          "name": "Vitor Petrino",
+          "name_ko": "Vitor Petrino",
+          "record": "14–2",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 10
+        },
+        {
+          "name": "Valter Walker",
+          "name_ko": "Valter Walker",
+          "record": "15–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 11
+        },
+        {
+          "name": "Brando Peričić",
+          "name_ko": "Brando Peričić",
+          "record": "7–1",
+          "country": "Australia",
+          "country_ko": "호주",
+          "rank": 12
+        },
+        {
+          "name": "Mário Pinto",
+          "name_ko": "Mário Pinto",
+          "record": "12–0",
+          "country": "Portugal",
+          "country_ko": "Portugal",
+          "rank": 13
+        },
+        {
+          "name": "Mick Parkin",
+          "name_ko": "Mick Parkin",
+          "record": "10–1",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 14
+        },
+        {
+          "name": "Ryan Spann",
+          "name_ko": "Ryan Spann",
+          "record": "24–11",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "라이트헤비급",
+      "wc_en": "Light Heavyweight",
+      "champion": {
+        "name": "Carlos Ulberg",
+        "name_ko": "카를로스 울버그",
+        "record": "14–1",
+        "country": "New Zealand",
+        "country_ko": "뉴질랜드"
+      },
+      "ranked": [
+        {
+          "name": "Alex Pereira",
+          "name_ko": "알렉스 페레이라",
+          "record": "13–4",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 1
+        },
+        {
+          "name": "Magomed Ankalaev",
+          "name_ko": "마고메드 안칼라예프",
+          "record": "20–2–1(1 NC)",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 2
+        },
+        {
+          "name": "Jiří Procházka",
+          "name_ko": "이리 프로하즈카",
+          "record": "32–6–1",
+          "country": "Czech Republic",
+          "country_ko": "체코",
+          "rank": 3
+        },
+        {
+          "name": "Paulo Costa",
+          "name_ko": "파울로 코스타",
+          "record": "16–4",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 4
+        },
+        {
+          "name": "Jamahal Hill",
+          "name_ko": "자말 힐",
+          "record": "12–4(1 NC)",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 5
+        },
+        {
+          "name": "Khalil Rountree Jr.",
+          "name_ko": "카릴 라운트리 주니어",
+          "record": "14–7(1 NC)",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 6
+        },
+        {
+          "name": "Dominick Reyes",
+          "name_ko": "도미닉 레예스",
+          "record": "16–5",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 7
+        },
+        {
+          "name": "Volkan Oezdemir",
+          "name_ko": "Volkan Oezdemir",
+          "record": "21–8",
+          "country": "Switzerland",
+          "country_ko": "Switzerland",
+          "rank": 8
+        },
+        {
+          "name": "Azamat Murzakanov",
+          "name_ko": "Azamat Murzakanov",
+          "record": "16–1",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 9
+        },
+        {
+          "name": "Bogdan Guskov",
+          "name_ko": "Bogdan Guskov",
+          "record": "18–3–1",
+          "country": "Uzbekistan",
+          "country_ko": "Uzbekistan",
+          "rank": 10
+        },
+        {
+          "name": "Dustin Jacoby",
+          "name_ko": "Dustin Jacoby",
+          "record": "22–8–1",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 11
+        },
+        {
+          "name": "Navajo Stirling",
+          "name_ko": "Navajo Stirling",
+          "record": "10–0",
+          "country": "New Zealand",
+          "country_ko": "뉴질랜드",
+          "rank": 12
+        },
+        {
+          "name": "Alonzo Menifield",
+          "name_ko": "Alonzo Menifield",
+          "record": "18–6–1",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 13
+        },
+        {
+          "name": "Johnny Walker",
+          "name_ko": "Johnny Walker",
+          "record": "22–10(1 NC)",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 14
+        },
+        {
+          "name": "Jan Błachowicz",
+          "name_ko": "얀 블라호비치",
+          "record": "29–11–2",
+          "country": "Poland",
+          "country_ko": "폴란드",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "미들급",
+      "wc_en": "Middleweight",
+      "champion": {
+        "name": "Sean Strickland",
+        "name_ko": "션 스트릭랜드",
+        "record": "31–7",
+        "country": "United States",
+        "country_ko": "미국"
+      },
+      "ranked": [
+        {
+          "name": "Khamzat Chimaev",
+          "name_ko": "카마줏 치마예프",
+          "record": "15–1",
+          "country": "United Arab Emirates",
+          "country_ko": "United Arab Emirates",
+          "rank": 1
+        },
+        {
+          "name": "Dricus du Plessis",
+          "name_ko": "드리쿠스 두 플레시",
+          "record": "23–3",
+          "country": "South Africa",
+          "country_ko": "남아공",
+          "rank": 2
+        },
+        {
+          "name": "Nassourdine Imavov",
+          "name_ko": "나수르딘 이마보프",
+          "record": "17–4(1 NC)",
+          "country": "France",
+          "country_ko": "프랑스",
+          "rank": 3
+        },
+        {
+          "name": "Joe Pyfer",
+          "name_ko": "Joe Pyfer",
+          "record": "16–3",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 4
+        },
+        {
+          "name": "Brendan Allen",
+          "name_ko": "브렌든 앨런",
+          "record": "27–7",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 5
+        },
+        {
+          "name": "Caio Borralho",
+          "name_ko": "카이오 보랄료",
+          "record": "18–2(1 NC)",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 6
+        },
+        {
+          "name": "Anthony Hernandez",
+          "name_ko": "안소니 에르난데스",
+          "record": "15–3(1 NC)",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 7
+        },
+        {
+          "name": "Israel Adesanya",
+          "name_ko": "이스라엘 아데산야",
+          "record": "24–6",
+          "country": "Nigeria",
+          "country_ko": "나이지리아",
+          "rank": 8
+        },
+        {
+          "name": "Gregory Rodrigues",
+          "name_ko": "Gregory Rodrigues",
+          "record": "19–6",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 9
+        },
+        {
+          "name": "Ikram Aliskerov",
+          "name_ko": "Ikram Aliskerov",
+          "record": "18–2",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 10
+        },
+        {
+          "name": "Jared Cannonier",
+          "name_ko": "자레드 캐노니어",
+          "record": "18–9",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 11
+        },
+        {
+          "name": "Christian Leroy Duncan",
+          "name_ko": "Christian Leroy Duncan",
+          "record": "14–2",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 12
+        },
+        {
+          "name": "Bo Nickal",
+          "name_ko": "보 니컬",
+          "record": "9–1",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 13
+        },
+        {
+          "name": "Paulo Costa",
+          "name_ko": "파울로 코스타",
+          "record": "16–4",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 14
+        },
+        {
+          "name": "Abusupiyan Magomedov",
+          "name_ko": "Abusupiyan Magomedov",
+          "record": "29–7–1",
+          "country": "Germany",
+          "country_ko": "독일",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "웰터급",
+      "wc_en": "Welterweight",
+      "champion": {
+        "name": "Islam Makhachev",
+        "name_ko": "이슬람 마카체프",
+        "record": "28–1",
+        "country": "Russia",
+        "country_ko": "러시아"
+      },
+      "ranked": [
+        {
+          "name": "Carlos Prates",
+          "name_ko": "카를로스 프라치",
+          "record": "24–7",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 1
+        },
+        {
+          "name": "Ian Machado Garry",
+          "name_ko": "Ian Machado Garry",
+          "record": "17–1",
+          "country": "Republic of Ireland",
+          "country_ko": "Republic of Ireland",
+          "rank": 2
+        },
+        {
+          "name": "Michael Morales",
+          "name_ko": "Michael Morales",
+          "record": "19–0",
+          "country": "Ecuador",
+          "country_ko": "에콰도르",
+          "rank": 3
+        },
+        {
+          "name": "Jack Della Maddalena",
+          "name_ko": "잭 델라 마달레나",
+          "record": "18–4",
+          "country": "Australia",
+          "country_ko": "호주",
+          "rank": 4
+        },
+        {
+          "name": "Sean Brady",
+          "name_ko": "션 브래디",
+          "record": "19–2",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 5
+        },
+        {
+          "name": "Gabriel Bonfim",
+          "name_ko": "Gabriel Bonfim",
+          "record": "20–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 6
+        },
+        {
+          "name": "Belal Muhammad",
+          "name_ko": "벨랄 무하마드",
+          "record": "24–6(1 NC)",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 7
+        },
+        {
+          "name": "Leon Edwards",
+          "name_ko": "리온 에드워즈",
+          "record": "22–6(1 NC)",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 8
+        },
+        {
+          "name": "Joaquin Buckley",
+          "name_ko": "호아킨 버클리",
+          "record": "21–8",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 9
+        },
+        {
+          "name": "Kamaru Usman",
+          "name_ko": "카마루 우스만",
+          "record": "21–4",
+          "country": "Nigeria",
+          "country_ko": "나이지리아",
+          "rank": 10
+        },
+        {
+          "name": "Mike Malott",
+          "name_ko": "Mike Malott",
+          "record": "14–2–1",
+          "country": "Canada",
+          "country_ko": "캐나다",
+          "rank": 11
+        },
+        {
+          "name": "Michael Page",
+          "name_ko": "마이클 페이지",
+          "record": "25–3",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 12
+        },
+        {
+          "name": "Daniel Rodriguez",
+          "name_ko": "Daniel Rodriguez",
+          "record": "20–5",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 13
+        },
+        {
+          "name": "Uroš Medić",
+          "name_ko": "Uroš Medić",
+          "record": "13–3",
+          "country": "Serbia",
+          "country_ko": "Serbia",
+          "rank": 14
+        },
+        {
+          "name": "Yaroslav Amosov",
+          "name_ko": "Yaroslav Amosov",
+          "record": "30–1",
+          "country": "Ukraine",
+          "country_ko": "Ukraine",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "라이트급",
+      "wc_en": "Lightweight",
+      "champion": {
+        "name": "Justin Gaethje",
+        "name_ko": "저스틴 게이치",
+        "record": "28–5",
+        "country": "United States",
+        "country_ko": "미국"
+      },
+      "ranked": [
+        {
+          "name": "Ilia Topuria",
+          "name_ko": "일리아 토푸리아",
+          "record": "17–1",
+          "country": "Georgia (country)",
+          "country_ko": "조지아",
+          "rank": 1
+        },
+        {
+          "name": "Arman Tsarukyan",
+          "name_ko": "아르만 차루키안",
+          "record": "23–3",
+          "country": "Armenia",
+          "country_ko": "아르메니아",
+          "rank": 2
+        },
+        {
+          "name": "Charles Oliveira",
+          "name_ko": "찰스 올리베이라",
+          "record": "37–11(1 NC)",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 3
+        },
+        {
+          "name": "Max Holloway",
+          "name_ko": "맥스 할로웨이",
+          "record": "27–9",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 4
+        },
+        {
+          "name": "Benoît Saint Denis",
+          "name_ko": "Benoît Saint Denis",
+          "record": "17–3(1 NC)",
+          "country": "France",
+          "country_ko": "프랑스",
+          "rank": 5
+        },
+        {
+          "name": "Mateusz Gamrot",
+          "name_ko": "마테우시 감로트",
+          "record": "26–4(1 NC)",
+          "country": "Poland",
+          "country_ko": "폴란드",
+          "rank": 6
+        },
+        {
+          "name": "Renato Moicano",
+          "name_ko": "헤나토 모이카노",
+          "record": "21–7–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 7
+        },
+        {
+          "name": "Quillan Salkilld",
+          "name_ko": "Quillan Salkilld",
+          "record": "12–1",
+          "country": "Australia",
+          "country_ko": "호주",
+          "rank": 8
+        },
+        {
+          "name": "Paddy Pimblett",
+          "name_ko": "패디 핌블렛",
+          "record": "23–4",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 9
+        },
+        {
+          "name": "Maurício Ruffy",
+          "name_ko": "Maurício Ruffy",
+          "record": "14–2",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 10
+        },
+        {
+          "name": "Dan Hooker",
+          "name_ko": "Dan Hooker",
+          "record": "24–14",
+          "country": "New Zealand",
+          "country_ko": "뉴질랜드",
+          "rank": 11
+        },
+        {
+          "name": "Tom Nolan",
+          "name_ko": "Tom Nolan",
+          "record": "11–1",
+          "country": "Australia",
+          "country_ko": "호주",
+          "rank": 12
+        },
+        {
+          "name": "Rafael Fiziev",
+          "name_ko": "라파엘 피지에프",
+          "record": "14–5",
+          "country": "Azerbaijan",
+          "country_ko": "아제르바이잔",
+          "rank": 13
+        },
+        {
+          "name": "Grant Dawson",
+          "name_ko": "Grant Dawson",
+          "record": "24–3–1",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 14
+        },
+        {
+          "name": "Rafa García",
+          "name_ko": "Rafa García",
+          "record": "18–4",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "페더급",
+      "wc_en": "Featherweight",
+      "champion": {
+        "name": "Alexander Volkanovski",
+        "name_ko": "알렉산더 볼카노프스키",
+        "record": "28–4",
+        "country": "Australia",
+        "country_ko": "호주"
+      },
+      "ranked": [
+        {
+          "name": "Movsar Evloev",
+          "name_ko": "모브사르 에블로예프",
+          "record": "20–0",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 1
+        },
+        {
+          "name": "Diego Lopes",
+          "name_ko": "디에고 로페스",
+          "record": "28–8",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 2
+        },
+        {
+          "name": "Lerone Murphy",
+          "name_ko": "르론 머피",
+          "record": "17–1–1",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 3
+        },
+        {
+          "name": "Aljamain Sterling",
+          "name_ko": "Aljamain Sterling",
+          "record": "26–5",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 4
+        },
+        {
+          "name": "Arnold Allen",
+          "name_ko": "Arnold Allen",
+          "record": "21–4",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 5
+        },
+        {
+          "name": "Jean Silva",
+          "name_ko": "Jean Silva",
+          "record": "17–3",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 6
+        },
+        {
+          "name": "Pat Sabatini",
+          "name_ko": "Pat Sabatini",
+          "record": "22–5",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 7
+        },
+        {
+          "name": "Youssef Zalal",
+          "name_ko": "Youssef Zalal",
+          "record": "18–6–1",
+          "country": "Morocco",
+          "country_ko": "Morocco",
+          "rank": 8
+        },
+        {
+          "name": "Nathaniel Wood",
+          "name_ko": "Nathaniel Wood",
+          "record": "23–6",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 9
+        },
+        {
+          "name": "Kevin Vallejos",
+          "name_ko": "Kevin Vallejos",
+          "record": "18–1",
+          "country": "Argentina",
+          "country_ko": "아르헨티나",
+          "rank": 10
+        },
+        {
+          "name": "Melquizael Costa",
+          "name_ko": "Melquizael Costa",
+          "record": "26–8",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 11
+        },
+        {
+          "name": "Steve Garcia",
+          "name_ko": "Steve Garcia",
+          "record": "19–6",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 12
+        },
+        {
+          "name": "Aaron Pico",
+          "name_ko": "에런 피코",
+          "record": "14–5",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 13
+        },
+        {
+          "name": "Joanderson Brito",
+          "name_ko": "Joanderson Brito",
+          "record": "19–5–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 14
+        },
+        {
+          "name": "Jose Miguel Delgado",
+          "name_ko": "Jose Miguel Delgado",
+          "record": "11–2",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "밴텀급",
+      "wc_en": "Bantamweight",
+      "champion": {
+        "name": "Petr Yan",
+        "name_ko": "페트르 얀",
+        "record": "20–5",
+        "country": "Russia",
+        "country_ko": "러시아"
+      },
+      "ranked": [
+        {
+          "name": "Merab Dvalishvili",
+          "name_ko": "메랍 드발리시빌리",
+          "record": "21–5",
+          "country": "Georgia (country)",
+          "country_ko": "조지아",
+          "rank": 1
+        },
+        {
+          "name": "Umar Nurmagomedov",
+          "name_ko": "우마르 누르마고메도프",
+          "record": "20–1",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 2
+        },
+        {
+          "name": "Sean O'Malley",
+          "name_ko": "션 오말리",
+          "record": "20–3(1 NC)",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 3
+        },
+        {
+          "name": "Cory Sandhagen",
+          "name_ko": "코리 샌드하겐",
+          "record": "18–6",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 4
+        },
+        {
+          "name": "Mario Bautista",
+          "name_ko": "마리오 바우티스타",
+          "record": "17–3",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 5
+        },
+        {
+          "name": "Song Yadong",
+          "name_ko": "송 야둥",
+          "record": "23–8–1(1 NC)",
+          "country": "China",
+          "country_ko": "중국",
+          "rank": 6
+        },
+        {
+          "name": "David Martínez",
+          "name_ko": "David Martínez",
+          "record": "14–1",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "rank": 7
+        },
+        {
+          "name": "Raoni Barcelos",
+          "name_ko": "Raoni Barcelos",
+          "record": "22–5",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 8
+        },
+        {
+          "name": "Marcus McGhee",
+          "name_ko": "Marcus McGhee",
+          "record": "11–2",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 9
+        },
+        {
+          "name": "Farid Basharat",
+          "name_ko": "Farid Basharat",
+          "record": "15–0",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 10
+        },
+        {
+          "name": "Deiveson Figueiredo",
+          "name_ko": "데이베손 피게이레두",
+          "record": "25–7–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 11
+        },
+        {
+          "name": "Aiemann Zahabi",
+          "name_ko": "Aiemann Zahabi",
+          "record": "14–3",
+          "country": "Canada",
+          "country_ko": "캐나다",
+          "rank": 12
+        },
+        {
+          "name": "Charles Jourdain",
+          "name_ko": "Charles Jourdain",
+          "record": "18–8–1",
+          "country": "Canada",
+          "country_ko": "캐나다",
+          "rank": 13
+        },
+        {
+          "name": "Bryce Mitchell",
+          "name_ko": "Bryce Mitchell",
+          "record": "19–3",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 14
+        },
+        {
+          "name": "Montel Jackson",
+          "name_ko": "Montel Jackson",
+          "record": "15–4",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "플라이급",
+      "wc_en": "Flyweight",
+      "champion": {
+        "name": "Joshua Van",
+        "name_ko": "Joshua Van",
+        "record": "17–2",
+        "country": "Myanmar",
+        "country_ko": "Myanmar"
+      },
+      "ranked": [
+        {
+          "name": "Alexandre Pantoja",
+          "name_ko": "알렉산드르 판토자",
+          "record": "30–6",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 1
+        },
+        {
+          "name": "Manel Kape",
+          "name_ko": "마넬 카페",
+          "record": "23–7",
+          "country": "Portugal",
+          "country_ko": "Portugal",
+          "rank": 2
+        },
+        {
+          "name": "Tatsuro Taira",
+          "name_ko": "타이라 타츠로",
+          "record": "18–2",
+          "country": "Japan",
+          "country_ko": "일본",
+          "rank": 3
+        },
+        {
+          "name": "Brandon Royval",
+          "name_ko": "브랜든 로이발",
+          "record": "17–9",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 4
+        },
+        {
+          "name": "Lone'er Kavanagh",
+          "name_ko": "Lone'er Kavanagh",
+          "record": "10–1",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "rank": 5
+        },
+        {
+          "name": "Asu Almabayev",
+          "name_ko": "Asu Almabayev",
+          "record": "24–3",
+          "country": "Kazakhstan",
+          "country_ko": "카자흐스탄",
+          "rank": 6
+        },
+        {
+          "name": "Kyoji Horiguchi",
+          "name_ko": "호리구치 쿄지",
+          "record": "36–6(1 NC)",
+          "country": "Japan",
+          "country_ko": "일본",
+          "rank": 7
+        },
+        {
+          "name": "Amir Albazi",
+          "name_ko": "아미르 알바지",
+          "record": "17–3",
+          "country": "Iraq",
+          "country_ko": "Iraq",
+          "rank": 8
+        },
+        {
+          "name": "Brandon Moreno",
+          "name_ko": "브랜든 모레노",
+          "record": "23–10–2",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "rank": 9
+        },
+        {
+          "name": "Kevin Borjas",
+          "name_ko": "Kevin Borjas",
+          "record": "11–5",
+          "country": "Peru",
+          "country_ko": "페루",
+          "rank": 10
+        },
+        {
+          "name": "Mitch Raposo",
+          "name_ko": "Mitch Raposo",
+          "record": "11–2",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 11
+        },
+        {
+          "name": "Su Mudaerji",
+          "name_ko": "Su Mudaerji",
+          "record": "19–7(1 NC)",
+          "country": "China",
+          "country_ko": "중국",
+          "rank": 12
+        },
+        {
+          "name": "Steve Erceg",
+          "name_ko": "Steve Erceg",
+          "record": "14–4",
+          "country": "Australia",
+          "country_ko": "호주",
+          "rank": 13
+        },
+        {
+          "name": "Alex Perez",
+          "name_ko": "Alex Perez",
+          "record": "26–10(1 NC)",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 14
+        },
+        {
+          "name": "Joseph Morales",
+          "name_ko": "Joseph Morales",
+          "record": "14–2",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "여성 밴텀급",
+      "wc_en": "Women's Bantamweight",
+      "champion": {
+        "name": "Kayla Harrison",
+        "name_ko": "케일라 해리슨",
+        "record": "19–1",
+        "country": "United States",
+        "country_ko": "미국"
+      },
+      "ranked": [
+        {
+          "name": "Joselyne Edwards",
+          "name_ko": "Joselyne Edwards",
+          "record": "18–6",
+          "country": "Panama",
+          "country_ko": "Panama",
+          "rank": 1
+        },
+        {
+          "name": "Norma Dumont",
+          "name_ko": "Norma Dumont",
+          "record": "13–3",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 2
+        },
+        {
+          "name": "Luana Santos",
+          "name_ko": "Luana Santos",
+          "record": "11–2",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 3
+        },
+        {
+          "name": "Julianna Peña",
+          "name_ko": "줄리아나 페냐",
+          "record": "12–6",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 4
+        },
+        {
+          "name": "Ailín Pérez",
+          "name_ko": "Ailín Pérez",
+          "record": "13–2",
+          "country": "Argentina",
+          "country_ko": "아르헨티나",
+          "rank": 5
+        },
+        {
+          "name": "Yana Santos",
+          "name_ko": "Yana Santos",
+          "record": "17–8(1 NC)",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 6
+        },
+        {
+          "name": "Jacqueline Cavalcanti",
+          "name_ko": "Jacqueline Cavalcanti",
+          "record": "10–2",
+          "country": "Portugal",
+          "country_ko": "Portugal",
+          "rank": 7
+        },
+        {
+          "name": "Michelle Montague",
+          "name_ko": "Michelle Montague",
+          "record": "8–0",
+          "country": "New Zealand",
+          "country_ko": "뉴질랜드",
+          "rank": 8
+        },
+        {
+          "name": "Melissa Croden",
+          "name_ko": "Melissa Croden",
+          "record": "8–3",
+          "country": "Canada",
+          "country_ko": "캐나다",
+          "rank": 9
+        },
+        {
+          "name": "Karol Rosa",
+          "name_ko": "Karol Rosa",
+          "record": "19–8",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 10
+        },
+        {
+          "name": "Beatriz Mesquita",
+          "name_ko": "Beatriz Mesquita",
+          "record": "8–0",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 11
+        },
+        {
+          "name": "Irene Aldana",
+          "name_ko": "Irene Aldana",
+          "record": "15–8",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "rank": 12
+        },
+        {
+          "name": "Macy Chiasson",
+          "name_ko": "Macy Chiasson",
+          "record": "11–6",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 13
+        },
+        {
+          "name": "Darya Zheleznyakova",
+          "name_ko": "Darya Zheleznyakova",
+          "record": "10–3",
+          "country": "Russia",
+          "country_ko": "러시아",
+          "rank": 14
+        },
+        {
+          "name": "Raquel Pennington",
+          "name_ko": "라켈 페닝턴",
+          "record": "16–9",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "여성 플라이급",
+      "wc_en": "Women's Flyweight",
+      "champion": {
+        "name": "Valentina Shevchenko",
+        "name_ko": "발렌티나 셰브첸코",
+        "record": "26–4–1",
+        "country": "Kyrgyzstan",
+        "country_ko": "키르기스스탄"
+      },
+      "ranked": [
+        {
+          "name": "Natália Silva",
+          "name_ko": "Natália Silva",
+          "record": "20–5–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 1
+        },
+        {
+          "name": "Manon Fiorot",
+          "name_ko": "마농 피오로",
+          "record": "13–2",
+          "country": "France",
+          "country_ko": "프랑스",
+          "rank": 2
+        },
+        {
+          "name": "Alexa Grasso",
+          "name_ko": "알렉사 그라소",
+          "record": "17–5–1",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "rank": 3
+        },
+        {
+          "name": "Erin Blanchfield",
+          "name_ko": "에린 블랜치필드",
+          "record": "14–2",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 4
+        },
+        {
+          "name": "Zhang Weili",
+          "name_ko": "장 웨일리",
+          "record": "26–4",
+          "country": "China",
+          "country_ko": "중국",
+          "rank": 5
+        },
+        {
+          "name": "Jasmine Jasudavicius",
+          "name_ko": "Jasmine Jasudavicius",
+          "record": "15–4",
+          "country": "Canada",
+          "country_ko": "캐나다",
+          "rank": 6
+        },
+        {
+          "name": "Rose Namajunas",
+          "name_ko": "Rose Namajunas",
+          "record": "14–8",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 7
+        },
+        {
+          "name": "Tracy Cortez",
+          "name_ko": "Tracy Cortez",
+          "record": "12–3",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 8
+        },
+        {
+          "name": "Maycee Barber",
+          "name_ko": "Maycee Barber",
+          "record": "15–3",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 9
+        },
+        {
+          "name": "Wang Cong",
+          "name_ko": "Wang Cong",
+          "record": "9–1",
+          "country": "China",
+          "country_ko": "중국",
+          "rank": 10
+        },
+        {
+          "name": "Miranda Maverick",
+          "name_ko": "Miranda Maverick",
+          "record": "15–6",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 11
+        },
+        {
+          "name": "JJ Aldrich",
+          "name_ko": "JJ Aldrich",
+          "record": "15–7",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 12
+        },
+        {
+          "name": "Karine Silva",
+          "name_ko": "Karine Silva",
+          "record": "19–7",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 13
+        },
+        {
+          "name": "Eduarda Moura",
+          "name_ko": "Eduarda Moura",
+          "record": "12–2",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 14
+        },
+        {
+          "name": "Casey O'Neill",
+          "name_ko": "Casey O'Neill",
+          "record": "11–2",
+          "country": "Australia",
+          "country_ko": "호주",
+          "rank": 15
+        }
+      ]
+    },
+    {
+      "wc": "여성 스트로급",
+      "wc_en": "Women's Strawweight",
+      "champion": {
+        "name": "Mackenzie Dern",
+        "name_ko": "맥켄지 던",
+        "record": "16–5",
+        "country": "Brazil",
+        "country_ko": "브라질"
+      },
+      "ranked": [
+        {
+          "name": "Zhang Weili",
+          "name_ko": "장 웨일리",
+          "record": "26–4",
+          "country": "China",
+          "country_ko": "중국",
+          "rank": 1
+        },
+        {
+          "name": "Virna Jandiroba",
+          "name_ko": "Virna Jandiroba",
+          "record": "23–4",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 2
+        },
+        {
+          "name": "Tatiana Suarez",
+          "name_ko": "타티아나 수아레스",
+          "record": "12–1",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 3
+        },
+        {
+          "name": "Gillian Robertson",
+          "name_ko": "Gillian Robertson",
+          "record": "17–8",
+          "country": "Canada",
+          "country_ko": "캐나다",
+          "rank": 4
+        },
+        {
+          "name": "Yan Xiaonan",
+          "name_ko": "얀 시아오난",
+          "record": "18–5(1 NC)",
+          "country": "China",
+          "country_ko": "중국",
+          "rank": 5
+        },
+        {
+          "name": "Piera Rodriguez",
+          "name_ko": "Piera Rodriguez",
+          "record": "12–2",
+          "country": "Venezuela",
+          "country_ko": "Venezuela",
+          "rank": 6
+        },
+        {
+          "name": "Tabatha Ricci",
+          "name_ko": "Tabatha Ricci",
+          "record": "12–4",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 7
+        },
+        {
+          "name": "Denise Gomes",
+          "name_ko": "Denise Gomes",
+          "record": "12–3",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 8
+        },
+        {
+          "name": "Mizuki Inoue",
+          "name_ko": "Mizuki Inoue",
+          "record": "16–6",
+          "country": "Japan",
+          "country_ko": "일본",
+          "rank": 9
+        },
+        {
+          "name": "Alexia Thainara",
+          "name_ko": "Alexia Thainara",
+          "record": "14–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 10
+        },
+        {
+          "name": "Amanda Lemos",
+          "name_ko": "Amanda Lemos",
+          "record": "15–6–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 11
+        },
+        {
+          "name": "Loopy Godinez",
+          "name_ko": "Loopy Godinez",
+          "record": "14–6",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "rank": 12
+        },
+        {
+          "name": "Jaqueline Amorim",
+          "name_ko": "Jaqueline Amorim",
+          "record": "11–2",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 13
+        },
+        {
+          "name": "Fatima Kline",
+          "name_ko": "Fatima Kline",
+          "record": "9–1",
+          "country": "United States",
+          "country_ko": "미국",
+          "rank": 14
+        },
+        {
+          "name": "Talita Alencar",
+          "name_ko": "Talita Alencar",
+          "record": "8–1–1",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "rank": 15
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6024 @@
+{
+  "generated_at": "2026-07-04T16:42:29+09:00",
+  "source": "Wikipedia: 랭킹 + 대진표 교차연결",
+  "fighter_count": 349,
+  "fighters": [
+    {
+      "id": "tom-aspinall",
+      "name": "Tom Aspinall",
+      "name_ko": "톰 아스피날",
+      "record": "15–3(1 NC)",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "헤비급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "ciryl-gane",
+      "name": "Ciryl Gane",
+      "name_ko": "시릴 가네",
+      "record": "14–2(1 NC)",
+      "country": "France",
+      "country_ko": "프랑스",
+      "division": "헤비급",
+      "rank": "잠정챔프",
+      "recent": [
+        {
+          "opp": "Alex Pereira",
+          "opp_ko": "알렉스 페레이라",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "alexander-volkov",
+      "name": "Alexander Volkov",
+      "name_ko": "알렉산더 볼코프",
+      "record": "40–11",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "헤비급",
+      "rank": "#2",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "sergei-pavlovich",
+      "name": "Sergei Pavlovich",
+      "name_ko": "세르게이 파블로비치",
+      "record": "21–3",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "헤비급",
+      "rank": "#3",
+      "recent": [
+        {
+          "opp": "Tallison Teixeira",
+          "opp_ko": "Tallison Teixeira",
+          "result": "win",
+          "method": "KO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "alex-pereira",
+      "name": "Alex Pereira",
+      "name_ko": "알렉스 페레이라",
+      "record": "13–4",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "라이트헤비급",
+      "rank": "#4",
+      "recent": [
+        {
+          "opp": "Ciryl Gane",
+          "opp_ko": "시릴 가네",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "josh-hokit",
+      "name": "Josh Hokit",
+      "name_ko": "Josh Hokit",
+      "record": "10–0",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "헤비급",
+      "rank": "#5",
+      "recent": [
+        {
+          "opp": "Derrick Lewis",
+          "opp_ko": "데릭 루이스",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "waldo-cortes-acosta",
+      "name": "Waldo Cortes-Acosta",
+      "name_ko": "Waldo Cortes-Acosta",
+      "record": "17–3",
+      "country": "Dominican Republic",
+      "country_ko": "Dominican Republic",
+      "division": "헤비급",
+      "rank": "#6",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "rizvan-kuniev",
+      "name": "Rizvan Kuniev",
+      "name_ko": "Rizvan Kuniev",
+      "record": "13–3–1(1 NC)",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "헤비급",
+      "rank": "#7",
+      "recent": [],
+      "next": {
+        "opp": "Tyrell Fortune",
+        "opp_ko": "Tyrell Fortune",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "curtis-blaydes",
+      "name": "Curtis Blaydes",
+      "name_ko": "커티스 블레이즈",
+      "record": "19–6(1 NC)",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "헤비급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "serghei-spivac",
+      "name": "Serghei Spivac",
+      "name_ko": "Serghei Spivac",
+      "record": "18–6",
+      "country": "Moldova",
+      "country_ko": "몰도바",
+      "division": "헤비급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "vitor-petrino",
+      "name": "Vitor Petrino",
+      "name_ko": "Vitor Petrino",
+      "record": "14–2",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "헤비급",
+      "rank": "#10",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "valter-walker",
+      "name": "Valter Walker",
+      "name_ko": "Valter Walker",
+      "record": "15–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "헤비급",
+      "rank": "#11",
+      "recent": [],
+      "next": {
+        "opp": "Thomas Petersen",
+        "opp_ko": "Thomas Petersen",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "brando-peri-i",
+      "name": "Brando Peričić",
+      "name_ko": "Brando Peričić",
+      "record": "7–1",
+      "country": "Australia",
+      "country_ko": "호주",
+      "division": "헤비급",
+      "rank": "#12",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "m-rio-pinto",
+      "name": "Mário Pinto",
+      "name_ko": "Mário Pinto",
+      "record": "12–0",
+      "country": "Portugal",
+      "country_ko": "Portugal",
+      "division": "헤비급",
+      "rank": "#13",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "mick-parkin",
+      "name": "Mick Parkin",
+      "name_ko": "Mick Parkin",
+      "record": "10–1",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "헤비급",
+      "rank": "#14",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "ryan-spann",
+      "name": "Ryan Spann",
+      "name_ko": "Ryan Spann",
+      "record": "24–11",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "헤비급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "carlos-ulberg",
+      "name": "Carlos Ulberg",
+      "name_ko": "카를로스 울버그",
+      "record": "14–1",
+      "country": "New Zealand",
+      "country_ko": "뉴질랜드",
+      "division": "라이트헤비급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "magomed-ankalaev",
+      "name": "Magomed Ankalaev",
+      "name_ko": "마고메드 안칼라예프",
+      "record": "20–2–1(1 NC)",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "라이트헤비급",
+      "rank": "#2",
+      "recent": [],
+      "next": {
+        "opp": "Khalil Rountree Jr.",
+        "opp_ko": "카릴 라운트리 주니어",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "ji-proch-zka",
+      "name": "Jiří Procházka",
+      "name_ko": "이리 프로하즈카",
+      "record": "32–6–1",
+      "country": "Czech Republic",
+      "country_ko": "체코",
+      "division": "라이트헤비급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "paulo-costa",
+      "name": "Paulo Costa",
+      "name_ko": "파울로 코스타",
+      "record": "16–4",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "미들급",
+      "rank": "#4",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "jamahal-hill",
+      "name": "Jamahal Hill",
+      "name_ko": "자말 힐",
+      "record": "12–4(1 NC)",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트헤비급",
+      "rank": "#5",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "khalil-rountree-jr",
+      "name": "Khalil Rountree Jr.",
+      "name_ko": "카릴 라운트리 주니어",
+      "record": "14–7(1 NC)",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트헤비급",
+      "rank": "#6",
+      "recent": [],
+      "next": {
+        "opp": "Magomed Ankalaev",
+        "opp_ko": "마고메드 안칼라예프",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "dominick-reyes",
+      "name": "Dominick Reyes",
+      "name_ko": "도미닉 레예스",
+      "record": "16–5",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트헤비급",
+      "rank": "#7",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "volkan-oezdemir",
+      "name": "Volkan Oezdemir",
+      "name_ko": "Volkan Oezdemir",
+      "record": "21–8",
+      "country": "Switzerland",
+      "country_ko": "Switzerland",
+      "division": "라이트헤비급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "azamat-murzakanov",
+      "name": "Azamat Murzakanov",
+      "name_ko": "Azamat Murzakanov",
+      "record": "16–1",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "라이트헤비급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "bogdan-guskov",
+      "name": "Bogdan Guskov",
+      "name_ko": "Bogdan Guskov",
+      "record": "18–3–1",
+      "country": "Uzbekistan",
+      "country_ko": "Uzbekistan",
+      "division": "라이트헤비급",
+      "rank": "#10",
+      "recent": [],
+      "next": {
+        "opp": "Jan Błachowicz",
+        "opp_ko": "얀 블라호비치",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "dustin-jacoby",
+      "name": "Dustin Jacoby",
+      "name_ko": "Dustin Jacoby",
+      "record": "22–8–1",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트헤비급",
+      "rank": "#11",
+      "recent": [],
+      "next": {
+        "opp": "Uran Satybaldiev",
+        "opp_ko": "Uran Satybaldiev",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "navajo-stirling",
+      "name": "Navajo Stirling",
+      "name_ko": "Navajo Stirling",
+      "record": "10–0",
+      "country": "New Zealand",
+      "country_ko": "뉴질랜드",
+      "division": "라이트헤비급",
+      "rank": "#12",
+      "recent": [
+        {
+          "opp": "Ion Cuțelaba",
+          "opp_ko": "Ion Cuțelaba",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "alonzo-menifield",
+      "name": "Alonzo Menifield",
+      "name_ko": "Alonzo Menifield",
+      "record": "18–6–1",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트헤비급",
+      "rank": "#13",
+      "recent": [
+        {
+          "opp": "Zhang Mingyang",
+          "opp_ko": "Zhang Mingyang",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "johnny-walker",
+      "name": "Johnny Walker",
+      "name_ko": "Johnny Walker",
+      "record": "22–10(1 NC)",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "라이트헤비급",
+      "rank": "#14",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "jan-b-achowicz",
+      "name": "Jan Błachowicz",
+      "name_ko": "얀 블라호비치",
+      "record": "29–11–2",
+      "country": "Poland",
+      "country_ko": "폴란드",
+      "division": "라이트헤비급",
+      "rank": "#15",
+      "recent": [],
+      "next": {
+        "opp": "Bogdan Guskov",
+        "opp_ko": "Bogdan Guskov",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "sean-strickland",
+      "name": "Sean Strickland",
+      "name_ko": "션 스트릭랜드",
+      "record": "31–7",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "미들급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "khamzat-chimaev",
+      "name": "Khamzat Chimaev",
+      "name_ko": "카마줏 치마예프",
+      "record": "15–1",
+      "country": "United Arab Emirates",
+      "country_ko": "United Arab Emirates",
+      "division": "미들급",
+      "rank": "#1",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "dricus-du-plessis",
+      "name": "Dricus du Plessis",
+      "name_ko": "드리쿠스 두 플레시",
+      "record": "23–3",
+      "country": "South Africa",
+      "country_ko": "남아공",
+      "division": "미들급",
+      "rank": "#2",
+      "recent": [],
+      "next": {
+        "opp": "Kamaru Usman",
+        "opp_ko": "카마루 우스만",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "nassourdine-imavov",
+      "name": "Nassourdine Imavov",
+      "name_ko": "나수르딘 이마보프",
+      "record": "17–4(1 NC)",
+      "country": "France",
+      "country_ko": "프랑스",
+      "division": "미들급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "joe-pyfer",
+      "name": "Joe Pyfer",
+      "name_ko": "Joe Pyfer",
+      "record": "16–3",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "미들급",
+      "rank": "#4",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "brendan-allen",
+      "name": "Brendan Allen",
+      "name_ko": "브렌든 앨런",
+      "record": "27–7",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "미들급",
+      "rank": "#5",
+      "recent": [
+        {
+          "opp": "Edmen Shahbazyan",
+          "opp_ko": "Edmen Shahbazyan",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "caio-borralho",
+      "name": "Caio Borralho",
+      "name_ko": "카이오 보랄료",
+      "record": "18–2(1 NC)",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "미들급",
+      "rank": "#6",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "anthony-hernandez",
+      "name": "Anthony Hernandez",
+      "name_ko": "안소니 에르난데스",
+      "record": "15–3(1 NC)",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "미들급",
+      "rank": "#7",
+      "recent": [],
+      "next": {
+        "opp": "Gregory Rodrigues",
+        "opp_ko": "Gregory Rodrigues",
+        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "israel-adesanya",
+      "name": "Israel Adesanya",
+      "name_ko": "이스라엘 아데산야",
+      "record": "24–6",
+      "country": "Nigeria",
+      "country_ko": "나이지리아",
+      "division": "미들급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "gregory-rodrigues",
+      "name": "Gregory Rodrigues",
+      "name_ko": "Gregory Rodrigues",
+      "record": "19–6",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "미들급",
+      "rank": "#9",
+      "recent": [],
+      "next": {
+        "opp": "Anthony Hernandez",
+        "opp_ko": "안소니 에르난데스",
+        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "date": "2026-08-22"
+      }
+    },
+    {
+      "id": "ikram-aliskerov",
+      "name": "Ikram Aliskerov",
+      "name_ko": "Ikram Aliskerov",
+      "record": "18–2",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "미들급",
+      "rank": "#10",
+      "recent": [
+        {
+          "opp": "Brunno Ferreira",
+          "opp_ko": "Brunno Ferreira",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jared-cannonier",
+      "name": "Jared Cannonier",
+      "name_ko": "자레드 캐노니어",
+      "record": "18–9",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "미들급",
+      "rank": "#11",
+      "recent": [],
+      "next": {
+        "opp": "Christian Leroy Duncan",
+        "opp_ko": "Christian Leroy Duncan",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "christian-leroy-duncan",
+      "name": "Christian Leroy Duncan",
+      "name_ko": "Christian Leroy Duncan",
+      "record": "14–2",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "미들급",
+      "rank": "#12",
+      "recent": [],
+      "next": {
+        "opp": "Jared Cannonier",
+        "opp_ko": "자레드 캐노니어",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "bo-nickal",
+      "name": "Bo Nickal",
+      "name_ko": "보 니컬",
+      "record": "9–1",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "미들급",
+      "rank": "#13",
+      "recent": [
+        {
+          "opp": "Kyle Daukaus",
+          "opp_ko": "Kyle Daukaus",
+          "result": "win",
+          "method": "TKO (punches and elbows)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "abusupiyan-magomedov",
+      "name": "Abusupiyan Magomedov",
+      "name_ko": "Abusupiyan Magomedov",
+      "record": "29–7–1",
+      "country": "Germany",
+      "country_ko": "독일",
+      "division": "미들급",
+      "rank": "#15",
+      "recent": [
+        {
+          "opp": "Michał Oleksiejczuk",
+          "opp_ko": "Michał Oleksiejczuk",
+          "result": "win",
+          "method": "Submission (guillotine choke)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "islam-makhachev",
+      "name": "Islam Makhachev",
+      "name_ko": "이슬람 마카체프",
+      "record": "28–1",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "웰터급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": {
+        "opp": "Ian Machado Garry",
+        "opp_ko": "Ian Machado Garry",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "carlos-prates",
+      "name": "Carlos Prates",
+      "name_ko": "카를로스 프라치",
+      "record": "24–7",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "웰터급",
+      "rank": "#1",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "ian-machado-garry",
+      "name": "Ian Machado Garry",
+      "name_ko": "Ian Machado Garry",
+      "record": "17–1",
+      "country": "Republic of Ireland",
+      "country_ko": "Republic of Ireland",
+      "division": "웰터급",
+      "rank": "#2",
+      "recent": [],
+      "next": {
+        "opp": "Islam Makhachev",
+        "opp_ko": "이슬람 마카체프",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "michael-morales",
+      "name": "Michael Morales",
+      "name_ko": "Michael Morales",
+      "record": "19–0",
+      "country": "Ecuador",
+      "country_ko": "에콰도르",
+      "division": "웰터급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "jack-della-maddalena",
+      "name": "Jack Della Maddalena",
+      "name_ko": "잭 델라 마달레나",
+      "record": "18–4",
+      "country": "Australia",
+      "country_ko": "호주",
+      "division": "웰터급",
+      "rank": "#4",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "sean-brady",
+      "name": "Sean Brady",
+      "name_ko": "션 브래디",
+      "record": "19–2",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "웰터급",
+      "rank": "#5",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "gabriel-bonfim",
+      "name": "Gabriel Bonfim",
+      "name_ko": "Gabriel Bonfim",
+      "record": "20–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "웰터급",
+      "rank": "#6",
+      "recent": [
+        {
+          "opp": "Belal Muhammad",
+          "opp_ko": "벨랄 무하마드",
+          "result": "win",
+          "method": "Decision (unanimous) (50–45, 50–45, 50–45)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "belal-muhammad",
+      "name": "Belal Muhammad",
+      "name_ko": "벨랄 무하마드",
+      "record": "24–6(1 NC)",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "웰터급",
+      "rank": "#7",
+      "recent": [
+        {
+          "opp": "Gabriel Bonfim",
+          "opp_ko": "Gabriel Bonfim",
+          "result": "loss",
+          "method": "Decision (unanimous) (50–45, 50–45, 50–45)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "leon-edwards",
+      "name": "Leon Edwards",
+      "name_ko": "리온 에드워즈",
+      "record": "22–6(1 NC)",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "웰터급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "joaquin-buckley",
+      "name": "Joaquin Buckley",
+      "name_ko": "호아킨 버클리",
+      "record": "21–8",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "웰터급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "kamaru-usman",
+      "name": "Kamaru Usman",
+      "name_ko": "카마루 우스만",
+      "record": "21–4",
+      "country": "Nigeria",
+      "country_ko": "나이지리아",
+      "division": "웰터급",
+      "rank": "#10",
+      "recent": [],
+      "next": {
+        "opp": "Dricus du Plessis",
+        "opp_ko": "드리쿠스 두 플레시",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "mike-malott",
+      "name": "Mike Malott",
+      "name_ko": "Mike Malott",
+      "record": "14–2–1",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "division": "웰터급",
+      "rank": "#11",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "michael-page",
+      "name": "Michael Page",
+      "name_ko": "마이클 페이지",
+      "record": "25–3",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "웰터급",
+      "rank": "#12",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "daniel-rodriguez",
+      "name": "Daniel Rodriguez",
+      "name_ko": "Daniel Rodriguez",
+      "record": "20–5",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "웰터급",
+      "rank": "#13",
+      "recent": [],
+      "next": {
+        "opp": "Uroš Medić",
+        "opp_ko": "Uroš Medić",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "uro-medi",
+      "name": "Uroš Medić",
+      "name_ko": "Uroš Medić",
+      "record": "13–3",
+      "country": "Serbia",
+      "country_ko": "Serbia",
+      "division": "웰터급",
+      "rank": "#14",
+      "recent": [],
+      "next": {
+        "opp": "Daniel Rodriguez",
+        "opp_ko": "Daniel Rodriguez",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "yaroslav-amosov",
+      "name": "Yaroslav Amosov",
+      "name_ko": "Yaroslav Amosov",
+      "record": "30–1",
+      "country": "Ukraine",
+      "country_ko": "Ukraine",
+      "division": "웰터급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "justin-gaethje",
+      "name": "Justin Gaethje",
+      "name_ko": "저스틴 게이치",
+      "record": "28–5",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트급",
+      "rank": "챔피언",
+      "recent": [
+        {
+          "opp": "Ilia Topuria",
+          "opp_ko": "일리아 토푸리아",
+          "result": "win",
+          "method": "TKO (corner stoppage)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "ilia-topuria",
+      "name": "Ilia Topuria",
+      "name_ko": "일리아 토푸리아",
+      "record": "17–1",
+      "country": "Georgia (country)",
+      "country_ko": "조지아",
+      "division": "라이트급",
+      "rank": "#1",
+      "recent": [
+        {
+          "opp": "Justin Gaethje",
+          "opp_ko": "저스틴 게이치",
+          "result": "loss",
+          "method": "TKO (corner stoppage)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "arman-tsarukyan",
+      "name": "Arman Tsarukyan",
+      "name_ko": "아르만 차루키안",
+      "record": "23–3",
+      "country": "Armenia",
+      "country_ko": "아르메니아",
+      "division": "라이트급",
+      "rank": "#2",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "charles-oliveira",
+      "name": "Charles Oliveira",
+      "name_ko": "찰스 올리베이라",
+      "record": "37–11(1 NC)",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "라이트급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "max-holloway",
+      "name": "Max Holloway",
+      "name_ko": "맥스 할로웨이",
+      "record": "27–9",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트급",
+      "rank": "#4",
+      "recent": [],
+      "next": {
+        "opp": "Conor McGregor",
+        "opp_ko": "Conor McGregor",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "beno-t-saint-denis",
+      "name": "Benoît Saint Denis",
+      "name_ko": "Benoît Saint Denis",
+      "record": "17–3(1 NC)",
+      "country": "France",
+      "country_ko": "프랑스",
+      "division": "라이트급",
+      "rank": "#5",
+      "recent": [],
+      "next": {
+        "opp": "Paddy Pimblett",
+        "opp_ko": "패디 핌블렛",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "mateusz-gamrot",
+      "name": "Mateusz Gamrot",
+      "name_ko": "마테우시 감로트",
+      "record": "26–4(1 NC)",
+      "country": "Poland",
+      "country_ko": "폴란드",
+      "division": "라이트급",
+      "rank": "#6",
+      "recent": [],
+      "next": {
+        "opp": "Quillan Salkilld",
+        "opp_ko": "Quillan Salkilld",
+        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "date": "2026-08-08"
+      }
+    },
+    {
+      "id": "renato-moicano",
+      "name": "Renato Moicano",
+      "name_ko": "헤나토 모이카노",
+      "record": "21–7–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "라이트급",
+      "rank": "#7",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "quillan-salkilld",
+      "name": "Quillan Salkilld",
+      "name_ko": "Quillan Salkilld",
+      "record": "12–1",
+      "country": "Australia",
+      "country_ko": "호주",
+      "division": "라이트급",
+      "rank": "#8",
+      "recent": [],
+      "next": {
+        "opp": "Mateusz Gamrot",
+        "opp_ko": "마테우시 감로트",
+        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "date": "2026-08-08"
+      }
+    },
+    {
+      "id": "paddy-pimblett",
+      "name": "Paddy Pimblett",
+      "name_ko": "패디 핌블렛",
+      "record": "23–4",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "라이트급",
+      "rank": "#9",
+      "recent": [],
+      "next": {
+        "opp": "Benoît Saint Denis",
+        "opp_ko": "Benoît Saint Denis",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "maur-cio-ruffy",
+      "name": "Maurício Ruffy",
+      "name_ko": "Maurício Ruffy",
+      "record": "14–2",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "라이트급",
+      "rank": "#10",
+      "recent": [
+        {
+          "opp": "Michael Chandler",
+          "opp_ko": "마이클 챈들러",
+          "result": "win",
+          "method": "TKO (spinning wheel kick and punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "dan-hooker",
+      "name": "Dan Hooker",
+      "name_ko": "Dan Hooker",
+      "record": "24–14",
+      "country": "New Zealand",
+      "country_ko": "뉴질랜드",
+      "division": "라이트급",
+      "rank": "#11",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "tom-nolan",
+      "name": "Tom Nolan",
+      "name_ko": "Tom Nolan",
+      "record": "11–1",
+      "country": "Australia",
+      "country_ko": "호주",
+      "division": "라이트급",
+      "rank": "#12",
+      "recent": [
+        {
+          "opp": "Farès Ziam",
+          "opp_ko": "Farès Ziam",
+          "result": "win",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "rafael-fiziev",
+      "name": "Rafael Fiziev",
+      "name_ko": "라파엘 피지에프",
+      "record": "14–5",
+      "country": "Azerbaijan",
+      "country_ko": "아제르바이잔",
+      "division": "라이트급",
+      "rank": "#13",
+      "recent": [
+        {
+          "opp": "Manuel Torres",
+          "opp_ko": "Manuel Torres",
+          "result": "win",
+          "method": "KO (spinning wheel kick and punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "grant-dawson",
+      "name": "Grant Dawson",
+      "name_ko": "Grant Dawson",
+      "record": "24–3–1",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "라이트급",
+      "rank": "#14",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "rafa-garc-a",
+      "name": "Rafa García",
+      "name_ko": "Rafa García",
+      "record": "18–4",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "division": "라이트급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "alexander-volkanovski",
+      "name": "Alexander Volkanovski",
+      "name_ko": "알렉산더 볼카노프스키",
+      "record": "28–4",
+      "country": "Australia",
+      "country_ko": "호주",
+      "division": "페더급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "movsar-evloev",
+      "name": "Movsar Evloev",
+      "name_ko": "모브사르 에블로예프",
+      "record": "20–0",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "페더급",
+      "rank": "#1",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "diego-lopes",
+      "name": "Diego Lopes",
+      "name_ko": "디에고 로페스",
+      "record": "28–8",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "페더급",
+      "rank": "#2",
+      "recent": [
+        {
+          "opp": "Steve Garcia",
+          "opp_ko": "Steve Garcia",
+          "result": "win",
+          "method": "KO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "lerone-murphy",
+      "name": "Lerone Murphy",
+      "name_ko": "르론 머피",
+      "record": "17–1–1",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "페더급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "aljamain-sterling",
+      "name": "Aljamain Sterling",
+      "name_ko": "Aljamain Sterling",
+      "record": "26–5",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "페더급",
+      "rank": "#4",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "arnold-allen",
+      "name": "Arnold Allen",
+      "name_ko": "Arnold Allen",
+      "record": "21–4",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "페더급",
+      "rank": "#5",
+      "recent": [
+        {
+          "opp": "Melquizael Costa",
+          "opp_ko": "Melquizael Costa",
+          "result": "win",
+          "method": "Decision (unanimous) (50–45, 50–45, 49–46)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jean-silva",
+      "name": "Jean Silva",
+      "name_ko": "Jean Silva",
+      "record": "17–3",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "페더급",
+      "rank": "#6",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "pat-sabatini",
+      "name": "Pat Sabatini",
+      "name_ko": "Pat Sabatini",
+      "record": "22–5",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "페더급",
+      "rank": "#7",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "youssef-zalal",
+      "name": "Youssef Zalal",
+      "name_ko": "Youssef Zalal",
+      "record": "18–6–1",
+      "country": "Morocco",
+      "country_ko": "Morocco",
+      "division": "페더급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "nathaniel-wood",
+      "name": "Nathaniel Wood",
+      "name_ko": "Nathaniel Wood",
+      "record": "23–6",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "페더급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "kevin-vallejos",
+      "name": "Kevin Vallejos",
+      "name_ko": "Kevin Vallejos",
+      "record": "18–1",
+      "country": "Argentina",
+      "country_ko": "아르헨티나",
+      "division": "페더급",
+      "rank": "#10",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "melquizael-costa",
+      "name": "Melquizael Costa",
+      "name_ko": "Melquizael Costa",
+      "record": "26–8",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "페더급",
+      "rank": "#11",
+      "recent": [
+        {
+          "opp": "Arnold Allen",
+          "opp_ko": "Arnold Allen",
+          "result": "loss",
+          "method": "Decision (unanimous) (50–45, 50–45, 49–46)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "steve-garcia",
+      "name": "Steve Garcia",
+      "name_ko": "Steve Garcia",
+      "record": "19–6",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "페더급",
+      "rank": "#12",
+      "recent": [
+        {
+          "opp": "Diego Lopes",
+          "opp_ko": "디에고 로페스",
+          "result": "loss",
+          "method": "KO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "aaron-pico",
+      "name": "Aaron Pico",
+      "name_ko": "에런 피코",
+      "record": "14–5",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "페더급",
+      "rank": "#13",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "joanderson-brito",
+      "name": "Joanderson Brito",
+      "name_ko": "Joanderson Brito",
+      "record": "19–5–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "페더급",
+      "rank": "#14",
+      "recent": [
+        {
+          "opp": "Jordan Leavitt",
+          "opp_ko": "Jordan Leavitt",
+          "result": "win",
+          "method": "Submission (ninja choke)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jose-miguel-delgado",
+      "name": "Jose Miguel Delgado",
+      "name_ko": "Jose Miguel Delgado",
+      "record": "11–2",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "division": "페더급",
+      "rank": "#15",
+      "recent": [],
+      "next": {
+        "opp": "Austin Bashi",
+        "opp_ko": "Austin Bashi",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "petr-yan",
+      "name": "Petr Yan",
+      "name_ko": "페트르 얀",
+      "record": "20–5",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "밴텀급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "merab-dvalishvili",
+      "name": "Merab Dvalishvili",
+      "name_ko": "메랍 드발리시빌리",
+      "record": "21–5",
+      "country": "Georgia (country)",
+      "country_ko": "조지아",
+      "division": "밴텀급",
+      "rank": "#1",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "umar-nurmagomedov",
+      "name": "Umar Nurmagomedov",
+      "name_ko": "우마르 누르마고메도프",
+      "record": "20–1",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "밴텀급",
+      "rank": "#2",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "sean-o-malley",
+      "name": "Sean O'Malley",
+      "name_ko": "션 오말리",
+      "record": "20–3(1 NC)",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "밴텀급",
+      "rank": "#3",
+      "recent": [
+        {
+          "opp": "Aiemann Zahabi",
+          "opp_ko": "Aiemann Zahabi",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "cory-sandhagen",
+      "name": "Cory Sandhagen",
+      "name_ko": "코리 샌드하겐",
+      "record": "18–6",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "밴텀급",
+      "rank": "#4",
+      "recent": [],
+      "next": {
+        "opp": "Mario Bautista",
+        "opp_ko": "마리오 바우티스타",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "mario-bautista",
+      "name": "Mario Bautista",
+      "name_ko": "마리오 바우티스타",
+      "record": "17–3",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "밴텀급",
+      "rank": "#5",
+      "recent": [],
+      "next": {
+        "opp": "Cory Sandhagen",
+        "opp_ko": "코리 샌드하겐",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "song-yadong",
+      "name": "Song Yadong",
+      "name_ko": "송 야둥",
+      "record": "23–8–1(1 NC)",
+      "country": "China",
+      "country_ko": "중국",
+      "division": "밴텀급",
+      "rank": "#6",
+      "recent": [
+        {
+          "opp": "Deiveson Figueiredo",
+          "opp_ko": "데이베손 피게이레두",
+          "result": "win",
+          "method": "Submission (guillotine choke)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "david-mart-nez",
+      "name": "David Martínez",
+      "name_ko": "David Martínez",
+      "record": "14–1",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "division": "밴텀급",
+      "rank": "#7",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "raoni-barcelos",
+      "name": "Raoni Barcelos",
+      "name_ko": "Raoni Barcelos",
+      "record": "22–5",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "밴텀급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "marcus-mcghee",
+      "name": "Marcus McGhee",
+      "name_ko": "Marcus McGhee",
+      "record": "11–2",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "밴텀급",
+      "rank": "#9",
+      "recent": [
+        {
+          "opp": "John Yannis",
+          "opp_ko": "John Yannis",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "farid-basharat",
+      "name": "Farid Basharat",
+      "name_ko": "Farid Basharat",
+      "record": "15–0",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "밴텀급",
+      "rank": "#10",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "deiveson-figueiredo",
+      "name": "Deiveson Figueiredo",
+      "name_ko": "데이베손 피게이레두",
+      "record": "25–7–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "밴텀급",
+      "rank": "#11",
+      "recent": [
+        {
+          "opp": "Song Yadong",
+          "opp_ko": "송 야둥",
+          "result": "loss",
+          "method": "Submission (guillotine choke)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "aiemann-zahabi",
+      "name": "Aiemann Zahabi",
+      "name_ko": "Aiemann Zahabi",
+      "record": "14–3",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "division": "밴텀급",
+      "rank": "#12",
+      "recent": [
+        {
+          "opp": "Sean O'Malley",
+          "opp_ko": "션 오말리",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "charles-jourdain",
+      "name": "Charles Jourdain",
+      "name_ko": "Charles Jourdain",
+      "record": "18–8–1",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "division": "밴텀급",
+      "rank": "#13",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "bryce-mitchell",
+      "name": "Bryce Mitchell",
+      "name_ko": "Bryce Mitchell",
+      "record": "19–3",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "밴텀급",
+      "rank": "#14",
+      "recent": [
+        {
+          "opp": "Santiago Luna",
+          "opp_ko": "Santiago Luna",
+          "result": "win",
+          "method": "Submission (arm-triangle choke)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "montel-jackson",
+      "name": "Montel Jackson",
+      "name_ko": "Montel Jackson",
+      "record": "15–4",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "밴텀급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "joshua-van",
+      "name": "Joshua Van",
+      "name_ko": "Joshua Van",
+      "record": "17–2",
+      "country": "Myanmar",
+      "country_ko": "Myanmar",
+      "division": "플라이급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "alexandre-pantoja",
+      "name": "Alexandre Pantoja",
+      "name_ko": "알렉산드르 판토자",
+      "record": "30–6",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "플라이급",
+      "rank": "#1",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "manel-kape",
+      "name": "Manel Kape",
+      "name_ko": "마넬 카페",
+      "record": "23–7",
+      "country": "Portugal",
+      "country_ko": "Portugal",
+      "division": "플라이급",
+      "rank": "#2",
+      "recent": [
+        {
+          "opp": "Kyoji Horiguchi",
+          "opp_ko": "호리구치 쿄지",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "tatsuro-taira",
+      "name": "Tatsuro Taira",
+      "name_ko": "타이라 타츠로",
+      "record": "18–2",
+      "country": "Japan",
+      "country_ko": "일본",
+      "division": "플라이급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "brandon-royval",
+      "name": "Brandon Royval",
+      "name_ko": "브랜든 로이발",
+      "record": "17–9",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "플라이급",
+      "rank": "#4",
+      "recent": [],
+      "next": {
+        "opp": "Lone'er Kavanagh",
+        "opp_ko": "Lone'er Kavanagh",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "lone-er-kavanagh",
+      "name": "Lone'er Kavanagh",
+      "name_ko": "Lone'er Kavanagh",
+      "record": "10–1",
+      "country": "England",
+      "country_ko": "잉글랜드",
+      "division": "플라이급",
+      "rank": "#5",
+      "recent": [],
+      "next": {
+        "opp": "Brandon Royval",
+        "opp_ko": "브랜든 로이발",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "asu-almabayev",
+      "name": "Asu Almabayev",
+      "name_ko": "Asu Almabayev",
+      "record": "24–3",
+      "country": "Kazakhstan",
+      "country_ko": "카자흐스탄",
+      "division": "플라이급",
+      "rank": "#6",
+      "recent": [
+        {
+          "opp": "Charles Johnson",
+          "opp_ko": "Charles Johnson",
+          "result": "win",
+          "method": "Submission (Suloev stretch)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "kyoji-horiguchi",
+      "name": "Kyoji Horiguchi",
+      "name_ko": "호리구치 쿄지",
+      "record": "36–6(1 NC)",
+      "country": "Japan",
+      "country_ko": "일본",
+      "division": "플라이급",
+      "rank": "#7",
+      "recent": [
+        {
+          "opp": "Manel Kape",
+          "opp_ko": "마넬 카페",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "amir-albazi",
+      "name": "Amir Albazi",
+      "name_ko": "아미르 알바지",
+      "record": "17–3",
+      "country": "Iraq",
+      "country_ko": "Iraq",
+      "division": "플라이급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "brandon-moreno",
+      "name": "Brandon Moreno",
+      "name_ko": "브랜든 모레노",
+      "record": "23–10–2",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "division": "플라이급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "kevin-borjas",
+      "name": "Kevin Borjas",
+      "name_ko": "Kevin Borjas",
+      "record": "11–5",
+      "country": "Peru",
+      "country_ko": "페루",
+      "division": "플라이급",
+      "rank": "#10",
+      "recent": [
+        {
+          "opp": "André Lima",
+          "opp_ko": "André Lima",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "mitch-raposo",
+      "name": "Mitch Raposo",
+      "name_ko": "Mitch Raposo",
+      "record": "11–2",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "플라이급",
+      "rank": "#11",
+      "recent": [
+        {
+          "opp": "Allan Nascimento",
+          "opp_ko": "Allan Nascimento",
+          "result": "win",
+          "method": "Decision (split) (29–28, 28–29, 29–28)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "su-mudaerji",
+      "name": "Su Mudaerji",
+      "name_ko": "Su Mudaerji",
+      "record": "19–7(1 NC)",
+      "country": "China",
+      "country_ko": "중국",
+      "division": "플라이급",
+      "rank": "#12",
+      "recent": [
+        {
+          "opp": "Alex Perez",
+          "opp_ko": "Alex Perez",
+          "result": "-",
+          "method": "NC (accidental groin kick)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "steve-erceg",
+      "name": "Steve Erceg",
+      "name_ko": "Steve Erceg",
+      "record": "14–4",
+      "country": "Australia",
+      "country_ko": "호주",
+      "division": "플라이급",
+      "rank": "#13",
+      "recent": [],
+      "next": {
+        "opp": "Ramazan Temirov",
+        "opp_ko": "Ramazan Temirov",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "alex-perez",
+      "name": "Alex Perez",
+      "name_ko": "Alex Perez",
+      "record": "26–10(1 NC)",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "플라이급",
+      "rank": "#14",
+      "recent": [
+        {
+          "opp": "Su Mudaerji",
+          "opp_ko": "Su Mudaerji",
+          "result": "-",
+          "method": "NC (accidental groin kick)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "joseph-morales",
+      "name": "Joseph Morales",
+      "name_ko": "Joseph Morales",
+      "record": "14–2",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "플라이급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "kayla-harrison",
+      "name": "Kayla Harrison",
+      "name_ko": "케일라 해리슨",
+      "record": "19–1",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 밴텀급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "joselyne-edwards",
+      "name": "Joselyne Edwards",
+      "name_ko": "Joselyne Edwards",
+      "record": "18–6",
+      "country": "Panama",
+      "country_ko": "Panama",
+      "division": "여성 밴텀급",
+      "rank": "#1",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "norma-dumont",
+      "name": "Norma Dumont",
+      "name_ko": "Norma Dumont",
+      "record": "13–3",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 밴텀급",
+      "rank": "#2",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "luana-santos",
+      "name": "Luana Santos",
+      "name_ko": "Luana Santos",
+      "record": "11–2",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 밴텀급",
+      "rank": "#3",
+      "recent": [
+        {
+          "opp": "Karol Rosa",
+          "opp_ko": "Karol Rosa",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "julianna-pe-a",
+      "name": "Julianna Peña",
+      "name_ko": "줄리아나 페냐",
+      "record": "12–6",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 밴텀급",
+      "rank": "#4",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "ail-n-p-rez",
+      "name": "Ailín Pérez",
+      "name_ko": "Ailín Pérez",
+      "record": "13–2",
+      "country": "Argentina",
+      "country_ko": "아르헨티나",
+      "division": "여성 밴텀급",
+      "rank": "#5",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "yana-santos",
+      "name": "Yana Santos",
+      "name_ko": "Yana Santos",
+      "record": "17–8(1 NC)",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "여성 밴텀급",
+      "rank": "#6",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "jacqueline-cavalcanti",
+      "name": "Jacqueline Cavalcanti",
+      "name_ko": "Jacqueline Cavalcanti",
+      "record": "10–2",
+      "country": "Portugal",
+      "country_ko": "Portugal",
+      "division": "여성 밴텀급",
+      "rank": "#7",
+      "recent": [
+        {
+          "opp": "Ketlen Vieira",
+          "opp_ko": "Ketlen Vieira",
+          "result": "loss",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "michelle-montague",
+      "name": "Michelle Montague",
+      "name_ko": "Michelle Montague",
+      "record": "8–0",
+      "country": "New Zealand",
+      "country_ko": "뉴질랜드",
+      "division": "여성 밴텀급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "melissa-croden",
+      "name": "Melissa Croden",
+      "name_ko": "Melissa Croden",
+      "record": "8–3",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "division": "여성 밴텀급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "karol-rosa",
+      "name": "Karol Rosa",
+      "name_ko": "Karol Rosa",
+      "record": "19–8",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 밴텀급",
+      "rank": "#10",
+      "recent": [
+        {
+          "opp": "Luana Santos",
+          "opp_ko": "Luana Santos",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "beatriz-mesquita",
+      "name": "Beatriz Mesquita",
+      "name_ko": "Beatriz Mesquita",
+      "record": "8–0",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 밴텀급",
+      "rank": "#11",
+      "recent": [
+        {
+          "opp": "Melissa Mullins",
+          "opp_ko": "Melissa Mullins",
+          "result": "win",
+          "method": "Submission (armbar)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "irene-aldana",
+      "name": "Irene Aldana",
+      "name_ko": "Irene Aldana",
+      "record": "15–8",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "division": "여성 밴텀급",
+      "rank": "#12",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "macy-chiasson",
+      "name": "Macy Chiasson",
+      "name_ko": "Macy Chiasson",
+      "record": "11–6",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 밴텀급",
+      "rank": "#13",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "darya-zheleznyakova",
+      "name": "Darya Zheleznyakova",
+      "name_ko": "Darya Zheleznyakova",
+      "record": "10–3",
+      "country": "Russia",
+      "country_ko": "러시아",
+      "division": "여성 밴텀급",
+      "rank": "#14",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "raquel-pennington",
+      "name": "Raquel Pennington",
+      "name_ko": "라켈 페닝턴",
+      "record": "16–9",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 밴텀급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "valentina-shevchenko",
+      "name": "Valentina Shevchenko",
+      "name_ko": "발렌티나 셰브첸코",
+      "record": "26–4–1",
+      "country": "Kyrgyzstan",
+      "country_ko": "키르기스스탄",
+      "division": "여성 플라이급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "nat-lia-silva",
+      "name": "Natália Silva",
+      "name_ko": "Natália Silva",
+      "record": "20–5–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 플라이급",
+      "rank": "#1",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "manon-fiorot",
+      "name": "Manon Fiorot",
+      "name_ko": "마농 피오로",
+      "record": "13–2",
+      "country": "France",
+      "country_ko": "프랑스",
+      "division": "여성 플라이급",
+      "rank": "#2",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "alexa-grasso",
+      "name": "Alexa Grasso",
+      "name_ko": "알렉사 그라소",
+      "record": "17–5–1",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "division": "여성 플라이급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "erin-blanchfield",
+      "name": "Erin Blanchfield",
+      "name_ko": "에린 블랜치필드",
+      "record": "14–2",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 플라이급",
+      "rank": "#4",
+      "recent": [],
+      "next": {
+        "opp": "Jasmine Jasudavicius",
+        "opp_ko": "Jasmine Jasudavicius",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "zhang-weili",
+      "name": "Zhang Weili",
+      "name_ko": "장 웨일리",
+      "record": "26–4",
+      "country": "China",
+      "country_ko": "중국",
+      "division": "여성 스트로급",
+      "rank": "#5",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "jasmine-jasudavicius",
+      "name": "Jasmine Jasudavicius",
+      "name_ko": "Jasmine Jasudavicius",
+      "record": "15–4",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "division": "여성 플라이급",
+      "rank": "#6",
+      "recent": [],
+      "next": {
+        "opp": "Erin Blanchfield",
+        "opp_ko": "에린 블랜치필드",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "rose-namajunas",
+      "name": "Rose Namajunas",
+      "name_ko": "Rose Namajunas",
+      "record": "14–8",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 플라이급",
+      "rank": "#7",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "tracy-cortez",
+      "name": "Tracy Cortez",
+      "name_ko": "Tracy Cortez",
+      "record": "12–3",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 플라이급",
+      "rank": "#8",
+      "recent": [],
+      "next": {
+        "opp": "Wang Cong",
+        "opp_ko": "Wang Cong",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "maycee-barber",
+      "name": "Maycee Barber",
+      "name_ko": "Maycee Barber",
+      "record": "15–3",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 플라이급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "wang-cong",
+      "name": "Wang Cong",
+      "name_ko": "Wang Cong",
+      "record": "9–1",
+      "country": "China",
+      "country_ko": "중국",
+      "division": "여성 플라이급",
+      "rank": "#10",
+      "recent": [],
+      "next": {
+        "opp": "Tracy Cortez",
+        "opp_ko": "Tracy Cortez",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "miranda-maverick",
+      "name": "Miranda Maverick",
+      "name_ko": "Miranda Maverick",
+      "record": "15–6",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 플라이급",
+      "rank": "#11",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "jj-aldrich",
+      "name": "JJ Aldrich",
+      "name_ko": "JJ Aldrich",
+      "record": "15–7",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 플라이급",
+      "rank": "#12",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "karine-silva",
+      "name": "Karine Silva",
+      "name_ko": "Karine Silva",
+      "record": "19–7",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 플라이급",
+      "rank": "#13",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "eduarda-moura",
+      "name": "Eduarda Moura",
+      "name_ko": "Eduarda Moura",
+      "record": "12–2",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 플라이급",
+      "rank": "#14",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "casey-o-neill",
+      "name": "Casey O'Neill",
+      "name_ko": "Casey O'Neill",
+      "record": "11–2",
+      "country": "Australia",
+      "country_ko": "호주",
+      "division": "여성 플라이급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "mackenzie-dern",
+      "name": "Mackenzie Dern",
+      "name_ko": "맥켄지 던",
+      "record": "16–5",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "챔피언",
+      "recent": [],
+      "next": {
+        "opp": "Gillian Robertson",
+        "opp_ko": "Gillian Robertson",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "virna-jandiroba",
+      "name": "Virna Jandiroba",
+      "name_ko": "Virna Jandiroba",
+      "record": "23–4",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "#2",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "tatiana-suarez",
+      "name": "Tatiana Suarez",
+      "name_ko": "타티아나 수아레스",
+      "record": "12–1",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 스트로급",
+      "rank": "#3",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "gillian-robertson",
+      "name": "Gillian Robertson",
+      "name_ko": "Gillian Robertson",
+      "record": "17–8",
+      "country": "Canada",
+      "country_ko": "캐나다",
+      "division": "여성 스트로급",
+      "rank": "#4",
+      "recent": [],
+      "next": {
+        "opp": "Mackenzie Dern",
+        "opp_ko": "맥켄지 던",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "yan-xiaonan",
+      "name": "Yan Xiaonan",
+      "name_ko": "얀 시아오난",
+      "record": "18–5(1 NC)",
+      "country": "China",
+      "country_ko": "중국",
+      "division": "여성 스트로급",
+      "rank": "#5",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "piera-rodriguez",
+      "name": "Piera Rodriguez",
+      "name_ko": "Piera Rodriguez",
+      "record": "12–2",
+      "country": "Venezuela",
+      "country_ko": "Venezuela",
+      "division": "여성 스트로급",
+      "rank": "#6",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "tabatha-ricci",
+      "name": "Tabatha Ricci",
+      "name_ko": "Tabatha Ricci",
+      "record": "12–4",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "#7",
+      "recent": [],
+      "next": {
+        "opp": "Fatima Kline",
+        "opp_ko": "Fatima Kline",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "denise-gomes",
+      "name": "Denise Gomes",
+      "name_ko": "Denise Gomes",
+      "record": "12–3",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "#8",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "mizuki-inoue",
+      "name": "Mizuki Inoue",
+      "name_ko": "Mizuki Inoue",
+      "record": "16–6",
+      "country": "Japan",
+      "country_ko": "일본",
+      "division": "여성 스트로급",
+      "rank": "#9",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "alexia-thainara",
+      "name": "Alexia Thainara",
+      "name_ko": "Alexia Thainara",
+      "record": "14–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "#10",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "amanda-lemos",
+      "name": "Amanda Lemos",
+      "name_ko": "Amanda Lemos",
+      "record": "15–6–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "#11",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "loopy-godinez",
+      "name": "Loopy Godinez",
+      "name_ko": "Loopy Godinez",
+      "record": "14–6",
+      "country": "Mexico",
+      "country_ko": "멕시코",
+      "division": "여성 스트로급",
+      "rank": "#12",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "jaqueline-amorim",
+      "name": "Jaqueline Amorim",
+      "name_ko": "Jaqueline Amorim",
+      "record": "11–2",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "#13",
+      "recent": [
+        {
+          "opp": "Loma Lookboonmee",
+          "opp_ko": "Loma Lookboonmee",
+          "result": "win",
+          "method": "Submission (armbar)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "fatima-kline",
+      "name": "Fatima Kline",
+      "name_ko": "Fatima Kline",
+      "record": "9–1",
+      "country": "United States",
+      "country_ko": "미국",
+      "division": "여성 스트로급",
+      "rank": "#14",
+      "recent": [],
+      "next": {
+        "opp": "Tabatha Ricci",
+        "opp_ko": "Tabatha Ricci",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "talita-alencar",
+      "name": "Talita Alencar",
+      "name_ko": "Talita Alencar",
+      "record": "8–1–1",
+      "country": "Brazil",
+      "country_ko": "브라질",
+      "division": "여성 스트로급",
+      "rank": "#15",
+      "recent": [],
+      "next": null
+    },
+    {
+      "id": "conor-mcgregor",
+      "name": "Conor McGregor",
+      "name_ko": "Conor McGregor",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Max Holloway",
+        "opp_ko": "맥스 할로웨이",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "king-green",
+      "name": "King Green",
+      "name_ko": "King Green",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Terrance McKinney",
+        "opp_ko": "Terrance McKinney",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "terrance-mckinney",
+      "name": "Terrance McKinney",
+      "name_ko": "Terrance McKinney",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "King Green",
+        "opp_ko": "King Green",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "robert-whittaker",
+      "name": "Robert Whittaker",
+      "name_ko": "로버트 휘태커",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Nikita Krylov",
+        "opp_ko": "Nikita Krylov",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "nikita-krylov",
+      "name": "Nikita Krylov",
+      "name_ko": "Nikita Krylov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Robert Whittaker",
+        "opp_ko": "로버트 휘태커",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "gable-steveson",
+      "name": "Gable Steveson",
+      "name_ko": "Gable Steveson",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Elisha Ellison",
+        "opp_ko": "Elisha Ellison",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "elisha-ellison",
+      "name": "Elisha Ellison",
+      "name_ko": "Elisha Ellison",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Gable Steveson",
+        "opp_ko": "Gable Steveson",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "cody-garbrandt",
+      "name": "Cody Garbrandt",
+      "name_ko": "Cody Garbrandt",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Adrian Yañez",
+        "opp_ko": "Adrian Yañez",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "adrian-ya-ez",
+      "name": "Adrian Yañez",
+      "name_ko": "Adrian Yañez",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Cody Garbrandt",
+        "opp_ko": "Cody Garbrandt",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "luke-riley",
+      "name": "Luke Riley",
+      "name_ko": "Luke Riley",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Kai Kamaka III",
+        "opp_ko": "Kai Kamaka III",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "kai-kamaka-iii",
+      "name": "Kai Kamaka III",
+      "name_ko": "Kai Kamaka III",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Luke Riley",
+        "opp_ko": "Luke Riley",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "damian-pinas",
+      "name": "Damian Pinas",
+      "name_ko": "Damian Pinas",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "César Almeida",
+        "opp_ko": "César Almeida",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "c-sar-almeida",
+      "name": "César Almeida",
+      "name_ko": "César Almeida",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Damian Pinas",
+        "opp_ko": "Damian Pinas",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "ryan-gandra",
+      "name": "Ryan Gandra",
+      "name_ko": "Ryan Gandra",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Zachary Reese",
+        "opp_ko": "Zachary Reese",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "zachary-reese",
+      "name": "Zachary Reese",
+      "name_ko": "Zachary Reese",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Ryan Gandra",
+        "opp_ko": "Ryan Gandra",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "alessandro-costa",
+      "name": "Alessandro Costa",
+      "name_ko": "Alessandro Costa",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Matt Schnell",
+          "opp_ko": "Matt Schnell",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": {
+        "opp": "Cody Durden",
+        "opp_ko": "Cody Durden",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "cody-durden",
+      "name": "Cody Durden",
+      "name_ko": "Cody Durden",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Alessandro Costa",
+        "opp_ko": "Alessandro Costa",
+        "event": "UFC 329: McGregor vs. Holloway 2",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": "kevin-holland",
+      "name": "Kevin Holland",
+      "name_ko": "Kevin Holland",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Jacobe Smith",
+        "opp_ko": "Jacobe Smith",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "jacobe-smith",
+      "name": "Jacobe Smith",
+      "name_ko": "Jacobe Smith",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Kevin Holland",
+        "opp_ko": "Kevin Holland",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "chase-hooper",
+      "name": "Chase Hooper",
+      "name_ko": "Chase Hooper",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Mitch Ramirez",
+        "opp_ko": "Mitch Ramirez",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "mitch-ramirez",
+      "name": "Mitch Ramirez",
+      "name_ko": "Mitch Ramirez",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Chase Hooper",
+        "opp_ko": "Chase Hooper",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "tommy-mcmillen",
+      "name": "Tommy McMillen",
+      "name_ko": "Tommy McMillen",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Alberto Montes",
+        "opp_ko": "Alberto Montes",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "alberto-montes",
+      "name": "Alberto Montes",
+      "name_ko": "Alberto Montes",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Tommy McMillen",
+        "opp_ko": "Tommy McMillen",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "veronica-hardy",
+      "name": "Veronica Hardy",
+      "name_ko": "Veronica Hardy",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 플라이급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Dione Barbosa",
+        "opp_ko": "Dione Barbosa",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "dione-barbosa",
+      "name": "Dione Barbosa",
+      "name_ko": "Dione Barbosa",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 플라이급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Veronica Hardy",
+        "opp_ko": "Veronica Hardy",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "austin-bashi",
+      "name": "Austin Bashi",
+      "name_ko": "Austin Bashi",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Jose Miguel Delgado",
+        "opp_ko": "Jose Miguel Delgado",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "allen-frye-jr",
+      "name": "Allen Frye Jr.",
+      "name_ko": "Allen Frye Jr.",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Alvin Hines",
+        "opp_ko": "Alvin Hines",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "alvin-hines",
+      "name": "Alvin Hines",
+      "name_ko": "Alvin Hines",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Allen Frye Jr.",
+        "opp_ko": "Allen Frye Jr.",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "levi-rodrigues-jr",
+      "name": "Levi Rodrigues Jr.",
+      "name_ko": "Levi Rodrigues Jr.",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Felipe Franco",
+        "opp_ko": "Felipe Franco",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "felipe-franco",
+      "name": "Felipe Franco",
+      "name_ko": "Felipe Franco",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Levi Rodrigues Jr.",
+        "opp_ko": "Levi Rodrigues Jr.",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "alden-coria",
+      "name": "Alden Coria",
+      "name_ko": "Alden Coria",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Stewart Nicoll",
+        "opp_ko": "Stewart Nicoll",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "stewart-nicoll",
+      "name": "Stewart Nicoll",
+      "name_ko": "Stewart Nicoll",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Alden Coria",
+        "opp_ko": "Alden Coria",
+        "event": "UFC Fight Night: du Plessis 대 우스만",
+        "date": "2026-07-18"
+      }
+    },
+    {
+      "id": "ramazan-temirov",
+      "name": "Ramazan Temirov",
+      "name_ko": "Ramazan Temirov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Steve Erceg",
+        "opp_ko": "Steve Erceg",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "tyrell-fortune",
+      "name": "Tyrell Fortune",
+      "name_ko": "Tyrell Fortune",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Rizvan Kuniev",
+        "opp_ko": "Rizvan Kuniev",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "islam-dulatov",
+      "name": "Islam Dulatov",
+      "name_ko": "Islam Dulatov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Wellington Turman",
+        "opp_ko": "Wellington Turman",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "wellington-turman",
+      "name": "Wellington Turman",
+      "name_ko": "Wellington Turman",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Islam Dulatov",
+        "opp_ko": "Islam Dulatov",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "ismael-bonfim",
+      "name": "Ismael Bonfim",
+      "name_ko": "Ismael Bonfim",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Axel Sola",
+        "opp_ko": "Axel Sola",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "axel-sola",
+      "name": "Axel Sola",
+      "name_ko": "Axel Sola",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Ismael Bonfim",
+        "opp_ko": "Ismael Bonfim",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "thomas-petersen",
+      "name": "Thomas Petersen",
+      "name_ko": "Thomas Petersen",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Valter Walker",
+        "opp_ko": "Valter Walker",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "uran-satybaldiev",
+      "name": "Uran Satybaldiev",
+      "name_ko": "Uran Satybaldiev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Dustin Jacoby",
+        "opp_ko": "Dustin Jacoby",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "magomed-zaynukov",
+      "name": "Magomed Zaynukov",
+      "name_ko": "Magomed Zaynukov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Damian Rzepecki",
+        "opp_ko": "Damian Rzepecki",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "damian-rzepecki",
+      "name": "Damian Rzepecki",
+      "name_ko": "Damian Rzepecki",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Magomed Zaynukov",
+        "opp_ko": "Magomed Zaynukov",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "magomed-tuchalov",
+      "name": "Magomed Tuchalov",
+      "name_ko": "Magomed Tuchalov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Brendson Ribeiro",
+        "opp_ko": "Brendson Ribeiro",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "brendson-ribeiro",
+      "name": "Brendson Ribeiro",
+      "name_ko": "Brendson Ribeiro",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Magomed Tuchalov",
+        "opp_ko": "Magomed Tuchalov",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "mike-davis",
+      "name": "Mike Davis",
+      "name_ko": "Mike Davis",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Nurullo Aliev",
+        "opp_ko": "Nurullo Aliev",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "nurullo-aliev",
+      "name": "Nurullo Aliev",
+      "name_ko": "Nurullo Aliev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Mike Davis",
+        "opp_ko": "Mike Davis",
+        "event": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
+        "date": "2026-07-25"
+      }
+    },
+    {
+      "id": "aleksandar-raki",
+      "name": "Aleksandar Rakić",
+      "name_ko": "Aleksandar Rakić",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Marcin Tybura",
+        "opp_ko": "마르친 티부라",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "marcin-tybura",
+      "name": "Marcin Tybura",
+      "name_ko": "마르친 티부라",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Aleksandar Rakić",
+        "opp_ko": "Aleksandar Rakić",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "oban-elliott",
+      "name": "Oban Elliott",
+      "name_ko": "Oban Elliott",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Michael Oliveira",
+        "opp_ko": "Michael Oliveira",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "michael-oliveira",
+      "name": "Michael Oliveira",
+      "name_ko": "Michael Oliveira",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Oban Elliott",
+        "opp_ko": "Oban Elliott",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "udov-t-klein",
+      "name": "Ľudovít Klein",
+      "name_ko": "Ľudovít Klein",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Tofiq Musayev",
+        "opp_ko": "Tofiq Musayev",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "tofiq-musayev",
+      "name": "Tofiq Musayev",
+      "name_ko": "Tofiq Musayev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Ľudovít Klein",
+        "opp_ko": "Ľudovít Klein",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "mark-vologdin",
+      "name": "Mark Vologdin",
+      "name_ko": "Mark Vologdin",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Josias Musasa",
+        "opp_ko": "Josias Musasa",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "josias-musasa",
+      "name": "Josias Musasa",
+      "name_ko": "Josias Musasa",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Mark Vologdin",
+        "opp_ko": "Mark Vologdin",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "du-ko-todorovi",
+      "name": "Duško Todorović",
+      "name_ko": "Duško Todorović",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Robert Valentin",
+        "opp_ko": "Robert Valentin",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "robert-valentin",
+      "name": "Robert Valentin",
+      "name_ko": "Robert Valentin",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Duško Todorović",
+        "opp_ko": "Duško Todorović",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "dennis-buzukja",
+      "name": "Dennis Buzukja",
+      "name_ko": "Dennis Buzukja",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Bogdan Grad",
+        "opp_ko": "Bogdan Grad",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "bogdan-grad",
+      "name": "Bogdan Grad",
+      "name_ko": "Bogdan Grad",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Dennis Buzukja",
+        "opp_ko": "Dennis Buzukja",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "vlasto-epo",
+      "name": "Vlasto Čepo",
+      "name_ko": "Vlasto Čepo",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Gilbert Urbina",
+        "opp_ko": "Gilbert Urbina",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "gilbert-urbina",
+      "name": "Gilbert Urbina",
+      "name_ko": "Gilbert Urbina",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Vlasto Čepo",
+        "opp_ko": "Vlasto Čepo",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "jovan-leka",
+      "name": "Jovan Leka",
+      "name_ko": "Jovan Leka",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Max Gimenis",
+        "opp_ko": "Max Gimenis",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "max-gimenis",
+      "name": "Max Gimenis",
+      "name_ko": "Max Gimenis",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Jovan Leka",
+        "opp_ko": "Jovan Leka",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "nina-nikolija-milo-evi",
+      "name": "Nina Nikolija Milošević",
+      "name_ko": "Nina Nikolija Milošević",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 밴텀급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Hailey Cowan",
+        "opp_ko": "Hailey Cowan",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "hailey-cowan",
+      "name": "Hailey Cowan",
+      "name_ko": "Hailey Cowan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 밴텀급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Nina Nikolija Milošević",
+        "opp_ko": "Nina Nikolija Milošević",
+        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "date": "2026-08-01"
+      }
+    },
+    {
+      "id": "neil-magny",
+      "name": "Neil Magny",
+      "name_ko": "Neil Magny",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Ramiz Brahimaj",
+        "opp_ko": "Ramiz Brahimaj",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "ramiz-brahimaj",
+      "name": "Ramiz Brahimaj",
+      "name_ko": "Ramiz Brahimaj",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Neil Magny",
+        "opp_ko": "Neil Magny",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "jalin-turner",
+      "name": "Jalin Turner",
+      "name_ko": "Jalin Turner",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Kauê Fernandes",
+        "opp_ko": "Kauê Fernandes",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "kau-fernandes",
+      "name": "Kauê Fernandes",
+      "name_ko": "Kauê Fernandes",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Jalin Turner",
+        "opp_ko": "Jalin Turner",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "geoff-neal",
+      "name": "Geoff Neal",
+      "name_ko": "제프 닐",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Chidi Njokuani",
+        "opp_ko": "Chidi Njokuani",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "chidi-njokuani",
+      "name": "Chidi Njokuani",
+      "name_ko": "Chidi Njokuani",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Geoff Neal",
+        "opp_ko": "제프 닐",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "mansur-abdul-malik",
+      "name": "Mansur Abdul-Malik",
+      "name_ko": "Mansur Abdul-Malik",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Dustin Stoltzfus",
+        "opp_ko": "Dustin Stoltzfus",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "dustin-stoltzfus",
+      "name": "Dustin Stoltzfus",
+      "name_ko": "Dustin Stoltzfus",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Mansur Abdul-Malik",
+        "opp_ko": "Mansur Abdul-Malik",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "jeremiah-wells",
+      "name": "Jeremiah Wells",
+      "name_ko": "Jeremiah Wells",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Myktybek Orolbai",
+        "opp_ko": "Myktybek Orolbai",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "myktybek-orolbai",
+      "name": "Myktybek Orolbai",
+      "name_ko": "Myktybek Orolbai",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Jeremiah Wells",
+        "opp_ko": "Jeremiah Wells",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "vicente-luque",
+      "name": "Vicente Luque",
+      "name_ko": "Vicente Luque",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Tresean Gore",
+        "opp_ko": "Tresean Gore",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "tresean-gore",
+      "name": "Tresean Gore",
+      "name_ko": "Tresean Gore",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Vicente Luque",
+        "opp_ko": "Vicente Luque",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "edson-barboza",
+      "name": "Edson Barboza",
+      "name_ko": "Edson Barboza",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Esteban Ribovics",
+        "opp_ko": "Esteban Ribovics",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "esteban-ribovics",
+      "name": "Esteban Ribovics",
+      "name_ko": "Esteban Ribovics",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [],
+      "next": {
+        "opp": "Edson Barboza",
+        "opp_ko": "Edson Barboza",
+        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "date": "2026-08-15"
+      }
+    },
+    {
+      "id": "manuel-torres",
+      "name": "Manuel Torres",
+      "name_ko": "Manuel Torres",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Rafael Fiziev",
+          "opp_ko": "라파엘 피지에프",
+          "result": "loss",
+          "method": "KO (spinning wheel kick and punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "sharabutdin-magomedov",
+      "name": "Sharabutdin Magomedov",
+      "name_ko": "Sharabutdin Magomedov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Michel Pereira",
+          "opp_ko": "Michel Pereira",
+          "result": "win",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "michel-pereira",
+      "name": "Michel Pereira",
+      "name_ko": "Michel Pereira",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Sharabutdin Magomedov",
+          "opp_ko": "Sharabutdin Magomedov",
+          "result": "loss",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "matheus-camilo",
+      "name": "Matheus Camilo",
+      "name_ko": "Matheus Camilo",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Nazim Sadykhov",
+          "opp_ko": "Nazim Sadykhov",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "nazim-sadykhov",
+      "name": "Nazim Sadykhov",
+      "name_ko": "Nazim Sadykhov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Matheus Camilo",
+          "opp_ko": "Matheus Camilo",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "charles-johnson",
+      "name": "Charles Johnson",
+      "name_ko": "Charles Johnson",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Asu Almabayev",
+          "opp_ko": "Asu Almabayev",
+          "result": "loss",
+          "method": "Submission (Suloev stretch)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "brunno-ferreira",
+      "name": "Brunno Ferreira",
+      "name_ko": "Brunno Ferreira",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Ikram Aliskerov",
+          "opp_ko": "Ikram Aliskerov",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "micha-oleksiejczuk",
+      "name": "Michał Oleksiejczuk",
+      "name_ko": "Michał Oleksiejczuk",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Abusupiyan Magomedov",
+          "opp_ko": "Abusupiyan Magomedov",
+          "result": "loss",
+          "method": "Submission (guillotine choke)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "farman-hasanov",
+      "name": "Farman Hasanov",
+      "name_ko": "Farman Hasanov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Eric Nolan",
+          "opp_ko": "Eric Nolan",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "eric-nolan",
+      "name": "Eric Nolan",
+      "name_ko": "Eric Nolan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Farman Hasanov",
+          "opp_ko": "Farman Hasanov",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "abdul-rakhman-yakhyaev",
+      "name": "Abdul-Rakhman Yakhyaev",
+      "name_ko": "Abdul-Rakhman Yakhyaev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Julius Walker",
+          "opp_ko": "Julius Walker",
+          "result": "win",
+          "method": "KO (punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "julius-walker",
+      "name": "Julius Walker",
+      "name_ko": "Julius Walker",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Abdul-Rakhman Yakhyaev",
+          "opp_ko": "Abdul-Rakhman Yakhyaev",
+          "result": "loss",
+          "method": "KO (punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "nursulton-ruziboev",
+      "name": "Nursulton Ruziboev",
+      "name_ko": "Nursulton Ruziboev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Andrey Pulyaev",
+          "opp_ko": "Andrey Pulyaev",
+          "result": "win",
+          "method": "Technical Submission (neck crank)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "andrey-pulyaev",
+      "name": "Andrey Pulyaev",
+      "name_ko": "Andrey Pulyaev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Nursulton Ruziboev",
+          "opp_ko": "Nursulton Ruziboev",
+          "result": "loss",
+          "method": "Technical Submission (neck crank)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "kaan-ofli",
+      "name": "Kaan Ofli",
+      "name_ko": "Kaan Ofli",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Javier Reyes",
+          "opp_ko": "Javier Reyes",
+          "result": "win",
+          "method": "Submission (arm-triangle choke)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "javier-reyes",
+      "name": "Javier Reyes",
+      "name_ko": "Javier Reyes",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Kaan Ofli",
+          "opp_ko": "Kaan Ofli",
+          "result": "loss",
+          "method": "Submission (arm-triangle choke)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "daniil-donchenko",
+      "name": "Daniil Donchenko",
+      "name_ko": "Daniil Donchenko",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Theodor Berggren",
+          "opp_ko": "Theodor Berggren",
+          "result": "win",
+          "method": "TKO (head kick and punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "theodor-berggren",
+      "name": "Theodor Berggren",
+      "name_ko": "Theodor Berggren",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Daniil Donchenko",
+          "opp_ko": "Daniil Donchenko",
+          "result": "loss",
+          "method": "TKO (head kick and punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jean-matsumoto",
+      "name": "Jean Matsumoto",
+      "name_ko": "Jean Matsumoto",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Bekzat Almakhan",
+          "opp_ko": "Bekzat Almakhan",
+          "result": "win",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "bekzat-almakhan",
+      "name": "Bekzat Almakhan",
+      "name_ko": "Bekzat Almakhan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Jean Matsumoto",
+          "opp_ko": "Jean Matsumoto",
+          "result": "loss",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "tahir-abdullayev",
+      "name": "Tahir Abdullayev",
+      "name_ko": "Tahir Abdullayev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Jefferson Nascimento",
+          "opp_ko": "Jefferson Nascimento",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jefferson-nascimento",
+      "name": "Jefferson Nascimento",
+      "name_ko": "Jefferson Nascimento",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Tahir Abdullayev",
+          "opp_ko": "Tahir Abdullayev",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 피지에프 대 Torres",
+          "date": "2026-06-27"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "ion-cu-elaba",
+      "name": "Ion Cuțelaba",
+      "name_ko": "Ion Cuțelaba",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Navajo Stirling",
+          "opp_ko": "Navajo Stirling",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "christian-rodriguez",
+      "name": "Christian Rodriguez",
+      "name_ko": "Christian Rodriguez",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Hyder Amil",
+          "opp_ko": "Hyder Amil",
+          "result": "win",
+          "method": "Technical Submission (guillotine choke)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "hyder-amil",
+      "name": "Hyder Amil",
+      "name_ko": "Hyder Amil",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Christian Rodriguez",
+          "opp_ko": "Christian Rodriguez",
+          "result": "loss",
+          "method": "Technical Submission (guillotine choke)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "murtazali-magomedov",
+      "name": "Murtazali Magomedov",
+      "name_ko": "Murtazali Magomedov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Melsik Baghdasaryan",
+          "opp_ko": "Melsik Baghdasaryan",
+          "result": "win",
+          "method": "Submission (twister)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "melsik-baghdasaryan",
+      "name": "Melsik Baghdasaryan",
+      "name_ko": "Melsik Baghdasaryan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Murtazali Magomedov",
+          "opp_ko": "Murtazali Magomedov",
+          "result": "loss",
+          "method": "Submission (twister)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "vinicius-oliveira",
+      "name": "Vinicius Oliveira",
+      "name_ko": "Vinicius Oliveira",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Andre Fili",
+          "opp_ko": "Andre Fili",
+          "result": "win",
+          "method": "TKO (punches and elbows)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "andre-fili",
+      "name": "Andre Fili",
+      "name_ko": "Andre Fili",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Vinicius Oliveira",
+          "opp_ko": "Vinicius Oliveira",
+          "result": "loss",
+          "method": "TKO (punches and elbows)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "andr-lima",
+      "name": "André Lima",
+      "name_ko": "André Lima",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "Catchweight (129 lb)",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Kevin Borjas",
+          "opp_ko": "Kevin Borjas",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "melissa-mullins",
+      "name": "Melissa Mullins",
+      "name_ko": "Melissa Mullins",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Beatriz Mesquita",
+          "opp_ko": "Beatriz Mesquita",
+          "result": "loss",
+          "method": "Submission (armbar)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "allan-nascimento",
+      "name": "Allan Nascimento",
+      "name_ko": "Allan Nascimento",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Mitch Raposo",
+          "opp_ko": "Mitch Raposo",
+          "result": "loss",
+          "method": "Decision (split) (29–28, 28–29, 29–28)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "gast-n-bola-os",
+      "name": "Gastón Bolaños",
+      "name_ko": "Gastón Bolaños",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Michael Aswell Jr.",
+          "opp_ko": "Michael Aswell Jr.",
+          "result": "win",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "michael-aswell-jr",
+      "name": "Michael Aswell Jr.",
+      "name_ko": "Michael Aswell Jr.",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Gastón Bolaños",
+          "opp_ko": "Gastón Bolaños",
+          "result": "loss",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "levan-chokheli",
+      "name": "Levan Chokheli",
+      "name_ko": "Levan Chokheli",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Leon Shahbazyan",
+          "opp_ko": "Leon Shahbazyan",
+          "result": "win",
+          "method": "TKO (leg kicks and punches)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "leon-shahbazyan",
+      "name": "Leon Shahbazyan",
+      "name_ko": "Leon Shahbazyan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Levan Chokheli",
+          "opp_ko": "Levan Chokheli",
+          "result": "loss",
+          "method": "TKO (leg kicks and punches)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "shane-collins",
+      "name": "Shane Collins",
+      "name_ko": "Shane Collins",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Otari Tanzilovi",
+          "opp_ko": "Otari Tanzilovi",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "otari-tanzilovi",
+      "name": "Otari Tanzilovi",
+      "name_ko": "Otari Tanzilovi",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Shane Collins",
+          "opp_ko": "Shane Collins",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 카페 대 쿄지",
+          "date": "2026-06-20"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "derrick-lewis",
+      "name": "Derrick Lewis",
+      "name_ko": "데릭 루이스",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Josh Hokit",
+          "opp_ko": "Josh Hokit",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "michael-chandler",
+      "name": "Michael Chandler",
+      "name_ko": "마이클 챈들러",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Maurício Ruffy",
+          "opp_ko": "Maurício Ruffy",
+          "result": "loss",
+          "method": "TKO (spinning wheel kick and punches)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "kyle-daukaus",
+      "name": "Kyle Daukaus",
+      "name_ko": "Kyle Daukaus",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Bo Nickal",
+          "opp_ko": "보 니컬",
+          "result": "loss",
+          "method": "TKO (punches and elbows)",
+          "event": "UFC Freedom 250",
+          "date": "2026-06-14"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "edmen-shahbazyan",
+      "name": "Edmen Shahbazyan",
+      "name_ko": "Edmen Shahbazyan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Brendan Allen",
+          "opp_ko": "브렌든 앨런",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "far-s-ziam",
+      "name": "Farès Ziam",
+      "name_ko": "Farès Ziam",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Tom Nolan",
+          "opp_ko": "Tom Nolan",
+          "result": "loss",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "santiago-luna",
+      "name": "Santiago Luna",
+      "name_ko": "Santiago Luna",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Bryce Mitchell",
+          "opp_ko": "Bryce Mitchell",
+          "result": "loss",
+          "method": "Submission (arm-triangle choke)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "iwo-baraniewski",
+      "name": "Iwo Baraniewski",
+      "name_ko": "Iwo Baraniewski",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Junior Tafa",
+          "opp_ko": "Junior Tafa",
+          "result": "win",
+          "method": "TKO (leg kick and punches)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "junior-tafa",
+      "name": "Junior Tafa",
+      "name_ko": "Junior Tafa",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Iwo Baraniewski",
+          "opp_ko": "Iwo Baraniewski",
+          "result": "loss",
+          "method": "TKO (leg kick and punches)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "matt-schnell",
+      "name": "Matt Schnell",
+      "name_ko": "Matt Schnell",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "Catchweight (130 lb)",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Alessandro Costa",
+          "opp_ko": "Alessandro Costa",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "john-yannis",
+      "name": "John Yannis",
+      "name_ko": "John Yannis",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Marcus McGhee",
+          "opp_ko": "Marcus McGhee",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "dgar-ch-irez",
+      "name": "Édgar Cháirez",
+      "name_ko": "Édgar Cháirez",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Bruno Gustavo da Silva",
+          "opp_ko": "Bruno Gustavo da Silva",
+          "result": "win",
+          "method": "Submission (rear-naked choke)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "bruno-gustavo-da-silva",
+      "name": "Bruno Gustavo da Silva",
+      "name_ko": "Bruno Gustavo da Silva",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Édgar Cháirez",
+          "opp_ko": "Édgar Cháirez",
+          "result": "loss",
+          "method": "Submission (rear-naked choke)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "chelsea-chandler",
+      "name": "Chelsea Chandler",
+      "name_ko": "Chelsea Chandler",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Priscila Cachoeira",
+          "opp_ko": "Priscila Cachoeira",
+          "result": "win",
+          "method": "Submission (armbar)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "priscila-cachoeira",
+      "name": "Priscila Cachoeira",
+      "name_ko": "Priscila Cachoeira",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Chelsea Chandler",
+          "opp_ko": "Chelsea Chandler",
+          "result": "loss",
+          "method": "Submission (armbar)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jordan-leavitt",
+      "name": "Jordan Leavitt",
+      "name_ko": "Jordan Leavitt",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Joanderson Brito",
+          "opp_ko": "Joanderson Brito",
+          "result": "loss",
+          "method": "Submission (ninja choke)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jeisla-chaves",
+      "name": "Jeisla Chaves",
+      "name_ko": "Jeisla Chaves",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Yuneisy Duben",
+          "opp_ko": "Yuneisy Duben",
+          "result": "win",
+          "method": "Decision (split) (29–28, 28–29, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "yuneisy-duben",
+      "name": "Yuneisy Duben",
+      "name_ko": "Yuneisy Duben",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Jeisla Chaves",
+          "opp_ko": "Jeisla Chaves",
+          "result": "loss",
+          "method": "Decision (split) (29–28, 28–29, 29–28)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "ketlen-souza",
+      "name": "Ketlen Souza",
+      "name_ko": "Ketlen Souza",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Ariane Carnelossi",
+          "opp_ko": "Ariane Carnelossi",
+          "result": "win",
+          "method": "KO (punches and head kick)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "ariane-carnelossi",
+      "name": "Ariane Carnelossi",
+      "name_ko": "Ariane Carnelossi",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Ketlen Souza",
+          "opp_ko": "Ketlen Souza",
+          "result": "loss",
+          "method": "KO (punches and head kick)",
+          "event": "UFC Fight Night: 무하마드 대 Bonfim",
+          "date": "2026-06-06"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "zhang-mingyang",
+      "name": "Zhang Mingyang",
+      "name_ko": "Zhang Mingyang",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Alonzo Menifield",
+          "opp_ko": "Alonzo Menifield",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "tallison-teixeira",
+      "name": "Tallison Teixeira",
+      "name_ko": "Tallison Teixeira",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Sergei Pavlovich",
+          "opp_ko": "세르게이 파블로비치",
+          "result": "loss",
+          "method": "KO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "kai-asakura",
+      "name": "Kai Asakura",
+      "name_ko": "카이 아사쿠라",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Cameron Smotherman",
+          "opp_ko": "Cameron Smotherman",
+          "result": "win",
+          "method": "KO (punch)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "cameron-smotherman",
+      "name": "Cameron Smotherman",
+      "name_ko": "Cameron Smotherman",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Kai Asakura",
+          "opp_ko": "카이 아사쿠라",
+          "result": "loss",
+          "method": "KO (punch)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jake-matthews",
+      "name": "Jake Matthews",
+      "name_ko": "Jake Matthews",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Carlston Harris",
+          "opp_ko": "Carlston Harris",
+          "result": "win",
+          "method": "Decision (unanimous) (30–25, 30–27, 30–27)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "carlston-harris",
+      "name": "Carlston Harris",
+      "name_ko": "Carlston Harris",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Jake Matthews",
+          "opp_ko": "Jake Matthews",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–25, 30–27, 30–27)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "luis-felipe-dias",
+      "name": "Luis Felipe Dias",
+      "name_ko": "Luis Felipe Dias",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Lee Yi-sak",
+          "opp_ko": "Lee Yi-sak",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "lee-yi-sak",
+      "name": "Lee Yi-sak",
+      "name_ko": "Lee Yi-sak",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Luis Felipe Dias",
+          "opp_ko": "Luis Felipe Dias",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "jos-henrique-souza",
+      "name": "José Henrique Souza",
+      "name_ko": "José Henrique Souza",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Ding Meng",
+          "opp_ko": "Ding Meng",
+          "result": "win",
+          "method": "Decision (split) (30–27, 28–29, 29–28)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "ding-meng",
+      "name": "Ding Meng",
+      "name_ko": "Ding Meng",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "José Henrique Souza",
+          "opp_ko": "José Henrique Souza",
+          "result": "loss",
+          "method": "Decision (split) (30–27, 28–29, 29–28)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "cody-haddon",
+      "name": "Cody Haddon",
+      "name_ko": "Cody Haddon",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Aori Qileng",
+          "opp_ko": "Aori Qileng",
+          "result": "win",
+          "method": "TKO (knees to the body and punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "aori-qileng",
+      "name": "Aori Qileng",
+      "name_ko": "Aori Qileng",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Cody Haddon",
+          "opp_ko": "Cody Haddon",
+          "result": "loss",
+          "method": "TKO (knees to the body and punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "rei-tsuruya",
+      "name": "Rei Tsuruya",
+      "name_ko": "Rei Tsuruya",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Luis Gurule",
+          "opp_ko": "Luis Gurule",
+          "result": "win",
+          "method": "Submission (neck crank)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "luis-gurule",
+      "name": "Luis Gurule",
+      "name_ko": "Luis Gurule",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Rei Tsuruya",
+          "opp_ko": "Rei Tsuruya",
+          "result": "loss",
+          "method": "Submission (neck crank)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        },
+        {
+          "opp": "Daniel Barez",
+          "opp_ko": "Daniel Barez",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "angela-hill",
+      "name": "Angela Hill",
+      "name_ko": "Angela Hill",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Xiong Jingnan",
+          "opp_ko": "Xiong Jingnan",
+          "result": "win",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "xiong-jingnan",
+      "name": "Xiong Jingnan",
+      "name_ko": "Xiong Jingnan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Angela Hill",
+          "opp_ko": "Angela Hill",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "rodrigo-vera",
+      "name": "Rodrigo Vera",
+      "name_ko": "Rodrigo Vera",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Zhu Kangjie",
+          "opp_ko": "Zhu Kangjie",
+          "result": "win",
+          "method": "KO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "zhu-kangjie",
+      "name": "Zhu Kangjie",
+      "name_ko": "Zhu Kangjie",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Rodrigo Vera",
+          "opp_ko": "Rodrigo Vera",
+          "result": "loss",
+          "method": "KO (punches)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "loma-lookboonmee",
+      "name": "Loma Lookboonmee",
+      "name_ko": "Loma Lookboonmee",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Jaqueline Amorim",
+          "opp_ko": "Jaqueline Amorim",
+          "result": "loss",
+          "method": "Submission (armbar)",
+          "event": "UFC Fight Night: Song 대 피게이레두",
+          "date": "2026-05-30"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "choi-doo-ho",
+      "name": "Choi Doo-ho",
+      "name_ko": "Choi Doo-ho",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Daniel Santos",
+          "opp_ko": "Daniel Santos",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "daniel-santos",
+      "name": "Daniel Santos",
+      "name_ko": "Daniel Santos",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "페더급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Choi Doo-ho",
+          "opp_ko": "Choi Doo-ho",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "juan-d-az",
+      "name": "Juan Díaz",
+      "name_ko": "Juan Díaz",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Malcolm Wellmaker",
+          "opp_ko": "Malcolm Wellmaker",
+          "result": "win",
+          "method": "Submission (rear-naked choke)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "malcolm-wellmaker",
+      "name": "Malcolm Wellmaker",
+      "name_ko": "Malcolm Wellmaker",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Juan Díaz",
+          "opp_ko": "Juan Díaz",
+          "result": "loss",
+          "method": "Submission (rear-naked choke)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "modestas-bukauskas",
+      "name": "Modestas Bukauskas",
+      "name_ko": "Modestas Bukauskas",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "Catchweight (215 lb)",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Christian Edwards",
+          "opp_ko": "Christian Edwards",
+          "result": "win",
+          "method": "Decision (split) (28–29, 29–28, 29–28)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "christian-edwards",
+      "name": "Christian Edwards",
+      "name_ko": "Christian Edwards",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "Catchweight (215 lb)",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Modestas Bukauskas",
+          "opp_ko": "Modestas Bukauskas",
+          "result": "loss",
+          "method": "Decision (split) (28–29, 29–28, 29–28)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "bernardo-sopaj",
+      "name": "Bernardo Sopaj",
+      "name_ko": "Bernardo Sopaj",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Timothy Cuamba",
+          "opp_ko": "Timothy Cuamba",
+          "result": "win",
+          "method": "Submission (rear-naked choke)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "timothy-cuamba",
+      "name": "Timothy Cuamba",
+      "name_ko": "Timothy Cuamba",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Bernardo Sopaj",
+          "opp_ko": "Bernardo Sopaj",
+          "result": "loss",
+          "method": "Submission (rear-naked choke)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "khaos-williams",
+      "name": "Khaos Williams",
+      "name_ko": "Khaos Williams",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Nikolay Veretennikov",
+          "opp_ko": "Nikolay Veretennikov",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "nikolay-veretennikov",
+      "name": "Nikolay Veretennikov",
+      "name_ko": "Nikolay Veretennikov",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "웰터급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Khaos Williams",
+          "opp_ko": "Khaos Williams",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "ivan-erslan",
+      "name": "Ivan Erslan",
+      "name_ko": "Ivan Erslan",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Tuco Tokkos",
+          "opp_ko": "Tuco Tokkos",
+          "result": "win",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "tuco-tokkos",
+      "name": "Tuco Tokkos",
+      "name_ko": "Tuco Tokkos",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트헤비급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Ivan Erslan",
+          "opp_ko": "Ivan Erslan",
+          "result": "loss",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "thomas-gantt",
+      "name": "Thomas Gantt",
+      "name_ko": "Thomas Gantt",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Artur Minev",
+          "opp_ko": "Artur Minev",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "artur-minev",
+      "name": "Artur Minev",
+      "name_ko": "Artur Minev",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "라이트급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Thomas Gantt",
+          "opp_ko": "Thomas Gantt",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "ketlen-vieira",
+      "name": "Ketlen Vieira",
+      "name_ko": "Ketlen Vieira",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 밴텀급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Jacqueline Cavalcanti",
+          "opp_ko": "Jacqueline Cavalcanti",
+          "result": "win",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "cody-brundage",
+      "name": "Cody Brundage",
+      "name_ko": "Cody Brundage",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Andre Petroski",
+          "opp_ko": "Andre Petroski",
+          "result": "win",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "andre-petroski",
+      "name": "Andre Petroski",
+      "name_ko": "Andre Petroski",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "미들급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Cody Brundage",
+          "opp_ko": "Cody Brundage",
+          "result": "loss",
+          "method": "TKO (punches)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "alice-ardelean",
+      "name": "Alice Ardelean",
+      "name_ko": "Alice Ardelean",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Polyana Viana",
+          "opp_ko": "Polyana Viana",
+          "result": "win",
+          "method": "Submission (capsule lock)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "polyana-viana",
+      "name": "Polyana Viana",
+      "name_ko": "Polyana Viana",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Alice Ardelean",
+          "opp_ko": "Alice Ardelean",
+          "result": "loss",
+          "method": "Submission (capsule lock)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "daniel-barez",
+      "name": "Daniel Barez",
+      "name_ko": "Daniel Barez",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "플라이급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Luis Gurule",
+          "opp_ko": "Luis Gurule",
+          "result": "loss",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "nicolle-caliari",
+      "name": "Nicolle Caliari",
+      "name_ko": "Nicolle Caliari",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Shauna Bannon",
+          "opp_ko": "Shauna Bannon",
+          "result": "win",
+          "method": "Submission (arm-triangle choke)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    },
+    {
+      "id": "shauna-bannon",
+      "name": "Shauna Bannon",
+      "name_ko": "Shauna Bannon",
+      "record": "",
+      "country": "",
+      "country_ko": "",
+      "division": "여성 스트로급",
+      "rank": "랭킹 외",
+      "recent": [
+        {
+          "opp": "Nicolle Caliari",
+          "opp_ko": "Nicolle Caliari",
+          "result": "loss",
+          "method": "Submission (arm-triangle choke)",
+          "event": "UFC Fight Night: 앨런 대 코스타",
+          "date": "2026-05-16"
+        }
+      ],
+      "next": null
+    }
+  ]
+}
