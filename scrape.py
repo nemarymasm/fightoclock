@@ -702,8 +702,9 @@ def fetch_recent_past_events(limit=6):
 
 
 def fetch_fighter_detail(url):
-    """선수 개별 위키 페이지 인포박스에서 신체·전적 정보 추출.
-    반환 dict: nick, height, reach, stance, age, record (없는 항목은 생략)."""
+    """선수 개별 위키 페이지 인포박스에서 신체·전적·피니시 정보 추출.
+    반환 dict: nick, height, reach, stance, age, record,
+              win_ko/win_sub/win_dec (승리 방식 분해, 없는 항목은 생략)."""
     out = {}
     if not url:
         return out
@@ -715,6 +716,7 @@ def fetch_fighter_detail(url):
             return out
 
         wins = losses = None
+        mode = None  # 'win' | 'loss' — 'By knockout' 등이 어느 섹션 소속인지 추적
         for row in infobox.find_all("tr"):
             th = row.find("th")
             td = row.find("td")
@@ -722,35 +724,47 @@ def fetch_fighter_detail(url):
                 continue
             label = clean_text(th.get_text()).lower()
             val = clean_text(td.get_text()) if td else ""
-            if not val:
-                continue
 
-            if "height" in label:
+            def as_int(s):
+                m = re.match(r"\d+", s or "")
+                return int(m.group(0)) if m else None
+
+            if "height" in label and val:
                 m = re.search(r"\(([\d.]+)\s*(?:cm|m)\)", val)
                 if m:
                     out["height"] = m.group(1).replace(".0", "") + "cm"
-            elif "reach" in label:
+            elif "reach" in label and val:
                 m = re.search(r"\((\d+)\s*cm\)", val)
                 if m:
                     out["reach"] = m.group(1) + "cm"
-            elif "stance" in label:
+            elif "stance" in label and val:
                 out["stance"] = tr_stance(val.split("[")[0].strip())
-            elif "nickname" in label:
+            elif "nickname" in label and val:
                 nick = val.split("[")[0].strip().strip('"')
                 if nick and nick.lower() not in ("none", "n/a"):
                     out["nick"] = nick
-            elif "born" in label:
+            elif "born" in label and val:
                 m = re.search(r"age[\s\xa0]*(\d{2})", val)
                 if m:
                     out["age"] = m.group(1)
             elif label in ("wins", "win"):
-                m = re.match(r"\d+", val)
-                if m:
-                    wins = m.group(0)
+                mode = "win"
+                if val:
+                    wins = as_int(val)
             elif label in ("losses", "loss"):
-                m = re.match(r"\d+", val)
-                if m:
-                    losses = m.group(0)
+                mode = "loss"
+                if val:
+                    losses = as_int(val)
+            elif label.startswith("by ") and val:
+                # 승리 방식 분해 (Wins 섹션 소속일 때만)
+                n = as_int(val)
+                if mode == "win" and n is not None:
+                    if "knockout" in label:
+                        out["win_ko"] = n
+                    elif "submission" in label:
+                        out["win_sub"] = n
+                    elif "decision" in label:
+                        out["win_dec"] = n
 
         if wins is not None and losses is not None:
             out["record"] = f"{wins}승 {losses}패"
@@ -775,6 +789,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
                 "record": "", "country": "", "country_ko": "",
                 "division": division_ko, "rank": "랭킹 외",
                 "nick": "", "height": "", "reach": "", "stance": "", "age": "",
+                "win_ko": 0, "win_sub": 0, "win_dec": 0,
                 "url": url,
                 "recent": [], "next": None,
             }
@@ -865,6 +880,9 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
         det = fetch_fighter_detail(f["url"])
         for k in ("nick", "height", "reach", "stance", "age"):
             if det.get(k):
+                f[k] = det[k]
+        for k in ("win_ko", "win_sub", "win_dec"):
+            if det.get(k) is not None:
                 f[k] = det[k]
         if det.get("record"):
             f["record"] = det["record"]  # 인포박스 전적이 더 정확 (NC 등 정리)

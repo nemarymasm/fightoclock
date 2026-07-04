@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T18:15:46+09:00",
+  "generated_at": "2026-07-04T18:28:10+09:00",
   "source": "Wikipedia: 랭킹 + 대진표 + 개별 인포박스",
   "fighter_count": 349,
   "fighters": [
@@ -17,6 +17,9 @@
       "reach": "198cm",
       "stance": "",
       "age": "33",
+      "win_ko": 12,
+      "win_sub": 3,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -34,6 +37,9 @@
       "reach": "206cm",
       "stance": "",
       "age": "36",
+      "win_ko": 9,
+      "win_sub": 3,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Alex Pereira",
@@ -60,6 +66,9 @@
       "reach": "203cm",
       "stance": "",
       "age": "37",
+      "win_ko": 24,
+      "win_sub": 4,
+      "win_dec": 12,
       "recent": [],
       "next": null
     },
@@ -77,6 +86,9 @@
       "reach": "213cm",
       "stance": "정통",
       "age": "34",
+      "win_ko": 16,
+      "win_sub": 0,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Tallison Teixeira",
@@ -103,6 +115,9 @@
       "reach": "200cm",
       "stance": "정통",
       "age": "38",
+      "win_ko": 11,
+      "win_sub": 0,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Ciryl Gane",
@@ -129,6 +144,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "28",
+      "win_ko": 6,
+      "win_sub": 3,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Derrick Lewis",
@@ -155,6 +173,9 @@
       "reach": "198cm",
       "stance": "",
       "age": "34",
+      "win_ko": 9,
+      "win_sub": 1,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -172,6 +193,9 @@
       "reach": "190cm",
       "stance": "정통",
       "age": "34",
+      "win_ko": 6,
+      "win_sub": 2,
+      "win_dec": 5,
       "recent": [],
       "next": {
         "opp": "Tyrell Fortune",
@@ -194,6 +218,9 @@
       "reach": "203cm",
       "stance": "",
       "age": "35",
+      "win_ko": 13,
+      "win_sub": 0,
+      "win_dec": 6,
       "recent": [],
       "next": null
     },
@@ -211,6 +238,9 @@
       "reach": "198cm",
       "stance": "정통",
       "age": "31",
+      "win_ko": 7,
+      "win_sub": 8,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -228,6 +258,9 @@
       "reach": "197cm",
       "stance": "",
       "age": "28",
+      "win_ko": 8,
+      "win_sub": 2,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -245,6 +278,9 @@
       "reach": "199cm",
       "stance": "",
       "age": "28",
+      "win_ko": 6,
+      "win_sub": 5,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Thomas Petersen",
@@ -267,6 +303,9 @@
       "reach": "202cm",
       "stance": "",
       "age": "31",
+      "win_ko": 6,
+      "win_sub": 1,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -284,6 +323,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -301,6 +343,9 @@
       "reach": "200cm",
       "stance": "",
       "age": "30",
+      "win_ko": 6,
+      "win_sub": 1,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -318,6 +363,9 @@
       "reach": "201cm",
       "stance": "",
       "age": "34",
+      "win_ko": 7,
+      "win_sub": 14,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -335,6 +383,9 @@
       "reach": "196cm",
       "stance": "",
       "age": "35",
+      "win_ko": 9,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -352,6 +403,9 @@
       "reach": "191cm",
       "stance": "사우스포",
       "age": "34",
+      "win_ko": 10,
+      "win_sub": 0,
+      "win_dec": 10,
       "recent": [],
       "next": {
         "opp": "Khalil Rountree Jr.",
@@ -374,6 +428,9 @@
       "reach": "203cm",
       "stance": "",
       "age": "33",
+      "win_ko": 28,
+      "win_sub": 3,
+      "win_dec": 1,
       "recent": [],
       "next": null
     },
@@ -391,6 +448,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "35",
+      "win_ko": 12,
+      "win_sub": 1,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -408,6 +468,9 @@
       "reach": "201cm",
       "stance": "",
       "age": "35",
+      "win_ko": 7,
+      "win_sub": 0,
+      "win_dec": 5,
       "recent": [],
       "next": null
     },
@@ -425,6 +488,9 @@
       "reach": "194cm",
       "stance": "사우스포",
       "age": "36",
+      "win_ko": 9,
+      "win_sub": 0,
+      "win_dec": 5,
       "recent": [],
       "next": {
         "opp": "Magomed Ankalaev",
@@ -447,6 +513,9 @@
       "reach": "196cm",
       "stance": "사우스포",
       "age": "36",
+      "win_ko": 10,
+      "win_sub": 2,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -464,6 +533,9 @@
       "reach": "191cm",
       "stance": "정통",
       "age": "36",
+      "win_ko": 14,
+      "win_sub": 2,
+      "win_dec": 5,
       "recent": [],
       "next": null
     },
@@ -481,6 +553,9 @@
       "reach": "180cm",
       "stance": "사우스포",
       "age": "37",
+      "win_ko": 12,
+      "win_sub": 1,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -498,6 +573,9 @@
       "reach": "193cm",
       "stance": "정통",
       "age": "33",
+      "win_ko": 15,
+      "win_sub": 3,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Jan Błachowicz",
@@ -520,6 +598,9 @@
       "reach": "200cm",
       "stance": "정통",
       "age": "38",
+      "win_ko": 15,
+      "win_sub": 1,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Uran Satybaldiev",
@@ -542,6 +623,9 @@
       "reach": "201cm",
       "stance": "정통",
       "age": "28",
+      "win_ko": 6,
+      "win_sub": 0,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Ion Cuțelaba",
@@ -568,6 +652,9 @@
       "reach": "193cm",
       "stance": "",
       "age": "38",
+      "win_ko": 11,
+      "win_sub": 3,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Zhang Mingyang",
@@ -594,6 +681,9 @@
       "reach": "208cm",
       "stance": "",
       "age": "34",
+      "win_ko": 17,
+      "win_sub": 3,
+      "win_dec": 2,
       "recent": [],
       "next": null
     },
@@ -611,6 +701,9 @@
       "reach": "198cm",
       "stance": "",
       "age": "43",
+      "win_ko": 9,
+      "win_sub": 9,
+      "win_dec": 11,
       "recent": [],
       "next": {
         "opp": "Bogdan Guskov",
@@ -633,6 +726,9 @@
       "reach": "193cm",
       "stance": "정통",
       "age": "35",
+      "win_ko": 12,
+      "win_sub": 4,
+      "win_dec": 15,
       "recent": [],
       "next": null
     },
@@ -650,6 +746,9 @@
       "reach": "190cm",
       "stance": "",
       "age": "32",
+      "win_ko": 1,
+      "win_sub": 2,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -667,6 +766,9 @@
       "reach": "193cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 30,
+      "win_sub": 11,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Kamaru Usman",
@@ -689,6 +791,9 @@
       "reach": "191cm",
       "stance": "정통",
       "age": "31",
+      "win_ko": 7,
+      "win_sub": 4,
+      "win_dec": 6,
       "recent": [],
       "next": null
     },
@@ -706,6 +811,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "29",
+      "win_ko": 10,
+      "win_sub": 4,
+      "win_dec": 2,
       "recent": [],
       "next": null
     },
@@ -723,6 +831,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "30",
+      "win_ko": 6,
+      "win_sub": 14,
+      "win_dec": 7,
       "recent": [
         {
           "opp": "Edmen Shahbazyan",
@@ -749,6 +860,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "33",
+      "win_ko": 5,
+      "win_sub": 4,
+      "win_dec": 9,
       "recent": [],
       "next": null
     },
@@ -766,6 +880,9 @@
       "reach": "191cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 4,
+      "win_sub": 3,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Gregory Rodrigues",
@@ -788,6 +905,9 @@
       "reach": "203cm",
       "stance": "",
       "age": "36",
+      "win_ko": 16,
+      "win_sub": 0,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -805,6 +925,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "34",
+      "win_ko": 12,
+      "win_sub": 3,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Anthony Hernandez",
@@ -827,6 +950,9 @@
       "reach": "193cm",
       "stance": "사우스포",
       "age": "33",
+      "win_ko": 7,
+      "win_sub": 5,
+      "win_dec": 6,
       "recent": [
         {
           "opp": "Brunno Ferreira",
@@ -853,6 +979,9 @@
       "reach": "197cm",
       "stance": "정통",
       "age": "42",
+      "win_ko": 11,
+      "win_sub": 2,
+      "win_dec": 5,
       "recent": [],
       "next": {
         "opp": "Christian Leroy Duncan",
@@ -875,6 +1004,9 @@
       "reach": "201cm",
       "stance": "",
       "age": "30",
+      "win_ko": 10,
+      "win_sub": 1,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Jared Cannonier",
@@ -897,6 +1029,9 @@
       "reach": "191cm",
       "stance": "사우스포",
       "age": "30",
+      "win_ko": 1,
+      "win_sub": 1,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Kyle Daukaus",
@@ -923,6 +1058,9 @@
       "reach": "198cm",
       "stance": "",
       "age": "35",
+      "win_ko": 14,
+      "win_sub": 8,
+      "win_dec": 7,
       "recent": [
         {
           "opp": "Michał Oleksiejczuk",
@@ -949,6 +1087,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "34",
+      "win_ko": 5,
+      "win_sub": 13,
+      "win_dec": 10,
       "recent": [],
       "next": {
         "opp": "Ian Machado Garry",
@@ -971,6 +1112,9 @@
       "reach": "198cm",
       "stance": "사우스포",
       "age": "32",
+      "win_ko": 19,
+      "win_sub": 3,
+      "win_dec": 2,
       "recent": [],
       "next": null
     },
@@ -988,6 +1132,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "28",
+      "win_ko": 5,
+      "win_sub": 1,
+      "win_dec": 9,
       "recent": [],
       "next": {
         "opp": "Islam Makhachev",
@@ -1010,6 +1157,9 @@
       "reach": "201cm",
       "stance": "",
       "age": "27",
+      "win_ko": 14,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -1027,6 +1177,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "29",
+      "win_ko": 12,
+      "win_sub": 2,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -1044,6 +1197,9 @@
       "reach": "183cm",
       "stance": "정통",
       "age": "33",
+      "win_ko": 3,
+      "win_sub": 6,
+      "win_dec": 10,
       "recent": [],
       "next": null
     },
@@ -1061,6 +1217,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "28",
+      "win_ko": 4,
+      "win_sub": 13,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Belal Muhammad",
@@ -1087,6 +1246,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "37",
+      "win_ko": 5,
+      "win_sub": 1,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Gabriel Bonfim",
@@ -1113,6 +1275,9 @@
       "reach": "188cm",
       "stance": "사우스포",
       "age": "34",
+      "win_ko": 7,
+      "win_sub": 3,
+      "win_dec": 12,
       "recent": [],
       "next": null
     },
@@ -1130,6 +1295,9 @@
       "reach": "193cm",
       "stance": "",
       "age": "32",
+      "win_ko": 15,
+      "win_sub": 0,
+      "win_dec": 6,
       "recent": [],
       "next": null
     },
@@ -1147,6 +1315,9 @@
       "reach": "193cm",
       "stance": "",
       "age": "39",
+      "win_ko": 9,
+      "win_sub": 1,
+      "win_dec": 11,
       "recent": [],
       "next": {
         "opp": "Dricus du Plessis",
@@ -1169,6 +1340,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "34",
+      "win_ko": 6,
+      "win_sub": 6,
+      "win_dec": 2,
       "recent": [],
       "next": null
     },
@@ -1186,6 +1360,9 @@
       "reach": "201cm",
       "stance": "",
       "age": "39",
+      "win_ko": 13,
+      "win_sub": 3,
+      "win_dec": 9,
       "recent": [],
       "next": null
     },
@@ -1203,6 +1380,9 @@
       "reach": "188cm",
       "stance": "사우스포",
       "age": "39",
+      "win_ko": 9,
+      "win_sub": 4,
+      "win_dec": 7,
       "recent": [],
       "next": {
         "opp": "Uroš Medić",
@@ -1225,6 +1405,9 @@
       "reach": "180cm",
       "stance": "",
       "age": "33",
+      "win_ko": 11,
+      "win_sub": 2,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Daniel Rodriguez",
@@ -1247,6 +1430,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "32",
+      "win_ko": 9,
+      "win_sub": 13,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -1264,6 +1450,9 @@
       "reach": "178cm",
       "stance": "정통",
       "age": "37",
+      "win_ko": 4,
+      "win_sub": 2,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Ilia Topuria",
@@ -1290,6 +1479,9 @@
       "reach": "175cm",
       "stance": "정통",
       "age": "29",
+      "win_ko": 7,
+      "win_sub": 8,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Justin Gaethje",
@@ -1316,6 +1508,9 @@
       "reach": "184cm",
       "stance": "정통",
       "age": "29",
+      "win_ko": 9,
+      "win_sub": 6,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -1333,6 +1528,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "36",
+      "win_ko": 10,
+      "win_sub": 22,
+      "win_dec": 5,
       "recent": [],
       "next": null
     },
@@ -1350,6 +1548,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "34",
+      "win_ko": 12,
+      "win_sub": 2,
+      "win_dec": 13,
       "recent": [],
       "next": {
         "opp": "Conor McGregor",
@@ -1372,6 +1573,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "30",
+      "win_ko": 6,
+      "win_sub": 2,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Paddy Pimblett",
@@ -1394,6 +1598,9 @@
       "reach": "180cm",
       "stance": "사우스포",
       "age": "35",
+      "win_ko": 8,
+      "win_sub": 6,
+      "win_dec": 12,
       "recent": [],
       "next": {
         "opp": "Quillan Salkilld",
@@ -1416,6 +1623,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "37",
+      "win_ko": 2,
+      "win_sub": 11,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -1433,6 +1643,9 @@
       "reach": "191cm",
       "stance": "정통",
       "age": "26",
+      "win_ko": 5,
+      "win_sub": 4,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Mateusz Gamrot",
@@ -1455,6 +1668,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "31",
+      "win_ko": 7,
+      "win_sub": 10,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Benoît Saint Denis",
@@ -1477,6 +1693,9 @@
       "reach": "191cm",
       "stance": "정통",
       "age": "30",
+      "win_ko": 13,
+      "win_sub": 0,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Michael Chandler",
@@ -1503,6 +1722,9 @@
       "reach": "192cm",
       "stance": "정통",
       "age": "36",
+      "win_ko": 11,
+      "win_sub": 7,
+      "win_dec": 6,
       "recent": [],
       "next": null
     },
@@ -1520,6 +1742,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Farès Ziam",
@@ -1546,6 +1771,9 @@
       "reach": "180cm",
       "stance": "",
       "age": "33",
+      "win_ko": 9,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Manuel Torres",
@@ -1572,6 +1800,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "32",
+      "win_ko": 5,
+      "win_sub": 14,
+      "win_dec": 5,
       "recent": [],
       "next": null
     },
@@ -1589,6 +1820,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "31",
+      "win_ko": 2,
+      "win_sub": 8,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -1606,6 +1840,9 @@
       "reach": "182cm",
       "stance": "",
       "age": "37",
+      "win_ko": 13,
+      "win_sub": 3,
+      "win_dec": 12,
       "recent": [],
       "next": null
     },
@@ -1623,6 +1860,9 @@
       "reach": "184cm",
       "stance": "",
       "age": "32",
+      "win_ko": 3,
+      "win_sub": 4,
+      "win_dec": 13,
       "recent": [],
       "next": null
     },
@@ -1640,6 +1880,9 @@
       "reach": "184cm",
       "stance": "정통",
       "age": "31",
+      "win_ko": 12,
+      "win_sub": 12,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Steve Garcia",
@@ -1666,6 +1909,9 @@
       "reach": "187cm",
       "stance": "",
       "age": "34",
+      "win_ko": 8,
+      "win_sub": 0,
+      "win_dec": 9,
       "recent": [],
       "next": null
     },
@@ -1683,6 +1929,9 @@
       "reach": "180cm",
       "stance": "",
       "age": "36",
+      "win_ko": 3,
+      "win_sub": 8,
+      "win_dec": 14,
       "recent": [],
       "next": null
     },
@@ -1700,6 +1949,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "32",
+      "win_ko": 1,
+      "win_sub": 4,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Melquizael Costa",
@@ -1726,6 +1978,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "29",
+      "win_ko": 12,
+      "win_sub": 3,
+      "win_dec": 2,
       "recent": [],
       "next": null
     },
@@ -1743,6 +1998,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "35",
+      "win_ko": 2,
+      "win_sub": 12,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -1760,6 +2018,9 @@
       "reach": "183cm",
       "stance": "정통",
       "age": "29",
+      "win_ko": 2,
+      "win_sub": 1,
+      "win_dec": 1,
       "recent": [],
       "next": null
     },
@@ -1777,6 +2038,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "32",
+      "win_ko": 8,
+      "win_sub": 5,
+      "win_dec": 10,
       "recent": [],
       "next": null
     },
@@ -1794,6 +2058,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "24",
+      "win_ko": 13,
+      "win_sub": 2,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -1811,6 +2078,9 @@
       "reach": "180cm",
       "stance": "사우스포",
       "age": "29",
+      "win_ko": 9,
+      "win_sub": 8,
+      "win_dec": 9,
       "recent": [
         {
           "opp": "Arnold Allen",
@@ -1837,6 +2107,9 @@
       "reach": "190cm",
       "stance": "",
       "age": "34",
+      "win_ko": 15,
+      "win_sub": 0,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Diego Lopes",
@@ -1863,6 +2136,9 @@
       "reach": "179cm",
       "stance": "",
       "age": "29",
+      "win_ko": 9,
+      "win_sub": 2,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -1880,6 +2156,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "31",
+      "win_ko": 8,
+      "win_sub": 8,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Jordan Leavitt",
@@ -1906,6 +2185,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Austin Bashi",
@@ -1928,6 +2210,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "33",
+      "win_ko": 7,
+      "win_sub": 1,
+      "win_dec": 12,
       "recent": [],
       "next": null
     },
@@ -1945,6 +2230,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "35",
+      "win_ko": 3,
+      "win_sub": 2,
+      "win_dec": 16,
       "recent": [],
       "next": null
     },
@@ -1962,6 +2250,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "30",
+      "win_ko": 2,
+      "win_sub": 7,
+      "win_dec": 11,
       "recent": [],
       "next": null
     },
@@ -1979,6 +2270,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "31",
+      "win_ko": 13,
+      "win_sub": 1,
+      "win_dec": 6,
       "recent": [
         {
           "opp": "Aiemann Zahabi",
@@ -2005,6 +2299,9 @@
       "reach": "177cm",
       "stance": "",
       "age": "34",
+      "win_ko": 8,
+      "win_sub": 3,
+      "win_dec": 7,
       "recent": [],
       "next": {
         "opp": "Mario Bautista",
@@ -2027,6 +2324,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "33",
+      "win_ko": 3,
+      "win_sub": 7,
+      "win_dec": 7,
       "recent": [],
       "next": {
         "opp": "Cory Sandhagen",
@@ -2049,6 +2349,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "28",
+      "win_ko": 9,
+      "win_sub": 4,
+      "win_dec": 10,
       "recent": [
         {
           "opp": "Deiveson Figueiredo",
@@ -2075,6 +2378,9 @@
       "reach": "",
       "stance": "",
       "age": "27",
+      "win_ko": 10,
+      "win_sub": 0,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -2092,6 +2398,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "39",
+      "win_ko": 8,
+      "win_sub": 3,
+      "win_dec": 11,
       "recent": [],
       "next": null
     },
@@ -2109,6 +2418,9 @@
       "reach": "175cm",
       "stance": "정통",
       "age": "36",
+      "win_ko": 2,
+      "win_sub": 1,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "John Yannis",
@@ -2135,6 +2447,9 @@
       "reach": "180cm",
       "stance": "정통",
       "age": "28",
+      "win_ko": 1,
+      "win_sub": 6,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -2152,6 +2467,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "38",
+      "win_ko": 9,
+      "win_sub": 9,
+      "win_dec": 7,
       "recent": [
         {
           "opp": "Song Yadong",
@@ -2178,6 +2496,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "38",
+      "win_ko": 6,
+      "win_sub": 2,
+      "win_dec": 6,
       "recent": [
         {
           "opp": "Sean O'Malley",
@@ -2204,6 +2525,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "30",
+      "win_ko": 8,
+      "win_sub": 5,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -2221,6 +2545,9 @@
       "reach": "178cm",
       "stance": "사우스포",
       "age": "31",
+      "win_ko": 1,
+      "win_sub": 9,
+      "win_dec": 8,
       "recent": [
         {
           "opp": "Santiago Luna",
@@ -2247,6 +2574,9 @@
       "reach": "192cm",
       "stance": "",
       "age": "34",
+      "win_ko": 8,
+      "win_sub": 1,
+      "win_dec": 6,
       "recent": [],
       "next": null
     },
@@ -2264,6 +2594,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "24",
+      "win_ko": 9,
+      "win_sub": 2,
+      "win_dec": 6,
       "recent": [],
       "next": null
     },
@@ -2281,6 +2614,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "36",
+      "win_ko": 8,
+      "win_sub": 12,
+      "win_dec": 10,
       "recent": [],
       "next": null
     },
@@ -2298,6 +2634,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "32",
+      "win_ko": 15,
+      "win_sub": 5,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Kyoji Horiguchi",
@@ -2324,6 +2663,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "26",
+      "win_ko": 6,
+      "win_sub": 8,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -2341,6 +2683,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "33",
+      "win_ko": 4,
+      "win_sub": 9,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Lone'er Kavanagh",
@@ -2363,6 +2708,9 @@
       "reach": "170cm",
       "stance": "정통",
       "age": "27",
+      "win_ko": 4,
+      "win_sub": 1,
+      "win_dec": 5,
       "recent": [],
       "next": {
         "opp": "Brandon Royval",
@@ -2385,6 +2733,9 @@
       "reach": "165cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 3,
+      "win_sub": 11,
+      "win_dec": 10,
       "recent": [
         {
           "opp": "Charles Johnson",
@@ -2411,6 +2762,9 @@
       "reach": "168cm",
       "stance": "",
       "age": "35",
+      "win_ko": 15,
+      "win_sub": 6,
+      "win_dec": 15,
       "recent": [
         {
           "opp": "Manel Kape",
@@ -2437,6 +2791,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "32",
+      "win_ko": 5,
+      "win_sub": 9,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -2454,6 +2811,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "32",
+      "win_ko": 5,
+      "win_sub": 11,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -2471,6 +2831,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "André Lima",
@@ -2497,6 +2860,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Allan Nascimento",
@@ -2523,6 +2889,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "30",
+      "win_ko": 13,
+      "win_sub": 1,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Alex Perez",
@@ -2549,6 +2918,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "30",
+      "win_ko": 2,
+      "win_sub": 6,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Ramazan Temirov",
@@ -2571,6 +2943,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "34",
+      "win_ko": 7,
+      "win_sub": 7,
+      "win_dec": 12,
       "recent": [
         {
           "opp": "Su Mudaerji",
@@ -2597,6 +2972,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "31",
+      "win_ko": 2,
+      "win_sub": 8,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -2614,6 +2992,9 @@
       "reach": "168cm",
       "stance": "",
       "age": "36",
+      "win_ko": 6,
+      "win_sub": 8,
+      "win_dec": 5,
       "recent": [],
       "next": null
     },
@@ -2631,6 +3012,9 @@
       "reach": "178cm",
       "stance": "정통",
       "age": "30",
+      "win_ko": 8,
+      "win_sub": 4,
+      "win_dec": 6,
       "recent": [],
       "next": null
     },
@@ -2648,6 +3032,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "35",
+      "win_ko": 0,
+      "win_sub": 2,
+      "win_dec": 11,
       "recent": [],
       "next": null
     },
@@ -2665,6 +3052,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Karol Rosa",
@@ -2691,6 +3081,9 @@
       "reach": "175cm",
       "stance": "정통",
       "age": "36",
+      "win_ko": 3,
+      "win_sub": 5,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -2708,6 +3101,9 @@
       "reach": "168cm",
       "stance": "",
       "age": "31",
+      "win_ko": 4,
+      "win_sub": 2,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -2725,6 +3121,9 @@
       "reach": "174cm",
       "stance": "",
       "age": "36",
+      "win_ko": 7,
+      "win_sub": 1,
+      "win_dec": 9,
       "recent": [],
       "next": null
     },
@@ -2742,6 +3141,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "28",
+      "win_ko": 3,
+      "win_sub": 0,
+      "win_dec": 7,
       "recent": [
         {
           "opp": "Ketlen Vieira",
@@ -2768,6 +3170,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -2785,6 +3190,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -2802,6 +3210,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "31",
+      "win_ko": 4,
+      "win_sub": 2,
+      "win_dec": 13,
       "recent": [
         {
           "opp": "Luana Santos",
@@ -2828,6 +3239,9 @@
       "reach": "",
       "stance": "",
       "age": "35",
+      "win_ko": 1,
+      "win_sub": 6,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Melissa Mullins",
@@ -2854,6 +3268,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "38",
+      "win_ko": 8,
+      "win_sub": 3,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -2871,6 +3288,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "34",
+      "win_ko": 3,
+      "win_sub": 3,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -2888,6 +3308,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -2905,6 +3328,9 @@
       "reach": "171cm",
       "stance": "",
       "age": "37",
+      "win_ko": 1,
+      "win_sub": 5,
+      "win_dec": 2,
       "recent": [],
       "next": null
     },
@@ -2922,6 +3348,9 @@
       "reach": "169cm",
       "stance": "",
       "age": "38",
+      "win_ko": 8,
+      "win_sub": 7,
+      "win_dec": 11,
       "recent": [],
       "next": null
     },
@@ -2939,6 +3368,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "29",
+      "win_ko": 5,
+      "win_sub": 7,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -2956,6 +3388,9 @@
       "reach": "165cm",
       "stance": "사우스포",
       "age": "36",
+      "win_ko": 7,
+      "win_sub": 0,
+      "win_dec": 3,
       "recent": [],
       "next": null
     },
@@ -2973,6 +3408,9 @@
       "reach": "168cm",
       "stance": "",
       "age": "32",
+      "win_ko": 5,
+      "win_sub": 2,
+      "win_dec": 10,
       "recent": [],
       "next": null
     },
@@ -2990,6 +3428,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "27",
+      "win_ko": 2,
+      "win_sub": 5,
+      "win_dec": 7,
       "recent": [],
       "next": {
         "opp": "Jasmine Jasudavicius",
@@ -3012,6 +3453,9 @@
       "reach": "160cm",
       "stance": "",
       "age": "35",
+      "win_ko": 11,
+      "win_sub": 8,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -3029,6 +3473,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "37",
+      "win_ko": 1,
+      "win_sub": 1,
+      "win_dec": 2,
       "recent": [],
       "next": {
         "opp": "Erin Blanchfield",
@@ -3051,6 +3498,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "34",
+      "win_ko": 2,
+      "win_sub": 5,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -3068,6 +3518,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "32",
+      "win_ko": 1,
+      "win_sub": 1,
+      "win_dec": 10,
       "recent": [],
       "next": {
         "opp": "Wang Cong",
@@ -3090,6 +3543,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "28",
+      "win_ko": 1,
+      "win_sub": 2,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -3107,6 +3563,9 @@
       "reach": "169cm",
       "stance": "",
       "age": "34",
+      "win_ko": 2,
+      "win_sub": 2,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Tracy Cortez",
@@ -3129,6 +3588,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "29",
+      "win_ko": 1,
+      "win_sub": 7,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -3146,6 +3608,9 @@
       "reach": "163cm",
       "stance": "",
       "age": "33",
+      "win_ko": 3,
+      "win_sub": 0,
+      "win_dec": 12,
       "recent": [],
       "next": null
     },
@@ -3163,6 +3628,9 @@
       "reach": "170cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 9,
+      "win_sub": 8,
+      "win_dec": 2,
       "recent": [],
       "next": null
     },
@@ -3180,6 +3648,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -3197,6 +3668,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "28",
+      "win_ko": 4,
+      "win_sub": 2,
+      "win_dec": 5,
       "recent": [],
       "next": null
     },
@@ -3214,6 +3688,9 @@
       "reach": "160cm",
       "stance": "",
       "age": "33",
+      "win_ko": 0,
+      "win_sub": 8,
+      "win_dec": 8,
       "recent": [],
       "next": {
         "opp": "Gillian Robertson",
@@ -3236,6 +3713,9 @@
       "reach": "163cm",
       "stance": "",
       "age": "38",
+      "win_ko": 1,
+      "win_sub": 14,
+      "win_dec": 8,
       "recent": [],
       "next": null
     },
@@ -3253,6 +3733,9 @@
       "reach": "168cm",
       "stance": "",
       "age": "35",
+      "win_ko": 2,
+      "win_sub": 6,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -3270,6 +3753,9 @@
       "reach": "160cm",
       "stance": "",
       "age": "31",
+      "win_ko": 3,
+      "win_sub": 5,
+      "win_dec": 5,
       "recent": [],
       "next": {
         "opp": "Mackenzie Dern",
@@ -3292,6 +3778,9 @@
       "reach": "160cm",
       "stance": "",
       "age": "37",
+      "win_ko": 8,
+      "win_sub": 1,
+      "win_dec": 10,
       "recent": [],
       "next": null
     },
@@ -3309,6 +3798,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -3326,6 +3818,9 @@
       "reach": "155cm",
       "stance": "",
       "age": "31",
+      "win_ko": 2,
+      "win_sub": 3,
+      "win_dec": 7,
       "recent": [],
       "next": {
         "opp": "Fatima Kline",
@@ -3348,6 +3843,9 @@
       "reach": "",
       "stance": "",
       "age": "26",
+      "win_ko": 7,
+      "win_sub": 0,
+      "win_dec": 5,
       "recent": [],
       "next": null
     },
@@ -3365,6 +3863,9 @@
       "reach": "",
       "stance": "",
       "age": "31",
+      "win_ko": 1,
+      "win_sub": 9,
+      "win_dec": 7,
       "recent": [],
       "next": null
     },
@@ -3382,6 +3883,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -3399,6 +3903,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "39",
+      "win_ko": 8,
+      "win_sub": 3,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -3416,6 +3923,9 @@
       "reach": "155cm",
       "stance": "",
       "age": "32",
+      "win_ko": 1,
+      "win_sub": 2,
+      "win_dec": 11,
       "recent": [],
       "next": null
     },
@@ -3433,6 +3943,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Loma Lookboonmee",
@@ -3459,6 +3972,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "25",
+      "win_ko": 4,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Tabatha Ricci",
@@ -3481,6 +3997,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": null
     },
@@ -3498,6 +4017,9 @@
       "reach": "188cm",
       "stance": "사우스포",
       "age": "37",
+      "win_ko": 1,
+      "win_sub": 1,
+      "win_dec": 2,
       "recent": [],
       "next": {
         "opp": "Max Holloway",
@@ -3520,6 +4042,9 @@
       "reach": "180cm",
       "stance": "정통",
       "age": "39",
+      "win_ko": 12,
+      "win_sub": 10,
+      "win_dec": 13,
       "recent": [],
       "next": {
         "opp": "Terrance McKinney",
@@ -3542,6 +4067,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "31",
+      "win_ko": 9,
+      "win_sub": 9,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "King Green",
@@ -3564,6 +4092,9 @@
       "reach": "187cm",
       "stance": "",
       "age": "35",
+      "win_ko": 10,
+      "win_sub": 5,
+      "win_dec": 11,
       "recent": [],
       "next": {
         "opp": "Nikita Krylov",
@@ -3586,6 +4117,9 @@
       "reach": "197cm",
       "stance": "",
       "age": "34",
+      "win_ko": 13,
+      "win_sub": 16,
+      "win_dec": 2,
       "recent": [],
       "next": {
         "opp": "Robert Whittaker",
@@ -3608,6 +4142,9 @@
       "reach": "",
       "stance": "정통",
       "age": "26",
+      "win_ko": 3,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Elisha Ellison",
@@ -3630,6 +4167,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Gable Steveson",
@@ -3652,6 +4192,9 @@
       "reach": "166cm",
       "stance": "",
       "age": "34",
+      "win_ko": 5,
+      "win_sub": 0,
+      "win_dec": 1,
       "recent": [],
       "next": {
         "opp": "Adrian Yañez",
@@ -3674,6 +4217,9 @@
       "reach": "178cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 11,
+      "win_sub": 2,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Cody Garbrandt",
@@ -3696,6 +4242,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Kai Kamaka III",
@@ -3718,6 +4267,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "31",
+      "win_ko": 3,
+      "win_sub": 1,
+      "win_dec": 14,
       "recent": [],
       "next": {
         "opp": "Luke Riley",
@@ -3740,6 +4292,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "César Almeida",
@@ -3762,6 +4317,9 @@
       "reach": "",
       "stance": "정통",
       "age": "38",
+      "win_ko": 5,
+      "win_sub": 0,
+      "win_dec": 2,
       "recent": [],
       "next": {
         "opp": "Damian Pinas",
@@ -3784,6 +4342,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Zachary Reese",
@@ -3806,6 +4367,9 @@
       "reach": "196cm",
       "stance": "",
       "age": "32",
+      "win_ko": 5,
+      "win_sub": 3,
+      "win_dec": 2,
       "recent": [],
       "next": {
         "opp": "Ryan Gandra",
@@ -3828,6 +4392,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Matt Schnell",
@@ -3859,6 +4426,9 @@
       "reach": "170cm",
       "stance": "사우스포",
       "age": "35",
+      "win_ko": 6,
+      "win_sub": 6,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Alessandro Costa",
@@ -3881,6 +4451,9 @@
       "reach": "206cm",
       "stance": "정통",
       "age": "33",
+      "win_ko": 3,
+      "win_sub": 9,
+      "win_dec": 2,
       "recent": [],
       "next": {
         "opp": "Jacobe Smith",
@@ -3903,6 +4476,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Kevin Holland",
@@ -3925,6 +4501,9 @@
       "reach": "192cm",
       "stance": "",
       "age": "26",
+      "win_ko": 1,
+      "win_sub": 4,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Mitch Ramirez",
@@ -3947,6 +4526,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Chase Hooper",
@@ -3969,6 +4551,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Alberto Montes",
@@ -3991,6 +4576,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Tommy McMillen",
@@ -4013,6 +4601,9 @@
       "reach": "163cm",
       "stance": "",
       "age": "30",
+      "win_ko": 2,
+      "win_sub": 2,
+      "win_dec": 7,
       "recent": [],
       "next": {
         "opp": "Dione Barbosa",
@@ -4035,6 +4626,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Veronica Hardy",
@@ -4057,6 +4651,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Jose Miguel Delgado",
@@ -4079,6 +4676,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Alvin Hines",
@@ -4101,6 +4701,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Allen Frye Jr.",
@@ -4123,6 +4726,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Felipe Franco",
@@ -4145,6 +4751,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Levi Rodrigues Jr.",
@@ -4167,6 +4776,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Stewart Nicoll",
@@ -4189,6 +4801,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Alden Coria",
@@ -4211,6 +4826,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Steve Erceg",
@@ -4233,6 +4851,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "36",
+      "win_ko": 11,
+      "win_sub": 1,
+      "win_dec": 5,
       "recent": [],
       "next": {
         "opp": "Rizvan Kuniev",
@@ -4255,6 +4876,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "27",
+      "win_ko": 8,
+      "win_sub": 4,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Wellington Turman",
@@ -4277,6 +4901,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "29",
+      "win_ko": 4,
+      "win_sub": 8,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Islam Dulatov",
@@ -4299,6 +4926,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Axel Sola",
@@ -4321,6 +4951,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Ismael Bonfim",
@@ -4343,6 +4976,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Valter Walker",
@@ -4365,6 +5001,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Dustin Jacoby",
@@ -4387,6 +5026,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "31",
+      "win_ko": 5,
+      "win_sub": 0,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Damian Rzepecki",
@@ -4409,6 +5051,9 @@
       "reach": "187cm",
       "stance": "정통",
       "age": "24",
+      "win_ko": 4,
+      "win_sub": 5,
+      "win_dec": 1,
       "recent": [],
       "next": {
         "opp": "Magomed Zaynukov",
@@ -4431,6 +5076,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Brendson Ribeiro",
@@ -4453,6 +5101,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Magomed Tuchalov",
@@ -4475,6 +5126,9 @@
       "reach": "184cm",
       "stance": "",
       "age": "33",
+      "win_ko": 8,
+      "win_sub": 2,
+      "win_dec": 2,
       "recent": [],
       "next": {
         "opp": "Nurullo Aliev",
@@ -4497,6 +5151,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "25",
+      "win_ko": 2,
+      "win_sub": 0,
+      "win_dec": 9,
       "recent": [],
       "next": {
         "opp": "Mike Davis",
@@ -4519,6 +5176,9 @@
       "reach": "198cm",
       "stance": "",
       "age": "34",
+      "win_ko": 9,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Marcin Tybura",
@@ -4541,6 +5201,9 @@
       "reach": "198cm",
       "stance": "",
       "age": "40",
+      "win_ko": 10,
+      "win_sub": 7,
+      "win_dec": 10,
       "recent": [],
       "next": {
         "opp": "Aleksandar Rakić",
@@ -4563,6 +5226,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Michael Oliveira",
@@ -4585,6 +5251,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Oban Elliott",
@@ -4607,6 +5276,9 @@
       "reach": "183cm",
       "stance": "사우스포",
       "age": "31",
+      "win_ko": 9,
+      "win_sub": 8,
+      "win_dec": 7,
       "recent": [],
       "next": {
         "opp": "Tofiq Musayev",
@@ -4629,6 +5301,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "36",
+      "win_ko": 18,
+      "win_sub": 2,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Ľudovít Klein",
@@ -4651,6 +5326,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Josias Musasa",
@@ -4673,6 +5351,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Mark Vologdin",
@@ -4695,6 +5376,9 @@
       "reach": "188cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 8,
+      "win_sub": 4,
+      "win_dec": 1,
       "recent": [],
       "next": {
         "opp": "Robert Valentin",
@@ -4717,6 +5401,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Duško Todorović",
@@ -4739,6 +5426,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Bogdan Grad",
@@ -4761,6 +5451,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Dennis Buzukja",
@@ -4783,6 +5476,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Gilbert Urbina",
@@ -4805,6 +5501,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Vlasto Čepo",
@@ -4827,6 +5526,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Max Gimenis",
@@ -4849,6 +5551,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Jovan Leka",
@@ -4871,6 +5576,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Hailey Cowan",
@@ -4893,6 +5601,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Nina Nikolija Milošević",
@@ -4915,6 +5626,9 @@
       "reach": "203cm",
       "stance": "",
       "age": "38",
+      "win_ko": 9,
+      "win_sub": 5,
+      "win_dec": 17,
       "recent": [],
       "next": {
         "opp": "Ramiz Brahimaj",
@@ -4937,6 +5651,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "33",
+      "win_ko": 1,
+      "win_sub": 12,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Neil Magny",
@@ -4959,6 +5676,9 @@
       "reach": "196cm",
       "stance": "",
       "age": "31",
+      "win_ko": 11,
+      "win_sub": 4,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Kauê Fernandes",
@@ -4981,6 +5701,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Jalin Turner",
@@ -5003,6 +5726,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "35",
+      "win_ko": 10,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Chidi Njokuani",
@@ -5025,6 +5751,9 @@
       "reach": "203cm",
       "stance": "정통",
       "age": "37",
+      "win_ko": 15,
+      "win_sub": 1,
+      "win_dec": 9,
       "recent": [],
       "next": {
         "opp": "Geoff Neal",
@@ -5047,6 +5776,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Dustin Stoltzfus",
@@ -5069,6 +5801,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "34",
+      "win_ko": 3,
+      "win_sub": 6,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Mansur Abdul-Malik",
@@ -5091,6 +5826,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "39",
+      "win_ko": 5,
+      "win_sub": 4,
+      "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Myktybek Orolbai",
@@ -5113,6 +5851,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "28",
+      "win_ko": 7,
+      "win_sub": 6,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Jeremiah Wells",
@@ -5135,6 +5876,9 @@
       "reach": "192cm",
       "stance": "",
       "age": "34",
+      "win_ko": 11,
+      "win_sub": 10,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Tresean Gore",
@@ -5157,6 +5901,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [],
       "next": {
         "opp": "Vicente Luque",
@@ -5179,6 +5926,9 @@
       "reach": "190cm",
       "stance": "",
       "age": "40",
+      "win_ko": 14,
+      "win_sub": 1,
+      "win_dec": 9,
       "recent": [],
       "next": {
         "opp": "Esteban Ribovics",
@@ -5201,6 +5951,9 @@
       "reach": "175cm",
       "stance": "정통",
       "age": "30",
+      "win_ko": 7,
+      "win_sub": 5,
+      "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Edson Barboza",
@@ -5223,6 +5976,9 @@
       "reach": "187cm",
       "stance": "정통",
       "age": "31",
+      "win_ko": 9,
+      "win_sub": 7,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Rafael Fiziev",
@@ -5249,6 +6005,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "32",
+      "win_ko": 12,
+      "win_sub": 0,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Michel Pereira",
@@ -5275,6 +6034,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "32",
+      "win_ko": 11,
+      "win_sub": 9,
+      "win_dec": 12,
       "recent": [
         {
           "opp": "Sharabutdin Magomedov",
@@ -5301,6 +6063,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Nazim Sadykhov",
@@ -5327,6 +6092,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "32",
+      "win_ko": 8,
+      "win_sub": 2,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Matheus Camilo",
@@ -5353,6 +6121,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "35",
+      "win_ko": 8,
+      "win_sub": 3,
+      "win_dec": 8,
       "recent": [
         {
           "opp": "Asu Almabayev",
@@ -5379,6 +6150,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Ikram Aliskerov",
@@ -5405,6 +6179,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "31",
+      "win_ko": 16,
+      "win_sub": 1,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Abusupiyan Magomedov",
@@ -5431,6 +6208,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Eric Nolan",
@@ -5457,6 +6237,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Farman Hasanov",
@@ -5483,6 +6266,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Julius Walker",
@@ -5509,6 +6295,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Abdul-Rakhman Yakhyaev",
@@ -5535,6 +6324,9 @@
       "reach": "193cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 13,
+      "win_sub": 21,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Andrey Pulyaev",
@@ -5561,6 +6353,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Nursulton Ruziboev",
@@ -5587,6 +6382,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Javier Reyes",
@@ -5613,6 +6411,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Kaan Ofli",
@@ -5639,6 +6440,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Theodor Berggren",
@@ -5665,6 +6469,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Daniil Donchenko",
@@ -5691,6 +6498,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Bekzat Almakhan",
@@ -5717,6 +6527,9 @@
       "reach": "173cm",
       "stance": "정통",
       "age": "28",
+      "win_ko": 5,
+      "win_sub": 2,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Jean Matsumoto",
@@ -5743,6 +6556,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Jefferson Nascimento",
@@ -5769,6 +6585,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Tahir Abdullayev",
@@ -5795,6 +6614,9 @@
       "reach": "191cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 13,
+      "win_sub": 4,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Navajo Stirling",
@@ -5821,6 +6643,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Hyder Amil",
@@ -5847,6 +6672,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "36",
+      "win_ko": 6,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Christian Rodriguez",
@@ -5873,6 +6701,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Melsik Baghdasaryan",
@@ -5899,6 +6730,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "34",
+      "win_ko": 5,
+      "win_sub": 0,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Murtazali Magomedov",
@@ -5925,6 +6759,9 @@
       "reach": "",
       "stance": "",
       "age": "30",
+      "win_ko": 17,
+      "win_sub": 2,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Andre Fili",
@@ -5951,6 +6788,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "36",
+      "win_ko": 10,
+      "win_sub": 3,
+      "win_dec": 12,
       "recent": [
         {
           "opp": "Vinicius Oliveira",
@@ -5977,6 +6817,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "27",
+      "win_ko": 5,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Kevin Borjas",
@@ -6003,6 +6846,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Beatriz Mesquita",
@@ -6029,6 +6875,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Mitch Raposo",
@@ -6055,6 +6904,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Michael Aswell Jr.",
@@ -6081,6 +6933,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Gastón Bolaños",
@@ -6107,6 +6962,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Leon Shahbazyan",
@@ -6133,6 +6991,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Levan Chokheli",
@@ -6159,6 +7020,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Otari Tanzilovi",
@@ -6185,6 +7049,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Shane Collins",
@@ -6211,6 +7078,9 @@
       "reach": "201cm",
       "stance": "",
       "age": "41",
+      "win_ko": 1,
+      "win_sub": 1,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Josh Hokit",
@@ -6237,6 +7107,9 @@
       "reach": "180cm",
       "stance": "",
       "age": "40",
+      "win_ko": 11,
+      "win_sub": 7,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Maurício Ruffy",
@@ -6263,6 +7136,9 @@
       "reach": "193cm",
       "stance": "",
       "age": "33",
+      "win_ko": 2,
+      "win_sub": 12,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Bo Nickal",
@@ -6289,6 +7165,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "28",
+      "win_ko": 13,
+      "win_sub": 1,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Brendan Allen",
@@ -6315,6 +7194,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "29",
+      "win_ko": 7,
+      "win_sub": 4,
+      "win_dec": 7,
       "recent": [
         {
           "opp": "Tom Nolan",
@@ -6341,6 +7223,9 @@
       "reach": "188cm",
       "stance": "",
       "age": "21",
+      "win_ko": 3,
+      "win_sub": 4,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Bryce Mitchell",
@@ -6367,6 +7252,9 @@
       "reach": "185cm",
       "stance": "정통",
       "age": "27",
+      "win_ko": 7,
+      "win_sub": 2,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Junior Tafa",
@@ -6393,6 +7281,9 @@
       "reach": "183cm",
       "stance": "",
       "age": "29",
+      "win_ko": 7,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Iwo Baraniewski",
@@ -6419,6 +7310,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "36",
+      "win_ko": 2,
+      "win_sub": 9,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Alessandro Costa",
@@ -6445,6 +7339,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Marcus McGhee",
@@ -6471,6 +7368,9 @@
       "reach": "180cm",
       "stance": "",
       "age": "30",
+      "win_ko": 4,
+      "win_sub": 9,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Bruno Gustavo da Silva",
@@ -6497,6 +7397,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "36",
+      "win_ko": 6,
+      "win_sub": 5,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Édgar Cháirez",
@@ -6523,6 +7426,9 @@
       "reach": "173cm",
       "stance": "",
       "age": "32",
+      "win_ko": 2,
+      "win_sub": 2,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Priscila Cachoeira",
@@ -6549,6 +7455,9 @@
       "reach": "165cm",
       "stance": "",
       "age": "37",
+      "win_ko": 8,
+      "win_sub": 0,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Chelsea Chandler",
@@ -6575,6 +7484,9 @@
       "reach": "180cm",
       "stance": "사우스포",
       "age": "31",
+      "win_ko": 2,
+      "win_sub": 7,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Joanderson Brito",
@@ -6601,6 +7513,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Yuneisy Duben",
@@ -6627,6 +7542,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Jeisla Chaves",
@@ -6653,6 +7571,9 @@
       "reach": "",
       "stance": "",
       "age": "30",
+      "win_ko": 9,
+      "win_sub": 2,
+      "win_dec": 6,
       "recent": [
         {
           "opp": "Ariane Carnelossi",
@@ -6679,6 +7600,9 @@
       "reach": "155cm",
       "stance": "",
       "age": "33",
+      "win_ko": 9,
+      "win_sub": 2,
+      "win_dec": 3,
       "recent": [
         {
           "opp": "Ketlen Souza",
@@ -6705,6 +7629,9 @@
       "reach": "191cm",
       "stance": "",
       "age": "27",
+      "win_ko": 13,
+      "win_sub": 6,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Alonzo Menifield",
@@ -6731,6 +7658,9 @@
       "reach": "211cm",
       "stance": "정통",
       "age": "26",
+      "win_ko": 7,
+      "win_sub": 1,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Sergei Pavlovich",
@@ -6757,6 +7687,9 @@
       "reach": "175cm",
       "stance": "",
       "age": "32",
+      "win_ko": 5,
+      "win_sub": 1,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Cameron Smotherman",
@@ -6783,6 +7716,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Kai Asakura",
@@ -6809,6 +7745,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "31",
+      "win_ko": 5,
+      "win_sub": 9,
+      "win_dec": 9,
       "recent": [
         {
           "opp": "Carlston Harris",
@@ -6835,6 +7774,9 @@
       "reach": "193cm",
       "stance": "",
       "age": "38",
+      "win_ko": 5,
+      "win_sub": 6,
+      "win_dec": 8,
       "recent": [
         {
           "opp": "Jake Matthews",
@@ -6861,6 +7803,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Lee Yi-sak",
@@ -6887,6 +7832,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Luis Felipe Dias",
@@ -6913,6 +7861,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Ding Meng",
@@ -6939,6 +7890,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "José Henrique Souza",
@@ -6965,6 +7919,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Aori Qileng",
@@ -6991,6 +7948,9 @@
       "reach": "175cm",
       "stance": "정통",
       "age": "33",
+      "win_ko": 9,
+      "win_sub": 1,
+      "win_dec": 16,
       "recent": [
         {
           "opp": "Cody Haddon",
@@ -7017,6 +7977,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Luis Gurule",
@@ -7043,6 +8006,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Rei Tsuruya",
@@ -7077,6 +8043,9 @@
       "reach": "163cm",
       "stance": "",
       "age": "41",
+      "win_ko": 5,
+      "win_sub": 1,
+      "win_dec": 13,
       "recent": [
         {
           "opp": "Xiong Jingnan",
@@ -7103,6 +8072,9 @@
       "reach": "163cm",
       "stance": "",
       "age": "38",
+      "win_ko": 11,
+      "win_sub": 1,
+      "win_dec": 7,
       "recent": [
         {
           "opp": "Angela Hill",
@@ -7129,6 +8101,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Zhu Kangjie",
@@ -7155,6 +8130,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Rodrigo Vera",
@@ -7181,6 +8159,9 @@
       "reach": "156cm",
       "stance": "",
       "age": "30",
+      "win_ko": 1,
+      "win_sub": 1,
+      "win_dec": 8,
       "recent": [
         {
           "opp": "Jaqueline Amorim",
@@ -7207,6 +8188,9 @@
       "reach": "178cm",
       "stance": "",
       "age": "35",
+      "win_ko": 14,
+      "win_sub": 1,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Daniel Santos",
@@ -7233,6 +8217,9 @@
       "reach": "170cm",
       "stance": "정통",
       "age": "31",
+      "win_ko": 7,
+      "win_sub": 2,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Choi Doo-ho",
@@ -7259,6 +8246,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Malcolm Wellmaker",
@@ -7285,6 +8275,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Juan Díaz",
@@ -7311,6 +8304,9 @@
       "reach": "198cm",
       "stance": "",
       "age": "32",
+      "win_ko": 11,
+      "win_sub": 3,
+      "win_dec": 6,
       "recent": [
         {
           "opp": "Christian Edwards",
@@ -7337,6 +8333,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Modestas Bukauskas",
@@ -7363,6 +8362,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Timothy Cuamba",
@@ -7389,6 +8391,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Bernardo Sopaj",
@@ -7415,6 +8420,9 @@
       "reach": "196cm",
       "stance": "",
       "age": "32",
+      "win_ko": 9,
+      "win_sub": 1,
+      "win_dec": 6,
       "recent": [
         {
           "opp": "Nikolay Veretennikov",
@@ -7441,6 +8449,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Khaos Williams",
@@ -7467,6 +8478,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Tuco Tokkos",
@@ -7493,6 +8507,9 @@
       "reach": "193cm",
       "stance": "",
       "age": "36",
+      "win_ko": 6,
+      "win_sub": 3,
+      "win_dec": 2,
       "recent": [
         {
           "opp": "Ivan Erslan",
@@ -7519,6 +8536,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Artur Minev",
@@ -7545,6 +8565,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Thomas Gantt",
@@ -7571,6 +8594,9 @@
       "reach": "",
       "stance": "",
       "age": "34",
+      "win_ko": 2,
+      "win_sub": 4,
+      "win_dec": 10,
       "recent": [
         {
           "opp": "Jacqueline Cavalcanti",
@@ -7597,6 +8623,9 @@
       "reach": "183cm",
       "stance": "정통",
       "age": "32",
+      "win_ko": 7,
+      "win_sub": 3,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Andre Petroski",
@@ -7623,6 +8652,9 @@
       "reach": "185cm",
       "stance": "",
       "age": "35",
+      "win_ko": 4,
+      "win_sub": 4,
+      "win_dec": 5,
       "recent": [
         {
           "opp": "Cody Brundage",
@@ -7649,6 +8681,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Polyana Viana",
@@ -7675,6 +8710,9 @@
       "reach": "170cm",
       "stance": "",
       "age": "34",
+      "win_ko": 5,
+      "win_sub": 8,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Alice Ardelean",
@@ -7701,6 +8739,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Luis Gurule",
@@ -7727,6 +8768,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Shauna Bannon",
@@ -7753,6 +8797,9 @@
       "reach": "",
       "stance": "",
       "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
       "recent": [
         {
           "opp": "Nicolle Caliari",
