@@ -868,6 +868,16 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
             if b in fighters and not fighters[b]["next"]:
                 fighters[b]["next"] = {"opp": fight["fighter_a"], "opp_ko": fight.get("fighter_a_ko"), "event": ename, "date": edate}
 
+    # 생성한 아바타 이미지가 data/avatars/<id>.(png|jpg|webp) 에 있으면 경로 연결
+    avatars_dir = DATA_DIR / "avatars"
+    if avatars_dir.exists():
+        for f in fighters.values():
+            for ext in ("png", "jpg", "jpeg", "webp"):
+                p = avatars_dir / (f["id"] + "." + ext)
+                if p.exists():
+                    f["avatar"] = "./data/avatars/" + p.name
+                    break
+
     for f in fighters.values():
         f["recent"] = f["recent"][:5]
 

@@ -629,7 +629,12 @@ function fighterPictogram(f, size){
 }
 function avatarBox(f, size){
   size = size || 48;
-  return `<div style="width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;flex-shrink:0">${fighterPictogram(f,size)}</div>`;
+  // 생성한 아바타 이미지가 있으면 그걸, 없으면 SVG 픽토그램 (로드 실패 시에도 픽토그램으로 폴백)
+  const inner = (f && f.avatar)
+    ? `<img src="${f.avatar}" width="${size}" height="${size}" style="width:100%;height:100%;object-fit:cover"
+         onerror="this.outerHTML=this.getAttribute('data-fb')" data-fb='${fighterPictogram(f,size).replace(/'/g,"&#39;")}'>`
+    : fighterPictogram(f, size);
+  return `<div style="width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;flex-shrink:0;background:var(--bg-2)">${inner}</div>`;
 }
 function fighterAvatar(f, side){
   return avatarBox(f, 44);
@@ -1272,6 +1277,7 @@ function transformFighter(f){
     age: f.age || '', height: f.height || '', reach: f.reach || '', stance: f.stance || '',
     record: f.record || '-', weight: f.division || '-', rank: f.rank || '랭킹 외',
     ko: f.win_ko||0, sub: f.win_sub||0, dec: f.win_dec||0,
+    avatar: f.avatar || '',
     style: '', recent: recent, next: f.next || null
   };
 }
