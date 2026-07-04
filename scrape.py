@@ -44,7 +44,14 @@ DATA_DIR = Path(__file__).parent / "data"
 EVENTS_FILE = DATA_DIR / "events.json"
 RANKINGS_FILE = DATA_DIR / "rankings.json"
 FIGHTERS_FILE = DATA_DIR / "fighters.json"
+OPINIONS_FILE = DATA_DIR / "opinions.json"
 TRANSLATIONS_FILE = DATA_DIR / "translations.json"
+
+# 국가별 MMA 커뮤니티 (레딧 서브레딧 → 지역 매핑). 하나의 레딧 앱으로 전부 커버.
+OPINION_COMMUNITIES = [
+    {"flag": "🌐", "region": "글로벌", "subreddit": "MMA", "lang": "영어"},
+    {"flag": "🇧🇷", "region": "브라질", "subreddit": "mmabr", "lang": "포르투갈어"},
+]
 
 WEEKDAY_KO = ["월", "화", "수", "목", "금", "토", "일"]
 
@@ -899,6 +906,167 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     return result
 
 
+# ────────────────────────────────────────────────────────────────
+# 국가별 커뮤니티 여론 (Reddit)
+# ────────────────────────────────────────────────────────────────
+def get_reddit_token():
+    """Reddit 앱-전용 OAuth(client_credentials). 환경변수 없으면 None."""
+    cid = os.environ.get("REDDIT_CLIENT_ID")
+    secret = os.environ.get("REDDIT_CLIENT_SECRET")
+    if not cid or not secret:
+        return None
+    try:
+        r = requests.post(
+            "https://www.reddit.com/api/v1/access_token",
+            auth=(cid, secret),
+            data={"grant_type": "client_credentials"},
+            headers=HEADERS,
+            timeout=20,
+        )
+        r.raise_for_status()
+        return r.json().get("access_token")
+    except Exception as e:
+        print("WARN Reddit 토큰 실패:", e)
+        return None
+
+
+def reddit_get(path, token, params=None):
+    time.sleep(0.6)
+    h = dict(HEADERS)
+    h["Authorization"] = "bearer " + token
+    r = requests.get("https://oauth.reddit.com" + path, headers=h, params=params or {}, timeout=25)
+    r.raise_for_status()
+    return r.json()
+
+
+def find_event_thread(subreddit, query, token):
+    """서브레딧에서 이벤트 관련 글 중 댓글 가장 많은 스레드 반환."""
+    try:
+        data = reddit_get(f"/r/{subreddit}/search", token,
+                          {"q": query, "restrict_sr": 1, "sort": "relevance", "limit": 8, "t": "month"})
+    except Exception as e:
+        print(f"    r/{subreddit} 검색 실패: {e}")
+        return None
+    posts = data.get("data", {}).get("children", [])
+    best = None
+    for p in posts:
+        pd = p.get("data", {})
+        nc = pd.get("num_comments", 0)
+        if best is None or nc > best.get("num_comments", 0):
+            best = pd
+    if not best or best.get("num_comments", 0) < 3:
+        return None
+    return {"id": best.get("id"), "permalink": "https://www.reddit.com" + best.get("permalink", ""),
+            "num_comments": best.get("num_comments", 0), "title": best.get("title", "")}
+
+
+def get_top_comments(subreddit, thread_id, token, limit=15):
+    """스레드 상위 댓글 본문+점수 목록."""
+    try:
+        data = reddit_get(f"/r/{subreddit}/comments/{thread_id}", token, {"sort": "top", "limit": 30})
+    except Exception as e:
+        print(f"    댓글 수집 실패: {e}")
+        return []
+    if not isinstance(data, list) or len(data) < 2:
+        return []
+    out = []
+    for c in data[1].get("data", {}).get("children", []):
+        cd = c.get("data", {})
+        body = (cd.get("body") or "").strip()
+        author = cd.get("author", "")
+        if not body or body in ("[deleted]", "[removed]"):
+            continue
+        if author.lower() == "automoderator" or cd.get("stickied"):
+            continue
+        if len(body) > 500:
+            body = body[:500]
+        out.append({"body": body, "score": cd.get("score", 0)})
+        if len(out) >= limit:
+            break
+    return out
+
+
+def summarize_opinions_ko(client, event_name, region, lang, comments):
+    """커뮤니티 댓글을 Claude로 한국어 요약 + 감정 + 대표댓글 번역. 실패 시 None."""
+    if not client or not comments:
+        return None
+    joined = "\n".join(f"[{c['score']}] {c['body']}" for c in comments[:15])
+    prompt = (
+        f"다음은 '{event_name}' UFC 이벤트에 대한 {region} MMA 커뮤니티({lang}) 댓글입니다.\n"
+        "[숫자]는 추천수입니다.\n\n" + joined + "\n\n"
+        "이 커뮤니티의 여론을 한국 팬에게 전달하려 합니다. 아래 JSON만 출력하세요:\n"
+        "{\n"
+        '  "sentiment": "한 단어 (예: 기대, 회의적, 양분, 무관심)",\n'
+        '  "summary_ko": "이 커뮤니티 전반의 분위기·주요 논점 2~3문장. 댓글에 없는 내용 지어내지 말 것.",\n'
+        '  "quotes": [{"text_ko": "대표 댓글 한국어 번역", "score": 추천수}]  // 2~3개\n'
+        "}\n"
+        "반드시 위 JSON 형식만, 다른 말 없이 출력."
+    )
+    try:
+        msg = client.messages.create(
+            model="claude-haiku-4-5",
+            max_tokens=700,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = msg.content[0].text.strip()
+        text = re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.MULTILINE).strip()
+        obj = json.loads(text)
+        if obj.get("summary_ko"):
+            return obj
+    except Exception as e:
+        print(f"    여론 요약 실패: {e}")
+    return None
+
+
+def fetch_opinions(client, events):
+    """다가오는 이벤트별 국가별 커뮤니티 여론 수집. 레딧 토큰 없으면 None(수집 생략)."""
+    token = get_reddit_token()
+    if not token:
+        print("\nWARN REDDIT_CLIENT_ID/SECRET 없음 — 여론 수집 생략 (opinions.json 미갱신)")
+        return None
+    if not client:
+        print("\nWARN Claude 없음 — 여론 번역 불가, 수집 생략")
+        return None
+
+    print("\n→ 국가별 커뮤니티 여론 수집 중...")
+    result = {}
+    for ev in events:
+        code = eventCodeFromName_py(ev["name"])
+        query = code if code != "UFC" else ev["name"][:30]
+        communities = []
+        for comm in OPINION_COMMUNITIES:
+            thread = find_event_thread(comm["subreddit"], query, token)
+            if not thread:
+                continue
+            comments = get_top_comments(comm["subreddit"], thread["id"], token)
+            if not comments:
+                continue
+            summary = summarize_opinions_ko(client, ev["name"], comm["region"], comm["lang"], comments)
+            if not summary:
+                continue
+            communities.append({
+                "flag": comm["flag"],
+                "region": comm["region"],
+                "community": "r/" + comm["subreddit"],
+                "thread_url": thread["permalink"],
+                "sentiment": summary.get("sentiment", ""),
+                "summary_ko": summary.get("summary_ko", ""),
+                "quotes": summary.get("quotes", [])[:3],
+            })
+        if communities:
+            result[slugify(ev["name"])] = {
+                "event_name_ko": ev.get("name_ko") or ev["name"],
+                "communities": communities,
+            }
+            print(f"  ✓ {ev['name'][:36]}: {len(communities)}개 커뮤니티")
+    return result
+
+
+def eventCodeFromName_py(name):
+    m = re.match(r"^(UFC[^:]*?)(?::|$)", name or "", re.IGNORECASE)
+    return m.group(1).strip() if m else "UFC"
+
+
 def main():
     print("=== fightoclock 데이터 수집 시작:", datetime.now(KST).isoformat(timespec="seconds"), "===")
     DATA_DIR.mkdir(exist_ok=True)
@@ -1003,6 +1171,21 @@ def main():
         }
         FIGHTERS_FILE.write_text(json.dumps(fighters_out, ensure_ascii=False, indent=2), encoding="utf-8")
         print("=== Saved:", FIGHTERS_FILE.name, "(" + str(len(fighters)) + " fighters) ===")
+
+    # ── 국가별 커뮤니티 여론 (Reddit, 열쇠 있을 때만) ──
+    try:
+        opinions = fetch_opinions(client, events)
+        if opinions:
+            opinions_out = {
+                "generated_at": now_iso,
+                "source": "Reddit 커뮤니티 (" + ", ".join("r/" + c["subreddit"] for c in OPINION_COMMUNITIES) + ")",
+                "event_count": len(opinions),
+                "events": opinions,
+            }
+            OPINIONS_FILE.write_text(json.dumps(opinions_out, ensure_ascii=False, indent=2), encoding="utf-8")
+            print("=== Saved:", OPINIONS_FILE.name, "(" + str(len(opinions)) + " events) ===")
+    except Exception as e:
+        print("WARN opinions 수집 실패:", e)
 
 
 if __name__ == "__main__":

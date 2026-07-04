@@ -952,6 +952,36 @@ function viewFighter(id){
   `;
 }
 
+/* 국가별 커뮤니티 여론 블록 (opinions.json 있을 때만) */
+function opinionBlock(eventId){
+  const op = OPINIONS[eventId];
+  if(!op || !op.communities || !op.communities.length) return '';
+  return `
+  <div class="section-title"><span class="bar"></span>🌍 해외 팬 반응</div>
+  <div style="font-size:11px;color:var(--dim);margin:-6px 0 10px 2px">한국에선 잘 안 보이는 각국 MMA 커뮤니티 여론을 번역·요약했습니다</div>
+  ${op.communities.map(c=>`
+    <div class="box" style="margin-bottom:12px">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <span style="font-size:20px">${c.flag||'🌐'}</span>
+        <b>${c.region||''}</b>
+        <span style="font-size:12px;color:var(--muted)">${c.community||''}${c.members?` · ${c.members}`:''}</span>
+        ${c.sentiment?`<span class="pill ${/기대|긍정|높/.test(c.sentiment)?'green':(/회의|부정|우려/.test(c.sentiment)?'red':'ghost')}">${c.sentiment}</span>`:''}
+      </div>
+      ${c.summary_ko?`<p style="margin:10px 0 0 0;font-size:14px;line-height:1.6">${c.summary_ko}</p>`:''}
+      ${(c.quotes&&c.quotes.length)?`
+      <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+        ${c.quotes.map(q=>`
+          <div style="border-left:3px solid var(--line-2);padding:4px 0 4px 10px;font-size:13px;color:var(--text)">
+            <span style="color:var(--muted)">“</span>${q.text_ko}<span style="color:var(--muted)">”</span>
+            ${q.score?`<span style="color:var(--dim);font-size:11px"> · ▲${q.score}</span>`:''}
+          </div>`).join('')}
+      </div>`:''}
+      ${c.thread_url?`<div style="margin-top:10px"><a href="${c.thread_url}" target="_blank" rel="noopener" class="pill ghost">원문 커뮤니티 →</a></div>`:''}
+    </div>`).join('')}
+  <div style="font-size:11px;color:var(--dim);margin:2px 0 4px 2px">※ 커뮤니티 이용자 의견으로 사이트의 입장이 아닙니다. 원문 출처는 각 링크 참고.</div>
+  `;
+}
+
 /* ---------- 뷰: 이벤트 상세 ---------- */
 function viewEvent(id){
   const e = getEvent(id);
@@ -983,6 +1013,8 @@ function viewEvent(id){
       <span>업데이트: 매일 오전 6시 KST</span>
     </div>
   </div>`:''}
+
+  ${opinionBlock(id)}
 
   ${e.keyPoints && e.keyPoints.length ? `
   <div class="section-title"><span class="bar"></span>관전 포인트</div>
@@ -1063,6 +1095,7 @@ function route(){
 }
 /* ---------- 실데이터 로더 (data/*.json) ---------- */
 let REAL_FIGHTERS = {};
+let OPINIONS = {};
 
 function slugify(s){
   return (s||'').toString().toLowerCase().trim()
@@ -1177,6 +1210,15 @@ async function loadRealData(){
       console.log('[fightoclock] events:', up.length, 'upcoming /', past.length, 'past @', data.generated_at);
     }
   } catch(err){ console.warn('[fightoclock] events load failed:', err.message); }
+
+  // 4) 국가별 커뮤니티 여론 (있을 때만 — 없으면 섹션 미표시)
+  try {
+    const data = await loadJSON('./data/opinions.json');
+    if(data.events){
+      OPINIONS = data.events;
+      console.log('[fightoclock] opinions:', Object.keys(OPINIONS).length, 'events');
+    }
+  } catch(err){ /* opinions.json 없으면 조용히 건너뜀 */ }
 
   route();
 }
