@@ -716,6 +716,8 @@ function viewHome(){
     </div>
   </section>
 
+  ${newbieBlock(e.id)}
+
   <div class="section-title"><span class="bar"></span>이번주 추천 경기</div>
   ${main ? fightRow(main) : ''}
   ${e.mainCard?.[1] ? fightRow(e.mainCard[1]) : ''}
@@ -1016,6 +1018,62 @@ function reactionBar(eventId){
   `;
 }
 
+/* 뉴비 가이드 — 우리가 가진 데이터(랭킹·전적·피니시·리매치)로 관전포인트·맥락 자동 생성.
+   지어내기 없음(100% 데이터 기반). API 불필요. */
+function fStyleLabel(f){
+  const ko=f.ko||0, sub=f.sub||0, dec=f.dec||0, t=ko+sub+dec;
+  if(t<=0) return null;
+  if(ko>=sub && ko>=dec)  return {label:'타격가',  ico:'🥊', desc:'주먹·킥으로 KO를 노리는 스타일'};
+  if(sub>=ko && sub>=dec) return {label:'그래플러', ico:'🥋', desc:'조르기·관절기로 서브미션을 노리는 스타일'};
+  return {label:'판정형', ico:'⚖️', desc:'끝까지 밀어붙여 점수로 이기는 스타일'};
+}
+function finishRate(f){
+  const t=(f.ko||0)+(f.sub||0)+(f.dec||0);
+  return t>0 ? Math.round(((f.ko||0)+(f.sub||0))/t*100) : null;
+}
+function newbieGuide(e){
+  const m = e.mainCard && e.mainCard[0];
+  if(!m) return null;
+  const a=getFighter(m.a), b=getFighter(m.b);
+  const isTitle  = a.rank==='챔피언' || b.rank==='챔피언';
+  const isRematch= /(?:^|\s)[2-9](?:\s|$)/.test(e.title||'') || /리매치|rematch/i.test(e.title||'');
+  const bothRanked = /^#|챔피언|잠정/.test(a.rank||'') && /^#|챔피언|잠정/.test(b.rank||'');
+  const sa=fStyleLabel(a), sb=fStyleLabel(b);
+
+  const points=[];
+  if(isTitle)   points.push('🏆 <b>타이틀전</b> — 챔피언 벨트가 걸린 경기예요');
+  if(isRematch) points.push('🔁 <b>리매치</b> — 예전에 붙었던 둘이 다시 만나요. 결과가 바뀔지가 관전포인트');
+  if(sa && sb && sa.label!==sb.label)
+    points.push(`${sa.ico} ${a.name}(${sa.label}) vs ${sb.ico} ${b.name}(${sb.label}) — <b>상반된 스타일</b>의 맞대결`);
+  else if(sa && sb && sa.label===sb.label)
+    points.push(`${sa.ico} 둘 다 <b>${sa.label}</b> — ${sa.desc}. 누가 한 수 위인지 보는 재미`);
+  [a,b].forEach(f=>{ const fr=finishRate(f); if(fr!==null && fr>=75) points.push(`💥 ${f.name} — 피니시율 <b>${fr}%</b>, 순식간에 끝낼 수 있는 선수예요`); });
+  if(bothRanked && !isTitle) points.push(`📊 ${a.rank} vs ${b.rank} — 상위 랭커들의 순위 다툼`);
+
+  // 맥락 문장 (뉴비용)
+  let ctx = `<b>${e.code}</b>는 ${e.city||'해외'}에서 열리는 UFC 이벤트예요. 메인 경기는 <b>${a.name}</b> 대 <b>${b.name}</b>`;
+  if(isTitle && isRematch) ctx+=`인데, 챔피언 벨트가 걸린 <b>리매치</b>라 이번 이벤트의 하이라이트예요.`;
+  else if(isTitle) ctx+=` — <b>챔피언 타이틀</b>이 걸린 큰 경기예요.`;
+  else if(isRematch) ctx+=`로, 예전 맞대결의 <b>재대결</b>이에요.`;
+  else ctx+=` 예요.`;
+  if(sa && sb && sa.label!==sb.label) ctx+= ` ${a.name}는 ${sa.desc}, ${b.name}는 ${sb.desc}라 스타일 대비가 뚜렷해요.`;
+
+  return {points, ctx};
+}
+function newbieBlock(id){
+  const e = getEvent(id); if(!e) return '';
+  const g = newbieGuide(e); if(!g || !g.points.length) return '';
+  return `
+  <div class="section-title"><span class="bar"></span>🔰 UFC 처음이라면?</div>
+  <div class="box" style="border-color:var(--blue)">
+    <p style="margin:0 0 10px 0;font-size:14px;line-height:1.65">${g.ctx}</p>
+    <div style="font-size:12px;color:var(--gold-2);font-weight:800;margin-bottom:6px">👀 이 경기, 이런 걸 보세요</div>
+    <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.5">
+      ${g.points.map(p=>`<li>${p}</li>`).join('')}
+    </ul>
+  </div>`;
+}
+
 /* 국가별 커뮤니티 여론 블록 (opinions.json 있을 때만) */
 function opinionBlock(eventId){
   const op = OPINIONS[eventId];
@@ -1066,6 +1124,8 @@ function viewEvent(id){
       <div class="meta-cell"><div class="k">상태</div><div class="v">${isPast?'<span class="pill green">종료</span>':'<span class="pill red">예정</span>'}</div></div>
     </div>
   </div>
+
+  ${newbieBlock(id)}
 
   ${reactionBar(id)}
 
