@@ -1226,13 +1226,21 @@ function pollBlock(id, e){
   const m=e.mainCard&&e.mainCard[0]; if(!m) return '';
   const a=getFighter(m.a), b=getFighter(m.b);
   let mine=''; try{ mine=localStorage.getItem('pick:'+id)||''; }catch(_){}
+  let counts=null; try{ if(typeof window.getPickCounts==='function') counts=window.getPickCounts(id); }catch(_){}
+  const ca=counts?(counts.a||0):0, cb=counts?(counts.b||0):0, tot=ca+cb;
   const btn=(side,f)=>`<button class="pick-btn" data-pick="${side}" data-ev="${id}"
     style="flex:1;padding:14px;border-radius:12px;font-weight:700;font-size:14px;transition:.14s;
     border:1px solid ${mine===side?'var(--text)':'var(--line-2)'};background:${mine===side?'var(--text)':'transparent'};color:${mine===side?'var(--bg)':'var(--text)'}">${f.name}</button>`;
+  const bar = tot>0 ? `
+    <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700;margin:12px 0 6px">
+      <span>${a.name} ${Math.round(ca/tot*100)}%</span><span>${b.name} ${Math.round(cb/tot*100)}%</span></div>
+    <div style="height:8px;border-radius:20px;overflow:hidden;background:var(--line-2);display:flex">
+      <div style="width:${Math.round(ca/tot*100)}%;background:var(--red)"></div><div style="width:${Math.round(cb/tot*100)}%;background:var(--blue)"></div></div>
+    <div style="font-size:11px;color:var(--dim);margin-top:6px">팬 ${tot.toLocaleString()}명 예측${mine?` · 내 예측: ${mine==='a'?a.name:b.name}`:''}</div>` : '';
   return `
   <div class="section-title"><span class="bar"></span>누가 이길까?</div>
   <div style="display:flex;gap:10px">${btn('a',a)}${btn('b',b)}</div>
-  <div style="font-size:11px;color:var(--dim);margin:8px 0 2px 2px">${mine?`내 예측: <b style="color:var(--muted)">${mine==='a'?a.name:b.name}</b> · `:''}팬 전체 집계는 준비 중입니다</div>`;
+  ${bar || `<div style="font-size:11px;color:var(--dim);margin:8px 0 2px 2px">${mine?`내 예측: <b style="color:var(--muted)">${mine==='a'?a.name:b.name}</b> · `:''}팬 전체 집계는 준비 중입니다</div>`}`;
 }
 
 /* Tale of the Tape — 메인이벤트 좌우 비교 */
@@ -1572,6 +1580,53 @@ setInterval(function(){
     const el = root.querySelector('[data-cd="'+pair[0]+'"]'); if(el) el.textContent = pair[1];
   });
 }, 1000);
+</script>
+
+<!-- ===== Firebase 전체 집계 (이모지 반응 · 예측 투표) =====
+     아래 FIREBASE_CONFIG 에 Firebase 콘솔의 웹앱 설정을 붙여넣으면 전체 집계가 켜집니다.
+     (Firebase 웹 apiKey 는 공개용이라 코드에 넣어도 안전합니다. 값이 없으면 로컬 표시만.) -->
+<script>
+  window.FIREBASE_CONFIG = null;
+  /* 예시:
+  window.FIREBASE_CONFIG = {
+    apiKey: "AIza....", authDomain: "fightoclock.firebaseapp.com",
+    projectId: "fightoclock", storageBucket: "fightoclock.appspot.com",
+    messagingSenderId: "000000000000", appId: "1:000...:web:...."
+  };
+  */
+</script>
+<script type="module">
+  const cfg = window.FIREBASE_CONFIG;
+  if (cfg && cfg.projectId) {
+    try {
+      const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js');
+      const { getFirestore, doc, onSnapshot, setDoc, increment } =
+        await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js');
+      const db = getFirestore(initializeApp(cfg));
+      const cache = { react:{}, pick:{} };
+      const watching = {};
+      function watch(kind, ev){
+        const key = kind+':'+ev;
+        if (watching[key] || !ev) return; watching[key] = true;
+        onSnapshot(doc(db, kind==='react'?'reactions':'picks', ev), s=>{
+          cache[kind][ev] = s.data() || {};
+          if (typeof window.route === 'function') window.route();
+        });
+      }
+      window.recordReaction = function(ev, emoji, prev){
+        const d = {}; d[emoji] = increment(1);
+        if (prev && prev!==emoji) d[prev] = increment(-1);
+        setDoc(doc(db,'reactions',ev), d, {merge:true});
+      };
+      window.getReactionCounts = function(ev){ watch('react',ev); return cache.react[ev] || null; };
+      window.recordPick = function(ev, pick){
+        const d = {}; d[pick] = increment(1);
+        setDoc(doc(db,'picks',ev), d, {merge:true});
+      };
+      window.getPickCounts = function(ev){ watch('pick',ev); return cache.pick[ev] || null; };
+      console.log('[fightoclock] Firebase 전체 집계 ON');
+    } catch(e){ console.warn('[fightoclock] Firebase init 실패:', e.message); }
+  }
 </script>
 </body>
 </html>
