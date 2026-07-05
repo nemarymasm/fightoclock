@@ -1180,12 +1180,12 @@ function newbieGuide(e){
   if(bothRanked && !isTitle) points.push(`${a.rank} vs ${b.rank} — 상위권 자존심 싸움이거든요`);
 
   // 맥락 문장 (뉴닉 톤: 짧고 친근하게)
-  let ctx = `<b>${e.code}</b>, 이번엔 ${e.city||'해외'}에서 열려요. 메인은 <b>${a.name}</b> vs <b>${b.name}</b>`;
-  if(isTitle && isRematch) ctx+=`. 챔피언 벨트까지 걸린 <b>리턴매치</b>라, 이번 대회 간판이라고 보면 돼요.`;
-  else if(isTitle) ctx+=`. <b>챔피언 벨트</b>가 걸린 큰 판이에요.`;
-  else if(isRematch) ctx+=`. 예전에 한 번 붙었던 둘이라, 다들 <b>결과 바뀔지</b> 지켜보는 중이고요.`;
-  else ctx+=`가 메인이에요.`;
-  if(sa && sb && sa.label!==sb.label) ctx+= ` 근데 ${a.name}랑 ${b.name}은 스타일이 딴판이라, 어느 쪽 방식이 통할지가 진짜 관전 포인트예요.`;
+  let ctx = `<b>${e.code}</b>, 이번엔 ${e.city||'해외'}에서 열려요. 메인 이벤트는 <b>${a.name}</b> vs <b>${b.name}</b>`;
+  if(isTitle && isRematch) ctx+=` — 챔피언 벨트까지 걸린 <b>리턴매치</b>라, 이번 대회 간판이라고 보면 돼요.`;
+  else if(isTitle) ctx+=`, <b>챔피언 벨트</b>가 걸린 큰 판이에요.`;
+  else if(isRematch) ctx+=` <b>리턴매치</b>예요. 예전에 한 번 붙었던 둘이라, 다들 결과 바뀔지 지켜보는 중이고요.`;
+  else ctx+=` 경기예요.`;
+  if(sa && sb && sa.label!==sb.label) ctx+= ` 근데 둘은 스타일이 정반대라, 어느 쪽 방식이 통할지가 진짜 관전 포인트예요.`;
 
   return {points, ctx};
 }
