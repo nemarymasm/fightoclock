@@ -793,8 +793,9 @@ function dLabel(dateUtc){
 
 let homeSort = 'time';  // 'time'(경기 시간순) | 'pop'(인기순)
 /* 정렬 전환 시 전체 재렌더(스크롤 튐) 대신 이 섹션만 제자리 갱신 */
-function toggleHomeSort(){
-  homeSort = (homeSort==='time') ? 'pop' : 'time';
+function setHomeSort(mode){
+  if(mode===homeSort) return;
+  homeSort = mode;
   const el = document.getElementById('homeSortSection');
   if(el) el.innerHTML = homeSortSection(); else route();
 }
@@ -803,18 +804,15 @@ function homeSortSection(){
   const rest = upcomingEvents().filter(ev=>ev.id!==cover.id);
   if(homeSort==='pop') rest.sort((x,y)=>eventScore(y)-eventScore(x));
   else rest.sort((x,y)=>new Date(x.dateUtc)-new Date(y.dateUtc));
+  const seg=(mode,label)=>{const on=homeSort===mode;
+    return `<button onclick="setHomeSort('${mode}')" style="padding:6px 13px;border-radius:20px;font-size:12px;font-weight:700;transition:.14s;
+      border:1px solid ${on?'var(--red)':'var(--line-2)'};background:${on?'var(--red)':'transparent'};color:${on?'#fff':'var(--dim)'}">${label}</button>`;};
   return `
   <div class="section-title" style="justify-content:space-between">
     <span style="display:flex;align-items:center;gap:8px"><span class="bar"></span>주요 경기</span>
-    <button onclick="toggleHomeSort()" style="display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:20px;border:1px solid var(--line-2);font-size:12px;font-weight:700;color:var(--text)">
-      ⇅ ${homeSort==='time'?'시간순':'인기순'}
-    </button>
+    <span style="display:flex;align-items:center;gap:6px">${seg('time','시간순')}<span style="color:var(--dim);font-size:13px">⇄</span>${seg('pop','인기순')}</span>
   </div>
-  <div style="font-size:11px;color:var(--dim);margin:-4px 0 12px 2px">
-    ${homeSort==='time'
-      ? '지금은 <b>경기 시간순</b>이에요 · 오른쪽 버튼 누르면 <b>인기순</b>으로 바뀌어요'
-      : '지금은 <b>인기 많은 순</b>이에요 · 오른쪽 버튼 누르면 <b>시간순</b>으로 바뀌어요'}
-  </div>
+  <div style="font-size:11px;color:var(--dim);margin:-4px 0 12px 2px">보고 싶은 순서를 눌러보세요</div>
   <div class="bigcards">
     ${rest.slice(0,6).map((ev,i)=>{
       const m = ev.mainCard?.[0];
