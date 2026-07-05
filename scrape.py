@@ -737,13 +737,17 @@ def fetch_fighter_detail(url):
                 return int(m.group(0)) if m else None
 
             if "height" in label and val:
-                m = re.search(r"\(([\d.]+)\s*(?:cm|m)\)", val)
+                m = re.search(r"\(([\d.]+)\s*(cm|m)\)", val)
                 if m:
-                    out["height"] = m.group(1).replace(".0", "") + "cm"
+                    num = float(m.group(1))
+                    cm = num * 100 if m.group(2) == "m" else num  # 미터면 cm로 변환
+                    out["height"] = str(int(round(cm))) + "cm"
             elif "reach" in label and val:
-                m = re.search(r"\((\d+)\s*cm\)", val)
+                m = re.search(r"\(([\d.]+)\s*(cm|m)\)", val)
                 if m:
-                    out["reach"] = m.group(1) + "cm"
+                    num = float(m.group(1))
+                    cm = num * 100 if m.group(2) == "m" else num
+                    out["reach"] = str(int(round(cm))) + "cm"
             elif "stance" in label and val:
                 out["stance"] = tr_stance(val.split("[")[0].strip())
             elif "nickname" in label and val:
