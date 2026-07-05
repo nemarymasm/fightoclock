@@ -326,6 +326,11 @@
   /* 반응 버튼: 절제 (테두리 톤) */
   .disclaimer{border-style:solid;border-color:var(--line)}
 
+  /* 콘텐츠를 가운데 좁은 칼럼으로 (데스크톱에서 너무 퍼지지 않게) */
+  body{max-width:600px;margin-left:auto;margin-right:auto}
+  .tabbar{max-width:600px!important;margin-left:auto!important;margin-right:auto!important}
+  @media (min-width:780px){ main{max-width:600px} }
+
   /* ---- 홈 커버 (잡지 표지형: 톱 매치업 얼굴 크게) ---- */
   .cover{text-align:center;padding:20px 0 10px}
   .cover-kick{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:700}
@@ -1145,22 +1150,22 @@ function newbieGuide(e){
   const sa=fStyleLabel(a), sb=fStyleLabel(b);
 
   const points=[];
-  if(isTitle)   points.push('<b>타이틀전</b> — 챔피언 벨트가 걸린 경기예요');
-  if(isRematch) points.push('<b>리매치</b> — 예전에 붙었던 둘이 다시 만나요. 결과가 바뀔지가 관전포인트');
+  if(isTitle)   points.push('<b>벨트가 걸렸어요</b> — 이기면 그 체급 챔피언이 되는 판');
+  if(isRematch) points.push('<b>리턴매치예요</b> — 예전에 한 번 붙었던 둘. 이번엔 결과 뒤집힐지가 포인트');
   if(sa && sb && sa.label!==sb.label)
-    points.push(`${a.name}(${sa.label}) vs ${b.name}(${sb.label}) — <b>상반된 스타일</b>의 맞대결`);
+    points.push(`<b>스타일이 정반대</b>예요 — ${a.name}는 ${sa.label}, ${b.name}는 ${sb.label}. 붙는 그림이 확실해요`);
   else if(sa && sb && sa.label===sb.label)
-    points.push(`둘 다 <b>${sa.label}</b> — ${sa.desc}. 누가 한 수 위인지 보는 재미`);
-  [a,b].forEach(f=>{ const fr=finishRate(f); if(fr!==null && fr>=75) points.push(`${f.name} — 피니시율 <b>${fr}%</b>, 순식간에 끝낼 수 있는 선수예요`); });
-  if(bothRanked && !isTitle) points.push(`${a.rank} vs ${b.rank} — 상위 랭커들의 순위 다툼`);
+    points.push(`둘 다 <b>${sa.label}</b> — 같은 무기라, 누가 한 수 위인지 갈리는 싸움이에요`);
+  [a,b].forEach(f=>{ const fr=finishRate(f); if(fr!==null && fr>=75) points.push(`${f.name}, <b>피니시율 ${fr}%</b> — 눈 깜짝할 새 끝날 수도 있어요`); });
+  if(bothRanked && !isTitle) points.push(`${a.rank} vs ${b.rank} — 상위권 자존심 싸움이거든요`);
 
-  // 맥락 문장 (뉴비용)
-  let ctx = `<b>${e.code}</b>는 ${e.city||'해외'}에서 열리는 UFC 이벤트예요. 메인 경기는 <b>${a.name}</b> 대 <b>${b.name}</b>`;
-  if(isTitle && isRematch) ctx+=`인데, 챔피언 벨트가 걸린 <b>리매치</b>라 이번 이벤트의 하이라이트예요.`;
-  else if(isTitle) ctx+=` — <b>챔피언 타이틀</b>이 걸린 큰 경기예요.`;
-  else if(isRematch) ctx+=`로, 예전 맞대결의 <b>재대결</b>이에요.`;
-  else ctx+=` 예요.`;
-  if(sa && sb && sa.label!==sb.label) ctx+= ` ${a.name}는 ${sa.desc}, ${b.name}는 ${sb.desc}라 스타일 대비가 뚜렷해요.`;
+  // 맥락 문장 (뉴닉 톤: 짧고 친근하게)
+  let ctx = `<b>${e.code}</b>, 이번엔 ${e.city||'해외'}에서 열려요. 메인은 <b>${a.name}</b> vs <b>${b.name}</b>`;
+  if(isTitle && isRematch) ctx+=`. 챔피언 벨트까지 걸린 <b>리턴매치</b>라, 이번 대회 간판이라고 보면 돼요.`;
+  else if(isTitle) ctx+=`. <b>챔피언 벨트</b>가 걸린 큰 판이에요.`;
+  else if(isRematch) ctx+=`. 예전에 한 번 붙었던 둘이라, 다들 <b>결과 바뀔지</b> 지켜보는 중이고요.`;
+  else ctx+=`가 메인이에요.`;
+  if(sa && sb && sa.label!==sb.label) ctx+= ` 근데 ${a.name}랑 ${b.name}은 스타일이 딴판이라, 어느 쪽 방식이 통할지가 진짜 관전 포인트예요.`;
 
   return {points, ctx};
 }
