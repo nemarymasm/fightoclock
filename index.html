@@ -809,10 +809,10 @@ function homeSortSection(){
       border:1px solid ${on?'var(--red)':'var(--line-2)'};background:${on?'var(--red)':'transparent'};color:${on?'#fff':'var(--dim)'}">${label}</button>`;};
   return `
   <div class="section-title" style="justify-content:space-between">
-    <span style="display:flex;align-items:center;gap:8px"><span class="bar"></span>주요 경기</span>
+    <span style="display:flex;align-items:center;gap:8px"><span class="bar"></span>다가오는 대회</span>
     <span style="display:flex;align-items:center;gap:6px">${seg('time','시간순')}<span style="color:var(--dim);font-size:13px">⇄</span>${seg('pop','인기순')}</span>
   </div>
-  <div style="font-size:11px;color:var(--dim);margin:-4px 0 12px 2px">보고 싶은 순서를 눌러보세요</div>
+  <div style="font-size:11px;color:var(--dim);margin:-4px 0 12px 2px"><b>${cover.code}</b> 다음으로 예정된 <b>다른 대회들</b>이에요 · 순서를 바꿔보세요</div>
   <div class="bigcards">
     ${rest.slice(0,6).map((ev,i)=>{
       const m = ev.mainCard?.[0];
@@ -843,7 +843,7 @@ function viewHome(){
   return `
   ${main ? `
   <section class="cover">
-    <div class="cover-kick">다음 UFC · ${dLabel(e.dateUtc)}</div>
+    <div class="cover-kick">다음 대회 메인이벤트 · ${dLabel(e.dateUtc)}</div>
     <div class="cover-faces">
       <a class="cf" href="#fighter/${main.a}">
         <div class="cf-img">${avatarBox(a,150)}</div>
