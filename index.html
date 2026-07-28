@@ -450,131 +450,127 @@
   .fighter-hero .nick{margin-top:5px;color:var(--muted);letter-spacing:0}
   .fight-card .avatar-box,.event-item .avatar-box{border-radius:10px!important}
 
-  /* ---- 홈: 이번 주 경기 브리핑 ---- */
-  .week-brief{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:
-    radial-gradient(70% 50% at 18% 12%,rgba(229,72,77,.17),transparent 72%),
-    linear-gradient(145deg,#141416,#0e0e10 65%)}
-  .week-brief::before{content:"";position:absolute;inset:0;pointer-events:none;background:
-    repeating-linear-gradient(118deg,transparent 0 38px,rgba(255,255,255,.014) 38px 39px)}
-  .week-head{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:17px 18px 12px;border-bottom:1px solid var(--line)}
-  .week-eyebrow{font-size:11px;font-weight:850;letter-spacing:.14em;color:#ff8589;text-transform:uppercase}
-  .week-time{margin-top:5px;font-size:22px;font-weight:900;letter-spacing:-.035em}
-  .week-sub{margin-top:4px;color:var(--muted);font-size:12px;line-height:1.45}
-  .week-d{flex-shrink:0;padding:7px 10px;border:1px solid rgba(255,116,121,.35);border-radius:20px;color:#ff8b8f;font-size:11px;font-weight:800}
-  .brief-grid{position:relative;display:grid;grid-template-columns:1fr;min-width:0}
-  .match-stage{position:relative;min-width:0;padding:14px 12px 16px}
+  /* ---- 홈: 이번 주 UFC 편집 가이드 ---- */
+  .week-brief{overflow:hidden;border-top:2px solid var(--red);background:#0d0d0f}
+  .week-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:20px 4px 17px}
+  .week-eyebrow{font-size:11px;font-weight:850;letter-spacing:.13em;color:#ff7d82;text-transform:uppercase}
+  .week-time{margin-top:7px;font-size:28px;font-weight:900;letter-spacing:-.045em;line-height:1.1}
+  .week-sub{margin-top:7px;color:var(--muted);font-size:12px;line-height:1.5}
+  .week-d{flex-shrink:0;margin-top:2px;color:#ff8d91;font-size:12px;font-weight:800}
+  .brief-grid{display:grid;grid-template-columns:1fr;min-width:0;border-top:1px solid var(--line)}
+  .match-stage{min-width:0;padding:14px 8px 15px;background:
+    radial-gradient(52% 70% at 23% 48%,rgba(229,72,77,.12),transparent 75%),
+    radial-gradient(52% 70% at 78% 48%,rgba(91,134,229,.08),transparent 75%)}
   .match-stage .cover-faces{margin:0;padding:0;align-items:start}
-  .match-stage .cf{display:flex;flex-direction:column;align-items:center;gap:7px;min-width:0}
-  .match-stage .cf-img{width:132px;height:166px;max-width:36vw;max-height:45vw}
-  .match-stage .cf-img>div{width:100%!important;height:100%!important;border-radius:14px 14px 5px 5px!important}
-  .match-stage .cf-img>.ufc-full{border:0!important;background:transparent;overflow:visible}
-  .match-stage .cf-img>.ufc-full img{padding:0;filter:drop-shadow(0 14px 16px rgba(0,0,0,.48)) saturate(.96) contrast(1.04)}
-  .match-stage .cf-vs{margin-top:59px;width:32px;height:32px;border:1px solid var(--line-2);border-radius:50%;display:grid;place-items:center;background:#0b0b0d;color:#fff;font-size:11px}
-  .match-stage .cf-nm{font-size:17px;font-weight:850;letter-spacing:-.03em;line-height:1.08}
-  .match-stage .cf-en{font-size:9px;color:var(--dim);min-height:11px}
+  .match-stage .cf{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+  .match-stage .cf-img{width:128px;height:160px;max-width:36vw;max-height:45vw}
+  .match-stage .cf-img>div{width:100%!important;height:100%!important;border:0!important;border-radius:0!important;background:transparent}
+  .match-stage .cf-img>.ufc-full{overflow:visible}
+  .match-stage .cf-img>.ufc-full img{padding:0;filter:drop-shadow(0 14px 16px rgba(0,0,0,.5)) saturate(.96) contrast(1.04)}
+  .match-stage .cf-vs{margin-top:58px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.08em}
+  .match-stage .cf-nm{font-size:18px;font-weight:880;letter-spacing:-.04em;line-height:1.08}
+  .match-stage .cf-en{display:none}
   .match-stage .cf-rec{font-size:11px;color:var(--muted)}
-  .brief-intel{position:relative;border-top:1px solid var(--line);padding:16px 18px 18px;background:rgba(8,8,10,.42)}
-  .brief-thesis{font-size:16px;line-height:1.52;font-weight:750;letter-spacing:-.015em;margin-bottom:16px}
-  .signal-label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:13px;font-size:11px;color:var(--muted)}
-  .signal-label b{font-size:12px;color:var(--text)}
-  .signal-names{display:flex;justify-content:space-between;gap:10px;margin-top:6px;font-size:12px;font-weight:750}
-  .signal-bar{height:10px;margin-top:7px;border-radius:20px;overflow:hidden;display:flex;background:var(--line-2)}
+  .brief-intel{padding:19px 4px 21px;border-top:1px solid var(--line)}
+  .brief-thesis{max-width:28em;padding-left:13px;border-left:3px solid var(--red);font-size:20px;line-height:1.42;font-weight:820;letter-spacing:-.035em}
+  .main-eta{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline;margin-top:17px;padding-top:15px;border-top:1px solid var(--line)}
+  .main-eta span{color:var(--muted);font-size:11px;font-weight:700}
+  .main-eta b{font-size:17px;letter-spacing:-.025em}
+  .eta-note{grid-column:2;color:var(--muted);font-size:11px;line-height:1.45;margin-top:-6px}
+  .brief-link{display:inline-flex;align-items:center;min-height:44px;margin-top:9px;color:#ff8589;font-size:13px;font-weight:800}
+
+  .crowd-panel{padding:24px 4px 22px;border-top:1px solid var(--line-2)}
+  .editorial-heading{display:flex;align-items:end;justify-content:space-between;gap:14px}
+  .editorial-heading h2{margin:0;font-size:21px;letter-spacing:-.035em}
+  .editorial-heading a{color:var(--muted);font-size:11px;text-decoration:underline;text-underline-offset:3px}
+  .crowd-summary{margin:8px 0 13px;font-size:15px;line-height:1.55;color:var(--text)}
+  .crowd-poll{max-width:560px}
+  .crowd-poll-head{display:flex;justify-content:space-between;gap:12px;font-size:12px;font-weight:750}
+  .crowd-poll-head span:last-child{color:var(--muted)}
+  .signal-bar{height:5px;margin-top:7px;overflow:hidden;display:flex;background:var(--line-2)}
   .signal-bar .fav{background:var(--red)}
   .signal-bar .dog{background:#536780}
-  .signal-odds{display:flex;justify-content:space-between;margin-top:6px;color:var(--dim);font-size:11px}
-  .signal-note{margin-top:8px;color:var(--dim);font-size:10px;line-height:1.45}
-  .signal-note a,.brief-sources a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
-  .fan-model{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
-  .community-tone{margin-top:9px;padding:9px 10px;border-left:2px solid var(--line-2);color:var(--muted);font-size:11px;line-height:1.45}
-  .mini-signal{padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.018)}
-  .mini-signal span{display:block;font-size:10px;color:var(--dim)}
-  .mini-signal b{display:block;margin-top:3px;font-size:16px;letter-spacing:-.02em}
-  .mini-signal a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
-  .desktop-signals{display:none}
-  .mobile-prediction{margin-top:12px;border-top:1px solid var(--line)}
-  .mobile-prediction summary,.mobile-watch summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;font-weight:750}
-  .mobile-prediction summary::-webkit-details-marker,.mobile-watch summary::-webkit-details-marker{display:none}
-  .mobile-prediction summary::after,.mobile-watch summary::after{content:"＋";color:var(--muted);font-size:16px;font-weight:500}
-  .mobile-prediction[open] summary::after,.mobile-watch[open] summary::after{content:"－"}
-  .mobile-prediction summary span{color:var(--muted);font-size:11px;font-weight:600}
-  .mobile-prediction .fan-model{margin-top:0;padding:2px 0 8px}
-  .prediction-source{padding:8px 0 2px;color:var(--dim);font-size:11px;line-height:1.5}
-  .prediction-source a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
-  .watch-panel{position:relative;padding:18px;border-top:1px solid var(--line)}
-  .watch-title{font-size:11px;color:#ff8589;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
-  .watch-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:8px}
-  .desktop-watch{display:none}
-  .watch-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
-  .watch-chips span{padding:7px 10px;border-radius:20px;background:rgba(255,255,255,.055);color:var(--text);font-size:12px;font-weight:700}
-  .mobile-watch{margin-top:5px;border-top:1px solid var(--line)}
-  .mobile-watch .watch-grid{margin-top:0}
-  .watch-item{display:grid;grid-template-columns:25px 1fr;gap:9px;padding:10px 0;border-top:1px solid var(--line)}
-  .watch-item:first-child{border-top:0}
-  .watch-num{width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:rgba(229,72,77,.13);color:#ff8589;font-size:10px;font-weight:850}
-  .watch-item b{display:block;font-size:13px}
-  .watch-item p{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.48}
-  .brief-actions{position:relative;display:grid;grid-template-columns:1fr auto;gap:9px;padding:0 18px 18px}
-  .brief-actions .btn{justify-content:center}
-  .brief-sources{position:relative;padding:11px 18px;border-top:1px solid var(--line);color:var(--dim);font-size:11px;line-height:1.5}
+  .crowd-list{margin-top:17px;border-top:1px solid var(--line)}
+  .crowd-voice{display:grid;grid-template-columns:74px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+  .crowd-voice b{color:#ff8c90;font-size:11px}
+  .crowd-voice p{margin:0;font-size:14px;line-height:1.55}
+  .crowd-tags{display:flex;gap:7px;overflow-x:auto;margin-top:13px;scrollbar-width:none}
+  .crowd-tags::-webkit-scrollbar{display:none}
+  .crowd-tags span{flex:0 0 auto;color:var(--muted);font-size:11px}
+
+  .watch-panel{padding:23px 4px 19px;border-top:1px solid var(--line-2)}
+  .watch-title{font-size:21px;font-weight:850;letter-spacing:-.035em}
+  .watch-sub{margin-top:4px;color:var(--muted);font-size:12px}
+  .watch-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:12px}
+  .watch-item{display:grid;grid-template-columns:22px 1fr;gap:9px;padding:12px 0;border-top:1px solid var(--line)}
+  .watch-num{color:#ff8589;font-size:11px;font-weight:850}
+  .watch-item b{display:block;font-size:14px}
+  .watch-item p{margin:4px 0 0;color:var(--muted);font-size:13px;line-height:1.55}
+  .support-details{border-top:1px solid var(--line);margin-top:4px}
+  .support-details summary{list-style:none;cursor:pointer;min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;font-weight:750;color:var(--muted)}
+  .support-details summary::-webkit-details-marker{display:none}
+  .support-details summary::after{content:"＋";font-size:16px;font-weight:500}
+  .support-details[open] summary::after{content:"－"}
+  .support-data{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:2px 0 15px}
+  .support-data div{min-width:0}
+  .support-data span{display:block;color:var(--muted);font-size:10px}
+  .support-data b{display:block;margin-top:3px;font-size:14px}
+  .support-data a{display:inline-block;margin-top:4px;color:var(--muted);font-size:10px;text-decoration:underline;text-underline-offset:2px}
+  .brief-actions{display:flex;gap:9px;padding:0 4px 22px}
+  .brief-actions .btn{max-width:240px}
+  .brief-sources{padding:11px 4px;border-top:1px solid var(--line);color:var(--dim);font-size:10px;line-height:1.5}
   .source-desktop{display:none}
-  .card-preview{margin-top:24px}
+
+  .card-preview{margin-top:34px}
   .card-preview-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:9px}
-  .card-preview-head h2{margin:0;font-size:20px;letter-spacing:-.025em}
+  .card-preview-head h2{margin:0;font-size:21px;letter-spacing:-.035em}
   .card-preview-head span{color:var(--muted);font-size:11px}
   .card-preview-list{border-top:1px solid var(--line-2)}
-  .preview-fight{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;padding:12px 2px;border-bottom:1px solid var(--line)}
-  .preview-fighter{display:flex;align-items:center;gap:8px;min-width:0}
+  .preview-fight{display:grid;grid-template-columns:66px minmax(0,1fr);align-items:center;gap:10px;padding:12px 2px;border-bottom:1px solid var(--line)}
+  .preview-time{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .preview-time b{display:block;color:var(--text);font-size:13px}
+  .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);align-items:center;gap:7px}
+  .preview-fighter{display:flex;align-items:center;gap:7px;min-width:0}
   .preview-fighter.right{flex-direction:row-reverse;text-align:right}
   .preview-fighter b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .preview-vs{min-width:74px;text-align:center;color:var(--dim);font-size:10px}
-  .preview-vs strong{display:block;color:var(--muted);font-size:9px;font-weight:650}
+  .preview-vs{text-align:center;color:var(--dim);font-size:9px}
 
   @media (min-width:780px){
     .cover{padding-bottom:24px}.cover-faces{padding:18px 80px 0}
     .cover .cf-img{width:210px;height:244px;max-width:none;max-height:none}
     .cover-title{font-size:30px}.cover .cf-nm{font-size:24px}
-    .brief-grid{grid-template-columns:minmax(0,1.25fr) minmax(330px,.75fr)}
-    .match-stage{padding:24px 24px 20px}
-    .match-stage .cf-img{width:205px;height:248px;max-width:none;max-height:none}
-    .match-stage .cf-vs{margin-top:93px}
-    .match-stage .cf-nm{font-size:22px}
-    .brief-intel{border-top:0;border-left:1px solid var(--line);padding:22px 22px 18px}
-    .desktop-signals{display:block}
-    .mobile-prediction{display:none}
-    .desktop-watch{display:grid}
-    .watch-chips,.mobile-watch{display:none}
-    .watch-grid{grid-template-columns:repeat(3,1fr);gap:16px}
-    .watch-item,.watch-item:first-child{border-top:0;padding:8px 0}
-    .brief-actions{grid-template-columns:220px 140px;justify-content:end}
+    .week-time{font-size:38px}
+    .brief-grid{grid-template-columns:minmax(0,1.12fr) minmax(330px,.88fr)}
+    .match-stage{padding:22px 20px}
+    .match-stage .cf-img{width:190px;height:230px;max-width:none;max-height:none}
+    .match-stage .cf-vs{margin-top:88px}
+    .match-stage .cf-nm{font-size:21px}
+    .brief-intel{display:flex;flex-direction:column;justify-content:center;border-top:0;border-left:1px solid var(--line);padding:28px}
+    .watch-grid{grid-template-columns:repeat(3,1fr);gap:20px}
+    .watch-item{border-top:0}
     .source-desktop{display:inline}.source-mobile{display:none}
   }
   @media (max-width:779px){
-    .week-brief{border-radius:17px;background:linear-gradient(180deg,#171315 0%,#0f0f11 32%,#0d0d0f 100%)}
-    .week-brief::before{display:none}
-    .week-head{padding:14px 15px 11px}
-    .week-eyebrow{font-size:10px;letter-spacing:.11em}
-    .week-time{font-size:21px;line-height:1.15}
-    .week-sub{font-size:12px;line-height:1.5}
-    .week-d{padding:6px 8px}
-    .match-stage{padding:10px 10px 12px;background:rgba(0,0,0,.12)}
-    .match-stage .cf-img{width:116px;height:146px;max-width:35vw;max-height:44vw}
-    .match-stage .cf-vs{margin-top:52px;width:30px;height:30px}
-    .match-stage .cf-nm{font-size:16px}
-    .match-stage .cf-en{display:none}
-    .match-stage .cf-rec{font-size:12px}
-    .brief-intel{padding:14px 15px 8px}
-    .brief-thesis{font-size:17px;line-height:1.45;font-weight:800;margin-bottom:11px}
-    .signal-label{margin-top:0}.signal-label span{display:none}
-    .signal-label b{font-size:13px}
-    .signal-names{font-size:13px}
-    .signal-bar{height:9px}
-    .signal-note{display:none}
-    .watch-panel{padding:13px 15px 8px}
-    .watch-title{font-size:10px;letter-spacing:.1em}
-    .brief-actions{grid-template-columns:1fr;padding:8px 15px 15px}
-    .brief-actions .btn{min-height:46px}
+    .week-head{padding-top:16px}
+    .week-time{font-size:25px}
+    .week-sub{font-size:11px}
+    .match-stage{padding-top:8px;padding-bottom:10px}
+    .match-stage .cf-img{width:108px;height:134px;max-width:34vw;max-height:42vw}
+    .match-stage .cf-vs{margin-top:47px}
+    .match-stage .cf-nm{font-size:17px}
+    .brief-intel{padding-top:15px;padding-bottom:16px}
+    .brief-thesis{font-size:18px}
+    .main-eta{margin-top:14px;padding-top:12px}
+    .brief-link{min-height:38px;margin-top:5px}
+    .crowd-panel,.watch-panel{padding-top:18px}
+    .crowd-voice{grid-template-columns:66px 1fr}
+    .support-data{grid-template-columns:1fr}
+    .support-data div{padding:7px 0;border-top:1px solid var(--line)}
+    .brief-actions{display:block}
+    .brief-actions .btn{max-width:none}
     .brief-actions .btn.ghost{display:none}
-    .brief-sources{padding:10px 15px;font-size:11px}
+    .preview-fight{grid-template-columns:58px minmax(0,1fr)}
+    .preview-fighter .avatar-box{display:none}
   }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -869,6 +865,15 @@ function insightFor(e){
   return e ? (INSIGHTS[e.id] || {}) : {};
 }
 
+function estimatedBoutTime(e,index,total){
+  if(!e?.dateUtc) return '시각 미정';
+  const offsetMinutes=10+Math.max(0,total-1-index)*30+(index===0?10:0);
+  const target=new Date(new Date(e.dateUtc).getTime()+offsetMinutes*60000);
+  return target.toLocaleTimeString('ko-KR',{
+    timeZone:'Asia/Seoul',hour:'numeric',minute:'2-digit',hour12:true
+  });
+}
+
 function weekBrief(e, main, a, b){
   const intel = insightFor(e);
   const schedule = intel.schedule || {};
@@ -876,24 +881,23 @@ function weekBrief(e, main, a, b){
   const fans = intel.fans || {};
   const models = intel.models || {};
   const points = intel.watch_points || newbieGuide(e)?.points?.slice(0,3).map((text,i)=>({title:`관전 포인트 ${i+1}`,text:text.replace(/<[^>]+>/g,'')})) || [];
-  const aPct = Number(market.fighter_a_pct ?? market.aPct ?? 50);
-  const bPct = Number(market.fighter_b_pct ?? market.bPct ?? (100-aPct));
+  const reactions = intel.fan_reactions || (intel.community_tone?[{label:'커뮤니티 분위기',text:intel.community_tone}]:[]);
+  const fanTopics = intel.fan_topics || points.map(p=>p.title).slice(0,3);
+  const fanAPct = Number(fans.fighter_a_pct ?? 50);
+  const fanBPct = Number(fans.fighter_b_pct ?? (100-fanAPct));
+  const marketAPct = Number(market.fighter_a_pct ?? market.aPct ?? 50);
+  const marketBPct = Number(market.fighter_b_pct ?? market.bPct ?? (100-marketAPct));
+  const mainEstimate = schedule.main_event_estimate || estimatedBoutTime(e,0,(e.mainCard||[]).length);
   const sourceLink = (url,label)=>url?`<a href="${esc(safeExternalUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:esc(label);
-  const fanModelHtml = `
-    <div class="fan-model">
-      <div class="mini-signal"><span>팬 선택 · ${esc(fans.label||'공개 투표')}</span><b>${Number(fans.fighter_a_pct)||'-'}% ${esc(a.name)}</b><span>${fans.sample?`표본 ${Number(fans.sample)}명 · `:''}${sourceLink(fans.source,'출처')}</span></div>
-      <div class="mini-signal"><span>분석 모델</span><b>${models.fighter_a_low&&models.fighter_a_high?`${models.fighter_a_low}~${models.fighter_a_high}%`:'자료 확인 중'}</b><span>${esc(models.label||'시장과 별도 지표')} · ${sourceLink(models.source,'출처')}</span></div>
-    </div>
-    ${intel.community_tone?`<div class="community-tone">${esc(intel.community_tone)}</div>`:''}`;
   const watchItems = points.map((p,i)=>`
-    <div class="watch-item"><span class="watch-num">0${i+1}</span><div><b>${esc(p.title||'')}</b><p>${esc(p.text||p)}</p></div></div>`).join('');
+    <div class="watch-item"><span class="watch-num">${String(i+1).padStart(2,'0')}</span><div><b>${esc(p.title||'')}</b><p>${esc(p.text||p)}</p></div></div>`).join('');
   return `
   <section class="week-brief" aria-labelledby="weekFightTitle">
     <div class="week-head">
       <div>
         <div class="week-eyebrow">이번 주 UFC · ${esc(e.city||'')}</div>
-        <div class="week-time">${esc(schedule.label || eventTimeLabel(e))}</div>
-        <div class="week-sub">프릴림 ${esc(schedule.prelims||'시각 확인 중')} · 메인카드 ${esc(schedule.main_card||'시각 확인 중')} · ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기</div>
+        <div class="week-time" id="weekFightTitle">${esc(schedule.label || eventTimeLabel(e))}</div>
+        <div class="week-sub">프릴림 ${esc(schedule.prelims||'시각 확인 중')}부터 · 총 ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기</div>
       </div>
       <div class="week-d">${esc(dLabel(e.dateUtc))}</div>
     </div>
@@ -915,33 +919,47 @@ function weekBrief(e, main, a, b){
           </a>
         </div>
       </div>
-      <aside class="brief-intel" aria-label="경기 예상과 여론">
+      <aside class="brief-intel" aria-label="메인이벤트 한 줄 요약">
         <div class="brief-thesis">
           <span class="source-desktop">${esc(intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</span>
           <span class="source-mobile">${esc(intel.mobile_thesis || intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</span>
         </div>
-        <div class="signal-label"><b>시장 예상</b><span>${esc(market.as_of||'최신 배당 기준')}</span></div>
-        <div class="signal-names"><span>${esc(a.name)} ${aPct}%</span><span>${esc(b.name)} ${bPct}%</span></div>
-        <div class="signal-bar" aria-label="${esc(a.name)} ${aPct}%, ${esc(b.name)} ${bPct}%">
-          <i class="fav" style="width:${Math.max(0,Math.min(100,aPct))}%"></i><i class="dog" style="width:${Math.max(0,Math.min(100,bPct))}%"></i>
+        <div class="main-eta">
+          <span>메인이벤트 예상</span>
+          <b>${esc(mainEstimate)} 전후</b>
+          <div class="eta-note">${esc(schedule.estimate_note||'앞 경기 종료 방식에 따라 30분 이상 달라질 수 있어요.')}</div>
         </div>
-        <div class="signal-odds"><span>${esc(market.fighter_a_odds||'')}</span><span>${esc(market.fighter_b_odds||'')}</span></div>
-        <div class="signal-note">${esc(market.label||market.note||'배당을 암시확률로 환산한 시장 지표')} · ${sourceLink(market.source,'출처')}</div>
-        <div class="desktop-signals">${fanModelHtml}</div>
-        <details class="mobile-prediction">
-          <summary>팬·모델 예측 비교 <span>팬 ${Number(fans.fighter_a_pct)||'-'}% · 모델 ${models.fighter_a_low||'-'}~${models.fighter_a_high||'-'}%</span></summary>
-          ${fanModelHtml}
-          <div class="prediction-source">${esc(market.label||market.note||'시장 지표')} · ${sourceLink(market.source,'배당 출처')}</div>
-        </details>
+        <button class="brief-link" type="button" onclick="document.getElementById('fightTimes')?.scrollIntoView({behavior:'smooth',block:'start'})">전체 대진과 예상시간 보기 ↓</button>
       </aside>
     </div>
+    <section class="crowd-panel" aria-labelledby="crowdTitle">
+      <div class="editorial-heading">
+        <h2 id="crowdTitle">지금 팬들은</h2>
+        ${fans.source?sourceLink(fans.source,`${Number(fans.discussion_count)||reactions.length}개 댓글 원문`):''}
+      </div>
+      <p class="crowd-summary">${esc(intel.fan_summary || intel.community_tone || `${a.name} 승리 예상이 우세합니다.`)}</p>
+      <div class="crowd-poll">
+        <div class="crowd-poll-head"><span>${esc(a.name)} ${fanAPct}%</span><span>${esc(b.name)} ${fanBPct}% · ${Number(fans.sample)||0}명 참여</span></div>
+        <div class="signal-bar" aria-label="팬 투표 ${esc(a.name)} ${fanAPct}%, ${esc(b.name)} ${fanBPct}%">
+          <i class="fav" style="width:${Math.max(0,Math.min(100,fanAPct))}%"></i><i class="dog" style="width:${Math.max(0,Math.min(100,fanBPct))}%"></i>
+        </div>
+      </div>
+      <div class="crowd-list">
+        ${reactions.map(r=>`<div class="crowd-voice"><b>${esc(r.label||'팬 반응')}</b><p>${esc(r.text||r)}</p></div>`).join('')}
+      </div>
+      <div class="crowd-tags">${fanTopics.map(t=>`<span>#${esc(t)}</span>`).join('')}</div>
+    </section>
     <div class="watch-panel">
-      <div class="watch-title">왜 봐야 하나 · 관전 포인트</div>
-      <div class="watch-chips">${points.map(p=>`<span>${esc(p.title||'')}</span>`).join('')}</div>
-      <div class="watch-grid desktop-watch">${watchItems}</div>
-      <details class="mobile-watch">
-        <summary>관전 포인트 자세히</summary>
-        <div class="watch-grid">${watchItems}</div>
+      <div class="watch-title">이 경기, 이것만 보면 됩니다</div>
+      <div class="watch-sub">숫자보다 경기 흐름을 바꿀 세 가지</div>
+      <div class="watch-grid">${watchItems}</div>
+      <details class="support-details">
+        <summary>배당·팬 투표·분석 모델 근거 보기</summary>
+        <div class="support-data">
+          <div><span>팬 투표</span><b>${fanAPct}% ${esc(a.name)}</b>${sourceLink(fans.source,`${Number(fans.sample)||0}명 참여`)}</div>
+          <div><span>시장 배당</span><b>${marketAPct} : ${marketBPct}</b>${sourceLink(market.source,`${esc(market.fighter_a_odds||'')} / ${esc(market.fighter_b_odds||'')}`)}</div>
+          <div><span>공개 분석 모델</span><b>${models.fighter_a_low&&models.fighter_a_high?`${models.fighter_a_low}~${models.fighter_a_high}% ${esc(a.name)}`:'자료 확인 중'}</b>${sourceLink(models.source,'모델 출처')}</div>
+        </div>
       </details>
     </div>
     <div class="brief-actions">
@@ -959,14 +977,17 @@ function homeCardPreview(e){
   const fights=(e.mainCard||[]).slice(0,5);
   if(!fights.length) return '';
   return `
-  <section class="card-preview">
-    <div class="card-preview-head"><div><h2>이번 주 메인카드</h2><span>메인이벤트부터 한눈에</span></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
-    <div class="card-preview-list">${fights.map(f=>{
+  <section class="card-preview" id="fightTimes">
+    <div class="card-preview-head"><div><h2>대략 언제 싸우나</h2><span>메인카드 시작 기준 예상 시각</span></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+    <div class="card-preview-list">${fights.map((f,i)=>{
       const a=getFighter(f.a), b=getFighter(f.b);
       return `<a class="preview-fight" href="#event/${e.id}">
-        <span class="preview-fighter">${avatarBox(a,38)}<b>${esc(a.name)}</b></span>
-        <span class="preview-vs">VS<strong>${esc(f.wc||'')}</strong></span>
-        <span class="preview-fighter right">${avatarBox(b,38)}<b>${esc(b.name)}</b></span>
+        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b>예상</span>
+        <span class="preview-match">
+          <span class="preview-fighter">${avatarBox(a,34)}<b>${esc(a.name)}</b></span>
+          <span class="preview-vs">VS</span>
+          <span class="preview-fighter right">${avatarBox(b,34)}<b>${esc(b.name)}</b></span>
+        </span>
       </a>`;
     }).join('')}</div>
   </section>`;

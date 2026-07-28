@@ -104,6 +104,13 @@ class DataContractTests(unittest.TestCase):
         self.assertGreaterEqual(len(with_photo) / len(upcoming), 0.95)
         self.assertGreaterEqual(len(official), 90)
 
+    def test_weekly_brief_has_editorial_fan_reactions_and_time_estimate(self):
+        insight = load_json("insights.json")["events"]["ufc-fight-night-medi-vs-rodriguez"]
+        self.assertTrue(insight["schedule"].get("main_event_estimate"))
+        self.assertGreaterEqual(len(insight.get("fan_reactions", [])), 3)
+        self.assertGreaterEqual(len(insight.get("fan_topics", [])), 3)
+        self.assertTrue(insight["fans"].get("source", "").startswith("https://"))
+
 
 class FrontendContractTests(unittest.TestCase):
     @classmethod
@@ -142,13 +149,14 @@ class FrontendContractTests(unittest.TestCase):
 
     def test_home_surfaces_weekly_fight_intelligence(self):
         for required in (
-            "시장 예상",
-            "팬 선택",
-            "왜 봐야 하나",
-            "이번 주 메인카드",
+            "메인이벤트 예상",
+            "지금 팬들은",
+            "이 경기, 이것만 보면 됩니다",
+            "대략 언제 싸우나",
+            "배당·팬 투표·분석 모델 근거 보기",
             "data/insights.json",
-            'class="mobile-prediction"',
-            'class="mobile-watch"',
+            'class="crowd-panel"',
+            'class="support-details"',
         ):
             self.assertIn(required, self.html)
 

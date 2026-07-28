@@ -7,6 +7,8 @@
         "label": "한국시간 8월 2일(일) 오전 2시",
         "prelims": "8월 1일(토) 오후 11시",
         "main_card": "8월 2일(일) 오전 2시",
+        "main_event_estimate": "오전 4시 20분",
+        "estimate_note": "5경기 메인카드 기준 추정치예요. 빠른 피니시가 나오면 앞당겨집니다.",
         "bout_count": 12,
         "note": "메인이벤트 입장 시각은 앞 경기 진행에 따라 달라집니다.",
         "source": "https://www.ufc.com/event/ufc-fight-night-august-01-2026"
@@ -25,6 +27,7 @@
         "fighter_a_pct": 89,
         "fighter_b_pct": 11,
         "sample": 36,
+        "discussion_count": 27,
         "label": "Sherdog 공개 투표",
         "note": "표본이 작고 커뮤니티 성향이 반영된 참고 지표입니다.",
         "source": "https://forums.sherdog.com/threads/uros-medic-vs-daniel-rodriguez-set-for-main-event-of-ufc-belgrade-on-august-1st.4384444/"
@@ -37,6 +40,26 @@
       },
       "thesis": "팬과 시장은 메디치의 초반 KO를 본다. 하지만 공개 모델은 로드리게스의 리치·타격량·장기전 경험 때문에 훨씬 접전으로 본다.",
       "mobile_thesis": "초반에 끝나면 메디치, 길어지면 로드리게스.",
+      "fan_summary": "승부 예상은 메디치 쪽. 5라운드 변수와 메인이벤트 급을 두고는 말이 갈립니다.",
+      "fan_reactions": [
+        {
+          "label": "메디치 우세",
+          "text": "메디치가 무난히 이기고 초반 KO까지 만들 거라는 예상이 가장 많습니다."
+        },
+        {
+          "label": "로드리게스 변수",
+          "text": "같은 왼손잡이 맞대결이라 메디치의 왼손이 덜 통하고, 5라운드라면 로드리게스가 유리하다는 반론도 있습니다."
+        },
+        {
+          "label": "대진 평가는",
+          "text": "경기 자체는 화끈하겠지만 메인이벤트로는 이름값이 아쉽다는 반응이 반복됩니다."
+        }
+      ],
+      "fan_topics": [
+        "메디치 초반 KO",
+        "5라운드 변수",
+        "메인이벤트 급 논쟁"
+      ],
       "community_tone": "커뮤니티는 세르비아 첫 UFC와 홈 영웅 메디치에는 기대가 높지만, 메인이벤트의 이름값에는 다소 회의적입니다.",
       "watch_points": [
         {
