@@ -1,462 +1,10 @@
 {
-  "generated_at": "2026-07-04T18:28:10+09:00",
+  "schema_version": 2,
+  "generated_at": "2026-07-28T10:07:26+09:00",
   "source": "Wikipedia: List of UFC events",
   "translations_applied": true,
   "event_count": 8,
   "events": [
-    {
-      "name": "UFC 329: McGregor vs. Holloway 2",
-      "wiki_url": "https://en.wikipedia.org/wiki/UFC_329",
-      "date_iso": "2026-07-11",
-      "venue": "T-Mobile Arena",
-      "location": "Las Vegas, Nevada, U.S.",
-      "main_card": [
-        {
-          "weight": "Welterweight",
-          "fighter_a": "Conor McGregor",
-          "fighter_b": "Max Holloway",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Conor McGregor",
-          "fighter_b_ko": "맥스 할로웨이",
-          "weight_ko": "웰터급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "Benoît Saint Denis",
-          "fighter_b": "Paddy Pimblett",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Benoît Saint Denis",
-          "fighter_b_ko": "패디 핌블렛",
-          "weight_ko": "라이트급"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Cory Sandhagen",
-          "fighter_b": "Mario Bautista",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "코리 샌드하겐",
-          "fighter_b_ko": "마리오 바우티스타",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Flyweight",
-          "fighter_a": "Brandon Royval",
-          "fighter_b": "Lone'er Kavanagh",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "브랜든 로이발",
-          "fighter_b_ko": "Lone'er Kavanagh",
-          "weight_ko": "플라이급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "King Green",
-          "fighter_b": "Terrance McKinney",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "King Green",
-          "fighter_b_ko": "Terrance McKinney",
-          "weight_ko": "라이트급"
-        }
-      ],
-      "prelims": [
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Robert Whittaker",
-          "fighter_b": "Nikita Krylov",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "로버트 휘태커",
-          "fighter_b_ko": "Nikita Krylov",
-          "weight_ko": "라이트헤비급"
-        },
-        {
-          "weight": "Heavyweight",
-          "fighter_a": "Gable Steveson",
-          "fighter_b": "Elisha Ellison",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Gable Steveson",
-          "fighter_b_ko": "Elisha Ellison",
-          "weight_ko": "헤비급"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Cody Garbrandt",
-          "fighter_b": "Adrian Yañez",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Cody Garbrandt",
-          "fighter_b_ko": "Adrian Yañez",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Featherweight",
-          "fighter_a": "Luke Riley",
-          "fighter_b": "Kai Kamaka III",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Luke Riley",
-          "fighter_b_ko": "Kai Kamaka III",
-          "weight_ko": "페더급"
-        },
-        {
-          "weight": "Women's Flyweight",
-          "fighter_a": "Tracy Cortez",
-          "fighter_b": "Wang Cong",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Tracy Cortez",
-          "fighter_b_ko": "Wang Cong",
-          "weight_ko": "여성 플라이급"
-        },
-        {
-          "weight": "Middleweight",
-          "fighter_a": "Damian Pinas",
-          "fighter_b": "César Almeida",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Damian Pinas",
-          "fighter_b_ko": "César Almeida",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Middleweight",
-          "fighter_a": "Ryan Gandra",
-          "fighter_b": "Zachary Reese",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Ryan Gandra",
-          "fighter_b_ko": "Zachary Reese",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Flyweight",
-          "fighter_a": "Alessandro Costa",
-          "fighter_b": "Cody Durden",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Alessandro Costa",
-          "fighter_b_ko": "Cody Durden",
-          "weight_ko": "플라이급"
-        }
-      ],
-      "name_ko": "UFC 329: McGregor vs. Holloway 2",
-      "venue_ko": "T-모바일 아레나",
-      "location_ko": "미국 네바다 라스베이거스",
-      "date_kst_human": "2026년 7월 11일(토)"
-    },
-    {
-      "name": "UFC Fight Night: du Plessis vs. Usman",
-      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_du_Plessis_vs._Usman",
-      "date_iso": "2026-07-18",
-      "venue": "Paycom Center",
-      "location": "Oklahoma City, Oklahoma, U.S.",
-      "main_card": [
-        {
-          "weight": "Middleweight",
-          "fighter_a": "Dricus du Plessis",
-          "fighter_b": "Kamaru Usman",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "드리쿠스 두 플레시",
-          "fighter_b_ko": "카마루 우스만",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Middleweight",
-          "fighter_a": "Jared Cannonier",
-          "fighter_b": "Christian Leroy Duncan",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "자레드 캐노니어",
-          "fighter_b_ko": "Christian Leroy Duncan",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Welterweight",
-          "fighter_a": "Kevin Holland",
-          "fighter_b": "Jacobe Smith",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Kevin Holland",
-          "fighter_b_ko": "Jacobe Smith",
-          "weight_ko": "웰터급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "Chase Hooper",
-          "fighter_b": "Mitch Ramirez",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Chase Hooper",
-          "fighter_b_ko": "Mitch Ramirez",
-          "weight_ko": "라이트급"
-        },
-        {
-          "weight": "Women's Strawweight",
-          "fighter_a": "Tabatha Ricci",
-          "fighter_b": "Fatima Kline",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Tabatha Ricci",
-          "fighter_b_ko": "Fatima Kline",
-          "weight_ko": "여성 스트로급"
-        },
-        {
-          "weight": "Featherweight",
-          "fighter_a": "Tommy McMillen",
-          "fighter_b": "Alberto Montes",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Tommy McMillen",
-          "fighter_b_ko": "Alberto Montes",
-          "weight_ko": "페더급"
-        }
-      ],
-      "prelims": [
-        {
-          "weight": "Women's Flyweight",
-          "fighter_a": "Veronica Hardy",
-          "fighter_b": "Dione Barbosa",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Veronica Hardy",
-          "fighter_b_ko": "Dione Barbosa",
-          "weight_ko": "여성 플라이급"
-        },
-        {
-          "weight": "Featherweight",
-          "fighter_a": "Austin Bashi",
-          "fighter_b": "Jose Miguel Delgado",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Austin Bashi",
-          "fighter_b_ko": "Jose Miguel Delgado",
-          "weight_ko": "페더급"
-        },
-        {
-          "weight": "Heavyweight",
-          "fighter_a": "Allen Frye Jr.",
-          "fighter_b": "Alvin Hines",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Allen Frye Jr.",
-          "fighter_b_ko": "Alvin Hines",
-          "weight_ko": "헤비급"
-        },
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Levi Rodrigues Jr.",
-          "fighter_b": "Felipe Franco",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Levi Rodrigues Jr.",
-          "fighter_b_ko": "Felipe Franco",
-          "weight_ko": "라이트헤비급"
-        },
-        {
-          "weight": "Flyweight",
-          "fighter_a": "Alden Coria",
-          "fighter_b": "Stewart Nicoll",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Alden Coria",
-          "fighter_b_ko": "Stewart Nicoll",
-          "weight_ko": "플라이급"
-        }
-      ],
-      "name_ko": "UFC Fight Night: du Plessis 대 우스만",
-      "venue_ko": "Paycom Center",
-      "location_ko": "Oklahoma City, Oklahoma, U.S.",
-      "date_kst_human": "2026년 7월 18일(토)"
-    },
-    {
-      "name": "UFC Fight Night: Ankalaev vs. Rountree Jr.",
-      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Ankalaev_vs._Rountree_Jr.",
-      "date_iso": "2026-07-25",
-      "venue": "Etihad Arena",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "main_card": [
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Magomed Ankalaev",
-          "fighter_b": "Khalil Rountree Jr.",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "마고메드 안칼라예프",
-          "fighter_b_ko": "카릴 라운트리 주니어",
-          "weight_ko": "라이트헤비급"
-        },
-        {
-          "weight": "Flyweight",
-          "fighter_a": "Steve Erceg",
-          "fighter_b": "Ramazan Temirov",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Steve Erceg",
-          "fighter_b_ko": "Ramazan Temirov",
-          "weight_ko": "플라이급"
-        },
-        {
-          "weight": "Heavyweight",
-          "fighter_a": "Rizvan Kuniev",
-          "fighter_b": "Tyrell Fortune",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Rizvan Kuniev",
-          "fighter_b_ko": "Tyrell Fortune",
-          "weight_ko": "헤비급"
-        },
-        {
-          "weight": "Welterweight",
-          "fighter_a": "Islam Dulatov",
-          "fighter_b": "Wellington Turman",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Islam Dulatov",
-          "fighter_b_ko": "Wellington Turman",
-          "weight_ko": "웰터급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "Ismael Bonfim",
-          "fighter_b": "Axel Sola",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Ismael Bonfim",
-          "fighter_b_ko": "Axel Sola",
-          "weight_ko": "라이트급"
-        }
-      ],
-      "prelims": [
-        {
-          "weight": "Heavyweight",
-          "fighter_a": "Valter Walker",
-          "fighter_b": "Thomas Petersen",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Valter Walker",
-          "fighter_b_ko": "Thomas Petersen",
-          "weight_ko": "헤비급"
-        },
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Uran Satybaldiev",
-          "fighter_b": "Dustin Jacoby",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Uran Satybaldiev",
-          "fighter_b_ko": "Dustin Jacoby",
-          "weight_ko": "라이트헤비급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "Magomed Zaynukov",
-          "fighter_b": "Damian Rzepecki",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Magomed Zaynukov",
-          "fighter_b_ko": "Damian Rzepecki",
-          "weight_ko": "라이트급"
-        },
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Magomed Tuchalov",
-          "fighter_b": "Brendson Ribeiro",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Magomed Tuchalov",
-          "fighter_b_ko": "Brendson Ribeiro",
-          "weight_ko": "라이트헤비급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "Mike Davis",
-          "fighter_b": "Nurullo Aliev",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Mike Davis",
-          "fighter_b_ko": "Nurullo Aliev",
-          "weight_ko": "라이트급"
-        }
-      ],
-      "name_ko": "UFC Fight Night: 안칼라예프 대 Rountree Jr.",
-      "venue_ko": "에티하드 아레나",
-      "location_ko": "아랍에미리트 아부다비",
-      "date_kst_human": "2026년 7월 25일(토)"
-    },
     {
       "name": "UFC Fight Night: Medić vs. Rodriguez",
       "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Medić_vs._Rodriguez",
@@ -479,13 +27,13 @@
         {
           "weight": "Light Heavyweight",
           "fighter_a": "Jan Błachowicz",
-          "fighter_b": "Bogdan Guskov",
+          "fighter_b": "Navajo Stirling",
           "winner": null,
           "method": "",
           "round": "",
           "time": "",
           "fighter_a_ko": "얀 블라호비치",
-          "fighter_b_ko": "Bogdan Guskov",
+          "fighter_b_ko": "Navajo Stirling",
           "weight_ko": "라이트헤비급"
         },
         {
@@ -501,17 +49,31 @@
           "weight_ko": "헤비급"
         },
         {
-          "weight": "Welterweight",
-          "fighter_a": "Oban Elliott",
-          "fighter_b": "Michael Oliveira",
+          "weight": "Middleweight",
+          "fighter_a": "Duško Todorović",
+          "fighter_b": "Robert Valentin",
           "winner": null,
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Oban Elliott",
-          "fighter_b_ko": "Michael Oliveira",
-          "weight_ko": "웰터급"
+          "fighter_a_ko": "Duško Todorović",
+          "fighter_b_ko": "Robert Valentin",
+          "weight_ko": "미들급"
         },
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Vlasto Čepo",
+          "fighter_b": "Gilbert Urbina",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Vlasto Čepo",
+          "fighter_b_ko": "Gilbert Urbina",
+          "weight_ko": "미들급"
+        }
+      ],
+      "prelims": [
         {
           "weight": "Lightweight",
           "fighter_a": "Ľudovít Klein",
@@ -523,32 +85,18 @@
           "fighter_a_ko": "Ľudovít Klein",
           "fighter_b_ko": "Tofiq Musayev",
           "weight_ko": "라이트급"
-        }
-      ],
-      "prelims": [
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Mark Vologdin",
-          "fighter_b": "Josias Musasa",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Mark Vologdin",
-          "fighter_b_ko": "Josias Musasa",
-          "weight_ko": "밴텀급"
         },
         {
-          "weight": "Middleweight",
-          "fighter_a": "Duško Todorović",
-          "fighter_b": "Robert Valentin",
+          "weight": "Welterweight",
+          "fighter_a": "Oban Elliott",
+          "fighter_b": "Michael Oliveira",
           "winner": null,
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Duško Todorović",
-          "fighter_b_ko": "Robert Valentin",
-          "weight_ko": "미들급"
+          "fighter_a_ko": "Oban Elliott",
+          "fighter_b_ko": "Michael Oliveira",
+          "weight_ko": "웰터급"
         },
         {
           "weight": "Featherweight",
@@ -563,28 +111,16 @@
           "weight_ko": "페더급"
         },
         {
-          "weight": "Middleweight",
-          "fighter_a": "Vlasto Čepo",
-          "fighter_b": "Gilbert Urbina",
+          "weight": "Lightweight",
+          "fighter_a": "Mateusz Rębecki",
+          "fighter_b": "Kyle Prepolec",
           "winner": null,
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Vlasto Čepo",
-          "fighter_b_ko": "Gilbert Urbina",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Heavyweight",
-          "fighter_a": "Jovan Leka",
-          "fighter_b": "Max Gimenis",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Jovan Leka",
-          "fighter_b_ko": "Max Gimenis",
-          "weight_ko": "헤비급"
+          "fighter_a_ko": "Mateusz Rębecki",
+          "fighter_b_ko": "Kyle Prepolec",
+          "weight_ko": "라이트급"
         },
         {
           "weight": "Women's Bantamweight",
@@ -602,7 +138,9 @@
       "name_ko": "UFC Fight Night: Medić 대 로드리게스",
       "venue_ko": "Belgrade Arena",
       "location_ko": "Belgrade, Serbia",
-      "date_kst_human": "2026년 8월 1일(토)"
+      "date_local_human": "2026년 8월 1일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     },
     {
       "name": "UFC Fight Night: Gamrot vs. Salkilld",
@@ -622,12 +160,112 @@
           "fighter_a_ko": "마테우시 감로트",
           "fighter_b_ko": "Quillan Salkilld",
           "weight_ko": "라이트급"
+        },
+        {
+          "weight": "Welterweight",
+          "fighter_a": "Ty Miller",
+          "fighter_b": "Billy Ray Goff",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Ty Miller",
+          "fighter_b_ko": "Billy Ray Goff",
+          "weight_ko": "웰터급"
+        },
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Diyar Nurgozhay",
+          "fighter_b": "Bruno Lopes",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Diyar Nurgozhay",
+          "fighter_b_ko": "Bruno Lopes",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Lightweight",
+          "fighter_a": "Carlos Diego Ferreira",
+          "fighter_b": "Billy Quarantillo",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Carlos Diego Ferreira",
+          "fighter_b_ko": "Billy Quarantillo",
+          "weight_ko": "라이트급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Louie Sutherland",
+          "fighter_b": "José Luiz",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Louie Sutherland",
+          "fighter_b_ko": "José Luiz",
+          "weight_ko": "헤비급"
+        }
+      ],
+      "prelims": [
+        {
+          "weight": "Featherweight",
+          "fighter_a": "Darren Elkins",
+          "fighter_b": "Yadier del Valle",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Darren Elkins",
+          "fighter_b_ko": "Yadier del Valle",
+          "weight_ko": "페더급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Steven Asplund",
+          "fighter_b": "Guilherme Pat",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Steven Asplund",
+          "fighter_b_ko": "Guilherme Pat",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Women's Flyweight",
+          "fighter_a": "Juliana Miller",
+          "fighter_b": "Ravena Oliveira",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Juliana Miller",
+          "fighter_b_ko": "Ravena Oliveira",
+          "weight_ko": "여성 플라이급"
+        },
+        {
+          "weight": "Women's Strawweight",
+          "fighter_a": "Amanda Lemos",
+          "fighter_b": "Alexia Thainara",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Amanda Lemos",
+          "fighter_b_ko": "Alexia Thainara",
+          "weight_ko": "여성 스트로급"
         }
       ],
       "name_ko": "UFC Fight Night: 감로트 대 Salkilld",
       "venue_ko": "Meta Apex",
       "location_ko": "미국 네바다 라스베이거스",
-      "date_kst_human": "2026년 8월 8일(토)"
+      "date_local_human": "2026년 8월 8일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     },
     {
       "name": "UFC 330: Makhachev vs. Machado Garry",
@@ -662,14 +300,14 @@
         },
         {
           "weight": "Welterweight",
-          "fighter_a": "Neil Magny",
-          "fighter_b": "Ramiz Brahimaj",
+          "fighter_a": "Jeremiah Wells",
+          "fighter_b": "Myktybek Orolbai",
           "winner": null,
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Neil Magny",
-          "fighter_b_ko": "Ramiz Brahimaj",
+          "fighter_a_ko": "Jeremiah Wells",
+          "fighter_b_ko": "Myktybek Orolbai",
           "weight_ko": "웰터급"
         },
         {
@@ -699,6 +337,18 @@
       ],
       "prelims": [
         {
+          "weight": "Welterweight",
+          "fighter_a": "Neil Magny",
+          "fighter_b": "Ramiz Brahimaj",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Neil Magny",
+          "fighter_b_ko": "Ramiz Brahimaj",
+          "weight_ko": "웰터급"
+        },
+        {
           "weight": "Middleweight",
           "fighter_a": "Mansur Abdul-Malik",
           "fighter_b": "Dustin Stoltzfus",
@@ -709,18 +359,6 @@
           "fighter_a_ko": "Mansur Abdul-Malik",
           "fighter_b_ko": "Dustin Stoltzfus",
           "weight_ko": "미들급"
-        },
-        {
-          "weight": "Welterweight",
-          "fighter_a": "Jeremiah Wells",
-          "fighter_b": "Myktybek Orolbai",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Jeremiah Wells",
-          "fighter_b_ko": "Myktybek Orolbai",
-          "weight_ko": "웰터급"
         },
         {
           "weight": "Middleweight",
@@ -745,24 +383,14 @@
           "fighter_a_ko": "Edson Barboza",
           "fighter_b_ko": "Esteban Ribovics",
           "weight_ko": "라이트급"
-        },
-        {
-          "weight": "Women's Flyweight",
-          "fighter_a": "Erin Blanchfield",
-          "fighter_b": "Jasmine Jasudavicius",
-          "winner": null,
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "에린 블랜치필드",
-          "fighter_b_ko": "Jasmine Jasudavicius",
-          "weight_ko": "여성 플라이급"
         }
       ],
       "name_ko": "UFC 330: 마카체프 대 Machado Garry",
       "venue_ko": "Xfinity Mobile Arena",
       "location_ko": "Philadelphia, Pennsylvania, U.S.",
-      "date_kst_human": "2026년 8월 15일(토)"
+      "date_local_human": "2026년 8월 15일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     },
     {
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
@@ -782,27 +410,840 @@
           "fighter_a_ko": "안소니 에르난데스",
           "fighter_b_ko": "Gregory Rodrigues",
           "weight_ko": "미들급"
+        },
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Roman Dolidze",
+          "fighter_b": "Reinier de Ridder",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "로만 돌리제",
+          "fighter_b_ko": "라이니어 데 리더",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Serghei Spivac",
+          "fighter_b": "Vitor Petrino",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Serghei Spivac",
+          "fighter_b_ko": "Vitor Petrino",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Kennedy Nzechukwu",
+          "fighter_b": "Shamil Gaziev",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Kennedy Nzechukwu",
+          "fighter_b_ko": "Shamil Gaziev",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Lightweight",
+          "fighter_a": "Kody Steele",
+          "fighter_b": "Gauge Young",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Kody Steele",
+          "fighter_b_ko": "Gauge Young",
+          "weight_ko": "라이트급"
+        }
+      ],
+      "prelims": [
+        {
+          "weight": "Women's Flyweight",
+          "fighter_a": "Carli Judice",
+          "fighter_b": "Jeisla Chaves",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Carli Judice",
+          "fighter_b_ko": "Jeisla Chaves",
+          "weight_ko": "여성 플라이급"
+        },
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Wesley Schultz",
+          "fighter_b": "Jackson McVey",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Wesley Schultz",
+          "fighter_b_ko": "Jackson McVey",
+          "weight_ko": "미들급"
+        },
+        {
+          "weight": "Women's Strawweight",
+          "fighter_a": "Shanelle Dyer",
+          "fighter_b": "Elise Reed",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Shanelle Dyer",
+          "fighter_b_ko": "Elise Reed",
+          "weight_ko": "여성 스트로급"
         }
       ],
       "name_ko": "UFC Fight Night: 에르난데스 대 Rodrigues",
       "venue_ko": "Golden 1 Center",
       "location_ko": "Sacramento, California, U.S.",
-      "date_kst_human": "2026년 8월 22일(토)"
+      "date_local_human": "2026년 8월 22일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     },
     {
-      "name": "UFC Fight Night 286",
-      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_286",
-      "date_iso": "2026-08-30",
+      "name": "UFC Fight Night: Nurmagomedov vs. Song",
+      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Nurmagomedov_vs._Song",
+      "date_iso": "2026-08-29",
       "venue": "SPD Bank Oriental Sports Center",
       "location": "Shanghai, China",
-      "name_ko": "UFC Fight Night 286",
+      "main_card": [
+        {
+          "weight": "Bantamweight",
+          "fighter_a": "Umar Nurmagomedov",
+          "fighter_b": "Song Yadong",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "우마르 누르마고메도프",
+          "fighter_b_ko": "송 야둥",
+          "weight_ko": "밴텀급"
+        },
+        {
+          "weight": "Women's Strawweight",
+          "fighter_a": "Yan Xiaonan",
+          "fighter_b": "Denise Gomes",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "얀 시아오난",
+          "fighter_b_ko": "Denise Gomes",
+          "weight_ko": "여성 스트로급"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Su Mudaerji",
+          "fighter_b": "Alex Perez",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Su Mudaerji",
+          "fighter_b_ko": "Alex Perez",
+          "weight_ko": "플라이급"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Rei Tsuruya",
+          "fighter_b": "Kevin Borjas",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Rei Tsuruya",
+          "fighter_b_ko": "Kevin Borjas",
+          "weight_ko": "플라이급"
+        },
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Liu Ce",
+          "fighter_b": "Junior Tafa",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Liu Ce",
+          "fighter_b_ko": "Junior Tafa",
+          "weight_ko": "라이트헤비급"
+        }
+      ],
+      "name_ko": "UFC Fight Night: 누르마고메도프 대 Song",
       "venue_ko": "SPD Bank Oriental Sports Center",
       "location_ko": "Shanghai, China",
-      "date_kst_human": "2026년 8월 30일(일)"
+      "date_local_human": "2026년 8월 29일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
+    },
+    {
+      "name": "UFC Fight Night 287",
+      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_287",
+      "date_iso": "2026-09-05",
+      "venue": "Accor Arena",
+      "location": "Paris, France",
+      "main_card": [
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Michael Page",
+          "fighter_b": "Nursulton Ruziboev",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "마이클 페이지",
+          "fighter_b_ko": "Nursulton Ruziboev",
+          "weight_ko": "미들급"
+        },
+        {
+          "weight": "Featherweight",
+          "fighter_a": "Kurtis Campbell",
+          "fighter_b": "Trevor Peek",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Kurtis Campbell",
+          "fighter_b_ko": "Trevor Peek",
+          "weight_ko": "페더급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Mário Pinto",
+          "fighter_b": "Ryan Spann",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Mário Pinto",
+          "fighter_b_ko": "Ryan Spann",
+          "weight_ko": "헤비급"
+        }
+      ],
+      "name_ko": "UFC Fight Night 287",
+      "venue_ko": "Accor Arena",
+      "location_ko": "Paris, France",
+      "date_local_human": "2026년 9월 5일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
+    },
+    {
+      "name": "UFC Fight Night 288",
+      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_288",
+      "date_iso": "2026-09-12",
+      "venue": "Desert Diamond Arena",
+      "location": "Glendale, Arizona, U.S.",
+      "main_card": [
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Waldo Cortes-Acosta",
+          "fighter_b": "Curtis Blaydes",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Waldo Cortes-Acosta",
+          "fighter_b_ko": "커티스 블레이즈",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Women's Flyweight",
+          "fighter_a": "Manon Fiorot",
+          "fighter_b": "Alexa Grasso",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "마농 피오로",
+          "fighter_b_ko": "알렉사 그라소",
+          "weight_ko": "여성 플라이급"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Brandon Moreno",
+          "fighter_b": "Joseph Morales",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "브랜든 모레노",
+          "fighter_b_ko": "Joseph Morales",
+          "weight_ko": "플라이급"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Tim Elliott",
+          "fighter_b": "Édgar Cháirez",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Tim Elliott",
+          "fighter_b_ko": "Édgar Cháirez",
+          "weight_ko": "플라이급"
+        },
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Kelvin Gastelum",
+          "fighter_b": "Yousri Belgaroui",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "Kelvin Gastelum",
+          "fighter_b_ko": "Yousri Belgaroui",
+          "weight_ko": "미들급"
+        },
+        {
+          "weight": "Women's Flyweight",
+          "fighter_a": "JJ Aldrich",
+          "fighter_b": "Regina Tarin",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "JJ Aldrich",
+          "fighter_b_ko": "Regina Tarin",
+          "weight_ko": "여성 플라이급"
+        }
+      ],
+      "name_ko": "UFC Fight Night 288",
+      "venue_ko": "Desert Diamond Arena",
+      "location_ko": "Glendale, Arizona, U.S.",
+      "date_local_human": "2026년 9월 12일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
+    },
+    {
+      "name": "UFC 331",
+      "wiki_url": "https://en.wikipedia.org/wiki/UFC_331",
+      "date_iso": "2026-09-19",
+      "venue": "Crypto.com Arena",
+      "location": "Los Angeles, California, U.S.",
+      "name_ko": "UFC 331",
+      "venue_ko": "Crypto.com Arena",
+      "location_ko": "Los Angeles, California, U.S.",
+      "date_local_human": "2026년 9월 19일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     }
   ],
   "past_count": 6,
   "past_events": [
+    {
+      "name": "UFC Fight Night: Ankalaev vs. Guskov",
+      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Ankalaev_vs._Guskov",
+      "date_iso": "2026-07-25",
+      "venue": "Etihad Arena",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "attendance": "Not announced",
+      "main_card": [
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Magomed Ankalaev",
+          "fighter_b": "Bogdan Guskov",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "5",
+          "time": "2:41",
+          "fighter_a_ko": "마고메드 안칼라예프",
+          "fighter_b_ko": "Bogdan Guskov",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Ramazan Temirov",
+          "fighter_b": "Steve Erceg",
+          "winner": "a",
+          "method": "KO (punch)",
+          "round": "1",
+          "time": "4:21",
+          "fighter_a_ko": "Ramazan Temirov",
+          "fighter_b_ko": "Steve Erceg",
+          "weight_ko": "플라이급"
+        },
+        {
+          "weight": "Lightweight",
+          "fighter_a": "Magomed Zaynukov",
+          "fighter_b": "Damian Rzepecki",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Magomed Zaynukov",
+          "fighter_b_ko": "Damian Rzepecki",
+          "weight_ko": "라이트급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Rizvan Kuniev",
+          "fighter_b": "Tyrell Fortune",
+          "winner": "a",
+          "method": "TKO (knees)",
+          "round": "3",
+          "time": "1:12",
+          "fighter_a_ko": "Rizvan Kuniev",
+          "fighter_b_ko": "Tyrell Fortune",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Welterweight",
+          "fighter_a": "Abubakar Vagaev",
+          "fighter_b": "Saygid Izagakhmaev",
+          "winner": "a",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Abubakar Vagaev",
+          "fighter_b_ko": "Saygid Izagakhmaev",
+          "weight_ko": "웰터급"
+        }
+      ],
+      "prelims": [
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Valter Walker",
+          "fighter_b": "Thomas Petersen",
+          "winner": "a",
+          "method": "Submission (calf slicer)",
+          "round": "1",
+          "time": "1:32",
+          "fighter_a_ko": "Valter Walker",
+          "fighter_b_ko": "Thomas Petersen",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Muhammad Saidov",
+          "fighter_b": "Dustin Jacoby",
+          "winner": "a",
+          "method": "TKO (head kick and punches)",
+          "round": "2",
+          "time": "4:49",
+          "fighter_a_ko": "Muhammad Saidov",
+          "fighter_b_ko": "Dustin Jacoby",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Welterweight",
+          "fighter_a": "Sam Patterson",
+          "fighter_b": "Santiago Ponzinibbio",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "2",
+          "time": "3:06",
+          "fighter_a_ko": "Sam Patterson",
+          "fighter_b_ko": "Santiago Ponzinibbio",
+          "weight_ko": "웰터급"
+        },
+        {
+          "weight": "Lightweight",
+          "fighter_a": "Axel Sola",
+          "fighter_b": "Ismael Bonfim",
+          "winner": "a",
+          "method": "Submission (brabo choke)",
+          "round": "1",
+          "time": "4:44",
+          "fighter_a_ko": "Axel Sola",
+          "fighter_b_ko": "Ismael Bonfim",
+          "weight_ko": "라이트급"
+        },
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Magomed Tuchalov",
+          "fighter_b": "Brendson Ribeiro",
+          "winner": "a",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Magomed Tuchalov",
+          "fighter_b_ko": "Brendson Ribeiro",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Lightweight",
+          "fighter_a": "Nurullo Aliev",
+          "fighter_b": "Mike Davis",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Nurullo Aliev",
+          "fighter_b_ko": "Mike Davis",
+          "weight_ko": "라이트급"
+        },
+        {
+          "weight": "Bantamweight",
+          "fighter_a": "Abdul Hussein",
+          "fighter_b": "Cody Gibson",
+          "winner": "a",
+          "method": "Submission (arm-triangle choke)",
+          "round": "3",
+          "time": "3:07",
+          "fighter_a_ko": "Abdul Hussein",
+          "fighter_b_ko": "Cody Gibson",
+          "weight_ko": "밴텀급"
+        }
+      ],
+      "name_ko": "UFC Fight Night: 안칼라예프 대 Guskov",
+      "venue_ko": "에티하드 아레나",
+      "location_ko": "아랍에미리트 아부다비",
+      "date_local_human": "2026년 7월 25일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
+    },
+    {
+      "name": "UFC Fight Night: du Plessis vs. Usman",
+      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_du_Plessis_vs._Usman",
+      "date_iso": "2026-07-18",
+      "venue": "Paycom Center",
+      "location": "Oklahoma City, Oklahoma, U.S.",
+      "attendance": "17,173",
+      "main_card": [
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Dricus du Plessis",
+          "fighter_b": "Kamaru Usman",
+          "winner": "a",
+          "method": "Decision (unanimous) (50–45, 49–46, 49–46)",
+          "round": "5",
+          "time": "5:00",
+          "fighter_a_ko": "드리쿠스 두 플레시",
+          "fighter_b_ko": "카마루 우스만",
+          "weight_ko": "미들급"
+        },
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Christian Leroy Duncan",
+          "fighter_b": "Jared Cannonier",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Christian Leroy Duncan",
+          "fighter_b_ko": "자레드 캐노니어",
+          "weight_ko": "미들급"
+        },
+        {
+          "weight": "Catchweight (157.5 lb)",
+          "fighter_a": "Chase Hooper",
+          "fighter_b": "Mitch Ramirez",
+          "winner": "a",
+          "method": "Submission (rear-naked choke)",
+          "round": "1",
+          "time": "2:15",
+          "fighter_a_ko": "Chase Hooper",
+          "fighter_b_ko": "Mitch Ramirez",
+          "weight_ko": "Catchweight (157.5 lb)"
+        },
+        {
+          "weight": "Women's Strawweight",
+          "fighter_a": "Fatima Kline",
+          "fighter_b": "Tabatha Ricci",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Fatima Kline",
+          "fighter_b_ko": "Tabatha Ricci",
+          "weight_ko": "여성 스트로급"
+        },
+        {
+          "weight": "Featherweight",
+          "fighter_a": "Tommy McMillen",
+          "fighter_b": "Alberto Montes",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "3",
+          "time": "3:29",
+          "fighter_a_ko": "Tommy McMillen",
+          "fighter_b_ko": "Alberto Montes",
+          "weight_ko": "페더급"
+        }
+      ],
+      "prelims": [
+        {
+          "weight": "Featherweight",
+          "fighter_a": "Jose Miguel Delgado",
+          "fighter_b": "Austin Bashi",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Jose Miguel Delgado",
+          "fighter_b_ko": "Austin Bashi",
+          "weight_ko": "페더급"
+        },
+        {
+          "weight": "Welterweight",
+          "fighter_a": "Jean-Paul Lebosnoyani",
+          "fighter_b": "Ko Seok-hyeon",
+          "winner": "a",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Jean-Paul Lebosnoyani",
+          "fighter_b_ko": "Ko Seok-hyeon",
+          "weight_ko": "웰터급"
+        },
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Felipe Franco",
+          "fighter_b": "Levi Rodrigues Jr.",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "2",
+          "time": "1:40",
+          "fighter_a_ko": "Felipe Franco",
+          "fighter_b_ko": "Levi Rodrigues Jr.",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Catchweight (147.5 lb)",
+          "fighter_a": "Ezra Elliott",
+          "fighter_b": "Damien Anderson",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Ezra Elliott",
+          "fighter_b_ko": "Damien Anderson",
+          "weight_ko": "Catchweight (147.5 lb)"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Alden Coria",
+          "fighter_b": "Stewart Nicoll",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Alden Coria",
+          "fighter_b_ko": "Stewart Nicoll",
+          "weight_ko": "플라이급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "RJ Harris",
+          "fighter_b": "Alvin Hines",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "1",
+          "time": "1:40",
+          "fighter_a_ko": "RJ Harris",
+          "fighter_b_ko": "Alvin Hines",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Women's Flyweight",
+          "fighter_a": "Dione Barbosa",
+          "fighter_b": "Anna Melisano",
+          "winner": "a",
+          "method": "Submission (rear-naked choke)",
+          "round": "1",
+          "time": "4:04",
+          "fighter_a_ko": "Dione Barbosa",
+          "fighter_b_ko": "Anna Melisano",
+          "weight_ko": "여성 플라이급"
+        }
+      ],
+      "name_ko": "UFC Fight Night: du Plessis 대 우스만",
+      "venue_ko": "Paycom Center",
+      "location_ko": "Oklahoma City, Oklahoma, U.S.",
+      "date_local_human": "2026년 7월 18일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
+    },
+    {
+      "name": "UFC 329: McGregor vs. Holloway 2",
+      "wiki_url": "https://en.wikipedia.org/wiki/UFC_329",
+      "date_iso": "2026-07-11",
+      "venue": "T-Mobile Arena",
+      "location": "Las Vegas, Nevada, U.S.",
+      "attendance": "20,078",
+      "main_card": [
+        {
+          "weight": "Welterweight",
+          "fighter_a": "Max Holloway",
+          "fighter_b": "Conor McGregor",
+          "winner": "a",
+          "method": "TKO (knee injury)",
+          "round": "1",
+          "time": "1:09",
+          "fighter_a_ko": "맥스 할로웨이",
+          "fighter_b_ko": "Conor McGregor",
+          "weight_ko": "웰터급"
+        },
+        {
+          "weight": "Lightweight",
+          "fighter_a": "Paddy Pimblett",
+          "fighter_b": "Benoît Saint Denis",
+          "winner": "a",
+          "method": "Technical Submission (Peruvian necktie)",
+          "round": "1",
+          "time": "0:52",
+          "fighter_a_ko": "패디 핌블렛",
+          "fighter_b_ko": "Benoît Saint Denis",
+          "weight_ko": "라이트급"
+        },
+        {
+          "weight": "Bantamweight",
+          "fighter_a": "Mario Bautista",
+          "fighter_b": "Cory Sandhagen",
+          "winner": "a",
+          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "마리오 바우티스타",
+          "fighter_b_ko": "코리 샌드하겐",
+          "weight_ko": "밴텀급"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Brandon Royval",
+          "fighter_b": "Lone'er Kavanagh",
+          "winner": "a",
+          "method": "Submission (rear-naked choke)",
+          "round": "3",
+          "time": "3:40",
+          "fighter_a_ko": "브랜든 로이발",
+          "fighter_b_ko": "Lone'er Kavanagh",
+          "weight_ko": "플라이급"
+        },
+        {
+          "weight": "Lightweight",
+          "fighter_a": "King Green",
+          "fighter_b": "Terrance McKinney",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "1",
+          "time": "4:59",
+          "fighter_a_ko": "King Green",
+          "fighter_b_ko": "Terrance McKinney",
+          "weight_ko": "라이트급"
+        }
+      ],
+      "prelims": [
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Robert Whittaker",
+          "fighter_b": "Nikita Krylov",
+          "winner": "a",
+          "method": "TKO (jaw injury)",
+          "round": "3",
+          "time": "1:01",
+          "fighter_a_ko": "로버트 휘태커",
+          "fighter_b_ko": "Nikita Krylov",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Heavyweight",
+          "fighter_a": "Gable Steveson",
+          "fighter_b": "Elisha Ellison",
+          "winner": "a",
+          "method": "KO (knees and punches)",
+          "round": "1",
+          "time": "2:31",
+          "fighter_a_ko": "Gable Steveson",
+          "fighter_b_ko": "Elisha Ellison",
+          "weight_ko": "헤비급"
+        },
+        {
+          "weight": "Bantamweight",
+          "fighter_a": "Adrian Yañez",
+          "fighter_b": "Cody Garbrandt",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "1",
+          "time": "2:47",
+          "fighter_a_ko": "Adrian Yañez",
+          "fighter_b_ko": "Cody Garbrandt",
+          "weight_ko": "밴텀급"
+        },
+        {
+          "weight": "Featherweight",
+          "fighter_a": "Luke Riley",
+          "fighter_b": "Kai Kamaka III",
+          "winner": "a",
+          "method": "TKO (knees and punches)",
+          "round": "1",
+          "time": "3:03",
+          "fighter_a_ko": "Luke Riley",
+          "fighter_b_ko": "Kai Kamaka III",
+          "weight_ko": "페더급"
+        },
+        {
+          "weight": "Women's Flyweight",
+          "fighter_a": "Wang Cong",
+          "fighter_b": "Tracy Cortez",
+          "winner": "a",
+          "method": "Decision (unanimous) (29–27, 29–27, 29–27)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Wang Cong",
+          "fighter_b_ko": "Tracy Cortez",
+          "weight_ko": "여성 플라이급"
+        },
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Damian Pinas",
+          "fighter_b": "César Almeida",
+          "winner": "a",
+          "method": "KO (punch)",
+          "round": "1",
+          "time": "4:44",
+          "fighter_a_ko": "Damian Pinas",
+          "fighter_b_ko": "César Almeida",
+          "weight_ko": "미들급"
+        },
+        {
+          "weight": "Bantamweight",
+          "fighter_a": "Farid Basharat",
+          "fighter_b": "John Garza",
+          "winner": "a",
+          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+          "round": "3",
+          "time": "5:00",
+          "fighter_a_ko": "Farid Basharat",
+          "fighter_b_ko": "John Garza",
+          "weight_ko": "밴텀급"
+        },
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Ryan Gandra",
+          "fighter_b": "Zachary Reese",
+          "winner": "a",
+          "method": "TKO (punches)",
+          "round": "1",
+          "time": "1:15",
+          "fighter_a_ko": "Ryan Gandra",
+          "fighter_b_ko": "Zachary Reese",
+          "weight_ko": "미들급"
+        },
+        {
+          "weight": "Flyweight",
+          "fighter_a": "Alessandro Costa",
+          "fighter_b": "Cody Durden",
+          "winner": "a",
+          "method": "Submission (rear-naked choke)",
+          "round": "2",
+          "time": "2:19",
+          "fighter_a_ko": "Alessandro Costa",
+          "fighter_b_ko": "Cody Durden",
+          "weight_ko": "플라이급"
+        }
+      ],
+      "name_ko": "UFC 329: McGregor vs. Holloway 2",
+      "venue_ko": "T-모바일 아레나",
+      "location_ko": "미국 네바다 라스베이거스",
+      "date_local_human": "2026년 7월 11일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
+    },
     {
       "name": "UFC Fight Night: Fiziev vs. Torres",
       "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Fiziev_vs._Torres",
@@ -973,7 +1414,9 @@
       "name_ko": "UFC Fight Night: 피지에프 대 Torres",
       "venue_ko": "내셔널 짐내스틱스 아레나",
       "location_ko": "아제르바이잔 바쿠",
-      "date_kst_human": "2026년 6월 27일(토)"
+      "date_local_human": "2026년 6월 27일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     },
     {
       "name": "UFC Fight Night: Kape vs. Horiguchi",
@@ -1000,7 +1443,7 @@
           "fighter_a": "Navajo Stirling",
           "fighter_b": "Ion Cuțelaba",
           "winner": "a",
-          "method": "TKO (punches)",
+          "method": "TKO (punches and elbows)",
           "round": "2",
           "time": "3:23",
           "fighter_a_ko": "Navajo Stirling",
@@ -1036,7 +1479,7 @@
           "fighter_a": "Vinicius Oliveira",
           "fighter_b": "Andre Fili",
           "winner": "a",
-          "method": "TKO (punches and elbows)",
+          "method": "TKO (elbows and punches)",
           "round": "2",
           "time": "4:56",
           "fighter_a_ko": "Vinicius Oliveira",
@@ -1133,7 +1576,9 @@
       "name_ko": "UFC Fight Night: 카페 대 쿄지",
       "venue_ko": "Meta Apex",
       "location_ko": "미국 네바다 라스베이거스",
-      "date_kst_human": "2026년 6월 20일(토)"
+      "date_local_human": "2026년 6월 20일(토)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     },
     {
       "name": "UFC Freedom 250",
@@ -1233,511 +1678,9 @@
       "name_ko": "UFC Freedom 250",
       "venue_ko": "백악관 (가설)",
       "location_ko": "미국 워싱턴 D.C.",
-      "date_kst_human": "2026년 6월 14일(일)"
-    },
-    {
-      "name": "UFC Fight Night: Muhammad vs. Bonfim",
-      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Muhammad_vs._Bonfim",
-      "date_iso": "2026-06-06",
-      "venue": "Meta Apex",
-      "location": "Las Vegas, Nevada, U.S.",
-      "attendance": "Not announced",
-      "main_card": [
-        {
-          "weight": "Welterweight",
-          "fighter_a": "Gabriel Bonfim",
-          "fighter_b": "Belal Muhammad",
-          "winner": "a",
-          "method": "Decision (unanimous) (50–45, 50–45, 50–45)",
-          "round": "5",
-          "time": "5:00",
-          "fighter_a_ko": "Gabriel Bonfim",
-          "fighter_b_ko": "벨랄 무하마드",
-          "weight_ko": "웰터급"
-        },
-        {
-          "weight": "Middleweight",
-          "fighter_a": "Brendan Allen",
-          "fighter_b": "Edmen Shahbazyan",
-          "winner": "a",
-          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "브렌든 앨런",
-          "fighter_b_ko": "Edmen Shahbazyan",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "Tom Nolan",
-          "fighter_b": "Farès Ziam",
-          "winner": "a",
-          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Tom Nolan",
-          "fighter_b_ko": "Farès Ziam",
-          "weight_ko": "라이트급"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Bryce Mitchell",
-          "fighter_b": "Santiago Luna",
-          "winner": "a",
-          "method": "Submission (arm-triangle choke)",
-          "round": "3",
-          "time": "4:52",
-          "fighter_a_ko": "Bryce Mitchell",
-          "fighter_b_ko": "Santiago Luna",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Iwo Baraniewski",
-          "fighter_b": "Junior Tafa",
-          "winner": "a",
-          "method": "TKO (leg kick and punches)",
-          "round": "1",
-          "time": "1:25",
-          "fighter_a_ko": "Iwo Baraniewski",
-          "fighter_b_ko": "Junior Tafa",
-          "weight_ko": "라이트헤비급"
-        }
-      ],
-      "prelims": [
-        {
-          "weight": "Catchweight (130 lb)",
-          "fighter_a": "Alessandro Costa",
-          "fighter_b": "Matt Schnell",
-          "winner": "a",
-          "method": "TKO (punches)",
-          "round": "1",
-          "time": "2:28",
-          "fighter_a_ko": "Alessandro Costa",
-          "fighter_b_ko": "Matt Schnell",
-          "weight_ko": "Catchweight (130 lb)"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Marcus McGhee",
-          "fighter_b": "John Yannis",
-          "winner": "a",
-          "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Marcus McGhee",
-          "fighter_b_ko": "John Yannis",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Flyweight",
-          "fighter_a": "Édgar Cháirez",
-          "fighter_b": "Bruno Gustavo da Silva",
-          "winner": "a",
-          "method": "Submission (rear-naked choke)",
-          "round": "1",
-          "time": "4:13",
-          "fighter_a_ko": "Édgar Cháirez",
-          "fighter_b_ko": "Bruno Gustavo da Silva",
-          "weight_ko": "플라이급"
-        },
-        {
-          "weight": "Women's Bantamweight",
-          "fighter_a": "Chelsea Chandler",
-          "fighter_b": "Priscila Cachoeira",
-          "winner": "a",
-          "method": "Submission (armbar)",
-          "round": "1",
-          "time": "3:42",
-          "fighter_a_ko": "Chelsea Chandler",
-          "fighter_b_ko": "Priscila Cachoeira",
-          "weight_ko": "여성 밴텀급"
-        },
-        {
-          "weight": "Featherweight",
-          "fighter_a": "Joanderson Brito",
-          "fighter_b": "Jordan Leavitt",
-          "winner": "a",
-          "method": "Submission (ninja choke)",
-          "round": "1",
-          "time": "4:19",
-          "fighter_a_ko": "Joanderson Brito",
-          "fighter_b_ko": "Jordan Leavitt",
-          "weight_ko": "페더급"
-        },
-        {
-          "weight": "Women's Flyweight",
-          "fighter_a": "Jeisla Chaves",
-          "fighter_b": "Yuneisy Duben",
-          "winner": "a",
-          "method": "Decision (split) (29–28, 28–29, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Jeisla Chaves",
-          "fighter_b_ko": "Yuneisy Duben",
-          "weight_ko": "여성 플라이급"
-        },
-        {
-          "weight": "Women's Strawweight",
-          "fighter_a": "Ketlen Souza",
-          "fighter_b": "Ariane Carnelossi",
-          "winner": "a",
-          "method": "KO (punches and head kick)",
-          "round": "1",
-          "time": "1:34",
-          "fighter_a_ko": "Ketlen Souza",
-          "fighter_b_ko": "Ariane Carnelossi",
-          "weight_ko": "여성 스트로급"
-        }
-      ],
-      "name_ko": "UFC Fight Night: 무하마드 대 Bonfim",
-      "venue_ko": "Meta Apex",
-      "location_ko": "미국 네바다 라스베이거스",
-      "date_kst_human": "2026년 6월 6일(토)"
-    },
-    {
-      "name": "UFC Fight Night: Song vs. Figueiredo",
-      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Song_vs._Figueiredo",
-      "date_iso": "2026-05-30",
-      "venue": "Galaxy Arena",
-      "location": "Macau SAR, China",
-      "attendance": "12,647",
-      "main_card": [
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Song Yadong",
-          "fighter_b": "Deiveson Figueiredo",
-          "winner": "a",
-          "method": "Submission (guillotine choke)",
-          "round": "2",
-          "time": "4:42",
-          "fighter_a_ko": "송 야둥",
-          "fighter_b_ko": "데이베손 피게이레두",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Alonzo Menifield",
-          "fighter_b": "Zhang Mingyang",
-          "winner": "a",
-          "method": "TKO (punches)",
-          "round": "1",
-          "time": "4:15",
-          "fighter_a_ko": "Alonzo Menifield",
-          "fighter_b_ko": "Zhang Mingyang",
-          "weight_ko": "라이트헤비급"
-        },
-        {
-          "weight": "Heavyweight",
-          "fighter_a": "Sergei Pavlovich",
-          "fighter_b": "Tallison Teixeira",
-          "winner": "a",
-          "method": "KO (punches)",
-          "round": "1",
-          "time": "0:39",
-          "fighter_a_ko": "세르게이 파블로비치",
-          "fighter_b_ko": "Tallison Teixeira",
-          "weight_ko": "헤비급"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Kai Asakura",
-          "fighter_b": "Cameron Smotherman",
-          "winner": "a",
-          "method": "KO (punch)",
-          "round": "1",
-          "time": "1:50",
-          "fighter_a_ko": "카이 아사쿠라",
-          "fighter_b_ko": "Cameron Smotherman",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Welterweight",
-          "fighter_a": "Jake Matthews",
-          "fighter_b": "Carlston Harris",
-          "winner": "a",
-          "method": "Decision (unanimous) (30–25, 30–27, 30–27)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Jake Matthews",
-          "fighter_b_ko": "Carlston Harris",
-          "weight_ko": "웰터급"
-        },
-        {
-          "weight": "Flyweight",
-          "fighter_a": "Alex Perez",
-          "fighter_b": "Su Mudaerji",
-          "winner": null,
-          "method": "NC (accidental groin kick)",
-          "round": "2",
-          "time": "1:45",
-          "fighter_a_ko": "Alex Perez",
-          "fighter_b_ko": "Su Mudaerji",
-          "weight_ko": "플라이급"
-        }
-      ],
-      "prelims": [
-        {
-          "weight": "Middleweight",
-          "fighter_a": "Luis Felipe Dias",
-          "fighter_b": "Lee Yi-sak",
-          "winner": "a",
-          "method": "TKO (punches)",
-          "round": "1",
-          "time": "3:40",
-          "fighter_a_ko": "Luis Felipe Dias",
-          "fighter_b_ko": "Lee Yi-sak",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Welterweight",
-          "fighter_a": "José Henrique Souza",
-          "fighter_b": "Ding Meng",
-          "winner": "a",
-          "method": "Decision (split) (30–27, 28–29, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "José Henrique Souza",
-          "fighter_b_ko": "Ding Meng",
-          "weight_ko": "웰터급"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Cody Haddon",
-          "fighter_b": "Aori Qileng",
-          "winner": "a",
-          "method": "TKO (knees to the body and punches)",
-          "round": "2",
-          "time": "2:11",
-          "fighter_a_ko": "Cody Haddon",
-          "fighter_b_ko": "Aori Qileng",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Rei Tsuruya",
-          "fighter_b": "Luis Gurule",
-          "winner": "a",
-          "method": "Submission (neck crank)",
-          "round": "1",
-          "time": "3:19",
-          "fighter_a_ko": "Rei Tsuruya",
-          "fighter_b_ko": "Luis Gurule",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Women's Strawweight",
-          "fighter_a": "Angela Hill",
-          "fighter_b": "Xiong Jingnan",
-          "winner": "a",
-          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Angela Hill",
-          "fighter_b_ko": "Xiong Jingnan",
-          "weight_ko": "여성 스트로급"
-        },
-        {
-          "weight": "Featherweight",
-          "fighter_a": "Rodrigo Vera",
-          "fighter_b": "Zhu Kangjie",
-          "winner": "a",
-          "method": "KO (punches)",
-          "round": "1",
-          "time": "1:50",
-          "fighter_a_ko": "Rodrigo Vera",
-          "fighter_b_ko": "Zhu Kangjie",
-          "weight_ko": "페더급"
-        },
-        {
-          "weight": "Women's Strawweight",
-          "fighter_a": "Jaqueline Amorim",
-          "fighter_b": "Loma Lookboonmee",
-          "winner": "a",
-          "method": "Submission (armbar)",
-          "round": "1",
-          "time": "4:04",
-          "fighter_a_ko": "Jaqueline Amorim",
-          "fighter_b_ko": "Loma Lookboonmee",
-          "weight_ko": "여성 스트로급"
-        }
-      ],
-      "name_ko": "UFC Fight Night: Song 대 피게이레두",
-      "venue_ko": "갤럭시 아레나",
-      "location_ko": "중국 마카오",
-      "date_kst_human": "2026년 5월 30일(토)"
-    },
-    {
-      "name": "UFC Fight Night: Allen vs. Costa",
-      "wiki_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Costa",
-      "date_iso": "2026-05-16",
-      "venue": "Meta Apex",
-      "location": "Las Vegas, Nevada, U.S.",
-      "attendance": "Not announced",
-      "main_card": [
-        {
-          "weight": "Featherweight",
-          "fighter_a": "Arnold Allen",
-          "fighter_b": "Melquizael Costa",
-          "winner": "a",
-          "method": "Decision (unanimous) (50–45, 50–45, 49–46)",
-          "round": "5",
-          "time": "5:00",
-          "fighter_a_ko": "Arnold Allen",
-          "fighter_b_ko": "Melquizael Costa",
-          "weight_ko": "페더급"
-        },
-        {
-          "weight": "Featherweight",
-          "fighter_a": "Choi Doo-ho",
-          "fighter_b": "Daniel Santos",
-          "winner": "a",
-          "method": "TKO (punches)",
-          "round": "2",
-          "time": "4:29",
-          "fighter_a_ko": "Choi Doo-ho",
-          "fighter_b_ko": "Daniel Santos",
-          "weight_ko": "페더급"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Juan Díaz",
-          "fighter_b": "Malcolm Wellmaker",
-          "winner": "a",
-          "method": "Submission (rear-naked choke)",
-          "round": "2",
-          "time": "4:08",
-          "fighter_a_ko": "Juan Díaz",
-          "fighter_b_ko": "Malcolm Wellmaker",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Catchweight (215 lb)",
-          "fighter_a": "Modestas Bukauskas",
-          "fighter_b": "Christian Edwards",
-          "winner": "a",
-          "method": "Decision (split) (28–29, 29–28, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Modestas Bukauskas",
-          "fighter_b_ko": "Christian Edwards",
-          "weight_ko": "Catchweight (215 lb)"
-        },
-        {
-          "weight": "Bantamweight",
-          "fighter_a": "Bernardo Sopaj",
-          "fighter_b": "Timothy Cuamba",
-          "winner": "a",
-          "method": "Submission (rear-naked choke)",
-          "round": "2",
-          "time": "2:25",
-          "fighter_a_ko": "Bernardo Sopaj",
-          "fighter_b_ko": "Timothy Cuamba",
-          "weight_ko": "밴텀급"
-        },
-        {
-          "weight": "Welterweight",
-          "fighter_a": "Khaos Williams",
-          "fighter_b": "Nikolay Veretennikov",
-          "winner": "a",
-          "method": "TKO (punches)",
-          "round": "1",
-          "time": "3:31",
-          "fighter_a_ko": "Khaos Williams",
-          "fighter_b_ko": "Nikolay Veretennikov",
-          "weight_ko": "웰터급"
-        }
-      ],
-      "prelims": [
-        {
-          "weight": "Light Heavyweight",
-          "fighter_a": "Ivan Erslan",
-          "fighter_b": "Tuco Tokkos",
-          "winner": "a",
-          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Ivan Erslan",
-          "fighter_b_ko": "Tuco Tokkos",
-          "weight_ko": "라이트헤비급"
-        },
-        {
-          "weight": "Lightweight",
-          "fighter_a": "Thomas Gantt",
-          "fighter_b": "Artur Minev",
-          "winner": "a",
-          "method": "TKO (punches)",
-          "round": "2",
-          "time": "2:51",
-          "fighter_a_ko": "Thomas Gantt",
-          "fighter_b_ko": "Artur Minev",
-          "weight_ko": "라이트급"
-        },
-        {
-          "weight": "Women's Bantamweight",
-          "fighter_a": "Ketlen Vieira",
-          "fighter_b": "Jacqueline Cavalcanti",
-          "winner": "a",
-          "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Ketlen Vieira",
-          "fighter_b_ko": "Jacqueline Cavalcanti",
-          "weight_ko": "여성 밴텀급"
-        },
-        {
-          "weight": "Middleweight",
-          "fighter_a": "Cody Brundage",
-          "fighter_b": "Andre Petroski",
-          "winner": "a",
-          "method": "TKO (punches)",
-          "round": "2",
-          "time": "0:44",
-          "fighter_a_ko": "Cody Brundage",
-          "fighter_b_ko": "Andre Petroski",
-          "weight_ko": "미들급"
-        },
-        {
-          "weight": "Women's Strawweight",
-          "fighter_a": "Alice Ardelean",
-          "fighter_b": "Polyana Viana",
-          "winner": "a",
-          "method": "Submission (capsule lock)",
-          "round": "2",
-          "time": "4:36",
-          "fighter_a_ko": "Alice Ardelean",
-          "fighter_b_ko": "Polyana Viana",
-          "weight_ko": "여성 스트로급"
-        },
-        {
-          "weight": "Flyweight",
-          "fighter_a": "Luis Gurule",
-          "fighter_b": "Daniel Barez",
-          "winner": "a",
-          "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
-          "round": "3",
-          "time": "5:00",
-          "fighter_a_ko": "Luis Gurule",
-          "fighter_b_ko": "Daniel Barez",
-          "weight_ko": "플라이급"
-        },
-        {
-          "weight": "Women's Strawweight",
-          "fighter_a": "Nicolle Caliari",
-          "fighter_b": "Shauna Bannon",
-          "winner": "a",
-          "method": "Submission (arm-triangle choke)",
-          "round": "3",
-          "time": "3:08",
-          "fighter_a_ko": "Nicolle Caliari",
-          "fighter_b_ko": "Shauna Bannon",
-          "weight_ko": "여성 스트로급"
-        }
-      ],
-      "name_ko": "UFC Fight Night: 앨런 대 코스타",
-      "venue_ko": "Meta Apex",
-      "location_ko": "미국 네바다 라스베이거스",
-      "date_kst_human": "2026년 5월 16일(토)"
+      "date_local_human": "2026년 6월 14일(일)",
+      "start_time_utc": null,
+      "time_status": "date_only"
     }
   ]
 }

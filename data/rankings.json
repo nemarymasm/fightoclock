@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-07-04T18:28:10+09:00",
+  "schema_version": 1,
+  "generated_at": "2026-07-28T10:07:26+09:00",
   "source": "Wikipedia: UFC rankings (Meta)",
   "division_count": 11,
   "divisions": [
@@ -73,7 +74,7 @@
         {
           "name": "Rizvan Kuniev",
           "name_ko": "Rizvan Kuniev",
-          "record": "13–3–1(1 NC)",
+          "record": "14–3–1(1 NC)",
           "country": "Russia",
           "country_ko": "러시아",
           "url": "https://en.wikipedia.org/wiki/Rizvan_Kuniev",
@@ -109,7 +110,7 @@
         {
           "name": "Valter Walker",
           "name_ko": "Valter Walker",
-          "record": "15–1",
+          "record": "16–1",
           "country": "Brazil",
           "country_ko": "브라질",
           "url": "https://en.wikipedia.org/wiki/Valter_Walker",
@@ -177,7 +178,7 @@
         {
           "name": "Magomed Ankalaev",
           "name_ko": "마고메드 안칼라예프",
-          "record": "20–2–1(1 NC)",
+          "record": "21–2–1(1 NC)",
           "country": "Russia",
           "country_ko": "러시아",
           "url": "https://en.wikipedia.org/wiki/Magomed_Ankalaev",
@@ -229,40 +230,31 @@
           "rank": 7
         },
         {
-          "name": "Volkan Oezdemir",
-          "name_ko": "Volkan Oezdemir",
-          "record": "21–8",
-          "country": "Switzerland",
-          "country_ko": "Switzerland",
-          "url": "https://en.wikipedia.org/wiki/Volkan_Oezdemir",
-          "rank": 8
-        },
-        {
           "name": "Azamat Murzakanov",
           "name_ko": "Azamat Murzakanov",
           "record": "16–1",
           "country": "Russia",
           "country_ko": "러시아",
           "url": "https://en.wikipedia.org/wiki/Azamat_Murzakanov",
-          "rank": 9
+          "rank": 8
         },
         {
           "name": "Bogdan Guskov",
           "name_ko": "Bogdan Guskov",
-          "record": "18–3–1",
+          "record": "18–4–1",
           "country": "Uzbekistan",
           "country_ko": "Uzbekistan",
           "url": "https://en.wikipedia.org/wiki/Bogdan_Guskov",
-          "rank": 10
+          "rank": 9
         },
         {
           "name": "Dustin Jacoby",
           "name_ko": "Dustin Jacoby",
-          "record": "22–8–1",
+          "record": "22–9–1",
           "country": "United States",
           "country_ko": "미국",
           "url": "https://en.wikipedia.org/wiki/Dustin_Jacoby",
-          "rank": 11
+          "rank": 10
         },
         {
           "name": "Navajo Stirling",
@@ -271,6 +263,15 @@
           "country": "New Zealand",
           "country_ko": "뉴질랜드",
           "url": "https://en.wikipedia.org/wiki/Navajo_Stirling",
+          "rank": 11
+        },
+        {
+          "name": "Robert Whittaker",
+          "name_ko": "로버트 휘태커",
+          "record": "27–9",
+          "country": "Australia",
+          "country_ko": "호주",
+          "url": "https://en.wikipedia.org/wiki/Robert_Whittaker_(fighter)",
           "rank": 12
         },
         {
@@ -326,7 +327,7 @@
         {
           "name": "Dricus du Plessis",
           "name_ko": "드리쿠스 두 플레시",
-          "record": "23–3",
+          "record": "24–3",
           "country": "South Africa",
           "country_ko": "남아공",
           "url": "https://en.wikipedia.org/wiki/Dricus_du_Plessis",
@@ -396,30 +397,30 @@
           "rank": 9
         },
         {
+          "name": "Christian Leroy Duncan",
+          "name_ko": "Christian Leroy Duncan",
+          "record": "15–2",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Christian_Leroy_Duncan",
+          "rank": 10
+        },
+        {
+          "name": "Kamaru Usman",
+          "name_ko": "카마루 우스만",
+          "record": "21–5",
+          "country": "Nigeria",
+          "country_ko": "나이지리아",
+          "url": "https://en.wikipedia.org/wiki/Kamaru_Usman",
+          "rank": 11
+        },
+        {
           "name": "Ikram Aliskerov",
           "name_ko": "Ikram Aliskerov",
           "record": "18–2",
           "country": "Russia",
           "country_ko": "러시아",
           "url": "https://en.wikipedia.org/wiki/Ikram_Aliskerov",
-          "rank": 10
-        },
-        {
-          "name": "Jared Cannonier",
-          "name_ko": "자레드 캐노니어",
-          "record": "18–9",
-          "country": "United States",
-          "country_ko": "미국",
-          "url": "https://en.wikipedia.org/wiki/Jared_Cannonier",
-          "rank": 11
-        },
-        {
-          "name": "Christian Leroy Duncan",
-          "name_ko": "Christian Leroy Duncan",
-          "record": "14–2",
-          "country": "England",
-          "country_ko": "잉글랜드",
-          "url": "https://en.wikipedia.org/wiki/Christian_Leroy_Duncan",
           "rank": 12
         },
         {
@@ -432,21 +433,21 @@
           "rank": 13
         },
         {
-          "name": "Paulo Costa",
-          "name_ko": "파울로 코스타",
-          "record": "16–4",
-          "country": "Brazil",
-          "country_ko": "브라질",
-          "url": "https://en.wikipedia.org/wiki/Paulo_Costa",
-          "rank": 14
-        },
-        {
           "name": "Abusupiyan Magomedov",
           "name_ko": "Abusupiyan Magomedov",
           "record": "29–7–1",
           "country": "Germany",
           "country_ko": "독일",
           "url": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov",
+          "rank": 14
+        },
+        {
+          "name": "Nursulton Ruziboev",
+          "name_ko": "Nursulton Ruziboev",
+          "record": "37–9–2(2 NC)",
+          "country": "Uzbekistan",
+          "country_ko": "Uzbekistan",
+          "url": "https://en.wikipedia.org/wiki/Nursulton_Ruziboev",
           "rank": 15
         }
       ]
@@ -547,7 +548,7 @@
         {
           "name": "Kamaru Usman",
           "name_ko": "카마루 우스만",
-          "record": "21–4",
+          "record": "21–5",
           "country": "Nigeria",
           "country_ko": "나이지리아",
           "url": "https://en.wikipedia.org/wiki/Kamaru_Usman",
@@ -642,19 +643,19 @@
         {
           "name": "Max Holloway",
           "name_ko": "맥스 할로웨이",
-          "record": "27–9",
+          "record": "28–9",
           "country": "United States",
           "country_ko": "미국",
           "url": "https://en.wikipedia.org/wiki/Max_Holloway",
           "rank": 4
         },
         {
-          "name": "Benoît Saint Denis",
-          "name_ko": "Benoît Saint Denis",
-          "record": "17–3(1 NC)",
-          "country": "France",
-          "country_ko": "프랑스",
-          "url": "https://en.wikipedia.org/wiki/Benoît_Saint_Denis",
+          "name": "Paddy Pimblett",
+          "name_ko": "패디 핌블렛",
+          "record": "24–4",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Paddy_Pimblett",
           "rank": 5
         },
         {
@@ -676,21 +677,21 @@
           "rank": 7
         },
         {
+          "name": "Benoît Saint Denis",
+          "name_ko": "Benoît Saint Denis",
+          "record": "17–4(1 NC)",
+          "country": "France",
+          "country_ko": "프랑스",
+          "url": "https://en.wikipedia.org/wiki/Benoît_Saint_Denis",
+          "rank": 8
+        },
+        {
           "name": "Quillan Salkilld",
           "name_ko": "Quillan Salkilld",
           "record": "12–1",
           "country": "Australia",
           "country_ko": "호주",
           "url": "https://en.wikipedia.org/wiki/Quillan_Salkilld",
-          "rank": 8
-        },
-        {
-          "name": "Paddy Pimblett",
-          "name_ko": "패디 핌블렛",
-          "record": "23–4",
-          "country": "England",
-          "country_ko": "잉글랜드",
-          "url": "https://en.wikipedia.org/wiki/Paddy_Pimblett",
           "rank": 9
         },
         {
@@ -703,21 +704,21 @@
           "rank": 10
         },
         {
-          "name": "Dan Hooker",
-          "name_ko": "Dan Hooker",
-          "record": "24–14",
-          "country": "New Zealand",
-          "country_ko": "뉴질랜드",
-          "url": "https://en.wikipedia.org/wiki/Dan_Hooker",
-          "rank": 11
-        },
-        {
           "name": "Tom Nolan",
           "name_ko": "Tom Nolan",
           "record": "11–1",
           "country": "Australia",
           "country_ko": "호주",
           "url": null,
+          "rank": 11
+        },
+        {
+          "name": "Dan Hooker",
+          "name_ko": "Dan Hooker",
+          "record": "24–14",
+          "country": "New Zealand",
+          "country_ko": "뉴질랜드",
+          "url": "https://en.wikipedia.org/wiki/Dan_Hooker",
           "rank": 12
         },
         {
@@ -879,21 +880,21 @@
           "rank": 13
         },
         {
+          "name": "Jose Miguel Delgado",
+          "name_ko": "Jose Miguel Delgado",
+          "record": "12–2",
+          "country": "Mexico",
+          "country_ko": "멕시코",
+          "url": null,
+          "rank": 14
+        },
+        {
           "name": "Joanderson Brito",
           "name_ko": "Joanderson Brito",
           "record": "19–5–1",
           "country": "Brazil",
           "country_ko": "브라질",
           "url": "https://en.wikipedia.org/wiki/Joanderson_Brito",
-          "rank": 14
-        },
-        {
-          "name": "Jose Miguel Delgado",
-          "name_ko": "Jose Miguel Delgado",
-          "record": "11–2",
-          "country": "Mexico",
-          "country_ko": "멕시코",
-          "url": null,
           "rank": 15
         }
       ]
@@ -938,21 +939,21 @@
           "rank": 3
         },
         {
-          "name": "Cory Sandhagen",
-          "name_ko": "코리 샌드하겐",
-          "record": "18–6",
-          "country": "United States",
-          "country_ko": "미국",
-          "url": "https://en.wikipedia.org/wiki/Cory_Sandhagen",
-          "rank": 4
-        },
-        {
           "name": "Mario Bautista",
           "name_ko": "마리오 바우티스타",
-          "record": "17–3",
+          "record": "18–3",
           "country": "United States",
           "country_ko": "미국",
           "url": "https://en.wikipedia.org/wiki/Mario_Bautista",
+          "rank": 4
+        },
+        {
+          "name": "Cory Sandhagen",
+          "name_ko": "코리 샌드하겐",
+          "record": "18–7",
+          "country": "United States",
+          "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Cory_Sandhagen",
           "rank": 5
         },
         {
@@ -983,21 +984,21 @@
           "rank": 8
         },
         {
+          "name": "Farid Basharat",
+          "name_ko": "Farid Basharat",
+          "record": "16–0",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Farid_Basharat",
+          "rank": 9
+        },
+        {
           "name": "Marcus McGhee",
           "name_ko": "Marcus McGhee",
           "record": "11–2",
           "country": "United States",
           "country_ko": "미국",
           "url": "https://en.wikipedia.org/wiki/Marcus_McGhee",
-          "rank": 9
-        },
-        {
-          "name": "Farid Basharat",
-          "name_ko": "Farid Basharat",
-          "record": "15–0",
-          "country": "England",
-          "country_ko": "잉글랜드",
-          "url": "https://en.wikipedia.org/wiki/Farid_Basharat",
           "rank": 10
         },
         {
@@ -1078,31 +1079,22 @@
           "rank": 2
         },
         {
+          "name": "Brandon Royval",
+          "name_ko": "브랜든 로이발",
+          "record": "18–9",
+          "country": "United States",
+          "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Brandon_Royval",
+          "rank": 3
+        },
+        {
           "name": "Tatsuro Taira",
           "name_ko": "타이라 타츠로",
           "record": "18–2",
           "country": "Japan",
           "country_ko": "일본",
           "url": "https://en.wikipedia.org/wiki/Tatsuro_Taira",
-          "rank": 3
-        },
-        {
-          "name": "Brandon Royval",
-          "name_ko": "브랜든 로이발",
-          "record": "17–9",
-          "country": "United States",
-          "country_ko": "미국",
-          "url": "https://en.wikipedia.org/wiki/Brandon_Royval",
           "rank": 4
-        },
-        {
-          "name": "Lone'er Kavanagh",
-          "name_ko": "Lone'er Kavanagh",
-          "record": "10–1",
-          "country": "England",
-          "country_ko": "잉글랜드",
-          "url": "https://en.wikipedia.org/wiki/Lone'er_Kavanagh",
-          "rank": 5
         },
         {
           "name": "Asu Almabayev",
@@ -1111,6 +1103,15 @@
           "country": "Kazakhstan",
           "country_ko": "카자흐스탄",
           "url": "https://en.wikipedia.org/wiki/Asu_Almabayev",
+          "rank": 5
+        },
+        {
+          "name": "Lone'er Kavanagh",
+          "name_ko": "Lone'er Kavanagh",
+          "record": "10–2",
+          "country": "England",
+          "country_ko": "잉글랜드",
+          "url": "https://en.wikipedia.org/wiki/Lone'er_Kavanagh",
           "rank": 6
         },
         {
@@ -1170,7 +1171,7 @@
         {
           "name": "Steve Erceg",
           "name_ko": "Steve Erceg",
-          "record": "14–4",
+          "record": "14–5",
           "country": "Australia",
           "country_ko": "호주",
           "url": "https://en.wikipedia.org/wiki/Steve_Erceg",
@@ -1186,12 +1187,12 @@
           "rank": 14
         },
         {
-          "name": "Joseph Morales",
-          "name_ko": "Joseph Morales",
-          "record": "14–2",
-          "country": "United States",
-          "country_ko": "미국",
-          "url": "https://en.wikipedia.org/wiki/Joseph_Morales_(fighter)",
+          "name": "Alessandro Costa",
+          "name_ko": "Alessandro Costa",
+          "record": "17–5",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "url": null,
           "rank": 15
         }
       ]
@@ -1236,21 +1237,21 @@
           "rank": 3
         },
         {
-          "name": "Julianna Peña",
-          "name_ko": "줄리아나 페냐",
-          "record": "12–6",
-          "country": "United States",
-          "country_ko": "미국",
-          "url": "https://en.wikipedia.org/wiki/Julianna_Peña",
-          "rank": 4
-        },
-        {
           "name": "Ailín Pérez",
           "name_ko": "Ailín Pérez",
           "record": "13–2",
           "country": "Argentina",
           "country_ko": "아르헨티나",
           "url": "https://en.wikipedia.org/wiki/Ailín_Pérez",
+          "rank": 4
+        },
+        {
+          "name": "Julianna Peña",
+          "name_ko": "줄리아나 페냐",
+          "record": "12–6",
+          "country": "United States",
+          "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Julianna_Peña",
           "rank": 5
         },
         {
@@ -1308,22 +1309,13 @@
           "rank": 11
         },
         {
-          "name": "Irene Aldana",
-          "name_ko": "Irene Aldana",
-          "record": "15–8",
-          "country": "Mexico",
-          "country_ko": "멕시코",
-          "url": "https://en.wikipedia.org/wiki/Irene_Aldana",
-          "rank": 12
-        },
-        {
           "name": "Macy Chiasson",
           "name_ko": "Macy Chiasson",
           "record": "11–6",
           "country": "United States",
           "country_ko": "미국",
           "url": "https://en.wikipedia.org/wiki/Macy_Chiasson",
-          "rank": 13
+          "rank": 12
         },
         {
           "name": "Darya Zheleznyakova",
@@ -1332,7 +1324,7 @@
           "country": "Russia",
           "country_ko": "러시아",
           "url": null,
-          "rank": 14
+          "rank": 13
         },
         {
           "name": "Raquel Pennington",
@@ -1341,6 +1333,15 @@
           "country": "United States",
           "country_ko": "미국",
           "url": "https://en.wikipedia.org/wiki/Raquel_Pennington",
+          "rank": 14
+        },
+        {
+          "name": "Klaudia Syguła",
+          "name_ko": "Klaudia Syguła",
+          "record": "8–2",
+          "country": "Poland",
+          "country_ko": "폴란드",
+          "url": null,
           "rank": 15
         }
       ]
@@ -1403,13 +1404,22 @@
           "rank": 5
         },
         {
+          "name": "Wang Cong",
+          "name_ko": "Wang Cong",
+          "record": "10–1",
+          "country": "China",
+          "country_ko": "중국",
+          "url": "https://en.wikipedia.org/wiki/Wang_Cong",
+          "rank": 6
+        },
+        {
           "name": "Jasmine Jasudavicius",
           "name_ko": "Jasmine Jasudavicius",
           "record": "15–4",
           "country": "Canada",
           "country_ko": "캐나다",
           "url": "https://en.wikipedia.org/wiki/Jasmine_Jasudavicius",
-          "rank": 6
+          "rank": 7
         },
         {
           "name": "Rose Namajunas",
@@ -1418,15 +1428,6 @@
           "country": "United States",
           "country_ko": "미국",
           "url": "https://en.wikipedia.org/wiki/Rose_Namajunas",
-          "rank": 7
-        },
-        {
-          "name": "Tracy Cortez",
-          "name_ko": "Tracy Cortez",
-          "record": "12–3",
-          "country": "United States",
-          "country_ko": "미국",
-          "url": "https://en.wikipedia.org/wiki/Tracy_Cortez",
           "rank": 8
         },
         {
@@ -1439,12 +1440,12 @@
           "rank": 9
         },
         {
-          "name": "Wang Cong",
-          "name_ko": "Wang Cong",
-          "record": "9–1",
-          "country": "China",
-          "country_ko": "중국",
-          "url": "https://en.wikipedia.org/wiki/Wang_Cong",
+          "name": "Tracy Cortez",
+          "name_ko": "Tracy Cortez",
+          "record": "12–4",
+          "country": "United States",
+          "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Tracy_Cortez",
           "rank": 10
         },
         {
@@ -1552,21 +1553,21 @@
           "rank": 5
         },
         {
+          "name": "Fatima Kline",
+          "name_ko": "Fatima Kline",
+          "record": "10–1",
+          "country": "United States",
+          "country_ko": "미국",
+          "url": "https://en.wikipedia.org/wiki/Fatima_Kline",
+          "rank": 6
+        },
+        {
           "name": "Piera Rodriguez",
           "name_ko": "Piera Rodriguez",
           "record": "12–2",
           "country": "Venezuela",
           "country_ko": "Venezuela",
           "url": null,
-          "rank": 6
-        },
-        {
-          "name": "Tabatha Ricci",
-          "name_ko": "Tabatha Ricci",
-          "record": "12–4",
-          "country": "Brazil",
-          "country_ko": "브라질",
-          "url": "https://en.wikipedia.org/wiki/Tabatha_Ricci",
           "rank": 7
         },
         {
@@ -1615,21 +1616,21 @@
           "rank": 12
         },
         {
+          "name": "Tabatha Ricci",
+          "name_ko": "Tabatha Ricci",
+          "record": "12–5",
+          "country": "Brazil",
+          "country_ko": "브라질",
+          "url": "https://en.wikipedia.org/wiki/Tabatha_Ricci",
+          "rank": 13
+        },
+        {
           "name": "Jaqueline Amorim",
           "name_ko": "Jaqueline Amorim",
           "record": "11–2",
           "country": "Brazil",
           "country_ko": "브라질",
           "url": null,
-          "rank": 13
-        },
-        {
-          "name": "Fatima Kline",
-          "name_ko": "Fatima Kline",
-          "record": "9–1",
-          "country": "United States",
-          "country_ko": "미국",
-          "url": "https://en.wikipedia.org/wiki/Fatima_Kline",
           "rank": 14
         },
         {

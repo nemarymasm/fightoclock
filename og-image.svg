@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0b0c"/>
+  <circle cx="1030" cy="70" r="340" fill="#e5484d" opacity=".10"/>
+  <circle cx="130" cy="650" r="310" fill="#e5484d" opacity=".06"/>
+  <rect x="88" y="90" width="82" height="82" rx="22" fill="#e5484d"/>
+  <path d="M113 111h37v12h-23v11h19v12h-19v25h-14z" fill="#fff"/>
+  <text x="194" y="148" fill="#f2f1ee" font-family="Arial, sans-serif" font-size="48" font-weight="800">FightOclock</text>
+  <text x="92" y="300" fill="#f2f1ee" font-family="Arial, sans-serif" font-size="78" font-weight="800">UFC 일정,</text>
+  <text x="92" y="394" fill="#f2f1ee" font-family="Arial, sans-serif" font-size="78" font-weight="800">한국시간으로 한눈에.</text>
+  <rect x="92" y="468" width="146" height="7" rx="4" fill="#e5484d"/>
+  <text x="92" y="532" fill="#aaa9a7" font-family="Arial, sans-serif" font-size="30">일정 · 결과 · 랭킹 · 선수 가이드</text>
+</svg>

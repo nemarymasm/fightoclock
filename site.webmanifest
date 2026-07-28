@@ -1,0 +1,18 @@
+{
+  "name": "FightOclock · UFC 한국어 가이드",
+  "short_name": "FightOclock",
+  "description": "UFC 일정과 결과, 랭킹을 한국어로 확인하세요.",
+  "start_url": "/#home",
+  "display": "standalone",
+  "background_color": "#0b0b0c",
+  "theme_color": "#0b0b0c",
+  "lang": "ko-KR",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

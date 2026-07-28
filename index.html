@@ -10,10 +10,21 @@
 <meta property="og:site_name" content="FightOclock">
 <meta property="og:title" content="FightOclock · UFC 일정 한국어 가이드">
 <meta property="og:description" content="다음 UFC 경기가 한국시간으로 언제, 어디서, 누가 싸우는지 — 한 화면에서 끝.">
-<meta property="og:url" content="https://fightoclock.kr">
+<meta property="og:url" content="https://fightoclock.kr/">
+<meta property="og:image" content="https://fightoclock.kr/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fightoclock.kr/og-image.svg">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://fightoclock.kr/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
 <title>FightOclock · UFC 일정 한국어 가이드</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"FightOclock","url":"https://fightoclock.kr/","inLanguage":"ko-KR","description":"UFC 일정과 결과, 랭킹을 한국어로 정리한 가이드"}
+</script>
 <style>
   /* ---------- 기본 (시안 D · 에디토리얼 디자인 시스템) ---------- */
   *,*::before,*::after{box-sizing:border-box}
@@ -27,7 +38,7 @@
     --line-2:rgba(255,255,255,.13);
     --text:#F2F1EE;
     --muted:rgba(242,241,238,.56);
-    --dim:rgba(242,241,238,.34);
+    --dim:rgba(242,241,238,.52);
     --red:#E5484D;
     --red-2:#E5484D;
     --gold:#C9A24B;
@@ -47,6 +58,10 @@
   a{color:inherit;text-decoration:none}
   button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   img{max-width:100%;display:block}
+  :focus-visible{outline:2px solid #ff7b80;outline-offset:3px}
+  .skip-link{position:fixed;left:12px;top:8px;z-index:1000;padding:10px 14px;border-radius:8px;background:#fff;color:#111;transform:translateY(-150%)}
+  .skip-link:focus{transform:none}
+  .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 
   /* ---------- 헤더 ---------- */
   .topbar{
@@ -67,7 +82,7 @@
   .brand .name{font-size:16px}
   .brand .name small{display:block;font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.04em}
   .topbar .actions{display:flex;gap:6px}
-  .iconbtn{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:var(--muted);}
+  .iconbtn{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;color:var(--muted);font-size:18px}
   .iconbtn:hover{background:var(--bg-2);color:var(--text)}
 
   /* ---------- 메인 ---------- */
@@ -132,6 +147,7 @@
   .chips::-webkit-scrollbar{display:none}
   .chip{flex:0 0 auto;padding:8px 14px;border-radius:999px;background:var(--bg-2);color:var(--muted);font-size:13px;font-weight:600;border:1px solid var(--line)}
   .chip.active{background:var(--red);color:#fff;border-color:var(--red)}
+  button.chip{min-height:40px}
 
   /* ---------- 일정 리스트 ---------- */
   .event-list{display:flex;flex-direction:column;gap:10px}
@@ -149,7 +165,7 @@
   /* ---------- 이벤트 상세 ---------- */
   .ev-banner{background:linear-gradient(180deg,#1a0808,#0c0c0c);border:1px solid var(--line);border-radius:18px;padding:16px}
   .ev-banner .badge{display:inline-block;background:var(--red);color:#fff;padding:4px 10px;border-radius:999px;font-weight:800;font-size:11px;letter-spacing:.06em}
-  .ev-banner h2{margin:8px 0 4px;font-size:22px;font-weight:900;letter-spacing:-.02em}
+  .ev-banner h1,.ev-banner h2{margin:8px 0 4px;font-size:22px;font-weight:900;letter-spacing:-.02em}
   .ev-banner .when{color:#ddd;font-size:13px}
   .ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
 
@@ -195,7 +211,7 @@
   .fighter-hero{display:grid;grid-template-columns:88px 1fr;gap:14px;align-items:center;background:linear-gradient(180deg,#1a0808,#0e0e0e);border:1px solid var(--line);border-radius:18px;padding:16px}
   .fighter-hero .av{width:88px;height:88px}
   .fighter-hero .avatar{width:88px;height:88px;font-size:24px}
-  .fighter-hero h2{margin:0 0 2px;font-size:20px;font-weight:900}
+  .fighter-hero h1,.fighter-hero h2{margin:0 0 2px;font-size:20px;font-weight:900}
   .fighter-hero .nick{color:var(--gold-2);font-size:12px;font-weight:700;letter-spacing:.04em}
   .fighter-hero .rec{margin-top:6px;font-size:13px;color:#ddd}
   .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
@@ -225,7 +241,7 @@
 
   /* ---------- 결과 리스트 ---------- */
   .result-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:10px}
-  .result-card h4{margin:0 0 4px;font-size:14px;font-weight:800}
+  .result-card h3,.result-card h4{margin:0 0 4px;font-size:14px;font-weight:800}
   .result-card .when{font-size:11px;color:var(--muted)}
   .result-fight{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
   .result-fight .nm{font-size:12.5px;font-weight:700}
@@ -255,6 +271,29 @@
 
   /* ---------- 푸터 안내 ---------- */
   .disclaimer{margin-top:18px;padding:12px;border:1px dashed var(--line);border-radius:10px;font-size:11px;color:var(--dim);line-height:1.5}
+  .page-heading{margin:4px 2px 16px;font-size:25px;line-height:1.2;letter-spacing:-.035em}
+  .page-heading small{display:block;margin-top:6px;color:var(--muted);font-size:13px;font-weight:500;letter-spacing:0}
+  .state-card{min-height:260px;display:grid;place-items:center;text-align:center;padding:32px 18px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+  .state-card h1,.state-card h2{margin:0 0 8px;font-size:22px}
+  .state-card p{max-width:430px;margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+  .state-card .btn{max-width:220px;margin:18px auto 0}
+  .freshness{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 2px 16px;padding:10px 12px;border-radius:10px;background:var(--bg-2);color:var(--muted);font-size:12px}
+  .freshness.stale{border:1px solid rgba(229,72,77,.45);color:#ffb4b7}
+  .freshness strong{color:var(--text)}
+  .list-summary{margin:-6px 2px 12px;color:var(--muted);font-size:12px}
+  .load-more{width:100%;margin-top:12px}
+  dialog{width:min(92vw,480px);padding:0;border:1px solid var(--line-2);border-radius:18px;background:var(--card-2);color:var(--text);box-shadow:0 24px 80px rgba(0,0,0,.65)}
+  dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(3px)}
+  .modal-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}
+  .modal-head h2{margin:0;font-size:18px}
+  .modal-body{padding:18px}
+  .modal-body p{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.6}
+  .modal-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .modal-actions .btn{min-width:150px}
+  .setting-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+  .setting-row:first-child{border-top:0}
+  .setting-row input{width:20px;height:20px;accent-color:var(--red)}
+  body.wide-layout main,body.wide-layout .tabbar,body.wide-layout .topbar{max-width:1120px!important}
 
   /* ---------- 데스크톱 ---------- */
   @media (min-width:780px){
@@ -263,7 +302,7 @@
     .hero h1{font-size:28px}
     .ev-grid{grid-template-columns:repeat(4,1fr)}
     .stat-grid{grid-template-columns:repeat(6,1fr)}
-    .tabbar{position:sticky;top:0;border-top:0;border-bottom:1px solid var(--line);grid-template-columns:repeat(5,minmax(0,140px));max-width:960px;margin:0 auto}
+    .tabbar{position:sticky;top:73px;border-top:0;border-bottom:1px solid var(--line);grid-template-columns:repeat(5,minmax(0,140px));max-width:960px;margin:0 auto}
     .topbar{padding-left:24px;padding-right:24px}
   }
 
@@ -327,9 +366,9 @@
   .disclaimer{border-style:solid;border-color:var(--line)}
 
   /* 콘텐츠를 가운데 좁은 칼럼으로 (데스크톱에서 너무 퍼지지 않게) */
-  body{max-width:600px;margin-left:auto;margin-right:auto}
-  .tabbar{max-width:600px!important;margin-left:auto!important;margin-right:auto!important}
-  @media (min-width:780px){ main{max-width:600px} }
+  body{margin-left:auto;margin-right:auto}
+  .topbar,.tabbar{max-width:960px;margin-left:auto!important;margin-right:auto!important}
+  @media (min-width:780px){ main{max-width:960px}.view{max-width:760px;margin:0 auto}.view.home-view{max-width:960px} }
 
   /* ---- 홈 커버 (잡지 표지형: 톱 매치업 얼굴 크게) ---- */
   .cover{text-align:center;padding:20px 0 10px}
@@ -345,7 +384,7 @@
   .cover-title{font-size:22px;font-weight:800;letter-spacing:-.03em;margin:8px 4px 4px}
   .cover-meta{color:var(--muted);font-size:13px;line-height:1.5;padding:0 8px}
   .cover-cd{margin:18px auto 14px;max-width:340px}
-  .cover .cta{justify-content:center}
+  .cover .cta{display:flex;justify-content:center}
   .cover .btn.primary{width:100%;max-width:340px}
 
   /* ---- 주요 경기 카드 (중요도 크기) ---- */
@@ -362,328 +401,130 @@
   .mcard.big .mf-nm{font-size:14px}
   .mcard .mf-vs{font-size:11px;color:var(--dim);font-weight:700}
   .mcard-sub{font-size:11px;color:var(--dim);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  }
 </style>
 </head>
 <body>
 
+<a class="skip-link" href="#app">본문으로 바로가기</a>
 <header class="topbar">
   <div class="brand">
     <div class="mark">F</div>
     <div class="name">FightOclock<small>UFC 한국어 가이드</small></div>
   </div>
   <div class="actions">
-    <button class="iconbtn" title="알림">🔔</button>
-    <button class="iconbtn" title="설정">⚙️</button>
+    <button id="reminderButton" class="iconbtn" type="button" aria-label="경기 알림과 캘린더">🔔</button>
+    <button id="settingsButton" class="iconbtn" type="button" aria-label="사이트 설정">⚙️</button>
   </div>
 </header>
 
-<main id="app"></main>
-
-<nav class="tabbar">
-  <a href="#home"      data-tab="home"      class="active"><span class="ic">🥊</span><span>홈</span></a>
-  <a href="#schedule"  data-tab="schedule"  ><span class="ic">📅</span><span>일정</span></a>
-  <a href="#results"   data-tab="results"   ><span class="ic">🏆</span><span>결과</span></a>
-  <a href="#rankings"  data-tab="rankings"  ><span class="ic">📊</span><span>랭킹</span></a>
-  <a href="#fighters"  data-tab="fighters"  ><span class="ic">👤</span><span>선수</span></a>
+<nav class="tabbar" aria-label="주요 메뉴">
+  <a href="#home"      data-tab="home"      class="active" aria-current="page"><span class="ic" aria-hidden="true">🥊</span><span>홈</span></a>
+  <a href="#schedule"  data-tab="schedule"  ><span class="ic" aria-hidden="true">📅</span><span>일정</span></a>
+  <a href="#results"   data-tab="results"   ><span class="ic" aria-hidden="true">🏆</span><span>결과</span></a>
+  <a href="#rankings"  data-tab="rankings"  ><span class="ic" aria-hidden="true">📊</span><span>랭킹</span></a>
+  <a href="#fighters"  data-tab="fighters"  ><span class="ic" aria-hidden="true">👤</span><span>선수</span></a>
 </nav>
 
+<main id="app" tabindex="-1" aria-live="polite" aria-busy="true">
+  <div class="state-card"><div><h1>FightOclock</h1><p>최신 UFC 데이터를 불러오고 있습니다.</p></div></div>
+</main>
+
+<dialog id="appDialog" aria-labelledby="dialogTitle">
+  <div class="modal-head"><h2 id="dialogTitle">FightOclock</h2><button id="dialogClose" class="iconbtn" type="button" aria-label="닫기">×</button></div>
+  <div id="dialogBody" class="modal-body"></div>
+</dialog>
+
 <script>
-/* =========================================================
-   샘플 데이터 (실제 출시 시 외부 데이터 소스로 교체)
-   - 시간은 KST 기준으로 미리 변환해서 저장
-   - 'asof'는 데이터 신선도, 'sources'는 인용용
-   ========================================================= */
-const FIGHTERS = {
-  topuria: { id:'topuria', name:'일리아 토푸리아', en:'Ilia Topuria', nick:'엘 마타도르',
-    country:'스페인/조지아', age:29, height:'170cm', reach:'175cm', stance:'정통',
-    record:'17승 0패', weight:'라이트급(155파운드)', rank:'챔피언',
-    style:'폭발적인 카운터 펀처. 거리 조절과 클린치 박치기, 좌우 훅 단발에 KO 파워가 집중되어 있음. 그라운드도 BJJ 블랙벨트.',
-    recent:[
-      {res:'W', opp:'맥스 할로웨이', way:'KO 3R', when:'2024-10-26'},
-      {res:'W', opp:'알렉산더 볼카노프스키', way:'KO 2R', when:'2024-02-17'},
-      {res:'W', opp:'조시 에메트', way:'판정', when:'2023-06-24'},
-      {res:'W', opp:'브라이스 미첼', way:'서브미션 2R', when:'2022-12-10'},
-      {res:'W', opp:'제프 닐(아님 가짜방어)', way:'KO 1R', when:'2022-07-02'}
-    ]},
-  oliveira:{ id:'oliveira', name:'찰스 올리베이라', en:'Charles Oliveira', nick:'두 브롱스',
-    country:'브라질', age:36, height:'178cm', reach:'188cm', stance:'정통',
-    record:'34승 10패 1무효', weight:'라이트급', rank:'1위',
-    style:'UFC 역대 최다 서브미션 보유자. 플라잉 니, 깊은 트라이앵글이 시그니처. 초반 다소 약한 턱이 변수.',
-    recent:[
-      {res:'W', opp:'마이클 챈들러', way:'서브미션 1R', when:'2025-11-15'},
-      {res:'L', opp:'아르만 차루키안', way:'판정', when:'2024-04-13'},
-      {res:'W', opp:'베니엘 다리우시', way:'KO 1R', when:'2023-06-10'},
-      {res:'L', opp:'이슬람 마카체프', way:'서브미션 2R', when:'2022-10-22'},
-      {res:'W', opp:'저스틴 게이치', way:'서브미션 1R', when:'2022-05-07'}
-    ]},
-  pereira:{ id:'pereira', name:'알렉스 페레이라', en:'Alex Pereira', nick:'포아탕',
-    country:'브라질', age:38, height:'193cm', reach:'201cm', stance:'정통',
-    record:'12승 3패', weight:'라이트헤비급', rank:'챔피언',
-    style:'GLORY 출신 K-1 레전드. 왼훅 카프킥이 시그니처, 거리에서 일격필살의 카운터.',
-    recent:[
-      {res:'L', opp:'마고메드 안칼라예프', way:'판정', when:'2025-03-08'},
-      {res:'W', opp:'키릴 시도렌코프(가상)', way:'KO 1R', when:'2024-10-05'},
-      {res:'W', opp:'카릴 라운트리 주니어', way:'KO 4R', when:'2024-06-29'},
-      {res:'W', opp:'이리 프로하즈카', way:'KO 2R', when:'2024-04-13'},
-      {res:'W', opp:'이리 프로하즈카', way:'TKO 2R', when:'2023-11-11'}
-    ]},
-  ankalaev:{ id:'ankalaev', name:'마고메드 안칼라예프', en:'Magomed Ankalaev', nick:'',
-    country:'러시아', age:33, height:'191cm', reach:'193cm', stance:'정통',
-    record:'21승 1패 1무 1무효', weight:'라이트헤비급', rank:'챔피언(현재)',
-    style:'롱 잽 + 캘프킥, 클린치 컨트롤. 페레이라 1차전에서 거리/케이지 컨트롤로 판정승.',
-    recent:[
-      {res:'W', opp:'알렉스 페레이라', way:'판정', when:'2025-03-08'},
-      {res:'W', opp:'알렉산다르 라코비치', way:'판정', when:'2024-06-22'},
-      {res:'D', opp:'얀 블라호비치', way:'무승부', when:'2022-12-10'},
-      {res:'W', opp:'안소니 스미스', way:'TKO 2R', when:'2022-07-30'},
-      {res:'W', opp:'토마즈 카지머치크', way:'서브미션 2R', when:'2022-04-09'}
-    ]},
-  omalley:{ id:'omalley', name:'션 오말리', en:'Sean O’Malley', nick:'슈가',
-    country:'미국', age:31, height:'180cm', reach:'180cm', stance:'스위치',
-    record:'18승 2패 1무효', weight:'밴텀급', rank:'2위',
-    style:'장신 카운터 스트라이커. 잽 + 백 라이트 스트레이트, 백핸드 엘보가 강점.',
-    recent:[
-      {res:'L', opp:'메랍 드발리시빌리', way:'판정', when:'2024-09-14'},
-      {res:'W', opp:'마를론 베라', way:'판정', when:'2024-03-09'},
-      {res:'W', opp:'알주메인 스털링', way:'KO 2R', when:'2023-08-19'},
-      {res:'W', opp:'페트르 얀', way:'판정(논란)', when:'2022-10-22'},
-      {res:'W', opp:'페드로 무뇨스', way:'KO 1R', when:'2022-04-09'}
-    ]},
-  merab:{ id:'merab', name:'메랍 드발리시빌리', en:'Merab Dvalishvili', nick:'더 머신',
-    country:'조지아', age:35, height:'170cm', reach:'180cm', stance:'정통',
-    record:'19승 4패', weight:'밴텀급', rank:'챔피언',
-    style:'5라운드 풀가스 케이지 압박, 그라운드 컨트롤. UFC 5라운드 테이크다운 기록 보유.',
-    recent:[
-      {res:'W', opp:'션 오말리', way:'판정', when:'2024-09-14'},
-      {res:'W', opp:'우마르 누르마고메도프', way:'판정', when:'2025-01-18'},
-      {res:'W', opp:'헤날도 비에이라', way:'판정', when:'2023-12-09'},
-      {res:'W', opp:'페트르 얀', way:'판정', when:'2023-03-11'},
-      {res:'W', opp:'호세 알도', way:'판정', when:'2022-08-20'}
-    ]},
-  sandhagen:{ id:'sandhagen', name:'코리 샌드하겐', en:'Cory Sandhagen', nick:'더 샌드맨',
-    country:'미국', age:34, height:'180cm', reach:'178cm', stance:'스위치',
-    record:'18승 5패', weight:'밴텀급', rank:'3위',
-    style:'리듬 변화의 마법사. 사이드킥, 스피닝 휠킥, 박자 차이 잽이 시그니처.',
-    recent:[
-      {res:'W', opp:'우마르 누르마고메도프', way:'판정', when:'2025-12-13'},
-      {res:'L', opp:'우마르 누르마고메도프', way:'판정', when:'2024-08-03'},
-      {res:'W', opp:'롭 폰트', way:'판정', when:'2024-03-30'},
-      {res:'W', opp:'마를론 베라', way:'판정', when:'2023-08-05'},
-      {res:'L', opp:'페트르 얀', way:'판정', when:'2022-10-15'}
-    ]},
-  figueiredo:{ id:'figueiredo', name:'데이베손 피게이레두', en:'Deiveson Figueiredo', nick:'데우스 다 게라',
-    country:'브라질', age:38, height:'165cm', reach:'170cm', stance:'정통',
-    record:'24승 4패 1무', weight:'밴텀급', rank:'5위',
-    style:'전 플라이급 챔프, 단단한 펀치 + 그래플링. 밴텀급 이주 후 파워 유지.',
-    recent:[
-      {res:'W', opp:'페트르 얀', way:'판정', when:'2024-11-02'},
-      {res:'W', opp:'마를론 베라', way:'판정', when:'2024-05-04'},
-      {res:'W', opp:'롭 폰트', way:'서브미션 1R', when:'2023-12-02'},
-      {res:'L', opp:'브랜든 모레노', way:'판정', when:'2023-01-21'},
-      {res:'L', opp:'브랜든 모레노', way:'TKO 3R', when:'2022-07-30'}
-    ]},
-  jdm:{ id:'jdm', name:'드리쿠스 두 플레시', en:'Dricus du Plessis', nick:'스틸렌',
-    country:'남아공', age:32, height:'188cm', reach:'193cm', stance:'스위치',
-    record:'23승 2패', weight:'미들급', rank:'챔피언',
-    style:'엉성해 보이지만 끈질긴 압박. 클린치 + 케이지 컨트롤, 후반 폭주.',
-    recent:[
-      {res:'W', opp:'카마루 우스만(가상)', way:'TKO 4R', when:'2025-08-23'},
-      {res:'W', opp:'션 스트릭랜드', way:'판정', when:'2025-02-15'},
-      {res:'W', opp:'이스라엘 아데산야', way:'서브미션 4R', when:'2024-08-17'},
-      {res:'W', opp:'션 스트릭랜드', way:'판정', when:'2024-01-20'},
-      {res:'W', opp:'로버트 휘태커', way:'TKO 2R', when:'2023-07-08'}
-    ]},
-  strickland:{ id:'strickland', name:'션 스트릭랜드', en:'Sean Strickland', nick:'타레크', country:'미국',
-    age:35, height:'185cm', reach:'193cm', stance:'정통', record:'29승 7패',
-    weight:'미들급', rank:'1위',
-    style:'필리 셸 가드 + 끝없는 잽. 카디오 압박형 파이터.',
-    recent:[
-      {res:'L', opp:'드리쿠스 두 플레시', way:'판정', when:'2025-02-15'},
-      {res:'W', opp:'파울로 코스타', way:'판정', when:'2024-06-22'},
-      {res:'L', opp:'드리쿠스 두 플레시', way:'판정', when:'2024-01-20'},
-      {res:'W', opp:'이스라엘 아데산야', way:'판정', when:'2023-09-10'},
-      {res:'W', opp:'아벨 트루히요', way:'판정', when:'2023-07-01'}
-    ]},
-  aspinall:{ id:'aspinall', name:'톰 아스피날', en:'Tom Aspinall', nick:'',
-    country:'영국', age:33, height:'196cm', reach:'200cm', stance:'정통',
-    record:'16승 3패', weight:'헤비급', rank:'챔피언',
-    style:'헤비급에선 보기 드문 핸드스피드 + 그래플링 컴비네이션. 1라운드 마무리 다수.',
-    recent:[
-      {res:'W', opp:'커티스 블레이즈', way:'KO 1R', when:'2024-07-27'},
-      {res:'W', opp:'세르게이 파블로비치', way:'KO 1R', when:'2023-11-11'},
-      {res:'W', opp:'마르친 트리불스키', way:'서브미션 1R', when:'2022-10-22'},
-      {res:'L', opp:'커티스 블레이즈', way:'기권 1R(부상)', when:'2022-07-23'},
-      {res:'W', opp:'알렉산더 볼코프', way:'서브미션 1R', when:'2022-03-19'}
-    ]},
-  jones:{ id:'jones', name:'존 존스', en:'Jon Jones', nick:'본스',
-    country:'미국', age:38, height:'193cm', reach:'215cm', stance:'정통',
-    record:'28승 1패 1무효', weight:'헤비급', rank:'은퇴(2025)',
-    style:'역대 GOAT 후보. 이격 변화 + 엘보 + 오블리크 킥의 마스터.',
-    recent:[
-      {res:'W', opp:'스티페 미오치치', way:'KO 3R', when:'2024-11-16'},
-      {res:'W', opp:'시릴 가네', way:'서브미션 1R', when:'2023-03-04'},
-      {res:'W', opp:'도미닉 레예스', way:'판정', when:'2020-02-08'}
-    ]}
-};
-
-let EVENTS = [
-  {
-    id:'ufc-fn-may16',
-    code:'UFC Fight Night',
-    title:'Sandhagen vs Figueiredo',
-    titleKo:'샌드하겐 대 피게이레두',
-    dateUtc:'2026-05-17T02:00:00Z', // 미국 5월 16일 토요일 22:00 ET → KST 5/17 11:00? (예시값)
-    kstString:'2026년 5월 17일(일) 오전 11:00 KST',
-    venue:'UFC APEX',
-    city:'네바다 라스베이거스',
-    where:'TVING (한국) · ESPN+ (미국)',
-    rounds:5,
-    headline:'밴텀급 컨텐더 전 — 다음 타이틀샷의 주인공은?',
-    summary:'밴텀급 챔피언 메랍 드발리시빌리의 다음 도전자를 가리는 사실상의 #1 컨텐더 매치. 샌드하겐의 길고 변칙적인 거리 싸움이 통할지, 피게이레두의 펀치력+그래플링이 변칙을 깨버릴지가 핵심.',
-    keyPoints:[
-      '샌드하겐의 사이드킥 거리가 피게이레두의 짧은 리치를 어디까지 지워줄지',
-      '피게이레두는 1~2라운드 안에 클린치/테이크다운으로 거리를 부숴야 유리',
-      '5라운드 메인 — 카디오는 둘 다 검증되어 있어 후반까지 갈 가능성 높음'
-    ],
-    prediction:{ aId:'sandhagen', aPct:58, bId:'figueiredo', bPct:42,
-      note:'Reddit r/MMA, Tapology 베팅 트렌드 등 공개 자료를 종합한 “팬 컨센서스”. 베팅 권유가 아닙니다.',
-      sources:['r/MMA discussion thread', 'Tapology consensus odds', 'BetMMA.tips line history'] },
-    mainCard:[
-      { wc:'밴텀급 5R · 메인이벤트', a:'sandhagen', b:'figueiredo' },
-      { wc:'페더급 3R · 코메인', a:'topuria', b:'oliveira', preview:'(시범 매치업, 가상)' },
-      { wc:'라이트헤비급 3R', a:'pereira', b:'ankalaev' }
-    ],
-    prelims:[
-      { wc:'밴텀급 3R', a:'omalley', b:'merab' },
-      { wc:'미들급 3R', a:'jdm', b:'strickland' }
-    ],
-    results: null
-  },
-  {
-    id:'ufc-318',
-    code:'UFC 318',
-    title:'Topuria vs Oliveira',
-    titleKo:'토푸리아 대 올리베이라 — 라이트급 타이틀',
-    dateUtc:'2026-06-14T03:00:00Z',
-    kstString:'2026년 6월 14일(일) 오전 12:00 KST (한국시간 자정)',
-    venue:'프루덴셜 센터',
-    city:'미국 뉴저지 뉴어크',
-    where:'TVING · ESPN+ PPV',
-    rounds:5,
-    headline:'라이트급 왕좌의 충돌 — 타이틀 매치',
-    summary:'페더급을 정복한 토푸리아가 라이트급에서 마주하는 첫 진짜 시험대. 상대는 UFC 역대 최다 피니시 보유자, 두 브롱스 올리베이라. 폭발적 카운터 vs 그라운드 마법.',
-    keyPoints:[
-      '1라운드 — 토푸리아의 카운터 한 방에 올리베이라 턱이 버틸 수 있는가',
-      '올리베이라는 절대 스탠딩에서 5라운드를 갈 수 없음. 클린치/풀가드 컴 다운 변수',
-      '체급 변경 후 토푸리아 카디오 — 라이트급 스피드를 5R 유지할 수 있는가'
-    ],
-    prediction:{ aId:'topuria', aPct:64, bId:'oliveira', bPct:36,
-      note:'베팅 라인 합산 + 레딧 토론에서의 다수 의견 기준',
-      sources:['r/MMA prediction megathread', 'BestFightOdds line', 'Tapology user picks'] },
-    mainCard:[
-      { wc:'라이트급 5R · 타이틀전', a:'topuria', b:'oliveira' },
-      { wc:'라이트헤비급 5R · 코메인 · 타이틀전', a:'ankalaev', b:'pereira' },
-      { wc:'미들급 3R', a:'jdm', b:'strickland' }
-    ],
-    prelims:[
-      { wc:'밴텀급 3R', a:'sandhagen', b:'omalley' },
-      { wc:'헤비급 3R', a:'aspinall', b:'jones', preview:'(가상 매치업)' }
-    ],
-    results: null
-  },
-  {
-    id:'ufc-fn-jul11',
-    code:'UFC Fight Night',
-    title:'Aspinall vs TBA',
-    titleKo:'아스피날 vs 미정',
-    dateUtc:'2026-07-12T03:00:00Z',
-    kstString:'2026년 7월 12일(일) 오전 12:00 KST',
-    venue:'에티하드 아레나',
-    city:'아랍에미리트 아부다비',
-    where:'TVING · DAZN MENA',
-    rounds:5,
-    headline:'헤비급 챔피언의 1차 방어전 후보 매치',
-    summary:'아스피날의 첫 번째 자비로운 방어전. 도전자는 매치업 협상 중.',
-    keyPoints:['헤비급 1라운드 끝장형 — 5분 안에 거의 결판'],
-    prediction:null,
-    mainCard:[],
-    prelims:[],
-    results:null
-  },
-  {
-    id:'ufc-317',
-    code:'UFC 317',
-    title:'Du Plessis vs Strickland 3',
-    titleKo:'두 플레시 대 스트릭랜드 3 — 미들급 타이틀',
-    dateUtc:'2026-05-03T02:00:00Z',
-    kstString:'2026년 5월 3일(일) 오전 11:00 KST',
-    venue:'T-Mobile 아레나',
-    city:'네바다 라스베이거스',
-    where:'TVING · ESPN+ PPV',
-    rounds:5,
-    headline:'미들급 라이벌리의 최종장',
-    summary:'두 번 봐도 모자란 라이벌의 3차전. 두 플레시가 또다시 후반 라운드에서 폭주했고, 스트릭랜드의 카디오가 4라운드부터 꺾였다.',
-    keyPoints:[],
-    prediction:null,
-    mainCard:[
-      { wc:'미들급 5R · 타이틀전', a:'jdm', b:'strickland', winner:'jdm', way:'판정 (49-46, 49-46, 48-47)' },
-      { wc:'라이트헤비급 5R', a:'pereira', b:'ankalaev', winner:'ankalaev', way:'판정 (만장일치)' }
-    ],
-    prelims:[
-      { wc:'밴텀급', a:'omalley', b:'merab', winner:'merab', way:'판정' }
-    ],
-    results: { topNote:'대회 평가: 5점 만점에 4.2 / 메인 카드 후반부 폭발' }
-  }
-];
-
-const RANKINGS = {
-  '체급별 랭킹':[
-    {wc:'헤비급', champ:'aspinall',
-     list:['jones'], desc:'존스 은퇴 후 아스피날이 정식 챔피언으로 인정됨.'},
-    {wc:'라이트헤비급', champ:'ankalaev',
-     list:['pereira']},
-    {wc:'미들급', champ:'jdm',
-     list:['strickland']},
-    {wc:'라이트급', champ:'topuria',
-     list:['oliveira']},
-    {wc:'밴텀급', champ:'merab',
-     list:['omalley','sandhagen','figueiredo']}
-  ]
-};
+/* 실데이터는 data/*.json에서만 로드한다. */
+const FIGHTERS = {};
+let EVENTS = [];
+const RANKINGS = {'체급별 랭킹':[]};
 
 /* =========================================================
    라우터 / 뷰
    ========================================================= */
 const $app = document.getElementById('app');
 const $tabs = document.querySelectorAll('.tabbar a');
+const $dialog = document.getElementById('appDialog');
+const $dialogBody = document.getElementById('dialogBody');
+let appState = 'loading';
+let loadErrors = [];
+let DATA_META = {generatedAt:null, source:'Wikipedia', upcoming:0, past:0};
+let scheduleFilter = 'all';
+let rankingFilter = 0;
+let fighterQuery = '';
+let fighterLimit = 60;
+
+function esc(value){
+  return String(value??'').replace(/[&<>"']/g, ch=>({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  })[ch]);
+}
+function cleanExternalText(value){
+  return String(value??'').replace(/[<>]/g,'').trim();
+}
+function safeExternalUrl(value){
+  if(!value) return '';
+  try {
+    const url = new URL(value, location.origin);
+    return /^https?:$/.test(url.protocol) ? url.href : '';
+  } catch(_){ return ''; }
+}
+function eventSortValue(e){
+  const raw = e.dateUtc || (e.dateIso ? e.dateIso+'T12:00:00Z' : '');
+  const n = raw ? new Date(raw).getTime() : Number.MAX_SAFE_INTEGER;
+  return Number.isFinite(n) ? n : Number.MAX_SAFE_INTEGER;
+}
+function todayKstIso(){
+  const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const value=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+  return `${value.year}-${value.month}-${value.day}`;
+}
 
 function fmtDate(d){
+  if(!d) return '시작 시각 확인 중';
   const dt = new Date(d);
   const ko = dt.toLocaleString('ko-KR', { timeZone:'Asia/Seoul', month:'long', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false });
   return ko;
 }
 function fmtShort(d){
+  if(!d) return {m:'미정',day:'-',w:''};
   const dt = new Date(d);
   const m = dt.toLocaleString('ko-KR',{timeZone:'Asia/Seoul', month:'short'});
   const day = dt.toLocaleString('ko-KR',{timeZone:'Asia/Seoul', day:'numeric'});
   const w = dt.toLocaleString('ko-KR',{timeZone:'Asia/Seoul', weekday:'short'});
   return {m, day, w};
 }
+function fmtEventShort(e){
+  if(e.dateUtc) return fmtShort(e.dateUtc);
+  if(!e.dateIso) return {m:'미정',day:'-',w:''};
+  const [y,m,d] = e.dateIso.split('-').map(Number);
+  const dt = new Date(Date.UTC(y,m-1,d,12));
+  return {
+    m:dt.toLocaleString('ko-KR',{timeZone:'UTC',month:'short'}),
+    day:dt.toLocaleString('ko-KR',{timeZone:'UTC',day:'numeric'}),
+    w:dt.toLocaleString('ko-KR',{timeZone:'UTC',weekday:'short'})
+  };
+}
+function eventTimeLabel(e){
+  return e.timeConfirmed ? `${fmtDate(e.dateUtc)} KST` : `현지 날짜 ${e.dateLabel||e.dateIso||'미정'} · 시작 시각 확인 중`;
+}
 function getFighter(id){ return FIGHTERS[id] || REAL_FIGHTERS[id] || {name: (id||'TBA').replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase()), record:'-', rank:'-', recent:[], style:'데이터 수집 중'} }
 function getEvent(id){ return EVENTS.find(e=>e.id===id) }
 function nextEvent(){
-  const now = new Date();
-  return EVENTS.filter(e=>new Date(e.dateUtc) > now).sort((a,b)=>new Date(a.dateUtc)-new Date(b.dateUtc))[0];
+  return upcomingEvents()[0];
 }
 function pastEvents(){
-  const now = new Date();
-  return EVENTS.filter(e=>new Date(e.dateUtc) <= now).sort((a,b)=>new Date(b.dateUtc)-new Date(a.dateUtc));
+  return EVENTS.filter(e=>e.status==='past').sort((a,b)=>eventSortValue(b)-eventSortValue(a));
 }
 function upcomingEvents(){
-  const now = new Date();
-  return EVENTS.filter(e=>new Date(e.dateUtc) > now).sort((a,b)=>new Date(a.dateUtc)-new Date(b.dateUtc));
+  return EVENTS.filter(e=>e.status==='upcoming').sort((a,b)=>eventSortValue(a)-eventSortValue(b));
 }
 function countdownParts(targetIso){
+  if(!targetIso) return null;
   const now = new Date();
   const t = new Date(targetIso) - now;
   const sec = Math.max(0, Math.floor(t/1000));
@@ -692,6 +533,23 @@ function countdownParts(targetIso){
   const m = Math.floor((sec%3600)/60);
   const s = sec%60;
   return {d,h,m,s};
+}
+function freshnessInfo(){
+  if(!DATA_META.generatedAt) return {text:'업데이트 시각을 확인할 수 없습니다.',stale:true,days:null};
+  const age = Date.now()-new Date(DATA_META.generatedAt).getTime();
+  const days = Math.max(0,Math.floor(age/86400000));
+  return {
+    days,
+    stale:age>48*60*60*1000,
+    text:days===0?'오늘 업데이트':`${days}일 전 업데이트`
+  };
+}
+function freshnessBanner(){
+  const f=freshnessInfo();
+  return `<div class="freshness ${f.stale?'stale':''}" role="${f.stale?'alert':'status'}">
+    <span><strong>데이터 상태</strong> · ${esc(f.text)}${f.stale?' — 일정이 변경됐을 수 있습니다.':''}</span>
+    <span>${DATA_META.upcoming}개 예정</span>
+  </div>`;
 }
 
 /* ---------- 컴포넌트 ---------- */
@@ -786,6 +644,7 @@ function eventScore(ev){
   return s;
 }
 function dLabel(dateUtc){
+  if(!dateUtc) return '시각 미정';
   const days = Math.ceil((new Date(dateUtc) - new Date())/86400000);
   if(days<=0) return 'LIVE';
   return 'D-'+days;
@@ -801,6 +660,7 @@ function setHomeSort(mode){
 }
 function homeSortSection(){
   const cover = nextEvent();
+  if(!cover) return '';
   const rest = upcomingEvents().filter(ev=>ev.id!==cover.id);
   if(homeSort==='pop') rest.sort((x,y)=>eventScore(y)-eventScore(x));
   else rest.sort((x,y)=>new Date(x.dateUtc)-new Date(y.dateUtc));
@@ -842,12 +702,21 @@ function homeSortSection(){
 
 function viewHome(){
   const e = nextEvent();
+  if(!e){
+    const recent = pastEvents().slice(0,3);
+    return `
+      <h1 class="page-heading">다음 UFC 대회를 확인 중입니다<small>새 일정이 발표되거나 데이터가 갱신되면 이곳에 표시됩니다.</small></h1>
+      ${freshnessBanner()}
+      <div class="state-card"><div><h2>예정된 대회가 없습니다</h2><p>일정 데이터가 오래됐거나 다음 대회 시작 시각이 아직 발표되지 않았을 수 있습니다.</p><a class="btn primary" href="#schedule">일정 화면 확인</a></div></div>
+      ${recent.length?`<h2 class="section-title"><span class="bar"></span>최근 결과</h2><div class="event-list">${recent.map(eventListItem).join('')}</div>`:''}`;
+  }
   const cd = countdownParts(e.dateUtc);
   const main = e.mainCard?.[0];
   const a = main ? getFighter(main.a) : null;
   const b = main ? getFighter(main.b) : null;
 
   return `
+  ${freshnessBanner()}
   ${main ? `
   <section class="cover">
     <div class="cover-kick">다음 대회 메인이벤트 · ${dLabel(e.dateUtc)}</div>
@@ -865,13 +734,13 @@ function viewHome(){
       </a>
     </div>
     <h1 class="cover-title">${e.code}: ${e.titleKo||e.title}</h1>
-    <div class="cover-meta">${e.kstString} · ${e.venue}, ${e.city}</div>
-    <div class="countdown cover-cd" id="cdHero">
+    <div class="cover-meta">${eventTimeLabel(e)} · ${e.venue}, ${e.city}</div>
+    ${cd?`<div class="countdown cover-cd" id="cdHero" aria-label="경기 시작까지 남은 시간">
       <div class="cd-cell"><div class="num" data-cd="d">${cd.d}</div><div class="lbl">일</div></div>
       <div class="cd-cell"><div class="num" data-cd="h">${String(cd.h).padStart(2,'0')}</div><div class="lbl">시</div></div>
       <div class="cd-cell"><div class="num" data-cd="m">${String(cd.m).padStart(2,'0')}</div><div class="lbl">분</div></div>
       <div class="cd-cell"><div class="num" data-cd="s">${String(cd.s).padStart(2,'0')}</div><div class="lbl">초</div></div>
-    </div>
+    </div>`:`<div class="box" style="margin-top:14px;color:var(--muted);font-size:13px">정확한 시작 시각이 발표되면 한국시간 카운트다운을 제공합니다.</div>`}
     <div class="cta"><a class="btn primary" href="#event/${e.id}">이 경기 자세히 보기 →</a></div>
   </section>` : ''}
 
@@ -882,7 +751,7 @@ function viewHome(){
   <div class="section-title"><span class="bar"></span>지난 결과</div>
   <div class="event-list">
     ${pastEvents().slice(0,3).map(ev=>{
-      const d = fmtShort(ev.dateUtc);
+      const d = fmtEventShort(ev);
       const m = ev.mainCard?.[0];
       const winner = m && m.winner ? getFighter(m.winner).name : '결과 미입력';
       return `
@@ -898,44 +767,70 @@ function viewHome(){
   </div>
 
   <div class="disclaimer">
-    일정·결과·랭킹·선수 정보는 <b>Wikipedia</b>(List of UFC events / UFC rankings)에서 <b>매일 오전 6시 KST</b> 자동수집한 데이터입니다. 경기 시간·대진은 변동될 수 있습니다.
+    일정·결과·랭킹·선수 정보는 <b>Wikipedia</b>에서 자동수집합니다. 정확한 시작 시각이 없는 일정은 현지 날짜만 표시하며, 경기 시간·대진은 변경될 수 있습니다.
   </div>
   `;
 }
 
 /* ---------- 뷰: 일정 ---------- */
-function viewSchedule(){
-  const list = upcomingEvents();
+function isTitleEvent(ev){
+  return [...(ev.mainCard||[]),...(ev.prelims||[])].some(f=>{
+    const a=getFighter(f.a), b=getFighter(f.b);
+    return /타이틀/.test(f.wc||'') || a.rank==='챔피언' || b.rank==='챔피언';
+  });
+}
+function hasKoreanFighter(ev){
+  return [...(ev.mainCard||[]),...(ev.prelims||[])].some(f=>
+    [getFighter(f.a),getFighter(f.b)].some(x=>/대한민국|한국|Korea/i.test(`${x.country||''} ${x.en||''}`))
+  );
+}
+function filteredSchedule(){
+  return upcomingEvents().filter(ev=>{
+    if(scheduleFilter==='ppv') return /^UFC\s+\d+/i.test(ev.code||'');
+    if(scheduleFilter==='fightnight') return /fight night/i.test(ev.code||'');
+    if(scheduleFilter==='title') return isTitleEvent(ev);
+    if(scheduleFilter==='korean') return hasKoreanFighter(ev);
+    return true;
+  });
+}
+function setScheduleFilter(value){
+  scheduleFilter=value;
+  route({preserveScroll:true});
+}
+function eventListItem(ev){
+  const d = fmtEventShort(ev);
+  const m = ev.mainCard?.[0];
+  const m1 = m ? getFighter(m.a).name : 'TBA';
+  const m2 = m ? getFighter(m.b).name : 'TBA';
   return `
-  <div class="chips">
-    <div class="chip active">전체</div>
-    <div class="chip">PPV</div>
-    <div class="chip">파이트나이트</div>
-    <div class="chip">타이틀전</div>
-    <div class="chip">한국선수 출전</div>
+    <a href="#event/${ev.id}" class="event-item">
+      <div class="date-block"><div class="m">${esc(d.m)}</div><div class="d">${esc(d.day)}</div><div class="w">${esc(d.w)}</div></div>
+      <div>
+        <div class="title">${esc(ev.code)}: ${esc(ev.titleKo||ev.title)}</div>
+        <div class="meta">
+          <span><b>${esc(m1)}</b> vs <b>${esc(m2)}</b></span>
+          <span class="pill ghost">${esc(ev.timeConfirmed?fmtDate(ev.dateUtc)+' KST':'시작 시각 미정')}</span>
+          <span>· ${esc(ev.city)}</span>
+        </div>
+      </div>
+      <div class="chev" aria-hidden="true">›</div>
+    </a>`;
+}
+function viewSchedule(){
+  const list = filteredSchedule();
+  const filters=[
+    ['all','전체'],['ppv','PPV'],['fightnight','파이트나이트'],['title','타이틀전'],['korean','한국선수 출전']
+  ];
+  return `
+  <h1 class="page-heading">UFC 일정<small>현지 날짜와 확정된 한국시간을 구분해 보여드립니다.</small></h1>
+  ${freshnessBanner()}
+  <div class="chips" role="group" aria-label="일정 필터">
+    ${filters.map(([value,label])=>`<button type="button" class="chip ${scheduleFilter===value?'active':''}" aria-pressed="${scheduleFilter===value}" onclick="setScheduleFilter('${value}')">${label}</button>`).join('')}
   </div>
 
-  <div class="section-title"><span class="bar"></span>다가오는 경기</div>
+  <h2 class="section-title"><span class="bar"></span>다가오는 경기 · ${list.length}개</h2>
   <div class="event-list">
-    ${list.map(ev=>{
-      const d = fmtShort(ev.dateUtc);
-      const m = ev.mainCard?.[0];
-      const m1 = m ? getFighter(m.a).name : 'TBA';
-      const m2 = m ? getFighter(m.b).name : 'TBA';
-      return `
-      <a href="#event/${ev.id}" class="event-item">
-        <div class="date-block"><div class="m">${d.m}</div><div class="d">${d.day}</div><div class="w">${d.w}</div></div>
-        <div>
-          <div class="title">${ev.code}: ${ev.titleKo||ev.title}</div>
-          <div class="meta">
-            <span><b>${m1}</b> vs <b>${m2}</b></span>
-            <span class="pill ghost">${ev.kstString.split(' ').slice(0,3).join(' ')}</span>
-            <span>· ${ev.city}</span>
-          </div>
-        </div>
-        <div class="chev">›</div>
-      </a>`;
-    }).join('')}
+    ${list.length?list.map(eventListItem).join(''):`<div class="state-card"><div><h2>조건에 맞는 대회가 없습니다</h2><p>다른 필터를 선택하거나 다음 데이터 업데이트 후 다시 확인해주세요.</p></div></div>`}
   </div>
   `;
 }
@@ -944,49 +839,59 @@ function viewSchedule(){
 function viewResults(){
   const list = pastEvents();
   return `
-  <div class="section-title"><span class="bar"></span>최근 결과</div>
-  ${list.map(ev=>{
+  <h1 class="page-heading">UFC 결과<small>최근 종료된 대회의 메인 카드 결과입니다.</small></h1>
+  ${freshnessBanner()}
+  <h2 class="section-title"><span class="bar"></span>최근 결과 · ${list.length}개</h2>
+  ${list.length?list.map(ev=>{
     return `
     <div class="result-card">
-      <h4>${ev.code}: ${ev.titleKo||ev.title}</h4>
-      <div class="when">${ev.kstString} · ${ev.venue}, ${ev.city}</div>
+      <h3>${esc(ev.code)}: ${esc(ev.titleKo||ev.title)}</h3>
+      <div class="when">${esc(eventTimeLabel(ev))} · ${esc(ev.venue)}, ${esc(ev.city)}</div>
       ${(ev.mainCard||[]).map(f=>{
         const a=getFighter(f.a), b=getFighter(f.b);
         const aWin=f.winner===f.a, bWin=f.winner===f.b;
         return `
         <div class="result-fight">
-          <div class="${aWin?'nm win':'nm lose'}">${aWin?'✓ ':''}${a.name}</div>
-          <div class="vs-mid">vs<div class="way-tag">${f.way||''}</div></div>
-          <div class="${bWin?'nm win':'nm lose'} right" style="text-align:right">${bWin?'✓ ':''}${b.name}</div>
+          <div class="${aWin?'nm win':'nm lose'}">${aWin?'✓ ':''}${esc(a.name)}</div>
+          <div class="vs-mid">vs<div class="way-tag">${esc(f.way||'')}</div></div>
+          <div class="${bWin?'nm win':'nm lose'} right" style="text-align:right">${bWin?'✓ ':''}${esc(b.name)}</div>
         </div>`;
       }).join('')}
       <div style="margin-top:10px"><a href="#event/${ev.id}" class="pill ghost">자세히 보기 →</a></div>
     </div>`;
-  }).join('')}
+  }).join(''):`<div class="state-card"><div><h2>결과 데이터가 없습니다</h2><p>자동수집 상태를 확인해주세요.</p></div></div>`}
   `;
 }
 
 /* ---------- 뷰: 랭킹 ---------- */
+function setRankingFilter(index){
+  rankingFilter=Number(index)||0;
+  route({preserveScroll:true});
+}
 function viewRankings(){
+  const groups=RANKINGS['체급별 랭킹'];
+  if(!groups.length) return `<h1 class="page-heading">UFC 랭킹</h1><div class="state-card"><div><h2>랭킹 데이터가 없습니다</h2><p>다음 자동수집 후 다시 확인해주세요.</p></div></div>`;
+  rankingFilter=Math.min(rankingFilter,groups.length-1);
+  const g=groups[rankingFilter];
+  const champ = getFighter(g.champ);
   return `
-  <div class="chips">
-    ${RANKINGS['체급별 랭킹'].map((g,i)=>`<div class="chip ${i===0?'active':''}" data-rank="${i}">${g.wc}</div>`).join('')}
+  <h1 class="page-heading">UFC 랭킹<small>체급을 선택해 챔피언과 랭커를 확인하세요.</small></h1>
+  ${freshnessBanner()}
+  <div class="chips" role="tablist" aria-label="체급 선택">
+    ${groups.map((item,i)=>`<button type="button" class="chip ${i===rankingFilter?'active':''}" role="tab" aria-selected="${i===rankingFilter}" onclick="setRankingFilter(${i})">${esc(item.wc)}</button>`).join('')}
   </div>
 
-  ${RANKINGS['체급별 랭킹'].map((g,i)=>{
-    const champ = getFighter(g.champ);
-    return `
-    <div class="card" style="margin-bottom:12px">
+  <div class="card" style="margin-bottom:12px" role="tabpanel">
       <div style="padding:14px 14px 10px 14px;border-bottom:1px solid var(--line)">
-        <div style="font-size:11px;color:var(--gold-2);font-weight:800;letter-spacing:.06em">👑 ${g.wc} 챔피언</div>
+        <div style="font-size:12px;color:var(--gold-2);font-weight:800;letter-spacing:.06em">챔피언 · ${esc(g.wc)}</div>
         <a href="#fighter/${g.champ}" style="display:flex;align-items:center;gap:10px;margin-top:6px">
           ${avatarBox(champ,44)}
           <div>
-            <div style="font-weight:800">${champ.name}</div>
-            <div style="font-size:12px;color:var(--muted)">${champ.record} · ${champ.country||''}</div>
+            <div style="font-weight:800">${esc(champ.name)}</div>
+            <div style="font-size:12px;color:var(--muted)">${esc(champ.record)} · ${esc(champ.country||'')}</div>
           </div>
         </a>
-        ${g.desc?`<div style="margin-top:8px;font-size:12px;color:var(--muted)">${g.desc}</div>`:''}
+        ${g.desc?`<div style="margin-top:8px;font-size:12px;color:var(--muted)">${esc(g.desc)}</div>`:''}
       </div>
       ${g.list.map((id,idx)=>{
         const f = getFighter(id);
@@ -994,37 +899,62 @@ function viewRankings(){
         <a href="#fighter/${id}" class="rank-row">
           <div class="rank-num">#${idx+1}</div>
           <div>
-            <div class="nm">${f.name}</div>
-            <div class="country">${f.country||''} · <span class="rec">${f.record}</span></div>
+            <div class="nm">${esc(f.name)}</div>
+            <div class="country">${esc(f.country||'')} · <span class="rec">${esc(f.record)}</span></div>
           </div>
-          <div class="chev">›</div>
+          <div class="chev" aria-hidden="true">›</div>
         </a>`;
       }).join('')}
-    </div>`;
-  }).join('')}
+  </div>
   `;
 }
 
 /* ---------- 뷰: 선수 목록 ---------- */
-function viewFighters(){
-  const items = Object.values(FIGHTERS);
-  return `
-  <input id="fSearch" placeholder="선수 검색..." style="width:100%;height:44px;padding:0 14px;background:var(--bg-2);border:1px solid var(--line);border-radius:12px;color:#fff;outline:none;margin-bottom:14px"/>
-  <div id="fList" class="event-list">
-    ${items.map(f=>`
-      <a href="#fighter/${f.id}" class="event-item" data-name="${f.name} ${f.en}">
+function fighterMatches(f,q){
+  const haystack=`${f.name||''} ${f.en||''} ${f.country||''} ${f.weight||''}`.toLowerCase();
+  return !q || haystack.includes(q.toLowerCase());
+}
+function fighterListHtml(){
+  const all=Object.values(FIGHTERS).filter(f=>fighterMatches(f,fighterQuery));
+  const visible=all.slice(0,fighterLimit);
+  return {
+    total:all.length,
+    html:visible.map(f=>`
+      <a href="#fighter/${f.id}" class="event-item">
         ${avatarBox(f,48)}
         <div>
-          <div class="title">${f.name}${f.en && f.en!==f.name ? ` <span style="font-size:11px;color:var(--muted)">(${f.en})</span>`:''}</div>
+          <div class="title">${esc(f.name)}${f.en && f.en!==f.name ? ` <span style="font-size:12px;color:var(--muted)">(${esc(f.en)})</span>`:''}</div>
           <div class="meta">
-            <span>${f.weight}</span>
-            <span>· ${f.record}</span>
-            <span class="pill gold">${f.rank}</span>
+            <span>${esc(f.weight)}</span>
+            <span>· ${esc(f.record)}</span>
+            <span class="pill gold">${esc(f.rank)}</span>
           </div>
         </div>
-        <div class="chev">›</div>
-      </a>`).join('')}
-  </div>
+        <div class="chev" aria-hidden="true">›</div>
+      </a>`).join('')
+  };
+}
+function renderFighterList(){
+  const data=fighterListHtml();
+  const list=document.getElementById('fList');
+  const summary=document.getElementById('fSummary');
+  const more=document.getElementById('fMore');
+  if(list) list.innerHTML=data.html||`<div class="state-card"><div><h2>검색 결과가 없습니다</h2><p>한글명, 영문명, 체급으로 다시 검색해보세요.</p></div></div>`;
+  if(summary) summary.textContent=`${data.total.toLocaleString()}명 중 ${Math.min(data.total,fighterLimit).toLocaleString()}명 표시`;
+  if(more) more.hidden=data.total<=fighterLimit;
+}
+function loadMoreFighters(){
+  fighterLimit+=60;
+  renderFighterList();
+}
+function viewFighters(){
+  return `
+  <h1 class="page-heading">UFC 선수<small>한글명, 영문명, 체급으로 검색할 수 있습니다.</small></h1>
+  <label class="sr-only" for="fSearch">선수 검색</label>
+  <input id="fSearch" type="search" value="${esc(fighterQuery)}" placeholder="선수 검색..." autocomplete="off" style="width:100%;height:48px;padding:0 14px;background:var(--bg-2);border:1px solid var(--line-2);border-radius:12px;color:#fff;outline:none;margin-bottom:14px"/>
+  <div id="fSummary" class="list-summary" aria-live="polite"></div>
+  <div id="fList" class="event-list"></div>
+  <button id="fMore" class="btn ghost load-more" type="button" onclick="loadMoreFighters()">선수 더 보기</button>
   `;
 }
 
@@ -1071,20 +1001,21 @@ function recentFormText(recent){
 }
 
 function viewFighter(id){
+  if(!FIGHTERS[id] && !REAL_FIGHTERS[id]) return `<div class="state-card"><div><h1>선수를 찾을 수 없습니다</h1><p>주소가 바뀌었거나 선수 데이터가 갱신 중일 수 있습니다.</p><a class="btn primary" href="#fighters">선수 목록으로</a></div></div>`;
   const f = getFighter(id);
   const form = recentFormText(f.recent);
   return `
-  <div class="back-bar"><button onclick="history.back()">←</button><h3>${f.name}</h3></div>
+  <div class="back-bar"><button type="button" aria-label="이전 화면으로" onclick="history.back()">←</button><span>${esc(f.weight||'선수')}</span></div>
 
   <div class="fighter-hero">
     <div class="av">${avatarBox(f,88)}</div>
     <div>
-      <h2>${f.name}</h2>
-      ${f.en && f.en!==f.name ? `<div class="nick">${f.en}${f.nick?` · "${f.nick}"`:''}</div>` : (f.nick?`<div class="nick">"${f.nick}"</div>`:'')}
-      <div class="rec">${f.record||'-'} · ${f.weight||'-'}</div>
+      <h1>${esc(f.name)}</h1>
+      ${f.en && f.en!==f.name ? `<div class="nick">${esc(f.en)}${f.nick?` · "${esc(f.nick)}"`:''}</div>` : (f.nick?`<div class="nick">"${esc(f.nick)}"</div>`:'')}
+      <div class="rec">${esc(f.record||'-')} · ${esc(f.weight||'-')}</div>
       <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
-        <span class="pill gold">${f.rank||'랭킹 외'}</span>
-        ${f.country?`<span class="pill ghost">${f.country}</span>`:''}
+        <span class="pill gold">${esc(f.rank||'랭킹 외')}</span>
+        ${f.country?`<span class="pill ghost">${esc(f.country)}</span>`:''}
       </div>
     </div>
   </div>
@@ -1121,7 +1052,7 @@ function viewFighter(id){
     `).join('')}
   </div>` : `<div class="box" style="color:var(--muted)">최근 경기 데이터가 아직 없습니다.</div>`}
 
-  <div class="disclaimer">전적·랭킹은 Wikipedia(UFC rankings / 이벤트 결과)를 매일 오전 6시 KST 자동수집한 데이터입니다.</div>
+  <div class="disclaimer">전적·랭킹은 Wikipedia에서 자동수집한 참고 정보입니다. ${esc(freshnessInfo().text)}</div>
   `;
 }
 
@@ -1220,21 +1151,21 @@ function opinionBlock(eventId){
   ${op.communities.map(c=>`
     <div class="box" style="margin-bottom:12px">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-        <span style="font-size:20px">${c.flag||'🌐'}</span>
-        <b>${c.region||''}</b>
-        <span style="font-size:12px;color:var(--muted)">${c.community||''}${c.members?` · ${c.members}`:''}</span>
-        ${c.sentiment?`<span class="pill ${/기대|긍정|높/.test(c.sentiment)?'green':(/회의|부정|우려/.test(c.sentiment)?'red':'ghost')}">${c.sentiment}</span>`:''}
+        <span style="font-size:20px">${esc(c.flag||'🌐')}</span>
+        <b>${esc(c.region||'')}</b>
+        <span style="font-size:12px;color:var(--muted)">${esc(c.community||'')}${c.members?` · ${esc(c.members)}`:''}</span>
+        ${c.sentiment?`<span class="pill ${/기대|긍정|높/.test(c.sentiment)?'green':(/회의|부정|우려/.test(c.sentiment)?'red':'ghost')}">${esc(c.sentiment)}</span>`:''}
       </div>
-      ${c.summary_ko?`<p style="margin:10px 0 0 0;font-size:14px;line-height:1.6">${c.summary_ko}</p>`:''}
+      ${c.summary_ko?`<p style="margin:10px 0 0 0;font-size:14px;line-height:1.6">${esc(c.summary_ko)}</p>`:''}
       ${(c.quotes&&c.quotes.length)?`
       <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
         ${c.quotes.map(q=>`
           <div style="border-left:3px solid var(--line-2);padding:4px 0 4px 10px;font-size:13px;color:var(--text)">
-            <span style="color:var(--muted)">“</span>${q.text_ko}<span style="color:var(--muted)">”</span>
-            ${q.score?`<span style="color:var(--dim);font-size:11px"> · ▲${q.score}</span>`:''}
+            <span style="color:var(--muted)">“</span>${esc(q.text_ko)}<span style="color:var(--muted)">”</span>
+            ${q.score?`<span style="color:var(--dim);font-size:11px"> · ▲${Number(q.score)||0}</span>`:''}
           </div>`).join('')}
       </div>`:''}
-      ${c.thread_url?`<div style="margin-top:10px"><a href="${c.thread_url}" target="_blank" rel="noopener" class="pill ghost">원문 커뮤니티 →</a></div>`:''}
+      ${c.thread_url?`<div style="margin-top:10px"><a href="${safeExternalUrl(c.thread_url)}" target="_blank" rel="noopener noreferrer" class="pill ghost">원문 커뮤니티 →</a></div>`:''}
     </div>`).join('')}
   <div style="font-size:11px;color:var(--dim);margin:2px 0 4px 2px">※ 커뮤니티 이용자 의견으로 사이트의 입장이 아닙니다. 원문 출처는 각 링크 참고.</div>
   `;
@@ -1309,22 +1240,23 @@ function toteBlock(e){
 
 function viewEvent(id){
   const e = getEvent(id);
-  if(!e) return `<div class="back-bar"><button onclick="history.back()">←</button><h3>이벤트를 찾을 수 없습니다</h3></div>`;
-  const isPast = new Date(e.dateUtc) < new Date();
+  if(!e) return `<div class="state-card"><div><h1>대회를 찾을 수 없습니다</h1><p>주소가 바뀌었거나 일정 데이터가 갱신 중일 수 있습니다.</p><a class="btn primary" href="#schedule">일정으로 이동</a></div></div>`;
+  const isPast = e.status==='past';
 
   return `
-  <div class="back-bar"><button onclick="history.back()">←</button><h3>${e.code}</h3></div>
+  <div class="back-bar"><button type="button" aria-label="이전 화면으로" onclick="history.back()">←</button><span>${esc(e.code)}</span></div>
 
   <div class="ev-banner">
-    <span class="badge">${e.code}</span>
-    <h2>${e.titleKo||e.title}</h2>
-    <div class="when">${e.kstString}</div>
+    <span class="badge">${esc(e.code)}</span>
+    <h1>${esc(e.titleKo||e.title)}</h1>
+    <div class="when">${esc(eventTimeLabel(e))}</div>
     <div class="ev-grid">
-      <div class="meta-cell"><div class="k">한국시간</div><div class="v">${e.kstString.split('KST')[0].trim()}</div></div>
-      <div class="meta-cell"><div class="k">장소</div><div class="v">${e.venue}<br><span style="color:var(--muted);font-weight:500;font-size:11px">${e.city}</span></div></div>
-      <div class="meta-cell"><div class="k">시청처</div><div class="v">${e.where}</div></div>
+      <div class="meta-cell"><div class="k">${e.timeConfirmed?'한국시간':'일정'}</div><div class="v">${esc(e.timeConfirmed?fmtDate(e.dateUtc):e.dateLabel||e.dateIso||'미정')}</div></div>
+      <div class="meta-cell"><div class="k">장소</div><div class="v">${esc(e.venue)}<br><span style="color:var(--muted);font-weight:500;font-size:12px">${esc(e.city)}</span></div></div>
+      <div class="meta-cell"><div class="k">시청처</div><div class="v">${esc(e.where)}</div></div>
       <div class="meta-cell"><div class="k">상태</div><div class="v">${isPast?'<span class="pill green">종료</span>':'<span class="pill red">예정</span>'}</div></div>
     </div>
+    ${!isPast?`<div class="cta"><button class="btn ghost" type="button" onclick="downloadCalendar('${e.id}')">캘린더에 추가</button></div>`:''}
   </div>
 
   ${hypeBlock(e)}
@@ -1339,11 +1271,11 @@ function viewEvent(id){
   <div class="section-title"><span class="bar"></span>한국어 요약</div>
   <div class="box">
     <h3><span class="ic">📝</span>${e.headline||'요약'}</h3>
-    <p>${e.summary}</p>
-    <div class="source-line">
-      <span>출처: 공식 발표 + 영문 매체 자동요약 (Sherdog, MMAFighting 헤드라인)</span>
-      <span>업데이트: 매일 오전 6시 KST</span>
-    </div>
+      <p>${esc(e.summary)}</p>
+      <div class="source-line">
+        <span>출처: ${e.wikiUrl?`<a href="${safeExternalUrl(e.wikiUrl)}" target="_blank" rel="noopener noreferrer">Wikipedia 원문</a>`:'Wikipedia'} · AI 한국어 요약</span>
+        <span>${esc(freshnessInfo().text)}</span>
+      </div>
   </div>`:''}
 
   ${opinionBlock(id)}
@@ -1398,11 +1330,34 @@ function viewEvent(id){
 }
 
 /* ---------- 라우터 ---------- */
-function route(){
+function updateDocumentMeta(base,arg){
+  const labels={home:'홈',schedule:'일정',results:'결과',rankings:'랭킹',fighters:'선수'};
+  let title=labels[base]||'홈';
+  if(base==='event'){
+    const e=getEvent(arg); title=e?`${e.code}: ${e.titleKo||e.title}`:'대회';
+  } else if(base==='fighter'){
+    const f=FIGHTERS[arg]; title=f?f.name:'선수';
+  }
+  document.title=base==='home'?'FightOclock · UFC 일정 한국어 가이드':`${title} · FightOclock`;
+}
+function route(options={}){
   const hash = location.hash.replace(/^#/,'') || 'home';
   const [base, arg] = hash.split('/');
   let html = '';
-  $tabs.forEach(a=>a.classList.toggle('active', a.dataset.tab===base));
+  $tabs.forEach(a=>{
+    const active=a.dataset.tab===base;
+    a.classList.toggle('active',active);
+    if(active) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+  });
+  if(appState==='loading'){
+    $app.innerHTML=`<div class="state-card"><div><h1>최신 데이터를 불러오는 중입니다</h1><p>일정, 선수, 랭킹 정보를 확인하고 있습니다.</p></div></div>`;
+    return;
+  }
+  if(appState==='error' && !EVENTS.length){
+    $app.setAttribute('aria-busy','false');
+    $app.innerHTML=`<div class="state-card"><div><h1>데이터를 불러오지 못했습니다</h1><p>샘플 대진을 대신 보여주지 않습니다. 네트워크나 자동수집 상태를 확인한 뒤 다시 시도해주세요.</p><button class="btn primary" type="button" onclick="retryData()">다시 불러오기</button></div></div>`;
+    return;
+  }
   switch(base){
     case 'home': html = viewHome(); break;
     case 'schedule': html = viewSchedule(); break;
@@ -1413,17 +1368,19 @@ function route(){
     case 'event': html = viewEvent(arg); break;
     default: html = viewHome();
   }
-  $app.innerHTML = `<div class="view active">${html}</div>`;
-  window.scrollTo({top:0,behavior:'instant'});
+  $app.setAttribute('aria-busy','false');
+  $app.innerHTML = `<div class="view active ${base==='home'?'home-view':''}">${html}</div>`;
+  updateDocumentMeta(base,arg);
+  if(!options.preserveScroll) window.scrollTo({top:0,behavior:'instant'});
 
   /* 검색 */
   const $search = document.getElementById('fSearch');
   if($search){
+    renderFighterList();
     $search.addEventListener('input', e=>{
-      const q = e.target.value.toLowerCase();
-      document.querySelectorAll('#fList .event-item').forEach(it=>{
-        it.style.display = it.dataset.name.toLowerCase().includes(q) ? '' : 'none';
-      });
+      fighterQuery=e.target.value;
+      fighterLimit=60;
+      renderFighterList();
     });
   }
 
@@ -1431,12 +1388,14 @@ function route(){
   document.querySelectorAll('.pick-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const ev=btn.dataset.ev, pick=btn.dataset.pick;
+      let prev=null, next=pick;
       try{
-        if(localStorage.getItem('pick:'+ev)===pick) localStorage.removeItem('pick:'+ev);
+        prev=localStorage.getItem('pick:'+ev);
+        if(prev===pick){ localStorage.removeItem('pick:'+ev); next=null; }
         else localStorage.setItem('pick:'+ev, pick);
       }catch(_){}
-      if(typeof window.recordPick==='function'){ try{ window.recordPick(ev,pick); }catch(_){} }
-      route();
+      if(typeof window.recordPick==='function'){ try{ window.recordPick(ev,next,prev); }catch(_){} }
+      route({preserveScroll:true});
     });
   });
 
@@ -1444,20 +1403,82 @@ function route(){
   document.querySelectorAll('.react-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const ev = btn.dataset.event, emoji = btn.dataset.react;
-      let prev = null;
+      let prev = null, next=emoji;
       try {
         prev = localStorage.getItem('react:'+ev);
-        if(prev===emoji){ localStorage.removeItem('react:'+ev); } // 다시 누르면 취소
+        if(prev===emoji){ localStorage.removeItem('react:'+ev); next=null; }
         else { localStorage.setItem('react:'+ev, emoji); }
       } catch(_){}
-      // Firebase 연결 시 전역 집계 반영 (있을 때만)
       if(typeof window.recordReaction==='function'){
-        try { window.recordReaction(ev, emoji, prev); } catch(_){}
+        try { window.recordReaction(ev, next, prev); } catch(_){}
       }
-      route(); // 하이라이트/카운트 갱신
+      route({preserveScroll:true});
     });
   });
 }
+
+function showDialog(title,body){
+  document.getElementById('dialogTitle').textContent=title;
+  $dialogBody.innerHTML=body;
+  if(typeof $dialog.showModal==='function') $dialog.showModal(); else $dialog.setAttribute('open','');
+}
+function closeDialog(){ if($dialog.open) $dialog.close(); else $dialog.removeAttribute('open'); }
+function showReminderDialog(){
+  const e=nextEvent();
+  showDialog('경기 알림 · 캘린더',e?`
+    <p>브라우저를 닫아도 놓치지 않도록 다음 대회를 기기 캘린더에 저장할 수 있습니다.</p>
+    <div class="box"><strong>${esc(e.code)}: ${esc(e.titleKo||e.title)}</strong><p style="margin-top:8px">${esc(eventTimeLabel(e))}</p></div>
+    <div class="modal-actions"><button type="button" class="btn primary" onclick="downloadCalendar('${e.id}')">캘린더 파일 받기</button><a class="btn ghost" href="#event/${e.id}" onclick="closeDialog()">대회 상세</a></div>
+    ${e.timeConfirmed?'':`<p style="margin-top:14px">정확한 시작 시각이 아직 없어 종일 일정으로 저장됩니다. 시간이 확정되면 다시 저장해주세요.</p>`}
+  `:`<p>현재 저장할 예정 대회가 없습니다. 데이터 업데이트 후 다시 확인해주세요.</p>`);
+}
+function showSettingsDialog(){
+  const wide=document.body.classList.contains('wide-layout');
+  showDialog('사이트 설정',`
+    <div class="setting-row"><label for="wideSetting"><strong>넓은 화면 사용</strong><br><span style="color:var(--muted);font-size:12px">데스크톱에서 카드 영역을 넓힙니다.</span></label><input id="wideSetting" type="checkbox" ${wide?'checked':''} onchange="setWideLayout(this.checked)"></div>
+    <div class="setting-row"><div><strong>데이터 상태</strong><br><span style="color:var(--muted);font-size:12px">${esc(freshnessInfo().text)}</span></div><button type="button" class="pill ghost" onclick="retryData()">새로고침</button></div>
+    <div class="setting-row"><div><strong>내 반응 초기화</strong><br><span style="color:var(--muted);font-size:12px">이 기기에 저장된 투표와 반응만 삭제합니다.</span></div><button type="button" class="pill ghost" onclick="clearPreferences()">초기화</button></div>
+  `);
+}
+function setWideLayout(enabled){
+  document.body.classList.toggle('wide-layout',Boolean(enabled));
+  try{localStorage.setItem('wide-layout',enabled?'1':'0')}catch(_){}
+}
+function clearPreferences(){
+  if(!confirm('이 기기에 저장된 FightOclock 투표와 반응을 모두 삭제할까요?')) return;
+  try{
+    Object.keys(localStorage).filter(k=>k.startsWith('pick:')||k.startsWith('react:')).forEach(k=>localStorage.removeItem(k));
+  }catch(_){}
+  closeDialog();
+  route({preserveScroll:true});
+}
+function icsEscape(value){return String(value||'').replace(/([,;\\])/g,'\\$1').replace(/\n/g,'\\n')}
+function calendarEndDate(dateIso){
+  const d=new Date(`${dateIso}T12:00:00Z`); d.setUTCDate(d.getUTCDate()+1);
+  return d.toISOString().slice(0,10).replace(/-/g,'');
+}
+function downloadCalendar(id){
+  const e=getEvent(id); if(!e) return;
+  const start=e.timeConfirmed
+    ?`DTSTART:${new Date(e.dateUtc).toISOString().replace(/[-:]/g,'').replace('.000','')}`
+    :`DTSTART;VALUE=DATE:${(e.dateIso||'').replace(/-/g,'')}`;
+  const end=e.timeConfirmed
+    ?`DTEND:${new Date(new Date(e.dateUtc).getTime()+3*60*60*1000).toISOString().replace(/[-:]/g,'').replace('.000','')}`
+    :`DTEND;VALUE=DATE:${calendarEndDate(e.dateIso)}`;
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//FightOclock//KO','CALSCALE:GREGORIAN','BEGIN:VEVENT',
+    `UID:${e.id}@fightoclock.kr`,start,end,`SUMMARY:${icsEscape(`${e.code}: ${e.titleKo||e.title}`)}`,
+    `LOCATION:${icsEscape(`${e.venue}, ${e.city}`)}`,`DESCRIPTION:${icsEscape(e.timeConfirmed?'한국시간 확정 일정':'시작 시각 미정 · 현지 날짜 기준')}`,
+    'END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const url=URL.createObjectURL(new Blob([ics],{type:'text/calendar;charset=utf-8'}));
+  const a=document.createElement('a'); a.href=url; a.download=`fightoclock-${e.id}.ics`; a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+async function retryData(){
+  closeDialog();
+  appState='loading'; $app.setAttribute('aria-busy','true'); route();
+  await loadRealData(); route();
+}
+
 /* ---------- 실데이터 로더 (data/*.json) ---------- */
 let REAL_FIGHTERS = {};
 let OPINIONS = {};
@@ -1489,18 +1510,18 @@ function transformFighter(f){
   const recent = (f.recent||[]).map(function(r){
     return {
       res: r.result==='win' ? 'W' : (r.result==='loss' ? 'L' : 'D'),
-      opp: r.opp_ko || r.opp || '',
-      way: r.method || '',
-      when: r.date || ''
+      opp: cleanExternalText(r.opp_ko || r.opp || ''),
+      way: cleanExternalText(r.method || ''),
+      when: cleanExternalText(r.date || '')
     };
   });
   return {
-    id: f.id, name: f.name_ko || f.name, en: f.name, nick: f.nick || '',
-    country: f.country_ko || f.country || '',
-    age: f.age || '', height: normHeight(f.height||''), reach: normHeight(f.reach||''), stance: f.stance || '',
-    record: f.record || '-', weight: f.division || '-', rank: f.rank || '랭킹 외',
+    id: slugify(f.id||f.name), name: cleanExternalText(f.name_ko || f.name), en: cleanExternalText(f.name), nick: cleanExternalText(f.nick || ''),
+    country: cleanExternalText(f.country_ko || f.country || ''),
+    age: cleanExternalText(f.age || ''), height: cleanExternalText(normHeight(f.height||'')), reach: cleanExternalText(normHeight(f.reach||'')), stance: cleanExternalText(f.stance || ''),
+    record: cleanExternalText(f.record || '-'), weight: cleanExternalText(f.division || '-'), rank: cleanExternalText(f.rank || '랭킹 외'),
     ko: f.win_ko||0, sub: f.win_sub||0, dec: f.win_dec||0,
-    avatar: f.avatar || '',
+    avatar: cleanExternalText(f.avatar || ''),
     style: '', recent: recent, next: f.next || null
   };
 }
@@ -1510,27 +1531,32 @@ function transformFight(m){
   const a = slugify(m.fighter_a);
   const b = slugify(m.fighter_b);
   const winner = m.winner==='a' ? a : (m.winner==='b' ? b : null);
-  let way = m.method || '';
+  let way = cleanExternalText(m.method || '');
   if(m.round) way += (way?' · ':'') + 'R' + m.round + (m.time ? ' ' + m.time : '');
-  return { wc: m.weight_ko || m.weight || '', a: a, b: b, winner: winner, way: way };
+  return { wc: cleanExternalText(m.weight_ko || m.weight || ''), a: a, b: b, winner: winner, way: cleanExternalText(way) };
 }
-function transformJsonEvent(je){
+function transformJsonEvent(je,status){
   const titleSource = je.name_ko || je.name;
+  const startUtc = je.start_time_utc || je.date_utc || null;
   return {
     id: slugify(je.name),
-    code: eventCodeFromName(titleSource),
-    title: eventTitleFromName(titleSource),
-    titleKo: eventTitleFromName(titleSource),
-    dateUtc: je.date_iso ? je.date_iso + 'T22:00:00Z' : new Date().toISOString(),
-    kstString: je.date_kst_human || je.date_iso || '',
-    venue: je.venue_ko || je.venue || 'TBA',
-    city: je.location_ko || je.location || '',
-    where: je.broadcast || 'TVING',
+    code: cleanExternalText(eventCodeFromName(titleSource)),
+    title: cleanExternalText(eventTitleFromName(je.name||titleSource)),
+    titleKo: cleanExternalText(eventTitleFromName(titleSource)),
+    dateUtc: startUtc,
+    dateIso: je.date_iso || '',
+    dateLabel: cleanExternalText(je.date_local_human || je.date_kst_human || je.date_iso || ''),
+    timeConfirmed: Boolean(startUtc),
+    status,
+    venue: cleanExternalText(je.venue_ko || je.venue || 'TBA'),
+    city: cleanExternalText(je.location_ko || je.location || ''),
+    where: cleanExternalText(je.broadcast || '미정'),
     rounds: 5,
     headline: '',
-    summary: je.summary_ko || '',
+    summary: cleanExternalText(je.summary_ko || ''),
     keyPoints: [],
     prediction: je.prediction || null,
+    wikiUrl: safeExternalUrl(je.wiki_url||''),
     mainCard: (je.main_card||[]).map(transformFight),
     prelims: (je.prelims||[]).map(transformFight)
   };
@@ -1539,7 +1565,7 @@ function transformJsonEvent(je){
 /* 실 랭킹 JSON → 내부 RANKINGS shape */
 function transformDivision(d){
   return {
-    wc: d.wc,
+    wc: cleanExternalText(d.wc),
     champ: d.champion ? slugify(d.champion.name) : null,
     list: (d.ranked||[]).map(function(r){ return slugify(r.name); }),
     desc: ''
@@ -1547,59 +1573,80 @@ function transformDivision(d){
 }
 
 async function loadJSON(path){
-  const res = await fetch(path, {cache:'no-cache'});
+  const res = await fetch(path, {cache:'no-store'});
   if(!res.ok) throw new Error('HTTP ' + res.status + ' ' + path);
   return res.json();
 }
 
 async function loadRealData(){
-  // 1) 선수 먼저 — getFighter가 이벤트/랭킹 변환 시 이름을 찾음
-  try {
-    const data = await loadJSON('./data/fighters.json');
+  loadErrors=[];
+  const [fightersResult,rankingsResult,eventsResult,opinionsResult]=await Promise.allSettled([
+    loadJSON('./data/fighters.json'),
+    loadJSON('./data/rankings.json'),
+    loadJSON('./data/events.json'),
+    loadJSON('./data/opinions.json')
+  ]);
+
+  if(fightersResult.status==='fulfilled'){
+    const data=fightersResult.value;
     if(data.fighters && data.fighters.length){
       Object.keys(FIGHTERS).forEach(function(k){ delete FIGHTERS[k]; });
-      data.fighters.forEach(function(f){ FIGHTERS[f.id] = transformFighter(f); });
+      data.fighters.forEach(function(f){ const item=transformFighter(f); FIGHTERS[item.id]=item; });
       console.log('[fightoclock] fighters:', data.fighters.length);
     }
-  } catch(err){ console.warn('[fightoclock] fighters load failed:', err.message); }
+  } else {
+    loadErrors.push('선수');
+    console.warn('[fightoclock] fighters load failed:', fightersResult.reason?.message);
+  }
 
-  // 2) 랭킹
-  try {
-    const data = await loadJSON('./data/rankings.json');
+  if(rankingsResult.status==='fulfilled'){
+    const data=rankingsResult.value;
     if(data.divisions && data.divisions.length){
       RANKINGS['체급별 랭킹'] = data.divisions.map(transformDivision);
       console.log('[fightoclock] rankings:', data.divisions.length, 'divisions');
     }
-  } catch(err){ console.warn('[fightoclock] rankings load failed:', err.message); }
+  } else {
+    loadErrors.push('랭킹');
+    console.warn('[fightoclock] rankings load failed:', rankingsResult.reason?.message);
+  }
 
-  // 3) 이벤트 (다가오는 + 지난 결과)
-  try {
-    const data = await loadJSON('./data/events.json');
+  if(eventsResult.status==='fulfilled'){
+    const data=eventsResult.value;
     const up = data.events || [];
     const past = data.past_events || [];
     if(up.length || past.length){
       EVENTS.length = 0;
-      up.concat(past).forEach(function(je){ EVENTS.push(transformJsonEvent(je)); });
+      const today=todayKstIso();
+      up.forEach(je=>EVENTS.push(transformJsonEvent(je,je.date_iso&&je.date_iso<today?'expired':'upcoming')));
+      past.forEach(je=>EVENTS.push(transformJsonEvent(je,'past')));
+      DATA_META={generatedAt:data.generated_at||null,source:data.source||'Wikipedia',upcoming:EVENTS.filter(e=>e.status==='upcoming').length,past:past.length};
       console.log('[fightoclock] events:', up.length, 'upcoming /', past.length, 'past @', data.generated_at);
     }
-  } catch(err){ console.warn('[fightoclock] events load failed:', err.message); }
+  } else {
+    loadErrors.push('일정');
+    console.warn('[fightoclock] events load failed:', eventsResult.reason?.message);
+  }
 
-  // 4) 국가별 커뮤니티 여론 (있을 때만 — 없으면 섹션 미표시)
-  try {
-    const data = await loadJSON('./data/opinions.json');
+  if(opinionsResult.status==='fulfilled'){
+    const data=opinionsResult.value;
     if(data.events){
       OPINIONS = data.events;
       console.log('[fightoclock] opinions:', Object.keys(OPINIONS).length, 'events');
     }
-  } catch(err){ /* opinions.json 없으면 조용히 건너뜀 */ }
-
-  route();
+  }
+  appState=EVENTS.length?'ready':'error';
 }
 
-window.addEventListener('hashchange', route);
-window.addEventListener('DOMContentLoaded', function(){
+window.addEventListener('hashchange', ()=>route());
+window.addEventListener('DOMContentLoaded', async function(){
+  try{setWideLayout(localStorage.getItem('wide-layout')==='1')}catch(_){}
+  document.getElementById('reminderButton').addEventListener('click',showReminderDialog);
+  document.getElementById('settingsButton').addEventListener('click',showSettingsDialog);
+  document.getElementById('dialogClose').addEventListener('click',closeDialog);
+  $dialog.addEventListener('click',e=>{if(e.target===$dialog) closeDialog()});
   route();
-  loadRealData();
+  await loadRealData();
+  route();
 });
 
 /* ---------- countdown updater ---------- */
@@ -1645,15 +1692,18 @@ setInterval(function(){
           if (typeof window.route === 'function') window.route();
         });
       }
-      window.recordReaction = function(ev, emoji, prev){
-        const d = {}; d[emoji] = increment(1);
-        if (prev && prev!==emoji) d[prev] = increment(-1);
-        setDoc(doc(db,'reactions',ev), d, {merge:true});
+      window.recordReaction = function(ev, next, prev){
+        const d = {};
+        if (prev && prev!==next) d[prev] = increment(-1);
+        if (next && next!==prev) d[next] = increment(1);
+        if (Object.keys(d).length) setDoc(doc(db,'reactions',ev), d, {merge:true});
       };
       window.getReactionCounts = function(ev){ watch('react',ev); return cache.react[ev] || null; };
-      window.recordPick = function(ev, pick){
-        const d = {}; d[pick] = increment(1);
-        setDoc(doc(db,'picks',ev), d, {merge:true});
+      window.recordPick = function(ev, next, prev){
+        const d = {};
+        if (prev && prev!==next) d[prev] = increment(-1);
+        if (next && next!==prev) d[next] = increment(1);
+        if (Object.keys(d).length) setDoc(doc(db,'picks',ev), d, {merge:true});
       };
       window.getPickCounts = function(ev){ watch('pick',ev); return cache.pick[ev] || null; };
       console.log('[fightoclock] Firebase 전체 집계 ON');

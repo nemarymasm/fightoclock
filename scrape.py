@@ -208,7 +208,13 @@ def parse_wiki_date(text):
     return None
 
 
-def to_kst_human(date_iso):
+def to_local_human(date_iso):
+    """출처에 적힌 개최지 기준 날짜를 한국어로 표기한다.
+
+    Wikipedia 목록에는 시작 시각과 타임존이 없으므로 KST로 오해될 이름을
+    사용하지 않는다. start_time_utc는 별도 신뢰 가능한 소스가 생겼을 때만
+    채운다.
+    """
     if not date_iso:
         return None
     try:
@@ -529,7 +535,9 @@ def apply_translations(ev):
         fight["fighter_a_ko"] = tr_fighter(fight["fighter_a"])
         fight["fighter_b_ko"] = tr_fighter(fight["fighter_b"])
         fight["weight_ko"] = tr_weight(fight.get("weight", ""))
-    ev["date_kst_human"] = to_kst_human(ev["date_iso"])
+    ev["date_local_human"] = to_local_human(ev["date_iso"])
+    ev["start_time_utc"] = None
+    ev["time_status"] = "date_only"
     return ev
 
 
@@ -1239,6 +1247,7 @@ def main():
 
     # ── 저장 ──
     events_out = {
+        "schema_version": 2,
         "generated_at": now_iso,
         "source": "Wikipedia: List of UFC events",
         "translations_applied": True,
@@ -1252,6 +1261,7 @@ def main():
 
     if divisions:
         rankings_out = {
+            "schema_version": 1,
             "generated_at": now_iso,
             "source": "Wikipedia: UFC rankings (Meta)",
             "division_count": len(divisions),
@@ -1262,6 +1272,7 @@ def main():
 
     if fighters:
         fighters_out = {
+            "schema_version": 1,
             "generated_at": now_iso,
             "source": "Wikipedia: 랭킹 + 대진표 + 개별 인포박스",
             "fighter_count": len(fighters),
@@ -1275,6 +1286,7 @@ def main():
         opinions = fetch_opinions(client, events)
         if opinions:
             opinions_out = {
+                "schema_version": 1,
                 "generated_at": now_iso,
                 "source": "Reddit 커뮤니티 (" + ", ".join("r/" + c["subreddit"] for c in OPINION_COMMUNITIES) + ")",
                 "event_count": len(opinions),
