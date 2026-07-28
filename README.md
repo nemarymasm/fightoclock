@@ -6,6 +6,8 @@
 - 배포: Vercel 정적 사이트
 - 데이터: Wikipedia 기반 Python 수집기
 - 갱신: GitHub Actions, 매일 오전 6시 KST
+- 선수 사진: 재사용 가능한 Wikimedia Commons 이미지만 자동 연결
+- 선수명: 한글명을 기본 표기하고 원문명은 보조 표기
 
 ## 로컬 실행
 
@@ -28,11 +30,14 @@ python -m unittest discover -s tests -v
 
 선택 환경변수:
 
-- `ANTHROPIC_API_KEY`: 이벤트 한국어 요약
+- `ANTHROPIC_API_KEY`: 이벤트 한국어 요약과 새로 등장한 선수의 한글 음역 보강
 - `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`: 커뮤니티 여론
 - `ODDS_API_KEY`: 배당 기반 여론 지표
 
 선택 기능에 필요한 키가 없으면 해당 파일이나 필드만 생략됩니다. 워크플로는 선택 파일이 없어도 실패하지 않습니다.
+
+사진이 없는 선수는 가짜 인물 이미지나 실루엣 대신 이름 이니셜 카드로 표시합니다. 직접 사진을 추가할 때는
+`data/avatars/README.md`의 파일명·저작권 지침을 따릅니다.
 
 ## 시간 데이터 원칙
 

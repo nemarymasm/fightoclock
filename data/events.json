@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-28T10:07:26+09:00",
+  "generated_at": "2026-07-28T10:54:46+09:00",
   "source": "Wikipedia: List of UFC events",
   "translations_applied": true,
   "event_count": 8,
@@ -20,8 +20,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Uroš Medić",
-          "fighter_b_ko": "Daniel Rodriguez",
+          "fighter_a_ko": "우로시 메디치",
+          "fighter_b_ko": "다니엘 로드리게스",
           "weight_ko": "웰터급"
         },
         {
@@ -33,7 +33,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "얀 블라호비치",
-          "fighter_b_ko": "Navajo Stirling",
+          "fighter_b_ko": "나바호 스털링",
           "weight_ko": "라이트헤비급"
         },
         {
@@ -44,7 +44,7 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Aleksandar Rakić",
+          "fighter_a_ko": "알렉산다르 라키치",
           "fighter_b_ko": "마르친 티부라",
           "weight_ko": "헤비급"
         },
@@ -56,8 +56,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Duško Todorović",
-          "fighter_b_ko": "Robert Valentin",
+          "fighter_a_ko": "두스코 토도로비치",
+          "fighter_b_ko": "로베르트 발렌틴",
           "weight_ko": "미들급"
         },
         {
@@ -68,8 +68,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Vlasto Čepo",
-          "fighter_b_ko": "Gilbert Urbina",
+          "fighter_a_ko": "블라스토 체포",
+          "fighter_b_ko": "길버트 우르비나",
           "weight_ko": "미들급"
         }
       ],
@@ -82,8 +82,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Ľudovít Klein",
-          "fighter_b_ko": "Tofiq Musayev",
+          "fighter_a_ko": "루도비트 클라인",
+          "fighter_b_ko": "토피크 무사예프",
           "weight_ko": "라이트급"
         },
         {
@@ -94,8 +94,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Oban Elliott",
-          "fighter_b_ko": "Michael Oliveira",
+          "fighter_a_ko": "오반 엘리엇",
+          "fighter_b_ko": "마이클 올리베이라",
           "weight_ko": "웰터급"
         },
         {
@@ -106,8 +106,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Dennis Buzukja",
-          "fighter_b_ko": "Bogdan Grad",
+          "fighter_a_ko": "데니스 부주키아",
+          "fighter_b_ko": "보그단 그라드",
           "weight_ko": "페더급"
         },
         {
@@ -118,8 +118,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Mateusz Rębecki",
-          "fighter_b_ko": "Kyle Prepolec",
+          "fighter_a_ko": "마테우시 레베츠키",
+          "fighter_b_ko": "카일 프리폴렉",
           "weight_ko": "라이트급"
         },
         {
@@ -130,14 +130,14 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Nina Nikolija Milošević",
-          "fighter_b_ko": "Hailey Cowan",
+          "fighter_a_ko": "니나 니콜리야 밀로셰비치",
+          "fighter_b_ko": "헤일리 코완",
           "weight_ko": "여성 밴텀급"
         }
       ],
-      "name_ko": "UFC Fight Night: Medić 대 로드리게스",
-      "venue_ko": "Belgrade Arena",
-      "location_ko": "Belgrade, Serbia",
+      "name_ko": "UFC Fight Night: 메디치 대 로드리게스",
+      "venue_ko": "벨그레이드 아레나",
+      "location_ko": "세르비아 베오그라드",
       "date_local_human": "2026년 8월 1일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -158,7 +158,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "마테우시 감로트",
-          "fighter_b_ko": "Quillan Salkilld",
+          "fighter_b_ko": "퀼런 살킬드",
           "weight_ko": "라이트급"
         },
         {
@@ -169,8 +169,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Ty Miller",
-          "fighter_b_ko": "Billy Ray Goff",
+          "fighter_a_ko": "타이 밀러",
+          "fighter_b_ko": "빌리 레이 고프",
           "weight_ko": "웰터급"
         },
         {
@@ -181,8 +181,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Diyar Nurgozhay",
-          "fighter_b_ko": "Bruno Lopes",
+          "fighter_a_ko": "디야르 누르고자이",
+          "fighter_b_ko": "브루노 로페스",
           "weight_ko": "라이트헤비급"
         },
         {
@@ -193,8 +193,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Carlos Diego Ferreira",
-          "fighter_b_ko": "Billy Quarantillo",
+          "fighter_a_ko": "카를로스 디에고 페레이라",
+          "fighter_b_ko": "빌리 콰란틸로",
           "weight_ko": "라이트급"
         },
         {
@@ -205,8 +205,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Louie Sutherland",
-          "fighter_b_ko": "José Luiz",
+          "fighter_a_ko": "루이 서덜랜드",
+          "fighter_b_ko": "조제 루이스",
           "weight_ko": "헤비급"
         }
       ],
@@ -219,8 +219,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Darren Elkins",
-          "fighter_b_ko": "Yadier del Valle",
+          "fighter_a_ko": "대런 엘킨스",
+          "fighter_b_ko": "야디에르 델 바예",
           "weight_ko": "페더급"
         },
         {
@@ -231,8 +231,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Steven Asplund",
-          "fighter_b_ko": "Guilherme Pat",
+          "fighter_a_ko": "스티븐 애스플런드",
+          "fighter_b_ko": "길레르미 파트",
           "weight_ko": "헤비급"
         },
         {
@@ -243,8 +243,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Juliana Miller",
-          "fighter_b_ko": "Ravena Oliveira",
+          "fighter_a_ko": "줄리아나 밀러",
+          "fighter_b_ko": "하베나 올리베이라",
           "weight_ko": "여성 플라이급"
         },
         {
@@ -255,13 +255,13 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Amanda Lemos",
-          "fighter_b_ko": "Alexia Thainara",
+          "fighter_a_ko": "아만다 레모스",
+          "fighter_b_ko": "알렉시아 타이나라",
           "weight_ko": "여성 스트로급"
         }
       ],
-      "name_ko": "UFC Fight Night: 감로트 대 Salkilld",
-      "venue_ko": "Meta Apex",
+      "name_ko": "UFC Fight Night: 감로트 대 살킬드",
+      "venue_ko": "메타 APEX",
       "location_ko": "미국 네바다 라스베이거스",
       "date_local_human": "2026년 8월 8일(토)",
       "start_time_utc": null,
@@ -283,7 +283,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "이슬람 마카체프",
-          "fighter_b_ko": "Ian Machado Garry",
+          "fighter_b_ko": "이언 마샤두 개리",
           "weight_ko": "웰터급"
         },
         {
@@ -295,7 +295,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "맥켄지 던",
-          "fighter_b_ko": "Gillian Robertson",
+          "fighter_b_ko": "질리언 로버트슨",
           "weight_ko": "여성 스트로급"
         },
         {
@@ -306,8 +306,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Jeremiah Wells",
-          "fighter_b_ko": "Myktybek Orolbai",
+          "fighter_a_ko": "제러마이아 웰스",
+          "fighter_b_ko": "믹티벡 오롤바이",
           "weight_ko": "웰터급"
         },
         {
@@ -318,8 +318,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Jalin Turner",
-          "fighter_b_ko": "Kauê Fernandes",
+          "fighter_a_ko": "제일린 터너",
+          "fighter_b_ko": "카우에 페르난데스",
           "weight_ko": "라이트급"
         },
         {
@@ -331,7 +331,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "제프 닐",
-          "fighter_b_ko": "Chidi Njokuani",
+          "fighter_b_ko": "치디 은조쿠아니",
           "weight_ko": "웰터급"
         }
       ],
@@ -344,8 +344,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Neil Magny",
-          "fighter_b_ko": "Ramiz Brahimaj",
+          "fighter_a_ko": "닐 매그니",
+          "fighter_b_ko": "라미즈 브라히마이",
           "weight_ko": "웰터급"
         },
         {
@@ -356,8 +356,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Mansur Abdul-Malik",
-          "fighter_b_ko": "Dustin Stoltzfus",
+          "fighter_a_ko": "만수르 압둘말리크",
+          "fighter_b_ko": "더스틴 스톨츠푸스",
           "weight_ko": "미들급"
         },
         {
@@ -368,8 +368,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Vicente Luque",
-          "fighter_b_ko": "Tresean Gore",
+          "fighter_a_ko": "비센테 루케",
+          "fighter_b_ko": "트리션 고어",
           "weight_ko": "미들급"
         },
         {
@@ -380,14 +380,14 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Edson Barboza",
-          "fighter_b_ko": "Esteban Ribovics",
+          "fighter_a_ko": "에드손 바르보자",
+          "fighter_b_ko": "에스테반 리보빅스",
           "weight_ko": "라이트급"
         }
       ],
-      "name_ko": "UFC 330: 마카체프 대 Machado Garry",
-      "venue_ko": "Xfinity Mobile Arena",
-      "location_ko": "Philadelphia, Pennsylvania, U.S.",
+      "name_ko": "UFC 330: 마카체프 대 개리",
+      "venue_ko": "엑스피니티 모바일 아레나",
+      "location_ko": "미국 펜실베이니아 필라델피아",
       "date_local_human": "2026년 8월 15일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -408,7 +408,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "안소니 에르난데스",
-          "fighter_b_ko": "Gregory Rodrigues",
+          "fighter_b_ko": "그레고리 호드리게스",
           "weight_ko": "미들급"
         },
         {
@@ -431,8 +431,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Serghei Spivac",
-          "fighter_b_ko": "Vitor Petrino",
+          "fighter_a_ko": "세르게이 스피박",
+          "fighter_b_ko": "비토르 페트리노",
           "weight_ko": "헤비급"
         },
         {
@@ -443,8 +443,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Kennedy Nzechukwu",
-          "fighter_b_ko": "Shamil Gaziev",
+          "fighter_a_ko": "케네디 은제추쿠",
+          "fighter_b_ko": "샤밀 가지예프",
           "weight_ko": "헤비급"
         },
         {
@@ -455,8 +455,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Kody Steele",
-          "fighter_b_ko": "Gauge Young",
+          "fighter_a_ko": "코디 스틸",
+          "fighter_b_ko": "게이지 영",
           "weight_ko": "라이트급"
         }
       ],
@@ -469,8 +469,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Carli Judice",
-          "fighter_b_ko": "Jeisla Chaves",
+          "fighter_a_ko": "칼리 주디스",
+          "fighter_b_ko": "제이슬라 샤베스",
           "weight_ko": "여성 플라이급"
         },
         {
@@ -481,8 +481,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Wesley Schultz",
-          "fighter_b_ko": "Jackson McVey",
+          "fighter_a_ko": "웨슬리 슐츠",
+          "fighter_b_ko": "잭슨 맥베이",
           "weight_ko": "미들급"
         },
         {
@@ -493,14 +493,14 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Shanelle Dyer",
-          "fighter_b_ko": "Elise Reed",
+          "fighter_a_ko": "샤넬 다이어",
+          "fighter_b_ko": "엘리스 리드",
           "weight_ko": "여성 스트로급"
         }
       ],
-      "name_ko": "UFC Fight Night: 에르난데스 대 Rodrigues",
-      "venue_ko": "Golden 1 Center",
-      "location_ko": "Sacramento, California, U.S.",
+      "name_ko": "UFC Fight Night: 에르난데스 대 호드리게스",
+      "venue_ko": "골든 1 센터",
+      "location_ko": "미국 캘리포니아 새크라멘토",
       "date_local_human": "2026년 8월 22일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -533,7 +533,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "얀 시아오난",
-          "fighter_b_ko": "Denise Gomes",
+          "fighter_b_ko": "데니지 고메스",
           "weight_ko": "여성 스트로급"
         },
         {
@@ -544,8 +544,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Su Mudaerji",
-          "fighter_b_ko": "Alex Perez",
+          "fighter_a_ko": "수 무다얼지",
+          "fighter_b_ko": "알렉스 페레즈",
           "weight_ko": "플라이급"
         },
         {
@@ -556,8 +556,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Rei Tsuruya",
-          "fighter_b_ko": "Kevin Borjas",
+          "fighter_a_ko": "츠루야 레이",
+          "fighter_b_ko": "케빈 보르하스",
           "weight_ko": "플라이급"
         },
         {
@@ -568,14 +568,14 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Liu Ce",
-          "fighter_b_ko": "Junior Tafa",
+          "fighter_a_ko": "리우 처",
+          "fighter_b_ko": "주니어 타파",
           "weight_ko": "라이트헤비급"
         }
       ],
-      "name_ko": "UFC Fight Night: 누르마고메도프 대 Song",
-      "venue_ko": "SPD Bank Oriental Sports Center",
-      "location_ko": "Shanghai, China",
+      "name_ko": "UFC Fight Night: 누르마고메도프 대 송",
+      "venue_ko": "SPD 뱅크 오리엔탈 스포츠 센터",
+      "location_ko": "중국 상하이",
       "date_local_human": "2026년 8월 29일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -596,7 +596,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "마이클 페이지",
-          "fighter_b_ko": "Nursulton Ruziboev",
+          "fighter_b_ko": "누르술톤 루지보예프",
           "weight_ko": "미들급"
         },
         {
@@ -607,8 +607,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Kurtis Campbell",
-          "fighter_b_ko": "Trevor Peek",
+          "fighter_a_ko": "커티스 캠벨",
+          "fighter_b_ko": "트레버 픽",
           "weight_ko": "페더급"
         },
         {
@@ -619,14 +619,14 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Mário Pinto",
-          "fighter_b_ko": "Ryan Spann",
+          "fighter_a_ko": "마리오 핀투",
+          "fighter_b_ko": "라이언 스팬",
           "weight_ko": "헤비급"
         }
       ],
       "name_ko": "UFC Fight Night 287",
-      "venue_ko": "Accor Arena",
-      "location_ko": "Paris, France",
+      "venue_ko": "아코르 아레나",
+      "location_ko": "프랑스 파리",
       "date_local_human": "2026년 9월 5일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -646,7 +646,7 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Waldo Cortes-Acosta",
+          "fighter_a_ko": "왈도 코르테스-아코스타",
           "fighter_b_ko": "커티스 블레이즈",
           "weight_ko": "헤비급"
         },
@@ -671,7 +671,7 @@
           "round": "",
           "time": "",
           "fighter_a_ko": "브랜든 모레노",
-          "fighter_b_ko": "Joseph Morales",
+          "fighter_b_ko": "조셉 모랄레스",
           "weight_ko": "플라이급"
         },
         {
@@ -682,8 +682,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Tim Elliott",
-          "fighter_b_ko": "Édgar Cháirez",
+          "fighter_a_ko": "팀 엘리엇",
+          "fighter_b_ko": "에드가르 차이레스",
           "weight_ko": "플라이급"
         },
         {
@@ -694,8 +694,8 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "Kelvin Gastelum",
-          "fighter_b_ko": "Yousri Belgaroui",
+          "fighter_a_ko": "켈빈 가스텔럼",
+          "fighter_b_ko": "유스리 벨가루이",
           "weight_ko": "미들급"
         },
         {
@@ -706,14 +706,14 @@
           "method": "",
           "round": "",
           "time": "",
-          "fighter_a_ko": "JJ Aldrich",
-          "fighter_b_ko": "Regina Tarin",
+          "fighter_a_ko": "JJ 알드리치",
+          "fighter_b_ko": "레지나 타린",
           "weight_ko": "여성 플라이급"
         }
       ],
       "name_ko": "UFC Fight Night 288",
-      "venue_ko": "Desert Diamond Arena",
-      "location_ko": "Glendale, Arizona, U.S.",
+      "venue_ko": "데저트 다이아몬드 아레나",
+      "location_ko": "미국 애리조나 글렌데일",
       "date_local_human": "2026년 9월 12일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -725,8 +725,8 @@
       "venue": "Crypto.com Arena",
       "location": "Los Angeles, California, U.S.",
       "name_ko": "UFC 331",
-      "venue_ko": "Crypto.com Arena",
-      "location_ko": "Los Angeles, California, U.S.",
+      "venue_ko": "크립토닷컴 아레나",
+      "location_ko": "미국 캘리포니아 로스앤젤레스",
       "date_local_human": "2026년 9월 19일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -1051,7 +1051,7 @@
           "weight_ko": "여성 플라이급"
         }
       ],
-      "name_ko": "UFC Fight Night: du Plessis 대 우스만",
+      "name_ko": "UFC Fight Night: 플레시 대 우스만",
       "venue_ko": "Paycom Center",
       "location_ko": "Oklahoma City, Oklahoma, U.S.",
       "date_local_human": "2026년 7월 18일(토)",
@@ -1358,7 +1358,7 @@
           "method": "Technical Submission (neck crank)",
           "round": "1",
           "time": "3:58",
-          "fighter_a_ko": "Nursulton Ruziboev",
+          "fighter_a_ko": "누르술톤 루지보예프",
           "fighter_b_ko": "Andrey Pulyaev",
           "weight_ko": "미들급"
         },
@@ -1446,7 +1446,7 @@
           "method": "TKO (punches and elbows)",
           "round": "2",
           "time": "3:23",
-          "fighter_a_ko": "Navajo Stirling",
+          "fighter_a_ko": "나바호 스털링",
           "fighter_b_ko": "Ion Cuțelaba",
           "weight_ko": "라이트헤비급"
         },
@@ -1496,7 +1496,7 @@
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Kevin Borjas",
+          "fighter_a_ko": "케빈 보르하스",
           "fighter_b_ko": "André Lima",
           "weight_ko": "Catchweight (129 lb)"
         },

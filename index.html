@@ -401,6 +401,53 @@
   .mcard.big .mf-nm{font-size:14px}
   .mcard .mf-vs{font-size:11px;color:var(--dim);font-weight:700}
   .mcard-sub{font-size:11px;color:var(--dim);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+  /* ---- 2026 리디자인: 사진 중심 스포츠 에디토리얼 ---- */
+  .avatar-box{position:relative;overflow:hidden;flex-shrink:0;background:#19191c;border:1px solid var(--line-2)}
+  .avatar-box img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:saturate(.88) contrast(1.03)}
+  .avatar-fallback{width:100%;height:100%;display:grid;place-items:center;position:relative;
+    background:linear-gradient(145deg,#242428 0%,#111114 68%);isolation:isolate}
+  .avatar-fallback::before{content:"";position:absolute;inset:auto -18% -45% 30%;height:90%;border-radius:50%;
+    background:var(--fighter-accent,#e5484d);opacity:.16;filter:blur(1px);z-index:-1}
+  .avatar-fallback::after{content:"";position:absolute;left:10%;top:12%;width:28%;height:2px;background:var(--fighter-accent,#e5484d);opacity:.85}
+  .avatar-fallback span{font-weight:900;font-size:clamp(13px,30%,34px);letter-spacing:-.04em;color:#f4f3ef}
+  .name-original{display:block;margin-top:3px;color:var(--muted);font-size:10px;font-weight:550;letter-spacing:.01em}
+  .photo-credit{display:inline-flex;margin-top:8px;color:var(--dim);font-size:10px;text-decoration:underline;text-underline-offset:3px}
+
+  .cover{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:0 0 20px;overflow:hidden}
+  .cover::before{content:"";position:absolute;inset:0 0 auto;height:46%;background:
+    linear-gradient(135deg,rgba(229,72,77,.18),transparent 46%),
+    repeating-linear-gradient(115deg,transparent 0 24px,rgba(255,255,255,.018) 24px 25px);pointer-events:none}
+  .cover-kick{position:relative;padding:16px 18px 0;text-align:left;color:#ff878b;letter-spacing:.12em}
+  .cover-faces{position:relative;margin:4px 0 10px;padding:14px 10px 0;align-items:start}
+  .cover .cf{gap:7px}
+  .cover .cf-img{width:168px;height:196px;max-width:39vw;max-height:48vw}
+  .cover .cf-img>div{border-radius:16px 16px 6px 6px!important}
+  .cover .cf-nm{font-size:17px;line-height:1.08}
+  .cover .cf-en{font-size:10px;color:var(--muted);line-height:1.2;min-height:12px}
+  .cover .cf-vs{margin-top:78px;width:34px;height:34px;border:1px solid var(--line-2);border-radius:50%;display:grid;place-items:center;background:#0d0d0f;color:#fff}
+  .cover-title{font-size:24px;line-height:1.15;margin:14px 18px 5px}
+  .cover-meta{padding:0 18px}
+  .cover-cd{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;max-width:none;margin:18px 18px 14px}
+  .cover .cta{padding:0 18px}.cover .btn.primary{max-width:none}
+
+  .mcard{border-radius:18px}
+  .mcard.big{padding:16px}
+  .mcard .avatar-box{border-radius:12px!important}
+  .mcard .mf-nm{font-size:13px}
+  .mcard .mf-en{font-size:9px;color:var(--dim);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+  .fighter-hero{grid-template-columns:104px 1fr;border-radius:20px;padding:18px}
+  .fighter-hero .av{width:104px;height:124px}
+  .fighter-hero .av>.avatar-box{width:104px!important;height:124px!important;border-radius:14px!important}
+  .fighter-hero h1,.fighter-hero h2{font-size:24px;line-height:1.08}
+  .fighter-hero .nick{margin-top:5px;color:var(--muted);letter-spacing:0}
+  .fight-card .avatar-box,.event-item .avatar-box{border-radius:10px!important}
+
+  @media (min-width:780px){
+    .cover{padding-bottom:24px}.cover-faces{padding:18px 80px 0}
+    .cover .cf-img{width:210px;height:244px;max-width:none;max-height:none}
+    .cover-title{font-size:30px}.cover .cf-nm{font-size:24px}
+  }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   }
@@ -411,12 +458,12 @@
 <a class="skip-link" href="#app">본문으로 바로가기</a>
 <header class="topbar">
   <div class="brand">
-    <div class="mark">F</div>
+    <div class="mark">F/C</div>
     <div class="name">FightOclock<small>UFC 한국어 가이드</small></div>
   </div>
   <div class="actions">
-    <button id="reminderButton" class="iconbtn" type="button" aria-label="경기 알림과 캘린더">🔔</button>
-    <button id="settingsButton" class="iconbtn" type="button" aria-label="사이트 설정">⚙️</button>
+    <button id="reminderButton" class="iconbtn" type="button" aria-label="경기 알림과 캘린더" title="경기 알림">＋</button>
+    <button id="settingsButton" class="iconbtn" type="button" aria-label="사이트 설정" title="사이트 설정">···</button>
   </div>
 </header>
 
@@ -553,8 +600,7 @@ function freshnessBanner(){
 }
 
 /* ---------- 컴포넌트 ---------- */
-/* 선수 픽토그램 (저작권 free 오리지널) — 피니시 스타일·스탠스를 색/자세로 표현
-   ko/sub/dec 승수로 파이터 유형을 색으로: 타격가=빨강, 그래플러=골드, 판정형=슬레이트 */
+/* 사진이 없는 선수의 폴백 컬러: 타격가=빨강, 그래플러=골드, 판정형=블루 */
 function fighterStyleColor(f){
   const ko=f.ko||0, sub=f.sub||0, dec=f.dec||0, t=ko+sub+dec;
   if(t<=0) return {c1:'#3a3a3a', c2:'#555', glyph:''};
@@ -565,32 +611,20 @@ function fighterStyleColor(f){
 function fighterPictogram(f, size){
   size = size || 48;
   const s = fighterStyleColor(f);
-  const southpaw = (f.stance||'').indexOf('사우스포')>=0;
-  const uid = 'g'+(f.id||Math.random()).toString().replace(/[^a-z0-9]/gi,'').slice(0,8);
-  // 스탠스: 정통이면 왼손(잽) 앞으로, 사우스포면 오른손 앞으로 — 앞손 글러브를 살짝 위/앞으로
-  const leadUp = southpaw ? {lx:64,ly:40} : {lx:36,ly:40};
-  const backUp = southpaw ? {lx:36,ly:46} : {lx:64,ly:46};
-  return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" style="display:block;border-radius:50%">
-    <defs><radialGradient id="${uid}" cx="50%" cy="35%" r="75%">
-      <stop offset="0%" stop-color="${s.c2}"/><stop offset="100%" stop-color="${s.c1}"/>
-    </radialGradient></defs>
-    <circle cx="50" cy="50" r="50" fill="url(#${uid})"/>
-    <g fill="rgba(0,0,0,.82)">
-      <circle cx="50" cy="37" r="11"/>
-      <path d="M25,82 Q25,55 50,55 Q75,55 75,82 Z"/>
-      <circle cx="${leadUp.lx}" cy="${leadUp.ly}" r="7.5"/>
-      <circle cx="${backUp.lx}" cy="${backUp.ly}" r="7"/>
-    </g>
-  </svg>`;
+  const source=(f?.en||f?.name||'?').trim().split(/\s+/).filter(Boolean);
+  const initials=(source.length>1 ? source[0][0]+source[source.length-1][0] : source[0]?.slice(0,2) || '?').toUpperCase();
+  return `<div class="avatar-fallback" style="--fighter-accent:${s.c1}" aria-hidden="true"><span>${esc(initials)}</span></div>`;
 }
 function avatarBox(f, size){
   size = size || 48;
-  // 생성한 아바타 이미지가 있으면 그걸, 없으면 SVG 픽토그램 (로드 실패 시에도 픽토그램으로 폴백)
-  const inner = (f && f.avatar)
-    ? `<img src="${f.avatar}" width="${size}" height="${size}" style="width:100%;height:100%;object-fit:cover"
-         onerror="this.outerHTML=this.getAttribute('data-fb')" data-fb='${fighterPictogram(f,size).replace(/'/g,"&#39;")}'>`
-    : fighterPictogram(f, size);
-  return `<div style="width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;flex-shrink:0;background:var(--bg-2)">${inner}</div>`;
+  const src = f ? safeExternalUrl(f.avatar) : '';
+  const fallback = fighterPictogram(f||{},size);
+  const inner = src
+    ? `<img src="${esc(src)}" width="${size}" height="${size}" alt="${esc((f?.name||'선수')+' 사진')}"
+         loading="${size>=120?'eager':'lazy'}" decoding="async" referrerpolicy="no-referrer"
+         onerror="this.outerHTML=this.getAttribute('data-fb')" data-fb='${fallback.replace(/'/g,"&#39;")}'>`
+    : fallback;
+  return `<div class="avatar-box" style="width:${size}px;height:${size}px;border-radius:${size>=80?16:12}px">${inner}</div>`;
 }
 function fighterAvatar(f, side){
   return avatarBox(f, 44);
@@ -606,7 +640,7 @@ function fightRow(fight, opts={}){
       <a class="f-side" href="#fighter/${fight.a||''}">
         <div class="av">${fighterAvatar(a,'red')}</div>
         <div class="nm-wrap">
-          <div class="nm">${a.name||'TBA'}</div>
+          <div class="nm">${esc(a.name||'TBA')}${a.en&&a.en!==a.name?`<span class="name-original">${esc(a.en)}</span>`:''}</div>
           <div class="sub">${a.record||''} · ${a.rank||''}</div>
         </div>
       </a>
@@ -614,7 +648,7 @@ function fightRow(fight, opts={}){
       <a class="f-side right" href="#fighter/${fight.b||''}">
         <div class="av">${fighterAvatar(b,'blue')}</div>
         <div class="nm-wrap">
-          <div class="nm">${b.name||'TBA'}</div>
+          <div class="nm">${esc(b.name||'TBA')}${b.en&&b.en!==b.name?`<span class="name-original">${esc(b.en)}</span>`:''}</div>
           <div class="sub">${b.record||''} · ${b.rank||''}</div>
         </div>
       </a>
@@ -690,9 +724,9 @@ function homeSortSection(){
       <a href="#event/${ev.id}" class="mcard ${big?'big':''}">
         <div class="mcard-top"><span class="mcard-code">${ev.code}</span><span class="mcard-d">${dLabel(ev.dateUtc)}</span></div>
         <div class="mcard-faces">
-          <div class="mf">${avatarBox(fa,big?76:52)}<div class="mf-nm">${fa.name}</div></div>
+          <div class="mf">${avatarBox(fa,big?76:52)}<div class="mf-nm">${esc(fa.name)}</div>${fa.en!==fa.name?`<div class="mf-en">${esc(fa.en)}</div>`:''}</div>
           <div class="mf-vs">VS</div>
-          <div class="mf">${avatarBox(fb,big?76:52)}<div class="mf-nm">${fb.name}</div></div>
+          <div class="mf">${avatarBox(fb,big?76:52)}<div class="mf-nm">${esc(fb.name)}</div>${fb.en!==fb.name?`<div class="mf-en">${esc(fb.en)}</div>`:''}</div>
         </div>
         <div class="mcard-sub">${ev.titleKo||ev.title} · ${ev.city}</div>
       </a>`;
@@ -723,13 +757,15 @@ function viewHome(){
     <div class="cover-faces">
       <a class="cf" href="#fighter/${main.a}">
         <div class="cf-img">${avatarBox(a,150)}</div>
-        <div class="cf-nm">${a.name}</div>
+        <div class="cf-nm">${esc(a.name)}</div>
+        <div class="cf-en">${a.en!==a.name?esc(a.en):'&nbsp;'}</div>
         <div class="cf-rec">${a.record}${a.rank&&a.rank!=='랭킹 외'?' · '+a.rank:''}</div>
       </a>
       <div class="cf-vs">VS</div>
       <a class="cf" href="#fighter/${main.b}">
         <div class="cf-img">${avatarBox(b,150)}</div>
-        <div class="cf-nm">${b.name}</div>
+        <div class="cf-nm">${esc(b.name)}</div>
+        <div class="cf-en">${b.en!==b.name?esc(b.en):'&nbsp;'}</div>
         <div class="cf-rec">${b.record}${b.rank&&b.rank!=='랭킹 외'?' · '+b.rank:''}</div>
       </a>
     </div>
@@ -923,7 +959,7 @@ function fighterListHtml(){
       <a href="#fighter/${f.id}" class="event-item">
         ${avatarBox(f,48)}
         <div>
-          <div class="title">${esc(f.name)}${f.en && f.en!==f.name ? ` <span style="font-size:12px;color:var(--muted)">(${esc(f.en)})</span>`:''}</div>
+          <div class="title">${esc(f.name)}${f.en && f.en!==f.name ? `<span class="name-original">${esc(f.en)}</span>`:''}</div>
           <div class="meta">
             <span>${esc(f.weight)}</span>
             <span>· ${esc(f.record)}</span>
@@ -1017,6 +1053,7 @@ function viewFighter(id){
         <span class="pill gold">${esc(f.rank||'랭킹 외')}</span>
         ${f.country?`<span class="pill ghost">${esc(f.country)}</span>`:''}
       </div>
+      ${f.avatarSource?`<a class="photo-credit" href="${esc(f.avatarSource)}" target="_blank" rel="noopener noreferrer">사진 · Wikimedia Commons ↗</a>`:''}
     </div>
   </div>
 
@@ -1521,7 +1558,8 @@ function transformFighter(f){
     age: cleanExternalText(f.age || ''), height: cleanExternalText(normHeight(f.height||'')), reach: cleanExternalText(normHeight(f.reach||'')), stance: cleanExternalText(f.stance || ''),
     record: cleanExternalText(f.record || '-'), weight: cleanExternalText(f.division || '-'), rank: cleanExternalText(f.rank || '랭킹 외'),
     ko: f.win_ko||0, sub: f.win_sub||0, dec: f.win_dec||0,
-    avatar: cleanExternalText(f.avatar || ''),
+    avatar: safeExternalUrl(f.avatar || f.avatar_url || ''),
+    avatarSource: safeExternalUrl(f.avatar_source || ''),
     style: '', recent: recent, next: f.next || null
   };
 }

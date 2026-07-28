@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-28T10:07:26+09:00",
+  "generated_at": "2026-07-28T10:54:46+09:00",
   "source": "Wikipedia: UFC rankings (Meta)",
   "division_count": 11,
   "divisions": [
@@ -64,7 +64,7 @@
         },
         {
           "name": "Waldo Cortes-Acosta",
-          "name_ko": "Waldo Cortes-Acosta",
+          "name_ko": "왈도 코르테스-아코스타",
           "record": "17–3",
           "country": "Dominican Republic",
           "country_ko": "Dominican Republic",
@@ -91,7 +91,7 @@
         },
         {
           "name": "Serghei Spivac",
-          "name_ko": "Serghei Spivac",
+          "name_ko": "세르게이 스피박",
           "record": "18–6",
           "country": "Moldova",
           "country_ko": "몰도바",
@@ -100,7 +100,7 @@
         },
         {
           "name": "Vitor Petrino",
-          "name_ko": "Vitor Petrino",
+          "name_ko": "비토르 페트리노",
           "record": "14–2",
           "country": "Brazil",
           "country_ko": "브라질",
@@ -127,7 +127,7 @@
         },
         {
           "name": "Mário Pinto",
-          "name_ko": "Mário Pinto",
+          "name_ko": "마리오 핀투",
           "record": "12–0",
           "country": "Portugal",
           "country_ko": "Portugal",
@@ -145,7 +145,7 @@
         },
         {
           "name": "Ryan Spann",
-          "name_ko": "Ryan Spann",
+          "name_ko": "라이언 스팬",
           "record": "24–11",
           "country": "United States",
           "country_ko": "미국",
@@ -258,7 +258,7 @@
         },
         {
           "name": "Navajo Stirling",
-          "name_ko": "Navajo Stirling",
+          "name_ko": "나바호 스털링",
           "record": "10–0",
           "country": "New Zealand",
           "country_ko": "뉴질랜드",
@@ -389,7 +389,7 @@
         },
         {
           "name": "Gregory Rodrigues",
-          "name_ko": "Gregory Rodrigues",
+          "name_ko": "그레고리 호드리게스",
           "record": "19–6",
           "country": "Brazil",
           "country_ko": "브라질",
@@ -443,7 +443,7 @@
         },
         {
           "name": "Nursulton Ruziboev",
-          "name_ko": "Nursulton Ruziboev",
+          "name_ko": "누르술톤 루지보예프",
           "record": "37–9–2(2 NC)",
           "country": "Uzbekistan",
           "country_ko": "Uzbekistan",
@@ -475,7 +475,7 @@
         },
         {
           "name": "Ian Machado Garry",
-          "name_ko": "Ian Machado Garry",
+          "name_ko": "이언 마샤두 개리",
           "record": "17–1",
           "country": "Republic of Ireland",
           "country_ko": "Republic of Ireland",
@@ -574,7 +574,7 @@
         },
         {
           "name": "Daniel Rodriguez",
-          "name_ko": "Daniel Rodriguez",
+          "name_ko": "다니엘 로드리게스",
           "record": "20–5",
           "country": "United States",
           "country_ko": "미국",
@@ -583,7 +583,7 @@
         },
         {
           "name": "Uroš Medić",
-          "name_ko": "Uroš Medić",
+          "name_ko": "우로시 메디치",
           "record": "13–3",
           "country": "Serbia",
           "country_ko": "Serbia",
@@ -687,7 +687,7 @@
         },
         {
           "name": "Quillan Salkilld",
-          "name_ko": "Quillan Salkilld",
+          "name_ko": "퀼런 살킬드",
           "record": "12–1",
           "country": "Australia",
           "country_ko": "호주",
@@ -1143,7 +1143,7 @@
         },
         {
           "name": "Kevin Borjas",
-          "name_ko": "Kevin Borjas",
+          "name_ko": "케빈 보르하스",
           "record": "11–5",
           "country": "Peru",
           "country_ko": "페루",
@@ -1161,7 +1161,7 @@
         },
         {
           "name": "Su Mudaerji",
-          "name_ko": "Su Mudaerji",
+          "name_ko": "수 무다얼지",
           "record": "19–7(1 NC)",
           "country": "China",
           "country_ko": "중국",
@@ -1179,7 +1179,7 @@
         },
         {
           "name": "Alex Perez",
-          "name_ko": "Alex Perez",
+          "name_ko": "알렉스 페레즈",
           "record": "26–10(1 NC)",
           "country": "United States",
           "country_ko": "미국",
@@ -1459,7 +1459,7 @@
         },
         {
           "name": "JJ Aldrich",
-          "name_ko": "JJ Aldrich",
+          "name_ko": "JJ 알드리치",
           "record": "15–7",
           "country": "United States",
           "country_ko": "미국",
@@ -1536,7 +1536,7 @@
         },
         {
           "name": "Gillian Robertson",
-          "name_ko": "Gillian Robertson",
+          "name_ko": "질리언 로버트슨",
           "record": "17–8",
           "country": "Canada",
           "country_ko": "캐나다",
@@ -1572,7 +1572,7 @@
         },
         {
           "name": "Denise Gomes",
-          "name_ko": "Denise Gomes",
+          "name_ko": "데니지 고메스",
           "record": "12–3",
           "country": "Brazil",
           "country_ko": "브라질",
@@ -1590,7 +1590,7 @@
         },
         {
           "name": "Alexia Thainara",
-          "name_ko": "Alexia Thainara",
+          "name_ko": "알렉시아 타이나라",
           "record": "14–1",
           "country": "Brazil",
           "country_ko": "브라질",
@@ -1599,7 +1599,7 @@
         },
         {
           "name": "Amanda Lemos",
-          "name_ko": "Amanda Lemos",
+          "name_ko": "아만다 레모스",
           "record": "15–6–1",
           "country": "Brazil",
           "country_ko": "브라질",

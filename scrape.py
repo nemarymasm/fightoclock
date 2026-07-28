@@ -20,7 +20,7 @@ import json
 import time
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urljoin
+from urllib.parse import unquote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -76,6 +76,7 @@ WEIGHT_KO = {
 COUNTRY_KO = {
     "United States": "미국", "Brazil": "브라질", "Russia": "러시아",
     "England": "잉글랜드", "United Kingdom": "영국", "Ireland": "아일랜드",
+    "Republic of Ireland": "아일랜드",
     "France": "프랑스", "Georgia (country)": "조지아", "Georgia": "조지아",
     "Dagestan": "러시아", "Australia": "호주", "New Zealand": "뉴질랜드",
     "Canada": "캐나다", "Mexico": "멕시코", "Poland": "폴란드",
@@ -174,12 +175,60 @@ def tr_event_title(name):
 def lookup_surname_kr(surname):
     """'Chimaev' → 사전에서 매칭되는 풀네임 찾아 한국어 성만 반환."""
     s = surname.lower().strip()
+    # 동아시아식 성-이름 순서처럼 영문 이벤트 타이틀의 토큰이 풀네임 끝과
+    # 일치하지 않는 소수 사례.
+    overrides = {"song": "송"}
+    if s in overrides:
+        return overrides[s]
     for en_name, kr_name in TRANSLATIONS.get("fighters", {}).items():
-        en_parts = en_name.lower().split()
-        if en_parts and en_parts[-1] == s:
+        normalized = en_name.lower().strip()
+        en_parts = normalized.split()
+        if (en_parts and en_parts[-1] == s) or normalized.endswith(" " + s):
             kr_parts = kr_name.split()
             return kr_parts[-1] if kr_parts else kr_name
     return None
+
+
+def fill_missing_fighter_translations(client, events):
+    """다가오는 카드의 미등록 선수명을 한글 음역해 이번 수집 결과에 보강한다.
+    translations.json은 덮어쓰지 않고, 현재 실행의 메모리 사전에만 추가한다."""
+    if not client:
+        return
+    names = sorted({
+        name
+        for event in events
+        for fight in event.get("main_card", []) + event.get("prelims", [])
+        for name in (fight.get("fighter_a"), fight.get("fighter_b"))
+        if name and tr_fighter(name) == name
+    })
+    if not names:
+        return
+    try:
+        msg = client.messages.create(
+            model="claude-haiku-4-5",
+            max_tokens=4000,
+            messages=[{
+                "role": "user",
+                "content": (
+                    "아래 MMA 선수 이름을 한국 독자가 읽을 수 있도록 외래어 표기 관행에 맞춰 "
+                    "한글로 음역하세요. 번역하거나 별명을 만들지 마세요. "
+                    "반드시 입력 영문명을 키, 한글명만 값을 가진 JSON 객체 하나만 출력하세요.\n"
+                    + json.dumps(names, ensure_ascii=False)
+                ),
+            }],
+        )
+        text = msg.content[0].text.strip()
+        text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.MULTILINE).strip()
+        generated = json.loads(text)
+        valid = {
+            name: generated[name].strip()
+            for name in names
+            if isinstance(generated.get(name), str) and re.search(r"[가-힣]", generated[name])
+        }
+        TRANSLATIONS.setdefault("fighters", {}).update(valid)
+        print(f"  ✓ 신규 선수 한글명 {len(valid)}/{len(names)}명 자동 보강")
+    except Exception as e:
+        print(f"  ⚠️ 신규 선수 한글명 자동 보강 실패: {e}")
 
 
 # ────────────────────────────────────────────────────────────────
@@ -718,7 +767,8 @@ def fetch_recent_past_events(limit=6):
 
 def fetch_fighter_detail(url):
     """선수 개별 위키 페이지 인포박스에서 신체·전적·피니시 정보 추출.
-    반환 dict: nick, height, reach, stance, age, record,
+    반환 dict: nick, height, reach, stance, age, record, name_ko,
+              avatar_url/avatar_source,
               win_ko/win_sub/win_dec (승리 방식 분해, 없는 항목은 생략)."""
     out = {}
     if not url:
@@ -730,8 +780,45 @@ def fetch_fighter_detail(url):
         if not infobox:
             return out
 
+        # 한국어 위키 문서가 있으면 문서 제목을 공식 한글 표기로 우선 사용한다.
+        # (문서가 없는 선수는 translations.json의 수동 표기를 유지)
+        ko_alt = soup.find(
+            "link",
+            attrs={"rel": lambda value: value and "alternate" in value, "hreflang": "ko"},
+        ) or soup.find("a", attrs={"lang": "ko", "hreflang": "ko"})
+        if ko_alt and ko_alt.get("href"):
+            title = unquote(urlparse(ko_alt["href"]).path.rsplit("/", 1)[-1]).replace("_", " ")
+            if title and re.search(r"[가-힣]", title):
+                out["name_ko"] = title
+
+        # 실제 인물 사진은 재사용 조건이 명확한 Wikimedia Commons 파일만 연결한다.
+        # Wikipedia 자체의 비자유 파일(wikipedia/en)은 제외한다.
+        photo = infobox.find("img")
+        if photo:
+            src = photo.get("src") or ""
+            width = int(photo.get("width") or 0)
+            height = int(photo.get("height") or 0)
+            if src.startswith("//"):
+                src = "https:" + src
+            is_decorative = re.search(r"(?:flag_of_|medal_icon|logo|icon_)", src, re.IGNORECASE)
+            if (
+                "upload.wikimedia.org/wikipedia/commons/" in src
+                and max(width, height) >= 120
+                and not is_decorative
+            ):
+                source_link = photo.find_parent("a")
+                source_href = source_link.get("href") if source_link else ""
+                out["avatar_url"] = src
+                out["avatar_source"] = (
+                    urljoin("https://commons.wikimedia.org/wiki/", source_href)
+                    if "File:" in unquote(source_href)
+                    else url
+                )
+
         wins = losses = None
         mode = None  # 'win' | 'loss' — 'By knockout' 등이 어느 섹션 소속인지 추적
+        mma_section_seen = False
+        in_mma_record = False
         for row in infobox.find_all("tr"):
             th = row.find("th")
             td = row.find("td")
@@ -744,7 +831,18 @@ def fetch_fighter_detail(url):
                 m = re.match(r"\d+", s or "")
                 return int(m.group(0)) if m else None
 
-            if "height" in label and val:
+            if "mixed martial arts" in label and "record" in label:
+                # 복싱·아마추어 전적이 함께 있는 인포박스에서도 프로 MMA만 사용한다.
+                mma_section_seen = True
+                in_mma_record = True
+                mode = None
+                wins = losses = None
+                for key in ("win_ko", "win_sub", "win_dec"):
+                    out.pop(key, None)
+            elif label.endswith("record") and mma_section_seen:
+                in_mma_record = False
+                mode = None
+            elif "height" in label and val:
                 m = re.search(r"\(([\d.]+)\s*(cm|m)\)", val)
                 if m:
                     num = float(m.group(1))
@@ -766,15 +864,15 @@ def fetch_fighter_detail(url):
                 m = re.search(r"age[\s\xa0]*(\d{2})", val)
                 if m:
                     out["age"] = m.group(1)
-            elif label in ("wins", "win"):
+            elif label in ("wins", "win") and (in_mma_record or not mma_section_seen):
                 mode = "win"
                 if val:
                     wins = as_int(val)
-            elif label in ("losses", "loss"):
+            elif label in ("losses", "loss") and (in_mma_record or not mma_section_seen):
                 mode = "loss"
                 if val:
                     losses = as_int(val)
-            elif label.startswith("by ") and val:
+            elif label.startswith("by ") and val and (in_mma_record or not mma_section_seen):
                 # 승리 방식 분해 (Wins 섹션 소속일 때만)
                 n = as_int(val)
                 if mode == "win" and n is not None:
@@ -907,7 +1005,12 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     print(f"\n→ 선수 상세정보(전적·키·리치·스탠스·나이) 수집: {len(fetch_list)}명...")
     for i, f in enumerate(fetch_list):
         det = fetch_fighter_detail(f["url"])
+        if f["name_ko"] == f["name"] and det.get("name_ko"):
+            f["name_ko"] = det["name_ko"]
         for k in ("nick", "height", "reach", "stance", "age"):
+            if det.get(k):
+                f[k] = det[k]
+        for k in ("avatar_url", "avatar_source"):
             if det.get(k):
                 f[k] = det[k]
         for k in ("win_ko", "win_sub", "win_dec"):
@@ -1210,6 +1313,9 @@ def main():
             mc = len(past[i].get("main_card", []))
             wins = sum(1 for f in past[i].get("main_card", []) if f.get("winner"))
             print("      main card:", mc, "fights /", wins, "승자 확정")
+
+    print("\n-> Filling missing Korean fighter names...")
+    fill_missing_fighter_translations(client, events)
 
     print("\n-> Applying translations (fighter/venue/location)...")
     for ev in events:

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-28T10:07:26+09:00",
+  "generated_at": "2026-07-28T10:54:46+09:00",
   "source": "Wikipedia: 랭킹 + 대진표 + 개별 인포박스",
   "fighter_count": 332,
   "fighters": [
@@ -38,7 +38,7 @@
       "reach": "206cm",
       "stance": "",
       "age": "36",
-      "win_ko": 9,
+      "win_ko": 7,
       "win_sub": 3,
       "win_dec": 4,
       "recent": [
@@ -51,7 +51,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_64%28cropped%29.jpg/250px-thumbnail.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250,_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship,_Sunday,_June_14,_2026,_in_the_Grand_Foyer_of_the_White_House_-_64(cropped).jpg"
     },
     {
       "id": "alexander-volkov",
@@ -71,7 +73,9 @@
       "win_sub": 4,
       "win_dec": 12,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Sergei_Pavlovich_vs_Alexander_Volkov_face_off_%28cropped%29.png/250px-Sergei_Pavlovich_vs_Alexander_Volkov_face_off_%28cropped%29.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Sergei_Pavlovich_vs_Alexander_Volkov_face_off_(cropped).png"
     },
     {
       "id": "sergei-pavlovich",
@@ -91,7 +95,9 @@
       "win_sub": 0,
       "win_dec": 5,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/SergeiPavlovich2018.png/250px-SergeiPavlovich2018.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:SergeiPavlovich2018.png"
     },
     {
       "id": "alex-pereira",
@@ -120,7 +126,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alex_Pereira_in_the_Oval_Office_(while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters).jpg"
     },
     {
       "id": "josh-hokit",
@@ -149,12 +157,14 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/UFC_Freedom_250_Press_Conference_%289747953%29_%28cropped%29.jpg/250px-UFC_Freedom_250_Press_Conference_%289747953%29_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_Press_Conference_(9747953)_(cropped).jpg"
     },
     {
       "id": "waldo-cortes-acosta",
       "name": "Waldo Cortes-Acosta",
-      "name_ko": "Waldo Cortes-Acosta",
+      "name_ko": "왈도 코르테스-아코스타",
       "record": "17승 3패",
       "country": "Dominican Republic",
       "country_ko": "Dominican Republic",
@@ -225,15 +235,17 @@
       "recent": [],
       "next": {
         "opp": "Waldo Cortes-Acosta",
-        "opp_ko": "Waldo Cortes-Acosta",
+        "opp_ko": "왈도 코르테스-아코스타",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Curtis_Blaydes_at_UFC_221.png/250px-Curtis_Blaydes_at_UFC_221.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Curtis_Blaydes_at_UFC_221.png"
     },
     {
       "id": "serghei-spivac",
       "name": "Serghei Spivac",
-      "name_ko": "Serghei Spivac",
+      "name_ko": "세르게이 스피박",
       "record": "18승 6패",
       "country": "Moldova",
       "country_ko": "몰도바",
@@ -250,15 +262,15 @@
       "recent": [],
       "next": {
         "opp": "Vitor Petrino",
-        "opp_ko": "Vitor Petrino",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "비토르 페트리노",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "vitor-petrino",
       "name": "Vitor Petrino",
-      "name_ko": "Vitor Petrino",
+      "name_ko": "비토르 페트리노",
       "record": "14승 2패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -275,8 +287,8 @@
       "recent": [],
       "next": {
         "opp": "Serghei Spivac",
-        "opp_ko": "Serghei Spivac",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "세르게이 스피박",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
@@ -332,7 +344,7 @@
     {
       "id": "m-rio-pinto",
       "name": "Mário Pinto",
-      "name_ko": "Mário Pinto",
+      "name_ko": "마리오 핀투",
       "record": "12–0",
       "country": "Portugal",
       "country_ko": "Portugal",
@@ -349,7 +361,7 @@
       "recent": [],
       "next": {
         "opp": "Ryan Spann",
-        "opp_ko": "Ryan Spann",
+        "opp_ko": "라이언 스팬",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
       }
@@ -377,7 +389,7 @@
     {
       "id": "ryan-spann",
       "name": "Ryan Spann",
-      "name_ko": "Ryan Spann",
+      "name_ko": "라이언 스팬",
       "record": "24승 11패",
       "country": "United States",
       "country_ko": "미국",
@@ -394,7 +406,7 @@
       "recent": [],
       "next": {
         "opp": "Mário Pinto",
-        "opp_ko": "Mário Pinto",
+        "opp_ko": "마리오 핀투",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
       }
@@ -417,7 +429,9 @@
       "win_sub": 1,
       "win_dec": 4,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg/250px-Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250,_Saturday,_June_13,_2026_-_11(cropped).jpg"
     },
     {
       "id": "magomed-ankalaev",
@@ -446,7 +460,9 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg/250px-Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow,_Russia.jpg"
     },
     {
       "id": "ji-proch-zka",
@@ -466,7 +482,9 @@
       "win_sub": 3,
       "win_dec": 1,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/JiriProchazka2022.png/250px-JiriProchazka2022.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:JiriProchazka2022.png"
     },
     {
       "id": "paulo-costa",
@@ -486,7 +504,9 @@
       "win_sub": 1,
       "win_dec": 3,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Borrachinha_galo.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Borrachinha_galo.jpg"
     },
     {
       "id": "jamahal-hill",
@@ -526,7 +546,9 @@
       "win_sub": 0,
       "win_dec": 5,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Khalil_Rountree%2C_Jr.._%28cropped%29.jpg/250px-Khalil_Rountree%2C_Jr.._%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Khalil_Rountree,_Jr.._(cropped).jpg"
     },
     {
       "id": "dominick-reyes",
@@ -546,7 +568,9 @@
       "win_sub": 2,
       "win_dec": 4,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dominick_Reyes_%2854451224096%29.jpg/250px-Dominick_Reyes_%2854451224096%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Dominick_Reyes_(54451224096).jpg"
     },
     {
       "id": "azamat-murzakanov",
@@ -624,12 +648,14 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/JTF-DC_-_Freedom_250_UFC_Fan_Fest_Day_2_%281%29_%28cropped%29.jpg/250px-JTF-DC_-_Freedom_250_UFC_Fan_Fest_Day_2_%281%29_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:JTF-DC_-_Freedom_250_UFC_Fan_Fest_Day_2_(1)_(cropped).jpg"
     },
     {
       "id": "navajo-stirling",
       "name": "Navajo Stirling",
-      "name_ko": "Navajo Stirling",
+      "name_ko": "나바호 스털링",
       "record": "10승 0패",
       "country": "New Zealand",
       "country_ko": "뉴질랜드",
@@ -656,7 +682,7 @@
       "next": {
         "opp": "Jan Błachowicz",
         "opp_ko": "얀 블라호비치",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
@@ -687,7 +713,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Robert_Whittaker_2024.png/250px-Robert_Whittaker_2024.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Robert_Whittaker_2024.png"
     },
     {
       "id": "alonzo-menifield",
@@ -707,7 +735,9 @@
       "win_sub": 3,
       "win_dec": 4,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Alonzo_Menifield_Jan_20%2C_2019.jpg/250px-Alonzo_Menifield_Jan_20%2C_2019.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alonzo_Menifield_Jan_20,_2019.jpg"
     },
     {
       "id": "johnny-walker",
@@ -727,7 +757,9 @@
       "win_sub": 3,
       "win_dec": 2,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/AFSOC_celebrates_Outstanding_Airmen_of_the_Year_%285%29.jpg/250px-AFSOC_celebrates_Outstanding_Airmen_of_the_Year_%285%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:AFSOC_celebrates_Outstanding_Airmen_of_the_Year_(5).jpg"
     },
     {
       "id": "jan-b-achowicz",
@@ -749,10 +781,12 @@
       "recent": [],
       "next": {
         "opp": "Navajo Stirling",
-        "opp_ko": "Navajo Stirling",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "나바호 스털링",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Jan_Blachowicz_at_UFC_Fight_Night_136.jpg/250px-Jan_Blachowicz_at_UFC_Fight_Night_136.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jan_Blachowicz_at_UFC_Fight_Night_136.jpg"
     },
     {
       "id": "sean-strickland",
@@ -772,13 +806,15 @@
       "win_sub": 4,
       "win_dec": 15,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sean_Strickland_at_UFN_200.png/250px-Sean_Strickland_at_UFN_200.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Sean_Strickland_at_UFN_200.png"
     },
     {
       "id": "khamzat-chimaev",
       "name": "Khamzat Chimaev",
       "name_ko": "카마줏 치마예프",
-      "record": "3승 1패",
+      "record": "15승 1패",
       "country": "United Arab Emirates",
       "country_ko": "United Arab Emirates",
       "division": "미들급",
@@ -788,17 +824,19 @@
       "reach": "190cm",
       "stance": "",
       "age": "32",
-      "win_ko": 1,
-      "win_sub": 2,
+      "win_ko": 6,
+      "win_sub": 6,
       "win_dec": 3,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Khamzat_Chimaev_2022_%28cropped%29.png/250px-Khamzat_Chimaev_2022_%28cropped%29.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Khamzat_Chimaev_2022_(cropped).png"
     },
     {
       "id": "dricus-du-plessis",
       "name": "Dricus du Plessis",
       "name_ko": "드리쿠스 두 플레시",
-      "record": "33승 0패",
+      "record": "24승 3패",
       "country": "South Africa",
       "country_ko": "남아공",
       "division": "미들급",
@@ -808,7 +846,7 @@
       "reach": "193cm",
       "stance": "정통",
       "age": "32",
-      "win_ko": 30,
+      "win_ko": 9,
       "win_sub": 11,
       "win_dec": 4,
       "recent": [
@@ -817,11 +855,13 @@
           "opp_ko": "카마루 우스만",
           "result": "win",
           "method": "Decision (unanimous) (50–45, 49–46, 49–46)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/IMG-Dricus-Duplessis%28cropped%29.jpg/250px-IMG-Dricus-Duplessis%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:IMG-Dricus-Duplessis(cropped).jpg"
     },
     {
       "id": "nassourdine-imavov",
@@ -841,7 +881,9 @@
       "win_sub": 4,
       "win_dec": 6,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Nassourdine_Imavov.jpg/250px-Nassourdine_Imavov.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Nassourdine_Imavov.jpg"
     },
     {
       "id": "joe-pyfer",
@@ -881,7 +923,9 @@
       "win_sub": 14,
       "win_dec": 7,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BrendanAllen.png/250px-BrendanAllen.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:BrendanAllen.png"
     },
     {
       "id": "caio-borralho",
@@ -901,13 +945,15 @@
       "win_sub": 4,
       "win_dec": 9,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Caio_Borralho_2025.jpg/250px-Caio_Borralho_2025.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Caio_Borralho_2025.jpg"
     },
     {
       "id": "anthony-hernandez",
       "name": "Anthony Hernandez",
       "name_ko": "안소니 에르난데스",
-      "record": "9승 1패",
+      "record": "15승 3패",
       "country": "United States",
       "country_ko": "미국",
       "division": "미들급",
@@ -917,14 +963,14 @@
       "reach": "191cm",
       "stance": "정통",
       "age": "32",
-      "win_ko": 4,
-      "win_sub": 3,
+      "win_ko": 3,
+      "win_sub": 9,
       "win_dec": 3,
       "recent": [],
       "next": {
         "opp": "Gregory Rodrigues",
-        "opp_ko": "Gregory Rodrigues",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "그레고리 호드리게스",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
@@ -946,12 +992,14 @@
       "win_sub": 0,
       "win_dec": 8,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Israel_Adesanya_at_UFC_230.jpg/250px-Israel_Adesanya_at_UFC_230.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Israel_Adesanya_at_UFC_230.jpg"
     },
     {
       "id": "gregory-rodrigues",
       "name": "Gregory Rodrigues",
-      "name_ko": "Gregory Rodrigues",
+      "name_ko": "그레고리 호드리게스",
       "record": "19승 6패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -969,9 +1017,11 @@
       "next": {
         "opp": "Anthony Hernandez",
         "opp_ko": "안소니 에르난데스",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/GregoryRodrigues.png/250px-GregoryRodrigues.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:GregoryRodrigues.png"
     },
     {
       "id": "christian-leroy-duncan",
@@ -996,7 +1046,7 @@
           "opp_ko": "자레드 캐노니어",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -1025,11 +1075,13 @@
           "opp_ko": "드리쿠스 두 플레시",
           "result": "loss",
           "method": "Decision (unanimous) (50–45, 49–46, 49–46)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/KamaruUsmanPress2018.png/250px-KamaruUsmanPress2018.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:KamaruUsmanPress2018.png"
     },
     {
       "id": "ikram-aliskerov",
@@ -1058,13 +1110,15 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ikram_Aliskerov_2024.png/250px-Ikram_Aliskerov_2024.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ikram_Aliskerov_2024.png"
     },
     {
       "id": "bo-nickal",
       "name": "Bo Nickal",
       "name_ko": "보 니컬",
-      "record": "2승 0패",
+      "record": "9승 1패",
       "country": "United States",
       "country_ko": "미국",
       "division": "미들급",
@@ -1074,8 +1128,8 @@
       "reach": "191cm",
       "stance": "사우스포",
       "age": "30",
-      "win_ko": 1,
-      "win_sub": 1,
+      "win_ko": 4,
+      "win_sub": 4,
       "win_dec": 1,
       "recent": [
         {
@@ -1087,7 +1141,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Bo_Nickal_%2852791819473%29.jpg/250px-Bo_Nickal_%2852791819473%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Bo_Nickal_(52791819473).jpg"
     },
     {
       "id": "abusupiyan-magomedov",
@@ -1121,7 +1177,7 @@
     {
       "id": "nursulton-ruziboev",
       "name": "Nursulton Ruziboev",
-      "name_ko": "Nursulton Ruziboev",
+      "name_ko": "누르술톤 루지보예프",
       "record": "37승 9패",
       "country": "Uzbekistan",
       "country_ko": "Uzbekistan",
@@ -1150,7 +1206,9 @@
         "opp_ko": "마이클 페이지",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/NursultonRuziboev2024.png/250px-NursultonRuziboev2024.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:NursultonRuziboev2024.png"
     },
     {
       "id": "islam-makhachev",
@@ -1172,10 +1230,12 @@
       "recent": [],
       "next": {
         "opp": "Ian Machado Garry",
-        "opp_ko": "Ian Machado Garry",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "이언 마샤두 개리",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg/250px-Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Islam_Makhachev_and_Sergey_Melikov_2025_(cropped).jpg"
     },
     {
       "id": "carlos-prates",
@@ -1195,15 +1255,17 @@
       "win_sub": 3,
       "win_dec": 2,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Carlos_Prates_2026.jpg/250px-Carlos_Prates_2026.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Carlos_Prates_2026.jpg"
     },
     {
       "id": "ian-machado-garry",
       "name": "Ian Machado Garry",
-      "name_ko": "Ian Machado Garry",
-      "record": "6승 1패",
+      "name_ko": "이언 마샤두 개리",
+      "record": "17승 1패",
       "country": "Republic of Ireland",
-      "country_ko": "Republic of Ireland",
+      "country_ko": "아일랜드",
       "division": "웰터급",
       "rank": "#2",
       "nick": "",
@@ -1211,16 +1273,18 @@
       "reach": "188cm",
       "stance": "",
       "age": "28",
-      "win_ko": 5,
+      "win_ko": 7,
       "win_sub": 1,
       "win_dec": 9,
       "recent": [],
       "next": {
         "opp": "Islam Makhachev",
         "opp_ko": "이슬람 마카체프",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/IanGarry.jpg/250px-IanGarry.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:IanGarry.jpg"
     },
     {
       "id": "michael-morales",
@@ -1240,7 +1304,9 @@
       "win_sub": 1,
       "win_dec": 4,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Michael_Morales._QUITO%2C_27_DE_MAYO_DEL_2025_%28cropped%29.jpg/250px-Michael_Morales._QUITO%2C_27_DE_MAYO_DEL_2025_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Michael_Morales._QUITO,_27_DE_MAYO_DEL_2025_(cropped).jpg"
     },
     {
       "id": "jack-della-maddalena",
@@ -1280,7 +1346,9 @@
       "win_sub": 6,
       "win_dec": 10,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/SeanBrady.jpg/250px-SeanBrady.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:SeanBrady.jpg"
     },
     {
       "id": "gabriel-bonfim",
@@ -1300,13 +1368,15 @@
       "win_sub": 13,
       "win_dec": 3,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Gabriel_Bonfim_2025.jpg/250px-Gabriel_Bonfim_2025.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Gabriel_Bonfim_2025.jpg"
     },
     {
       "id": "belal-muhammad",
       "name": "Belal Muhammad",
       "name_ko": "벨랄 무하마드",
-      "record": "2승 0패",
+      "record": "24승 6패",
       "country": "United States",
       "country_ko": "미국",
       "division": "웰터급",
@@ -1318,9 +1388,11 @@
       "age": "38",
       "win_ko": 5,
       "win_sub": 1,
-      "win_dec": 2,
+      "win_dec": 18,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Belal_Muhammad_UFC_%28cropped%29.jpg/250px-Belal_Muhammad_UFC_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Belal_Muhammad_UFC_(cropped).jpg"
     },
     {
       "id": "leon-edwards",
@@ -1340,7 +1412,9 @@
       "win_sub": 3,
       "win_dec": 12,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Leon_Edwards_2021.png/250px-Leon_Edwards_2021.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Leon_Edwards_2021.png"
     },
     {
       "id": "joaquin-buckley",
@@ -1380,7 +1454,9 @@
       "win_sub": 6,
       "win_dec": 2,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mike-malott-2023-ufc-fighter-canada.png/250px-Mike-malott-2023-ufc-fighter-canada.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Mike-malott-2023-ufc-fighter-canada.png"
     },
     {
       "id": "michael-page",
@@ -1402,15 +1478,17 @@
       "recent": [],
       "next": {
         "opp": "Nursulton Ruziboev",
-        "opp_ko": "Nursulton Ruziboev",
+        "opp_ko": "누르술톤 루지보예프",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Michael_Venom_Page.png/250px-Michael_Venom_Page.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Michael_Venom_Page.png"
     },
     {
       "id": "daniel-rodriguez",
       "name": "Daniel Rodriguez",
-      "name_ko": "Daniel Rodriguez",
+      "name_ko": "다니엘 로드리게스",
       "record": "20승 5패",
       "country": "United States",
       "country_ko": "미국",
@@ -1427,15 +1505,15 @@
       "recent": [],
       "next": {
         "opp": "Uroš Medić",
-        "opp_ko": "Uroš Medić",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "우로시 메디치",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "uro-medi",
       "name": "Uroš Medić",
-      "name_ko": "Uroš Medić",
+      "name_ko": "우로시 메디치",
       "record": "13승 3패",
       "country": "Serbia",
       "country_ko": "Serbia",
@@ -1452,8 +1530,8 @@
       "recent": [],
       "next": {
         "opp": "Daniel Rodriguez",
-        "opp_ko": "Daniel Rodriguez",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "다니엘 로드리게스",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
@@ -1481,7 +1559,7 @@
       "id": "justin-gaethje",
       "name": "Justin Gaethje",
       "name_ko": "저스틴 게이치",
-      "record": "7승 5패",
+      "record": "28승 5패",
       "country": "United States",
       "country_ko": "미국",
       "division": "라이트급",
@@ -1491,9 +1569,9 @@
       "reach": "178cm",
       "stance": "정통",
       "age": "37",
-      "win_ko": 4,
-      "win_sub": 2,
-      "win_dec": 1,
+      "win_ko": 21,
+      "win_sub": 1,
+      "win_dec": 6,
       "recent": [
         {
           "opp": "Ilia Topuria",
@@ -1504,7 +1582,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_67%28cropped%29.jpg/250px-thumbnail.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250,_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship,_Sunday,_June_14,_2026,_in_the_Grand_Foyer_of_the_White_House_-_67(cropped).jpg"
     },
     {
       "id": "ilia-topuria",
@@ -1533,13 +1613,15 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ilia_Topuria_in_the_Oval_Office_(while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters).jpg"
     },
     {
       "id": "arman-tsarukyan",
       "name": "Arman Tsarukyan",
       "name_ko": "아르만 차루키안",
-      "record": "7승 1패",
+      "record": "23승 3패",
       "country": "Armenia",
       "country_ko": "아르메니아",
       "division": "라이트급",
@@ -1553,7 +1635,9 @@
       "win_sub": 6,
       "win_dec": 8,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Arman_Tsarukyan_2019.jpg/250px-Arman_Tsarukyan_2019.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Arman_Tsarukyan_2019.jpg"
     },
     {
       "id": "charles-oliveira",
@@ -1573,7 +1657,9 @@
       "win_sub": 22,
       "win_dec": 5,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Charles_Oliveira_do_Bronxs.jpg/250px-Charles_Oliveira_do_Bronxs.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Charles_Oliveira_do_Bronxs.jpg"
     },
     {
       "id": "max-holloway",
@@ -1602,7 +1688,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg/250px-Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Blue_Angels'_VIP_Rider_Max_Holloway_(1)_(cropped).jpg"
     },
     {
       "id": "paddy-pimblett",
@@ -1631,7 +1719,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/UFC_Star_Paddy_The_Baddy_Pimblett_tells_his_story_%28cropped%29.jpg/250px-UFC_Star_Paddy_The_Baddy_Pimblett_tells_his_story_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Star_Paddy_The_Baddy_Pimblett_tells_his_story_(cropped).jpg"
     },
     {
       "id": "mateusz-gamrot",
@@ -1653,10 +1743,12 @@
       "recent": [],
       "next": {
         "opp": "Quillan Salkilld",
-        "opp_ko": "Quillan Salkilld",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "퀼런 살킬드",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mateusz_Gamrot.jpg/250px-Mateusz_Gamrot.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Mateusz_Gamrot.jpg"
     },
     {
       "id": "renato-moicano",
@@ -1676,13 +1768,15 @@
       "win_sub": 11,
       "win_dec": 8,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Renato_Moicano_2025.jpg/250px-Renato_Moicano_2025.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Renato_Moicano_2025.jpg"
     },
     {
       "id": "beno-t-saint-denis",
       "name": "Benoît Saint Denis",
-      "name_ko": "Benoît Saint Denis",
-      "record": "3승 4패",
+      "name_ko": "브누아 생드니",
+      "record": "17승 4패",
       "country": "France",
       "country_ko": "프랑스",
       "division": "라이트급",
@@ -1693,7 +1787,7 @@
       "stance": "",
       "age": "30",
       "win_ko": 6,
-      "win_sub": 2,
+      "win_sub": 11,
       "win_dec": 0,
       "recent": [
         {
@@ -1705,12 +1799,14 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Benoit_Saint_Denis_2023.png/250px-Benoit_Saint_Denis_2023.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Benoit_Saint_Denis_2023.png"
     },
     {
       "id": "quillan-salkilld",
       "name": "Quillan Salkilld",
-      "name_ko": "Quillan Salkilld",
+      "name_ko": "퀼런 살킬드",
       "record": "12승 1패",
       "country": "Australia",
       "country_ko": "호주",
@@ -1728,7 +1824,7 @@
       "next": {
         "opp": "Mateusz Gamrot",
         "opp_ko": "마테우시 감로트",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
@@ -1759,7 +1855,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_22%28cropped%29.jpg/250px-UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_22%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington,_D.C.,_Friday,_June_12,_2026_-_22(cropped).jpg"
     },
     {
       "id": "tom-nolan",
@@ -1799,7 +1897,9 @@
       "win_sub": 7,
       "win_dec": 6,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/DanHooker2016.png/250px-DanHooker2016.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:DanHooker2016.png"
     },
     {
       "id": "rafael-fiziev",
@@ -1828,7 +1928,9 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Fiziev_2023.png/250px-Fiziev_2023.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Fiziev_2023.png"
     },
     {
       "id": "grant-dawson",
@@ -1888,7 +1990,9 @@
       "win_sub": 3,
       "win_dec": 12,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Alexander_Volkanovski_at_UFC_232.jpg/250px-Alexander_Volkanovski_at_UFC_232.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alexander_Volkanovski_at_UFC_232.jpg"
     },
     {
       "id": "movsar-evloev",
@@ -1908,7 +2012,9 @@
       "win_sub": 4,
       "win_dec": 13,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Movsar_Evloev_M-1_Challenge_2018.jpg/250px-Movsar_Evloev_M-1_Challenge_2018.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Movsar_Evloev_M-1_Challenge_2018.jpg"
     },
     {
       "id": "diego-lopes",
@@ -1937,7 +2043,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_31%28cropped%29.jpg/250px-thumbnail.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250,_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship,_Sunday,_June_14,_2026,_in_the_Grand_Foyer_of_the_White_House_-_31(cropped).jpg"
     },
     {
       "id": "lerone-murphy",
@@ -1962,7 +2070,7 @@
     {
       "id": "aljamain-sterling",
       "name": "Aljamain Sterling",
-      "name_ko": "Aljamain Sterling",
+      "name_ko": "알저메인 스털링",
       "record": "26승 5패",
       "country": "United States",
       "country_ko": "미국",
@@ -1977,7 +2085,9 @@
       "win_sub": 8,
       "win_dec": 14,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Alijamain_Sterling_at_UFC_228.jpg/250px-Alijamain_Sterling_at_UFC_228.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alijamain_Sterling_at_UFC_228.jpg"
     },
     {
       "id": "arnold-allen",
@@ -1997,7 +2107,9 @@
       "win_sub": 4,
       "win_dec": 2,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Arnold_Allen_at_UFC_Fight_Night_147_in_London.jpg/250px-Arnold_Allen_at_UFC_Fight_Night_147_in_London.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Arnold_Allen_at_UFC_Fight_Night_147_in_London.jpg"
     },
     {
       "id": "jean-silva",
@@ -2017,7 +2129,9 @@
       "win_sub": 3,
       "win_dec": 2,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jean_Silva_%2854451587575%29.jpg/250px-Jean_Silva_%2854451587575%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jean_Silva_(54451587575).jpg"
     },
     {
       "id": "pat-sabatini",
@@ -2043,7 +2157,7 @@
       "id": "youssef-zalal",
       "name": "Youssef Zalal",
       "name_ko": "Youssef Zalal",
-      "record": "4승 1패",
+      "record": "18승 6패",
       "country": "Morocco",
       "country_ko": "Morocco",
       "division": "페더급",
@@ -2053,9 +2167,9 @@
       "reach": "183cm",
       "stance": "정통",
       "age": "29",
-      "win_ko": 2,
-      "win_sub": 1,
-      "win_dec": 1,
+      "win_ko": 4,
+      "win_sub": 10,
+      "win_dec": 4,
       "recent": [],
       "next": null
     },
@@ -2077,7 +2191,9 @@
       "win_sub": 5,
       "win_dec": 10,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Nathaniel_Wood_at_UFC_232.jpg/250px-Nathaniel_Wood_at_UFC_232.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Nathaniel_Wood_at_UFC_232.jpg"
     },
     {
       "id": "kevin-vallejos",
@@ -2146,7 +2262,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_10%28cropped%29.jpg/250px-UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_10%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington,_D.C.,_Friday,_June_12,_2026_-_10(cropped).jpg"
     },
     {
       "id": "aaron-pico",
@@ -2166,7 +2284,9 @@
       "win_sub": 2,
       "win_dec": 3,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wrestler_Aaron_Pico_2014.png/250px-Wrestler_Aaron_Pico_2014.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Wrestler_Aaron_Pico_2014.png"
     },
     {
       "id": "jose-miguel-delgado",
@@ -2191,7 +2311,7 @@
           "opp_ko": "Austin Bashi",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -2235,13 +2355,15 @@
       "win_sub": 1,
       "win_dec": 12,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg/250px-Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_at_award_ceremonies_(2026-04-22)_24(cropped).jpg"
     },
     {
       "id": "merab-dvalishvili",
       "name": "Merab Dvalishvili",
       "name_ko": "메랍 드발리시빌리",
-      "record": "1승 0패",
+      "record": "21승 5패",
       "country": "Georgia (country)",
       "country_ko": "조지아",
       "division": "밴텀급",
@@ -2255,7 +2377,9 @@
       "win_sub": 2,
       "win_dec": 16,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg/250px-Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Merab_Dvalishvili_at_UFC_316_(cropped).jpg"
     },
     {
       "id": "umar-nurmagomedov",
@@ -2278,9 +2402,11 @@
       "next": {
         "opp": "Song Yadong",
         "opp_ko": "송 야둥",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/UmarNurmagomedov.png/250px-UmarNurmagomedov.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UmarNurmagomedov.png"
     },
     {
       "id": "sean-o-malley",
@@ -2309,7 +2435,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_25%28cropped%29.jpg/250px-UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_25%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington,_D.C.,_Friday,_June_12,_2026_-_25(cropped).jpg"
     },
     {
       "id": "mario-bautista",
@@ -2367,7 +2495,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/UFC%27s_Corey_Sandhagen_brings_his_fighting_spirit_to_the_1st_SOW_%281%29_%28cropped%29.jpg/250px-UFC%27s_Corey_Sandhagen_brings_his_fighting_spirit_to_the_1st_SOW_%281%29_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC's_Corey_Sandhagen_brings_his_fighting_spirit_to_the_1st_SOW_(1)_(cropped).jpg"
     },
     {
       "id": "song-yadong",
@@ -2390,7 +2520,7 @@
       "next": {
         "opp": "Umar Nurmagomedov",
         "opp_ko": "우마르 누르마고메도프",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
@@ -2467,7 +2597,7 @@
       "id": "marcus-mcghee",
       "name": "Marcus McGhee",
       "name_ko": "Marcus McGhee",
-      "record": "3승 2패",
+      "record": "11승 2패",
       "country": "United States",
       "country_ko": "미국",
       "division": "밴텀급",
@@ -2477,7 +2607,7 @@
       "reach": "175cm",
       "stance": "정통",
       "age": "36",
-      "win_ko": 2,
+      "win_ko": 8,
       "win_sub": 1,
       "win_dec": 2,
       "recent": [],
@@ -2501,7 +2631,9 @@
       "win_sub": 9,
       "win_dec": 7,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Deiveson_Figueiredo_2024.jpg/250px-Deiveson_Figueiredo_2024.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Deiveson_Figueiredo_2024.jpg"
     },
     {
       "id": "aiemann-zahabi",
@@ -2530,13 +2662,15 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/UFC_Freedom_250_Press_Conference_%289747954%29%28cropped%29.jpg/250px-UFC_Freedom_250_Press_Conference_%289747954%29%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_Press_Conference_(9747954)(cropped).jpg"
     },
     {
       "id": "charles-jourdain",
       "name": "Charles Jourdain",
       "name_ko": "Charles Jourdain",
-      "record": "8승 2패",
+      "record": "18승 8패",
       "country": "Canada",
       "country_ko": "캐나다",
       "division": "밴텀급",
@@ -2547,7 +2681,7 @@
       "stance": "",
       "age": "30",
       "win_ko": 8,
-      "win_sub": 5,
+      "win_sub": 7,
       "win_dec": 3,
       "recent": [],
       "next": null
@@ -2556,7 +2690,7 @@
       "id": "bryce-mitchell",
       "name": "Bryce Mitchell",
       "name_ko": "Bryce Mitchell",
-      "record": "10승 1패",
+      "record": "19승 3패",
       "country": "United States",
       "country_ko": "미국",
       "division": "밴텀급",
@@ -2567,7 +2701,7 @@
       "stance": "사우스포",
       "age": "31",
       "win_ko": 1,
-      "win_sub": 9,
+      "win_sub": 10,
       "win_dec": 8,
       "recent": [],
       "next": null
@@ -2590,7 +2724,9 @@
       "win_sub": 1,
       "win_dec": 6,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Montel_Jackson_at_UFC_232.jpg/250px-Montel_Jackson_at_UFC_232.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Montel_Jackson_at_UFC_232.jpg"
     },
     {
       "id": "joshua-van",
@@ -2630,7 +2766,9 @@
       "win_sub": 12,
       "win_dec": 10,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pantoja_2025.jpg/250px-Pantoja_2025.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Pantoja_2025.jpg"
     },
     {
       "id": "manel-kape",
@@ -2659,7 +2797,9 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/ManelKape2017.png/250px-ManelKape2017.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:ManelKape2017.png"
     },
     {
       "id": "brandon-royval",
@@ -2708,7 +2848,9 @@
       "win_sub": 8,
       "win_dec": 4,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tatsuro_taira_2025.png/250px-Tatsuro_taira_2025.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Tatsuro_taira_2025.png"
     },
     {
       "id": "asu-almabayev",
@@ -2737,7 +2879,9 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/AsuAlmabayev.png/250px-AsuAlmabayev.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:AsuAlmabayev.png"
     },
     {
       "id": "lone-er-kavanagh",
@@ -2795,7 +2939,9 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kyoji_Horiguchi_2017.jpg/250px-Kyoji_Horiguchi_2017.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Kyoji_Horiguchi_2017.jpg"
     },
     {
       "id": "amir-albazi",
@@ -2837,15 +2983,17 @@
       "recent": [],
       "next": {
         "opp": "Joseph Morales",
-        "opp_ko": "Joseph Morales",
+        "opp_ko": "조셉 모랄레스",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Brandon_Moreno_February_2021.jpg/250px-Brandon_Moreno_February_2021.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Brandon_Moreno_February_2021.jpg"
     },
     {
       "id": "kevin-borjas",
       "name": "Kevin Borjas",
-      "name_ko": "Kevin Borjas",
+      "name_ko": "케빈 보르하스",
       "record": "11–5",
       "country": "Peru",
       "country_ko": "페루",
@@ -2871,8 +3019,8 @@
       ],
       "next": {
         "opp": "Rei Tsuruya",
-        "opp_ko": "Rei Tsuruya",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "opp_ko": "츠루야 레이",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
@@ -2908,7 +3056,7 @@
     {
       "id": "su-mudaerji",
       "name": "Su Mudaerji",
-      "name_ko": "Su Mudaerji",
+      "name_ko": "수 무다얼지",
       "record": "19승 7패",
       "country": "China",
       "country_ko": "중국",
@@ -2925,8 +3073,8 @@
       "recent": [],
       "next": {
         "opp": "Alex Perez",
-        "opp_ko": "Alex Perez",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "opp_ko": "알렉스 페레즈",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
@@ -2962,7 +3110,7 @@
     {
       "id": "alex-perez",
       "name": "Alex Perez",
-      "name_ko": "Alex Perez",
+      "name_ko": "알렉스 페레즈",
       "record": "26승 10패",
       "country": "United States",
       "country_ko": "미국",
@@ -2979,8 +3127,8 @@
       "recent": [],
       "next": {
         "opp": "Su Mudaerji",
-        "opp_ko": "Su Mudaerji",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "opp_ko": "수 무다얼지",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
@@ -3031,7 +3179,9 @@
       "win_sub": 8,
       "win_dec": 5,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg/250px-President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_(54577590491)_(cropped).jpg"
     },
     {
       "id": "joselyne-edwards",
@@ -3071,7 +3221,9 @@
       "win_sub": 2,
       "win_dec": 11,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Norma_Dumont_OF.jpg/250px-Norma_Dumont_OF.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Norma_Dumont_OF.jpg"
     },
     {
       "id": "luana-santos",
@@ -3140,7 +3292,9 @@
       "win_sub": 5,
       "win_dec": 4,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Peña_UFC_269_-_YouTube_-_0_23_(cropped).jpg"
     },
     {
       "id": "yana-santos",
@@ -3324,7 +3478,7 @@
       "id": "raquel-pennington",
       "name": "Raquel Pennington",
       "name_ko": "라켈 페닝턴",
-      "record": "7승 1패",
+      "record": "16승 9패",
       "country": "United States",
       "country_ko": "미국",
       "division": "여성 밴텀급",
@@ -3335,10 +3489,12 @@
       "stance": "",
       "age": "37",
       "win_ko": 1,
-      "win_sub": 5,
-      "win_dec": 2,
+      "win_sub": 4,
+      "win_dec": 11,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg/250px-Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_(5)_(cropped).jpg"
     },
     {
       "id": "klaudia-sygu-a",
@@ -3378,7 +3534,9 @@
       "win_sub": 7,
       "win_dec": 11,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Valentina_Shevchenko_2020.jpg/250px-Valentina_Shevchenko_2020.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Valentina_Shevchenko_2020.jpg"
     },
     {
       "id": "nat-lia-silva",
@@ -3398,13 +3556,15 @@
       "win_sub": 7,
       "win_dec": 7,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Nat%C3%A1lia_Silva_2025.jpg/250px-Nat%C3%A1lia_Silva_2025.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Natália_Silva_2025.jpg"
     },
     {
       "id": "manon-fiorot",
       "name": "Manon Fiorot",
       "name_ko": "마농 피오로",
-      "record": "3승 2패",
+      "record": "13승 2패",
       "country": "France",
       "country_ko": "프랑스",
       "division": "여성 플라이급",
@@ -3416,14 +3576,16 @@
       "age": "36",
       "win_ko": 7,
       "win_sub": 0,
-      "win_dec": 3,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Alexa Grasso",
         "opp_ko": "알렉사 그라소",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/MANON_FIOROT_ET_ALDRIC_CASSATA%2C_LE_COUPLE_GOAL_DU_MMA_-_MMA_EXTRA_ROUND_-22_-_YouTube_-_0-28-31_%28cropped%29.jpg/250px-MANON_FIOROT_ET_ALDRIC_CASSATA%2C_LE_COUPLE_GOAL_DU_MMA_-_MMA_EXTRA_ROUND_-22_-_YouTube_-_0-28-31_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:MANON_FIOROT_ET_ALDRIC_CASSATA,_LE_COUPLE_GOAL_DU_MMA_-_MMA_EXTRA_ROUND_-22_-_YouTube_-_0-28-31_(cropped).jpg"
     },
     {
       "id": "alexa-grasso",
@@ -3448,7 +3610,9 @@
         "opp_ko": "마농 피오로",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Alexa_Grasso_2020_01.png/250px-Alexa_Grasso_2020_01.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alexa_Grasso_2020_01.png"
     },
     {
       "id": "erin-blanchfield",
@@ -3488,7 +3652,9 @@
       "win_sub": 8,
       "win_dec": 7,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%E5%BC%A0%E4%BC%9F%E4%B8%BD.png/250px-%E5%BC%A0%E4%BC%9F%E4%B8%BD.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:张伟丽.png"
     },
     {
       "id": "wang-cong",
@@ -3523,7 +3689,7 @@
       "id": "jasmine-jasudavicius",
       "name": "Jasmine Jasudavicius",
       "name_ko": "Jasmine Jasudavicius",
-      "record": "4승 4패",
+      "record": "15승 4패",
       "country": "Canada",
       "country_ko": "캐나다",
       "division": "여성 플라이급",
@@ -3533,16 +3699,18 @@
       "reach": "173cm",
       "stance": "",
       "age": "37",
-      "win_ko": 1,
-      "win_sub": 1,
-      "win_dec": 2,
+      "win_ko": 2,
+      "win_sub": 4,
+      "win_dec": 9,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jasmine_Jasudavicius_2023.png/250px-Jasmine_Jasudavicius_2023.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jasmine_Jasudavicius_2023.png"
     },
     {
       "id": "rose-namajunas",
       "name": "Rose Namajunas",
-      "name_ko": "Rose Namajunas",
+      "name_ko": "로즈 나마유나스",
       "record": "14승 8패",
       "country": "United States",
       "country_ko": "미국",
@@ -3557,13 +3725,15 @@
       "win_sub": 5,
       "win_dec": 7,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rose_Namajunas.jpg/250px-Rose_Namajunas.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Rose_Namajunas.jpg"
     },
     {
       "id": "maycee-barber",
       "name": "Maycee Barber",
       "name_ko": "Maycee Barber",
-      "record": "1승 0패",
+      "record": "15승 3패",
       "country": "United States",
       "country_ko": "미국",
       "division": "여성 플라이급",
@@ -3573,7 +3743,7 @@
       "reach": "165cm",
       "stance": "",
       "age": "28",
-      "win_ko": 1,
+      "win_ko": 6,
       "win_sub": 2,
       "win_dec": 7,
       "recent": [],
@@ -3606,7 +3776,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tracy_Cortez_UFC.png/250px-Tracy_Cortez_UFC.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Tracy_Cortez_UFC.png"
     },
     {
       "id": "miranda-maverick",
@@ -3631,7 +3803,7 @@
     {
       "id": "jj-aldrich",
       "name": "JJ Aldrich",
-      "name_ko": "JJ Aldrich",
+      "name_ko": "JJ 알드리치",
       "record": "15승 7패",
       "country": "United States",
       "country_ko": "미국",
@@ -3648,7 +3820,7 @@
       "recent": [],
       "next": {
         "opp": "Regina Tarin",
-        "opp_ko": "Regina Tarin",
+        "opp_ko": "레지나 타린",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       }
@@ -3733,10 +3905,12 @@
       "recent": [],
       "next": {
         "opp": "Gillian Robertson",
-        "opp_ko": "Gillian Robertson",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "질리언 로버트슨",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mackenzie_Dern.png/250px-Mackenzie_Dern.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Mackenzie_Dern.png"
     },
     {
       "id": "virna-jandiroba",
@@ -3776,13 +3950,15 @@
       "win_sub": 6,
       "win_dec": 4,
       "recent": [],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tatiana_Suarez_at_UFC_228.jpg/250px-Tatiana_Suarez_at_UFC_228.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Tatiana_Suarez_at_UFC_228.jpg"
     },
     {
       "id": "gillian-robertson",
       "name": "Gillian Robertson",
-      "name_ko": "Gillian Robertson",
-      "record": "10승 1패",
+      "name_ko": "질리언 로버트슨",
+      "record": "17승 8패",
       "country": "Canada",
       "country_ko": "캐나다",
       "division": "여성 스트로급",
@@ -3793,15 +3969,17 @@
       "stance": "",
       "age": "31",
       "win_ko": 3,
-      "win_sub": 5,
+      "win_sub": 9,
       "win_dec": 5,
       "recent": [],
       "next": {
         "opp": "Mackenzie Dern",
         "opp_ko": "맥켄지 던",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gillian_Robertson.png/250px-Gillian_Robertson.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Gillian_Robertson.png"
     },
     {
       "id": "yan-xiaonan",
@@ -3823,8 +4001,8 @@
       "recent": [],
       "next": {
         "opp": "Denise Gomes",
-        "opp_ko": "Denise Gomes",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "opp_ko": "데니지 고메스",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
@@ -3851,7 +4029,7 @@
           "opp_ko": "Tabatha Ricci",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -3880,7 +4058,7 @@
     {
       "id": "denise-gomes",
       "name": "Denise Gomes",
-      "name_ko": "Denise Gomes",
+      "name_ko": "데니지 고메스",
       "record": "12승 3패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3898,7 +4076,7 @@
       "next": {
         "opp": "Yan Xiaonan",
         "opp_ko": "얀 시아오난",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
@@ -3916,7 +4094,7 @@
       "reach": "",
       "stance": "",
       "age": "31",
-      "win_ko": 1,
+      "win_ko": 0,
       "win_sub": 9,
       "win_dec": 7,
       "recent": [],
@@ -3925,7 +4103,7 @@
     {
       "id": "alexia-thainara",
       "name": "Alexia Thainara",
-      "name_ko": "Alexia Thainara",
+      "name_ko": "알렉시아 타이나라",
       "record": "14–1",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3942,15 +4120,15 @@
       "recent": [],
       "next": {
         "opp": "Amanda Lemos",
-        "opp_ko": "Amanda Lemos",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "아만다 레모스",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "amanda-lemos",
       "name": "Amanda Lemos",
-      "name_ko": "Amanda Lemos",
+      "name_ko": "아만다 레모스",
       "record": "15승 6패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3967,8 +4145,8 @@
       "recent": [],
       "next": {
         "opp": "Alexia Thainara",
-        "opp_ko": "Alexia Thainara",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "알렉시아 타이나라",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
@@ -4015,7 +4193,7 @@
           "opp_ko": "Fatima Kline",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -4064,7 +4242,7 @@
     {
       "id": "aleksandar-raki",
       "name": "Aleksandar Rakić",
-      "name_ko": "Aleksandar Rakić",
+      "name_ko": "알렉산다르 라키치",
       "record": "14승 6패",
       "country": "",
       "country_ko": "",
@@ -4082,7 +4260,7 @@
       "next": {
         "opp": "Marcin Tybura",
         "opp_ko": "마르친 티부라",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
@@ -4106,15 +4284,15 @@
       "recent": [],
       "next": {
         "opp": "Aleksandar Rakić",
-        "opp_ko": "Aleksandar Rakić",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "알렉산다르 라키치",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "du-ko-todorovi",
       "name": "Duško Todorović",
-      "name_ko": "Duško Todorović",
+      "name_ko": "두스코 토도로비치",
       "record": "13승 6패",
       "country": "",
       "country_ko": "",
@@ -4131,15 +4309,17 @@
       "recent": [],
       "next": {
         "opp": "Robert Valentin",
-        "opp_ko": "Robert Valentin",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "로베르트 발렌틴",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Du%C5%A1ko_Todorovi%C4%87_%281%29.jpg/250px-Du%C5%A1ko_Todorovi%C4%87_%281%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Duško_Todorović_(1).jpg"
     },
     {
       "id": "robert-valentin",
       "name": "Robert Valentin",
-      "name_ko": "Robert Valentin",
+      "name_ko": "로베르트 발렌틴",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4156,15 +4336,15 @@
       "recent": [],
       "next": {
         "opp": "Duško Todorović",
-        "opp_ko": "Duško Todorović",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "두스코 토도로비치",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "vlasto-epo",
       "name": "Vlasto Čepo",
-      "name_ko": "Vlasto Čepo",
+      "name_ko": "블라스토 체포",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4181,15 +4361,15 @@
       "recent": [],
       "next": {
         "opp": "Gilbert Urbina",
-        "opp_ko": "Gilbert Urbina",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "길버트 우르비나",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "gilbert-urbina",
       "name": "Gilbert Urbina",
-      "name_ko": "Gilbert Urbina",
+      "name_ko": "길버트 우르비나",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4206,15 +4386,15 @@
       "recent": [],
       "next": {
         "opp": "Vlasto Čepo",
-        "opp_ko": "Vlasto Čepo",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "블라스토 체포",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "udov-t-klein",
       "name": "Ľudovít Klein",
-      "name_ko": "Ľudovít Klein",
+      "name_ko": "루도비트 클라인",
       "record": "24승 5패",
       "country": "",
       "country_ko": "",
@@ -4231,15 +4411,17 @@
       "recent": [],
       "next": {
         "opp": "Tofiq Musayev",
-        "opp_ko": "Tofiq Musayev",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "토피크 무사예프",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ludovit_Klein.jpg/250px-Ludovit_Klein.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ludovit_Klein.jpg"
     },
     {
       "id": "tofiq-musayev",
       "name": "Tofiq Musayev",
-      "name_ko": "Tofiq Musayev",
+      "name_ko": "토피크 무사예프",
       "record": "23승 6패",
       "country": "",
       "country_ko": "",
@@ -4256,15 +4438,15 @@
       "recent": [],
       "next": {
         "opp": "Ľudovít Klein",
-        "opp_ko": "Ľudovít Klein",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "루도비트 클라인",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "oban-elliott",
       "name": "Oban Elliott",
-      "name_ko": "Oban Elliott",
+      "name_ko": "오반 엘리엇",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4281,15 +4463,15 @@
       "recent": [],
       "next": {
         "opp": "Michael Oliveira",
-        "opp_ko": "Michael Oliveira",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "마이클 올리베이라",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "michael-oliveira",
       "name": "Michael Oliveira",
-      "name_ko": "Michael Oliveira",
+      "name_ko": "마이클 올리베이라",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4306,15 +4488,15 @@
       "recent": [],
       "next": {
         "opp": "Oban Elliott",
-        "opp_ko": "Oban Elliott",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "오반 엘리엇",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "dennis-buzukja",
       "name": "Dennis Buzukja",
-      "name_ko": "Dennis Buzukja",
+      "name_ko": "데니스 부주키아",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4331,15 +4513,15 @@
       "recent": [],
       "next": {
         "opp": "Bogdan Grad",
-        "opp_ko": "Bogdan Grad",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "보그단 그라드",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "bogdan-grad",
       "name": "Bogdan Grad",
-      "name_ko": "Bogdan Grad",
+      "name_ko": "보그단 그라드",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4356,15 +4538,15 @@
       "recent": [],
       "next": {
         "opp": "Dennis Buzukja",
-        "opp_ko": "Dennis Buzukja",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "데니스 부주키아",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "mateusz-r-becki",
       "name": "Mateusz Rębecki",
-      "name_ko": "Mateusz Rębecki",
+      "name_ko": "마테우시 레베츠키",
       "record": "20승 5패",
       "country": "",
       "country_ko": "",
@@ -4381,15 +4563,15 @@
       "recent": [],
       "next": {
         "opp": "Kyle Prepolec",
-        "opp_ko": "Kyle Prepolec",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "카일 프리폴렉",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "kyle-prepolec",
       "name": "Kyle Prepolec",
-      "name_ko": "Kyle Prepolec",
+      "name_ko": "카일 프리폴렉",
       "record": "18승 10패",
       "country": "",
       "country_ko": "",
@@ -4406,15 +4588,15 @@
       "recent": [],
       "next": {
         "opp": "Mateusz Rębecki",
-        "opp_ko": "Mateusz Rębecki",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "마테우시 레베츠키",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "nina-nikolija-milo-evi",
       "name": "Nina Nikolija Milošević",
-      "name_ko": "Nina Nikolija Milošević",
+      "name_ko": "니나 니콜리야 밀로셰비치",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4431,15 +4613,15 @@
       "recent": [],
       "next": {
         "opp": "Hailey Cowan",
-        "opp_ko": "Hailey Cowan",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "헤일리 코완",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "hailey-cowan",
       "name": "Hailey Cowan",
-      "name_ko": "Hailey Cowan",
+      "name_ko": "헤일리 코완",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4456,15 +4638,15 @@
       "recent": [],
       "next": {
         "opp": "Nina Nikolija Milošević",
-        "opp_ko": "Nina Nikolija Milošević",
-        "event": "UFC Fight Night: Medić 대 로드리게스",
+        "opp_ko": "니나 니콜리야 밀로셰비치",
+        "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       }
     },
     {
       "id": "ty-miller",
       "name": "Ty Miller",
-      "name_ko": "Ty Miller",
+      "name_ko": "타이 밀러",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4481,15 +4663,15 @@
       "recent": [],
       "next": {
         "opp": "Billy Ray Goff",
-        "opp_ko": "Billy Ray Goff",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "빌리 레이 고프",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "billy-ray-goff",
       "name": "Billy Ray Goff",
-      "name_ko": "Billy Ray Goff",
+      "name_ko": "빌리 레이 고프",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4506,15 +4688,15 @@
       "recent": [],
       "next": {
         "opp": "Ty Miller",
-        "opp_ko": "Ty Miller",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "타이 밀러",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "diyar-nurgozhay",
       "name": "Diyar Nurgozhay",
-      "name_ko": "Diyar Nurgozhay",
+      "name_ko": "디야르 누르고자이",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4531,15 +4713,15 @@
       "recent": [],
       "next": {
         "opp": "Bruno Lopes",
-        "opp_ko": "Bruno Lopes",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "브루노 로페스",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "bruno-lopes",
       "name": "Bruno Lopes",
-      "name_ko": "Bruno Lopes",
+      "name_ko": "브루노 로페스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4556,15 +4738,15 @@
       "recent": [],
       "next": {
         "opp": "Diyar Nurgozhay",
-        "opp_ko": "Diyar Nurgozhay",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "디야르 누르고자이",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "carlos-diego-ferreira",
       "name": "Carlos Diego Ferreira",
-      "name_ko": "Carlos Diego Ferreira",
+      "name_ko": "카를로스 디에고 페레이라",
       "record": "19승 7패",
       "country": "",
       "country_ko": "",
@@ -4581,15 +4763,15 @@
       "recent": [],
       "next": {
         "opp": "Billy Quarantillo",
-        "opp_ko": "Billy Quarantillo",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "빌리 콰란틸로",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "billy-quarantillo",
       "name": "Billy Quarantillo",
-      "name_ko": "Billy Quarantillo",
+      "name_ko": "빌리 콰란틸로",
       "record": "18승 7패",
       "country": "",
       "country_ko": "",
@@ -4606,15 +4788,15 @@
       "recent": [],
       "next": {
         "opp": "Carlos Diego Ferreira",
-        "opp_ko": "Carlos Diego Ferreira",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "카를로스 디에고 페레이라",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "louie-sutherland",
       "name": "Louie Sutherland",
-      "name_ko": "Louie Sutherland",
+      "name_ko": "루이 서덜랜드",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4631,15 +4813,15 @@
       "recent": [],
       "next": {
         "opp": "José Luiz",
-        "opp_ko": "José Luiz",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "조제 루이스",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "jos-luiz",
       "name": "José Luiz",
-      "name_ko": "José Luiz",
+      "name_ko": "조제 루이스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4656,15 +4838,15 @@
       "recent": [],
       "next": {
         "opp": "Louie Sutherland",
-        "opp_ko": "Louie Sutherland",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "루이 서덜랜드",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "darren-elkins",
       "name": "Darren Elkins",
-      "name_ko": "Darren Elkins",
+      "name_ko": "대런 엘킨스",
       "record": "29승 12패",
       "country": "",
       "country_ko": "",
@@ -4681,15 +4863,17 @@
       "recent": [],
       "next": {
         "opp": "Yadier del Valle",
-        "opp_ko": "Yadier del Valle",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "야디에르 델 바예",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Darren-Elkins.jpg/250px-Darren-Elkins.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Darren-Elkins.jpg"
     },
     {
       "id": "yadier-del-valle",
       "name": "Yadier del Valle",
-      "name_ko": "Yadier del Valle",
+      "name_ko": "야디에르 델 바예",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4706,15 +4890,15 @@
       "recent": [],
       "next": {
         "opp": "Darren Elkins",
-        "opp_ko": "Darren Elkins",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "대런 엘킨스",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "steven-asplund",
       "name": "Steven Asplund",
-      "name_ko": "Steven Asplund",
+      "name_ko": "스티븐 애스플런드",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4731,15 +4915,15 @@
       "recent": [],
       "next": {
         "opp": "Guilherme Pat",
-        "opp_ko": "Guilherme Pat",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "길레르미 파트",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "guilherme-pat",
       "name": "Guilherme Pat",
-      "name_ko": "Guilherme Pat",
+      "name_ko": "길레르미 파트",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4756,15 +4940,15 @@
       "recent": [],
       "next": {
         "opp": "Steven Asplund",
-        "opp_ko": "Steven Asplund",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "스티븐 애스플런드",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "juliana-miller",
       "name": "Juliana Miller",
-      "name_ko": "Juliana Miller",
+      "name_ko": "줄리아나 밀러",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4781,15 +4965,15 @@
       "recent": [],
       "next": {
         "opp": "Ravena Oliveira",
-        "opp_ko": "Ravena Oliveira",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "하베나 올리베이라",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "ravena-oliveira",
       "name": "Ravena Oliveira",
-      "name_ko": "Ravena Oliveira",
+      "name_ko": "하베나 올리베이라",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4806,15 +4990,15 @@
       "recent": [],
       "next": {
         "opp": "Juliana Miller",
-        "opp_ko": "Juliana Miller",
-        "event": "UFC Fight Night: 감로트 대 Salkilld",
+        "opp_ko": "줄리아나 밀러",
+        "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       }
     },
     {
       "id": "jeremiah-wells",
       "name": "Jeremiah Wells",
-      "name_ko": "Jeremiah Wells",
+      "name_ko": "제러마이아 웰스",
       "record": "13승 4패",
       "country": "",
       "country_ko": "",
@@ -4831,15 +5015,15 @@
       "recent": [],
       "next": {
         "opp": "Myktybek Orolbai",
-        "opp_ko": "Myktybek Orolbai",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "믹티벡 오롤바이",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "myktybek-orolbai",
       "name": "Myktybek Orolbai",
-      "name_ko": "Myktybek Orolbai",
+      "name_ko": "믹티벡 오롤바이",
       "record": "16승 2패",
       "country": "",
       "country_ko": "",
@@ -4856,15 +5040,15 @@
       "recent": [],
       "next": {
         "opp": "Jeremiah Wells",
-        "opp_ko": "Jeremiah Wells",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "제러마이아 웰스",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "jalin-turner",
       "name": "Jalin Turner",
-      "name_ko": "Jalin Turner",
+      "name_ko": "제일린 터너",
       "record": "15승 9패",
       "country": "",
       "country_ko": "",
@@ -4881,15 +5065,17 @@
       "recent": [],
       "next": {
         "opp": "Kauê Fernandes",
-        "opp_ko": "Kauê Fernandes",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "카우에 페르난데스",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Jalin_Turner_at_UFC_234.jpg/250px-Jalin_Turner_at_UFC_234.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jalin_Turner_at_UFC_234.jpg"
     },
     {
       "id": "kau-fernandes",
       "name": "Kauê Fernandes",
-      "name_ko": "Kauê Fernandes",
+      "name_ko": "카우에 페르난데스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -4906,8 +5092,8 @@
       "recent": [],
       "next": {
         "opp": "Jalin Turner",
-        "opp_ko": "Jalin Turner",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "제일린 터너",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
@@ -4915,7 +5101,7 @@
       "id": "geoff-neal",
       "name": "Geoff Neal",
       "name_ko": "제프 닐",
-      "record": "10승 1패",
+      "record": "16승 8패",
       "country": "",
       "country_ko": "",
       "division": "웰터급",
@@ -4926,20 +5112,22 @@
       "stance": "",
       "age": "35",
       "win_ko": 10,
-      "win_sub": 1,
+      "win_sub": 2,
       "win_dec": 4,
       "recent": [],
       "next": {
         "opp": "Chidi Njokuani",
-        "opp_ko": "Chidi Njokuani",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "치디 은조쿠아니",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Geoff_Neal_at_UFC_228.jpg/250px-Geoff_Neal_at_UFC_228.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Geoff_Neal_at_UFC_228.jpg"
     },
     {
       "id": "chidi-njokuani",
       "name": "Chidi Njokuani",
-      "name_ko": "Chidi Njokuani",
+      "name_ko": "치디 은조쿠아니",
       "record": "25승 12패",
       "country": "",
       "country_ko": "",
@@ -4957,14 +5145,14 @@
       "next": {
         "opp": "Geoff Neal",
         "opp_ko": "제프 닐",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "neil-magny",
       "name": "Neil Magny",
-      "name_ko": "Neil Magny",
+      "name_ko": "닐 매그니",
       "record": "31승 14패",
       "country": "",
       "country_ko": "",
@@ -4981,15 +5169,17 @@
       "recent": [],
       "next": {
         "opp": "Ramiz Brahimaj",
-        "opp_ko": "Ramiz Brahimaj",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "라미즈 브라히마이",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Neil_Magny.jpg/250px-Neil_Magny.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Neil_Magny.jpg"
     },
     {
       "id": "ramiz-brahimaj",
       "name": "Ramiz Brahimaj",
-      "name_ko": "Ramiz Brahimaj",
+      "name_ko": "라미즈 브라히마이",
       "record": "13승 6패",
       "country": "",
       "country_ko": "",
@@ -5006,15 +5196,15 @@
       "recent": [],
       "next": {
         "opp": "Neil Magny",
-        "opp_ko": "Neil Magny",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "닐 매그니",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "mansur-abdul-malik",
       "name": "Mansur Abdul-Malik",
-      "name_ko": "Mansur Abdul-Malik",
+      "name_ko": "만수르 압둘말리크",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5031,40 +5221,40 @@
       "recent": [],
       "next": {
         "opp": "Dustin Stoltzfus",
-        "opp_ko": "Dustin Stoltzfus",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "더스틴 스톨츠푸스",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "dustin-stoltzfus",
       "name": "Dustin Stoltzfus",
-      "name_ko": "Dustin Stoltzfus",
-      "record": "",
+      "name_ko": "더스틴 스톨츠푸스",
+      "record": "16승 8패",
       "country": "",
       "country_ko": "",
       "division": "미들급",
       "rank": "랭킹 외",
       "nick": "",
-      "height": "",
-      "reach": "",
+      "height": "180cm",
+      "reach": "191cm",
       "stance": "",
-      "age": "",
-      "win_ko": 0,
-      "win_sub": 0,
-      "win_dec": 0,
+      "age": "34",
+      "win_ko": 3,
+      "win_sub": 6,
+      "win_dec": 6,
       "recent": [],
       "next": {
         "opp": "Mansur Abdul-Malik",
-        "opp_ko": "Mansur Abdul-Malik",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "만수르 압둘말리크",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "vicente-luque",
       "name": "Vicente Luque",
-      "name_ko": "Vicente Luque",
+      "name_ko": "비센테 루케",
       "record": "24승 12패",
       "country": "",
       "country_ko": "",
@@ -5081,15 +5271,15 @@
       "recent": [],
       "next": {
         "opp": "Tresean Gore",
-        "opp_ko": "Tresean Gore",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "트리션 고어",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "tresean-gore",
       "name": "Tresean Gore",
-      "name_ko": "Tresean Gore",
+      "name_ko": "트리션 고어",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5106,15 +5296,15 @@
       "recent": [],
       "next": {
         "opp": "Vicente Luque",
-        "opp_ko": "Vicente Luque",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "비센테 루케",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "edson-barboza",
       "name": "Edson Barboza",
-      "name_ko": "Edson Barboza",
+      "name_ko": "에드손 바르보자",
       "record": "24승 14패",
       "country": "",
       "country_ko": "",
@@ -5131,15 +5321,15 @@
       "recent": [],
       "next": {
         "opp": "Esteban Ribovics",
-        "opp_ko": "Esteban Ribovics",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "에스테반 리보빅스",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
     {
       "id": "esteban-ribovics",
       "name": "Esteban Ribovics",
-      "name_ko": "Esteban Ribovics",
+      "name_ko": "에스테반 리보빅스",
       "record": "15승 3패",
       "country": "",
       "country_ko": "",
@@ -5156,8 +5346,8 @@
       "recent": [],
       "next": {
         "opp": "Edson Barboza",
-        "opp_ko": "Edson Barboza",
-        "event": "UFC 330: 마카체프 대 Machado Garry",
+        "opp_ko": "에드손 바르보자",
+        "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       }
     },
@@ -5182,9 +5372,11 @@
       "next": {
         "opp": "Reinier de Ridder",
         "opp_ko": "라이니어 데 리더",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Dolidze_2019.jpg/250px-Dolidze_2019.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Dolidze_2019.jpg"
     },
     {
       "id": "reinier-de-ridder",
@@ -5207,14 +5399,16 @@
       "next": {
         "opp": "Roman Dolidze",
         "opp_ko": "로만 돌리제",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Reinier_post_training_2.jpg/250px-Reinier_post_training_2.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Reinier_post_training_2.jpg"
     },
     {
       "id": "kennedy-nzechukwu",
       "name": "Kennedy Nzechukwu",
-      "name_ko": "Kennedy Nzechukwu",
+      "name_ko": "케네디 은제추쿠",
       "record": "14승 6패",
       "country": "",
       "country_ko": "",
@@ -5231,15 +5425,15 @@
       "recent": [],
       "next": {
         "opp": "Shamil Gaziev",
-        "opp_ko": "Shamil Gaziev",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "샤밀 가지예프",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "shamil-gaziev",
       "name": "Shamil Gaziev",
-      "name_ko": "Shamil Gaziev",
+      "name_ko": "샤밀 가지예프",
       "record": "14승 3패",
       "country": "",
       "country_ko": "",
@@ -5256,15 +5450,15 @@
       "recent": [],
       "next": {
         "opp": "Kennedy Nzechukwu",
-        "opp_ko": "Kennedy Nzechukwu",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "케네디 은제추쿠",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "kody-steele",
       "name": "Kody Steele",
-      "name_ko": "Kody Steele",
+      "name_ko": "코디 스틸",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5281,15 +5475,15 @@
       "recent": [],
       "next": {
         "opp": "Gauge Young",
-        "opp_ko": "Gauge Young",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "게이지 영",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "gauge-young",
       "name": "Gauge Young",
-      "name_ko": "Gauge Young",
+      "name_ko": "게이지 영",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5306,15 +5500,15 @@
       "recent": [],
       "next": {
         "opp": "Kody Steele",
-        "opp_ko": "Kody Steele",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "코디 스틸",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "carli-judice",
       "name": "Carli Judice",
-      "name_ko": "Carli Judice",
+      "name_ko": "칼리 주디스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5331,15 +5525,15 @@
       "recent": [],
       "next": {
         "opp": "Jeisla Chaves",
-        "opp_ko": "Jeisla Chaves",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "제이슬라 샤베스",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "jeisla-chaves",
       "name": "Jeisla Chaves",
-      "name_ko": "Jeisla Chaves",
+      "name_ko": "제이슬라 샤베스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5356,15 +5550,15 @@
       "recent": [],
       "next": {
         "opp": "Carli Judice",
-        "opp_ko": "Carli Judice",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "칼리 주디스",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "wesley-schultz",
       "name": "Wesley Schultz",
-      "name_ko": "Wesley Schultz",
+      "name_ko": "웨슬리 슐츠",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5381,15 +5575,15 @@
       "recent": [],
       "next": {
         "opp": "Jackson McVey",
-        "opp_ko": "Jackson McVey",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "잭슨 맥베이",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "jackson-mcvey",
       "name": "Jackson McVey",
-      "name_ko": "Jackson McVey",
+      "name_ko": "잭슨 맥베이",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5406,15 +5600,15 @@
       "recent": [],
       "next": {
         "opp": "Wesley Schultz",
-        "opp_ko": "Wesley Schultz",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "웨슬리 슐츠",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "shanelle-dyer",
       "name": "Shanelle Dyer",
-      "name_ko": "Shanelle Dyer",
+      "name_ko": "샤넬 다이어",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5431,15 +5625,15 @@
       "recent": [],
       "next": {
         "opp": "Elise Reed",
-        "opp_ko": "Elise Reed",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "엘리스 리드",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "elise-reed",
       "name": "Elise Reed",
-      "name_ko": "Elise Reed",
+      "name_ko": "엘리스 리드",
       "record": "8승 5패",
       "country": "",
       "country_ko": "",
@@ -5456,15 +5650,15 @@
       "recent": [],
       "next": {
         "opp": "Shanelle Dyer",
-        "opp_ko": "Shanelle Dyer",
-        "event": "UFC Fight Night: 에르난데스 대 Rodrigues",
+        "opp_ko": "샤넬 다이어",
+        "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       }
     },
     {
       "id": "rei-tsuruya",
       "name": "Rei Tsuruya",
-      "name_ko": "Rei Tsuruya",
+      "name_ko": "츠루야 레이",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5481,15 +5675,15 @@
       "recent": [],
       "next": {
         "opp": "Kevin Borjas",
-        "opp_ko": "Kevin Borjas",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "opp_ko": "케빈 보르하스",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
     {
       "id": "liu-ce",
       "name": "Liu Ce",
-      "name_ko": "Liu Ce",
+      "name_ko": "리우 처",
       "record": "3승 1패",
       "country": "",
       "country_ko": "",
@@ -5506,15 +5700,15 @@
       "recent": [],
       "next": {
         "opp": "Junior Tafa",
-        "opp_ko": "Junior Tafa",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "opp_ko": "주니어 타파",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
     {
       "id": "junior-tafa",
       "name": "Junior Tafa",
-      "name_ko": "Junior Tafa",
+      "name_ko": "주니어 타파",
       "record": "7승 6패",
       "country": "",
       "country_ko": "",
@@ -5531,15 +5725,15 @@
       "recent": [],
       "next": {
         "opp": "Liu Ce",
-        "opp_ko": "Liu Ce",
-        "event": "UFC Fight Night: 누르마고메도프 대 Song",
+        "opp_ko": "리우 처",
+        "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       }
     },
     {
       "id": "kurtis-campbell",
       "name": "Kurtis Campbell",
-      "name_ko": "Kurtis Campbell",
+      "name_ko": "커티스 캠벨",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5556,7 +5750,7 @@
       "recent": [],
       "next": {
         "opp": "Trevor Peek",
-        "opp_ko": "Trevor Peek",
+        "opp_ko": "트레버 픽",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
       }
@@ -5564,7 +5758,7 @@
     {
       "id": "trevor-peek",
       "name": "Trevor Peek",
-      "name_ko": "Trevor Peek",
+      "name_ko": "트레버 픽",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5581,7 +5775,7 @@
       "recent": [],
       "next": {
         "opp": "Kurtis Campbell",
-        "opp_ko": "Kurtis Campbell",
+        "opp_ko": "커티스 캠벨",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
       }
@@ -5589,7 +5783,7 @@
     {
       "id": "joseph-morales",
       "name": "Joseph Morales",
-      "name_ko": "Joseph Morales",
+      "name_ko": "조셉 모랄레스",
       "record": "14승 2패",
       "country": "",
       "country_ko": "",
@@ -5614,7 +5808,7 @@
     {
       "id": "tim-elliott",
       "name": "Tim Elliott",
-      "name_ko": "Tim Elliott",
+      "name_ko": "팀 엘리엇",
       "record": "21승 14패",
       "country": "",
       "country_ko": "",
@@ -5631,7 +5825,7 @@
       "recent": [],
       "next": {
         "opp": "Édgar Cháirez",
-        "opp_ko": "Édgar Cháirez",
+        "opp_ko": "에드가르 차이레스",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       }
@@ -5639,7 +5833,7 @@
     {
       "id": "dgar-ch-irez",
       "name": "Édgar Cháirez",
-      "name_ko": "Édgar Cháirez",
+      "name_ko": "에드가르 차이레스",
       "record": "14승 6패",
       "country": "",
       "country_ko": "",
@@ -5656,15 +5850,17 @@
       "recent": [],
       "next": {
         "opp": "Tim Elliott",
-        "opp_ko": "Tim Elliott",
+        "opp_ko": "팀 엘리엇",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Edgar_Chairez_2024.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Edgar_Chairez_2024.png"
     },
     {
       "id": "kelvin-gastelum",
       "name": "Kelvin Gastelum",
-      "name_ko": "Kelvin Gastelum",
+      "name_ko": "켈빈 가스텔럼",
       "record": "20승 11패",
       "country": "",
       "country_ko": "",
@@ -5681,15 +5877,17 @@
       "recent": [],
       "next": {
         "opp": "Yousri Belgaroui",
-        "opp_ko": "Yousri Belgaroui",
+        "opp_ko": "유스리 벨가루이",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Kelvin_Gastelum.jpg/250px-Kelvin_Gastelum.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Kelvin_Gastelum.jpg"
     },
     {
       "id": "yousri-belgaroui",
       "name": "Yousri Belgaroui",
-      "name_ko": "Yousri Belgaroui",
+      "name_ko": "유스리 벨가루이",
       "record": "10승 3패",
       "country": "",
       "country_ko": "",
@@ -5706,7 +5904,7 @@
       "recent": [],
       "next": {
         "opp": "Kelvin Gastelum",
-        "opp_ko": "Kelvin Gastelum",
+        "opp_ko": "켈빈 가스텔럼",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       }
@@ -5714,7 +5912,7 @@
     {
       "id": "regina-tarin",
       "name": "Regina Tarin",
-      "name_ko": "Regina Tarin",
+      "name_ko": "레지나 타린",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -5731,7 +5929,7 @@
       "recent": [],
       "next": {
         "opp": "JJ Aldrich",
-        "opp_ko": "JJ Aldrich",
+        "opp_ko": "JJ 알드리치",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       }
@@ -5792,7 +5990,9 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%D0%97%D0%B0%D0%B9%D0%BD%D1%83%D0%BA%D0%BE%D0%B2_%D0%9C%D0%B0%D0%B3%D0%BE%D0%BC%D0%B5%D0%B4_%D0%91%D0%B5%D0%BA%D1%88%D0%B8%D0%B5%D0%B2%D0%B8%D1%87.jpg/250px-%D0%97%D0%B0%D0%B9%D0%BD%D1%83%D0%BA%D0%BE%D0%B2_%D0%9C%D0%B0%D0%B3%D0%BE%D0%BC%D0%B5%D0%B4_%D0%91%D0%B5%D0%BA%D1%88%D0%B8%D0%B5%D0%B2%D0%B8%D1%87.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Зайнуков_Магомед_Бекшиевич.jpg"
     },
     {
       "id": "damian-rzepecki",
@@ -5826,7 +6026,7 @@
     {
       "id": "tyrell-fortune",
       "name": "Tyrell Fortune",
-      "name_ko": "Tyrell Fortune",
+      "name_ko": "타이렐 포춘",
       "record": "18승 4패",
       "country": "",
       "country_ko": "",
@@ -6024,7 +6224,9 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Santiago_Ponzinibbio.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Santiago_Ponzinibbio.jpg"
     },
     {
       "id": "axel-sola",
@@ -6169,7 +6371,9 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Nurullo_Aliev.jpg/250px-Nurullo_Aliev.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Nurullo_Aliev.jpg"
     },
     {
       "id": "mike-davis",
@@ -6198,7 +6402,9 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Mike_Davis_at_Vyralcon_2022_%283%29_%28cropped%29.jpg/250px-Mike_Davis_at_Vyralcon_2022_%283%29_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Mike_Davis_at_Vyralcon_2022_(3)_(cropped).jpg"
     },
     {
       "id": "abdul-hussein",
@@ -6256,7 +6462,9 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Gibson_in_2026.jpg/250px-Gibson_in_2026.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Gibson_in_2026.jpg"
     },
     {
       "id": "jared-cannonier",
@@ -6281,17 +6489,19 @@
           "opp_ko": "Christian Leroy Duncan",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jared_Cannonier_at_UFC_Fight_Night_160_in_Copenhagen.jpg/250px-Jared_Cannonier_at_UFC_Fight_Night_160_in_Copenhagen.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jared_Cannonier_at_UFC_Fight_Night_160_in_Copenhagen.jpg"
     },
     {
       "id": "chase-hooper",
       "name": "Chase Hooper",
       "name_ko": "Chase Hooper",
-      "record": "5승 5패",
+      "record": "17승 5패",
       "country": "",
       "country_ko": "",
       "division": "Catchweight (157.5 lb)",
@@ -6301,8 +6511,8 @@
       "reach": "192cm",
       "stance": "",
       "age": "26",
-      "win_ko": 1,
-      "win_sub": 4,
+      "win_ko": 4,
+      "win_sub": 9,
       "win_dec": 4,
       "recent": [
         {
@@ -6310,11 +6520,13 @@
           "opp_ko": "Mitch Ramirez",
           "result": "win",
           "method": "Submission (rear-naked choke)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chase_Hooper_2022.png/250px-Chase_Hooper_2022.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Chase_Hooper_2022.png"
     },
     {
       "id": "mitch-ramirez",
@@ -6339,7 +6551,7 @@
           "opp_ko": "Chase Hooper",
           "result": "loss",
           "method": "Submission (rear-naked choke)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6368,7 +6580,7 @@
           "opp_ko": "Alberto Montes",
           "result": "win",
           "method": "TKO (punches)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6397,7 +6609,7 @@
           "opp_ko": "Tommy McMillen",
           "result": "loss",
           "method": "TKO (punches)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6426,7 +6638,7 @@
           "opp_ko": "Jose Miguel Delgado",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6455,7 +6667,7 @@
           "opp_ko": "Ko Seok-hyeon",
           "result": "win",
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6484,7 +6696,7 @@
           "opp_ko": "Jean-Paul Lebosnoyani",
           "result": "loss",
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6513,7 +6725,7 @@
           "opp_ko": "Levi Rodrigues Jr.",
           "result": "win",
           "method": "TKO (punches)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6542,7 +6754,7 @@
           "opp_ko": "Felipe Franco",
           "result": "loss",
           "method": "TKO (punches)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6571,7 +6783,7 @@
           "opp_ko": "Damien Anderson",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6600,7 +6812,7 @@
           "opp_ko": "Ezra Elliott",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6629,7 +6841,7 @@
           "opp_ko": "Stewart Nicoll",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6658,7 +6870,7 @@
           "opp_ko": "Alden Coria",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6687,7 +6899,7 @@
           "opp_ko": "Alvin Hines",
           "result": "win",
           "method": "TKO (punches)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6716,7 +6928,7 @@
           "opp_ko": "RJ Harris",
           "result": "loss",
           "method": "TKO (punches)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6745,7 +6957,7 @@
           "opp_ko": "Anna Melisano",
           "result": "win",
           "method": "Submission (rear-naked choke)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6774,7 +6986,7 @@
           "opp_ko": "Dione Barbosa",
           "result": "loss",
           "method": "Submission (rear-naked choke)",
-          "event": "UFC Fight Night: du Plessis 대 우스만",
+          "event": "UFC Fight Night: 플레시 대 우스만",
           "date": "2026-07-18"
         }
       ],
@@ -6783,8 +6995,8 @@
     {
       "id": "conor-mcgregor",
       "name": "Conor McGregor",
-      "name_ko": "Conor McGregor",
-      "record": "1승 0패",
+      "name_ko": "코너 맥그레거",
+      "record": "22승 7패",
       "country": "",
       "country_ko": "",
       "division": "웰터급",
@@ -6794,7 +7006,7 @@
       "reach": "188cm",
       "stance": "사우스포",
       "age": "38",
-      "win_ko": 1,
+      "win_ko": 19,
       "win_sub": 1,
       "win_dec": 2,
       "recent": [
@@ -6807,7 +7019,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Conor_McGregor_2025.jpeg/250px-Conor_McGregor_2025.jpeg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Conor_McGregor_2025.jpeg"
     },
     {
       "id": "king-green",
@@ -6899,7 +7113,7 @@
     {
       "id": "gable-steveson",
       "name": "Gable Steveson",
-      "name_ko": "Gable Steveson",
+      "name_ko": "게이블 스티브슨",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -6923,7 +7137,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Gable_Steveson_%28USA%29_2018.jpg/250px-Gable_Steveson_%28USA%29_2018.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Gable_Steveson_(USA)_2018.jpg"
     },
     {
       "id": "elisha-ellison",
@@ -6986,8 +7202,8 @@
     {
       "id": "cody-garbrandt",
       "name": "Cody Garbrandt",
-      "name_ko": "Cody Garbrandt",
-      "record": "6승 2패",
+      "name_ko": "코디 가브란트",
+      "record": "15승 8패",
       "country": "",
       "country_ko": "",
       "division": "밴텀급",
@@ -6997,9 +7213,9 @@
       "reach": "166cm",
       "stance": "",
       "age": "35",
-      "win_ko": 5,
+      "win_ko": 11,
       "win_sub": 0,
-      "win_dec": 1,
+      "win_dec": 4,
       "recent": [
         {
           "opp": "Adrian Yañez",
@@ -7010,7 +7226,9 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Cody_Garbrandt.png/250px-Cody_Garbrandt.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Cody_Garbrandt.png"
     },
     {
       "id": "luke-riley",
@@ -7300,7 +7518,9 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Sharabutdin_Magomedov_2024.png/250px-Sharabutdin_Magomedov_2024.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Sharabutdin_Magomedov_2024.png"
     },
     {
       "id": "michel-pereira",
@@ -7474,7 +7694,9 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Micha%C5%82_Oleksiejczuk.jpg/250px-Micha%C5%82_Oleksiejczuk.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Michał_Oleksiejczuk.jpg"
     },
     {
       "id": "farman-hasanov",
@@ -7612,7 +7834,7 @@
       "recent": [
         {
           "opp": "Nursulton Ruziboev",
-          "opp_ko": "Nursulton Ruziboev",
+          "opp_ko": "누르술톤 루지보예프",
           "result": "loss",
           "method": "Technical Submission (neck crank)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -7770,7 +7992,7 @@
       "id": "bekzat-almakhan",
       "name": "Bekzat Almakhan",
       "name_ko": "Bekzat Almakhan",
-      "record": "11승 4패",
+      "record": "12승 4패",
       "country": "",
       "country_ko": "",
       "division": "밴텀급",
@@ -7780,9 +8002,9 @@
       "reach": "173cm",
       "stance": "정통",
       "age": "28",
-      "win_ko": 5,
-      "win_sub": 2,
-      "win_dec": 3,
+      "win_ko": 10,
+      "win_sub": 1,
+      "win_dec": 1,
       "recent": [
         {
           "opp": "Jean Matsumoto",
@@ -7793,7 +8015,9 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/BekzatAlmahan.png/250px-BekzatAlmahan.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:BekzatAlmahan.png"
     },
     {
       "id": "tahir-abdullayev",
@@ -7873,7 +8097,7 @@
       "recent": [
         {
           "opp": "Navajo Stirling",
-          "opp_ko": "Navajo Stirling",
+          "opp_ko": "나바호 스털링",
           "result": "loss",
           "method": "TKO (punches and elbows)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -8025,12 +8249,14 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Vinicius_Oliveira_2026.jpg/250px-Vinicius_Oliveira_2026.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Vinicius_Oliveira_2026.jpg"
     },
     {
       "id": "andre-fili",
       "name": "Andre Fili",
-      "name_ko": "Andre Fili",
+      "name_ko": "안드레 필리",
       "record": "25승 13패",
       "country": "",
       "country_ko": "",
@@ -8076,7 +8302,7 @@
       "recent": [
         {
           "opp": "Kevin Borjas",
-          "opp_ko": "Kevin Borjas",
+          "opp_ko": "케빈 보르하스",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -8321,7 +8547,7 @@
       "id": "derrick-lewis",
       "name": "Derrick Lewis",
       "name_ko": "데릭 루이스",
-      "record": "1승 14패",
+      "record": "29승 14패",
       "country": "",
       "country_ko": "",
       "division": "헤비급",
@@ -8331,7 +8557,7 @@
       "reach": "201cm",
       "stance": "",
       "age": "41",
-      "win_ko": 1,
+      "win_ko": 24,
       "win_sub": 1,
       "win_dec": 4,
       "recent": [
@@ -8344,7 +8570,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Derrick_Lewis_after_UFC_239.jpg/250px-Derrick_Lewis_after_UFC_239.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Derrick_Lewis_after_UFC_239.jpg"
     },
     {
       "id": "michael-chandler",
@@ -8373,7 +8601,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/MichaelChandler0523_%28cropped%29.jpg/250px-MichaelChandler0523_%28cropped%29.jpg",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:MichaelChandler0523_(cropped).jpg"
     },
     {
       "id": "kyle-daukaus",
@@ -8402,7 +8632,9 @@
           "date": "2026-06-14"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kyle_Daukaus.png/250px-Kyle_Daukaus.png",
+      "avatar_source": "https://commons.wikimedia.org/wiki/File:Kyle_Daukaus.png"
     }
   ]
 }
