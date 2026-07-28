@@ -405,6 +405,11 @@
   /* ---- 2026 리디자인: 사진 중심 스포츠 에디토리얼 ---- */
   .avatar-box{position:relative;overflow:hidden;flex-shrink:0;background:#19191c;border:1px solid var(--line-2)}
   .avatar-box img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:saturate(.88) contrast(1.03)}
+  .avatar-box.ufc-full{background:
+    radial-gradient(70% 55% at 50% 30%,rgba(229,72,77,.16),transparent 75%),
+    linear-gradient(180deg,#202024,#101012)}
+  .avatar-box.ufc-full img{object-fit:contain;object-position:center bottom;padding:3px 4px 0;filter:saturate(.94) contrast(1.04)}
+  .avatar-box.ufc-headshot img{object-fit:cover;object-position:center 18%;filter:saturate(.94) contrast(1.04)}
   .avatar-fallback{width:100%;height:100%;display:grid;place-items:center;position:relative;
     background:linear-gradient(145deg,#242428 0%,#111114 68%);isolation:isolate}
   .avatar-fallback::before{content:"";position:absolute;inset:auto -18% -45% 30%;height:90%;border-radius:50%;
@@ -423,6 +428,8 @@
   .cover .cf{gap:7px}
   .cover .cf-img{width:168px;height:196px;max-width:39vw;max-height:48vw}
   .cover .cf-img>div{border-radius:16px 16px 6px 6px!important}
+  .cover .cf-img>.ufc-full{border:0!important;background:transparent;overflow:visible}
+  .cover .cf-img>.ufc-full img{padding:0;filter:drop-shadow(0 14px 16px rgba(0,0,0,.42)) saturate(.96) contrast(1.04)}
   .cover .cf-nm{font-size:17px;line-height:1.08}
   .cover .cf-en{font-size:10px;color:var(--muted);line-height:1.2;min-height:12px}
   .cover .cf-vs{margin-top:78px;width:34px;height:34px;border:1px solid var(--line-2);border-radius:50%;display:grid;place-items:center;background:#0d0d0f;color:#fff}
@@ -617,14 +624,17 @@ function fighterPictogram(f, size){
 }
 function avatarBox(f, size){
   size = size || 48;
-  const src = f ? safeExternalUrl(f.avatar) : '';
+  const provider = f?.avatarProvider || '';
+  const useFull = provider==='UFC' && size>=120;
+  const src = f ? safeExternalUrl(useFull ? f.avatar : (f.avatarThumb || f.avatar)) : '';
+  const kindClass = useFull ? 'ufc-full' : (provider==='UFC' ? 'ufc-headshot' : '');
   const fallback = fighterPictogram(f||{},size);
   const inner = src
     ? `<img src="${esc(src)}" width="${size}" height="${size}" alt="${esc((f?.name||'선수')+' 사진')}"
          loading="${size>=120?'eager':'lazy'}" decoding="async" referrerpolicy="no-referrer"
          onerror="this.outerHTML=this.getAttribute('data-fb')" data-fb='${fallback.replace(/'/g,"&#39;")}'>`
     : fallback;
-  return `<div class="avatar-box" style="width:${size}px;height:${size}px;border-radius:${size>=80?16:12}px">${inner}</div>`;
+  return `<div class="avatar-box ${kindClass}" style="width:${size}px;height:${size}px;border-radius:${size>=80?16:12}px">${inner}</div>`;
 }
 function fighterAvatar(f, side){
   return avatarBox(f, 44);
@@ -1053,7 +1063,7 @@ function viewFighter(id){
         <span class="pill gold">${esc(f.rank||'랭킹 외')}</span>
         ${f.country?`<span class="pill ghost">${esc(f.country)}</span>`:''}
       </div>
-      ${f.avatarSource?`<a class="photo-credit" href="${esc(f.avatarSource)}" target="_blank" rel="noopener noreferrer">사진 · Wikimedia Commons ↗</a>`:''}
+      ${f.avatarSource?`<a class="photo-credit" href="${esc(f.avatarSource)}" target="_blank" rel="noopener noreferrer">사진 · ${f.avatarProvider==='UFC'?'UFC 공식 프로필':'Wikimedia Commons'} ↗</a>`:''}
     </div>
   </div>
 
@@ -1559,7 +1569,9 @@ function transformFighter(f){
     record: cleanExternalText(f.record || '-'), weight: cleanExternalText(f.division || '-'), rank: cleanExternalText(f.rank || '랭킹 외'),
     ko: f.win_ko||0, sub: f.win_sub||0, dec: f.win_dec||0,
     avatar: safeExternalUrl(f.avatar || f.avatar_url || ''),
+    avatarThumb: safeExternalUrl(f.avatar_thumb_url || f.avatar || f.avatar_url || ''),
     avatarSource: safeExternalUrl(f.avatar_source || ''),
+    avatarProvider: cleanExternalText(f.avatar_provider || (f.avatar_url?.includes('ufc.com/images/')?'UFC':'Wikimedia')),
     style: '', recent: recent, next: f.next || null
   };
 }

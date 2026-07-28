@@ -184,7 +184,11 @@
         "opp_ko": "커티스 블레이즈",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/CORTES_ACOSTA_WALDO_L.png?itok=R3cDV3Y_",
+      "avatar_thumb_url": "https://ufc.com/images/2026-05/CORTES_ACOSTA_WALDO_05-09.png",
+      "avatar_source": "https://www.ufc.com/athlete/waldo-cortes-acosta",
+      "avatar_provider": "UFC"
     },
     {
       "id": "rizvan-kuniev",
@@ -239,8 +243,10 @@
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Curtis_Blaydes_at_UFC_221.png/250px-Curtis_Blaydes_at_UFC_221.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Curtis_Blaydes_at_UFC_221.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/BLAYDES_CURTIS_L_04-11.png?itok=Qv7hfvDn",
+      "avatar_source": "https://www.ufc.com/athlete/curtis-blaydes",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/BLAYDES_CURTIS_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "serghei-spivac",
@@ -265,7 +271,11 @@
         "opp_ko": "비토르 페트리노",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/SPIVAC_SERGHEI_L_02-21.png?itok=PH4b9P63",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/SPIVAC_SERGHEI_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/serghei-spivac",
+      "avatar_provider": "UFC"
     },
     {
       "id": "vitor-petrino",
@@ -290,7 +300,11 @@
         "opp_ko": "세르게이 스피박",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/PETRINO_VITOR_L_03-14.png?itok=pNmeTfOY",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/PETRINO_VITOR_03-14.png",
+      "avatar_source": "https://www.ufc.com/athlete/vitor-petrino",
+      "avatar_provider": "UFC"
     },
     {
       "id": "valter-walker",
@@ -364,7 +378,11 @@
         "opp_ko": "라이언 스팬",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/PINTO_MARIO_L_03-21.png?itok=n8dAYZad",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/PINTO_MARIO_03-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/mario-pinto",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mick-parkin",
@@ -409,7 +427,11 @@
         "opp_ko": "마리오 핀투",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/SPANN_RYAN_L_07-19.png?itok=uktQXcGD",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/SPANN_RYAN_04-25.png",
+      "avatar_source": "https://www.ufc.com/athlete/ryan-spann",
+      "avatar_provider": "UFC"
     },
     {
       "id": "carlos-ulberg",
@@ -684,7 +706,11 @@
         "opp_ko": "얀 블라호비치",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/STIRLING_NAVAJO_L_03-28.png?itok=BVUQTbQ5",
+      "avatar_thumb_url": "https://ufc.com/images/2026-06/STIRLING_NAVAJO_06-20.png",
+      "avatar_source": "https://www.ufc.com/athlete/navajo-stirling",
+      "avatar_provider": "UFC"
     },
     {
       "id": "robert-whittaker",
@@ -972,7 +998,11 @@
         "opp_ko": "그레고리 호드리게스",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/HERNANDEZ_ANTHONY_L_10-19.png?itok=8a6qWRi5",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/HERNANDEZ_ANTHONY_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/anthony-hernandez",
+      "avatar_provider": "UFC"
     },
     {
       "id": "israel-adesanya",
@@ -1020,8 +1050,10 @@
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/GregoryRodrigues.png/250px-GregoryRodrigues.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:GregoryRodrigues.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/RODRIGUES_GREGORY_L_03-07.png?itok=klxiW8-p",
+      "avatar_source": "https://www.ufc.com/athlete/gregory-rodrigues",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/RODRIGUES_GREGORY_03-07.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "christian-leroy-duncan",
@@ -1207,8 +1239,10 @@
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/NursultonRuziboev2024.png/250px-NursultonRuziboev2024.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:NursultonRuziboev2024.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/RUZIBOEV_NURSULTON_L_06-27.png?itok=qjqgBV1p",
+      "avatar_source": "https://www.ufc.com/athlete/nursulton-ruziboev",
+      "avatar_thumb_url": "https://ufc.com/images/2026-06/RUZIBOEV_NURSULTON_06-27.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "islam-makhachev",
@@ -1234,8 +1268,10 @@
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg/250px-Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Islam_Makhachev_and_Sergey_Melikov_2025_(cropped).jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/7/MAKHACHEV_ISLAM_L_BELT_01-18.png?itok=crqbSRmt",
+      "avatar_source": "https://www.ufc.com/athlete/islam-makhachev",
+      "avatar_thumb_url": "https://ufc.com/images/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "carlos-prates",
@@ -1283,8 +1319,10 @@
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/IanGarry.jpg/250px-IanGarry.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:IanGarry.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-04/MACHADO_GARRY_IAN_L_04-26.png?itok=DVG8yebN",
+      "avatar_source": "https://www.ufc.com/athlete/ian-machado-garry",
+      "avatar_thumb_url": "https://ufc.com/images/2025-11/MACHADO_GARRY_IAN_11-22.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "michael-morales",
@@ -1482,8 +1520,10 @@
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Michael_Venom_Page.png/250px-Michael_Venom_Page.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Michael_Venom_Page.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/PAGE_MICHAEL_L_03-21.png?itok=UOjuF--7",
+      "avatar_source": "https://www.ufc.com/athlete/michael-page",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/PAGE_MICHAEL_03-21.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "daniel-rodriguez",
@@ -1508,7 +1548,11 @@
         "opp_ko": "우로시 메디치",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-10/RODRIGUEZ_DANIEL_L_10-12.png?itok=zE9JhfZS",
+      "avatar_thumb_url": "https://ufc.com/images/2025-07/RODRIGUEZ_DANIEL_07-19.png",
+      "avatar_source": "https://www.ufc.com/athlete/daniel-rodriguez",
+      "avatar_provider": "UFC"
     },
     {
       "id": "uro-medi",
@@ -1533,7 +1577,11 @@
         "opp_ko": "다니엘 로드리게스",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/MEDIC_UROS_L_08-09.png?itok=EtRaAk1l",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/MEDIC_UROS_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/uros-medic",
+      "avatar_provider": "UFC"
     },
     {
       "id": "yaroslav-amosov",
@@ -1747,8 +1795,10 @@
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mateusz_Gamrot.jpg/250px-Mateusz_Gamrot.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Mateusz_Gamrot.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/GAMROT_MATEUSZ_L_04-11.png?itok=4H5q88x9",
+      "avatar_source": "https://www.ufc.com/athlete/mateusz-gamrot",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/GAMROT_MATEUSZ_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "renato-moicano",
@@ -1826,7 +1876,11 @@
         "opp_ko": "마테우시 감로트",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/SALKILLD_QUILLAN_L_01-31.png?itok=FT1z9B_U",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/SALKILLD_QUILLAN_05-02.png",
+      "avatar_source": "https://www.ufc.com/athlete/quillan-salkilld",
+      "avatar_provider": "UFC"
     },
     {
       "id": "maur-cio-ruffy",
@@ -2405,8 +2459,10 @@
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/UmarNurmagomedov.png/250px-UmarNurmagomedov.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UmarNurmagomedov.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/NURMAGOMEDOV_UMAR_L_01-24.png?itok=OZjSlOHS",
+      "avatar_source": "https://www.ufc.com/athlete/umar-nurmagomedov",
+      "avatar_thumb_url": "https://ufc.com/images/2026-01/NURMAGOMEDOV_UMAR_01-24.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "sean-o-malley",
@@ -2522,7 +2578,11 @@
         "opp_ko": "우마르 누르마고메도프",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/YADONG_SONG_L_05-30.png?itok=yMtLdKZS",
+      "avatar_thumb_url": "https://ufc.com/images/2026-05/YADONG_SONG_05-30.png",
+      "avatar_source": "https://www.ufc.com/athlete/song-yadong",
+      "avatar_provider": "UFC"
     },
     {
       "id": "david-mart-nez",
@@ -2987,8 +3047,10 @@
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Brandon_Moreno_February_2021.jpg/250px-Brandon_Moreno_February_2021.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Brandon_Moreno_February_2021.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/MORENO_BRANDON_L_02-28.png?itok=qsANf797",
+      "avatar_source": "https://www.ufc.com/athlete/brandon-moreno",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/MORENO_BRANDON_02-28.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kevin-borjas",
@@ -3022,7 +3084,11 @@
         "opp_ko": "츠루야 레이",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-04/BORJAS_KEVIN_L_11-11.png?itok=lzFPPN1l",
+      "avatar_thumb_url": "https://ufc.com/images/2026-06/BORJAS_KEVIN_06-20.png",
+      "avatar_source": "https://www.ufc.com/athlete/kevin-borjas",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mitch-raposo",
@@ -3076,7 +3142,11 @@
         "opp_ko": "알렉스 페레즈",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/SUMUDAERJI_L_03-07.png?itok=NyopQV5l",
+      "avatar_thumb_url": "https://ufc.com/images/2026-05/SUMUDAERJI_05-30.png",
+      "avatar_source": "https://www.ufc.com/athlete/su-mudaerji",
+      "avatar_provider": "UFC"
     },
     {
       "id": "steve-erceg",
@@ -3130,7 +3200,11 @@
         "opp_ko": "수 무다얼지",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/PEREZ_ALEX_L_05-30.png?itok=Pvs7AuKU",
+      "avatar_thumb_url": "https://ufc.com/images/2026-05/PEREZ_ALEX_05-30.png",
+      "avatar_source": "https://www.ufc.com/athlete/alex-perez",
+      "avatar_provider": "UFC"
     },
     {
       "id": "alessandro-costa",
@@ -3584,8 +3658,10 @@
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/MANON_FIOROT_ET_ALDRIC_CASSATA%2C_LE_COUPLE_GOAL_DU_MMA_-_MMA_EXTRA_ROUND_-22_-_YouTube_-_0-28-31_%28cropped%29.jpg/250px-MANON_FIOROT_ET_ALDRIC_CASSATA%2C_LE_COUPLE_GOAL_DU_MMA_-_MMA_EXTRA_ROUND_-22_-_YouTube_-_0-28-31_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:MANON_FIOROT_ET_ALDRIC_CASSATA,_LE_COUPLE_GOAL_DU_MMA_-_MMA_EXTRA_ROUND_-22_-_YouTube_-_0-28-31_(cropped).jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/FIOROT_MANON_L_10-18.png?itok=sDMApWTC",
+      "avatar_source": "https://www.ufc.com/athlete/manon-fiorot",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/FIOROT_MANON_10-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "alexa-grasso",
@@ -3611,8 +3687,10 @@
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Alexa_Grasso_2020_01.png/250px-Alexa_Grasso_2020_01.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alexa_Grasso_2020_01.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/GRASSO_ALEXA_L_03-28.png?itok=O9csNdaV",
+      "avatar_source": "https://www.ufc.com/athlete/alexa-grasso",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/GRASSO_ALEXA_03-28.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "erin-blanchfield",
@@ -3823,7 +3901,11 @@
         "opp_ko": "레지나 타린",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/ALDRICH_JJ_L_04-18.png?itok=IsgI-ZFw",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/ALDRICH_JJ_04-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/jj-aldrich",
+      "avatar_provider": "UFC"
     },
     {
       "id": "karine-silva",
@@ -3909,8 +3991,10 @@
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mackenzie_Dern.png/250px-Mackenzie_Dern.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Mackenzie_Dern.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/DERN_MACKENZIE_L_BELT.png?itok=Uf6mLCa3",
+      "avatar_source": "https://www.ufc.com/athlete/mackenzie-dern",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/DERN_MACKENZIE_BELT.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "virna-jandiroba",
@@ -3978,8 +4062,10 @@
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gillian_Robertson.png/250px-Gillian_Robertson.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Gillian_Robertson.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/ROBERTSON_GILLIAN_L_01-20.png?itok=yw3RX2mI",
+      "avatar_source": "https://www.ufc.com/athlete/gillian-robertson",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/ROBERTSON_GILLIAN_03-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "yan-xiaonan",
@@ -4004,7 +4090,11 @@
         "opp_ko": "데니지 고메스",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-04/XIAONAN_YAN_L_04-12.png?itok=8k6eQpyS",
+      "avatar_thumb_url": "https://ufc.com/images/2025-04/XIAONAN_YAN_04-12.png",
+      "avatar_source": "https://www.ufc.com/athlete/yan-xiaonan",
+      "avatar_provider": "UFC"
     },
     {
       "id": "fatima-kline",
@@ -4078,7 +4168,11 @@
         "opp_ko": "얀 시아오난",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-11/GOMES_DENISE_L_11-04.png?itok=TD3_gJ1z",
+      "avatar_thumb_url": "https://ufc.com/images/2025-05/GOMES_DENISE_05-17.png",
+      "avatar_source": "https://www.ufc.com/athlete/denise-gomes",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mizuki-inoue",
@@ -4123,7 +4217,11 @@
         "opp_ko": "아만다 레모스",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/THAINARA_ALEXIA_L_03-28.png?itok=Z448AVao",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/THAINARA_ALEXIA_03-28.png",
+      "avatar_source": "https://www.ufc.com/athlete/alexia-thainara",
+      "avatar_provider": "UFC"
     },
     {
       "id": "amanda-lemos",
@@ -4148,7 +4246,11 @@
         "opp_ko": "알렉시아 타이나라",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/LEMOS_AMANDA_L_03-14.png?itok=djp2Zzev",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/LEMOS_AMANDA_03-14.png",
+      "avatar_source": "https://www.ufc.com/athlete/amanda-lemos",
+      "avatar_provider": "UFC"
     },
     {
       "id": "loopy-godinez",
@@ -4262,7 +4364,11 @@
         "opp_ko": "마르친 티부라",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/RAKIC_ALEKSANDAR_L_10-25.png?itok=gK-MuEx0",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/RAKIC_ALEKSANDAR_10-25.png",
+      "avatar_source": "https://www.ufc.com/athlete/aleksandar-rakic",
+      "avatar_provider": "UFC"
     },
     {
       "id": "marcin-tybura",
@@ -4287,7 +4393,11 @@
         "opp_ko": "알렉산다르 라키치",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/TYBURA_MARCIN_L_03-28.png?itok=TNTDlOaO",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/TYBURA_MARCIN_03-28.png",
+      "avatar_source": "https://www.ufc.com/athlete/marcin-tybura",
+      "avatar_provider": "UFC"
     },
     {
       "id": "du-ko-todorovi",
@@ -4313,8 +4423,10 @@
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Du%C5%A1ko_Todorovi%C4%87_%281%29.jpg/250px-Du%C5%A1ko_Todorovi%C4%87_%281%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Duško_Todorović_(1).jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2022-08/4526cb41-c0d2-423a-ad18-d8efe88477f3%252FTODOROVIC_DUSKO_L_05-21.png?itok=Cs7dDZH4",
+      "avatar_source": "https://www.ufc.com/athlete/dusko-todorovic",
+      "avatar_thumb_url": "https://ufc.com/images/2025-09/TODOROVIC_DUSKO_09-13.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "robert-valentin",
@@ -4339,7 +4451,11 @@
         "opp_ko": "두스코 토도로비치",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-08/VALENTIN_ROBERT_L_08-24.png?itok=pA6Xe881",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/VALENTIN_ROBERT_04-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/robert-valentin-frey",
+      "avatar_provider": "UFC"
     },
     {
       "id": "vlasto-epo",
@@ -4364,7 +4480,11 @@
         "opp_ko": "길버트 우르비나",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=niQpXmYT1tbiETIDAxTsCI5FDbiNt9kI&itok=DfVddCfn",
+      "avatar_thumb_url": "https://ufc.com/images/2019-04/SILHOUETTE.png?VersionId=gr9Cvr32ZpepB0II4R_u9lu3vdCILDqn",
+      "avatar_source": "https://www.ufc.com/athlete/vlasto-cepo",
+      "avatar_provider": "UFC"
     },
     {
       "id": "gilbert-urbina",
@@ -4389,7 +4509,11 @@
         "opp_ko": "블라스토 체포",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-02/URBINA_GILBERT_L_02-03.png?itok=rua26OyB",
+      "avatar_thumb_url": "https://ufc.com/images/2025-08/URBINA_GILBERT_08-09.png",
+      "avatar_source": "https://www.ufc.com/athlete/gilbert-urbina",
+      "avatar_provider": "UFC"
     },
     {
       "id": "udov-t-klein",
@@ -4415,8 +4539,10 @@
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ludovit_Klein.jpg/250px-Ludovit_Klein.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ludovit_Klein.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/KLEIN_LUDOVIT_L_10-25.png?itok=c3UsUNGg",
+      "avatar_source": "https://www.ufc.com/athlete/ludovit-klein",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/KLEIN_LUDOVIT_10-25.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "tofiq-musayev",
@@ -4441,7 +4567,11 @@
         "opp_ko": "루도비트 클라인",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/MUSAYEV_TOFIQ_L_06-21.png?itok=wQeHfkul",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/MUSAYEV_TOFIQ_03-28.png",
+      "avatar_source": "https://www.ufc.com/athlete/tofiq-musayev",
+      "avatar_provider": "UFC"
     },
     {
       "id": "oban-elliott",
@@ -4466,7 +4596,11 @@
         "opp_ko": "마이클 올리베이라",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/ELLIOTT_OBAN_L_01-31.png?itok=FCIO37_E",
+      "avatar_thumb_url": "https://ufc.com/images/2026-01/ELLIOTT_OBAN_01-31.png",
+      "avatar_source": "https://www.ufc.com/athlete/oban-elliott",
+      "avatar_provider": "UFC"
     },
     {
       "id": "michael-oliveira",
@@ -4491,7 +4625,11 @@
         "opp_ko": "오반 엘리엇",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/OLIVEIRA_MICHAEL_L.png?itok=5h0mJJUd",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/OLIVEIRA_MICHAEL.png",
+      "avatar_source": "https://www.ufc.com/athlete/michael-oliveira",
+      "avatar_provider": "UFC"
     },
     {
       "id": "dennis-buzukja",
@@ -4516,7 +4654,11 @@
         "opp_ko": "보그단 그라드",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/BUZUKJA_DENNIS_L_04-18.png?itok=q20Eox1G",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/BUZUKJA_DENNIS_04-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/dennis-buzukja",
+      "avatar_provider": "UFC"
     },
     {
       "id": "bogdan-grad",
@@ -4541,7 +4683,11 @@
         "opp_ko": "데니스 부주키아",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/GRAD_BOGDAN_L_11-22.png?itok=-akhAGX6",
+      "avatar_thumb_url": "https://ufc.com/images/2025-11/GRAD_BOGDAN_11-22.png",
+      "avatar_source": "https://www.ufc.com/athlete/bogdan-grad",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mateusz-r-becki",
@@ -4566,7 +4712,11 @@
         "opp_ko": "카일 프리폴렉",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/REBECKI_MATEUSZ_L_08-02.png?itok=_6ybUU3F",
+      "avatar_thumb_url": "https://ufc.com/images/2026-05/REBECKI_MATEUSZ_05-09.png",
+      "avatar_source": "https://www.ufc.com/athlete/mateusz-rebecki",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kyle-prepolec",
@@ -4591,7 +4741,11 @@
         "opp_ko": "마테우시 레베츠키",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/PREPOLEC_KYLE_L_10-18.png?itok=iTfcQHT_",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/PREPOLEC_KYLE_10-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/kyle-prepolec",
+      "avatar_provider": "UFC"
     },
     {
       "id": "nina-nikolija-milo-evi",
@@ -4641,7 +4795,11 @@
         "opp_ko": "니나 니콜리야 밀로셰비치",
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/COWAN_HAILEY_L_02_25.png?itok=FHOVXSgq",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/COWAN_HAILEY_04-04.png",
+      "avatar_source": "https://www.ufc.com/athlete/hailey-cowan",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ty-miller",
@@ -4666,7 +4824,11 @@
         "opp_ko": "빌리 레이 고프",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/MILLER_TY_R_01-24.png?itok=VS1_Z4Yn",
+      "avatar_thumb_url": "https://ufc.com/images/2026-01/MILLER_TY_01-24.png",
+      "avatar_source": "https://www.ufc.com/athlete/ty-miller",
+      "avatar_provider": "UFC"
     },
     {
       "id": "billy-ray-goff",
@@ -4691,7 +4853,11 @@
         "opp_ko": "타이 밀러",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/GOFF_BILLY_L_05-31.png?itok=_gOeCyu6",
+      "avatar_thumb_url": "https://ufc.com/images/2025-05/GOFF_BILLY_05-31.png",
+      "avatar_source": "https://www.ufc.com/athlete/billy-goff",
+      "avatar_provider": "UFC"
     },
     {
       "id": "diyar-nurgozhay",
@@ -4716,7 +4882,11 @@
         "opp_ko": "브루노 로페스",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/NURGOZHAY_DIYAR_L_03-15.png?itok=8btMThdO",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/NURGOZHAY_DIYAR_03-07.png",
+      "avatar_source": "https://www.ufc.com/athlete/diyar-nurgozhay",
+      "avatar_provider": "UFC"
     },
     {
       "id": "bruno-lopes",
@@ -4741,7 +4911,11 @@
         "opp_ko": "디야르 누르고자이",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/2/LOPES_BRUNO_L_01-11.png?itok=gOWa96DN",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/LOPES_BRUNO_03-28.png",
+      "avatar_source": "https://www.ufc.com/athlete/bruno-lopes",
+      "avatar_provider": "UFC"
     },
     {
       "id": "carlos-diego-ferreira",
@@ -4766,7 +4940,11 @@
         "opp_ko": "빌리 콰란틸로",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/2025-01/FERREIRA_DIEGO_L_01-18.png",
+      "avatar_thumb_url": "https://ufc.com/images/2025-01/FERREIRA_DIEGO_L_01-18.png",
+      "avatar_source": "https://www.ufc.com/event/ufc-fight-night-august-08-2026",
+      "avatar_provider": "UFC"
     },
     {
       "id": "billy-quarantillo",
@@ -4791,7 +4969,11 @@
         "opp_ko": "카를로스 디에고 페레이라",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-12/QUARANTILLO_BILLY_L_03-23.png?itok=H9dNSRIx",
+      "avatar_thumb_url": "https://ufc.com/images/2024-12/QUARANTILLO_BILLY_12-14.png",
+      "avatar_source": "https://www.ufc.com/athlete/billy-quarantillo",
+      "avatar_provider": "UFC"
     },
     {
       "id": "louie-sutherland",
@@ -4816,7 +4998,11 @@
         "opp_ko": "조제 루이스",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/SUTHERLAND_LOUIE_L_03-21.png?itok=No4Ki3Gm",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/SUTHERLAND_LOUIE_05-02.png",
+      "avatar_source": "https://www.ufc.com/athlete/louie-sutherland",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jos-luiz",
@@ -4867,8 +5053,10 @@
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Darren-Elkins.jpg/250px-Darren-Elkins.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Darren-Elkins.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-04/ELKINS_DARREN_L_04-12.png?itok=ZkURB9dN",
+      "avatar_source": "https://www.ufc.com/athlete/darren-elkins",
+      "avatar_thumb_url": "https://ufc.com/images/2025-04/ELKINS_DARREN_04-12.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "yadier-del-valle",
@@ -4893,7 +5081,11 @@
         "opp_ko": "대런 엘킨스",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/DEL_VALLE_YADIER_L_05-17.png?itok=uInyKMVn",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/DEL_VALLE_YADIER_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/yadier-del-valle",
+      "avatar_provider": "UFC"
     },
     {
       "id": "steven-asplund",
@@ -4918,7 +5110,11 @@
         "opp_ko": "길레르미 파트",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/ASPLUND_STEVE_R_03-14.png?itok=DKdd71FY",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/ASPLUND_STEVE_03-14.png",
+      "avatar_source": "https://www.ufc.com/athlete/steven-asplund",
+      "avatar_provider": "UFC"
     },
     {
       "id": "guilherme-pat",
@@ -4943,7 +5139,11 @@
         "opp_ko": "스티븐 애스플런드",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/PAT_GUILHERME_L_04-04.png?itok=XG_cC52L",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/PAT_GUILHERME_04-04.png",
+      "avatar_source": "https://www.ufc.com/athlete/guilherme-pat",
+      "avatar_provider": "UFC"
     },
     {
       "id": "juliana-miller",
@@ -4968,7 +5168,11 @@
         "opp_ko": "하베나 올리베이라",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/MILLER_JULIANA_L_02-21.png?itok=QkrFSkh5",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/MILLER_JULIANA_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/juliana-miller",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ravena-oliveira",
@@ -4993,7 +5197,11 @@
         "opp_ko": "줄리아나 밀러",
         "event": "UFC Fight Night: 감로트 대 살킬드",
         "date": "2026-08-08"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/OLIVEIRA_RAVENA_R_03-21.png?itok=EuFL1asA",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/OLIVEIRA_RAVENA_03-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/ravena-oliveira",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jeremiah-wells",
@@ -5018,7 +5226,11 @@
         "opp_ko": "믹티벡 오롤바이",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/WELLS_JEREMIAH_L_11-01.png?itok=OaoLPcHM",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/WELLS_JEREMIAH_11-01.png",
+      "avatar_source": "https://www.ufc.com/athlete/jeremiah-wells",
+      "avatar_provider": "UFC"
     },
     {
       "id": "myktybek-orolbai",
@@ -5043,7 +5255,11 @@
         "opp_ko": "제러마이아 웰스",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-10/5/OROLBAI_MYKTYBEK_L_11-18.png?itok=QfzUPReY",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/OROLBAI_MYKTYBEK_03-14.png",
+      "avatar_source": "https://www.ufc.com/athlete/myktybek-orolbai",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jalin-turner",
@@ -5069,8 +5285,10 @@
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Jalin_Turner_at_UFC_234.jpg/250px-Jalin_Turner_at_UFC_234.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jalin_Turner_at_UFC_234.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/TURNER_JALIN_L_03-08.png?itok=XnbW0xrZ",
+      "avatar_source": "https://www.ufc.com/athlete/jalin-turner",
+      "avatar_thumb_url": "https://ufc.com/images/2025-12/TURNER_JALIN_12-06.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kau-fernandes",
@@ -5095,7 +5313,11 @@
         "opp_ko": "제일린 터너",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2023-11/FERNANDES_KAUE_L_11-04.png?itok=1TV9V-e-",
+      "avatar_thumb_url": "https://ufc.com/images/2025-09/FERNANDES_KAUE_09-06.png",
+      "avatar_source": "https://www.ufc.com/athlete/kaue-fernandes",
+      "avatar_provider": "UFC"
     },
     {
       "id": "geoff-neal",
@@ -5121,8 +5343,10 @@
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Geoff_Neal_at_UFC_228.jpg/250px-Geoff_Neal_at_UFC_228.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Geoff_Neal_at_UFC_228.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/NEAL_GEOFF_L_02-21.png?itok=h9m7my9H",
+      "avatar_source": "https://www.ufc.com/athlete/geoff-neal",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/NEAL_GEOFF_02-21.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "chidi-njokuani",
@@ -5147,7 +5371,11 @@
         "opp_ko": "제프 닐",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2023-08/NJOKUANI_CHIDI_L.png?itok=XOQFtiWO",
+      "avatar_thumb_url": "https://ufc.com/images/2023-03/NJOKUANI_CHIDI_03-25.png",
+      "avatar_source": "https://www.ufc.com/athlete/chidi-njokuani",
+      "avatar_provider": "UFC"
     },
     {
       "id": "neil-magny",
@@ -5173,8 +5401,10 @@
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Neil_Magny.jpg/250px-Neil_Magny.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Neil_Magny.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/MAGNY_NEIL_L_12-13.png?itok=yptc96W7",
+      "avatar_source": "https://www.ufc.com/athlete/neil-magny",
+      "avatar_thumb_url": "https://ufc.com/images/2025-12/MAGNY_NEIL_12-13.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ramiz-brahimaj",
@@ -5199,7 +5429,11 @@
         "opp_ko": "닐 매그니",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/BRAHIMAJ_RAMIZ_L_02-21.png?itok=mngHJ0yn",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/BRAHIMAJ_RAMIZ_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/ramiz-brahimaj",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mansur-abdul-malik",
@@ -5224,7 +5458,11 @@
         "opp_ko": "더스틴 스톨츠푸스",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/ABDUL-MALIK_MANSUR_L_03-28.png?itok=ZFfVM7S4",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/ABDUL-MALIK_MANSUR_03-28.png",
+      "avatar_source": "https://www.ufc.com/athlete/mansur-abdul-malik",
+      "avatar_provider": "UFC"
     },
     {
       "id": "dustin-stoltzfus",
@@ -5249,7 +5487,11 @@
         "opp_ko": "만수르 압둘말리크",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/STOLTZFUS_DUSTIN-L_05-17.png?itok=H4e1QGAv",
+      "avatar_thumb_url": "https://ufc.com/images/2025-09/STOLTZFUS_DUSTIN_09-13.png",
+      "avatar_source": "https://www.ufc.com/athlete/dustin-stoltzfus",
+      "avatar_provider": "UFC"
     },
     {
       "id": "vicente-luque",
@@ -5274,7 +5516,11 @@
         "opp_ko": "트리션 고어",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/LUQUE_VICENTE_L_10-11.png?itok=Hsx6rALQ",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/LUQUE_VICENTE_04-11.png",
+      "avatar_source": "https://www.ufc.com/athlete/vicente-luque",
+      "avatar_provider": "UFC"
     },
     {
       "id": "tresean-gore",
@@ -5299,7 +5545,11 @@
         "opp_ko": "비센테 루케",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-04/GORE_TRESEAN_L_04-12.png?itok=JeztGuNv",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/GORE_TRESEAN_04-04.png",
+      "avatar_source": "https://www.ufc.com/athlete/tresean-gore",
+      "avatar_provider": "UFC"
     },
     {
       "id": "edson-barboza",
@@ -5324,7 +5574,11 @@
         "opp_ko": "에스테반 리보빅스",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/BARBOZA_EDSON_L_12-06.png?itok=4HS5D_Np",
+      "avatar_thumb_url": "https://ufc.com/images/2025-12/BARBOZA_EDSON_12-06.png",
+      "avatar_source": "https://www.ufc.com/athlete/edson-barboza",
+      "avatar_provider": "UFC"
     },
     {
       "id": "esteban-ribovics",
@@ -5349,7 +5603,11 @@
         "opp_ko": "에드손 바르보자",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-09/RIBOVICS_ESTEBAN_L_05-11.png?itok=sQBu-_E0",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/RIBOVICS_ESTEBAN_04-11.png",
+      "avatar_source": "https://www.ufc.com/athlete/esteban-ribovics",
+      "avatar_provider": "UFC"
     },
     {
       "id": "roman-dolidze",
@@ -5375,8 +5633,10 @@
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Dolidze_2019.jpg/250px-Dolidze_2019.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Dolidze_2019.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/DOLIDZE_ROMAN_L_03-21.png?itok=LBWQed7d",
+      "avatar_source": "https://www.ufc.com/athlete/roman-dolidze",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/DOLIDZE_ROMAN_03-21.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "reinier-de-ridder",
@@ -5402,8 +5662,10 @@
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Reinier_post_training_2.jpg/250px-Reinier_post_training_2.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Reinier_post_training_2.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/DE-RIDDER_REINIER_L_10-18.png?itok=4Bk9ddfu",
+      "avatar_source": "https://www.ufc.com/athlete/reinier-de-ridder",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/DE-RIDDER_REINIER_03-07.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kennedy-nzechukwu",
@@ -5428,7 +5690,11 @@
         "opp_ko": "샤밀 가지예프",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/NZECHUKWU_KENNEDY_L_12-13.png?itok=vNdnkPFH",
+      "avatar_thumb_url": "https://ufc.com/images/2025-12/NZECHUKWU_KENNEDY_12-13.png",
+      "avatar_source": "https://www.ufc.com/athlete/kennedy-nzechukwu",
+      "avatar_provider": "UFC"
     },
     {
       "id": "shamil-gaziev",
@@ -5453,7 +5719,11 @@
         "opp_ko": "케네디 은제추쿠",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/GAZIEV_SHAMIL_L_05-02.png?itok=VAF3kcSW",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/GAZIEV_SHAMIL_05-02.png",
+      "avatar_source": "https://www.ufc.com/athlete/shamil-gaziev",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kody-steele",
@@ -5478,7 +5748,11 @@
         "opp_ko": "게이지 영",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-02/STEELE_KODY_R_02-08.png?itok=1eXV9YAp",
+      "avatar_thumb_url": "https://ufc.com/images/2025-02/STEELE_KODY_02-08.png",
+      "avatar_source": "https://www.ufc.com/athlete/kody-steele",
+      "avatar_provider": "UFC"
     },
     {
       "id": "gauge-young",
@@ -5503,7 +5777,11 @@
         "opp_ko": "코디 스틸",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/YOUNG_GAUGE_R_08-23.png?itok=DEcjS31_",
+      "avatar_thumb_url": "https://ufc.com/images/2025-08/YOUNG_GAUGE_08-23.png",
+      "avatar_source": "https://www.ufc.com/athlete/gauge-young",
+      "avatar_provider": "UFC"
     },
     {
       "id": "carli-judice",
@@ -5528,7 +5806,11 @@
         "opp_ko": "제이슬라 샤베스",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/JUDICE_CARLI_L_07-19.png?itok=B3-iEZU7",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/JUDICE_CARLI_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/carli-judice",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jeisla-chaves",
@@ -5553,7 +5835,11 @@
         "opp_ko": "칼리 주디스",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/CHAVES_JEISLA_L_06-06.png?itok=mXsCur2H",
+      "avatar_thumb_url": "https://ufc.com/images/2026-06/CHAVES_JEISLA_06-06.png",
+      "avatar_source": "https://www.ufc.com/athlete/jeisla-chaves",
+      "avatar_provider": "UFC"
     },
     {
       "id": "wesley-schultz",
@@ -5578,7 +5864,11 @@
         "opp_ko": "잭슨 맥베이",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/SHULTZ_WESLEY_R_05-02.png?itok=TcJ3DhOa",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/SHULTZ_WESLEY_05-02.png",
+      "avatar_source": "https://www.ufc.com/athlete/wes-schultz",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jackson-mcvey",
@@ -5603,7 +5893,11 @@
         "opp_ko": "웨슬리 슐츠",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/MCVEY_JACKSON_L_04-25.png?itok=KjOOInLO",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/MCVEY_JACKSON_04-25.png",
+      "avatar_source": "https://www.ufc.com/athlete/jackson-mcvey",
+      "avatar_provider": "UFC"
     },
     {
       "id": "shanelle-dyer",
@@ -5628,7 +5922,11 @@
         "opp_ko": "엘리스 리드",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/DYER_SHANELLE_L_03-21.png?itok=cYvyUqI4",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/DYER_SHANELLE_03-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/shanelle-dyer",
+      "avatar_provider": "UFC"
     },
     {
       "id": "elise-reed",
@@ -5653,7 +5951,11 @@
         "opp_ko": "샤넬 다이어",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/REED_ELISE_L_05-17.png?itok=5ZUQC1H3",
+      "avatar_thumb_url": "https://ufc.com/images/2025-05/REED_ELISE_05-17.png",
+      "avatar_source": "https://www.ufc.com/athlete/elise-reed",
+      "avatar_provider": "UFC"
     },
     {
       "id": "rei-tsuruya",
@@ -5678,7 +5980,11 @@
         "opp_ko": "케빈 보르하스",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/TSURUYA_REI_L_05-30.png?itok=tcf6P7yR",
+      "avatar_thumb_url": "https://ufc.com/images/2026-05/TSURUYA_REI_05-30.png",
+      "avatar_source": "https://www.ufc.com/athlete/rei-tsuruya",
+      "avatar_provider": "UFC"
     },
     {
       "id": "liu-ce",
@@ -5728,7 +6034,11 @@
         "opp_ko": "리우 처",
         "event": "UFC Fight Night: 누르마고메도프 대 송",
         "date": "2026-08-29"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/TAFA_JUNIOR_L_05-02.png?itok=dLi9Oyuv",
+      "avatar_thumb_url": "https://ufc.com/images/2026-06/TAFA_JUNIOR_06-06.png",
+      "avatar_source": "https://www.ufc.com/athlete/junior-tafa",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kurtis-campbell",
@@ -5753,7 +6063,11 @@
         "opp_ko": "트레버 픽",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/CAMPBELL_KURTIS_L_03-21.png?itok=o9Y-sakx",
+      "avatar_thumb_url": "https://ufc.com/images/2026-03/CAMPBELL_KURTIS_03-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/kurtis-campbell",
+      "avatar_provider": "UFC"
     },
     {
       "id": "trevor-peek",
@@ -5778,7 +6092,11 @@
         "opp_ko": "커티스 캠벨",
         "event": "UFC Fight Night 287",
         "date": "2026-09-05"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-09/PEEK_TREVOR_L_09-07.png?itok=3tAz2fur",
+      "avatar_thumb_url": "https://ufc.com/images/2024-09/PEEK_TREVOR_09-07.png",
+      "avatar_source": "https://www.ufc.com/athlete/trevor-peek",
+      "avatar_provider": "UFC"
     },
     {
       "id": "joseph-morales",
@@ -5803,7 +6121,11 @@
         "opp_ko": "브랜든 모레노",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/MORALES_JOSEPH_R_11-08.png?itok=C6wjX2tp",
+      "avatar_thumb_url": "https://ufc.com/images/2025-11/MORALES_JOSEPH_11-08.png",
+      "avatar_source": "https://www.ufc.com/athlete/joseph-morales",
+      "avatar_provider": "UFC"
     },
     {
       "id": "tim-elliott",
@@ -5828,7 +6150,11 @@
         "opp_ko": "에드가르 차이레스",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/ELLIOTT_TIM_L_05-02.png?itok=Um9NmdXb",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/ELLIOTT_TIM_05-02.png",
+      "avatar_source": "https://www.ufc.com/athlete/tim-elliott",
+      "avatar_provider": "UFC"
     },
     {
       "id": "dgar-ch-irez",
@@ -5854,8 +6180,10 @@
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Edgar_Chairez_2024.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Edgar_Chairez_2024.png"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/CHAIREZ_EDGAR_L_02-28.png?itok=WL7kQO7z",
+      "avatar_source": "https://www.ufc.com/athlete/edgar-chairez",
+      "avatar_thumb_url": "https://ufc.com/images/2026-06/CHAIREZ_EDGAR_06-06.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kelvin-gastelum",
@@ -5881,8 +6209,10 @@
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Kelvin_Gastelum.jpg/250px-Kelvin_Gastelum.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Kelvin_Gastelum.jpg"
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/GASTELUM_KELVIN_L_04-11.png?itok=yRQgInm7",
+      "avatar_source": "https://www.ufc.com/athlete/kelvin-gastelum",
+      "avatar_thumb_url": "https://ufc.com/images/2026-04/GASTELUM_KELVIN_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "yousri-belgaroui",
@@ -5907,7 +6237,11 @@
         "opp_ko": "켈빈 가스텔럼",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/BELGAROUI_YOUSRI_R_10-18.png?itok=1K9Q4J-G",
+      "avatar_thumb_url": "https://ufc.com/images/2025-10/BELGAROUI_YOUSRI_10-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/yousri-belgaroui",
+      "avatar_provider": "UFC"
     },
     {
       "id": "regina-tarin",
@@ -5932,7 +6266,11 @@
         "opp_ko": "JJ 알드리치",
         "event": "UFC Fight Night 288",
         "date": "2026-09-12"
-      }
+      },
+      "avatar_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/TARIN_REGINA_L_02-28.png?itok=LpWAerkt",
+      "avatar_thumb_url": "https://ufc.com/images/2026-02/TARIN_REGINA_02-28.png",
+      "avatar_source": "https://www.ufc.com/athlete/regina-malpica-rivera",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ramazan-temirov",
@@ -8636,5 +8974,6 @@
       "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kyle_Daukaus.png/250px-Kyle_Daukaus.png",
       "avatar_source": "https://commons.wikimedia.org/wiki/File:Kyle_Daukaus.png"
     }
-  ]
+  ],
+  "official_photos_refreshed_at": "2026-07-28T11:21:06+09:00"
 }

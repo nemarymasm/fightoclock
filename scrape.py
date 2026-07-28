@@ -17,7 +17,9 @@ translations.json 은 사용자가 직접 편집 — 이 파일을 절대 덮어
 import os
 import re
 import json
+import sys
 import time
+import unicodedata
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from urllib.parse import unquote, urljoin, urlparse
@@ -34,6 +36,22 @@ except ImportError:
 # 설정값
 # ────────────────────────────────────────────────────────────────
 WIKI = "https://en.wikipedia.org/wiki/"
+UFC_ATHLETE = "https://www.ufc.com/athlete/"
+UFC_SLUG_OVERRIDES = {
+    "Robert Valentin": "robert-valentin-frey",
+    "Billy Ray Goff": "billy-goff",
+    "Wesley Schultz": "wes-schultz",
+    "Regina Tarin": "regina-malpica-rivera",
+}
+UFC_PHOTO_OVERRIDES = {
+    # 프로필 페이지가 현재 soft-404지만 공식 이벤트 카드에 등록된 UFC 원본.
+    "Carlos Diego Ferreira": {
+        "avatar_url": "https://ufc.com/images/2025-01/FERREIRA_DIEGO_L_01-18.png",
+        "avatar_thumb_url": "https://ufc.com/images/2025-01/FERREIRA_DIEGO_L_01-18.png",
+        "avatar_source": "https://www.ufc.com/event/ufc-fight-night-august-08-2026",
+        "avatar_provider": "UFC",
+    },
+}
 HEADERS = {
     "User-Agent": "FightOclockBot/2.0 (https://fightoclock.kr; nemarymasm@gmail.com)"
 }
@@ -240,6 +258,55 @@ def http_get(url):
     r = requests.get(url, headers=HEADERS, timeout=30)
     r.raise_for_status()
     return r.text
+
+
+def ufc_slugify(name):
+    """UFC 프로필 URL용 ASCII slug. 'Uroš Medić' → 'uros-medic'."""
+    ascii_name = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
+
+
+def fetch_ufc_profile_photos(name):
+    """UFC 공식 선수 페이지의 전신 프로필과 헤드샷 URL을 추출한다."""
+    if name in UFC_PHOTO_OVERRIDES:
+        return dict(UFC_PHOTO_OVERRIDES[name])
+    slug = UFC_SLUG_OVERRIDES.get(name) or ufc_slugify(name)
+    if not slug:
+        return {}
+    source = UFC_ATHLETE + slug
+    try:
+        r = requests.get(source, headers=HEADERS, timeout=25)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        full = next(
+            (
+                img.get("src")
+                for img in soup.find_all("img")
+                if "athlete_bio_full_body" in (img.get("src") or "")
+            ),
+            "",
+        )
+        og = soup.find("meta", attrs={"property": "og:image"})
+        thumb = og.get("content", "") if og else ""
+        full = urljoin(r.url, full) if full else ""
+        thumb = urljoin(r.url, thumb) if thumb else ""
+        if re.search(r"silhouette|placeholder|default", full, re.IGNORECASE):
+            return {}
+        if re.search(r"silhouette|placeholder|default", thumb, re.IGNORECASE):
+            thumb = full
+        if not full.startswith("https://ufc.com/images/"):
+            return {}
+        if not thumb.startswith("https://ufc.com/images/"):
+            thumb = full
+        return {
+            "avatar_url": full,
+            "avatar_thumb_url": thumb,
+            "avatar_source": source,
+            "avatar_provider": "UFC",
+        }
+    except Exception as e:
+        print(f"  ⚠️ UFC 프로필 사진 실패 ({name}): {e}")
+        return {}
 
 
 def parse_wiki_date(text):
@@ -1024,6 +1091,20 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     if skipped > 0:
         print(f"  ⚠️ {skipped}명은 상세 생략(cap) — 전적/랭크 기본정보는 유지")
 
+    # 다음 카드에 등장하는 선수는 UFC 공식 프로필 사진을 최우선으로 쓴다.
+    # 큰 화면용 전신 PNG와 작은 카드용 헤드샷을 분리해 저장한다.
+    official_targets = [f for f in fighters.values() if f.get("next")]
+    print(f"\n→ UFC 공식 선수 사진 수집: {len(official_targets)}명...")
+    official_count = 0
+    for i, f in enumerate(official_targets):
+        photos = fetch_ufc_profile_photos(f["name"])
+        if photos:
+            f.update(photos)
+            official_count += 1
+        if (i + 1) % 25 == 0:
+            print(f"    {i+1}/{len(official_targets)}")
+    print(f"  ✓ 공식 프로필 사진 {official_count}/{len(official_targets)}명")
+
     result = list(fighters.values())
     for f in result:
         f.pop("url", None)  # 내부용 링크는 출력에서 제거
@@ -1404,5 +1485,31 @@ def main():
         print("WARN opinions 수집 실패:", e)
 
 
+def refresh_official_photos():
+    """기존 fighters.json의 다음 경기 선수 사진만 빠르게 다시 수집한다."""
+    data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    fighters = data.get("fighters", [])
+    targets = [
+        fighter
+        for fighter in fighters
+        if fighter.get("next") and fighter.get("avatar_provider") != "UFC"
+    ]
+    print(f"→ UFC 공식 선수 사진 빠른 갱신: {len(targets)}명")
+    success = 0
+    for i, fighter in enumerate(targets):
+        photos = fetch_ufc_profile_photos(fighter["name"])
+        if photos:
+            fighter.update(photos)
+            success += 1
+        if (i + 1) % 25 == 0:
+            print(f"  {i+1}/{len(targets)}")
+    data["official_photos_refreshed_at"] = datetime.now(KST).isoformat(timespec="seconds")
+    FIGHTERS_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"✓ UFC 공식 프로필 {success}/{len(targets)}명 저장")
+
+
 if __name__ == "__main__":
-    main()
+    if "--photos-only" in sys.argv:
+        refresh_official_photos()
+    else:
+        main()

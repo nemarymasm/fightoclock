@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-28T10:54:46+09:00",
+  "generated_at": "2026-07-28T11:17:04+09:00",
   "source": "Wikipedia: UFC rankings (Meta)",
   "division_count": 11,
   "divisions": [
@@ -478,7 +478,7 @@
           "name_ko": "이언 마샤두 개리",
           "record": "17–1",
           "country": "Republic of Ireland",
-          "country_ko": "Republic of Ireland",
+          "country_ko": "아일랜드",
           "url": "https://en.wikipedia.org/wiki/Ian_Machado_Garry",
           "rank": 2
         },

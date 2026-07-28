@@ -1,6 +1,6 @@
 # 선수 아바타 이미지
 
-여기에 선수별 사진을 넣으면 자동수집한 Wikimedia Commons 사진보다 우선 표시됩니다.
+여기에 선수별 사진을 넣으면 자동수집한 UFC 공식 프로필·Wikimedia Commons 사진보다 우선 표시됩니다.
 - 파일명 = 선수 id (예: tom-aspinall.png, ilia-topuria.png)
 - 지원 확장자: png, jpg, jpeg, webp
 - 권장: 세로형(예: 512×640), 얼굴이 중앙에 있는 실제 선수 사진

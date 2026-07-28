@@ -57,21 +57,40 @@ class DataContractTests(unittest.TestCase):
         self.assertGreaterEqual(coverage, 0.85, f"Korean-name coverage too low; missing: {missing}")
         self.assertEqual(fighters["Uroš Medić"]["name_ko"], "우로시 메디치")
 
-    def test_fighter_photos_are_reusable_wikimedia_assets(self):
+    def test_fighter_photos_use_approved_sources(self):
         fighters = load_json("fighters.json")["fighters"]
         photos = [fighter for fighter in fighters if fighter.get("avatar_url")]
         self.assertGreater(len(photos), 50)
         for fighter in photos:
             self.assertTrue(
-                fighter["avatar_url"].startswith("https://upload.wikimedia.org/wikipedia/commons/"),
+                fighter["avatar_url"].startswith(
+                    ("https://ufc.com/images/", "https://upload.wikimedia.org/wikipedia/commons/")
+                ),
                 fighter["name"],
             )
-            self.assertNotIn("/512px-thumbnail.", fighter["avatar_url"], fighter["name"])
-            self.assertIsNone(
-                re.search(r"(?:flag_of_|medal_icon|logo|icon_)", fighter["avatar_url"], re.IGNORECASE),
-                fighter["name"],
-            )
+            if "wikimedia.org" in fighter["avatar_url"]:
+                self.assertNotIn("/512px-thumbnail.", fighter["avatar_url"], fighter["name"])
+                self.assertIsNone(
+                    re.search(r"(?:flag_of_|medal_icon|logo|icon_)", fighter["avatar_url"], re.IGNORECASE),
+                    fighter["name"],
+                )
             self.assertTrue(fighter.get("avatar_source"), fighter["name"])
+
+    def test_next_event_headliners_use_official_profiles(self):
+        fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
+        for name in ("Uroš Medić", "Daniel Rodriguez"):
+            fighter = fighters[name]
+            self.assertEqual(fighter.get("avatar_provider"), "UFC")
+            self.assertIn("athlete_bio_full_body", fighter.get("avatar_url", ""))
+            self.assertTrue(fighter.get("avatar_thumb_url"))
+
+    def test_upcoming_card_photo_coverage(self):
+        fighters = load_json("fighters.json")["fighters"]
+        upcoming = [fighter for fighter in fighters if fighter.get("next")]
+        with_photo = [fighter for fighter in upcoming if fighter.get("avatar_url")]
+        official = [fighter for fighter in upcoming if fighter.get("avatar_provider") == "UFC"]
+        self.assertGreaterEqual(len(with_photo) / len(upcoming), 0.95)
+        self.assertGreaterEqual(len(official), 90)
 
 
 class FrontendContractTests(unittest.TestCase):

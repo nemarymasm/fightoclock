@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-28T10:54:46+09:00",
+  "generated_at": "2026-07-28T11:17:04+09:00",
   "source": "Wikipedia: List of UFC events",
   "translations_applied": true,
   "event_count": 8,
@@ -1574,7 +1574,7 @@
         }
       ],
       "name_ko": "UFC Fight Night: 카페 대 쿄지",
-      "venue_ko": "Meta Apex",
+      "venue_ko": "메타 APEX",
       "location_ko": "미국 네바다 라스베이거스",
       "date_local_human": "2026년 6월 20일(토)",
       "start_time_utc": null,
