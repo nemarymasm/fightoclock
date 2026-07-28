@@ -31,6 +31,11 @@ class DataContractTests(unittest.TestCase):
                 parsed = datetime.fromisoformat(start.replace("Z", "+00:00"))
                 self.assertIsNotNone(parsed.tzinfo, "start_time_utc must contain a timezone")
 
+    def test_next_event_uses_official_korean_time_and_full_card(self):
+        event = load_json("events.json")["events"][0]
+        self.assertEqual(event.get("start_time_utc"), "2026-08-01T17:00:00Z")
+        self.assertEqual(len(event.get("main_card", [])) + len(event.get("prelims", [])), 12)
+
     def test_fighters_and_rankings_are_not_empty(self):
         fighters = load_json("fighters.json")
         rankings = load_json("rankings.json")
@@ -64,10 +69,16 @@ class DataContractTests(unittest.TestCase):
         for fighter in photos:
             self.assertTrue(
                 fighter["avatar_url"].startswith(
-                    ("https://ufc.com/images/", "https://upload.wikimedia.org/wikipedia/commons/")
+                    (
+                        "/data/avatars/generated/",
+                        "https://ufc.com/images/",
+                        "https://upload.wikimedia.org/wikipedia/commons/",
+                    )
                 ),
                 fighter["name"],
             )
+            if fighter["avatar_url"].startswith("/data/avatars/generated/"):
+                self.assertTrue((ROOT / fighter["avatar_url"].lstrip("/")).is_file(), fighter["name"])
             if "wikimedia.org" in fighter["avatar_url"]:
                 self.assertNotIn("/512px-thumbnail.", fighter["avatar_url"], fighter["name"])
                 self.assertIsNone(
@@ -81,8 +92,9 @@ class DataContractTests(unittest.TestCase):
         for name in ("Uroš Medić", "Daniel Rodriguez"):
             fighter = fighters[name]
             self.assertEqual(fighter.get("avatar_provider"), "UFC")
-            self.assertIn("athlete_bio_full_body", fighter.get("avatar_url", ""))
-            self.assertTrue(fighter.get("avatar_thumb_url"))
+            self.assertTrue(fighter.get("avatar_url", "").endswith("-full.webp"))
+            self.assertTrue(fighter.get("avatar_thumb_url", "").endswith("-thumb.webp"))
+            self.assertIn("athlete_bio_full_body", fighter.get("avatar_remote_url", ""))
 
     def test_upcoming_card_photo_coverage(self):
         fighters = load_json("fighters.json")["fighters"]
@@ -127,6 +139,10 @@ class FrontendContractTests(unittest.TestCase):
     def test_avatar_fallback_is_not_a_stick_figure(self):
         self.assertIn('class="avatar-fallback"', self.html)
         self.assertNotIn('<path d="M25,82', self.html)
+
+    def test_home_surfaces_weekly_fight_intelligence(self):
+        for required in ("시장 예상", "팬 선택", "왜 봐야 하나", "이번 주 메인카드", "data/insights.json"):
+            self.assertIn(required, self.html)
 
 
 if __name__ == "__main__":

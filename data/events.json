@@ -133,14 +133,39 @@
           "fighter_a_ko": "니나 니콜리야 밀로셰비치",
           "fighter_b_ko": "헤일리 코완",
           "weight_ko": "여성 밴텀급"
+        },
+        {
+          "weight": "Light Heavyweight",
+          "fighter_a": "Mark Vologdin",
+          "fighter_b": "Josias Musasa",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "마크 볼로그딘",
+          "fighter_b_ko": "조시아스 무사사",
+          "weight_ko": "라이트헤비급"
+        },
+        {
+          "weight": "Middleweight",
+          "fighter_a": "Jovan Leka",
+          "fighter_b": "Max Gimenis",
+          "winner": null,
+          "method": "",
+          "round": "",
+          "time": "",
+          "fighter_a_ko": "요반 레카",
+          "fighter_b_ko": "맥스 지메니스",
+          "weight_ko": "미들급"
         }
       ],
       "name_ko": "UFC Fight Night: 메디치 대 로드리게스",
       "venue_ko": "벨그레이드 아레나",
       "location_ko": "세르비아 베오그라드",
       "date_local_human": "2026년 8월 1일(토)",
-      "start_time_utc": null,
-      "time_status": "date_only"
+      "start_time_utc": "2026-08-01T17:00:00Z",
+      "time_status": "confirmed_official",
+      "time_source": "https://www.ufc.com/event/ufc-fight-night-august-01-2026"
     },
     {
       "name": "UFC Fight Night: Gamrot vs. Salkilld",

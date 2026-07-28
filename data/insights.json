@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-28T11:30:00+09:00",
+  "events": {
+    "ufc-fight-night-medi-vs-rodriguez": {
+      "schedule": {
+        "label": "한국시간 8월 2일(일) 오전 2시",
+        "prelims": "8월 1일(토) 오후 11시",
+        "main_card": "8월 2일(일) 오전 2시",
+        "bout_count": 12,
+        "note": "메인이벤트 입장 시각은 앞 경기 진행에 따라 달라집니다.",
+        "source": "https://www.ufc.com/event/ufc-fight-night-august-01-2026"
+      },
+      "market": {
+        "fighter_a_pct": 73,
+        "fighter_b_pct": 27,
+        "fighter_a_odds": "-330",
+        "fighter_b_odds": "+260",
+        "label": "UFC 표시 배당의 마진을 제거한 시장 예상",
+        "as_of": "7월 28일 오전 11:30 KST",
+        "range_note": "여러 북메이커 기준 메디치 72~76%, 로드리게스 24~28%",
+        "source": "https://www.ufc.com.br/event/ufc-fight-night-august-01-2026"
+      },
+      "fans": {
+        "fighter_a_pct": 89,
+        "fighter_b_pct": 11,
+        "sample": 36,
+        "label": "Sherdog 공개 투표",
+        "note": "표본이 작고 커뮤니티 성향이 반영된 참고 지표입니다.",
+        "source": "https://forums.sherdog.com/threads/uros-medic-vs-daniel-rodriguez-set-for-main-event-of-ufc-belgrade-on-august-1st.4384444/"
+      },
+      "models": {
+        "fighter_a_low": 55,
+        "fighter_a_high": 60,
+        "label": "공개 분석 모델은 시장보다 접전",
+        "source": "https://www.ufcalendar.com/events/ufc-fight-night-2026-08-01/uros-medic-vs-daniel-rodriguez"
+      },
+      "thesis": "팬과 시장은 메디치의 초반 KO를 본다. 하지만 공개 모델은 로드리게스의 리치·타격량·장기전 경험 때문에 훨씬 접전으로 본다.",
+      "community_tone": "커뮤니티는 세르비아 첫 UFC와 홈 영웅 메디치에는 기대가 높지만, 메인이벤트의 이름값에는 다소 회의적입니다.",
+      "watch_points": [
+        {
+          "title": "초반 화력",
+          "text": "메디치는 최근 3경기를 모두 1라운드 KO로 끝냈고, 커리어 13승 중 판정승이 없습니다."
+        },
+        {
+          "title": "정확도 vs 물량",
+          "text": "메디치 5.59 유효타/분·정확도 60%, 로드리게스 7.20 유효타/분·정확도 49%입니다."
+        },
+        {
+          "title": "처음 가는 5라운드",
+          "text": "둘 다 첫 UFC 메인이벤트입니다. 리치가 3인치 긴 로드리게스가 경기를 길게 끌 수 있는지가 변수입니다."
+        }
+      ],
+      "responsible_note": "배당은 시장의 가격일 뿐 결과 예측이 아닙니다. 정보 제공용이며 베팅을 권유하지 않습니다.",
+      "sources": [
+        {
+          "label": "UFC 공식 이벤트",
+          "url": "https://www.ufc.com/event/ufc-fight-night-august-01-2026"
+        },
+        {
+          "label": "UFCStats 메디치",
+          "url": "https://ufcstats.com/fighter-details/681399317dbf4701"
+        },
+        {
+          "label": "UFCStats 로드리게스",
+          "url": "https://ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+        }
+      ]
+    }
+  }
+}

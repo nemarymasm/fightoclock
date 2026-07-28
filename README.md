@@ -6,8 +6,9 @@
 - 배포: Vercel 정적 사이트
 - 데이터: Wikipedia 기반 Python 수집기
 - 갱신: GitHub Actions, 매일 오전 6시 KST
-- 선수 사진: UFC 공식 프로필 우선, 없으면 Wikimedia Commons 이미지 연결
+- 선수 사진: UFC 공식 프로필을 WebP로 최적화해 사이트 내부에서 제공, 없으면 Wikimedia Commons 연결
 - 선수명: 한글명을 기본 표기하고 원문명은 보조 표기
+- 주간 브리핑: 공식 시작 시각, 시장 암시확률, 공개 팬 투표, 관전 포인트와 출처 표시
 
 ## 로컬 실행
 
@@ -36,7 +37,8 @@ python -m unittest discover -s tests -v
 
 선택 기능에 필요한 키가 없으면 해당 파일이나 필드만 생략됩니다. 워크플로는 선택 파일이 없어도 실패하지 않습니다.
 
-공식 UFC 프로필과 Commons 사진이 모두 없는 선수만 이름 이니셜 카드로 표시합니다. 직접 사진을 추가할 때는
+공식 UFC 프로필과 Commons 사진이 모두 없는 선수만 이름 이니셜 카드로 표시합니다. UFC 사진은
+`data/avatars/generated/`에 최적화한 WebP로 저장해 지역 리다이렉트나 핫링크 차단의 영향을 받지 않습니다. 직접 사진을 추가할 때는
 `data/avatars/README.md`의 파일명·저작권 지침을 따릅니다.
 
 ## 시간 데이터 원칙

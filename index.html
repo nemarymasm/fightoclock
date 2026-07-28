@@ -367,8 +367,8 @@
 
   /* 콘텐츠를 가운데 좁은 칼럼으로 (데스크톱에서 너무 퍼지지 않게) */
   body{margin-left:auto;margin-right:auto}
-  .topbar,.tabbar{max-width:960px;margin-left:auto!important;margin-right:auto!important}
-  @media (min-width:780px){ main{max-width:960px}.view{max-width:760px;margin:0 auto}.view.home-view{max-width:960px} }
+  .topbar,.tabbar{max-width:1080px;margin-left:auto!important;margin-right:auto!important}
+  @media (min-width:780px){ main{max-width:1080px}.view{max-width:760px;margin:0 auto}.view.home-view{max-width:1080px} }
 
   /* ---- 홈 커버 (잡지 표지형: 톱 매치업 얼굴 크게) ---- */
   .cover{text-align:center;padding:20px 0 10px}
@@ -450,10 +450,82 @@
   .fighter-hero .nick{margin-top:5px;color:var(--muted);letter-spacing:0}
   .fight-card .avatar-box,.event-item .avatar-box{border-radius:10px!important}
 
+  /* ---- 홈: 이번 주 경기 브리핑 ---- */
+  .week-brief{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:
+    radial-gradient(70% 50% at 18% 12%,rgba(229,72,77,.17),transparent 72%),
+    linear-gradient(145deg,#141416,#0e0e10 65%)}
+  .week-brief::before{content:"";position:absolute;inset:0;pointer-events:none;background:
+    repeating-linear-gradient(118deg,transparent 0 38px,rgba(255,255,255,.014) 38px 39px)}
+  .week-head{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:17px 18px 12px;border-bottom:1px solid var(--line)}
+  .week-eyebrow{font-size:11px;font-weight:850;letter-spacing:.14em;color:#ff8589;text-transform:uppercase}
+  .week-time{margin-top:5px;font-size:22px;font-weight:900;letter-spacing:-.035em}
+  .week-sub{margin-top:4px;color:var(--muted);font-size:12px;line-height:1.45}
+  .week-d{flex-shrink:0;padding:7px 10px;border:1px solid rgba(255,116,121,.35);border-radius:20px;color:#ff8b8f;font-size:11px;font-weight:800}
+  .brief-grid{position:relative;display:grid;grid-template-columns:1fr;min-width:0}
+  .match-stage{position:relative;min-width:0;padding:14px 12px 16px}
+  .match-stage .cover-faces{margin:0;padding:0;align-items:start}
+  .match-stage .cf{display:flex;flex-direction:column;align-items:center;gap:7px;min-width:0}
+  .match-stage .cf-img{width:132px;height:166px;max-width:36vw;max-height:45vw}
+  .match-stage .cf-img>div{width:100%!important;height:100%!important;border-radius:14px 14px 5px 5px!important}
+  .match-stage .cf-img>.ufc-full{border:0!important;background:transparent;overflow:visible}
+  .match-stage .cf-img>.ufc-full img{padding:0;filter:drop-shadow(0 14px 16px rgba(0,0,0,.48)) saturate(.96) contrast(1.04)}
+  .match-stage .cf-vs{margin-top:59px;width:32px;height:32px;border:1px solid var(--line-2);border-radius:50%;display:grid;place-items:center;background:#0b0b0d;color:#fff;font-size:11px}
+  .match-stage .cf-nm{font-size:17px;font-weight:850;letter-spacing:-.03em;line-height:1.08}
+  .match-stage .cf-en{font-size:9px;color:var(--dim);min-height:11px}
+  .match-stage .cf-rec{font-size:11px;color:var(--muted)}
+  .brief-intel{position:relative;border-top:1px solid var(--line);padding:16px 18px 18px;background:rgba(8,8,10,.42)}
+  .brief-thesis{font-size:16px;line-height:1.52;font-weight:750;letter-spacing:-.015em;margin-bottom:16px}
+  .signal-label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:13px;font-size:11px;color:var(--muted)}
+  .signal-label b{font-size:12px;color:var(--text)}
+  .signal-names{display:flex;justify-content:space-between;gap:10px;margin-top:6px;font-size:12px;font-weight:750}
+  .signal-bar{height:10px;margin-top:7px;border-radius:20px;overflow:hidden;display:flex;background:var(--line-2)}
+  .signal-bar .fav{background:var(--red)}
+  .signal-bar .dog{background:#536780}
+  .signal-odds{display:flex;justify-content:space-between;margin-top:6px;color:var(--dim);font-size:11px}
+  .signal-note{margin-top:8px;color:var(--dim);font-size:10px;line-height:1.45}
+  .signal-note a,.brief-sources a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+  .fan-model{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+  .community-tone{margin-top:9px;padding:9px 10px;border-left:2px solid var(--line-2);color:var(--muted);font-size:11px;line-height:1.45}
+  .mini-signal{padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.018)}
+  .mini-signal span{display:block;font-size:10px;color:var(--dim)}
+  .mini-signal b{display:block;margin-top:3px;font-size:16px;letter-spacing:-.02em}
+  .mini-signal a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+  .watch-panel{position:relative;padding:18px;border-top:1px solid var(--line)}
+  .watch-title{font-size:11px;color:#ff8589;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
+  .watch-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:8px}
+  .watch-item{display:grid;grid-template-columns:25px 1fr;gap:9px;padding:10px 0;border-top:1px solid var(--line)}
+  .watch-item:first-child{border-top:0}
+  .watch-num{width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:rgba(229,72,77,.13);color:#ff8589;font-size:10px;font-weight:850}
+  .watch-item b{display:block;font-size:13px}
+  .watch-item p{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.48}
+  .brief-actions{position:relative;display:grid;grid-template-columns:1fr auto;gap:9px;padding:0 18px 18px}
+  .brief-actions .btn{justify-content:center}
+  .brief-sources{position:relative;padding:11px 18px;border-top:1px solid var(--line);color:var(--dim);font-size:10px;line-height:1.45}
+  .card-preview{margin-top:24px}
+  .card-preview-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:9px}
+  .card-preview-head h2{margin:0;font-size:20px;letter-spacing:-.025em}
+  .card-preview-head span{color:var(--muted);font-size:11px}
+  .card-preview-list{border-top:1px solid var(--line-2)}
+  .preview-fight{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;padding:12px 2px;border-bottom:1px solid var(--line)}
+  .preview-fighter{display:flex;align-items:center;gap:8px;min-width:0}
+  .preview-fighter.right{flex-direction:row-reverse;text-align:right}
+  .preview-fighter b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-vs{min-width:74px;text-align:center;color:var(--dim);font-size:10px}
+  .preview-vs strong{display:block;color:var(--muted);font-size:9px;font-weight:650}
+
   @media (min-width:780px){
     .cover{padding-bottom:24px}.cover-faces{padding:18px 80px 0}
     .cover .cf-img{width:210px;height:244px;max-width:none;max-height:none}
     .cover-title{font-size:30px}.cover .cf-nm{font-size:24px}
+    .brief-grid{grid-template-columns:minmax(0,1.25fr) minmax(330px,.75fr)}
+    .match-stage{padding:24px 24px 20px}
+    .match-stage .cf-img{width:205px;height:248px;max-width:none;max-height:none}
+    .match-stage .cf-vs{margin-top:93px}
+    .match-stage .cf-nm{font-size:22px}
+    .brief-intel{border-top:0;border-left:1px solid var(--line);padding:22px 22px 18px}
+    .watch-grid{grid-template-columns:repeat(3,1fr);gap:16px}
+    .watch-item,.watch-item:first-child{border-top:0;padding:8px 0}
+    .brief-actions{grid-template-columns:220px 140px;justify-content:end}
   }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -744,6 +816,95 @@ function homeSortSection(){
   </div>`;
 }
 
+function insightFor(e){
+  return e ? (INSIGHTS[e.id] || {}) : {};
+}
+
+function weekBrief(e, main, a, b){
+  const intel = insightFor(e);
+  const schedule = intel.schedule || {};
+  const market = intel.market || e.prediction || {};
+  const fans = intel.fans || {};
+  const models = intel.models || {};
+  const points = intel.watch_points || newbieGuide(e)?.points?.slice(0,3).map((text,i)=>({title:`관전 포인트 ${i+1}`,text:text.replace(/<[^>]+>/g,'')})) || [];
+  const aPct = Number(market.fighter_a_pct ?? market.aPct ?? 50);
+  const bPct = Number(market.fighter_b_pct ?? market.bPct ?? (100-aPct));
+  const cd = countdownParts(e.dateUtc);
+  const sourceLink = (url,label)=>url?`<a href="${esc(safeExternalUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:esc(label);
+  return `
+  <section class="week-brief" aria-labelledby="weekFightTitle">
+    <div class="week-head">
+      <div>
+        <div class="week-eyebrow">이번 주 UFC · ${esc(e.city||'')}</div>
+        <div class="week-time">${esc(schedule.label || eventTimeLabel(e))}</div>
+        <div class="week-sub">프릴림 ${esc(schedule.prelims||'시각 확인 중')} · 메인카드 ${esc(schedule.main_card||'시각 확인 중')} · ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기</div>
+      </div>
+      <div class="week-d">${esc(dLabel(e.dateUtc))}</div>
+    </div>
+    <div class="brief-grid">
+      <div class="match-stage">
+        <div class="cover-faces">
+          <a class="cf" href="#fighter/${main.a}">
+            <div class="cf-img">${avatarBox(a,180)}</div>
+            <div class="cf-nm">${esc(a.name)}</div>
+            <div class="cf-en">${a.en!==a.name?esc(a.en):'&nbsp;'}</div>
+            <div class="cf-rec">${esc(a.rank||'')} · ${esc(a.record)}</div>
+          </a>
+          <div class="cf-vs">VS</div>
+          <a class="cf" href="#fighter/${main.b}">
+            <div class="cf-img">${avatarBox(b,180)}</div>
+            <div class="cf-nm">${esc(b.name)}</div>
+            <div class="cf-en">${b.en!==b.name?esc(b.en):'&nbsp;'}</div>
+            <div class="cf-rec">${esc(b.rank||'')} · ${esc(b.record)}</div>
+          </a>
+        </div>
+      </div>
+      <aside class="brief-intel" aria-label="경기 예상과 여론">
+        <div class="brief-thesis">${esc(intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</div>
+        <div class="signal-label"><b>시장 예상</b><span>${esc(market.as_of||'최신 배당 기준')}</span></div>
+        <div class="signal-names"><span>${esc(a.name)} ${aPct}%</span><span>${esc(b.name)} ${bPct}%</span></div>
+        <div class="signal-bar" aria-label="${esc(a.name)} ${aPct}%, ${esc(b.name)} ${bPct}%">
+          <i class="fav" style="width:${Math.max(0,Math.min(100,aPct))}%"></i><i class="dog" style="width:${Math.max(0,Math.min(100,bPct))}%"></i>
+        </div>
+        <div class="signal-odds"><span>${esc(market.fighter_a_odds||'')}</span><span>${esc(market.fighter_b_odds||'')}</span></div>
+        <div class="signal-note">${esc(market.label||market.note||'배당을 암시확률로 환산한 시장 지표')} · ${sourceLink(market.source,'출처')}</div>
+        <div class="fan-model">
+          <div class="mini-signal"><span>팬 선택 · ${esc(fans.label||'공개 투표')}</span><b>${Number(fans.fighter_a_pct)||'-'}% ${esc(a.name)}</b><span>${fans.sample?`표본 ${Number(fans.sample)}명 · `:''}${sourceLink(fans.source,'출처')}</span></div>
+          <div class="mini-signal"><span>분석 모델</span><b>${models.fighter_a_low&&models.fighter_a_high?`${models.fighter_a_low}~${models.fighter_a_high}%`:'자료 확인 중'}</b><span>${esc(models.label||'시장과 별도 지표')} · ${sourceLink(models.source,'출처')}</span></div>
+        </div>
+        ${intel.community_tone?`<div class="community-tone">${esc(intel.community_tone)}</div>`:''}
+      </aside>
+    </div>
+    <div class="watch-panel">
+      <div class="watch-title">왜 봐야 하나 · 관전 포인트</div>
+      <div class="watch-grid">${points.map((p,i)=>`
+        <div class="watch-item"><span class="watch-num">0${i+1}</span><div><b>${esc(p.title||'')}</b><p>${esc(p.text||p)}</p></div></div>`).join('')}</div>
+    </div>
+    <div class="brief-actions">
+      <a class="btn primary" href="#event/${e.id}">전체 대진 자세히 보기</a>
+      <button class="btn ghost" type="button" onclick="downloadCalendar('${e.id}')">캘린더 저장</button>
+    </div>
+    <div class="brief-sources">${esc(schedule.note||'')} ${intel.responsible_note?`· ${esc(intel.responsible_note)}`:''}</div>
+  </section>`;
+}
+
+function homeCardPreview(e){
+  const fights=(e.mainCard||[]).slice(0,5);
+  if(!fights.length) return '';
+  return `
+  <section class="card-preview">
+    <div class="card-preview-head"><div><h2>이번 주 메인카드</h2><span>메인이벤트부터 한눈에</span></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+    <div class="card-preview-list">${fights.map(f=>{
+      const a=getFighter(f.a), b=getFighter(f.b);
+      return `<a class="preview-fight" href="#event/${e.id}">
+        <span class="preview-fighter">${avatarBox(a,38)}<b>${esc(a.name)}</b></span>
+        <span class="preview-vs">VS<strong>${esc(f.wc||'')}</strong></span>
+        <span class="preview-fighter right">${avatarBox(b,38)}<b>${esc(b.name)}</b></span>
+      </a>`;
+    }).join('')}</div>
+  </section>`;
+}
+
 function viewHome(){
   const e = nextEvent();
   if(!e){
@@ -754,43 +915,13 @@ function viewHome(){
       <div class="state-card"><div><h2>예정된 대회가 없습니다</h2><p>일정 데이터가 오래됐거나 다음 대회 시작 시각이 아직 발표되지 않았을 수 있습니다.</p><a class="btn primary" href="#schedule">일정 화면 확인</a></div></div>
       ${recent.length?`<h2 class="section-title"><span class="bar"></span>최근 결과</h2><div class="event-list">${recent.map(eventListItem).join('')}</div>`:''}`;
   }
-  const cd = countdownParts(e.dateUtc);
   const main = e.mainCard?.[0];
   const a = main ? getFighter(main.a) : null;
   const b = main ? getFighter(main.b) : null;
 
   return `
-  ${freshnessBanner()}
-  ${main ? `
-  <section class="cover">
-    <div class="cover-kick">다음 대회 메인이벤트 · ${dLabel(e.dateUtc)}</div>
-    <div class="cover-faces">
-      <a class="cf" href="#fighter/${main.a}">
-        <div class="cf-img">${avatarBox(a,150)}</div>
-        <div class="cf-nm">${esc(a.name)}</div>
-        <div class="cf-en">${a.en!==a.name?esc(a.en):'&nbsp;'}</div>
-        <div class="cf-rec">${a.record}${a.rank&&a.rank!=='랭킹 외'?' · '+a.rank:''}</div>
-      </a>
-      <div class="cf-vs">VS</div>
-      <a class="cf" href="#fighter/${main.b}">
-        <div class="cf-img">${avatarBox(b,150)}</div>
-        <div class="cf-nm">${esc(b.name)}</div>
-        <div class="cf-en">${b.en!==b.name?esc(b.en):'&nbsp;'}</div>
-        <div class="cf-rec">${b.record}${b.rank&&b.rank!=='랭킹 외'?' · '+b.rank:''}</div>
-      </a>
-    </div>
-    <h1 class="cover-title">${e.code}: ${e.titleKo||e.title}</h1>
-    <div class="cover-meta">${eventTimeLabel(e)} · ${e.venue}, ${e.city}</div>
-    ${cd?`<div class="countdown cover-cd" id="cdHero" aria-label="경기 시작까지 남은 시간">
-      <div class="cd-cell"><div class="num" data-cd="d">${cd.d}</div><div class="lbl">일</div></div>
-      <div class="cd-cell"><div class="num" data-cd="h">${String(cd.h).padStart(2,'0')}</div><div class="lbl">시</div></div>
-      <div class="cd-cell"><div class="num" data-cd="m">${String(cd.m).padStart(2,'0')}</div><div class="lbl">분</div></div>
-      <div class="cd-cell"><div class="num" data-cd="s">${String(cd.s).padStart(2,'0')}</div><div class="lbl">초</div></div>
-    </div>`:`<div class="box" style="margin-top:14px;color:var(--muted);font-size:13px">정확한 시작 시각이 발표되면 한국시간 카운트다운을 제공합니다.</div>`}
-    <div class="cta"><a class="btn primary" href="#event/${e.id}">이 경기 자세히 보기 →</a></div>
-  </section>` : ''}
-
-  ${newbieBlock(e.id)}
+  ${main ? weekBrief(e,main,a,b) : freshnessBanner()}
+  ${homeCardPreview(e)}
 
   <div id="homeSortSection">${homeSortSection()}</div>
 
@@ -813,7 +944,7 @@ function viewHome(){
   </div>
 
   <div class="disclaimer">
-    일정·결과·랭킹·선수 정보는 <b>Wikipedia</b>에서 자동수집합니다. 정확한 시작 시각이 없는 일정은 현지 날짜만 표시하며, 경기 시간·대진은 변경될 수 있습니다.
+    경기 일정·대진은 변경될 수 있습니다. 이번 주 시작 시각과 배당은 <b>UFC 공식 페이지</b>, 선수 통계는 <b>UFCStats</b>, 나머지 일정·결과·랭킹은 Wikipedia 수집 데이터를 함께 사용합니다.
   </div>
   `;
 }
@@ -1529,6 +1660,7 @@ async function retryData(){
 /* ---------- 실데이터 로더 (data/*.json) ---------- */
 let REAL_FIGHTERS = {};
 let OPINIONS = {};
+let INSIGHTS = {};
 
 function slugify(s){
   return (s||'').toString().toLowerCase().trim()
@@ -1630,11 +1762,12 @@ async function loadJSON(path){
 
 async function loadRealData(){
   loadErrors=[];
-  const [fightersResult,rankingsResult,eventsResult,opinionsResult]=await Promise.allSettled([
+  const [fightersResult,rankingsResult,eventsResult,opinionsResult,insightsResult]=await Promise.allSettled([
     loadJSON('./data/fighters.json'),
     loadJSON('./data/rankings.json'),
     loadJSON('./data/events.json'),
-    loadJSON('./data/opinions.json')
+    loadJSON('./data/opinions.json'),
+    loadJSON('./data/insights.json')
   ]);
 
   if(fightersResult.status==='fulfilled'){
@@ -1683,6 +1816,12 @@ async function loadRealData(){
       OPINIONS = data.events;
       console.log('[fightoclock] opinions:', Object.keys(OPINIONS).length, 'events');
     }
+  }
+  if(insightsResult.status==='fulfilled'){
+    INSIGHTS = insightsResult.value.events || {};
+    console.log('[fightoclock] insights:', Object.keys(INSIGHTS).length, 'events');
+  } else {
+    console.warn('[fightoclock] insights load failed:', insightsResult.reason?.message);
   }
   appState=EVENTS.length?'ready':'error';
 }

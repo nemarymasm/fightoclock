@@ -20,12 +20,14 @@ import json
 import sys
 import time
 import unicodedata
+from io import BytesIO
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from urllib.parse import unquote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image, ImageOps
 
 try:
     from anthropic import Anthropic
@@ -64,6 +66,22 @@ RANKINGS_FILE = DATA_DIR / "rankings.json"
 FIGHTERS_FILE = DATA_DIR / "fighters.json"
 OPINIONS_FILE = DATA_DIR / "opinions.json"
 TRANSLATIONS_FILE = DATA_DIR / "translations.json"
+AVATAR_CACHE_DIR = DATA_DIR / "avatars" / "generated"
+
+EVENT_START_OVERRIDES = {
+    # UFC 공식 이벤트 페이지의 메인카드 시작 시각. 실제 메인이벤트 입장은 앞 경기 길이에 따라 변동.
+    "UFC Fight Night: Medić vs. Rodriguez": "2026-08-01T17:00:00Z",
+}
+FIGHTER_RANK_OVERRIDES = {
+    "Uroš Medić": "#14",
+    "Daniel Rodriguez": "#15",
+}
+EVENT_CARD_ADDITIONS = {
+    "UFC Fight Night: Medić vs. Rodriguez": [
+        {"weight": "Light Heavyweight", "fighter_a": "Mark Vologdin", "fighter_b": "Josias Musasa"},
+        {"weight": "Middleweight", "fighter_a": "Jovan Leka", "fighter_b": "Max Gimenis"},
+    ],
+}
 
 # 국가별 MMA 커뮤니티 (레딧 서브레딧 → 지역 매핑). 하나의 레딧 앱으로 전부 커버.
 OPINION_COMMUNITIES = [
@@ -301,12 +319,84 @@ def fetch_ufc_profile_photos(name):
         return {
             "avatar_url": full,
             "avatar_thumb_url": thumb,
+            "avatar_remote_url": full,
+            "avatar_thumb_remote_url": thumb,
             "avatar_source": source,
             "avatar_provider": "UFC",
         }
     except Exception as e:
         print(f"  ⚠️ UFC 프로필 사진 실패 ({name}): {e}")
         return {}
+
+
+def _download_image(url):
+    response = requests.get(url, headers=HEADERS, timeout=30, allow_redirects=True)
+    response.raise_for_status()
+    content_type = response.headers.get("content-type", "")
+    if not content_type.startswith("image/"):
+        raise ValueError(f"이미지 응답 아님: {content_type}")
+    image = Image.open(BytesIO(response.content))
+    image.load()
+    if min(image.size) < 120:
+        raise ValueError(f"프로필 사진 해상도 부족: {image.size}")
+    return image
+
+
+def cache_profile_photos(fighter_id, photos):
+    """외부 이미지 리다이렉트/CSP에 영향받지 않도록 최적화한 WebP를 사이트 안에 저장한다."""
+    remote_full = photos.get("avatar_remote_url") or photos.get("avatar_url") or ""
+    remote_thumb = photos.get("avatar_thumb_remote_url") or photos.get("avatar_thumb_url") or remote_full
+    if not remote_full.startswith("http"):
+        return photos
+
+    AVATAR_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    safe_id = re.sub(r"[^a-z0-9-]+", "-", fighter_id.lower()).strip("-")
+    full_rel = f"/data/avatars/generated/{safe_id}-full.webp"
+    thumb_rel = f"/data/avatars/generated/{safe_id}-thumb.webp"
+    full_path = AVATAR_CACHE_DIR / f"{safe_id}-full.webp"
+    thumb_path = AVATAR_CACHE_DIR / f"{safe_id}-thumb.webp"
+
+    try:
+        full = _download_image(remote_full)
+        full.thumbnail((460, 700), Image.Resampling.LANCZOS)
+        if full.mode not in ("RGB", "RGBA"):
+            full = full.convert("RGBA")
+        full.save(full_path, "WEBP", quality=84, method=6)
+
+        try:
+            thumb_source = _download_image(remote_thumb)
+        except Exception:
+            thumb_source = full.copy()
+        if thumb_source.mode not in ("RGB", "RGBA"):
+            thumb_source = thumb_source.convert("RGB")
+        thumb = ImageOps.fit(
+            thumb_source,
+            (192, 192),
+            method=Image.Resampling.LANCZOS,
+            centering=(0.5, 0.28),
+        )
+        thumb.save(thumb_path, "WEBP", quality=82, method=6)
+    except Exception as e:
+        print(f"  ⚠️ UFC 사진 로컬 저장 실패 ({fighter_id}): {e}")
+        if full_path.exists() and thumb_path.exists():
+            localized = dict(photos)
+            localized.update({
+                "avatar_url": full_rel,
+                "avatar_thumb_url": thumb_rel,
+                "avatar_remote_url": remote_full,
+                "avatar_thumb_remote_url": remote_thumb,
+            })
+            return localized
+        return photos
+
+    localized = dict(photos)
+    localized.update({
+        "avatar_url": full_rel,
+        "avatar_thumb_url": thumb_rel,
+        "avatar_remote_url": remote_full,
+        "avatar_thumb_remote_url": remote_thumb,
+    })
+    return localized
 
 
 def parse_wiki_date(text):
@@ -1045,6 +1135,11 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
             if b in fighters and not fighters[b]["next"]:
                 fighters[b]["next"] = {"opp": fight["fighter_a"], "opp_ko": fight.get("fighter_a_ko"), "event": ename, "date": edate}
 
+    for name, rank in FIGHTER_RANK_OVERRIDES.items():
+        fid = slugify(name)
+        if fid in fighters:
+            fighters[fid]["rank"] = rank
+
     # 생성한 아바타 이미지가 data/avatars/<id>.(png|jpg|webp) 에 있으면 경로 연결
     avatars_dir = DATA_DIR / "avatars"
     if avatars_dir.exists():
@@ -1099,6 +1194,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     for i, f in enumerate(official_targets):
         photos = fetch_ufc_profile_photos(f["name"])
         if photos:
+            photos = cache_profile_photos(f["id"], photos)
             f.update(photos)
             official_count += 1
         if (i + 1) % 25 == 0:
@@ -1273,6 +1369,35 @@ def eventCodeFromName_py(name):
     return m.group(1).strip() if m else "UFC"
 
 
+def apply_official_event_overrides(events):
+    """Wikipedia 반영이 늦는 공식 UFC 시작 시각·추가 대진을 보강한다."""
+    for event in events:
+        name = event.get("name", "")
+        if name in EVENT_START_OVERRIDES:
+            event["start_time_utc"] = EVENT_START_OVERRIDES[name]
+            event["time_status"] = "confirmed_official"
+            event["time_source"] = "https://www.ufc.com/event/ufc-fight-night-august-01-2026"
+        additions = EVENT_CARD_ADDITIONS.get(name, [])
+        if not additions:
+            continue
+        existing = {
+            frozenset((fight.get("fighter_a"), fight.get("fighter_b")))
+            for fight in event.get("main_card", []) + event.get("prelims", [])
+        }
+        event.setdefault("prelims", [])
+        for fight in additions:
+            pair = frozenset((fight["fighter_a"], fight["fighter_b"]))
+            if pair not in existing:
+                event["prelims"].append({
+                    **fight,
+                    "winner": None,
+                    "method": "",
+                    "round": "",
+                    "time": "",
+                })
+                existing.add(pair)
+
+
 # ────────────────────────────────────────────────────────────────
 # 도박사 배당 (여론 지표) — The Odds API
 # ────────────────────────────────────────────────────────────────
@@ -1395,6 +1520,8 @@ def main():
             wins = sum(1 for f in past[i].get("main_card", []) if f.get("winner"))
             print("      main card:", mc, "fights /", wins, "승자 확정")
 
+    apply_official_event_overrides(events)
+
     print("\n-> Filling missing Korean fighter names...")
     fill_missing_fighter_translations(client, events)
 
@@ -1489,16 +1616,25 @@ def refresh_official_photos():
     """기존 fighters.json의 다음 경기 선수 사진만 빠르게 다시 수집한다."""
     data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
     fighters = data.get("fighters", [])
-    targets = [
-        fighter
-        for fighter in fighters
-        if fighter.get("next") and fighter.get("avatar_provider") != "UFC"
-    ]
+    targets = [fighter for fighter in fighters if fighter.get("next")]
     print(f"→ UFC 공식 선수 사진 빠른 갱신: {len(targets)}명")
     success = 0
     for i, fighter in enumerate(targets):
-        photos = fetch_ufc_profile_photos(fighter["name"])
+        if fighter.get("avatar_provider") == "UFC" and (
+            fighter.get("avatar_remote_url") or str(fighter.get("avatar_url", "")).startswith("http")
+        ):
+            photos = {
+                "avatar_url": fighter.get("avatar_url", ""),
+                "avatar_thumb_url": fighter.get("avatar_thumb_url", ""),
+                "avatar_remote_url": fighter.get("avatar_remote_url") or fighter.get("avatar_url", ""),
+                "avatar_thumb_remote_url": fighter.get("avatar_thumb_remote_url") or fighter.get("avatar_thumb_url", ""),
+                "avatar_source": fighter.get("avatar_source", ""),
+                "avatar_provider": "UFC",
+            }
+        else:
+            photos = fetch_ufc_profile_photos(fighter["name"])
         if photos:
+            photos = cache_profile_photos(fighter["id"], photos)
             fighter.update(photos)
             success += 1
         if (i + 1) % 25 == 0:
