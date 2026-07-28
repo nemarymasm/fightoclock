@@ -37,8 +37,8 @@
     --line:rgba(255,255,255,.07);
     --line-2:rgba(255,255,255,.13);
     --text:#F2F1EE;
-    --muted:rgba(242,241,238,.56);
-    --dim:rgba(242,241,238,.52);
+    --muted:rgba(242,241,238,.68);
+    --dim:rgba(242,241,238,.60);
     --red:#E5484D;
     --red-2:#E5484D;
     --gold:#C9A24B;
@@ -490,9 +490,24 @@
   .mini-signal span{display:block;font-size:10px;color:var(--dim)}
   .mini-signal b{display:block;margin-top:3px;font-size:16px;letter-spacing:-.02em}
   .mini-signal a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+  .desktop-signals{display:none}
+  .mobile-prediction{margin-top:12px;border-top:1px solid var(--line)}
+  .mobile-prediction summary,.mobile-watch summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;font-weight:750}
+  .mobile-prediction summary::-webkit-details-marker,.mobile-watch summary::-webkit-details-marker{display:none}
+  .mobile-prediction summary::after,.mobile-watch summary::after{content:"＋";color:var(--muted);font-size:16px;font-weight:500}
+  .mobile-prediction[open] summary::after,.mobile-watch[open] summary::after{content:"－"}
+  .mobile-prediction summary span{color:var(--muted);font-size:11px;font-weight:600}
+  .mobile-prediction .fan-model{margin-top:0;padding:2px 0 8px}
+  .prediction-source{padding:8px 0 2px;color:var(--dim);font-size:11px;line-height:1.5}
+  .prediction-source a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
   .watch-panel{position:relative;padding:18px;border-top:1px solid var(--line)}
   .watch-title{font-size:11px;color:#ff8589;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
   .watch-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:8px}
+  .desktop-watch{display:none}
+  .watch-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+  .watch-chips span{padding:7px 10px;border-radius:20px;background:rgba(255,255,255,.055);color:var(--text);font-size:12px;font-weight:700}
+  .mobile-watch{margin-top:5px;border-top:1px solid var(--line)}
+  .mobile-watch .watch-grid{margin-top:0}
   .watch-item{display:grid;grid-template-columns:25px 1fr;gap:9px;padding:10px 0;border-top:1px solid var(--line)}
   .watch-item:first-child{border-top:0}
   .watch-num{width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:rgba(229,72,77,.13);color:#ff8589;font-size:10px;font-weight:850}
@@ -500,7 +515,8 @@
   .watch-item p{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.48}
   .brief-actions{position:relative;display:grid;grid-template-columns:1fr auto;gap:9px;padding:0 18px 18px}
   .brief-actions .btn{justify-content:center}
-  .brief-sources{position:relative;padding:11px 18px;border-top:1px solid var(--line);color:var(--dim);font-size:10px;line-height:1.45}
+  .brief-sources{position:relative;padding:11px 18px;border-top:1px solid var(--line);color:var(--dim);font-size:11px;line-height:1.5}
+  .source-desktop{display:none}
   .card-preview{margin-top:24px}
   .card-preview-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:9px}
   .card-preview-head h2{margin:0;font-size:20px;letter-spacing:-.025em}
@@ -523,9 +539,42 @@
     .match-stage .cf-vs{margin-top:93px}
     .match-stage .cf-nm{font-size:22px}
     .brief-intel{border-top:0;border-left:1px solid var(--line);padding:22px 22px 18px}
+    .desktop-signals{display:block}
+    .mobile-prediction{display:none}
+    .desktop-watch{display:grid}
+    .watch-chips,.mobile-watch{display:none}
     .watch-grid{grid-template-columns:repeat(3,1fr);gap:16px}
     .watch-item,.watch-item:first-child{border-top:0;padding:8px 0}
     .brief-actions{grid-template-columns:220px 140px;justify-content:end}
+    .source-desktop{display:inline}.source-mobile{display:none}
+  }
+  @media (max-width:779px){
+    .week-brief{border-radius:17px;background:linear-gradient(180deg,#171315 0%,#0f0f11 32%,#0d0d0f 100%)}
+    .week-brief::before{display:none}
+    .week-head{padding:14px 15px 11px}
+    .week-eyebrow{font-size:10px;letter-spacing:.11em}
+    .week-time{font-size:21px;line-height:1.15}
+    .week-sub{font-size:12px;line-height:1.5}
+    .week-d{padding:6px 8px}
+    .match-stage{padding:10px 10px 12px;background:rgba(0,0,0,.12)}
+    .match-stage .cf-img{width:116px;height:146px;max-width:35vw;max-height:44vw}
+    .match-stage .cf-vs{margin-top:52px;width:30px;height:30px}
+    .match-stage .cf-nm{font-size:16px}
+    .match-stage .cf-en{display:none}
+    .match-stage .cf-rec{font-size:12px}
+    .brief-intel{padding:14px 15px 8px}
+    .brief-thesis{font-size:17px;line-height:1.45;font-weight:800;margin-bottom:11px}
+    .signal-label{margin-top:0}.signal-label span{display:none}
+    .signal-label b{font-size:13px}
+    .signal-names{font-size:13px}
+    .signal-bar{height:9px}
+    .signal-note{display:none}
+    .watch-panel{padding:13px 15px 8px}
+    .watch-title{font-size:10px;letter-spacing:.1em}
+    .brief-actions{grid-template-columns:1fr;padding:8px 15px 15px}
+    .brief-actions .btn{min-height:46px}
+    .brief-actions .btn.ghost{display:none}
+    .brief-sources{padding:10px 15px;font-size:11px}
   }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -829,8 +878,15 @@ function weekBrief(e, main, a, b){
   const points = intel.watch_points || newbieGuide(e)?.points?.slice(0,3).map((text,i)=>({title:`관전 포인트 ${i+1}`,text:text.replace(/<[^>]+>/g,'')})) || [];
   const aPct = Number(market.fighter_a_pct ?? market.aPct ?? 50);
   const bPct = Number(market.fighter_b_pct ?? market.bPct ?? (100-aPct));
-  const cd = countdownParts(e.dateUtc);
   const sourceLink = (url,label)=>url?`<a href="${esc(safeExternalUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:esc(label);
+  const fanModelHtml = `
+    <div class="fan-model">
+      <div class="mini-signal"><span>팬 선택 · ${esc(fans.label||'공개 투표')}</span><b>${Number(fans.fighter_a_pct)||'-'}% ${esc(a.name)}</b><span>${fans.sample?`표본 ${Number(fans.sample)}명 · `:''}${sourceLink(fans.source,'출처')}</span></div>
+      <div class="mini-signal"><span>분석 모델</span><b>${models.fighter_a_low&&models.fighter_a_high?`${models.fighter_a_low}~${models.fighter_a_high}%`:'자료 확인 중'}</b><span>${esc(models.label||'시장과 별도 지표')} · ${sourceLink(models.source,'출처')}</span></div>
+    </div>
+    ${intel.community_tone?`<div class="community-tone">${esc(intel.community_tone)}</div>`:''}`;
+  const watchItems = points.map((p,i)=>`
+    <div class="watch-item"><span class="watch-num">0${i+1}</span><div><b>${esc(p.title||'')}</b><p>${esc(p.text||p)}</p></div></div>`).join('');
   return `
   <section class="week-brief" aria-labelledby="weekFightTitle">
     <div class="week-head">
@@ -860,7 +916,10 @@ function weekBrief(e, main, a, b){
         </div>
       </div>
       <aside class="brief-intel" aria-label="경기 예상과 여론">
-        <div class="brief-thesis">${esc(intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</div>
+        <div class="brief-thesis">
+          <span class="source-desktop">${esc(intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</span>
+          <span class="source-mobile">${esc(intel.mobile_thesis || intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</span>
+        </div>
         <div class="signal-label"><b>시장 예상</b><span>${esc(market.as_of||'최신 배당 기준')}</span></div>
         <div class="signal-names"><span>${esc(a.name)} ${aPct}%</span><span>${esc(b.name)} ${bPct}%</span></div>
         <div class="signal-bar" aria-label="${esc(a.name)} ${aPct}%, ${esc(b.name)} ${bPct}%">
@@ -868,23 +927,31 @@ function weekBrief(e, main, a, b){
         </div>
         <div class="signal-odds"><span>${esc(market.fighter_a_odds||'')}</span><span>${esc(market.fighter_b_odds||'')}</span></div>
         <div class="signal-note">${esc(market.label||market.note||'배당을 암시확률로 환산한 시장 지표')} · ${sourceLink(market.source,'출처')}</div>
-        <div class="fan-model">
-          <div class="mini-signal"><span>팬 선택 · ${esc(fans.label||'공개 투표')}</span><b>${Number(fans.fighter_a_pct)||'-'}% ${esc(a.name)}</b><span>${fans.sample?`표본 ${Number(fans.sample)}명 · `:''}${sourceLink(fans.source,'출처')}</span></div>
-          <div class="mini-signal"><span>분석 모델</span><b>${models.fighter_a_low&&models.fighter_a_high?`${models.fighter_a_low}~${models.fighter_a_high}%`:'자료 확인 중'}</b><span>${esc(models.label||'시장과 별도 지표')} · ${sourceLink(models.source,'출처')}</span></div>
-        </div>
-        ${intel.community_tone?`<div class="community-tone">${esc(intel.community_tone)}</div>`:''}
+        <div class="desktop-signals">${fanModelHtml}</div>
+        <details class="mobile-prediction">
+          <summary>팬·모델 예측 비교 <span>팬 ${Number(fans.fighter_a_pct)||'-'}% · 모델 ${models.fighter_a_low||'-'}~${models.fighter_a_high||'-'}%</span></summary>
+          ${fanModelHtml}
+          <div class="prediction-source">${esc(market.label||market.note||'시장 지표')} · ${sourceLink(market.source,'배당 출처')}</div>
+        </details>
       </aside>
     </div>
     <div class="watch-panel">
       <div class="watch-title">왜 봐야 하나 · 관전 포인트</div>
-      <div class="watch-grid">${points.map((p,i)=>`
-        <div class="watch-item"><span class="watch-num">0${i+1}</span><div><b>${esc(p.title||'')}</b><p>${esc(p.text||p)}</p></div></div>`).join('')}</div>
+      <div class="watch-chips">${points.map(p=>`<span>${esc(p.title||'')}</span>`).join('')}</div>
+      <div class="watch-grid desktop-watch">${watchItems}</div>
+      <details class="mobile-watch">
+        <summary>관전 포인트 자세히</summary>
+        <div class="watch-grid">${watchItems}</div>
+      </details>
     </div>
     <div class="brief-actions">
       <a class="btn primary" href="#event/${e.id}">전체 대진 자세히 보기</a>
       <button class="btn ghost" type="button" onclick="downloadCalendar('${e.id}')">캘린더 저장</button>
     </div>
-    <div class="brief-sources">${esc(schedule.note||'')} ${intel.responsible_note?`· ${esc(intel.responsible_note)}`:''}</div>
+    <div class="brief-sources">
+      <span class="source-mobile">배당은 정보용이며 베팅 권유가 아닙니다.</span>
+      <span class="source-desktop">${esc(schedule.note||'')} ${intel.responsible_note?`· ${esc(intel.responsible_note)}`:''}</span>
+    </div>
   </section>`;
 }
 

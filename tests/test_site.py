@@ -141,7 +141,15 @@ class FrontendContractTests(unittest.TestCase):
         self.assertNotIn('<path d="M25,82', self.html)
 
     def test_home_surfaces_weekly_fight_intelligence(self):
-        for required in ("시장 예상", "팬 선택", "왜 봐야 하나", "이번 주 메인카드", "data/insights.json"):
+        for required in (
+            "시장 예상",
+            "팬 선택",
+            "왜 봐야 하나",
+            "이번 주 메인카드",
+            "data/insights.json",
+            'class="mobile-prediction"',
+            'class="mobile-watch"',
+        ):
             self.assertIn(required, self.html)
 
 
