@@ -706,7 +706,7 @@
       "recent": [
         {
           "opp": "Ion Cuțelaba",
-          "opp_ko": "Ion Cuțelaba",
+          "opp_ko": "이온 쿠텔라바",
           "result": "win",
           "method": "TKO (punches and elbows)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -875,7 +875,7 @@
     {
       "id": "dricus-du-plessis",
       "name": "Dricus du Plessis",
-      "name_ko": "드리쿠스 두 플레시",
+      "name_ko": "드리퀴스 뒤 플레시",
       "record": "24승 3패",
       "country": "South Africa",
       "country_ko": "남아공",
@@ -1122,7 +1122,7 @@
       "recent": [
         {
           "opp": "Dricus du Plessis",
-          "opp_ko": "드리쿠스 두 플레시",
+          "opp_ko": "드리퀴스 뒤 플레시",
           "result": "loss",
           "method": "Decision (unanimous) (50–45, 49–46, 49–46)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -1153,7 +1153,7 @@
       "recent": [
         {
           "opp": "Brunno Ferreira",
-          "opp_ko": "Brunno Ferreira",
+          "opp_ko": "브루누 페레이라",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -1215,7 +1215,7 @@
       "recent": [
         {
           "opp": "Michał Oleksiejczuk",
-          "opp_ko": "Michał Oleksiejczuk",
+          "opp_ko": "미하우 올렉셰이추크",
           "result": "win",
           "method": "Submission (guillotine choke)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -2871,7 +2871,7 @@
     {
       "id": "manel-kape",
       "name": "Manel Kape",
-      "name_ko": "마넬 카페",
+      "name_ko": "마넬 캅",
       "record": "23승 7패",
       "country": "Portugal",
       "country_ko": "Portugal",
@@ -2970,7 +2970,7 @@
       "recent": [
         {
           "opp": "Charles Johnson",
-          "opp_ko": "Charles Johnson",
+          "opp_ko": "찰스 존슨",
           "result": "win",
           "method": "Submission (Suloev stretch)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -3030,7 +3030,7 @@
       "recent": [
         {
           "opp": "Manel Kape",
-          "opp_ko": "마넬 카페",
+          "opp_ko": "마넬 캅",
           "result": "loss",
           "method": "TKO (punches)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -3195,7 +3195,7 @@
     {
       "id": "steve-erceg",
       "name": "Steve Erceg",
-      "name_ko": "스티브 에르섹",
+      "name_ko": "스티브 얼섹",
       "record": "14승 5패",
       "country": "Australia",
       "country_ko": "호주",
@@ -3212,7 +3212,7 @@
       "recent": [
         {
           "opp": "Ramazan Temirov",
-          "opp_ko": "Ramazan Temirov",
+          "opp_ko": "라마잔 테미로프",
           "result": "loss",
           "method": "KO (punch)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6467,7 +6467,7 @@
     {
       "id": "ramazan-temirov",
       "name": "Ramazan Temirov",
-      "name_ko": "Ramazan Temirov",
+      "name_ko": "라마잔 테미로프",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -6484,7 +6484,7 @@
       "recent": [
         {
           "opp": "Steve Erceg",
-          "opp_ko": "스티브 에르섹",
+          "opp_ko": "스티브 얼섹",
           "result": "win",
           "method": "KO (punch)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6496,7 +6496,7 @@
     {
       "id": "magomed-zaynukov",
       "name": "Magomed Zaynukov",
-      "name_ko": "Magomed Zaynukov",
+      "name_ko": "마고메드 자이누코프",
       "record": "9승 0패",
       "country": "",
       "country_ko": "",
@@ -6513,7 +6513,7 @@
       "recent": [
         {
           "opp": "Damian Rzepecki",
-          "opp_ko": "Damian Rzepecki",
+          "opp_ko": "다미안 르제페키",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6527,7 +6527,7 @@
     {
       "id": "damian-rzepecki",
       "name": "Damian Rzepecki",
-      "name_ko": "Damian Rzepecki",
+      "name_ko": "다미안 르제페키",
       "record": "10승 1패",
       "country": "",
       "country_ko": "",
@@ -6544,7 +6544,7 @@
       "recent": [
         {
           "opp": "Magomed Zaynukov",
-          "opp_ko": "Magomed Zaynukov",
+          "opp_ko": "마고메드 자이누코프",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6585,7 +6585,7 @@
     {
       "id": "abubakar-vagaev",
       "name": "Abubakar Vagaev",
-      "name_ko": "Abubakar Vagaev",
+      "name_ko": "아부바카르 바가예프",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -6602,7 +6602,7 @@
       "recent": [
         {
           "opp": "Saygid Izagakhmaev",
-          "opp_ko": "Saygid Izagakhmaev",
+          "opp_ko": "사이기드 이자가흐마예프",
           "result": "win",
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6614,7 +6614,7 @@
     {
       "id": "saygid-izagakhmaev",
       "name": "Saygid Izagakhmaev",
-      "name_ko": "Saygid Izagakhmaev",
+      "name_ko": "사이기드 이자가흐마예프",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -6631,7 +6631,7 @@
       "recent": [
         {
           "opp": "Abubakar Vagaev",
-          "opp_ko": "Abubakar Vagaev",
+          "opp_ko": "아부바카르 바가예프",
           "result": "loss",
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -7030,7 +7030,7 @@
     {
       "id": "chase-hooper",
       "name": "Chase Hooper",
-      "name_ko": "Chase Hooper",
+      "name_ko": "체이스 후퍼",
       "record": "17승 5패",
       "country": "",
       "country_ko": "",
@@ -7047,7 +7047,7 @@
       "recent": [
         {
           "opp": "Mitch Ramirez",
-          "opp_ko": "Mitch Ramirez",
+          "opp_ko": "미치 라미레스",
           "result": "win",
           "method": "Submission (rear-naked choke)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -7061,7 +7061,7 @@
     {
       "id": "mitch-ramirez",
       "name": "Mitch Ramirez",
-      "name_ko": "Mitch Ramirez",
+      "name_ko": "미치 라미레스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -7078,7 +7078,7 @@
       "recent": [
         {
           "opp": "Chase Hooper",
-          "opp_ko": "Chase Hooper",
+          "opp_ko": "체이스 후퍼",
           "result": "loss",
           "method": "Submission (rear-naked choke)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -7090,7 +7090,7 @@
     {
       "id": "tommy-mcmillen",
       "name": "Tommy McMillen",
-      "name_ko": "Tommy McMillen",
+      "name_ko": "토미 맥밀런",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -7107,7 +7107,7 @@
       "recent": [
         {
           "opp": "Alberto Montes",
-          "opp_ko": "Alberto Montes",
+          "opp_ko": "알베르토 몬테스",
           "result": "win",
           "method": "TKO (punches)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -7119,7 +7119,7 @@
     {
       "id": "alberto-montes",
       "name": "Alberto Montes",
-      "name_ko": "Alberto Montes",
+      "name_ko": "알베르토 몬테스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -7136,7 +7136,7 @@
       "recent": [
         {
           "opp": "Tommy McMillen",
-          "opp_ko": "Tommy McMillen",
+          "opp_ko": "토미 맥밀런",
           "result": "loss",
           "method": "TKO (punches)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -7556,7 +7556,7 @@
     {
       "id": "king-green",
       "name": "King Green",
-      "name_ko": "King Green",
+      "name_ko": "킹 그린",
       "record": "36승 17패",
       "country": "",
       "country_ko": "",
@@ -7573,7 +7573,7 @@
       "recent": [
         {
           "opp": "Terrance McKinney",
-          "opp_ko": "Terrance McKinney",
+          "opp_ko": "테런스 맥키니",
           "result": "win",
           "method": "TKO (punches)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -7585,7 +7585,7 @@
     {
       "id": "terrance-mckinney",
       "name": "Terrance McKinney",
-      "name_ko": "Terrance McKinney",
+      "name_ko": "테런스 맥키니",
       "record": "18승 9패",
       "country": "",
       "country_ko": "",
@@ -7602,7 +7602,7 @@
       "recent": [
         {
           "opp": "King Green",
-          "opp_ko": "King Green",
+          "opp_ko": "킹 그린",
           "result": "loss",
           "method": "TKO (punches)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -8024,7 +8024,7 @@
     {
       "id": "sharabutdin-magomedov",
       "name": "Sharabutdin Magomedov",
-      "name_ko": "Sharabutdin Magomedov",
+      "name_ko": "샤라 마고메도프",
       "record": "17승 1패",
       "country": "",
       "country_ko": "",
@@ -8041,7 +8041,7 @@
       "recent": [
         {
           "opp": "Michel Pereira",
-          "opp_ko": "Michel Pereira",
+          "opp_ko": "미첼 페레이라",
           "result": "win",
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -8055,7 +8055,7 @@
     {
       "id": "michel-pereira",
       "name": "Michel Pereira",
-      "name_ko": "Michel Pereira",
+      "name_ko": "미첼 페레이라",
       "record": "32승 15패",
       "country": "",
       "country_ko": "",
@@ -8072,7 +8072,7 @@
       "recent": [
         {
           "opp": "Sharabutdin Magomedov",
-          "opp_ko": "Sharabutdin Magomedov",
+          "opp_ko": "샤라 마고메도프",
           "result": "loss",
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -8084,7 +8084,7 @@
     {
       "id": "matheus-camilo",
       "name": "Matheus Camilo",
-      "name_ko": "Matheus Camilo",
+      "name_ko": "마테우스 카밀루",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -8101,7 +8101,7 @@
       "recent": [
         {
           "opp": "Nazim Sadykhov",
-          "opp_ko": "Nazim Sadykhov",
+          "opp_ko": "나짐 사디호프",
           "result": "win",
           "method": "TKO (punches)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -8113,7 +8113,7 @@
     {
       "id": "nazim-sadykhov",
       "name": "Nazim Sadykhov",
-      "name_ko": "Nazim Sadykhov",
+      "name_ko": "나짐 사디호프",
       "record": "11승 3패",
       "country": "",
       "country_ko": "",
@@ -8130,7 +8130,7 @@
       "recent": [
         {
           "opp": "Matheus Camilo",
-          "opp_ko": "Matheus Camilo",
+          "opp_ko": "마테우스 카밀루",
           "result": "loss",
           "method": "TKO (punches)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -8142,7 +8142,7 @@
     {
       "id": "charles-johnson",
       "name": "Charles Johnson",
-      "name_ko": "Charles Johnson",
+      "name_ko": "찰스 존슨",
       "record": "19승 9패",
       "country": "",
       "country_ko": "",
@@ -8171,7 +8171,7 @@
     {
       "id": "brunno-ferreira",
       "name": "Brunno Ferreira",
-      "name_ko": "Brunno Ferreira",
+      "name_ko": "브루누 페레이라",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -8200,7 +8200,7 @@
     {
       "id": "micha-oleksiejczuk",
       "name": "Michał Oleksiejczuk",
-      "name_ko": "Michał Oleksiejczuk",
+      "name_ko": "미하우 올렉셰이추크",
       "record": "22승 10패",
       "country": "",
       "country_ko": "",
@@ -8610,7 +8610,7 @@
     {
       "id": "ion-cu-elaba",
       "name": "Ion Cuțelaba",
-      "name_ko": "Ion Cuțelaba",
+      "name_ko": "이온 쿠텔라바",
       "record": "20승 11패",
       "country": "",
       "country_ko": "",
@@ -8639,7 +8639,7 @@
     {
       "id": "christian-rodriguez",
       "name": "Christian Rodriguez",
-      "name_ko": "Christian Rodriguez",
+      "name_ko": "크리스천 로드리게스",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -8656,7 +8656,7 @@
       "recent": [
         {
           "opp": "Hyder Amil",
-          "opp_ko": "Hyder Amil",
+          "opp_ko": "하이더 아밀",
           "result": "win",
           "method": "Technical Submission (guillotine choke)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -8668,7 +8668,7 @@
     {
       "id": "hyder-amil",
       "name": "Hyder Amil",
-      "name_ko": "Hyder Amil",
+      "name_ko": "하이더 아밀",
       "record": "11승 3패",
       "country": "",
       "country_ko": "",
@@ -8685,7 +8685,7 @@
       "recent": [
         {
           "opp": "Christian Rodriguez",
-          "opp_ko": "Christian Rodriguez",
+          "opp_ko": "크리스천 로드리게스",
           "result": "loss",
           "method": "Technical Submission (guillotine choke)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -8697,7 +8697,7 @@
     {
       "id": "murtazali-magomedov",
       "name": "Murtazali Magomedov",
-      "name_ko": "Murtazali Magomedov",
+      "name_ko": "무르타잘리 마고메도프",
       "record": "",
       "country": "",
       "country_ko": "",
@@ -8714,7 +8714,7 @@
       "recent": [
         {
           "opp": "Melsik Baghdasaryan",
-          "opp_ko": "Melsik Baghdasaryan",
+          "opp_ko": "멜식 바그다사리안",
           "result": "win",
           "method": "Submission (twister)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -8726,7 +8726,7 @@
     {
       "id": "melsik-baghdasaryan",
       "name": "Melsik Baghdasaryan",
-      "name_ko": "Melsik Baghdasaryan",
+      "name_ko": "멜식 바그다사리안",
       "record": "8승 4패",
       "country": "",
       "country_ko": "",
@@ -8743,7 +8743,7 @@
       "recent": [
         {
           "opp": "Murtazali Magomedov",
-          "opp_ko": "Murtazali Magomedov",
+          "opp_ko": "무르타잘리 마고메도프",
           "result": "loss",
           "method": "Submission (twister)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -8755,7 +8755,7 @@
     {
       "id": "vinicius-oliveira",
       "name": "Vinicius Oliveira",
-      "name_ko": "Vinicius Oliveira",
+      "name_ko": "비니시우스 올리베이라",
       "record": "24승 4패",
       "country": "",
       "country_ko": "",
@@ -8803,7 +8803,7 @@
       "recent": [
         {
           "opp": "Vinicius Oliveira",
-          "opp_ko": "Vinicius Oliveira",
+          "opp_ko": "비니시우스 올리베이라",
           "result": "loss",
           "method": "TKO (elbows and punches)",
           "event": "UFC Fight Night: 카페 대 쿄지",

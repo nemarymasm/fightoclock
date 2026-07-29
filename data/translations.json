@@ -26,7 +26,7 @@
     "Jan Błachowicz": "얀 블라호비치",
     "Anthony Smith": "안소니 스미스",
 
-    "Dricus du Plessis": "드리쿠스 두 플레시",
+    "Dricus du Plessis": "드리퀴스 뒤 플레시",
     "Sean Strickland": "션 스트릭랜드",
     "Israel Adesanya": "이스라엘 아데산야",
     "Robert Whittaker": "로버트 휘태커",
@@ -91,7 +91,7 @@
     "Brandon Moreno": "브랜든 모레노",
     "Kai Asakura": "카이 아사쿠라",
     "Amir Albazi": "아미르 알바지",
-    "Manel Kape": "마넬 카페",
+    "Manel Kape": "마넬 캅",
     "Kyoji Horiguchi": "호리구치 쿄지",
     "Tatsuro Taira": "타이라 타츠로",
 
@@ -271,7 +271,7 @@
     "Raoni Barcelos": "하오니 바르셀로스",
     "Rizvan Kuniev": "리즈반 쿠니예프",
     "Rose Namajunas": "로즈 나마유나스",
-    "Steve Erceg": "스티브 에르섹",
+    "Steve Erceg": "스티브 얼섹",
     "Steve Garcia": "스티브 가르시아",
     "Tabatha Ricci": "타바사 리치",
     "Talita Alencar": "탈리타 알렌카르",
@@ -282,7 +282,31 @@
     "Wang Cong": "왕충",
     "Yana Santos": "야나 산토스",
     "Yaroslav Amosov": "야로슬라프 아모소프",
-    "Youssef Zalal": "유세프 잘랄"
+    "Youssef Zalal": "유세프 잘랄",
+    "Abubakar Vagaev": "아부바카르 바가예프",
+    "Alberto Montes": "알베르토 몬테스",
+    "Brunno Ferreira": "브루누 페레이라",
+    "Charles Johnson": "찰스 존슨",
+    "Chase Hooper": "체이스 후퍼",
+    "Christian Rodriguez": "크리스천 로드리게스",
+    "Damian Rzepecki": "다미안 르제페키",
+    "Hyder Amil": "하이더 아밀",
+    "Ion Cuțelaba": "이온 쿠텔라바",
+    "King Green": "킹 그린",
+    "Magomed Zaynukov": "마고메드 자이누코프",
+    "Matheus Camilo": "마테우스 카밀루",
+    "Melsik Baghdasaryan": "멜식 바그다사리안",
+    "Michał Oleksiejczuk": "미하우 올렉셰이추크",
+    "Michel Pereira": "미첼 페레이라",
+    "Mitch Ramirez": "미치 라미레스",
+    "Murtazali Magomedov": "무르타잘리 마고메도프",
+    "Nazim Sadykhov": "나짐 사디호프",
+    "Ramazan Temirov": "라마잔 테미로프",
+    "Saygid Izagakhmaev": "사이기드 이자가흐마예프",
+    "Sharabutdin Magomedov": "샤라 마고메도프",
+    "Terrance McKinney": "테런스 맥키니",
+    "Tommy McMillen": "토미 맥밀런",
+    "Vinicius Oliveira": "비니시우스 올리베이라"
   },
 
   "venues": {
@@ -316,7 +340,8 @@
     "SPD Bank Oriental Sports Center": "SPD 뱅크 오리엔탈 스포츠 센터",
     "Accor Arena": "아코르 아레나",
     "Desert Diamond Arena": "데저트 다이아몬드 아레나",
-    "Crypto.com Arena": "크립토닷컴 아레나"
+    "Crypto.com Arena": "크립토닷컴 아레나",
+    "Paycom Center": "페이컴 센터"
   },
 
   "locations": {
@@ -349,6 +374,7 @@
     "Shanghai, China": "중국 상하이",
     "Paris, France": "프랑스 파리",
     "Glendale, Arizona, U.S.": "미국 애리조나 글렌데일",
-    "Los Angeles, California, U.S.": "미국 캘리포니아 로스앤젤레스"
+    "Los Angeles, California, U.S.": "미국 캘리포니아 로스앤젤레스",
+    "Oklahoma City, Oklahoma, U.S.": "미국 오클라호마주 오클라호마시티"
   }
 }

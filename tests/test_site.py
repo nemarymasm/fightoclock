@@ -77,6 +77,30 @@ class DataContractTests(unittest.TestCase):
         ]
         self.assertFalse(missing, f"Ranked fighters missing Korean names: {missing}")
 
+    def test_recent_result_cards_have_korean_fighter_names(self):
+        events = load_json("events.json").get("past_events", [])
+        fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
+        missing = [
+            name
+            for event in events
+            for fight in event.get("main_card", [])
+            for name in (fight.get("fighter_a"), fight.get("fighter_b"))
+            if not re.search(r"[가-힣]", fighters.get(name, {}).get("name_ko", ""))
+        ]
+        self.assertFalse(missing, f"Recent results contain untranslated names: {missing}")
+        self.assertEqual(fighters["Steve Erceg"]["name_ko"], "스티브 얼섹")
+
+    def test_recent_result_event_metadata_is_korean(self):
+        events = {event["name"]: event for event in load_json("events.json").get("past_events", [])}
+        usman = events["UFC Fight Night: du Plessis vs. Usman"]
+        self.assertEqual(usman["name_ko"], "UFC Fight Night: 뒤 플레시 대 우스만")
+        self.assertEqual(usman["venue_ko"], "페이컴 센터")
+        self.assertEqual(usman["location_ko"], "미국 오클라호마주 오클라호마시티")
+        self.assertEqual(
+            events["UFC Fight Night: Kape vs. Horiguchi"]["name_ko"],
+            "UFC Fight Night: 캅 대 호리구치",
+        )
+
     def test_fighter_photos_use_approved_sources(self):
         fighters = load_json("fighters.json")["fighters"]
         photos = [fighter for fighter in fighters if fighter.get("avatar_url")]
@@ -261,6 +285,12 @@ class FrontendContractTests(unittest.TestCase):
         fighter_list = self.html.split("function fighterListHtml", 1)[1].split("function renderFighterList", 1)[0]
         self.assertNotIn("name-original", fight_row)
         self.assertNotIn("name-original", fighter_list)
+
+    def test_fight_results_translate_method_round_and_time(self):
+        self.assertIn("function resultMethodKo(method)", self.html)
+        self.assertIn("'Decision (unanimous)':'전원일치 판정'", self.html)
+        self.assertIn("'Submission (rear-naked choke)':'리어네이키드초크 서브미션'", self.html)
+        self.assertIn("m.round + '라운드'", self.html)
 
     def test_upcoming_events_are_visually_separate_from_this_week(self):
         self.assertIn('class="upcoming-section"', self.html)

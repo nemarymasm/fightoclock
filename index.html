@@ -1921,13 +1921,52 @@ function transformFighter(f){
   };
 }
 
+function resultMethodKo(method){
+  const raw=cleanExternalText(method||'').trim();
+  if(!raw) return '';
+  const exact={
+    'Decision (unanimous)':'전원일치 판정',
+    'Decision (split)':'2:1 판정',
+    'Decision (majority)':'2:0 판정',
+    'Technical Decision (unanimous)':'전원일치 테크니컬 판정',
+    'KO (punch)':'KO(펀치)',
+    'KO (punches)':'KO(펀치)',
+    'TKO (punch)':'TKO(펀치)',
+    'TKO (punches)':'TKO(펀치)',
+    'TKO (knees)':'TKO(니킥)',
+    'TKO (knee injury)':'TKO(무릎 부상)',
+    'TKO (corner stoppage)':'TKO(코너 스톱)',
+    'TKO (punches and elbows)':'TKO(펀치·엘보)',
+    'TKO (elbows and punches)':'TKO(엘보·펀치)',
+    'KO (spinning wheel kick and punches)':'KO(스피닝 휠킥·펀치)',
+    'TKO (spinning wheel kick and punches)':'TKO(스피닝 휠킥·펀치)',
+    'Submission (rear-naked choke)':'리어네이키드초크 서브미션',
+    'Submission (guillotine choke)':'길로틴초크 서브미션',
+    'Submission (Suloev stretch)':'술로에프 스트레치 서브미션',
+    'Submission (twister)':'트위스터 서브미션',
+    'Technical Submission (Peruvian necktie)':'페루비안 넥타이 테크니컬 서브미션'
+  };
+  if(exact[raw]) return exact[raw];
+  return raw
+    .replace(/^Decision \(unanimous\)/i,'전원일치 판정')
+    .replace(/^Decision \(split\)/i,'2:1 판정')
+    .replace(/^Decision \(majority\)/i,'2:0 판정')
+    .replace(/^Submission/i,'서브미션')
+    .replace(/^Technical Submission/i,'테크니컬 서브미션')
+    .replace(/punches?/gi,'펀치')
+    .replace(/elbows?/gi,'엘보')
+    .replace(/knees?/gi,'니킥')
+    .replace(/rear-naked choke/gi,'리어네이키드초크')
+    .replace(/guillotine choke/gi,'길로틴초크');
+}
+
 /* 실 이벤트 JSON → 내부 fight/event shape */
 function transformFight(m){
   const a = slugify(m.fighter_a);
   const b = slugify(m.fighter_b);
   const winner = m.winner==='a' ? a : (m.winner==='b' ? b : null);
-  let way = cleanExternalText(m.method || '');
-  if(m.round) way += (way?' · ':'') + 'R' + m.round + (m.time ? ' ' + m.time : '');
+  let way = cleanExternalText(m.method_ko || resultMethodKo(m.method || ''));
+  if(m.round) way += (way?' · ':'') + m.round + '라운드' + (m.time ? ' ' + m.time : '');
   return { wc: cleanExternalText(m.weight_ko || m.weight || ''), a: a, b: b, winner: winner, way: cleanExternalText(way) };
 }
 function transformJsonEvent(je,status){

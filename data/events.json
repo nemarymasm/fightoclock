@@ -776,7 +776,7 @@
           "round": "5",
           "time": "2:41",
           "fighter_a_ko": "마고메드 안칼라예프",
-          "fighter_b_ko": "Bogdan Guskov",
+          "fighter_b_ko": "보그단 구스코프",
           "weight_ko": "라이트헤비급"
         },
         {
@@ -787,8 +787,8 @@
           "method": "KO (punch)",
           "round": "1",
           "time": "4:21",
-          "fighter_a_ko": "Ramazan Temirov",
-          "fighter_b_ko": "Steve Erceg",
+          "fighter_a_ko": "라마잔 테미로프",
+          "fighter_b_ko": "스티브 얼섹",
           "weight_ko": "플라이급"
         },
         {
@@ -799,8 +799,8 @@
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Magomed Zaynukov",
-          "fighter_b_ko": "Damian Rzepecki",
+          "fighter_a_ko": "마고메드 자이누코프",
+          "fighter_b_ko": "다미안 르제페키",
           "weight_ko": "라이트급"
         },
         {
@@ -811,7 +811,7 @@
           "method": "TKO (knees)",
           "round": "3",
           "time": "1:12",
-          "fighter_a_ko": "Rizvan Kuniev",
+          "fighter_a_ko": "리즈반 쿠니예프",
           "fighter_b_ko": "Tyrell Fortune",
           "weight_ko": "헤비급"
         },
@@ -823,8 +823,8 @@
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Abubakar Vagaev",
-          "fighter_b_ko": "Saygid Izagakhmaev",
+          "fighter_a_ko": "아부바카르 바가예프",
+          "fighter_b_ko": "사이기드 이자가흐마예프",
           "weight_ko": "웰터급"
         }
       ],
@@ -837,7 +837,7 @@
           "method": "Submission (calf slicer)",
           "round": "1",
           "time": "1:32",
-          "fighter_a_ko": "Valter Walker",
+          "fighter_a_ko": "발터 워커",
           "fighter_b_ko": "Thomas Petersen",
           "weight_ko": "헤비급"
         },
@@ -850,7 +850,7 @@
           "round": "2",
           "time": "4:49",
           "fighter_a_ko": "Muhammad Saidov",
-          "fighter_b_ko": "Dustin Jacoby",
+          "fighter_b_ko": "더스틴 자코비",
           "weight_ko": "라이트헤비급"
         },
         {
@@ -937,7 +937,7 @@
           "method": "Decision (unanimous) (50–45, 49–46, 49–46)",
           "round": "5",
           "time": "5:00",
-          "fighter_a_ko": "드리쿠스 두 플레시",
+          "fighter_a_ko": "드리퀴스 뒤 플레시",
           "fighter_b_ko": "카마루 우스만",
           "weight_ko": "미들급"
         },
@@ -949,7 +949,7 @@
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Christian Leroy Duncan",
+          "fighter_a_ko": "크리스천 리로이 던컨",
           "fighter_b_ko": "자레드 캐노니어",
           "weight_ko": "미들급"
         },
@@ -961,8 +961,8 @@
           "method": "Submission (rear-naked choke)",
           "round": "1",
           "time": "2:15",
-          "fighter_a_ko": "Chase Hooper",
-          "fighter_b_ko": "Mitch Ramirez",
+          "fighter_a_ko": "체이스 후퍼",
+          "fighter_b_ko": "미치 라미레스",
           "weight_ko": "Catchweight (157.5 lb)"
         },
         {
@@ -973,8 +973,8 @@
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Fatima Kline",
-          "fighter_b_ko": "Tabatha Ricci",
+          "fighter_a_ko": "파티마 클라인",
+          "fighter_b_ko": "타바사 리치",
           "weight_ko": "여성 스트로급"
         },
         {
@@ -985,8 +985,8 @@
           "method": "TKO (punches)",
           "round": "3",
           "time": "3:29",
-          "fighter_a_ko": "Tommy McMillen",
-          "fighter_b_ko": "Alberto Montes",
+          "fighter_a_ko": "토미 맥밀런",
+          "fighter_b_ko": "알베르토 몬테스",
           "weight_ko": "페더급"
         }
       ],
@@ -999,7 +999,7 @@
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Jose Miguel Delgado",
+          "fighter_a_ko": "호세 미겔 델가도",
           "fighter_b_ko": "Austin Bashi",
           "weight_ko": "페더급"
         },
@@ -1076,9 +1076,9 @@
           "weight_ko": "여성 플라이급"
         }
       ],
-      "name_ko": "UFC Fight Night: 플레시 대 우스만",
-      "venue_ko": "Paycom Center",
-      "location_ko": "Oklahoma City, Oklahoma, U.S.",
+      "name_ko": "UFC Fight Night: 뒤 플레시 대 우스만",
+      "venue_ko": "페이컴 센터",
+      "location_ko": "미국 오클라호마주 오클라호마시티",
       "date_local_human": "2026년 7월 18일(토)",
       "start_time_utc": null,
       "time_status": "date_only"
@@ -1100,7 +1100,7 @@
           "round": "1",
           "time": "1:09",
           "fighter_a_ko": "맥스 할로웨이",
-          "fighter_b_ko": "Conor McGregor",
+          "fighter_b_ko": "코너 맥그리거",
           "weight_ko": "웰터급"
         },
         {
@@ -1112,7 +1112,7 @@
           "round": "1",
           "time": "0:52",
           "fighter_a_ko": "패디 핌블렛",
-          "fighter_b_ko": "Benoît Saint Denis",
+          "fighter_b_ko": "브누아 생드니",
           "weight_ko": "라이트급"
         },
         {
@@ -1136,7 +1136,7 @@
           "round": "3",
           "time": "3:40",
           "fighter_a_ko": "브랜든 로이발",
-          "fighter_b_ko": "Lone'er Kavanagh",
+          "fighter_b_ko": "로니어 카바나",
           "weight_ko": "플라이급"
         },
         {
@@ -1147,8 +1147,8 @@
           "method": "TKO (punches)",
           "round": "1",
           "time": "4:59",
-          "fighter_a_ko": "King Green",
-          "fighter_b_ko": "Terrance McKinney",
+          "fighter_a_ko": "킹 그린",
+          "fighter_b_ko": "테런스 맥키니",
           "weight_ko": "라이트급"
         }
       ],
@@ -1209,8 +1209,8 @@
           "method": "Decision (unanimous) (29–27, 29–27, 29–27)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Wang Cong",
-          "fighter_b_ko": "Tracy Cortez",
+          "fighter_a_ko": "왕충",
+          "fighter_b_ko": "트레이시 코르테스",
           "weight_ko": "여성 플라이급"
         },
         {
@@ -1233,7 +1233,7 @@
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Farid Basharat",
+          "fighter_a_ko": "파리드 바샤랏",
           "fighter_b_ko": "John Garza",
           "weight_ko": "밴텀급"
         },
@@ -1257,7 +1257,7 @@
           "method": "Submission (rear-naked choke)",
           "round": "2",
           "time": "2:19",
-          "fighter_a_ko": "Alessandro Costa",
+          "fighter_a_ko": "알레산드로 코스타",
           "fighter_b_ko": "Cody Durden",
           "weight_ko": "플라이급"
         }
@@ -1286,7 +1286,7 @@
           "round": "2",
           "time": "0:15",
           "fighter_a_ko": "라파엘 피지에프",
-          "fighter_b_ko": "Manuel Torres",
+          "fighter_b_ko": "마누엘 토레스",
           "weight_ko": "라이트급"
         },
         {
@@ -1297,8 +1297,8 @@
           "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Sharabutdin Magomedov",
-          "fighter_b_ko": "Michel Pereira",
+          "fighter_a_ko": "샤라 마고메도프",
+          "fighter_b_ko": "미첼 페레이라",
           "weight_ko": "미들급"
         },
         {
@@ -1309,8 +1309,8 @@
           "method": "TKO (punches)",
           "round": "1",
           "time": "1:31",
-          "fighter_a_ko": "Matheus Camilo",
-          "fighter_b_ko": "Nazim Sadykhov",
+          "fighter_a_ko": "마테우스 카밀루",
+          "fighter_b_ko": "나짐 사디호프",
           "weight_ko": "라이트급"
         },
         {
@@ -1321,8 +1321,8 @@
           "method": "Submission (Suloev stretch)",
           "round": "3",
           "time": "3:33",
-          "fighter_a_ko": "Asu Almabayev",
-          "fighter_b_ko": "Charles Johnson",
+          "fighter_a_ko": "아수 알마바예프",
+          "fighter_b_ko": "찰스 존슨",
           "weight_ko": "플라이급"
         },
         {
@@ -1333,8 +1333,8 @@
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Ikram Aliskerov",
-          "fighter_b_ko": "Brunno Ferreira",
+          "fighter_a_ko": "이크람 알리스케로프",
+          "fighter_b_ko": "브루누 페레이라",
           "weight_ko": "미들급"
         },
         {
@@ -1345,8 +1345,8 @@
           "method": "Submission (guillotine choke)",
           "round": "1",
           "time": "3:25",
-          "fighter_a_ko": "Abusupiyan Magomedov",
-          "fighter_b_ko": "Michał Oleksiejczuk",
+          "fighter_a_ko": "아부수피얀 마고메도프",
+          "fighter_b_ko": "미하우 올렉셰이추크",
           "weight_ko": "미들급"
         }
       ],
@@ -1459,7 +1459,7 @@
           "method": "TKO (punches)",
           "round": "3",
           "time": "2:42",
-          "fighter_a_ko": "마넬 카페",
+          "fighter_a_ko": "마넬 캅",
           "fighter_b_ko": "호리구치 쿄지",
           "weight_ko": "플라이급"
         },
@@ -1472,7 +1472,7 @@
           "round": "2",
           "time": "3:23",
           "fighter_a_ko": "나바호 스털링",
-          "fighter_b_ko": "Ion Cuțelaba",
+          "fighter_b_ko": "이온 쿠텔라바",
           "weight_ko": "라이트헤비급"
         },
         {
@@ -1483,8 +1483,8 @@
           "method": "Technical Submission (guillotine choke)",
           "round": "1",
           "time": "3:43",
-          "fighter_a_ko": "Christian Rodriguez",
-          "fighter_b_ko": "Hyder Amil",
+          "fighter_a_ko": "크리스천 로드리게스",
+          "fighter_b_ko": "하이더 아밀",
           "weight_ko": "페더급"
         },
         {
@@ -1495,8 +1495,8 @@
           "method": "Submission (twister)",
           "round": "1",
           "time": "1:17",
-          "fighter_a_ko": "Murtazali Magomedov",
-          "fighter_b_ko": "Melsik Baghdasaryan",
+          "fighter_a_ko": "무르타잘리 마고메도프",
+          "fighter_b_ko": "멜식 바그다사리안",
           "weight_ko": "페더급"
         },
         {
@@ -1507,7 +1507,7 @@
           "method": "TKO (elbows and punches)",
           "round": "2",
           "time": "4:56",
-          "fighter_a_ko": "Vinicius Oliveira",
+          "fighter_a_ko": "비니시우스 올리베이라",
           "fighter_b_ko": "Andre Fili",
           "weight_ko": "페더급"
         }
@@ -1533,7 +1533,7 @@
           "method": "Submission (armbar)",
           "round": "1",
           "time": "3:16",
-          "fighter_a_ko": "Beatriz Mesquita",
+          "fighter_a_ko": "베아트리스 메스키타",
           "fighter_b_ko": "Melissa Mullins",
           "weight_ko": "여성 밴텀급"
         },
@@ -1545,7 +1545,7 @@
           "method": "Decision (split) (29–28, 28–29, 29–28)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Mitch Raposo",
+          "fighter_a_ko": "미치 라포소",
           "fighter_b_ko": "Allan Nascimento",
           "weight_ko": "플라이급"
         },
@@ -1581,8 +1581,8 @@
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "round": "3",
           "time": "5:00",
-          "fighter_a_ko": "Luana Santos",
-          "fighter_b_ko": "Karol Rosa",
+          "fighter_a_ko": "루아나 산토스",
+          "fighter_b_ko": "카롤 호자",
           "weight_ko": "여성 밴텀급"
         },
         {
@@ -1598,7 +1598,7 @@
           "weight_ko": "페더급"
         }
       ],
-      "name_ko": "UFC Fight Night: 카페 대 쿄지",
+      "name_ko": "UFC Fight Night: 캅 대 호리구치",
       "venue_ko": "메타 APEX",
       "location_ko": "미국 네바다 라스베이거스",
       "date_local_human": "2026년 6월 20일(토)",
@@ -1646,7 +1646,7 @@
           "round": "2",
           "time": "4:02",
           "fighter_a_ko": "션 오말리",
-          "fighter_b_ko": "Aiemann Zahabi",
+          "fighter_b_ko": "아이만 자하비",
           "weight_ko": "밴텀급"
         },
         {
@@ -1657,7 +1657,7 @@
           "method": "TKO (punches)",
           "round": "2",
           "time": "4:09",
-          "fighter_a_ko": "Josh Hokit",
+          "fighter_a_ko": "조시 호킷",
           "fighter_b_ko": "데릭 루이스",
           "weight_ko": "헤비급"
         },
@@ -1669,7 +1669,7 @@
           "method": "TKO (spinning wheel kick and punches)",
           "round": "1",
           "time": "4:29",
-          "fighter_a_ko": "Maurício Ruffy",
+          "fighter_a_ko": "마우리시우 후피",
           "fighter_b_ko": "마이클 챈들러",
           "weight_ko": "라이트급"
         }
@@ -1696,7 +1696,7 @@
           "round": "2",
           "time": "2:42",
           "fighter_a_ko": "디에고 로페스",
-          "fighter_b_ko": "Steve Garcia",
+          "fighter_b_ko": "스티브 가르시아",
           "weight_ko": "페더급"
         }
       ],
