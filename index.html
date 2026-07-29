@@ -523,7 +523,7 @@
   .source-list a{color:#c8c8c8;text-decoration:underline;text-underline-offset:3px}
   .source-desktop{display:none}
 
-  .card-preview{margin-top:34px}
+  .card-preview{margin:0 0 34px;padding-top:4px}
   .card-preview-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:9px}
   .card-preview-head h2{margin:0;font-size:21px;letter-spacing:-.035em}
   .card-preview-list{border-top:1px solid var(--line-2)}
@@ -1037,8 +1037,8 @@ function viewHome(){
   const b = main ? getFighter(main.b) : null;
 
   return `
-  ${main ? weekBrief(e,main,a,b) : freshnessBanner()}
   ${homeCardPreview(e)}
+  ${main ? weekBrief(e,main,a,b) : freshnessBanner()}
 
   <div id="homeSortSection">${homeSortSection()}</div>
 

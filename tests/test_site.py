@@ -176,6 +176,12 @@ class FrontendContractTests(unittest.TestCase):
         ):
             self.assertNotIn(removed, self.html)
 
+    def test_home_shows_estimated_fight_times_before_weekly_analysis(self):
+        self.assertRegex(
+            self.html,
+            r"return `\s*\$\{homeCardPreview\(e\)\}\s*\$\{main \? weekBrief\(e,main,a,b\)",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
