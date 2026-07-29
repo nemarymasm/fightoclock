@@ -831,11 +831,11 @@ function homeSortSection(){
   return `
   <div style="height:56px"></div>
   <div style="border-top:1px solid rgba(255,255,255,.16);padding-top:24px">
-    <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:8px">다른 대회 · Upcoming Events</div>
+    <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:8px">그다음 UFC · Up next</div>
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap">
       <div>
-        <div style="font-size:21px;font-weight:800;letter-spacing:-.02em">다가오는 대회</div>
-        <div style="font-size:12px;color:var(--muted);margin-top:3px"><b>${cover.code}</b> 말고, 이후에 따로 열리는 대회들이에요</div>
+        <div style="font-size:21px;font-weight:800;letter-spacing:-.02em">이번 주 다음엔 뭐가 열려?</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:3px">그다음으로 잡힌 UFC 대회도 모아뒀어요.</div>
       </div>
       <span style="display:flex;align-items:center;gap:6px;flex-shrink:0">${seg('time','시간순')}<span style="color:var(--dim);font-size:13px">⇄</span>${seg('pop','인기순')}</span>
     </div>
@@ -895,9 +895,9 @@ function weekBrief(e, main, a, b){
   <section class="week-brief" aria-labelledby="weekFightTitle">
     <div class="week-head">
       <div>
-        <div class="week-eyebrow">이번 주 UFC · ${esc(e.city||'')}</div>
+        <div class="week-eyebrow">이번 주엔 뭐 보지? · ${esc(e.city||'')}</div>
         <div class="week-time" id="weekFightTitle">${esc(schedule.label || eventTimeLabel(e))}</div>
-        <div class="week-sub">프릴림 ${esc(schedule.prelims||'시각 확인 중')}부터 · 총 ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기</div>
+        <div class="week-sub">프릴림(앞 경기)은 ${esc(schedule.prelims||'시각 확인 중')}부터 · 모두 ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기예요</div>
       </div>
       <div class="week-d">${esc(dLabel(e.dateUtc))}</div>
     </div>
@@ -919,27 +919,27 @@ function weekBrief(e, main, a, b){
           </a>
         </div>
       </div>
-      <aside class="brief-intel" aria-label="메인이벤트 한 줄 요약">
+      <aside class="brief-intel" aria-label="메인이벤트 쉽게 보기">
         <div class="brief-thesis">
           <span class="source-desktop">${esc(intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</span>
           <span class="source-mobile">${esc(intel.mobile_thesis || intel.thesis || `${a.name}와 ${b.name}의 웰터급 5라운드 메인이벤트`)}</span>
         </div>
         <div class="main-eta">
-          <span>메인이벤트 예상</span>
-          <b>${esc(mainEstimate)} 전후</b>
+          <span>메인은 언제쯤?</span>
+          <b>${esc(mainEstimate)}쯤</b>
           <div class="eta-note">${esc(schedule.estimate_note||'앞 경기 종료 방식에 따라 30분 이상 달라질 수 있어요.')}</div>
         </div>
-        <button class="brief-link" type="button" onclick="document.getElementById('fightTimes')?.scrollIntoView({behavior:'smooth',block:'start'})">전체 대진과 예상시간 보기 ↓</button>
+        <button class="brief-link" type="button" onclick="document.getElementById('fightTimes')?.scrollIntoView({behavior:'smooth',block:'start'})">경기별 예상 시간 쭉 보기 ↓</button>
       </aside>
     </div>
     <section class="crowd-panel" aria-labelledby="crowdTitle">
       <div class="editorial-heading">
-        <h2 id="crowdTitle">지금 팬들은</h2>
-        ${fans.source?sourceLink(fans.source,`${Number(fans.discussion_count)||reactions.length}개 댓글 원문`):''}
+        <h2 id="crowdTitle">다들 뭐래?</h2>
+        ${fans.source?sourceLink(fans.source,`댓글 ${Number(fans.discussion_count)||reactions.length}개 직접 보기`):''}
       </div>
       <p class="crowd-summary">${esc(intel.fan_summary || intel.community_tone || `${a.name} 승리 예상이 우세합니다.`)}</p>
       <div class="crowd-poll">
-        <div class="crowd-poll-head"><span>${esc(a.name)} ${fanAPct}%</span><span>${esc(b.name)} ${fanBPct}% · ${Number(fans.sample)||0}명 참여</span></div>
+        <div class="crowd-poll-head"><span>${esc(a.name)} ${fanAPct}%</span><span>${esc(b.name)} ${fanBPct}% · ${Number(fans.sample)||0}명 투표</span></div>
         <div class="signal-bar" aria-label="팬 투표 ${esc(a.name)} ${fanAPct}%, ${esc(b.name)} ${fanBPct}%">
           <i class="fav" style="width:${Math.max(0,Math.min(100,fanAPct))}%"></i><i class="dog" style="width:${Math.max(0,Math.min(100,fanBPct))}%"></i>
         </div>
@@ -950,11 +950,11 @@ function weekBrief(e, main, a, b){
       <div class="crowd-tags">${fanTopics.map(t=>`<span>#${esc(t)}</span>`).join('')}</div>
     </section>
     <div class="watch-panel">
-      <div class="watch-title">이 경기, 이것만 보면 됩니다</div>
-      <div class="watch-sub">숫자보다 경기 흐름을 바꿀 세 가지</div>
+      <div class="watch-title">뭘 보면서 보면 돼?</div>
+      <div class="watch-sub">승부를 가를 장면, 세 가지만 챙겼어요.</div>
       <div class="watch-grid">${watchItems}</div>
       <details class="support-details">
-        <summary>배당·팬 투표·분석 모델 근거 보기</summary>
+        <summary>숫자와 출처도 볼래요?</summary>
         <div class="support-data">
           <div><span>팬 투표</span><b>${fanAPct}% ${esc(a.name)}</b>${sourceLink(fans.source,`${Number(fans.sample)||0}명 참여`)}</div>
           <div><span>시장 배당</span><b>${marketAPct} : ${marketBPct}</b>${sourceLink(market.source,`${esc(market.fighter_a_odds||'')} / ${esc(market.fighter_b_odds||'')}`)}</div>
@@ -963,11 +963,11 @@ function weekBrief(e, main, a, b){
       </details>
     </div>
     <div class="brief-actions">
-      <a class="btn primary" href="#event/${e.id}">전체 대진 자세히 보기</a>
+      <a class="btn primary" href="#event/${e.id}">전체 대진 한눈에 보기</a>
       <button class="btn ghost" type="button" onclick="downloadCalendar('${e.id}')">캘린더 저장</button>
     </div>
     <div class="brief-sources">
-      <span class="source-mobile">배당은 정보용이며 베팅 권유가 아닙니다.</span>
+      <span class="source-mobile">배당은 분위기를 보는 참고값이에요.</span>
       <span class="source-desktop">${esc(schedule.note||'')} ${intel.responsible_note?`· ${esc(intel.responsible_note)}`:''}</span>
     </div>
   </section>`;
@@ -978,11 +978,11 @@ function homeCardPreview(e){
   if(!fights.length) return '';
   return `
   <section class="card-preview" id="fightTimes">
-    <div class="card-preview-head"><div><h2>대략 언제 싸우나</h2><span>메인카드 시작 기준 예상 시각</span></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+    <div class="card-preview-head"><div><h2>몇 시쯤 보면 될까?</h2><span>오전 2시 시작 기준. 앞 경기에 따라 달라져요.</span></div><a class="pill ghost" href="#event/${e.id}">대진표 보기 →</a></div>
     <div class="card-preview-list">${fights.map((f,i)=>{
       const a=getFighter(f.a), b=getFighter(f.b);
       return `<a class="preview-fight" href="#event/${e.id}">
-        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b>예상</span>
+        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b>쯤</span>
         <span class="preview-match">
           <span class="preview-fighter">${avatarBox(a,34)}<b>${esc(a.name)}</b></span>
           <span class="preview-vs">VS</span>

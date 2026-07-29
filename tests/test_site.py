@@ -149,11 +149,11 @@ class FrontendContractTests(unittest.TestCase):
 
     def test_home_surfaces_weekly_fight_intelligence(self):
         for required in (
-            "메인이벤트 예상",
-            "지금 팬들은",
-            "이 경기, 이것만 보면 됩니다",
-            "대략 언제 싸우나",
-            "배당·팬 투표·분석 모델 근거 보기",
+            "메인은 언제쯤?",
+            "다들 뭐래?",
+            "뭘 보면서 보면 돼?",
+            "몇 시쯤 보면 될까?",
+            "숫자와 출처도 볼래요?",
             "data/insights.json",
             'class="crowd-panel"',
             'class="support-details"',
