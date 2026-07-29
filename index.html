@@ -523,18 +523,20 @@
   .source-list a{color:#c8c8c8;text-decoration:underline;text-underline-offset:3px}
   .source-desktop{display:none}
 
-  .card-preview{margin:0 0 34px;padding-top:4px}
-  .card-preview-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:9px}
-  .card-preview-head h2{margin:0;font-size:21px;letter-spacing:-.035em}
-  .card-preview-list{border-top:1px solid var(--line-2)}
-  .preview-fight{display:grid;grid-template-columns:66px minmax(0,1fr);align-items:center;gap:10px;padding:12px 2px;border-bottom:1px solid var(--line)}
-  .preview-time{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
-  .preview-time b{display:block;color:var(--text);font-size:13px}
+  .card-preview{margin:0;padding:25px 28px 29px;border-top:1px solid var(--line-2)}
+  .card-preview-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+  .card-preview-head h2{margin:0;font-size:22px;letter-spacing:-.035em}
+  .card-preview-list{display:grid;grid-template-columns:1fr;gap:10px}
+  .preview-fight{display:grid;grid-template-columns:82px minmax(0,1fr);align-items:center;gap:14px;min-height:82px;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:#111113}
+  .preview-fight:first-child{border-color:rgba(229,72,77,.5);background:linear-gradient(100deg,rgba(229,72,77,.09),#111113 38%)}
+  .preview-time{font-variant-numeric:tabular-nums}
+  .preview-time b{display:block;color:var(--text);font-size:16px;letter-spacing:-.02em}
+  .preview-time em{display:block;margin-top:3px;color:#ff8589;font-size:10px;font-style:normal;font-weight:800}
   .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);align-items:center;gap:7px}
   .preview-fighter{display:flex;align-items:center;gap:7px;min-width:0}
   .preview-fighter.right{flex-direction:row-reverse;text-align:right}
-  .preview-fighter b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .preview-vs{text-align:center;color:var(--dim);font-size:9px}
+  .preview-fighter b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-vs{text-align:center;color:#777;font-size:10px;font-weight:800}
 
   @media (min-width:780px){
     .cover{padding-bottom:24px}.cover-faces{padding:18px 80px 0}
@@ -556,6 +558,10 @@
     .watch-grid{grid-template-columns:repeat(3,1fr);gap:20px}
     .watch-item{border-top:0}
     .source-desktop{display:inline}.source-mobile{display:none}
+    .card-preview-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .preview-fight:first-child{grid-column:1 / -1;min-height:94px}
+    .preview-fight:first-child .preview-time b{font-size:18px}
+    .preview-fight:first-child .preview-fighter b{font-size:15px}
   }
   @media (max-width:779px){
     .week-head{padding-top:16px}
@@ -571,8 +577,10 @@
     .brief-actions{display:block}
     .brief-actions .btn{max-width:none}
     .brief-actions .btn.ghost{display:none}
-    .preview-fight{grid-template-columns:58px minmax(0,1fr)}
-    .preview-fighter .avatar-box{display:none}
+    .card-preview{padding:20px 4px 23px}
+    .preview-fight{grid-template-columns:72px minmax(0,1fr);gap:8px;min-height:76px;padding:11px 10px}
+    .preview-fighter .avatar-box{display:block}
+    .preview-fighter b{font-size:12px}
   }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -951,6 +959,7 @@ function weekBrief(e, main, a, b){
         </button>
       </aside>
     </div>
+    ${homeCardPreview(e)}
     <section class="crowd-panel" aria-labelledby="crowdTitle">
       <div class="fan-pick">
         <div class="editorial-heading">
@@ -1011,11 +1020,11 @@ function homeCardPreview(e){
     <div class="card-preview-list">${fights.map((f,i)=>{
       const a=getFighter(f.a), b=getFighter(f.b);
       return `<a class="preview-fight" href="#event/${e.id}">
-        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b>쯤</span>
+        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em>예상</em></span>
         <span class="preview-match">
-          <span class="preview-fighter">${avatarBox(a,34)}<b>${esc(a.name)}</b></span>
+          <span class="preview-fighter">${avatarBox(a,46)}<b>${esc(a.name)}</b></span>
           <span class="preview-vs">VS</span>
-          <span class="preview-fighter right">${avatarBox(b,34)}<b>${esc(b.name)}</b></span>
+          <span class="preview-fighter right">${avatarBox(b,46)}<b>${esc(b.name)}</b></span>
         </span>
       </a>`;
     }).join('')}</div>
@@ -1037,7 +1046,6 @@ function viewHome(){
   const b = main ? getFighter(main.b) : null;
 
   return `
-  ${homeCardPreview(e)}
   ${main ? weekBrief(e,main,a,b) : freshnessBanner()}
 
   <div id="homeSortSection">${homeSortSection()}</div>

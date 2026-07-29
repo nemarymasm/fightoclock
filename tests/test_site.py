@@ -176,11 +176,13 @@ class FrontendContractTests(unittest.TestCase):
         ):
             self.assertNotIn(removed, self.html)
 
-    def test_home_shows_estimated_fight_times_before_weekly_analysis(self):
-        self.assertRegex(
-            self.html,
-            r"return `\s*\$\{homeCardPreview\(e\)\}\s*\$\{main \? weekBrief\(e,main,a,b\)",
-        )
+    def test_home_shows_large_fight_time_cards_after_main_event_comparison(self):
+        brief = self.html.split("function weekBrief", 1)[1].split("function homeCardPreview", 1)[0]
+        self.assertLess(brief.index('class="brief-grid"'), brief.index("${homeCardPreview(e)}"))
+        self.assertLess(brief.index("${homeCardPreview(e)}"), brief.index('class="crowd-panel"'))
+        self.assertEqual(self.html.count("${homeCardPreview(e)}"), 1)
+        self.assertIn("avatarBox(a,46)", self.html)
+        self.assertIn("border-radius:14px;background:#111113", self.html)
 
 
 if __name__ == "__main__":
