@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-28T11:30:00+09:00",
+  "generated_at": "2026-07-30T12:00:00+09:00",
   "events": {
     "ufc-fight-night-medi-vs-rodriguez": {
       "schedule": {
@@ -15,14 +15,36 @@
         "source": "https://www.ufc.com/event/ufc-fight-night-august-01-2026"
       },
       "market": {
-        "fighter_a_pct": 73,
-        "fighter_b_pct": 27,
-        "fighter_a_odds": "-330",
-        "fighter_b_odds": "+260",
-        "label": "UFC 표시 배당의 마진을 제거한 시장 예상",
-        "as_of": "7월 28일 오전 11:30 KST",
-        "range_note": "여러 북메이커 기준 메디치 72~76%, 로드리게스 24~28%",
-        "source": "https://www.ufc.com.br/event/ufc-fight-night-august-01-2026"
+        "fighter_a_pct": 76,
+        "fighter_b_pct": 24,
+        "fighter_a_odds": "-400",
+        "fighter_b_odds": "+300",
+        "main_card_odds": [
+          {
+            "fighter_a_odds": "-400",
+            "fighter_b_odds": "+300"
+          },
+          {
+            "fighter_a_odds": "+250",
+            "fighter_b_odds": "-330"
+          },
+          {
+            "fighter_a_odds": "-350",
+            "fighter_b_odds": "+275"
+          },
+          {
+            "fighter_a_odds": "+140",
+            "fighter_b_odds": "-170"
+          },
+          {
+            "fighter_a_odds": "-340",
+            "fighter_b_odds": "+270"
+          }
+        ],
+        "label": "15개 이상 북메이커의 공개 배당을 비교한 대표값",
+        "as_of": "7월 30일 낮 12:00 KST",
+        "range_note": "배당은 계속 움직일 수 있습니다.",
+        "source": "https://knockoutodds.com/events/142997-ufc-fight-night"
       },
       "fans": {
         "fighter_a_pct": 89,

@@ -111,6 +111,8 @@ class DataContractTests(unittest.TestCase):
         self.assertGreaterEqual(len(insight.get("fan_reactions", [])), 3)
         self.assertGreaterEqual(len(insight.get("fan_topics", [])), 3)
         self.assertTrue(insight["fans"].get("source", "").startswith("https://"))
+        self.assertEqual(len(insight["market"].get("main_card_odds", [])), 5)
+        self.assertTrue(all(row.get("fighter_a_odds") and row.get("fighter_b_odds") for row in insight["market"]["main_card_odds"]))
 
 
 class FrontendContractTests(unittest.TestCase):
@@ -136,7 +138,8 @@ class FrontendContractTests(unittest.TestCase):
         ):
             self.assertIn(required, self.html)
         self.assertIn("FIGHT O’CLOCK", self.html)
-        self.assertIn("<b>싸울 시간!</b>", self.html)
+        self.assertNotIn("싸울 시간!", self.html)
+        self.assertNotIn("UFC 한국어 가이드</", self.html)
         self.assertIn('class="clock-face"', self.html)
 
     def test_schedule_controls_are_buttons(self):
@@ -196,7 +199,14 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("document.querySelectorAll('[data-bout-target]')", self.html)
         self.assertIn('class="preview-center"', self.html)
         self.assertIn('class="preview-odds"', self.html)
-        self.assertIn("i===0&&market.fighter_a_odds", self.html)
+        self.assertIn("market.main_card_odds||[]", self.html)
+
+    def test_week_header_prioritizes_time_place_and_countdown(self):
+        self.assertIn('class="week-time-line"', self.html)
+        self.assertIn('class="week-place"', self.html)
+        self.assertNotIn('class="week-meta"', self.html)
+        self.assertIn(".week-d{display:grid;place-items:center", self.html)
+        self.assertIn("font-size:27px", self.html)
 
     def test_upcoming_events_are_visually_separate_from_this_week(self):
         self.assertIn('class="upcoming-section"', self.html)

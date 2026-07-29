@@ -84,8 +84,6 @@
   .brand .clock-face i{position:absolute;left:50%;top:50%;width:5px;height:5px;border-radius:50%;background:#fff;transform:translate(-50%,-50%)}
   .brand .name{min-width:0;line-height:1}
   .brand-title{display:block;font-size:20px;font-weight:950;letter-spacing:-.045em;white-space:nowrap}
-  .brand .name small{display:block;margin-top:5px;font-weight:750;font-size:11px;color:#d1d1d3;letter-spacing:.02em;white-space:nowrap}
-  .brand .name small b{color:#ff8589;font-weight:900}
   .topbar .actions{display:flex;gap:6px}
   .iconbtn{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;color:var(--muted);font-size:18px}
   .iconbtn:hover{background:var(--bg-2);color:var(--text)}
@@ -313,7 +311,6 @@
     .brand .mark{width:58px;height:58px}
     .brand .clock-face{inset:12px}
     .brand-title{font-size:27px}
-    .brand .name small{margin-top:6px;font-size:13px}
     .topbar .iconbtn{width:48px;height:48px;font-size:22px}
     .tabbar a{height:76px;font-size:15px}
   }
@@ -464,12 +461,12 @@
 
   /* ---- 홈: 이번 주 UFC 커뮤니티 브리핑 ---- */
   .week-brief{overflow:hidden;border-top:2px solid var(--red);background:#0d0d0f}
-  .week-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:20px 4px 17px}
-  .week-eyebrow{font-size:11px;font-weight:850;letter-spacing:.13em;color:#ff7d82;text-transform:uppercase}
-  .week-time{margin-top:7px;font-size:28px;font-weight:900;letter-spacing:-.045em;line-height:1.1}
-  .week-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
-  .week-meta span{padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:#c9c9c9;font-size:11px;font-weight:700}
-  .week-d{flex-shrink:0;margin-top:2px;color:#ff8d91;font-size:12px;font-weight:800}
+  .week-head{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;padding:25px 4px 23px}
+  .week-eyebrow{font-size:14px;font-weight:900;letter-spacing:.1em;color:#ff7d82;text-transform:uppercase}
+  .week-time-line{display:flex;align-items:center;gap:22px;margin-top:10px;min-width:0}
+  .week-time{font-size:34px;font-weight:950;letter-spacing:-.05em;line-height:1.08;white-space:nowrap}
+  .week-place{padding-left:22px;border-left:2px solid var(--red);font-size:21px;font-weight:850;letter-spacing:-.035em;line-height:1.2}
+  .week-d{display:grid;place-items:center;flex-shrink:0;width:82px;height:82px;border:2px solid var(--red);border-radius:50%;background:rgba(229,72,77,.09);color:#ff8d91;font-size:27px;font-weight:950;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
   .brief-grid{display:grid;grid-template-columns:1fr;min-width:0;border-top:1px solid var(--line)}
   .match-stage{min-width:0;padding:14px 8px 15px;background:
     radial-gradient(52% 70% at 23% 48%,rgba(229,72,77,.12),transparent 75%),
@@ -566,7 +563,7 @@
     .cover{padding-bottom:24px}.cover-faces{padding:18px 80px 0}
     .cover .cf-img{width:210px;height:244px;max-width:none;max-height:none}
     .cover-title{font-size:30px}.cover .cf-nm{font-size:24px}
-    .week-time{font-size:38px}
+    .week-time{font-size:40px}
     .brief-grid{grid-template-columns:minmax(0,1.12fr) minmax(330px,.88fr)}
     .match-stage{padding:22px 20px}
     .match-stage .cf-img{width:190px;height:230px;max-width:none;max-height:none}
@@ -583,8 +580,12 @@
     .source-desktop{display:inline}.source-mobile{display:none}
   }
   @media (max-width:779px){
-    .week-head{padding-top:16px}
-    .week-time{font-size:25px}
+    .week-head{gap:12px;padding:18px 4px}
+    .week-eyebrow{font-size:12px}
+    .week-time-line{display:block;margin-top:8px}
+    .week-time{font-size:27px;white-space:normal}
+    .week-place{margin-top:10px;padding:0;border-left:0;font-size:17px;color:#d7d7da}
+    .week-d{width:64px;height:64px;font-size:21px}
     .match-stage{padding-top:8px;padding-bottom:10px}
     .match-stage .cf-img{width:108px;height:134px;max-width:34vw;max-height:42vw}
     .match-stage .cf-vs{margin-top:47px}
@@ -628,8 +629,6 @@
     .brand .mark{width:44px;height:44px}
     .brand .clock-face{inset:9px}
     .brand-title{font-size:18px}
-    .brand .name small{font-size:10px}
-    .brand .name small span{display:none}
     .topbar .actions{gap:4px}
     .topbar .iconbtn{width:40px;height:40px}
   }
@@ -641,7 +640,7 @@
 <header class="topbar">
   <a class="brand" href="#home" aria-label="Fight O'Clock 홈">
     <span class="mark" aria-hidden="true"><span class="clock-face"><i></i></span></span>
-    <span class="name"><span class="brand-title">FIGHT O’CLOCK</span><small><b>싸울 시간!</b><span> · UFC 한국어 가이드</span></small></span>
+    <span class="name"><span class="brand-title">FIGHT O’CLOCK</span></span>
   </a>
   <div class="actions">
     <button id="reminderButton" class="iconbtn" type="button" aria-label="경기 알림과 캘린더" title="경기 알림">＋</button>
@@ -984,11 +983,10 @@ function weekBrief(e, main, a, b){
   <section class="week-brief" aria-labelledby="weekFightTitle">
     <div class="week-head">
       <div>
-        <div class="week-eyebrow">이번 주 UFC · ${esc(e.city||'')}</div>
-        <div class="week-time" id="weekFightTitle">${esc(schedule.label || eventTimeLabel(e))}</div>
-        <div class="week-meta">
-          <span>프릴림 ${esc(schedule.prelims||'시각 확인 중')}</span>
-          <span>전체 ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기</span>
+        <div class="week-eyebrow">이번 주 UFC</div>
+        <div class="week-time-line">
+          <div class="week-time" id="weekFightTitle">${esc(schedule.label || eventTimeLabel(e))}</div>
+          <div class="week-place">${esc(e.city||'장소 확인 중')}</div>
         </div>
       </div>
       <div class="week-d">${esc(dLabel(e.dateUtc))}</div>
@@ -1074,8 +1072,9 @@ function homeCardPreview(e){
       const a=getFighter(f.a), b=getFighter(f.b);
       const target=estimatedBoutTarget(e,i,fights.length);
       const targetIso=target?target.toISOString():'';
-      const aOdds=i===0&&market.fighter_a_odds?market.fighter_a_odds:'';
-      const bOdds=i===0&&market.fighter_b_odds?market.fighter_b_odds:'';
+      const fightOdds=(market.main_card_odds||[])[i]||{};
+      const aOdds=fightOdds.fighter_a_odds||(i===0?market.fighter_a_odds:'');
+      const bOdds=fightOdds.fighter_b_odds||(i===0?market.fighter_b_odds:'');
       return `<a class="preview-fight" href="#event/${e.id}">
         <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em${targetIso?` data-bout-target="${targetIso}"`:''}>${esc(remainingTimeLabel(target))}</em></span>
         <span class="preview-match">
