@@ -181,8 +181,12 @@ class FrontendContractTests(unittest.TestCase):
         self.assertLess(brief.index('class="brief-grid"'), brief.index("${homeCardPreview(e)}"))
         self.assertLess(brief.index("${homeCardPreview(e)}"), brief.index('class="crowd-panel"'))
         self.assertEqual(self.html.count("${homeCardPreview(e)}"), 1)
-        self.assertIn("avatarBox(a,46)", self.html)
-        self.assertIn("border-radius:14px;background:#111113", self.html)
+        self.assertIn("avatarBox(a,72)", self.html)
+        self.assertIn("card-preview-list{display:grid;grid-template-columns:1fr;gap:0}", self.html)
+        self.assertIn(".preview-fight:last-child{border-bottom:1px solid var(--line)", self.html)
+        self.assertIn("i===1?'코메인'", self.html)
+        self.assertIn("?'첫 경기'", self.html)
+        self.assertNotIn("grid-template-columns:repeat(2,minmax(0,1fr))", self.html)
 
 
 if __name__ == "__main__":

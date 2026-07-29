@@ -524,19 +524,25 @@
   .source-desktop{display:none}
 
   .card-preview{margin:0;padding:25px 28px 29px;border-top:1px solid var(--line-2)}
-  .card-preview-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+  .card-preview-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:14px}
   .card-preview-head h2{margin:0;font-size:22px;letter-spacing:-.035em}
-  .card-preview-list{display:grid;grid-template-columns:1fr;gap:10px}
-  .preview-fight{display:grid;grid-template-columns:82px minmax(0,1fr);align-items:center;gap:14px;min-height:82px;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:#111113}
-  .preview-fight:first-child{border-color:rgba(229,72,77,.5);background:linear-gradient(100deg,rgba(229,72,77,.09),#111113 38%)}
+  .card-preview-head p{margin:5px 0 0;color:#ff8589;font-size:11px;font-weight:800}
+  .card-preview-list{display:grid;grid-template-columns:1fr;gap:0}
+  .preview-fight{position:relative;display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;gap:18px;min-height:108px;padding:13px 20px;border:1px solid var(--line);border-bottom:0;border-radius:0;background:linear-gradient(90deg,rgba(229,72,77,.045),#111113 42%,#111113 58%,rgba(83,103,128,.055))}
+  .preview-fight:first-child{min-height:120px;border-color:rgba(229,72,77,.55);border-radius:16px 16px 0 0;background:linear-gradient(90deg,rgba(229,72,77,.12),#111113 42%,#111113 58%,rgba(83,103,128,.09))}
+  .preview-fight:last-child{border-bottom:1px solid var(--line);border-radius:0 0 16px 16px}
+  .preview-fight:not(:first-child)::before{content:"";position:absolute;top:-1px;left:20px;width:34px;height:1px;background:var(--red)}
   .preview-time{font-variant-numeric:tabular-nums}
-  .preview-time b{display:block;color:var(--text);font-size:16px;letter-spacing:-.02em}
-  .preview-time em{display:block;margin-top:3px;color:#ff8589;font-size:10px;font-style:normal;font-weight:800}
-  .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);align-items:center;gap:7px}
-  .preview-fighter{display:flex;align-items:center;gap:7px;min-width:0}
+  .preview-order{display:block;margin-bottom:6px;color:#ff8589;font-size:10px;font-style:normal;font-weight:900;letter-spacing:.02em}
+  .preview-time b{display:block;color:var(--text);font-size:18px;letter-spacing:-.025em}
+  .preview-time em{display:block;margin-top:3px;color:#8d8d92;font-size:10px;font-style:normal;font-weight:700}
+  .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);align-items:center;gap:10px}
+  .preview-fighter{display:flex;align-items:center;gap:12px;min-width:0}
   .preview-fighter.right{flex-direction:row-reverse;text-align:right}
-  .preview-fighter b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .preview-vs{text-align:center;color:#777;font-size:10px;font-weight:800}
+  .preview-fighter b{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-vs{text-align:center;color:#777;font-size:11px;font-weight:900}
+  .preview-fight:first-child .preview-time b{font-size:20px}
+  .preview-fight:first-child .preview-fighter b{font-size:18px}
 
   @media (min-width:780px){
     .cover{padding-bottom:24px}.cover-faces{padding:18px 80px 0}
@@ -558,10 +564,6 @@
     .watch-grid{grid-template-columns:repeat(3,1fr);gap:20px}
     .watch-item{border-top:0}
     .source-desktop{display:inline}.source-mobile{display:none}
-    .card-preview-list{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .preview-fight:first-child{grid-column:1 / -1;min-height:94px}
-    .preview-fight:first-child .preview-time b{font-size:18px}
-    .preview-fight:first-child .preview-fighter b{font-size:15px}
   }
   @media (max-width:779px){
     .week-head{padding-top:16px}
@@ -578,9 +580,20 @@
     .brief-actions .btn{max-width:none}
     .brief-actions .btn.ghost{display:none}
     .card-preview{padding:20px 4px 23px}
-    .preview-fight{grid-template-columns:72px minmax(0,1fr);gap:8px;min-height:76px;padding:11px 10px}
-    .preview-fighter .avatar-box{display:block}
-    .preview-fighter b{font-size:12px}
+    .card-preview-head{align-items:center}
+    .card-preview-head p{font-size:10px}
+    .preview-fight{grid-template-columns:68px minmax(0,1fr);gap:8px;min-height:84px;padding:9px}
+    .preview-fight:first-child{min-height:92px}
+    .preview-fight:not(:first-child)::before{left:9px;width:27px}
+    .preview-time b{font-size:15px}
+    .preview-order{margin-bottom:4px;font-size:9px}
+    .preview-match{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr);gap:4px}
+    .preview-fighter{gap:5px}
+    .preview-fighter .avatar-box{display:block;width:48px!important;height:48px!important;border-radius:10px!important}
+    .preview-fighter b{font-size:11px}
+    .preview-fight:first-child .preview-time b{font-size:16px}
+    .preview-fight:first-child .preview-fighter b{font-size:12px}
+    .preview-vs{font-size:9px}
   }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -1014,17 +1027,18 @@ function weekBrief(e, main, a, b){
 function homeCardPreview(e){
   const fights=(e.mainCard||[]).slice(0,5);
   if(!fights.length) return '';
+  const orderLabel=(i)=>i===0?'메인':i===1?'코메인':i===fights.length-1?'첫 경기':`${fights.length-i}번째 경기`;
   return `
   <section class="card-preview" id="fightTimes">
-    <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+    <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2><p>아래에서 시작해 메인이 마지막이에요</p></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
     <div class="card-preview-list">${fights.map((f,i)=>{
       const a=getFighter(f.a), b=getFighter(f.b);
       return `<a class="preview-fight" href="#event/${e.id}">
-        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em>예상</em></span>
+        <span class="preview-time"><span class="preview-order">${orderLabel(i)}</span><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em>예상 시각</em></span>
         <span class="preview-match">
-          <span class="preview-fighter">${avatarBox(a,46)}<b>${esc(a.name)}</b></span>
+          <span class="preview-fighter">${avatarBox(a,72)}<b>${esc(a.name)}</b></span>
           <span class="preview-vs">VS</span>
-          <span class="preview-fighter right">${avatarBox(b,46)}<b>${esc(b.name)}</b></span>
+          <span class="preview-fighter right">${avatarBox(b,72)}<b>${esc(b.name)}</b></span>
         </span>
       </a>`;
     }).join('')}</div>
