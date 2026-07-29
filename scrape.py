@@ -44,6 +44,7 @@ UFC_SLUG_OVERRIDES = {
     "Billy Ray Goff": "billy-goff",
     "Wesley Schultz": "wes-schultz",
     "Regina Tarin": "regina-malpica-rivera",
+    "Abusupiyan Magomedov": "abus-magomedov",
 }
 UFC_PHOTO_OVERRIDES = {
     # 프로필 페이지가 현재 soft-404지만 공식 이벤트 카드에 등록된 UFC 원본.
@@ -1485,6 +1486,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
         f for f in fighters.values()
         if (f.get("next") and f.get("avatar_provider") != "UFC")
         or (f.get("rank") != "랭킹 외" and not (f.get("avatar_url") or f.get("avatar")))
+        or (f.get("recent") and not (f.get("avatar_url") or f.get("avatar")))
     ]
     print(f"\n→ UFC 공식 선수 사진 수집: {len(official_targets)}명...")
     official_count = 0
@@ -1942,6 +1944,44 @@ def refresh_official_photos():
     print(f"✓ UFC 공식 프로필 {success}/{len(targets)}명 저장")
 
 
+def refresh_result_photos():
+    """최근 결과 메인카드 선수의 누락된 UFC 공식 사진을 보강한다."""
+    fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    events_data = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
+    fighters = fighters_data.get("fighters", [])
+    by_name = {fighter.get("name"): fighter for fighter in fighters}
+    result_names = {
+        name
+        for event in events_data.get("past_events", [])
+        for fight in event.get("main_card", [])
+        for name in (fight.get("fighter_a"), fight.get("fighter_b"))
+        if name
+    }
+    targets = [
+        by_name[name]
+        for name in sorted(result_names)
+        if name in by_name and not (by_name[name].get("avatar_url") or by_name[name].get("avatar"))
+    ]
+    print(f"→ 최근 결과 선수 사진 보강: {len(targets)}명")
+    success = 0
+    for i, fighter in enumerate(targets):
+        photos = fetch_ufc_profile_photos(fighter["name"])
+        if photos:
+            photos = cache_profile_photos(fighter["id"], photos)
+            fighter.update(photos)
+            success += 1
+        if (i + 1) % 10 == 0:
+            print(f"  {i+1}/{len(targets)} · 새 사진 {success}명")
+    now_iso = datetime.now(KST).isoformat(timespec="seconds")
+    fighters_data["generated_at"] = now_iso
+    fighters_data["result_photos_refreshed_at"] = now_iso
+    FIGHTERS_FILE.write_text(
+        json.dumps(fighters_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ 최근 결과 공식 사진 {success}/{len(targets)}명 저장")
+
+
 def refresh_ranked_profiles():
     """현재 랭커의 전체 프로 전적과 누락 사진을 기존 JSON에 보강한다."""
     fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
@@ -2094,6 +2134,8 @@ def refresh_rankings_and_profiles():
 if __name__ == "__main__":
     if "--rankings-only" in sys.argv:
         refresh_rankings_and_profiles()
+    elif "--result-photos" in sys.argv:
+        refresh_result_photos()
     elif "--ranked-profiles" in sys.argv:
         refresh_ranked_profiles()
     elif "--photos-only" in sys.argv:

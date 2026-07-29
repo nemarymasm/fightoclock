@@ -117,6 +117,23 @@ class DataContractTests(unittest.TestCase):
         self.assertFalse(missing, f"Recent results contain untranslated names: {missing}")
         self.assertEqual(fighters["Steve Erceg"]["name_ko"], "스티브 얼섹")
 
+    def test_recent_result_main_cards_have_fighter_photos(self):
+        events = load_json("events.json").get("past_events", [])
+        fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
+        names = {
+            name
+            for event in events
+            for fight in event.get("main_card", [])
+            for name in (fight.get("fighter_a"), fight.get("fighter_b"))
+            if name
+        }
+        missing = [
+            name
+            for name in names
+            if not (fighters.get(name, {}).get("avatar_url") or fighters.get(name, {}).get("avatar"))
+        ]
+        self.assertFalse(missing, f"Recent result fighters missing photos: {missing}")
+
     def test_recent_result_event_metadata_is_korean(self):
         events = {event["name"]: event for event in load_json("events.json").get("past_events", [])}
         usman = events["UFC Fight Night: du Plessis vs. Usman"]
@@ -351,6 +368,32 @@ class FrontendContractTests(unittest.TestCase):
             ".method-badge.split",
             ".result-card h3",
             ".result-meta-item b",
+        ):
+            self.assertIn(css_class, self.html)
+
+    def test_result_cards_separate_fight_night_numbered_and_show_faces(self):
+        results = self.html.split("function resultMethodMeta", 1)[1].split("function setRankingFilter", 1)[0]
+        for required in (
+            "function resultEventStyle(ev)",
+            "{kind:'numbered',format:'넘버링 · PPV'}",
+            "{kind:'fight-night',format:'주간 이벤트'}",
+            'class="result-card ${eventStyle.kind}"',
+            "${avatarBox(a,48)}",
+            "${avatarBox(b,48)}",
+            'href="#fighter/${esc(f.a)}"',
+            'href="#fighter/${esc(f.b)}"',
+        ):
+            self.assertIn(required, results)
+        self.assertIn("function fighterNameKey(name)", self.html)
+        self.assertIn("function fighterIdFromName(name)", self.html)
+        self.assertIn("const a = fighterIdFromName(m.fighter_a)", self.html)
+        self.assertIn("Object.values(FIGHTERS).find", self.html)
+        for css_class in (
+            ".result-card.fight-night",
+            ".result-card.numbered",
+            ".result-card.numbered .result-code",
+            ".result-fighter .avatar-box",
+            ".result-fighter.win .avatar-box",
         ):
             self.assertIn(css_class, self.html)
 

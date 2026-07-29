@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T01:21:18+09:00",
+  "generated_at": "2026-07-30T08:04:35+09:00",
   "source": "Wikipedia 랭킹·프로 MMA 전적 + UFC 공식 프로필 사진",
   "fighter_count": 351,
   "fighters": [
@@ -13000,7 +13000,13 @@
           "time": "0:30"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
+      "history_source": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov",
+      "avatar_url": "/data/avatars/generated/abusupiyan-magomedov-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/abusupiyan-magomedov-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/MAGOMEDOV_ABUS_L_06-27.png?itok=SLmzXjWp",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/MAGOMEDOV_ABUS_06-27.png",
+      "avatar_source": "https://www.ufc.com/athlete/abus-magomedov",
+      "avatar_provider": "UFC"
     },
     {
       "id": "nursulton-ruziboev",
@@ -50063,7 +50069,13 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/damian-rzepecki-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/damian-rzepecki-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/RZEPECKI_DAMIAN_R_07-25.png?itok=59CiDAGO",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/RZEPECKI_DAMIAN_07-25.png",
+      "avatar_source": "https://www.ufc.com/athlete/damian-rzepecki",
+      "avatar_provider": "UFC"
     },
     {
       "id": "tyrell-fortune",
@@ -50394,7 +50406,13 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/abubakar-vagaev-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/abubakar-vagaev-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/VAGAEV_ABUBAKAR_L_07-25.png?itok=RfC7eTGH",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/VAGAEV_ABUBAKAR_07-25.png",
+      "avatar_source": "https://www.ufc.com/athlete/abubakar-vagaev",
+      "avatar_provider": "UFC"
     },
     {
       "id": "saygid-izagakhmaev",
@@ -50423,7 +50441,13 @@
           "date": "2026-07-25"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/saygid-izagakhmaev-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/saygid-izagakhmaev-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/IZAGAKHMAEV_SAYGID_R_11-22.png?itok=z92QPUJE",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/IZAGAKHMAEV_SAYGID_11-22.png",
+      "avatar_source": "https://www.ufc.com/athlete/saygid-izagakhmaev",
+      "avatar_provider": "UFC"
     },
     {
       "id": "thomas-petersen",
@@ -51181,7 +51205,13 @@
           "date": "2026-07-18"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/mitch-ramirez-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/mitch-ramirez-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/RAMIREZ_MITCH_L_07-12.png?itok=yQWmeGob",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/RAMIREZ_MITCH_07-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/mitch-ramirez",
+      "avatar_provider": "UFC"
     },
     {
       "id": "tommy-mcmillen",
@@ -51210,7 +51240,13 @@
           "date": "2026-07-18"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/tommy-mcmillen-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/tommy-mcmillen-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/MCMILLEN_TOMMY_L_07-18.png?itok=VtUGfeVc",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/MCMILLEN_TOMMY_07-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/tommy-mcmillen",
+      "avatar_provider": "UFC"
     },
     {
       "id": "alberto-montes",
@@ -51239,7 +51275,13 @@
           "date": "2026-07-18"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/alberto-montes-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/alberto-montes-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/MONTES_ALBERTO_R_07-18.png?itok=irHwWB5d",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/MONTES_ALBERTO_07-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/alberto-montes",
+      "avatar_provider": "UFC"
     },
     {
       "id": "austin-bashi",
@@ -51676,7 +51718,13 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/king-green-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/king-green-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/GREEN_KING_L_07-11.png?itok=VfpfdCUg",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/GREEN_KING_07-11.png",
+      "avatar_source": "https://www.ufc.com/athlete/king-green",
+      "avatar_provider": "UFC"
     },
     {
       "id": "terrance-mckinney",
@@ -51705,7 +51753,13 @@
           "date": "2026-07-11"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/terrance-mckinney-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/terrance-mckinney-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/MCKINNEY_TERRANCE_L_03-28.png?itok=xOcN-WHP",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/MCKINNEY_TERRANCE_07-11.png",
+      "avatar_source": "https://www.ufc.com/athlete/terrance-mckinney",
+      "avatar_provider": "UFC"
     },
     {
       "id": "nikita-krylov",
@@ -52196,7 +52250,13 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/michel-pereira-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/michel-pereira-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/PEREIRA_MICHEL_L_08-23.png?itok=NBF0z1BU",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-02/PEREIRA_MICHEL_02-21.png",
+      "avatar_source": "https://www.ufc.com/athlete/michel-pereira",
+      "avatar_provider": "UFC"
     },
     {
       "id": "matheus-camilo",
@@ -52225,7 +52285,13 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/matheus-camilo-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/matheus-camilo-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/CAMILO_MATHEUS_R.png?itok=YPpivJ_i",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/CAMILO_MATHEUS_06-27.png",
+      "avatar_source": "https://www.ufc.com/athlete/matheus-camilo",
+      "avatar_provider": "UFC"
     },
     {
       "id": "nazim-sadykhov",
@@ -52254,7 +52320,13 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/nazim-sadykhov-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/nazim-sadykhov-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/SADYKHOV_NAZIM_L_12-06.png?itok=ccjzeBfj",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-12/SADYKHOV_NAZIM_12-06.png",
+      "avatar_source": "https://www.ufc.com/athlete/nazim-sadykhov",
+      "avatar_provider": "UFC"
     },
     {
       "id": "charles-johnson",
@@ -52283,7 +52355,13 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/charles-johnson-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/charles-johnson-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/JOHNSON_CHARLES_L_03-14.png?itok=KZuPZ1W7",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-03/JOHNSON_CHARLES_03-14.png",
+      "avatar_source": "https://www.ufc.com/athlete/charles-johnson",
+      "avatar_provider": "UFC"
     },
     {
       "id": "brunno-ferreira",
@@ -52312,7 +52390,13 @@
           "date": "2026-06-27"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/brunno-ferreira-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/brunno-ferreira-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/FERREIRA_BRUNNO_L_07-19.png?itok=rQPmgZMB",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/FERREIRA_BRUNNO_06-27.png",
+      "avatar_source": "https://www.ufc.com/athlete/brunno-ferreira",
+      "avatar_provider": "UFC"
     },
     {
       "id": "micha-oleksiejczuk",
@@ -52751,7 +52835,13 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/ion-cu-elaba-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/ion-cu-elaba-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/CUTELABA_ION_L_06-20.png?itok=UdDEIagu",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/CUTELABA_ION_06-20.png",
+      "avatar_source": "https://www.ufc.com/athlete/ion-cutelaba",
+      "avatar_provider": "UFC"
     },
     {
       "id": "christian-rodriguez",
@@ -52780,7 +52870,13 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/christian-rodriguez-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/christian-rodriguez-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/RODRIGUEZ_CHRISTIAN_L_03-29.png?itok=VQtmpVuP",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-03/RODRIGUEZ_CHRISTIAN_03-29.png",
+      "avatar_source": "https://www.ufc.com/athlete/christian-rodriguez",
+      "avatar_provider": "UFC"
     },
     {
       "id": "hyder-amil",
@@ -52809,7 +52905,13 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/hyder-amil-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/hyder-amil-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/AMIL_HYDER_L_06-20.png?itok=Y4pBvEwK",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/AMIL_HYDER_06-20.png",
+      "avatar_source": "https://www.ufc.com/athlete/hyder-amil",
+      "avatar_provider": "UFC"
     },
     {
       "id": "murtazali-magomedov",
@@ -52838,7 +52940,13 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/murtazali-magomedov-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/murtazali-magomedov-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/MAGOMEDOV_MURTAZLI_R_06-20.png?itok=wXAJELZD",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/MAGOMEDOV_MURTAZLI_06-20.png",
+      "avatar_source": "https://www.ufc.com/athlete/murtazali-magomedov",
+      "avatar_provider": "UFC"
     },
     {
       "id": "melsik-baghdasaryan",
@@ -52867,7 +52975,13 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/melsik-baghdasaryan-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/melsik-baghdasaryan-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/BAGHDASARYAN_MELSIK_L_06-20.png?itok=ffJEA1RN",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/BAGHDASARYAN_MELSIK_06-20.png",
+      "avatar_source": "https://www.ufc.com/athlete/melsik-baghdasaryan",
+      "avatar_provider": "UFC"
     },
     {
       "id": "vinicius-oliveira",
@@ -52927,7 +53041,13 @@
           "date": "2026-06-20"
         }
       ],
-      "next": null
+      "next": null,
+      "avatar_url": "/data/avatars/generated/andre-fili-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/andre-fili-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/FILI_ANDRE_L_03-14.png?itok=Zud7jwf3",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/FILI_ANDRE_06-20.png",
+      "avatar_source": "https://www.ufc.com/athlete/andre-fili",
+      "avatar_provider": "UFC"
     },
     {
       "id": "andr-lima",
@@ -58935,5 +59055,6 @@
     }
   ],
   "official_photos_refreshed_at": "2026-07-28T11:46:22+09:00",
-  "ranked_profiles_refreshed_at": "2026-07-30T01:21:18+09:00"
+  "ranked_profiles_refreshed_at": "2026-07-30T01:21:18+09:00",
+  "result_photos_refreshed_at": "2026-07-30T08:04:35+09:00"
 }

@@ -249,11 +249,24 @@
 
   /* ---------- 결과 리스트 ---------- */
   .result-card{overflow:hidden;background:var(--card);border:1px solid var(--line-2);border-radius:18px;margin-bottom:14px}
-  .result-head{padding:20px 20px 18px;background:
+  .result-head{position:relative;padding:20px 20px 18px;background:
     linear-gradient(115deg,rgba(229,72,77,.14),transparent 48%),
     linear-gradient(180deg,#171719,#111113);border-bottom:1px solid var(--line)}
+  .result-code-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
   .result-code{display:inline-flex;align-items:center;min-height:27px;padding:0 10px;border:1px solid rgba(255,112,117,.44);border-radius:99px;color:#ff8e92;font-size:13px;font-weight:900;letter-spacing:.02em}
+  .result-format{color:#aaaab0;font-size:12px;font-weight:850;letter-spacing:.08em}
   .result-card h3{max-width:28em;margin:10px 0 0;font-size:23px;font-weight:920;line-height:1.2;letter-spacing:-.045em}
+  .result-card.fight-night{border-left:2px solid var(--red)}
+  .result-card.fight-night .result-head::after{content:"";position:absolute;right:-38px;top:-82px;width:190px;height:190px;border:1px solid rgba(229,72,77,.12);border-radius:50%;box-shadow:0 0 0 22px rgba(229,72,77,.025)}
+  .result-card.numbered{border-color:rgba(211,166,69,.42);box-shadow:0 10px 38px rgba(0,0,0,.18)}
+  .result-card.numbered .result-head{padding-top:22px;background:
+    linear-gradient(110deg,rgba(211,166,69,.2),transparent 48%),
+    repeating-linear-gradient(125deg,transparent 0 24px,rgba(255,255,255,.018) 24px 25px),
+    linear-gradient(180deg,#181713,#101011)}
+  .result-card.numbered .result-code{min-height:40px;padding:0 14px;border:0;border-radius:8px;background:linear-gradient(135deg,#f0ce76,#bd8429);color:#15120c;font-size:20px;letter-spacing:-.025em;box-shadow:0 7px 22px rgba(187,128,37,.18)}
+  .result-card.numbered .result-format{color:#e2c173}
+  .result-card.numbered h3{margin-top:13px;font-size:27px}
+  .result-card.numbered .result-meta-item{border-color:rgba(211,166,69,.22);background:rgba(14,13,10,.7)}
   .result-meta{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px;margin-top:17px}
   .result-meta-item{min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(8,8,9,.54)}
   .result-meta-item span{display:block;color:#aaaab0;font-size:12px;font-weight:850;letter-spacing:.08em}
@@ -261,11 +274,15 @@
   .result-fights{padding:0 18px}
   .result-fight{display:grid;grid-template-columns:minmax(0,1fr) 154px minmax(0,1fr);gap:12px;align-items:center;min-height:76px;padding:12px 0;border-top:1px solid var(--line)}
   .result-fight:first-child{border-top:0}
-  .result-fight .nm{font-size:16px;font-weight:800;line-height:1.3}
-  .result-fight .nm.win{color:#7ee2a4}
-  .result-fight .nm.lose{color:#b5b5b8}
+  .result-fighter{display:flex;align-items:center;gap:10px;min-width:0}
+  .result-fighter.right{justify-content:flex-end;text-align:right}
+  .result-fighter .avatar-box{width:48px!important;height:48px!important;border-radius:12px!important}
+  .result-fight .nm{min-width:0;font-size:16px;font-weight:800;line-height:1.3}
+  .result-fighter.win .nm{color:#7ee2a4}
+  .result-fighter.lose .nm{color:#b5b5b8}
+  .result-fighter.win .avatar-box{border-color:rgba(91,214,145,.48);box-shadow:0 0 0 2px rgba(91,214,145,.06)}
+  .winner-mark{color:#72df9e;font-size:13px;font-weight:950}
   .result-fight .vs-mid{display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center}
-  .result-fight.right{text-align:right}
   .method-badge{display:inline-flex;align-items:center;justify-content:center;min-width:96px;min-height:30px;padding:4px 11px;border:1px solid transparent;border-radius:99px;font-size:13px;font-weight:950;letter-spacing:.015em}
   .method-badge.ko{color:#ffb0b3;background:rgba(229,72,77,.17);border-color:rgba(255,105,110,.43)}
   .method-badge.tko{color:#ffc080;background:rgba(226,118,32,.16);border-color:rgba(244,143,61,.43)}
@@ -617,12 +634,17 @@
   @media (max-width:779px){
     .result-head{padding:18px 15px 16px}
     .result-card h3{font-size:21px}
+    .result-card.numbered .result-head{padding-top:19px}
+    .result-card.numbered .result-code{min-height:36px;font-size:18px}
+    .result-card.numbered h3{font-size:24px}
     .result-meta{grid-template-columns:1fr;gap:8px;margin-top:14px}
     .result-meta-item{padding:11px 12px}
     .result-meta-item b{font-size:15px}
     .result-fights{padding:0 14px}
     .result-fight{grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr);gap:7px;min-height:82px;padding:13px 0}
     .result-fight .nm{font-size:15px}
+    .result-fighter{gap:7px}
+    .result-fighter .avatar-box{width:42px!important;height:42px!important;border-radius:10px!important}
     .method-badge{min-width:88px;padding-inline:8px;font-size:12px}
     .method-detail{font-size:12px}
     .result-actions{padding:3px 14px 15px}
@@ -677,6 +699,9 @@
   @media (max-width:420px){
     .result-fight{grid-template-columns:minmax(0,1fr) 96px minmax(0,1fr);gap:5px}
     .result-fight .nm{font-size:14px}
+    .result-fighter,.result-fighter.right{flex-direction:column;gap:5px;text-align:center}
+    .result-fighter.right .avatar-box{order:-1}
+    .result-fighter .avatar-box{width:40px!important;height:40px!important}
     .method-badge{min-width:82px;font-size:11px}
     .topbar{padding:14px 12px}
     .brand{gap:10px}
@@ -1275,6 +1300,12 @@ function resultMethodMeta(way){
   else if(/\bNC\b|노\s*콘테스트|무효/i.test(label)) kind='nc';
   return {label,detail,kind};
 }
+function resultEventStyle(ev){
+  const code=eventCodeKo(ev.code);
+  if(/\b\d{3}\b/.test(code)) return {kind:'numbered',format:'넘버링 · PPV'};
+  if(/파이트 나이트|fight night/i.test(code)) return {kind:'fight-night',format:'주간 이벤트'};
+  return {kind:'special',format:'스페셜 이벤트'};
+}
 function viewResults(){
   const list = pastEvents();
   return `
@@ -1283,10 +1314,14 @@ function viewResults(){
   <h2 class="section-title"><span class="bar"></span>최근 결과 · ${list.length}개</h2>
   ${list.length?list.map(ev=>{
     const place=[ev.venue,ev.city].filter(Boolean).join(' · ');
+    const eventStyle=resultEventStyle(ev);
     return `
-    <div class="result-card">
+    <div class="result-card ${eventStyle.kind}">
       <div class="result-head">
-        <div class="result-code">${esc(eventCodeKo(ev.code))}</div>
+        <div class="result-code-row">
+          <div class="result-code">${esc(eventCodeKo(ev.code))}</div>
+          <div class="result-format">${esc(eventStyle.format)}</div>
+        </div>
         <h3>${esc(ev.titleKo||ev.title)}</h3>
         <div class="result-meta">
           <div class="result-meta-item">
@@ -1306,12 +1341,18 @@ function viewResults(){
         const method=resultMethodMeta(f.way);
         return `
         <div class="result-fight">
-          <div class="${aWin?'nm win':'nm lose'}">${aWin?'✓ ':''}${esc(a.name)}</div>
+          <a class="result-fighter ${aWin?'win':'lose'}" href="#fighter/${esc(f.a)}">
+            ${avatarBox(a,48)}
+            <span class="nm">${aWin?'<span class="winner-mark">✓</span> ':''}${esc(a.name)}</span>
+          </a>
           <div class="vs-mid">
             <span class="method-badge ${method.kind}">${esc(method.label)}</span>
             ${method.detail?`<span class="method-detail">${esc(method.detail)}</span>`:''}
           </div>
-          <div class="${bWin?'nm win':'nm lose'} right" style="text-align:right">${bWin?'✓ ':''}${esc(b.name)}</div>
+          <a class="result-fighter right ${bWin?'win':'lose'}" href="#fighter/${esc(f.b)}">
+            <span class="nm">${bWin?'<span class="winner-mark">✓</span> ':''}${esc(b.name)}</span>
+            ${avatarBox(b,48)}
+          </a>
         </div>`;
       }).join('')}
       </div>
@@ -2045,9 +2086,21 @@ function resultMethodKo(method){
 }
 
 /* 실 이벤트 JSON → 내부 fight/event shape */
+function fighterNameKey(name){
+  return (name||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9가-힣]/g,'');
+}
+function fighterIdFromName(name){
+  const direct=slugify(name);
+  if(FIGHTERS[direct]||REAL_FIGHTERS[direct]) return direct;
+  const folded=slugify((name||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,''));
+  if(FIGHTERS[folded]||REAL_FIGHTERS[folded]) return folded;
+  const key=fighterNameKey(name);
+  const match=Object.values(FIGHTERS).find(f=>fighterNameKey(f.en||f.name)===key);
+  return match ? match.id : direct;
+}
 function transformFight(m){
-  const a = slugify(m.fighter_a);
-  const b = slugify(m.fighter_b);
+  const a = fighterIdFromName(m.fighter_a);
+  const b = fighterIdFromName(m.fighter_b);
   const winner = m.winner==='a' ? a : (m.winner==='b' ? b : null);
   let way = cleanExternalText(m.method_ko || resultMethodKo(m.method || ''));
   if(m.round) way += (way?' · ':'') + m.round + '라운드' + (m.time ? ' ' + m.time : '');
