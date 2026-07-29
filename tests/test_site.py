@@ -156,9 +156,7 @@ class FrontendContractTests(unittest.TestCase):
             "댓글에서 많이 나온 주제",
             "볼 것 세 가지",
             "메인카드 예상 시각",
-            "시장 배당",
             "분석 모델",
-            "출처와 계산 기준",
             "data/insights.json",
             'class="crowd-panel"',
             'class="signal-grid"',
@@ -173,6 +171,8 @@ class FrontendContractTests(unittest.TestCase):
             'class="panel-source"',
             'class="poll-note"',
             'class="watch-sub"',
+            "출처와 계산 기준",
+            'class="brief-sources"',
         ):
             self.assertNotIn(removed, self.html)
 
@@ -191,6 +191,15 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("data-bout-target=", self.html)
         self.assertIn("width:46px;height:46px", self.html)
         self.assertIn("document.querySelectorAll('[data-bout-target]')", self.html)
+        self.assertIn('class="preview-center"', self.html)
+        self.assertIn('class="preview-odds"', self.html)
+        self.assertIn("i===0&&market.fighter_a_odds", self.html)
+
+    def test_upcoming_events_are_visually_separate_from_this_week(self):
+        self.assertIn('class="upcoming-section"', self.html)
+        self.assertIn("별도 대회 · Up next", self.html)
+        self.assertIn("이번 주 대회 이후에 열리는 다른 대회입니다.", self.html)
+        self.assertIn(".upcoming-section{margin-top:64px", self.html)
 
 
 if __name__ == "__main__":

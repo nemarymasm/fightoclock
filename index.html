@@ -514,13 +514,6 @@
   .watch-item p{margin:5px 0 0;color:#b8b8b8;font-size:13px;line-height:1.55}
   .brief-actions{display:flex;gap:9px;padding:0 4px 22px}
   .brief-actions .btn{max-width:240px}
-  .brief-sources{border-top:1px solid var(--line)}
-  .brief-sources summary{list-style:none;display:flex;align-items:center;justify-content:space-between;min-height:48px;padding:0 4px;color:#aaa;font-size:12px;font-weight:700;cursor:pointer}
-  .brief-sources summary::-webkit-details-marker{display:none}
-  .brief-sources summary::after{content:"＋";color:#888;font-size:16px;font-weight:500}
-  .brief-sources[open] summary::after{content:"－"}
-  .source-list{display:grid;gap:10px;padding:2px 4px 18px;color:#aaa;font-size:12px;line-height:1.5}
-  .source-list a{color:#c8c8c8;text-decoration:underline;text-underline-offset:3px}
   .source-desktop{display:none}
 
   .card-preview{margin:0;padding:25px 28px 29px;border-top:1px solid var(--line-2)}
@@ -533,16 +526,29 @@
   .preview-fight:last-child{border-bottom:1px solid var(--line);border-radius:0 0 16px 16px}
   .preview-fight:not(:first-child)::before{content:"";position:absolute;top:-1px;left:20px;width:34px;height:1px;background:var(--red)}
   .preview-time{font-variant-numeric:tabular-nums}
-  .preview-order{display:block;margin-bottom:6px;color:#ff8589;font-size:10px;font-style:normal;font-weight:900;letter-spacing:.02em}
   .preview-time b{display:block;color:var(--text);font-size:18px;letter-spacing:-.025em}
   .preview-time em{display:block;margin-top:5px;color:#ff8589;font-size:11px;font-style:normal;font-weight:800;white-space:nowrap}
-  .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 46px minmax(0,1fr);align-items:center;gap:13px}
+  .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 82px minmax(0,1fr);align-items:center;gap:13px}
   .preview-fighter{display:flex;align-items:center;gap:12px;min-width:0}
   .preview-fighter.right{flex-direction:row-reverse;text-align:right}
-  .preview-fighter b{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-fighter-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+  .preview-fighter.right .preview-fighter-copy{align-items:flex-end}
+  .preview-fighter-copy b{max-width:100%;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-odds{display:block;margin-top:6px;color:#ff8589;font-size:12px;font-weight:850;font-style:normal;font-variant-numeric:tabular-nums}
+  .preview-center{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+  .preview-order{display:block;color:#ff8589;font-size:14px;line-height:1;font-weight:950;letter-spacing:-.025em;white-space:nowrap}
   .preview-vs{display:grid;place-items:center;width:46px;height:46px;border:1px solid #4b4b50;border-radius:50%;background:#f1f1f2;color:#111114;font-size:14px;font-weight:1000;letter-spacing:-.04em;box-shadow:0 0 0 5px rgba(255,255,255,.025)}
   .preview-fight:first-child .preview-time b{font-size:20px}
-  .preview-fight:first-child .preview-fighter b{font-size:18px}
+  .preview-fight:first-child .preview-fighter-copy b{font-size:18px}
+  .preview-fight:first-child .preview-order{font-size:17px}
+
+  .upcoming-section{margin-top:64px;padding:28px;border:1px solid #303034;border-top:4px solid var(--red);border-radius:20px;background:#151517}
+  .upcoming-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+  .upcoming-kicker{margin-bottom:7px;color:#ff7d82;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+  .upcoming-title{font-size:26px;font-weight:900;letter-spacing:-.04em}
+  .upcoming-copy{margin-top:5px;color:#b4b4b8;font-size:12px}
+  .upcoming-sort{display:flex;align-items:center;gap:6px;flex-shrink:0}
+  .upcoming-sort-separator{color:#777;font-size:13px}
 
   @media (min-width:780px){
     .cover{padding-bottom:24px}.cover-faces{padding:18px 80px 0}
@@ -558,9 +564,8 @@
     .crowd-panel{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
     .fan-pick,.fan-talk{padding:25px 28px}
     .fan-talk{border-top:0;border-left:1px solid var(--line)}
-    .signal-grid{grid-template-columns:repeat(2,1fr)}
-    .signal-card{padding:18px 22px;border-bottom:0;border-right:1px solid var(--line)}
-    .signal-card:last-child{border-right:0}
+    .signal-grid{grid-template-columns:1fr}
+    .signal-card{padding:18px 22px;border-bottom:0}
     .watch-grid{grid-template-columns:repeat(3,1fr);gap:20px}
     .watch-item{border-top:0}
     .source-desktop{display:inline}.source-mobile{display:none}
@@ -582,18 +587,25 @@
     .card-preview{padding:20px 4px 23px}
     .card-preview-head{align-items:center}
     .card-preview-head p{font-size:10px}
-    .preview-fight{grid-template-columns:68px minmax(0,1fr);gap:8px;min-height:84px;padding:9px}
-    .preview-fight:first-child{min-height:92px}
+    .preview-fight{grid-template-columns:66px minmax(0,1fr);gap:7px;min-height:112px;padding:10px 8px}
+    .preview-fight:first-child{min-height:120px}
     .preview-fight:not(:first-child)::before{left:9px;width:27px}
     .preview-time b{font-size:15px}
-    .preview-order{margin-bottom:4px;font-size:9px}
-    .preview-match{grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);gap:5px}
-    .preview-fighter{gap:5px}
-    .preview-fighter .avatar-box{display:block;width:48px!important;height:48px!important;border-radius:10px!important}
-    .preview-fighter b{font-size:11px}
+    .preview-match{grid-template-columns:minmax(0,1fr) 50px minmax(0,1fr);gap:5px}
+    .preview-fighter,.preview-fighter.right{flex-direction:column;gap:4px;text-align:center}
+    .preview-fighter .avatar-box{display:block;width:52px!important;height:52px!important;border-radius:10px!important}
+    .preview-fighter-copy,.preview-fighter.right .preview-fighter-copy{width:100%;align-items:center}
+    .preview-fighter-copy b{font-size:12px}
+    .preview-odds{margin-top:3px;font-size:9px}
+    .preview-center{gap:5px}
+    .preview-order{font-size:11px}
     .preview-fight:first-child .preview-time b{font-size:16px}
-    .preview-fight:first-child .preview-fighter b{font-size:12px}
+    .preview-fight:first-child .preview-fighter-copy b{font-size:13px}
+    .preview-fight:first-child .preview-order{font-size:12px}
     .preview-vs{width:34px;height:34px;font-size:11px;box-shadow:0 0 0 3px rgba(255,255,255,.025)}
+    .upcoming-section{margin-top:48px;padding:22px 14px;border-radius:16px}
+    .upcoming-head{align-items:flex-start;margin-bottom:16px}
+    .upcoming-title{font-size:23px}
   }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -852,19 +864,16 @@ function homeSortSection(){
     return `<button onclick="setHomeSort('${mode}')" style="padding:6px 13px;border-radius:20px;font-size:12px;font-weight:700;transition:.14s;
       border:1px solid ${on?'var(--red)':'var(--line-2)'};background:${on?'var(--red)':'transparent'};color:${on?'#fff':'var(--dim)'}">${label}</button>`;};
   return `
-  <div style="height:56px"></div>
-  <div style="border-top:1px solid rgba(255,255,255,.16);padding-top:24px">
-    <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:8px">다음 대회 · Up next</div>
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap">
+  <section class="upcoming-section" aria-labelledby="upcomingTitle">
+    <header class="upcoming-head">
       <div>
-        <div style="font-size:21px;font-weight:800;letter-spacing:-.02em">다가오는 UFC</div>
-        <div style="font-size:12px;color:var(--muted);margin-top:3px">현재 발표된 대회를 시간순으로 정리했습니다.</div>
+        <div class="upcoming-kicker">별도 대회 · Up next</div>
+        <div class="upcoming-title" id="upcomingTitle">다가오는 UFC</div>
+        <div class="upcoming-copy">이번 주 대회 이후에 열리는 다른 대회입니다.</div>
       </div>
-      <span style="display:flex;align-items:center;gap:6px;flex-shrink:0">${seg('time','시간순')}<span style="color:var(--dim);font-size:13px">⇄</span>${seg('pop','인기순')}</span>
-    </div>
-  </div>
-  <div style="height:16px"></div>
-  <div class="bigcards">
+      <span class="upcoming-sort">${seg('time','시간순')}<span class="upcoming-sort-separator">⇄</span>${seg('pop','인기순')}</span>
+    </header>
+    <div class="bigcards">
     ${rest.slice(0,6).map((ev,i)=>{
       const m = ev.mainCard?.[0];
       const fa = m?getFighter(m.a):null, fb = m?getFighter(m.b):null;
@@ -881,7 +890,8 @@ function homeSortSection(){
         <div class="mcard-sub">${ev.titleKo||ev.title} · ${ev.city}</div>
       </a>`;
     }).join('')}
-  </div>`;
+    </div>
+  </section>`;
 }
 
 function insightFor(e){
@@ -1012,11 +1022,7 @@ function weekBrief(e, main, a, b){
         <div class="crowd-list">${crowdItems || '<div class="crowd-voice"><span class="crowd-index">—</span><div><b>아직 정리된 반응이 없습니다</b><p>원문 댓글이 모이면 이곳에 표시됩니다.</p></div></div>'}</div>
       </div>
     </section>
-    <section class="signal-grid" aria-label="시장과 모델 정보">
-      <div class="signal-card">
-        <span>시장 배당</span>
-        <b>${esc(a.name)} ${esc(market.fighter_a_odds||'-')} · ${esc(b.name)} ${esc(market.fighter_b_odds||'-')}</b>
-      </div>
+    <section class="signal-grid" aria-label="분석 모델 정보">
       <div class="signal-card">
         <span>분석 모델</span>
         <b>${models.fighter_a_low&&models.fighter_a_high?`${esc(a.name)} ${models.fighter_a_low}–${models.fighter_a_high}%`:'자료 확인 중'}</b>
@@ -1030,22 +1036,14 @@ function weekBrief(e, main, a, b){
       <a class="btn primary" href="#event/${e.id}">전체 대진 한눈에 보기</a>
       <button class="btn ghost" type="button" onclick="downloadCalendar('${e.id}')">캘린더 저장</button>
     </div>
-    <details class="brief-sources">
-      <summary>출처와 계산 기준</summary>
-      <div class="source-list">
-        <span>${fans.source?sourceLink(fans.source,`${fans.label||'팬 투표'} 원문`):'팬 투표 출처 확인 중'} · ${opinionQuotes.length?'번역된 원문 댓글':'댓글 주제는 원문 토론 요약이며 직접 인용이 아닙니다.'}</span>
-        <span>${market.source?sourceLink(market.source,'시장 배당 출처'):'배당 출처 확인 중'} · ${esc(market.as_of||'업데이트 시각 확인 중')}</span>
-        <span>${models.source?sourceLink(models.source,'분석 모델 출처'):'모델 출처 확인 중'} · 팬 픽·시장 배당과 별도</span>
-        <span>${esc(schedule.note||'')} ${intel.responsible_note?`· ${esc(intel.responsible_note)}`:''}</span>
-      </div>
-    </details>
   </section>`;
 }
 
 function homeCardPreview(e){
   const fights=(e.mainCard||[]).slice(0,5);
   if(!fights.length) return '';
-  const orderLabel=(i)=>i===0?'메인':i===1?'코메인':i===fights.length-1?'첫 경기':`${fights.length-i}번째 경기`;
+  const market=insightFor(e).market||e.prediction||{};
+  const orderLabel=(i)=>i===0?'메인':i===1?'코메인':i===fights.length-1?'첫 경기':`${fights.length-i}경기`;
   return `
   <section class="card-preview" id="fightTimes">
     <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2><p>아래에서 시작해 메인이 마지막이에요</p></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
@@ -1053,12 +1051,14 @@ function homeCardPreview(e){
       const a=getFighter(f.a), b=getFighter(f.b);
       const target=estimatedBoutTarget(e,i,fights.length);
       const targetIso=target?target.toISOString():'';
+      const aOdds=i===0&&market.fighter_a_odds?market.fighter_a_odds:'';
+      const bOdds=i===0&&market.fighter_b_odds?market.fighter_b_odds:'';
       return `<a class="preview-fight" href="#event/${e.id}">
-        <span class="preview-time"><span class="preview-order">${orderLabel(i)}</span><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em${targetIso?` data-bout-target="${targetIso}"`:''}>${esc(remainingTimeLabel(target))}</em></span>
+        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em${targetIso?` data-bout-target="${targetIso}"`:''}>${esc(remainingTimeLabel(target))}</em></span>
         <span class="preview-match">
-          <span class="preview-fighter">${avatarBox(a,72)}<b>${esc(a.name)}</b></span>
-          <span class="preview-vs">VS</span>
-          <span class="preview-fighter right">${avatarBox(b,72)}<b>${esc(b.name)}</b></span>
+          <span class="preview-fighter">${avatarBox(a,72)}<span class="preview-fighter-copy"><b>${esc(a.name)}</b>${aOdds?`<em class="preview-odds">배당 ${esc(aOdds)}</em>`:''}</span></span>
+          <span class="preview-center"><strong class="preview-order">${orderLabel(i)}</strong><span class="preview-vs">VS</span></span>
+          <span class="preview-fighter right">${avatarBox(b,72)}<span class="preview-fighter-copy"><b>${esc(b.name)}</b>${bOdds?`<em class="preview-odds">배당 ${esc(bOdds)}</em>`:''}</span></span>
         </span>
       </a>`;
     }).join('')}</div>
