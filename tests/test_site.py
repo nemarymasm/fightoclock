@@ -135,6 +135,9 @@ class FrontendContractTests(unittest.TestCase):
             'id="appDialog"',
         ):
             self.assertIn(required, self.html)
+        self.assertIn("FIGHT O’CLOCK", self.html)
+        self.assertIn("<b>싸울 시간!</b>", self.html)
+        self.assertIn('class="clock-face"', self.html)
 
     def test_schedule_controls_are_buttons(self):
         self.assertIn('role="group" aria-label="일정 필터"', self.html)
