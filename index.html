@@ -431,7 +431,6 @@
     background:var(--fighter-accent,#e5484d);opacity:.16;filter:blur(1px);z-index:-1}
   .avatar-fallback::after{content:"";position:absolute;left:10%;top:12%;width:28%;height:2px;background:var(--fighter-accent,#e5484d);opacity:.85}
   .avatar-fallback span{font-weight:900;font-size:clamp(13px,30%,34px);letter-spacing:-.04em;color:#f4f3ef}
-  .name-original{display:block;margin-top:3px;color:var(--muted);font-size:10px;font-weight:550;letter-spacing:.01em}
   .photo-credit{display:inline-flex;margin-top:8px;color:var(--dim);font-size:10px;text-decoration:underline;text-underline-offset:3px}
 
   .cover{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:0 0 20px;overflow:hidden}
@@ -468,8 +467,7 @@
   /* ---- 홈: 이번 주 UFC 커뮤니티 브리핑 ---- */
   .week-brief{overflow:hidden;border-top:2px solid var(--red);background:#0d0d0f}
   .week-head{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;padding:25px 4px 23px}
-  .week-eyebrow{font-size:14px;font-weight:900;letter-spacing:.1em;color:#ff7d82;text-transform:uppercase}
-  .week-time-line{display:flex;align-items:center;gap:22px;margin-top:10px;min-width:0}
+  .week-time-line{display:flex;align-items:center;gap:22px;min-width:0}
   .week-time{font-size:34px;font-weight:950;letter-spacing:-.05em;line-height:1.08;white-space:nowrap}
   .week-place{padding-left:22px;border-left:2px solid var(--red);font-size:21px;font-weight:850;letter-spacing:-.035em;line-height:1.2}
   .week-d{display:grid;place-items:center;flex-shrink:0;width:82px;height:82px;border:2px solid var(--red);border-radius:50%;background:rgba(229,72,77,.09);color:#ff8d91;font-size:27px;font-weight:950;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
@@ -483,18 +481,17 @@
   .match-stage .cf-img>div{width:100%!important;height:100%!important;border:0!important;border-radius:0!important;background:transparent}
   .match-stage .cf-img>.ufc-full{overflow:visible}
   .match-stage .cf-img>.ufc-full img{padding:0;filter:drop-shadow(0 14px 16px rgba(0,0,0,.5)) saturate(.96) contrast(1.04)}
-  .match-stage .cf-vs{margin-top:58px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.08em}
+  .match-stage .cf-vs{display:grid;place-items:center;width:46px;height:46px;margin-top:58px;border-radius:50%;background:#f1f1f2;color:#111114;font-size:14px;font-weight:950;letter-spacing:-.03em}
   .match-stage .cf-nm{font-size:18px;font-weight:880;letter-spacing:-.04em;line-height:1.08}
   .match-stage .cf-en{display:none}
-  .match-stage .cf-rec{font-size:11px;color:var(--muted)}
+  .match-stage .cf-rec{font-size:15px;color:#e3e3e5;font-weight:800}
   .brief-intel{padding:19px 4px 21px;border-top:1px solid var(--line)}
-  .brief-kicker{margin-bottom:9px;color:#ff8589;font-size:10px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
   .brief-thesis{max-width:29em;font-size:21px;line-height:1.45;font-weight:820;letter-spacing:-.035em}
   .main-eta{position:relative;width:100%;margin-top:20px;padding:15px 44px 15px 16px;border:1px solid var(--line);border-radius:13px;background:#111113;text-align:left;cursor:pointer}
   .main-eta::after{content:"↓";position:absolute;right:16px;top:50%;translate:0 -50%;color:#ff8589;font-size:15px;font-weight:850}
-  .main-eta span{display:block;color:#c5c5c5;font-size:11px;font-weight:750}
-  .main-eta b{display:block;margin-top:4px;font-size:20px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-  .eta-note{margin-top:6px;color:#a9a9a9;font-size:11px;line-height:1.45}
+  .main-eta span{display:block;color:#f1f1f2;font-size:15px;font-weight:850}
+  .main-eta b{display:block;margin-top:6px;font-size:25px;letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+  .eta-note{margin-top:9px;color:#f1bd61;font-size:14px;font-weight:750;line-height:1.5}
 
   .crowd-panel{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line-2)}
   .fan-pick,.fan-talk{min-width:0;padding:22px 4px}
@@ -540,6 +537,7 @@
   .preview-fight:first-child{min-height:120px;border-color:rgba(229,72,77,.55);border-radius:16px 16px 0 0;background:linear-gradient(90deg,rgba(229,72,77,.12),#111113 42%,#111113 58%,rgba(83,103,128,.09))}
   .preview-fight:last-child{border-bottom:1px solid var(--line);border-radius:0 0 16px 16px}
   .preview-fight:not(:first-child)::before{content:"";position:absolute;top:-1px;left:20px;width:34px;height:1px;background:var(--red)}
+  .preview-fight.done{border-color:rgba(55,200,113,.42);background:linear-gradient(90deg,rgba(55,200,113,.07),#111113 45%)}
   .preview-time{font-variant-numeric:tabular-nums}
   .preview-time b{display:block;color:var(--text);font-size:18px;letter-spacing:-.025em}
   .preview-time em{display:block;margin-top:5px;color:#ff8589;font-size:11px;font-style:normal;font-weight:800;white-space:nowrap}
@@ -549,13 +547,15 @@
   .preview-fighter-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
   .preview-fighter.right .preview-fighter-copy{align-items:flex-end}
   .preview-fighter-copy b{max-width:100%;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-fighter.is-winner .preview-fighter-copy b{color:#7ee2a4}
   .preview-odds{display:block;margin-top:6px;color:#ff8589;font-size:12px;font-weight:850;font-style:normal;font-variant-numeric:tabular-nums}
   .preview-center{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
-  .preview-order{display:block;color:#ff8589;font-size:14px;line-height:1;font-weight:950;letter-spacing:-.025em;white-space:nowrap}
-  .preview-vs{display:grid;place-items:center;width:46px;height:46px;border:1px solid #4b4b50;border-radius:50%;background:#f1f1f2;color:#111114;font-size:14px;font-weight:1000;letter-spacing:-.04em;box-shadow:0 0 0 5px rgba(255,255,255,.025)}
+  .preview-order{display:block;color:#ff8589;font-size:16px;line-height:1;font-weight:950;letter-spacing:-.025em;white-space:nowrap}
+  .preview-vs{display:grid;place-items:center;width:50px;height:50px;border:1px solid #4b4b50;border-radius:50%;background:#f1f1f2;color:#111114;font-size:16px;font-weight:1000;letter-spacing:-.04em;box-shadow:0 0 0 5px rgba(255,255,255,.025)}
   .preview-fight:first-child .preview-time b{font-size:20px}
   .preview-fight:first-child .preview-fighter-copy b{font-size:18px}
-  .preview-fight:first-child .preview-order{font-size:17px}
+  .preview-fight:first-child .preview-order{font-size:19px}
+  .preview-outcome{grid-column:2;margin-top:-3px;padding:9px 0 0;border-top:1px solid rgba(55,200,113,.22);color:#7ee2a4;font-size:14px;font-weight:850;text-align:center}
 
   .upcoming-section{margin-top:64px;padding:28px;border:1px solid #303034;border-top:4px solid var(--red);border-radius:20px;background:#151517}
   .upcoming-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
@@ -573,8 +573,9 @@
     .brief-grid{grid-template-columns:minmax(0,1.12fr) minmax(330px,.88fr)}
     .match-stage{padding:22px 20px}
     .match-stage .cf-img{width:190px;height:230px;max-width:none;max-height:none}
-    .match-stage .cf-vs{margin-top:88px}
+    .match-stage .cf-vs{width:52px;height:52px;margin-top:84px;font-size:16px}
     .match-stage .cf-nm{font-size:21px}
+    .match-stage .cf-rec{font-size:16px}
     .brief-intel{display:flex;flex-direction:column;justify-content:center;border-top:0;border-left:1px solid var(--line);padding:28px}
     .crowd-panel{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
     .fan-pick,.fan-talk{padding:25px 28px}
@@ -587,15 +588,15 @@
   }
   @media (max-width:779px){
     .week-head{gap:12px;padding:18px 4px}
-    .week-eyebrow{font-size:12px}
-    .week-time-line{display:block;margin-top:8px}
+    .week-time-line{display:block}
     .week-time{font-size:27px;white-space:normal}
     .week-place{margin-top:10px;padding:0;border-left:0;font-size:17px;color:#d7d7da}
     .week-d{width:64px;height:64px;font-size:21px}
     .match-stage{padding-top:8px;padding-bottom:10px}
     .match-stage .cf-img{width:108px;height:134px;max-width:34vw;max-height:42vw}
-    .match-stage .cf-vs{margin-top:47px}
+    .match-stage .cf-vs{width:44px;height:44px;margin-top:40px;font-size:14px}
     .match-stage .cf-nm{font-size:17px}
+    .match-stage .cf-rec{font-size:15px}
     .brief-intel{padding-top:15px;padding-bottom:16px}
     .brief-thesis{font-size:18px}
     .main-eta{margin-top:14px;padding-top:12px}
@@ -610,18 +611,19 @@
     .preview-fight:first-child{min-height:120px}
     .preview-fight:not(:first-child)::before{left:9px;width:27px}
     .preview-time b{font-size:15px}
-    .preview-match{grid-template-columns:minmax(0,1fr) 50px minmax(0,1fr);gap:5px}
+    .preview-match{grid-template-columns:minmax(0,1fr) 58px minmax(0,1fr);gap:5px}
     .preview-fighter,.preview-fighter.right{flex-direction:column;gap:4px;text-align:center}
     .preview-fighter .avatar-box{display:block;width:52px!important;height:52px!important;border-radius:10px!important}
     .preview-fighter-copy,.preview-fighter.right .preview-fighter-copy{width:100%;align-items:center}
     .preview-fighter-copy b{font-size:12px}
     .preview-odds{margin-top:3px;font-size:9px}
     .preview-center{gap:5px}
-    .preview-order{font-size:11px}
+    .preview-order{font-size:14px}
     .preview-fight:first-child .preview-time b{font-size:16px}
     .preview-fight:first-child .preview-fighter-copy b{font-size:13px}
-    .preview-fight:first-child .preview-order{font-size:12px}
-    .preview-vs{width:34px;height:34px;font-size:11px;box-shadow:0 0 0 3px rgba(255,255,255,.025)}
+    .preview-fight:first-child .preview-order{font-size:15px}
+    .preview-vs{width:40px;height:40px;font-size:13px;box-shadow:0 0 0 3px rgba(255,255,255,.025)}
+    .preview-outcome{font-size:12px}
     .upcoming-section{margin-top:48px;padding:22px 14px;border-radius:16px}
     .upcoming-head{align-items:flex-start;margin-bottom:16px}
     .upcoming-title{font-size:23px}
@@ -832,7 +834,7 @@ function fightRow(fight, opts={}){
       <a class="f-side" href="#fighter/${fight.a||''}">
         <div class="av">${fighterAvatar(a,'red')}</div>
         <div class="nm-wrap">
-          <div class="nm">${esc(a.name||'TBA')}${a.en&&a.en!==a.name?`<span class="name-original">${esc(a.en)}</span>`:''}</div>
+          <div class="nm">${esc(a.name||'TBA')}</div>
           <div class="sub">${a.record||''} · ${a.rank||''}</div>
         </div>
       </a>
@@ -840,7 +842,7 @@ function fightRow(fight, opts={}){
       <a class="f-side right" href="#fighter/${fight.b||''}">
         <div class="av">${fighterAvatar(b,'blue')}</div>
         <div class="nm-wrap">
-          <div class="nm">${esc(b.name||'TBA')}${b.en&&b.en!==b.name?`<span class="name-original">${esc(b.en)}</span>`:''}</div>
+          <div class="nm">${esc(b.name||'TBA')}</div>
           <div class="sub">${b.record||''} · ${b.rank||''}</div>
         </div>
       </a>
@@ -911,7 +913,7 @@ function homeSortSection(){
       if(!m) return '';
       return `
       <a href="#event/${ev.id}" class="mcard ${big?'big':''}">
-        <div class="mcard-top"><span class="mcard-code">${ev.code}</span><span class="mcard-d">${dLabel(ev.dateUtc)}</span></div>
+        <div class="mcard-top"><span class="mcard-code">${esc(eventCodeKo(ev.code))}</span><span class="mcard-d">${dLabel(ev.dateUtc)}</span></div>
         <div class="mcard-faces">
           <div class="mf">${avatarBox(fa,big?76:52)}<div class="mf-nm">${esc(fa.name)}</div>${fa.en!==fa.name?`<div class="mf-en">${esc(fa.en)}</div>`:''}</div>
           <div class="mf-vs">VS</div>
@@ -945,7 +947,7 @@ function estimatedBoutTime(e,index,total){
 function remainingTimeLabel(target){
   if(!target) return '시각 확인 중';
   const diff=new Date(target).getTime()-Date.now();
-  if(diff<=0) return '시작 예상 시각이 지났어요';
+  if(diff<=0) return '진행 · 결과 확인 중';
   const totalMinutes=Math.max(1,Math.ceil(diff/60000));
   const days=Math.floor(totalMinutes/1440);
   const hours=Math.floor((totalMinutes%1440)/60);
@@ -991,7 +993,6 @@ function weekBrief(e, main, a, b){
   <section class="week-brief" aria-labelledby="weekFightTitle">
     <div class="week-head">
       <div>
-        <div class="week-eyebrow">이번 주 UFC</div>
         <div class="week-time-line">
           <div class="week-time" id="weekFightTitle">${esc(schedule.label || eventTimeLabel(e))}</div>
           <div class="week-place">${esc(e.city||'장소 확인 중')}</div>
@@ -1018,12 +1019,11 @@ function weekBrief(e, main, a, b){
         </div>
       </div>
       <aside class="brief-intel" aria-label="메인이벤트 쉽게 보기">
-        <div class="brief-kicker">한 줄만 알고 보면</div>
         <div class="brief-thesis">
           ${esc(intel.viewing_hook || intel.thesis || `${a.name}와 ${b.name}의 메인이벤트`)}
         </div>
         <button class="main-eta" type="button" onclick="document.getElementById('fightTimes')?.scrollIntoView({behavior:'smooth',block:'start'})">
-          <span>메인이벤트 예상</span>
+          <span>메인이벤트 예상시간</span>
           <b>${esc(mainEstimate)}</b>
           <div class="eta-note">${esc(schedule.estimate_note||'앞 경기 길이에 따라 달라집니다.')}</div>
         </button>
@@ -1072,7 +1072,7 @@ function homeCardPreview(e){
   const fights=(e.mainCard||[]).slice(0,5);
   if(!fights.length) return '';
   const market=insightFor(e).market||e.prediction||{};
-  const orderLabel=(i)=>i===0?'메인':i===1?'코메인':i===fights.length-1?'첫 경기':`${fights.length-i}경기`;
+  const orderLabel=(i)=>i===0?'메인':i===1?'코메인':i===fights.length-1?'첫 경기':`${fights.length-i}번째 경기`;
   return `
   <section class="card-preview" id="fightTimes">
     <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2><p>아래에서 시작해 메인이 마지막이에요</p></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
@@ -1083,13 +1083,16 @@ function homeCardPreview(e){
       const fightOdds=(market.main_card_odds||[])[i]||{};
       const aOdds=fightOdds.fighter_a_odds||(i===0?market.fighter_a_odds:'');
       const bOdds=fightOdds.fighter_b_odds||(i===0?market.fighter_b_odds:'');
-      return `<a class="preview-fight" href="#event/${e.id}">
-        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em${targetIso?` data-bout-target="${targetIso}"`:''}>${esc(remainingTimeLabel(target))}</em></span>
+      const aWon=f.winner===f.a, bWon=f.winner===f.b;
+      const winner=f.winner?getFighter(f.winner):null;
+      return `<a class="preview-fight${f.winner?' done':''}" href="#event/${e.id}">
+        <span class="preview-time"><b>${esc(estimatedBoutTime(e,i,fights.length))}</b>${f.winner?'<em>종료</em>':`<em${targetIso?` data-bout-target="${targetIso}"`:''}>${esc(remainingTimeLabel(target))}</em>`}</span>
         <span class="preview-match">
-          <span class="preview-fighter">${avatarBox(a,72)}<span class="preview-fighter-copy"><b>${esc(a.name)}</b>${aOdds?`<em class="preview-odds">배당 ${esc(aOdds)}</em>`:''}</span></span>
+          <span class="preview-fighter${aWon?' is-winner':''}">${avatarBox(a,72)}<span class="preview-fighter-copy"><b>${esc(a.name)}</b>${aOdds?`<em class="preview-odds">배당 ${esc(aOdds)}</em>`:''}</span></span>
           <span class="preview-center"><strong class="preview-order">${orderLabel(i)}</strong><span class="preview-vs">VS</span></span>
-          <span class="preview-fighter right">${avatarBox(b,72)}<span class="preview-fighter-copy"><b>${esc(b.name)}</b>${bOdds?`<em class="preview-odds">배당 ${esc(bOdds)}</em>`:''}</span></span>
+          <span class="preview-fighter right${bWon?' is-winner':''}">${avatarBox(b,72)}<span class="preview-fighter-copy"><b>${esc(b.name)}</b>${bOdds?`<em class="preview-odds">배당 ${esc(bOdds)}</em>`:''}</span></span>
         </span>
+        ${winner?`<span class="preview-outcome">${esc(winner.name)} 승${f.way?` · ${esc(f.way)}`:''}</span>`:''}
       </a>`;
     }).join('')}</div>
   </section>`;
@@ -1124,7 +1127,7 @@ function viewHome(){
       <a href="#event/${ev.id}" class="event-item">
         <div class="date-block"><div class="m">${d.m}</div><div class="d">${d.day}</div><div class="w">${d.w}</div></div>
         <div>
-          <div class="title">${ev.code}: ${ev.titleKo||ev.title}</div>
+          <div class="title">${esc(eventCodeKo(ev.code))}: ${esc(ev.titleKo||ev.title)}</div>
           <div class="meta"><span class="pill green">${winner} 승</span><span>· ${m?.way||''}</span></div>
         </div>
         <div class="chev">›</div>
@@ -1172,7 +1175,7 @@ function eventListItem(ev){
     <a href="#event/${ev.id}" class="event-item">
       <div class="date-block"><div class="m">${esc(d.m)}</div><div class="d">${esc(d.day)}</div><div class="w">${esc(d.w)}</div></div>
       <div>
-        <div class="title">${esc(ev.code)}: ${esc(ev.titleKo||ev.title)}</div>
+        <div class="title">${esc(eventCodeKo(ev.code))}: ${esc(ev.titleKo||ev.title)}</div>
         <div class="meta">
           <span><b>${esc(m1)}</b> vs <b>${esc(m2)}</b></span>
           <span class="pill ghost">${esc(ev.timeConfirmed?fmtDate(ev.dateUtc)+' KST':'시작 시각 미정')}</span>
@@ -1211,7 +1214,7 @@ function viewResults(){
   ${list.length?list.map(ev=>{
     return `
     <div class="result-card">
-      <h3>${esc(ev.code)}: ${esc(ev.titleKo||ev.title)}</h3>
+      <h3>${esc(eventCodeKo(ev.code))}: ${esc(ev.titleKo||ev.title)}</h3>
       <div class="when">${esc(eventTimeLabel(ev))} · ${esc(ev.venue)}, ${esc(ev.city)}</div>
       ${(ev.mainCard||[]).map(f=>{
         const a=getFighter(f.a), b=getFighter(f.b);
@@ -1289,7 +1292,7 @@ function fighterListHtml(){
       <a href="#fighter/${f.id}" class="event-item">
         ${avatarBox(f,48)}
         <div>
-          <div class="title">${esc(f.name)}${f.en && f.en!==f.name ? `<span class="name-original">${esc(f.en)}</span>`:''}</div>
+          <div class="title">${esc(f.name)}</div>
           <div class="meta">
             <span>${esc(f.weight)}</span>
             <span>· ${esc(f.record)}</span>
@@ -1485,7 +1488,7 @@ function newbieGuide(e){
   if(bothRanked && !isTitle) points.push(`${a.rank} vs ${b.rank} — 상위권 자존심 싸움이거든요`);
 
   // 상세 페이지용 초심자 맥락
-  let ctx = `<b>${e.code}</b>, 이번엔 ${e.city||'해외'}에서 열려요. 메인 이벤트는 <b>${a.name}</b> vs <b>${b.name}</b>`;
+  let ctx = `<b>${eventCodeKo(e.code)}</b>, 이번엔 ${e.city||'해외'}에서 열려요. 메인 이벤트는 <b>${a.name}</b> vs <b>${b.name}</b>`;
   if(isTitle && isRematch) ctx+=` — 챔피언 벨트까지 걸린 <b>리턴매치</b>라, 이번 대회 간판이라고 보면 돼요.`;
   else if(isTitle) ctx+=`, <b>챔피언 벨트</b>가 걸린 큰 판이에요.`;
   else if(isRematch) ctx+=` <b>리턴매치</b>예요. 예전에 한 번 붙었던 둘이라, 다들 결과 바뀔지 지켜보는 중이고요.`;
@@ -1611,10 +1614,10 @@ function viewEvent(id){
   const isPast = e.status==='past';
 
   return `
-  <div class="back-bar"><button type="button" aria-label="이전 화면으로" onclick="history.back()">←</button><span>${esc(e.code)}</span></div>
+  <div class="back-bar"><button type="button" aria-label="이전 화면으로" onclick="history.back()">←</button><span>${esc(eventCodeKo(e.code))}</span></div>
 
   <div class="ev-banner">
-    <span class="badge">${esc(e.code)}</span>
+    <span class="badge">${esc(eventCodeKo(e.code))}</span>
     <h1>${esc(e.titleKo||e.title)}</h1>
     <div class="when">${esc(eventTimeLabel(e))}</div>
     <div class="ev-grid">
@@ -1701,7 +1704,7 @@ function updateDocumentMeta(base,arg){
   const labels={home:'홈',schedule:'일정',results:'결과',rankings:'랭킹',fighters:'선수'};
   let title=labels[base]||'홈';
   if(base==='event'){
-    const e=getEvent(arg); title=e?`${e.code}: ${e.titleKo||e.title}`:'대회';
+    const e=getEvent(arg); title=e?`${eventCodeKo(e.code)}: ${e.titleKo||e.title}`:'대회';
   } else if(base==='fighter'){
     const f=FIGHTERS[arg]; title=f?f.name:'선수';
   }
@@ -1794,7 +1797,7 @@ function showReminderDialog(){
   const e=nextEvent();
   showDialog('경기 알림 · 캘린더',e?`
     <p>브라우저를 닫아도 놓치지 않도록 다음 대회를 기기 캘린더에 저장할 수 있습니다.</p>
-    <div class="box"><strong>${esc(e.code)}: ${esc(e.titleKo||e.title)}</strong><p style="margin-top:8px">${esc(eventTimeLabel(e))}</p></div>
+    <div class="box"><strong>${esc(eventCodeKo(e.code))}: ${esc(e.titleKo||e.title)}</strong><p style="margin-top:8px">${esc(eventTimeLabel(e))}</p></div>
     <div class="modal-actions"><button type="button" class="btn primary" onclick="downloadCalendar('${e.id}')">캘린더 파일 받기</button><a class="btn ghost" href="#event/${e.id}" onclick="closeDialog()">대회 상세</a></div>
     ${e.timeConfirmed?'':`<p style="margin-top:14px">정확한 시작 시각이 아직 없어 종일 일정으로 저장됩니다. 시간이 확정되면 다시 저장해주세요.</p>`}
   `:`<p>현재 저장할 예정 대회가 없습니다. 데이터 업데이트 후 다시 확인해주세요.</p>`);
@@ -1864,6 +1867,11 @@ function eventCodeFromName(name){
 function eventTitleFromName(name){
   const m = (name||'').match(/^UFC[^:]*?:\s*(.+)$/i);
   return m ? m[1].trim() : (name||'');
+}
+function eventCodeKo(code){
+  return cleanExternalText(code||'UFC')
+    .replace(/UFC Fight Night/gi,'UFC 파이트 나이트')
+    .replace(/^Fight Night/gi,'파이트 나이트');
 }
 
 /* 신장/리치 정규화: 위키가 미터로 준 "1.80cm" → "180cm" 보정 */

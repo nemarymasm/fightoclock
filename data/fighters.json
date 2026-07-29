@@ -133,7 +133,7 @@
     {
       "id": "josh-hokit",
       "name": "Josh Hokit",
-      "name_ko": "Josh Hokit",
+      "name_ko": "조시 호킷",
       "record": "10승 0패",
       "country": "United States",
       "country_ko": "미국",
@@ -195,7 +195,7 @@
     {
       "id": "rizvan-kuniev",
       "name": "Rizvan Kuniev",
-      "name_ko": "Rizvan Kuniev",
+      "name_ko": "리즈반 쿠니예프",
       "record": "14승 3패",
       "country": "Russia",
       "country_ko": "러시아",
@@ -317,7 +317,7 @@
     {
       "id": "valter-walker",
       "name": "Valter Walker",
-      "name_ko": "Valter Walker",
+      "name_ko": "발터 워커",
       "record": "16승 1패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -346,7 +346,7 @@
     {
       "id": "brando-peri-i",
       "name": "Brando Peričić",
-      "name_ko": "Brando Peričić",
+      "name_ko": "브란도 페리치치",
       "record": "7승 1패",
       "country": "Australia",
       "country_ko": "호주",
@@ -397,7 +397,7 @@
     {
       "id": "mick-parkin",
       "name": "Mick Parkin",
-      "name_ko": "Mick Parkin",
+      "name_ko": "믹 파킨",
       "record": "10승 1패",
       "country": "England",
       "country_ko": "잉글랜드",
@@ -487,7 +487,7 @@
       "recent": [
         {
           "opp": "Bogdan Guskov",
-          "opp_ko": "Bogdan Guskov",
+          "opp_ko": "보그단 구스코프",
           "result": "win",
           "method": "TKO (punches)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -609,7 +609,7 @@
     {
       "id": "azamat-murzakanov",
       "name": "Azamat Murzakanov",
-      "name_ko": "Azamat Murzakanov",
+      "name_ko": "아자마트 무르자카노프",
       "record": "16승 1패",
       "country": "Russia",
       "country_ko": "러시아",
@@ -629,7 +629,7 @@
     {
       "id": "bogdan-guskov",
       "name": "Bogdan Guskov",
-      "name_ko": "Bogdan Guskov",
+      "name_ko": "보그단 구스코프",
       "record": "18승 4패",
       "country": "Uzbekistan",
       "country_ko": "Uzbekistan",
@@ -658,7 +658,7 @@
     {
       "id": "dustin-jacoby",
       "name": "Dustin Jacoby",
-      "name_ko": "Dustin Jacoby",
+      "name_ko": "더스틴 자코비",
       "record": "22승 10패",
       "country": "United States",
       "country_ko": "미국",
@@ -760,7 +760,7 @@
     {
       "id": "alonzo-menifield",
       "name": "Alonzo Menifield",
-      "name_ko": "Alonzo Menifield",
+      "name_ko": "알론조 메니필드",
       "record": "18승 6패",
       "country": "United States",
       "country_ko": "미국",
@@ -782,7 +782,7 @@
     {
       "id": "johnny-walker",
       "name": "Johnny Walker",
-      "name_ko": "Johnny Walker",
+      "name_ko": "조니 워커",
       "record": "22승 10패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -928,7 +928,7 @@
     {
       "id": "joe-pyfer",
       "name": "Joe Pyfer",
-      "name_ko": "Joe Pyfer",
+      "name_ko": "조 파이퍼",
       "record": "16승 3패",
       "country": "United States",
       "country_ko": "미국",
@@ -1076,7 +1076,7 @@
     {
       "id": "christian-leroy-duncan",
       "name": "Christian Leroy Duncan",
-      "name_ko": "Christian Leroy Duncan",
+      "name_ko": "크리스천 리로이 던컨",
       "record": "15승 2패",
       "country": "England",
       "country_ko": "잉글랜드",
@@ -1136,7 +1136,7 @@
     {
       "id": "ikram-aliskerov",
       "name": "Ikram Aliskerov",
-      "name_ko": "Ikram Aliskerov",
+      "name_ko": "이크람 알리스케로프",
       "record": "18승 2패",
       "country": "Russia",
       "country_ko": "러시아",
@@ -1198,7 +1198,7 @@
     {
       "id": "abusupiyan-magomedov",
       "name": "Abusupiyan Magomedov",
-      "name_ko": "Abusupiyan Magomedov",
+      "name_ko": "아부수피얀 마고메도프",
       "record": "29승 7패",
       "country": "Germany",
       "country_ko": "독일",
@@ -1351,7 +1351,7 @@
     {
       "id": "michael-morales",
       "name": "Michael Morales",
-      "name_ko": "Michael Morales",
+      "name_ko": "마이클 모랄레스",
       "record": "19승 0패",
       "country": "Ecuador",
       "country_ko": "에콰도르",
@@ -1415,7 +1415,7 @@
     {
       "id": "gabriel-bonfim",
       "name": "Gabriel Bonfim",
-      "name_ko": "Gabriel Bonfim",
+      "name_ko": "가브리엘 본핌",
       "record": "20승 1패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -1501,7 +1501,7 @@
     {
       "id": "mike-malott",
       "name": "Mike Malott",
-      "name_ko": "Mike Malott",
+      "name_ko": "마이크 말롯",
       "record": "14승 2패",
       "country": "Canada",
       "country_ko": "캐나다",
@@ -1616,7 +1616,7 @@
     {
       "id": "yaroslav-amosov",
       "name": "Yaroslav Amosov",
-      "name_ko": "Yaroslav Amosov",
+      "name_ko": "야로슬라프 아모소프",
       "record": "30승 1패",
       "country": "Ukraine",
       "country_ko": "Ukraine",
@@ -1759,7 +1759,7 @@
       "recent": [
         {
           "opp": "Conor McGregor",
-          "opp_ko": "Conor McGregor",
+          "opp_ko": "코너 맥그리거",
           "result": "win",
           "method": "TKO (knee injury)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -1790,7 +1790,7 @@
       "recent": [
         {
           "opp": "Benoît Saint Denis",
-          "opp_ko": "Benoît Saint Denis",
+          "opp_ko": "브누아 생드니",
           "result": "win",
           "method": "Technical Submission (Peruvian necktie)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -1919,7 +1919,7 @@
     {
       "id": "maur-cio-ruffy",
       "name": "Maurício Ruffy",
-      "name_ko": "Maurício Ruffy",
+      "name_ko": "마우리시우 후피",
       "record": "14승 2패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -1950,7 +1950,7 @@
     {
       "id": "tom-nolan",
       "name": "Tom Nolan",
-      "name_ko": "Tom Nolan",
+      "name_ko": "톰 놀란",
       "record": "11–1",
       "country": "Australia",
       "country_ko": "호주",
@@ -1970,7 +1970,7 @@
     {
       "id": "dan-hooker",
       "name": "Dan Hooker",
-      "name_ko": "Dan Hooker",
+      "name_ko": "댄 후커",
       "record": "24승 14패",
       "country": "New Zealand",
       "country_ko": "뉴질랜드",
@@ -2009,7 +2009,7 @@
       "recent": [
         {
           "opp": "Manuel Torres",
-          "opp_ko": "Manuel Torres",
+          "opp_ko": "마누엘 토레스",
           "result": "win",
           "method": "KO (spinning wheel kick and punches)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -2023,7 +2023,7 @@
     {
       "id": "grant-dawson",
       "name": "Grant Dawson",
-      "name_ko": "Grant Dawson",
+      "name_ko": "그랜트 도슨",
       "record": "24승 3패",
       "country": "United States",
       "country_ko": "미국",
@@ -2043,7 +2043,7 @@
     {
       "id": "rafa-garc-a",
       "name": "Rafa García",
-      "name_ko": "Rafa García",
+      "name_ko": "라파 가르시아",
       "record": "18승 4패",
       "country": "Mexico",
       "country_ko": "멕시코",
@@ -2124,7 +2124,7 @@
       "recent": [
         {
           "opp": "Steve Garcia",
-          "opp_ko": "Steve Garcia",
+          "opp_ko": "스티브 가르시아",
           "result": "win",
           "method": "KO (punches)",
           "event": "UFC Freedom 250",
@@ -2180,7 +2180,7 @@
     {
       "id": "arnold-allen",
       "name": "Arnold Allen",
-      "name_ko": "Arnold Allen",
+      "name_ko": "아놀드 앨런",
       "record": "7승 0패",
       "country": "England",
       "country_ko": "잉글랜드",
@@ -2202,7 +2202,7 @@
     {
       "id": "jean-silva",
       "name": "Jean Silva",
-      "name_ko": "Jean Silva",
+      "name_ko": "진 실바",
       "record": "17승 3패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -2224,7 +2224,7 @@
     {
       "id": "pat-sabatini",
       "name": "Pat Sabatini",
-      "name_ko": "Pat Sabatini",
+      "name_ko": "팻 사바티니",
       "record": "22승 5패",
       "country": "United States",
       "country_ko": "미국",
@@ -2244,7 +2244,7 @@
     {
       "id": "youssef-zalal",
       "name": "Youssef Zalal",
-      "name_ko": "Youssef Zalal",
+      "name_ko": "유세프 잘랄",
       "record": "18승 6패",
       "country": "Morocco",
       "country_ko": "Morocco",
@@ -2264,7 +2264,7 @@
     {
       "id": "nathaniel-wood",
       "name": "Nathaniel Wood",
-      "name_ko": "Nathaniel Wood",
+      "name_ko": "나다니엘 우드",
       "record": "23승 6패",
       "country": "England",
       "country_ko": "잉글랜드",
@@ -2286,7 +2286,7 @@
     {
       "id": "kevin-vallejos",
       "name": "Kevin Vallejos",
-      "name_ko": "Kevin Vallejos",
+      "name_ko": "케빈 바예호스",
       "record": "18승 1패",
       "country": "Argentina",
       "country_ko": "아르헨티나",
@@ -2306,7 +2306,7 @@
     {
       "id": "melquizael-costa",
       "name": "Melquizael Costa",
-      "name_ko": "Melquizael Costa",
+      "name_ko": "멜키자엘 코스타",
       "record": "26승 8패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -2326,7 +2326,7 @@
     {
       "id": "steve-garcia",
       "name": "Steve Garcia",
-      "name_ko": "Steve Garcia",
+      "name_ko": "스티브 가르시아",
       "record": "19승 6패",
       "country": "United States",
       "country_ko": "미국",
@@ -2379,7 +2379,7 @@
     {
       "id": "jose-miguel-delgado",
       "name": "Jose Miguel Delgado",
-      "name_ko": "Jose Miguel Delgado",
+      "name_ko": "호세 미겔 델가도",
       "record": "12–2",
       "country": "Mexico",
       "country_ko": "멕시코",
@@ -2408,7 +2408,7 @@
     {
       "id": "joanderson-brito",
       "name": "Joanderson Brito",
-      "name_ko": "Joanderson Brito",
+      "name_ko": "조안데르송 브리투",
       "record": "19승 5패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -2520,7 +2520,7 @@
       "recent": [
         {
           "opp": "Aiemann Zahabi",
-          "opp_ko": "Aiemann Zahabi",
+          "opp_ko": "아이만 자하비",
           "result": "win",
           "method": "TKO (punches)",
           "event": "UFC Freedom 250",
@@ -2625,7 +2625,7 @@
     {
       "id": "david-mart-nez",
       "name": "David Martínez",
-      "name_ko": "David Martínez",
+      "name_ko": "다비드 마르티네스",
       "record": "14승 1패",
       "country": "Mexico",
       "country_ko": "멕시코",
@@ -2645,7 +2645,7 @@
     {
       "id": "raoni-barcelos",
       "name": "Raoni Barcelos",
-      "name_ko": "Raoni Barcelos",
+      "name_ko": "하오니 바르셀로스",
       "record": "22승 5패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -2665,7 +2665,7 @@
     {
       "id": "farid-basharat",
       "name": "Farid Basharat",
-      "name_ko": "Farid Basharat",
+      "name_ko": "파리드 바샤랏",
       "record": "16승 0패",
       "country": "England",
       "country_ko": "잉글랜드",
@@ -2694,7 +2694,7 @@
     {
       "id": "marcus-mcghee",
       "name": "Marcus McGhee",
-      "name_ko": "Marcus McGhee",
+      "name_ko": "마커스 맥기",
       "record": "11승 2패",
       "country": "United States",
       "country_ko": "미국",
@@ -2736,7 +2736,7 @@
     {
       "id": "aiemann-zahabi",
       "name": "Aiemann Zahabi",
-      "name_ko": "Aiemann Zahabi",
+      "name_ko": "아이만 자하비",
       "record": "14승 3패",
       "country": "Canada",
       "country_ko": "캐나다",
@@ -2767,7 +2767,7 @@
     {
       "id": "charles-jourdain",
       "name": "Charles Jourdain",
-      "name_ko": "Charles Jourdain",
+      "name_ko": "샤를 주르댕",
       "record": "18승 8패",
       "country": "Canada",
       "country_ko": "캐나다",
@@ -2787,7 +2787,7 @@
     {
       "id": "bryce-mitchell",
       "name": "Bryce Mitchell",
-      "name_ko": "Bryce Mitchell",
+      "name_ko": "브라이스 미첼",
       "record": "19승 3패",
       "country": "United States",
       "country_ko": "미국",
@@ -2807,7 +2807,7 @@
     {
       "id": "montel-jackson",
       "name": "Montel Jackson",
-      "name_ko": "Montel Jackson",
+      "name_ko": "몬텔 잭슨",
       "record": "15승 3패",
       "country": "United States",
       "country_ko": "미국",
@@ -2829,7 +2829,7 @@
     {
       "id": "joshua-van",
       "name": "Joshua Van",
-      "name_ko": "Joshua Van",
+      "name_ko": "조슈아 반",
       "record": "17승 2패",
       "country": "Myanmar",
       "country_ko": "Myanmar",
@@ -2919,7 +2919,7 @@
       "recent": [
         {
           "opp": "Lone'er Kavanagh",
-          "opp_ko": "Lone'er Kavanagh",
+          "opp_ko": "로니어 카바나",
           "result": "win",
           "method": "Submission (rear-naked choke)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -2953,7 +2953,7 @@
     {
       "id": "asu-almabayev",
       "name": "Asu Almabayev",
-      "name_ko": "Asu Almabayev",
+      "name_ko": "아수 알마바예프",
       "record": "24승 3패",
       "country": "Kazakhstan",
       "country_ko": "카자흐스탄",
@@ -2984,7 +2984,7 @@
     {
       "id": "lone-er-kavanagh",
       "name": "Lone'er Kavanagh",
-      "name_ko": "Lone'er Kavanagh",
+      "name_ko": "로니어 카바나",
       "record": "10승 2패",
       "country": "England",
       "country_ko": "잉글랜드",
@@ -3135,7 +3135,7 @@
     {
       "id": "mitch-raposo",
       "name": "Mitch Raposo",
-      "name_ko": "Mitch Raposo",
+      "name_ko": "미치 라포소",
       "record": "11–2",
       "country": "United States",
       "country_ko": "미국",
@@ -3195,7 +3195,7 @@
     {
       "id": "steve-erceg",
       "name": "Steve Erceg",
-      "name_ko": "Steve Erceg",
+      "name_ko": "스티브 에르섹",
       "record": "14승 5패",
       "country": "Australia",
       "country_ko": "호주",
@@ -3255,7 +3255,7 @@
     {
       "id": "alessandro-costa",
       "name": "Alessandro Costa",
-      "name_ko": "Alessandro Costa",
+      "name_ko": "알레산드로 코스타",
       "record": "17–5",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3306,7 +3306,7 @@
     {
       "id": "joselyne-edwards",
       "name": "Joselyne Edwards",
-      "name_ko": "Joselyne Edwards",
+      "name_ko": "조슬린 에드워즈",
       "record": "18승 6패",
       "country": "Panama",
       "country_ko": "Panama",
@@ -3326,7 +3326,7 @@
     {
       "id": "norma-dumont",
       "name": "Norma Dumont",
-      "name_ko": "Norma Dumont",
+      "name_ko": "노르마 두몽",
       "record": "13승 3패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3348,7 +3348,7 @@
     {
       "id": "luana-santos",
       "name": "Luana Santos",
-      "name_ko": "Luana Santos",
+      "name_ko": "루아나 산토스",
       "record": "11–2",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3365,7 +3365,7 @@
       "recent": [
         {
           "opp": "Karol Rosa",
-          "opp_ko": "Karol Rosa",
+          "opp_ko": "카롤 호자",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -3377,7 +3377,7 @@
     {
       "id": "ail-n-p-rez",
       "name": "Ailín Pérez",
-      "name_ko": "Ailín Pérez",
+      "name_ko": "아일린 페레스",
       "record": "13승 2패",
       "country": "Argentina",
       "country_ko": "아르헨티나",
@@ -3419,7 +3419,7 @@
     {
       "id": "yana-santos",
       "name": "Yana Santos",
-      "name_ko": "Yana Santos",
+      "name_ko": "야나 산토스",
       "record": "17승 8패",
       "country": "Russia",
       "country_ko": "러시아",
@@ -3439,7 +3439,7 @@
     {
       "id": "jacqueline-cavalcanti",
       "name": "Jacqueline Cavalcanti",
-      "name_ko": "Jacqueline Cavalcanti",
+      "name_ko": "자클린 카발칸티",
       "record": "10승 2패",
       "country": "Portugal",
       "country_ko": "Portugal",
@@ -3459,7 +3459,7 @@
     {
       "id": "michelle-montague",
       "name": "Michelle Montague",
-      "name_ko": "Michelle Montague",
+      "name_ko": "미셸 몬태규",
       "record": "8–0",
       "country": "New Zealand",
       "country_ko": "뉴질랜드",
@@ -3479,7 +3479,7 @@
     {
       "id": "melissa-croden",
       "name": "Melissa Croden",
-      "name_ko": "Melissa Croden",
+      "name_ko": "멜리사 크로든",
       "record": "8–3",
       "country": "Canada",
       "country_ko": "캐나다",
@@ -3499,7 +3499,7 @@
     {
       "id": "karol-rosa",
       "name": "Karol Rosa",
-      "name_ko": "Karol Rosa",
+      "name_ko": "카롤 호자",
       "record": "19승 8패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3516,7 +3516,7 @@
       "recent": [
         {
           "opp": "Luana Santos",
-          "opp_ko": "Luana Santos",
+          "opp_ko": "루아나 산토스",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -3528,7 +3528,7 @@
     {
       "id": "beatriz-mesquita",
       "name": "Beatriz Mesquita",
-      "name_ko": "Beatriz Mesquita",
+      "name_ko": "베아트리스 메스키타",
       "record": "8승 0패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3557,7 +3557,7 @@
     {
       "id": "macy-chiasson",
       "name": "Macy Chiasson",
-      "name_ko": "Macy Chiasson",
+      "name_ko": "메이시 치아슨",
       "record": "10승 6패",
       "country": "United States",
       "country_ko": "미국",
@@ -3577,7 +3577,7 @@
     {
       "id": "darya-zheleznyakova",
       "name": "Darya Zheleznyakova",
-      "name_ko": "Darya Zheleznyakova",
+      "name_ko": "다리야 젤레즈냐코바",
       "record": "10–3",
       "country": "Russia",
       "country_ko": "러시아",
@@ -3619,7 +3619,7 @@
     {
       "id": "klaudia-sygu-a",
       "name": "Klaudia Syguła",
-      "name_ko": "Klaudia Syguła",
+      "name_ko": "클라우디아 시구와",
       "record": "8–2",
       "country": "Poland",
       "country_ko": "폴란드",
@@ -3661,7 +3661,7 @@
     {
       "id": "nat-lia-silva",
       "name": "Natália Silva",
-      "name_ko": "Natália Silva",
+      "name_ko": "나탈리아 실바",
       "record": "20승 5패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3787,7 +3787,7 @@
     {
       "id": "wang-cong",
       "name": "Wang Cong",
-      "name_ko": "Wang Cong",
+      "name_ko": "왕충",
       "record": "10승 1패",
       "country": "China",
       "country_ko": "중국",
@@ -3804,7 +3804,7 @@
       "recent": [
         {
           "opp": "Tracy Cortez",
-          "opp_ko": "Tracy Cortez",
+          "opp_ko": "트레이시 코르테스",
           "result": "win",
           "method": "Decision (unanimous) (29–27, 29–27, 29–27)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -3816,7 +3816,7 @@
     {
       "id": "jasmine-jasudavicius",
       "name": "Jasmine Jasudavicius",
-      "name_ko": "Jasmine Jasudavicius",
+      "name_ko": "재스민 재수다비시우스",
       "record": "15승 4패",
       "country": "Canada",
       "country_ko": "캐나다",
@@ -3860,7 +3860,7 @@
     {
       "id": "maycee-barber",
       "name": "Maycee Barber",
-      "name_ko": "Maycee Barber",
+      "name_ko": "메이시 바버",
       "record": "15승 3패",
       "country": "United States",
       "country_ko": "미국",
@@ -3880,7 +3880,7 @@
     {
       "id": "tracy-cortez",
       "name": "Tracy Cortez",
-      "name_ko": "Tracy Cortez",
+      "name_ko": "트레이시 코르테스",
       "record": "12승 4패",
       "country": "United States",
       "country_ko": "미국",
@@ -3897,7 +3897,7 @@
       "recent": [
         {
           "opp": "Wang Cong",
-          "opp_ko": "Wang Cong",
+          "opp_ko": "왕충",
           "result": "loss",
           "method": "Decision (unanimous) (29–27, 29–27, 29–27)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -3911,7 +3911,7 @@
     {
       "id": "miranda-maverick",
       "name": "Miranda Maverick",
-      "name_ko": "Miranda Maverick",
+      "name_ko": "미란다 매버릭",
       "record": "15승 6패",
       "country": "United States",
       "country_ko": "미국",
@@ -3962,7 +3962,7 @@
     {
       "id": "karine-silva",
       "name": "Karine Silva",
-      "name_ko": "Karine Silva",
+      "name_ko": "카리니 실바",
       "record": "19승 7패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -3982,7 +3982,7 @@
     {
       "id": "eduarda-moura",
       "name": "Eduarda Moura",
-      "name_ko": "Eduarda Moura",
+      "name_ko": "에두아르다 모우라",
       "record": "12–2",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -4002,7 +4002,7 @@
     {
       "id": "casey-o-neill",
       "name": "Casey O'Neill",
-      "name_ko": "Casey O'Neill",
+      "name_ko": "케이시 오닐",
       "record": "11승 2패",
       "country": "Australia",
       "country_ko": "호주",
@@ -4053,7 +4053,7 @@
     {
       "id": "virna-jandiroba",
       "name": "Virna Jandiroba",
-      "name_ko": "Virna Jandiroba",
+      "name_ko": "비르나 잔디로바",
       "record": "23승 4패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -4157,7 +4157,7 @@
     {
       "id": "fatima-kline",
       "name": "Fatima Kline",
-      "name_ko": "Fatima Kline",
+      "name_ko": "파티마 클라인",
       "record": "10승 1패",
       "country": "United States",
       "country_ko": "미국",
@@ -4174,7 +4174,7 @@
       "recent": [
         {
           "opp": "Tabatha Ricci",
-          "opp_ko": "Tabatha Ricci",
+          "opp_ko": "타바사 리치",
           "result": "win",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -4186,7 +4186,7 @@
     {
       "id": "piera-rodriguez",
       "name": "Piera Rodriguez",
-      "name_ko": "Piera Rodriguez",
+      "name_ko": "피에라 로드리게스",
       "record": "12–2",
       "country": "Venezuela",
       "country_ko": "Venezuela",
@@ -4237,7 +4237,7 @@
     {
       "id": "mizuki-inoue",
       "name": "Mizuki Inoue",
-      "name_ko": "Mizuki Inoue",
+      "name_ko": "이노우에 미즈키",
       "record": "16승 6패",
       "country": "Japan",
       "country_ko": "일본",
@@ -4319,7 +4319,7 @@
     {
       "id": "loopy-godinez",
       "name": "Loopy Godinez",
-      "name_ko": "Loopy Godinez",
+      "name_ko": "루피 고디네즈",
       "record": "14승 6패",
       "country": "Mexico",
       "country_ko": "멕시코",
@@ -4339,7 +4339,7 @@
     {
       "id": "tabatha-ricci",
       "name": "Tabatha Ricci",
-      "name_ko": "Tabatha Ricci",
+      "name_ko": "타바사 리치",
       "record": "12승 5패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -4356,7 +4356,7 @@
       "recent": [
         {
           "opp": "Fatima Kline",
-          "opp_ko": "Fatima Kline",
+          "opp_ko": "파티마 클라인",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -4368,7 +4368,7 @@
     {
       "id": "jaqueline-amorim",
       "name": "Jaqueline Amorim",
-      "name_ko": "Jaqueline Amorim",
+      "name_ko": "자클린 아모림",
       "record": "11–2",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -4388,7 +4388,7 @@
     {
       "id": "talita-alencar",
       "name": "Talita Alencar",
-      "name_ko": "Talita Alencar",
+      "name_ko": "탈리타 알렌카르",
       "record": "8–1–1",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -6484,7 +6484,7 @@
       "recent": [
         {
           "opp": "Steve Erceg",
-          "opp_ko": "Steve Erceg",
+          "opp_ko": "스티브 에르섹",
           "result": "win",
           "method": "KO (punch)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6573,7 +6573,7 @@
       "recent": [
         {
           "opp": "Rizvan Kuniev",
-          "opp_ko": "Rizvan Kuniev",
+          "opp_ko": "리즈반 쿠니예프",
           "result": "loss",
           "method": "TKO (knees)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6660,7 +6660,7 @@
       "recent": [
         {
           "opp": "Valter Walker",
-          "opp_ko": "Valter Walker",
+          "opp_ko": "발터 워커",
           "result": "loss",
           "method": "Submission (calf slicer)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -6689,7 +6689,7 @@
       "recent": [
         {
           "opp": "Dustin Jacoby",
-          "opp_ko": "Dustin Jacoby",
+          "opp_ko": "더스틴 자코비",
           "result": "win",
           "method": "TKO (head kick and punches)",
           "event": "UFC Fight Night: 안칼라예프 대 Guskov",
@@ -7016,7 +7016,7 @@
       "recent": [
         {
           "opp": "Christian Leroy Duncan",
-          "opp_ko": "Christian Leroy Duncan",
+          "opp_ko": "크리스천 리로이 던컨",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -7165,7 +7165,7 @@
       "recent": [
         {
           "opp": "Jose Miguel Delgado",
-          "opp_ko": "Jose Miguel Delgado",
+          "opp_ko": "호세 미겔 델가도",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
           "event": "UFC Fight Night: 플레시 대 우스만",
@@ -7525,7 +7525,7 @@
     {
       "id": "conor-mcgregor",
       "name": "Conor McGregor",
-      "name_ko": "코너 맥그레거",
+      "name_ko": "코너 맥그리거",
       "record": "22승 7패",
       "country": "",
       "country_ko": "",
@@ -7896,7 +7896,7 @@
       "recent": [
         {
           "opp": "Farid Basharat",
-          "opp_ko": "Farid Basharat",
+          "opp_ko": "파리드 바샤랏",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -7983,7 +7983,7 @@
       "recent": [
         {
           "opp": "Alessandro Costa",
-          "opp_ko": "Alessandro Costa",
+          "opp_ko": "알레산드로 코스타",
           "result": "loss",
           "method": "Submission (rear-naked choke)",
           "event": "UFC 329: McGregor vs. Holloway 2",
@@ -7995,7 +7995,7 @@
     {
       "id": "manuel-torres",
       "name": "Manuel Torres",
-      "name_ko": "Manuel Torres",
+      "name_ko": "마누엘 토레스",
       "record": "17승 4패",
       "country": "",
       "country_ko": "",
@@ -8159,7 +8159,7 @@
       "recent": [
         {
           "opp": "Asu Almabayev",
-          "opp_ko": "Asu Almabayev",
+          "opp_ko": "아수 알마바예프",
           "result": "loss",
           "method": "Submission (Suloev stretch)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -8188,7 +8188,7 @@
       "recent": [
         {
           "opp": "Ikram Aliskerov",
-          "opp_ko": "Ikram Aliskerov",
+          "opp_ko": "이크람 알리스케로프",
           "result": "loss",
           "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -8217,7 +8217,7 @@
       "recent": [
         {
           "opp": "Abusupiyan Magomedov",
-          "opp_ko": "Abusupiyan Magomedov",
+          "opp_ko": "아부수피얀 마고메도프",
           "result": "loss",
           "method": "Submission (guillotine choke)",
           "event": "UFC Fight Night: 피지에프 대 Torres",
@@ -8861,7 +8861,7 @@
       "recent": [
         {
           "opp": "Beatriz Mesquita",
-          "opp_ko": "Beatriz Mesquita",
+          "opp_ko": "베아트리스 메스키타",
           "result": "loss",
           "method": "Submission (armbar)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -8890,7 +8890,7 @@
       "recent": [
         {
           "opp": "Mitch Raposo",
-          "opp_ko": "Mitch Raposo",
+          "opp_ko": "미치 라포소",
           "result": "loss",
           "method": "Decision (split) (29–28, 28–29, 29–28)",
           "event": "UFC Fight Night: 카페 대 쿄지",
@@ -9093,7 +9093,7 @@
       "recent": [
         {
           "opp": "Josh Hokit",
-          "opp_ko": "Josh Hokit",
+          "opp_ko": "조시 호킷",
           "result": "loss",
           "method": "TKO (punches)",
           "event": "UFC Freedom 250",
@@ -9124,7 +9124,7 @@
       "recent": [
         {
           "opp": "Maurício Ruffy",
-          "opp_ko": "Maurício Ruffy",
+          "opp_ko": "마우리시우 후피",
           "result": "loss",
           "method": "TKO (spinning wheel kick and punches)",
           "event": "UFC Freedom 250",

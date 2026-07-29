@@ -62,6 +62,21 @@ class DataContractTests(unittest.TestCase):
         self.assertGreaterEqual(coverage, 0.85, f"Korean-name coverage too low; missing: {missing}")
         self.assertEqual(fighters["Uroš Medić"]["name_ko"], "우로시 메디치")
 
+    def test_all_ranked_fighters_have_readable_korean_names(self):
+        divisions = load_json("rankings.json").get("divisions", [])
+        ranked = [
+            fighter
+            for division in divisions
+            for fighter in ([division.get("champion")] + division.get("ranked", []))
+            if fighter
+        ]
+        missing = [
+            fighter.get("name")
+            for fighter in ranked
+            if not re.search(r"[가-힣]", fighter.get("name_ko", ""))
+        ]
+        self.assertFalse(missing, f"Ranked fighters missing Korean names: {missing}")
+
     def test_fighter_photos_use_approved_sources(self):
         fighters = load_json("fighters.json")["fighters"]
         photos = [fighter for fighter in fighters if fighter.get("avatar_url")]
@@ -159,8 +174,7 @@ class FrontendContractTests(unittest.TestCase):
 
     def test_home_surfaces_weekly_fight_intelligence(self):
         for required in (
-            "한 줄만 알고 보면",
-            "메인이벤트 예상",
+            "메인이벤트 예상시간",
             "팬 픽",
             "댓글에서 많이 나온 주제",
             "볼 것 세 가지",
@@ -182,6 +196,8 @@ class FrontendContractTests(unittest.TestCase):
             'class="watch-sub"',
             "출처와 계산 기준",
             'class="brief-sources"',
+            "한 줄만 알고 보면",
+            'class="week-eyebrow"',
         ):
             self.assertNotIn(removed, self.html)
 
@@ -198,11 +214,14 @@ class FrontendContractTests(unittest.TestCase):
         self.assertNotIn("grid-template-columns:repeat(2,minmax(0,1fr))", self.html)
         self.assertIn("function remainingTimeLabel(target)", self.html)
         self.assertIn("data-bout-target=", self.html)
-        self.assertIn("width:46px;height:46px", self.html)
+        self.assertIn("width:50px;height:50px", self.html)
         self.assertIn("document.querySelectorAll('[data-bout-target]')", self.html)
         self.assertIn('class="preview-center"', self.html)
         self.assertIn('class="preview-odds"', self.html)
         self.assertIn("market.main_card_odds||[]", self.html)
+        self.assertIn("`${fights.length-i}번째 경기`", self.html)
+        self.assertIn("preview-fight${f.winner?' done':''}", self.html)
+        self.assertIn("preview-outcome", self.html)
 
     def test_week_header_prioritizes_time_place_and_countdown(self):
         self.assertIn('class="week-time-line"', self.html)
@@ -210,6 +229,24 @@ class FrontendContractTests(unittest.TestCase):
         self.assertNotIn('class="week-meta"', self.html)
         self.assertIn(".week-d{display:grid;place-items:center", self.html)
         self.assertIn("font-size:27px", self.html)
+
+    def test_home_uses_direct_matchup_language_and_readable_priority_text(self):
+        insight = load_json("insights.json")["events"]["ufc-fight-night-medi-vs-rodriguez"]
+        self.assertEqual(
+            insight["viewing_hook"],
+            "메디치 초반 초살 VS 로드리게스 3라운드 운영",
+        )
+        self.assertIn(".match-stage .cf-rec{font-size:15px", self.html)
+        self.assertIn(".main-eta span{display:block;color:#f1f1f2;font-size:15px", self.html)
+        self.assertIn(".eta-note{margin-top:9px;color:#f1bd61;font-size:14px", self.html)
+
+    def test_event_and_fighter_lists_prioritize_korean_labels(self):
+        self.assertIn("function eventCodeKo(code)", self.html)
+        self.assertIn("UFC 파이트 나이트", self.html)
+        fight_row = self.html.split("function fightRow", 1)[1].split("function eventScore", 1)[0]
+        fighter_list = self.html.split("function fighterListHtml", 1)[1].split("function renderFighterList", 1)[0]
+        self.assertNotIn("name-original", fight_row)
+        self.assertNotIn("name-original", fighter_list)
 
     def test_upcoming_events_are_visually_separate_from_this_week(self):
         self.assertIn('class="upcoming-section"', self.html)
