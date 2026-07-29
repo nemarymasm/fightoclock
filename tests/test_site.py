@@ -328,6 +328,32 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("'Submission (rear-naked choke)':'리어네이키드초크 서브미션'", self.html)
         self.assertIn("m.round + '라운드'", self.html)
 
+    def test_result_cards_distinguish_method_date_and_place(self):
+        results = self.html.split("function resultMethodMeta", 1)[1].split("function setRankingFilter", 1)[0]
+        for required in (
+            "method-badge",
+            "kind='tko'",
+            "kind='ko'",
+            "kind='sub'",
+            "kind='split'",
+            "kind='decision'",
+            "result-meta-item",
+            "<span>일시</span>",
+            "<span>장소</span>",
+            "대회 전체 결과 보기",
+        ):
+            self.assertIn(required, results if not required.startswith(".") else self.html)
+        for css_class in (
+            ".method-badge.ko",
+            ".method-badge.tko",
+            ".method-badge.sub",
+            ".method-badge.decision",
+            ".method-badge.split",
+            ".result-card h3",
+            ".result-meta-item b",
+        ):
+            self.assertIn(css_class, self.html)
+
     def test_upcoming_events_are_visually_separate_from_this_week(self):
         self.assertIn('class="upcoming-section"', self.html)
         self.assertIn("별도 대회 · Up next", self.html)

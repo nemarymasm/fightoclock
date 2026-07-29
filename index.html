@@ -248,16 +248,35 @@
   .crown{color:var(--gold-2)}
 
   /* ---------- 결과 리스트 ---------- */
-  .result-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:10px}
-  .result-card h3,.result-card h4{margin:0 0 5px;font-size:16px;font-weight:800}
-  .result-card .when{font-size:13px;color:#bdbdc0}
-  .result-fight{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
-  .result-fight .nm{font-size:14px;font-weight:750}
+  .result-card{overflow:hidden;background:var(--card);border:1px solid var(--line-2);border-radius:18px;margin-bottom:14px}
+  .result-head{padding:20px 20px 18px;background:
+    linear-gradient(115deg,rgba(229,72,77,.14),transparent 48%),
+    linear-gradient(180deg,#171719,#111113);border-bottom:1px solid var(--line)}
+  .result-code{display:inline-flex;align-items:center;min-height:27px;padding:0 10px;border:1px solid rgba(255,112,117,.44);border-radius:99px;color:#ff8e92;font-size:13px;font-weight:900;letter-spacing:.02em}
+  .result-card h3{max-width:28em;margin:10px 0 0;font-size:23px;font-weight:920;line-height:1.2;letter-spacing:-.045em}
+  .result-meta{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px;margin-top:17px}
+  .result-meta-item{min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(8,8,9,.54)}
+  .result-meta-item span{display:block;color:#aaaab0;font-size:12px;font-weight:850;letter-spacing:.08em}
+  .result-meta-item b{display:block;margin-top:5px;color:#f0f0f1;font-size:16px;font-weight:800;line-height:1.35}
+  .result-fights{padding:0 18px}
+  .result-fight{display:grid;grid-template-columns:minmax(0,1fr) 154px minmax(0,1fr);gap:12px;align-items:center;min-height:76px;padding:12px 0;border-top:1px solid var(--line)}
+  .result-fight:first-child{border-top:0}
+  .result-fight .nm{font-size:16px;font-weight:800;line-height:1.3}
   .result-fight .nm.win{color:#7ee2a4}
-  .result-fight .nm.lose{color:var(--dim)}
-  .result-fight .vs-mid{font-size:13px;color:#c8c8ca;text-align:center}
+  .result-fight .nm.lose{color:#b5b5b8}
+  .result-fight .vs-mid{display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center}
   .result-fight.right{text-align:right}
-  .way-tag{font-size:12px;color:#ddd;margin-top:3px}
+  .method-badge{display:inline-flex;align-items:center;justify-content:center;min-width:96px;min-height:30px;padding:4px 11px;border:1px solid transparent;border-radius:99px;font-size:13px;font-weight:950;letter-spacing:.015em}
+  .method-badge.ko{color:#ffb0b3;background:rgba(229,72,77,.17);border-color:rgba(255,105,110,.43)}
+  .method-badge.tko{color:#ffc080;background:rgba(226,118,32,.16);border-color:rgba(244,143,61,.43)}
+  .method-badge.sub{color:#b9b8ff;background:rgba(100,91,219,.18);border-color:rgba(137,130,245,.42)}
+  .method-badge.decision{color:#8ee2ca;background:rgba(42,154,123,.17);border-color:rgba(79,199,165,.4)}
+  .method-badge.split{color:#f1cf79;background:rgba(194,145,35,.16);border-color:rgba(222,175,68,.42)}
+  .method-badge.nc{color:#d0d0d3;background:#29292d;border-color:#45454b}
+  .method-badge.other{color:#d5d5d7;background:#242427;border-color:#414146}
+  .method-detail{color:#bdbdc0;font-size:13px;font-weight:750;font-variant-numeric:tabular-nums}
+  .result-actions{padding:2px 18px 17px}
+  .result-actions .pill{font-size:14px}
 
   /* ---------- 하단 네비 ---------- */
   .tabbar{
@@ -596,6 +615,17 @@
     .source-desktop{display:inline}.source-mobile{display:none}
   }
   @media (max-width:779px){
+    .result-head{padding:18px 15px 16px}
+    .result-card h3{font-size:21px}
+    .result-meta{grid-template-columns:1fr;gap:8px;margin-top:14px}
+    .result-meta-item{padding:11px 12px}
+    .result-meta-item b{font-size:15px}
+    .result-fights{padding:0 14px}
+    .result-fight{grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr);gap:7px;min-height:82px;padding:13px 0}
+    .result-fight .nm{font-size:15px}
+    .method-badge{min-width:88px;padding-inline:8px;font-size:12px}
+    .method-detail{font-size:12px}
+    .result-actions{padding:3px 14px 15px}
     .week-head{gap:12px;padding:18px 4px}
     .week-time-line{display:block}
     .week-time{font-size:27px;white-space:normal}
@@ -645,6 +675,9 @@
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   }
   @media (max-width:420px){
+    .result-fight{grid-template-columns:minmax(0,1fr) 96px minmax(0,1fr);gap:5px}
+    .result-fight .nm{font-size:14px}
+    .method-badge{min-width:82px;font-size:11px}
     .topbar{padding:14px 12px}
     .brand{gap:10px}
     .brand .mark{width:44px;height:44px}
@@ -1224,6 +1257,24 @@ function viewSchedule(){
 }
 
 /* ---------- 뷰: 결과 ---------- */
+function resultMethodMeta(way){
+  const parts=cleanExternalText(way||'').split(/\s+·\s+/).map(v=>v.trim()).filter(Boolean);
+  let label=parts.shift()||'결과 확인';
+  let detail=parts.join(' · ');
+  const score=label.match(/\((?:\d{2,3}[–-]\d{2,3})(?:,\s*\d{2,3}[–-]\d{2,3})+\)/);
+  if(score){
+    label=label.replace(score[0],'').trim();
+    detail=[score[0].slice(1,-1),detail].filter(Boolean).join(' · ');
+  }
+  let kind='other';
+  if(/^TKO\b/i.test(label)) kind='tko';
+  else if(/^KO\b/i.test(label)) kind='ko';
+  else if(/서브미션|submission/i.test(label)) kind='sub';
+  else if(/2:1|스플릿|split/i.test(label)) kind='split';
+  else if(/전원일치|unanimous|판정|decision/i.test(label)) kind='decision';
+  else if(/\bNC\b|노\s*콘테스트|무효/i.test(label)) kind='nc';
+  return {label,detail,kind};
+}
 function viewResults(){
   const list = pastEvents();
   return `
@@ -1231,21 +1282,40 @@ function viewResults(){
   ${freshnessBanner()}
   <h2 class="section-title"><span class="bar"></span>최근 결과 · ${list.length}개</h2>
   ${list.length?list.map(ev=>{
+    const place=[ev.venue,ev.city].filter(Boolean).join(' · ');
     return `
     <div class="result-card">
-      <h3>${esc(eventCodeKo(ev.code))}: ${esc(ev.titleKo||ev.title)}</h3>
-      <div class="when">${esc(eventTimeLabel(ev))} · ${esc(ev.venue)}, ${esc(ev.city)}</div>
+      <div class="result-head">
+        <div class="result-code">${esc(eventCodeKo(ev.code))}</div>
+        <h3>${esc(ev.titleKo||ev.title)}</h3>
+        <div class="result-meta">
+          <div class="result-meta-item">
+            <span>일시</span>
+            <b>${esc(eventTimeLabel(ev))}</b>
+          </div>
+          <div class="result-meta-item">
+            <span>장소</span>
+            <b>${esc(place||'장소 확인 중')}</b>
+          </div>
+        </div>
+      </div>
+      <div class="result-fights">
       ${(ev.mainCard||[]).map(f=>{
         const a=getFighter(f.a), b=getFighter(f.b);
         const aWin=f.winner===f.a, bWin=f.winner===f.b;
+        const method=resultMethodMeta(f.way);
         return `
         <div class="result-fight">
           <div class="${aWin?'nm win':'nm lose'}">${aWin?'✓ ':''}${esc(a.name)}</div>
-          <div class="vs-mid">vs<div class="way-tag">${esc(f.way||'')}</div></div>
+          <div class="vs-mid">
+            <span class="method-badge ${method.kind}">${esc(method.label)}</span>
+            ${method.detail?`<span class="method-detail">${esc(method.detail)}</span>`:''}
+          </div>
           <div class="${bWin?'nm win':'nm lose'} right" style="text-align:right">${bWin?'✓ ':''}${esc(b.name)}</div>
         </div>`;
       }).join('')}
-      <div style="margin-top:10px"><a href="#event/${ev.id}" class="pill ghost">자세히 보기 →</a></div>
+      </div>
+      <div class="result-actions"><a href="#event/${ev.id}" class="pill ghost">대회 전체 결과 보기 →</a></div>
     </div>`;
   }).join(''):`<div class="state-card"><div><h2>결과 데이터가 없습니다</h2><p>자동수집 상태를 확인해주세요.</p></div></div>`}
   `;
