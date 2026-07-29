@@ -535,12 +535,12 @@
   .preview-time{font-variant-numeric:tabular-nums}
   .preview-order{display:block;margin-bottom:6px;color:#ff8589;font-size:10px;font-style:normal;font-weight:900;letter-spacing:.02em}
   .preview-time b{display:block;color:var(--text);font-size:18px;letter-spacing:-.025em}
-  .preview-time em{display:block;margin-top:3px;color:#8d8d92;font-size:10px;font-style:normal;font-weight:700}
-  .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);align-items:center;gap:10px}
+  .preview-time em{display:block;margin-top:5px;color:#ff8589;font-size:11px;font-style:normal;font-weight:800;white-space:nowrap}
+  .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 46px minmax(0,1fr);align-items:center;gap:13px}
   .preview-fighter{display:flex;align-items:center;gap:12px;min-width:0}
   .preview-fighter.right{flex-direction:row-reverse;text-align:right}
   .preview-fighter b{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .preview-vs{text-align:center;color:#777;font-size:11px;font-weight:900}
+  .preview-vs{display:grid;place-items:center;width:46px;height:46px;border:1px solid #4b4b50;border-radius:50%;background:#f1f1f2;color:#111114;font-size:14px;font-weight:1000;letter-spacing:-.04em;box-shadow:0 0 0 5px rgba(255,255,255,.025)}
   .preview-fight:first-child .preview-time b{font-size:20px}
   .preview-fight:first-child .preview-fighter b{font-size:18px}
 
@@ -587,13 +587,13 @@
     .preview-fight:not(:first-child)::before{left:9px;width:27px}
     .preview-time b{font-size:15px}
     .preview-order{margin-bottom:4px;font-size:9px}
-    .preview-match{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr);gap:4px}
+    .preview-match{grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);gap:5px}
     .preview-fighter{gap:5px}
     .preview-fighter .avatar-box{display:block;width:48px!important;height:48px!important;border-radius:10px!important}
     .preview-fighter b{font-size:11px}
     .preview-fight:first-child .preview-time b{font-size:16px}
     .preview-fight:first-child .preview-fighter b{font-size:12px}
-    .preview-vs{font-size:9px}
+    .preview-vs{width:34px;height:34px;font-size:11px;box-shadow:0 0 0 3px rgba(255,255,255,.025)}
   }
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -888,13 +888,31 @@ function insightFor(e){
   return e ? (INSIGHTS[e.id] || {}) : {};
 }
 
-function estimatedBoutTime(e,index,total){
-  if(!e?.dateUtc) return '시각 미정';
+function estimatedBoutTarget(e,index,total){
+  if(!e?.dateUtc) return null;
   const offsetMinutes=10+Math.max(0,total-1-index)*30+(index===0?10:0);
-  const target=new Date(new Date(e.dateUtc).getTime()+offsetMinutes*60000);
+  return new Date(new Date(e.dateUtc).getTime()+offsetMinutes*60000);
+}
+
+function estimatedBoutTime(e,index,total){
+  const target=estimatedBoutTarget(e,index,total);
+  if(!target) return '시각 미정';
   return target.toLocaleTimeString('ko-KR',{
     timeZone:'Asia/Seoul',hour:'numeric',minute:'2-digit',hour12:true
   });
+}
+
+function remainingTimeLabel(target){
+  if(!target) return '시각 확인 중';
+  const diff=new Date(target).getTime()-Date.now();
+  if(diff<=0) return '시작 예상 시각이 지났어요';
+  const totalMinutes=Math.max(1,Math.ceil(diff/60000));
+  const days=Math.floor(totalMinutes/1440);
+  const hours=Math.floor((totalMinutes%1440)/60);
+  const minutes=totalMinutes%60;
+  if(days>0) return `${days}일 ${hours}시간 남음`;
+  if(hours>0) return `${hours}시간 ${minutes}분 남음`;
+  return `${minutes}분 남음`;
 }
 
 function weekBrief(e, main, a, b){
@@ -1033,8 +1051,10 @@ function homeCardPreview(e){
     <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2><p>아래에서 시작해 메인이 마지막이에요</p></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
     <div class="card-preview-list">${fights.map((f,i)=>{
       const a=getFighter(f.a), b=getFighter(f.b);
+      const target=estimatedBoutTarget(e,i,fights.length);
+      const targetIso=target?target.toISOString():'';
       return `<a class="preview-fight" href="#event/${e.id}">
-        <span class="preview-time"><span class="preview-order">${orderLabel(i)}</span><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em>예상 시각</em></span>
+        <span class="preview-time"><span class="preview-order">${orderLabel(i)}</span><b>${esc(estimatedBoutTime(e,i,fights.length))}</b><em${targetIso?` data-bout-target="${targetIso}"`:''}>${esc(remainingTimeLabel(target))}</em></span>
         <span class="preview-match">
           <span class="preview-fighter">${avatarBox(a,72)}<b>${esc(a.name)}</b></span>
           <span class="preview-vs">VS</span>
@@ -1979,8 +1999,12 @@ window.addEventListener('DOMContentLoaded', async function(){
 
 /* ---------- countdown updater ---------- */
 setInterval(function(){
+  document.querySelectorAll('[data-bout-target]').forEach(function(el){
+    el.textContent=remainingTimeLabel(el.getAttribute('data-bout-target'));
+  });
   const e = nextEvent(); if(!e) return;
   const cd = countdownParts(e.dateUtc);
+  if(!cd) return;
   const root = document.getElementById('cdHero'); if(!root) return;
   const map = {d:cd.d, h:String(cd.h).padStart(2,'0'), m:String(cd.m).padStart(2,'0'), s:String(cd.s).padStart(2,'0')};
   Object.entries(map).forEach(function(pair){

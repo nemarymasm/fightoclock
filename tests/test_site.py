@@ -187,6 +187,10 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("i===1?'코메인'", self.html)
         self.assertIn("?'첫 경기'", self.html)
         self.assertNotIn("grid-template-columns:repeat(2,minmax(0,1fr))", self.html)
+        self.assertIn("function remainingTimeLabel(target)", self.html)
+        self.assertIn("data-bout-target=", self.html)
+        self.assertIn("width:46px;height:46px", self.html)
+        self.assertIn("document.querySelectorAll('[data-bout-target]')", self.html)
 
 
 if __name__ == "__main__":
