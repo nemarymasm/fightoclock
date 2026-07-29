@@ -54,7 +54,7 @@
     letter-spacing:-.011em;
     overscroll-behavior-y:none;
   }
-  body{padding-bottom:calc(72px + env(safe-area-inset-bottom));min-height:100vh}
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom));min-height:100vh;font-size:16px}
   a{color:inherit;text-decoration:none}
   button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   img{max-width:100%;display:block}
@@ -98,12 +98,12 @@
 
   /* ---------- 카드 공통 ---------- */
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-  .section-title{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:22px 6px 10px;display:flex;align-items:center;gap:8px}
+  .section-title{font-size:15px;font-weight:800;color:#d1d1d3;text-transform:uppercase;letter-spacing:.06em;margin:26px 6px 12px;display:flex;align-items:center;gap:8px}
   .section-title .bar{width:3px;height:14px;background:var(--red);border-radius:2px}
   .row{display:flex;align-items:center;gap:10px}
   .grow{flex:1;min-width:0}
   .truncate{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .pill{display:inline-flex;align-items:center;gap:6px;padding:3px 8px;border-radius:999px;font-size:11px;font-weight:600;background:#222;color:#ddd}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;font-size:13px;font-weight:700;background:#222;color:#ddd}
   .pill.red{background:rgba(210,10,10,.15);color:#ff7676;border:1px solid rgba(210,10,10,.35)}
   .pill.gold{background:rgba(212,160,23,.15);color:var(--gold-2);border:1px solid rgba(212,160,23,.35)}
   .pill.green{background:rgba(34,197,94,.15);color:#7ee2a4;border:1px solid rgba(34,197,94,.35)}
@@ -150,7 +150,7 @@
   /* ---------- 가로 스크롤 칩 ---------- */
   .chips{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 8px;scrollbar-width:none;-ms-overflow-style:none}
   .chips::-webkit-scrollbar{display:none}
-  .chip{flex:0 0 auto;padding:8px 14px;border-radius:999px;background:var(--bg-2);color:var(--muted);font-size:13px;font-weight:600;border:1px solid var(--line)}
+  .chip{flex:0 0 auto;padding:9px 15px;border-radius:999px;background:var(--bg-2);color:var(--muted);font-size:14px;font-weight:700;border:1px solid var(--line)}
   .chip.active{background:var(--red);color:#fff;border-color:var(--red)}
   button.chip{min-height:40px}
 
@@ -159,54 +159,54 @@
   .event-item{display:grid;grid-template-columns:60px 1fr auto;gap:12px;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);align-items:center}
   .event-item:active{transform:scale(.99)}
   .date-block{text-align:center;background:#0e0e0e;border:1px solid var(--line);border-radius:10px;padding:6px 0}
-  .date-block .m{font-size:10px;color:var(--red-2);font-weight:800;letter-spacing:.08em}
+  .date-block .m{font-size:12px;color:var(--red-2);font-weight:850;letter-spacing:.06em}
   .date-block .d{font-size:18px;font-weight:900;line-height:1}
-  .date-block .w{font-size:10px;color:var(--muted);margin-top:2px}
-  .event-item .title{font-weight:800;font-size:14px;letter-spacing:-.01em;line-height:1.25}
-  .event-item .meta{color:var(--muted);font-size:12px;margin-top:4px;display:flex;gap:8px;flex-wrap:wrap}
+  .date-block .w{font-size:12px;color:#bdbdc0;margin-top:3px}
+  .event-item .title{font-weight:800;font-size:16px;letter-spacing:-.01em;line-height:1.3}
+  .event-item .meta{color:#c1c1c4;font-size:14px;margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
   .event-item .meta b{color:#ddd;font-weight:600}
   .chev{color:var(--dim);font-size:18px}
 
   /* ---------- 이벤트 상세 ---------- */
   .ev-banner{background:linear-gradient(180deg,#1a0808,#0c0c0c);border:1px solid var(--line);border-radius:18px;padding:16px}
-  .ev-banner .badge{display:inline-block;background:var(--red);color:#fff;padding:4px 10px;border-radius:999px;font-weight:800;font-size:11px;letter-spacing:.06em}
+  .ev-banner .badge{display:inline-block;background:var(--red);color:#fff;padding:5px 11px;border-radius:999px;font-weight:850;font-size:13px;letter-spacing:.04em}
   .ev-banner h1,.ev-banner h2{margin:8px 0 4px;font-size:22px;font-weight:900;letter-spacing:-.02em}
-  .ev-banner .when{color:#ddd;font-size:13px}
+  .ev-banner .when{color:#ddd;font-size:15px}
   .ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
 
   .fight-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:10px}
-  .fight-card .head{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+  .fight-card .head{display:flex;justify-content:space-between;font-size:13px;color:#c1c1c4;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
   .fight-card .head b{color:var(--gold-2);font-weight:700}
   .fight-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px}
   .f-side{display:flex;align-items:center;gap:10px;min-width:0}
   .f-side.right{flex-direction:row-reverse;text-align:right}
   .f-side .av{flex:0 0 auto}
   .f-side .nm-wrap{min-width:0}
-  .f-side .nm{font-weight:800;font-size:13.5px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .f-side .sub{font-size:11px;color:var(--muted);margin-top:2px}
+  .f-side .nm{font-weight:800;font-size:15px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .f-side .sub{font-size:13px;color:#c1c1c4;margin-top:3px}
   .f-side .rank{font-size:10px;color:var(--gold-2);font-weight:700;letter-spacing:.04em}
-  .vs-tiny{font-size:11px;color:var(--dim);font-weight:800}
-  .result-row{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:12px;color:#ddd}
+  .vs-tiny{font-size:14px;color:#d2d2d4;font-weight:900}
+  .result-row{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:14px;color:#ddd}
   .result-row.win{color:#7ee2a4}
   .winbadge{display:inline-block;font-size:10px;font-weight:800;padding:2px 6px;border-radius:6px;background:var(--green);color:#04210e;margin-right:6px}
   .losebadge{display:inline-block;font-size:10px;font-weight:800;padding:2px 6px;border-radius:6px;background:#3a3a3a;color:#aaa;margin-right:6px}
 
   /* ---------- 섹션 박스 ---------- */
   .box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px}
-  .box h3{margin:0 0 8px;font-size:14px;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+  .box h3{margin:0 0 8px;font-size:16px;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
   .box h3 .ic{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:rgba(210,10,10,.15);color:#ff7676;font-size:12px}
-  .box p{margin:0;color:#d8d8d8;font-size:13.5px;line-height:1.6}
-  .box ul{margin:8px 0 0;padding-left:18px;color:#d8d8d8;font-size:13.5px;line-height:1.7}
+  .box p{margin:0;color:#dedee0;font-size:15px;line-height:1.65}
+  .box ul{margin:8px 0 0;padding-left:18px;color:#dedee0;font-size:15px;line-height:1.7}
   .box ul li::marker{color:var(--red-2)}
   .box.gold h3 .ic{background:rgba(212,160,23,.18);color:var(--gold-2)}
   .box.blue h3 .ic{background:rgba(59,130,246,.18);color:#9ec3ff}
 
-  .source-line{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--dim);margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+  .source-line{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#aaaab0;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
 
   /* 분석 - 신뢰도 막대 */
   .pred{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
   .pred-side{background:#0e0e0e;border:1px solid var(--line);border-radius:10px;padding:10px}
-  .pred-side .nm{font-size:12px;color:var(--muted)}
+  .pred-side .nm{font-size:14px;color:#bdbdc0}
   .pred-side .pct{font-size:24px;font-weight:900;letter-spacing:-.02em}
   .pred-bar{height:8px;background:#262626;border-radius:99px;overflow:hidden;margin-top:14px;display:flex}
   .pred-bar .a{background:linear-gradient(90deg,#ff5252,var(--red))}
@@ -217,44 +217,44 @@
   .fighter-hero .av{width:88px;height:88px}
   .fighter-hero .avatar{width:88px;height:88px;font-size:24px}
   .fighter-hero h1,.fighter-hero h2{margin:0 0 2px;font-size:20px;font-weight:900}
-  .fighter-hero .nick{color:var(--gold-2);font-size:12px;font-weight:700;letter-spacing:.04em}
-  .fighter-hero .rec{margin-top:6px;font-size:13px;color:#ddd}
+  .fighter-hero .nick{color:var(--gold-2);font-size:14px;font-weight:700;letter-spacing:.02em}
+  .fighter-hero .rec{margin-top:7px;font-size:15px;color:#ddd}
   .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
   .stat-cell{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center}
-  .stat-cell .k{font-size:10px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-  .stat-cell .v{font-size:14px;font-weight:800;margin-top:3px}
+  .stat-cell .k{font-size:12px;color:#bdbdc0;letter-spacing:.05em;text-transform:uppercase}
+  .stat-cell .v{font-size:16px;font-weight:800;margin-top:4px}
   .recent-list{display:flex;flex-direction:column;gap:8px}
   .recent-item{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:10px}
   .res-tag{width:24px;height:24px;border-radius:6px;font-weight:900;font-size:11px;display:grid;place-items:center}
   .res-tag.W{background:rgba(34,197,94,.18);color:#7ee2a4}
   .res-tag.L{background:rgba(210,10,10,.18);color:#ff7676}
   .res-tag.D{background:#2a2a2a;color:#bbb}
-  .recent-item .opp{font-weight:700;font-size:13px}
-  .recent-item .way{font-size:11px;color:var(--muted);margin-top:2px}
-  .recent-item .when{font-size:11px;color:var(--dim);text-align:right}
+  .recent-item .opp{font-weight:750;font-size:15px}
+  .recent-item .way{font-size:13px;color:#bdbdc0;margin-top:3px}
+  .recent-item .when{font-size:13px;color:#aaaab0;text-align:right}
 
   /* ---------- 랭킹 ---------- */
   .rank-row{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-top:1px solid var(--line)}
   .rank-row:first-child{border-top:0}
   .rank-num{font-weight:900;color:var(--gold-2);font-variant-numeric:tabular-nums;font-size:14px}
-  .rank-row .nm{font-weight:700;font-size:13.5px}
-  .rank-row .country{font-size:11px;color:var(--muted)}
-  .rank-row .rec{font-size:11px;color:var(--dim)}
+  .rank-row .nm{font-weight:750;font-size:15px}
+  .rank-row .country{font-size:13px;color:#bdbdc0}
+  .rank-row .rec{font-size:13px;color:#aaaab0}
   .champ-row{background:linear-gradient(90deg,rgba(212,160,23,.12),transparent);border-radius:12px}
   .champ-row .rank-num{color:#fff}
   .crown{color:var(--gold-2)}
 
   /* ---------- 결과 리스트 ---------- */
   .result-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:10px}
-  .result-card h3,.result-card h4{margin:0 0 4px;font-size:14px;font-weight:800}
-  .result-card .when{font-size:11px;color:var(--muted)}
+  .result-card h3,.result-card h4{margin:0 0 5px;font-size:16px;font-weight:800}
+  .result-card .when{font-size:13px;color:#bdbdc0}
   .result-fight{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
-  .result-fight .nm{font-size:12.5px;font-weight:700}
+  .result-fight .nm{font-size:14px;font-weight:750}
   .result-fight .nm.win{color:#7ee2a4}
   .result-fight .nm.lose{color:var(--dim)}
-  .result-fight .vs-mid{font-size:11px;color:var(--dim);text-align:center}
+  .result-fight .vs-mid{font-size:13px;color:#c8c8ca;text-align:center}
   .result-fight.right{text-align:right}
-  .way-tag{font-size:10px;color:#ddd;margin-top:2px}
+  .way-tag{font-size:12px;color:#ddd;margin-top:3px}
 
   /* ---------- 하단 네비 ---------- */
   .tabbar{
@@ -264,7 +264,7 @@
     display:grid;grid-template-columns:repeat(5,1fr);
     padding-bottom:env(safe-area-inset-bottom);
   }
-  .tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;height:68px;color:var(--dim);font-size:13px;font-weight:750;letter-spacing:.02em}
+  .tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;height:68px;color:#bcbcc0;font-size:14px;font-weight:800;letter-spacing:.01em}
   .tabbar a.active{color:#fff}
   .tabbar a.active .ic{color:var(--red-2)}
   .tabbar .ic{font-size:18px;line-height:1}
@@ -275,17 +275,17 @@
   .back-bar h3{margin:0;font-size:15px;font-weight:800}
 
   /* ---------- 푸터 안내 ---------- */
-  .disclaimer{margin-top:18px;padding:12px;border:1px dashed var(--line);border-radius:10px;font-size:11px;color:var(--dim);line-height:1.5}
+  .disclaimer{margin-top:18px;padding:14px;border:1px dashed var(--line);border-radius:10px;font-size:13px;color:#aaaab0;line-height:1.55}
   .page-heading{margin:4px 2px 16px;font-size:25px;line-height:1.2;letter-spacing:-.035em}
-  .page-heading small{display:block;margin-top:6px;color:var(--muted);font-size:13px;font-weight:500;letter-spacing:0}
+  .page-heading small{display:block;margin-top:7px;color:#bdbdc0;font-size:15px;font-weight:550;letter-spacing:0}
   .state-card{min-height:260px;display:grid;place-items:center;text-align:center;padding:32px 18px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
   .state-card h1,.state-card h2{margin:0 0 8px;font-size:22px}
   .state-card p{max-width:430px;margin:0;color:var(--muted);font-size:14px;line-height:1.65}
   .state-card .btn{max-width:220px;margin:18px auto 0}
-  .freshness{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 2px 16px;padding:10px 12px;border-radius:10px;background:var(--bg-2);color:var(--muted);font-size:12px}
+  .freshness{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 2px 16px;padding:11px 13px;border-radius:10px;background:var(--bg-2);color:#bdbdc0;font-size:14px}
   .freshness.stale{border:1px solid rgba(229,72,77,.45);color:#ffb4b7}
   .freshness strong{color:var(--text)}
-  .list-summary{margin:-6px 2px 12px;color:var(--muted);font-size:12px}
+  .list-summary{margin:-6px 2px 12px;color:#bdbdc0;font-size:14px}
   .load-more{width:100%;margin-top:12px}
   dialog{width:min(92vw,480px);padding:0;border:1px solid var(--line-2);border-radius:18px;background:var(--card-2);color:var(--text);box-shadow:0 24px 80px rgba(0,0,0,.65)}
   dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(3px)}
@@ -469,7 +469,9 @@
   .week-head{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;padding:25px 4px 23px}
   .week-time-line{display:flex;align-items:center;gap:22px;min-width:0}
   .week-time{font-size:34px;font-weight:950;letter-spacing:-.05em;line-height:1.08;white-space:nowrap}
-  .week-place{padding-left:22px;border-left:2px solid var(--red);font-size:21px;font-weight:850;letter-spacing:-.035em;line-height:1.2}
+  .week-event{padding-left:22px;border-left:2px solid var(--red);line-height:1.2;min-width:0}
+  .week-event b{display:block;font-size:20px;font-weight:900;letter-spacing:-.035em}
+  .week-event span{display:block;margin-top:6px;color:#c7c7ca;font-size:15px;font-weight:700}
   .week-d{display:grid;place-items:center;flex-shrink:0;width:82px;height:82px;border:2px solid var(--red);border-radius:50%;background:rgba(229,72,77,.09);color:#ff8d91;font-size:27px;font-weight:950;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
   .brief-grid{display:grid;grid-template-columns:1fr;min-width:0;border-top:1px solid var(--line)}
   .match-stage{min-width:0;padding:14px 8px 15px;background:
@@ -498,40 +500,44 @@
   .fan-talk{border-top:1px solid var(--line)}
   .editorial-heading{display:flex;align-items:center;justify-content:space-between;gap:14px}
   .editorial-heading h2{margin:0;font-size:19px;letter-spacing:-.035em}
-  .editorial-heading a{color:#c2c2c2;font-size:12px;font-weight:700;text-decoration:none}
+  .editorial-heading a{color:#d0d0d2;font-size:14px;font-weight:750;text-decoration:none}
   .crowd-poll{margin-top:20px;max-width:560px}
-  .crowd-poll-head{display:flex;justify-content:space-between;gap:12px;font-size:12px;font-weight:750}
+  .crowd-poll-head{display:flex;justify-content:space-between;gap:12px;font-size:14px;font-weight:800}
   .crowd-poll-head span:last-child{color:var(--muted)}
   .signal-bar{height:7px;margin-top:8px;overflow:hidden;display:flex;border-radius:99px;background:var(--line-2)}
   .signal-bar .fav{background:var(--red)}
   .signal-bar .dog{background:#536780}
   .crowd-list{margin-top:12px;border-top:1px solid var(--line)}
   .crowd-voice{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
-  .crowd-index{color:#ff8589;font-size:11px;font-weight:850;font-variant-numeric:tabular-nums}
-  .crowd-voice b{display:block;font-size:14px;line-height:1.4}
-  .crowd-voice p{margin:5px 0 0;color:#b5b5b5;font-size:12px;line-height:1.5}
-  .crowd-score{color:var(--dim);font-size:10px;white-space:nowrap}
+  .crowd-index{color:#ff8589;font-size:13px;font-weight:900;font-variant-numeric:tabular-nums}
+  .crowd-voice b{display:block;font-size:16px;line-height:1.4}
+  .crowd-voice p{margin:6px 0 0;color:#c1c1c4;font-size:14px;line-height:1.55}
+  .crowd-score{color:#aaaab0;font-size:12px;white-space:nowrap}
   .signal-grid{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
   .signal-card{min-width:0;padding:16px 4px;border-bottom:1px solid var(--line)}
   .signal-card:last-child{border-bottom:0}
-  .signal-card span{display:block;color:#b8b8b8;font-size:12px;font-weight:750}
-  .signal-card b{display:block;margin-top:5px;font-size:16px;letter-spacing:-.02em}
+  .signal-card span{display:block;color:#c4c4c7;font-size:14px;font-weight:750}
+  .signal-card b{display:block;margin-top:6px;font-size:18px;letter-spacing:-.02em}
 
   .watch-panel{padding:22px 4px 19px}
   .watch-title{font-size:21px;font-weight:850;letter-spacing:-.035em}
   .watch-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:12px}
   .watch-item{display:grid;grid-template-columns:22px 1fr;gap:9px;padding:12px 0;border-top:1px solid var(--line)}
-  .watch-num{color:#ff8589;font-size:11px;font-weight:850}
-  .watch-item b{display:block;font-size:14px}
-  .watch-item p{margin:5px 0 0;color:#b8b8b8;font-size:13px;line-height:1.55}
+  .watch-num{color:#ff8589;font-size:13px;font-weight:900}
+  .watch-item b{display:block;font-size:16px}
+  .watch-item p{margin:6px 0 0;color:#c1c1c4;font-size:15px;line-height:1.55}
   .brief-actions{display:flex;gap:9px;padding:0 4px 22px}
   .brief-actions .btn{max-width:240px}
   .source-desktop{display:none}
 
   .card-preview{margin:0;padding:25px 28px 29px;border-top:1px solid var(--line-2)}
-  .card-preview-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:14px}
-  .card-preview-head h2{margin:0;font-size:22px;letter-spacing:-.035em}
-  .card-preview-head p{margin:5px 0 0;color:#ff8589;font-size:11px;font-weight:800}
+  .card-preview-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+  .card-preview-head h2{margin:0;font-size:24px;letter-spacing:-.035em}
+  .card-order-guide{display:grid;grid-template-columns:1fr 52px 1fr;align-items:center;margin:0 0 14px;padding:11px 16px;border:1px solid var(--line-2);border-radius:12px;background:#151517}
+  .card-order-guide strong{font-size:15px;font-weight:900}
+  .card-order-guide strong:first-child{text-align:right;color:#f1f1f2}
+  .card-order-guide strong:last-child{text-align:left;color:#ff8589}
+  .card-order-guide span{display:grid;place-items:center;color:#ff8589;font-size:25px;font-weight:950;line-height:1}
   .card-preview-list{display:grid;grid-template-columns:1fr;gap:0}
   .preview-fight{position:relative;display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;gap:18px;min-height:108px;padding:13px 20px;border:1px solid var(--line);border-bottom:0;border-radius:0;background:linear-gradient(90deg,rgba(229,72,77,.045),#111113 42%,#111113 58%,rgba(83,103,128,.055))}
   .preview-fight:first-child{min-height:120px;border-color:rgba(229,72,77,.55);border-radius:16px 16px 0 0;background:linear-gradient(90deg,rgba(229,72,77,.12),#111113 42%,#111113 58%,rgba(83,103,128,.09))}
@@ -539,29 +545,29 @@
   .preview-fight:not(:first-child)::before{content:"";position:absolute;top:-1px;left:20px;width:34px;height:1px;background:var(--red)}
   .preview-fight.done{border-color:rgba(55,200,113,.42);background:linear-gradient(90deg,rgba(55,200,113,.07),#111113 45%)}
   .preview-time{font-variant-numeric:tabular-nums}
-  .preview-time b{display:block;color:var(--text);font-size:18px;letter-spacing:-.025em}
-  .preview-time em{display:block;margin-top:5px;color:#ff8589;font-size:11px;font-style:normal;font-weight:800;white-space:nowrap}
+  .preview-time b{display:block;color:var(--text);font-size:20px;letter-spacing:-.025em}
+  .preview-time em{display:block;margin-top:6px;color:#ff8589;font-size:14px;font-style:normal;font-weight:850;white-space:nowrap}
   .preview-match{display:grid;grid-template-columns:minmax(0,1fr) 82px minmax(0,1fr);align-items:center;gap:13px}
   .preview-fighter{display:flex;align-items:center;gap:12px;min-width:0}
   .preview-fighter.right{flex-direction:row-reverse;text-align:right}
   .preview-fighter-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
   .preview-fighter.right .preview-fighter-copy{align-items:flex-end}
-  .preview-fighter-copy b{max-width:100%;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-fighter-copy b{max-width:100%;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .preview-fighter.is-winner .preview-fighter-copy b{color:#7ee2a4}
-  .preview-odds{display:block;margin-top:6px;color:#ff8589;font-size:12px;font-weight:850;font-style:normal;font-variant-numeric:tabular-nums}
+  .preview-odds{display:block;margin-top:6px;color:#ff8589;font-size:14px;font-weight:850;font-style:normal;font-variant-numeric:tabular-nums}
   .preview-center{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
   .preview-order{display:block;color:#ff8589;font-size:16px;line-height:1;font-weight:950;letter-spacing:-.025em;white-space:nowrap}
   .preview-vs{display:grid;place-items:center;width:50px;height:50px;border:1px solid #4b4b50;border-radius:50%;background:#f1f1f2;color:#111114;font-size:16px;font-weight:1000;letter-spacing:-.04em;box-shadow:0 0 0 5px rgba(255,255,255,.025)}
-  .preview-fight:first-child .preview-time b{font-size:20px}
-  .preview-fight:first-child .preview-fighter-copy b{font-size:18px}
+  .preview-fight:first-child .preview-time b{font-size:22px}
+  .preview-fight:first-child .preview-fighter-copy b{font-size:20px}
   .preview-fight:first-child .preview-order{font-size:19px}
   .preview-outcome{grid-column:2;margin-top:-3px;padding:9px 0 0;border-top:1px solid rgba(55,200,113,.22);color:#7ee2a4;font-size:14px;font-weight:850;text-align:center}
 
   .upcoming-section{margin-top:64px;padding:28px;border:1px solid #303034;border-top:4px solid var(--red);border-radius:20px;background:#151517}
   .upcoming-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
-  .upcoming-kicker{margin-bottom:7px;color:#ff7d82;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+  .upcoming-kicker{margin-bottom:7px;color:#ff7d82;font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
   .upcoming-title{font-size:26px;font-weight:900;letter-spacing:-.04em}
-  .upcoming-copy{margin-top:5px;color:#b4b4b8;font-size:12px}
+  .upcoming-copy{margin-top:6px;color:#c1c1c4;font-size:14px}
   .upcoming-sort{display:flex;align-items:center;gap:6px;flex-shrink:0}
   .upcoming-sort-separator{color:#777;font-size:13px}
 
@@ -590,7 +596,9 @@
     .week-head{gap:12px;padding:18px 4px}
     .week-time-line{display:block}
     .week-time{font-size:27px;white-space:normal}
-    .week-place{margin-top:10px;padding:0;border-left:0;font-size:17px;color:#d7d7da}
+    .week-event{margin-top:12px;padding:0;border-left:0}
+    .week-event b{font-size:18px}
+    .week-event span{font-size:14px}
     .week-d{width:64px;height:64px;font-size:21px}
     .match-stage{padding-top:8px;padding-bottom:10px}
     .match-stage .cf-img{width:108px;height:134px;max-width:34vw;max-height:42vw}
@@ -605,25 +613,27 @@
     .brief-actions .btn{max-width:none}
     .brief-actions .btn.ghost{display:none}
     .card-preview{padding:20px 4px 23px}
-    .card-preview-head{align-items:center}
-    .card-preview-head p{font-size:10px}
+    .card-preview-head h2{font-size:22px}
+    .card-order-guide{grid-template-columns:1fr 46px 1fr;padding:10px 12px}
+    .card-order-guide strong{font-size:14px}
+    .card-order-guide span{font-size:23px}
     .preview-fight{grid-template-columns:66px minmax(0,1fr);gap:7px;min-height:112px;padding:10px 8px}
     .preview-fight:first-child{min-height:120px}
     .preview-fight:not(:first-child)::before{left:9px;width:27px}
-    .preview-time b{font-size:15px}
+    .preview-time b{font-size:17px}
     .preview-match{grid-template-columns:minmax(0,1fr) 58px minmax(0,1fr);gap:5px}
     .preview-fighter,.preview-fighter.right{flex-direction:column;gap:4px;text-align:center}
     .preview-fighter .avatar-box{display:block;width:52px!important;height:52px!important;border-radius:10px!important}
     .preview-fighter-copy,.preview-fighter.right .preview-fighter-copy{width:100%;align-items:center}
-    .preview-fighter-copy b{font-size:12px}
-    .preview-odds{margin-top:3px;font-size:9px}
+    .preview-fighter-copy b{font-size:15px}
+    .preview-odds{margin-top:4px;font-size:13px}
     .preview-center{gap:5px}
     .preview-order{font-size:14px}
-    .preview-fight:first-child .preview-time b{font-size:16px}
-    .preview-fight:first-child .preview-fighter-copy b{font-size:13px}
+    .preview-fight:first-child .preview-time b{font-size:18px}
+    .preview-fight:first-child .preview-fighter-copy b{font-size:16px}
     .preview-fight:first-child .preview-order{font-size:15px}
     .preview-vs{width:40px;height:40px;font-size:13px;box-shadow:0 0 0 3px rgba(255,255,255,.025)}
-    .preview-outcome{font-size:12px}
+    .preview-outcome{font-size:14px}
     .upcoming-section{margin-top:48px;padding:22px 14px;border-radius:16px}
     .upcoming-head{align-items:flex-start;margin-bottom:16px}
     .upcoming-title{font-size:23px}
@@ -995,7 +1005,10 @@ function weekBrief(e, main, a, b){
       <div>
         <div class="week-time-line">
           <div class="week-time" id="weekFightTitle">${esc(schedule.label || eventTimeLabel(e))}</div>
-          <div class="week-place">${esc(e.city||'장소 확인 중')}</div>
+          <div class="week-event">
+            <b>${esc(eventCodeKo(e.code))} · ${esc(e.titleKo||e.title)}</b>
+            <span>${esc(e.city||'장소 확인 중')}</span>
+          </div>
         </div>
       </div>
       <div class="week-d">${esc(dLabel(e.dateUtc))}</div>
@@ -1075,7 +1088,10 @@ function homeCardPreview(e){
   const orderLabel=(i)=>i===0?'메인':i===1?'코메인':i===fights.length-1?'첫 경기':`${fights.length-i}번째 경기`;
   return `
   <section class="card-preview" id="fightTimes">
-    <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2><p>아래에서 시작해 메인이 마지막이에요</p></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+    <div class="card-preview-head"><h2>메인카드 예상 시각</h2><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+    <div class="card-order-guide" aria-label="아래 첫 경기부터 위 메인이벤트 방향으로 진행">
+      <strong>아래쪽이 첫 경기</strong><span aria-hidden="true">↑</span><strong>위쪽이 메인</strong>
+    </div>
     <div class="card-preview-list">${fights.map((f,i)=>{
       const a=getFighter(f.a), b=getFighter(f.b);
       const target=estimatedBoutTarget(e,i,fights.length);

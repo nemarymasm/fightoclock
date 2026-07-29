@@ -225,10 +225,24 @@ class FrontendContractTests(unittest.TestCase):
 
     def test_week_header_prioritizes_time_place_and_countdown(self):
         self.assertIn('class="week-time-line"', self.html)
-        self.assertIn('class="week-place"', self.html)
+        self.assertIn('class="week-event"', self.html)
+        self.assertIn("${esc(eventCodeKo(e.code))} · ${esc(e.titleKo||e.title)}", self.html)
         self.assertNotIn('class="week-meta"', self.html)
         self.assertIn(".week-d{display:grid;place-items:center", self.html)
         self.assertIn("font-size:27px", self.html)
+
+    def test_card_order_is_a_visual_guide_not_tiny_explanatory_copy(self):
+        self.assertIn('class="card-order-guide"', self.html)
+        self.assertIn("아래쪽이 첫 경기", self.html)
+        self.assertIn("위쪽이 메인", self.html)
+        self.assertNotIn("아래에서 시작해 메인이 마지막이에요", self.html)
+        self.assertNotIn(".card-preview-head p{", self.html)
+
+    def test_readability_scale_avoids_tiny_core_ui_text(self):
+        self.assertIn("body{padding-bottom:calc(72px + env(safe-area-inset-bottom));min-height:100vh;font-size:16px}", self.html)
+        self.assertIn(".event-item .title{font-weight:800;font-size:16px", self.html)
+        self.assertIn(".preview-fighter-copy b{max-width:100%;font-size:18px", self.html)
+        self.assertIn(".preview-time em{display:block;margin-top:6px;color:#ff8589;font-size:14px", self.html)
 
     def test_home_uses_direct_matchup_language_and_readable_priority_text(self):
         insight = load_json("insights.json")["events"]["ufc-fight-night-medi-vs-rodriguez"]
