@@ -74,14 +74,16 @@
   }
   .brand{display:flex;align-items:center;gap:13px;min-width:0;font-weight:800;letter-spacing:-.01em}
   .brand .mark{
-    position:relative;display:block;flex:0 0 auto;width:48px;height:48px;
-    background:var(--red);clip-path:polygon(29% 0,71% 0,100% 29%,100% 71%,71% 100%,29% 100%,0 71%,0 29%);
+    position:relative;display:flex;align-items:center;justify-content:center;gap:2px;flex:0 0 auto;width:48px;height:48px;
+    border:2px solid #ff8589;border-radius:50%;background:var(--red);
   }
-  .brand .clock-face{position:absolute;inset:10px;border:2px solid #fff;border-radius:50%}
+  .brand .mark::before{content:"";position:absolute;left:50%;top:-6px;width:14px;height:7px;border-radius:4px 4px 1px 1px;background:var(--red);transform:translateX(-50%)}
+  .brand .mark>b{color:#fff;font-size:10px;font-weight:1000;line-height:1}
+  .brand .clock-face{position:relative;width:19px;height:19px;border:2px solid #fff;border-radius:50%}
   .brand .clock-face::before,.brand .clock-face::after{content:"";position:absolute;left:50%;bottom:50%;width:2px;border-radius:2px;background:#fff;transform-origin:50% 100%}
-  .brand .clock-face::before{height:9px;transform:translateX(-50%) rotate(-48deg)}
-  .brand .clock-face::after{height:12px;transform:translateX(-50%) rotate(34deg)}
-  .brand .clock-face i{position:absolute;left:50%;top:50%;width:5px;height:5px;border-radius:50%;background:#fff;transform:translate(-50%,-50%)}
+  .brand .clock-face::before{height:5px;transform:translateX(-50%) rotate(-48deg)}
+  .brand .clock-face::after{height:7px;transform:translateX(-50%) rotate(34deg)}
+  .brand .clock-face i{position:absolute;left:50%;top:50%;width:4px;height:4px;border-radius:50%;background:#fff;transform:translate(-50%,-50%)}
   .brand .name{min-width:0;line-height:1}
   .brand-title{display:block;font-size:20px;font-weight:950;letter-spacing:-.045em;white-space:nowrap}
   .topbar .actions{display:flex;gap:6px}
@@ -309,7 +311,11 @@
     .topbar{padding:20px 24px}
     .brand{gap:16px}
     .brand .mark{width:58px;height:58px}
-    .brand .clock-face{inset:12px}
+    .brand .mark::before{top:-7px;width:16px;height:8px}
+    .brand .mark>b{font-size:12px}
+    .brand .clock-face{width:24px;height:24px}
+    .brand .clock-face::before{height:7px}
+    .brand .clock-face::after{height:9px}
     .brand-title{font-size:27px}
     .topbar .iconbtn{width:48px;height:48px;font-size:22px}
     .tabbar a{height:76px;font-size:15px}
@@ -627,7 +633,9 @@
     .topbar{padding:14px 12px}
     .brand{gap:10px}
     .brand .mark{width:44px;height:44px}
-    .brand .clock-face{inset:9px}
+    .brand .mark::before{top:-5px;width:12px;height:6px}
+    .brand .mark>b{font-size:9px}
+    .brand .clock-face{width:17px;height:17px}
     .brand-title{font-size:18px}
     .topbar .actions{gap:4px}
     .topbar .iconbtn{width:40px;height:40px}
@@ -639,7 +647,7 @@
 <a class="skip-link" href="#app">본문으로 바로가기</a>
 <header class="topbar">
   <a class="brand" href="#home" aria-label="Fight O'Clock 홈">
-    <span class="mark" aria-hidden="true"><span class="clock-face"><i></i></span></span>
+    <span class="mark" aria-hidden="true"><b>F</b><span class="clock-face"><i></i></span><b>C</b></span>
     <span class="name"><span class="brand-title">FIGHT O’CLOCK</span></span>
   </a>
   <div class="actions">

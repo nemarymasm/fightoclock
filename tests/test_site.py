@@ -141,6 +141,9 @@ class FrontendContractTests(unittest.TestCase):
         self.assertNotIn("싸울 시간!", self.html)
         self.assertNotIn("UFC 한국어 가이드</", self.html)
         self.assertIn('class="clock-face"', self.html)
+        self.assertIn('<b>F</b><span class="clock-face"><i></i></span><b>C</b>', self.html)
+        self.assertIn(".brand .mark::before", self.html)
+        self.assertNotIn("clip-path:polygon(29% 0", self.html)
 
     def test_schedule_controls_are_buttons(self):
         self.assertIn('role="group" aria-label="일정 필터"', self.html)
