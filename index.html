@@ -223,21 +223,24 @@
   .stat-cell{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center}
   .stat-cell .k{font-size:12px;color:#bdbdc0;letter-spacing:.05em;text-transform:uppercase}
   .stat-cell .v{font-size:16px;font-weight:800;margin-top:4px}
-  .recent-list{display:flex;flex-direction:column;gap:8px}
-  .recent-item{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:10px}
-  .res-tag{width:24px;height:24px;border-radius:6px;font-weight:900;font-size:11px;display:grid;place-items:center}
+  .recent-list{display:flex;flex-direction:column;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:14px}
+  .recent-item{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px;border-top:1px solid var(--line)}
+  .recent-item:first-child{border-top:0}
+  .res-tag{width:34px;height:34px;border-radius:9px;font-weight:900;font-size:13px;display:grid;place-items:center}
   .res-tag.W{background:rgba(34,197,94,.18);color:#7ee2a4}
   .res-tag.L{background:rgba(210,10,10,.18);color:#ff7676}
-  .res-tag.D{background:#2a2a2a;color:#bbb}
-  .recent-item .opp{font-weight:750;font-size:15px}
-  .recent-item .way{font-size:13px;color:#bdbdc0;margin-top:3px}
-  .recent-item .when{font-size:13px;color:#aaaab0;text-align:right}
+  .res-tag.D,.res-tag.N{background:#2a2a2a;color:#d1d1d3}
+  .recent-item .opp{font-weight:800;font-size:16px}
+  .recent-item .way{font-size:14px;color:#d1d1d3;margin-top:4px}
+  .recent-item .event{font-size:13px;color:#aaaab0;margin-top:4px}
+  .recent-item .when{font-size:14px;color:#bdbdc0;text-align:right;white-space:nowrap}
 
   /* ---------- 랭킹 ---------- */
-  .rank-row{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-top:1px solid var(--line)}
+  .rank-row{display:grid;grid-template-columns:34px 48px 1fr auto;gap:11px;align-items:center;padding:11px 12px;border-top:1px solid var(--line)}
   .rank-row:first-child{border-top:0}
   .rank-num{font-weight:900;color:var(--gold-2);font-variant-numeric:tabular-nums;font-size:14px}
-  .rank-row .nm{font-weight:750;font-size:15px}
+  .rank-row .avatar-box{border-radius:11px!important}
+  .rank-row .nm{font-weight:800;font-size:16px}
   .rank-row .country{font-size:13px;color:#bdbdc0}
   .rank-row .rec{font-size:13px;color:#aaaab0}
   .champ-row{background:linear-gradient(90deg,rgba(212,160,23,.12),transparent);border-radius:12px}
@@ -1283,6 +1286,7 @@ function viewRankings(){
         return `
         <a href="#fighter/${id}" class="rank-row">
           <div class="rank-num">#${idx+1}</div>
+          ${avatarBox(f,48)}
           <div>
             <div class="nm">${esc(f.name)}</div>
             <div class="country">${esc(f.country||'')} · <span class="rec">${esc(f.record)}</span></div>
@@ -1370,7 +1374,7 @@ function finishBlock(f){
   </div>`;
 }
 
-/* 최근 폼 한 줄 요약 (우리가 가진 최근경기 데이터 기반, 사실) */
+/* 경기 기록 요약 */
 function recentFormText(recent){
   if(!recent || !recent.length) return '';
   const w=recent.filter(r=>r.res==='W').length;
@@ -1379,7 +1383,7 @@ function recentFormText(recent){
   // 최신부터 연승
   let streak=0; for(const r of recent){ if(r.res==='W') streak++; else break; }
   const finWins=recent.filter(r=>r.res==='W'&&isFin(r.way)).length;
-  let s=`최근 ${recent.length}경기 ${w}승 ${l}패`;
+  let s=`${recent.length}경기 중 ${w}승 ${l}패`;
   if(streak>=2) s+=` · ${streak}연승`;
   if(finWins>0) s+=` · 피니시 ${finWins}회`;
   return s;
@@ -1423,22 +1427,25 @@ function viewFighter(id){
     <p>${f.next.event||''}</p>
   </div>`:''}
 
-  <div class="section-title"><span class="bar"></span>최근 경기${form?` <span style="font-weight:500;font-size:12px;color:var(--muted)">· ${form}</span>`:''}</div>
+  <div class="section-title"><span class="bar"></span>${esc(f.historyScope||'프로 MMA 전적')}${form?` <span style="font-weight:650;font-size:14px;color:#c7c7ca">· ${form}</span>`:''}</div>
   ${f.recent && f.recent.length ? `
   <div class="recent-list">
     ${f.recent.map(r=>`
       <div class="recent-item">
-        <div class="res-tag ${r.res}">${r.res}</div>
+        <div class="res-tag ${r.res}">${r.res==='W'?'승':r.res==='L'?'패':r.res==='N'?'NC':'무'}</div>
         <div>
           <div class="opp">vs ${r.opp}</div>
-          <div class="way">${r.way||''}</div>
+          <div class="way">${resultMethodKo(r.way||'')}${r.round?` · ${r.round}라운드`:''}${r.time?` ${r.time}`:''}</div>
+          ${r.event?`<div class="event">${r.event}</div>`:''}
         </div>
         <div class="when">${r.when||''}</div>
       </div>
     `).join('')}
-  </div>` : `<div class="box" style="color:var(--muted)">최근 경기 데이터가 아직 없습니다.</div>`}
+  </div>
+  ${f.historySource?`<a class="photo-credit" href="${esc(f.historySource)}" target="_blank" rel="noopener noreferrer">전적 원문 확인 ↗</a>`:''}
+  ` : `<div class="box" style="color:var(--muted)">전적을 갱신하고 있습니다.</div>`}
 
-  <div class="disclaimer">전적·랭킹은 Wikipedia에서 자동수집한 참고 정보입니다. ${esc(freshnessInfo().text)}</div>
+  <div class="disclaimer">랭킹과 프로 전적은 공개된 UFC 랭킹·선수 기록을 기준으로 갱신합니다. ${esc(freshnessInfo().text)}</div>
   `;
 }
 
@@ -1899,12 +1906,17 @@ function normHeight(h){
 }
 /* 실 선수 JSON → 내부 FIGHTERS shape */
 function transformFighter(f){
-  const recent = (f.recent||[]).map(function(r){
+  const rawHistory = (f.history&&f.history.length) ? f.history : (f.recent||[]);
+  const recent = rawHistory.map(function(r){
     return {
-      res: r.result==='win' ? 'W' : (r.result==='loss' ? 'L' : 'D'),
+      res: r.result==='win' ? 'W' : (r.result==='loss' ? 'L' : (r.result==='nc' ? 'N' : 'D')),
       opp: cleanExternalText(r.opp_ko || r.opp || ''),
       way: cleanExternalText(r.method || ''),
-      when: cleanExternalText(r.date || '')
+      when: cleanExternalText(r.date || ''),
+      event: cleanExternalText(r.event || ''),
+      round: cleanExternalText(r.round || ''),
+      time: cleanExternalText(r.time || ''),
+      record: cleanExternalText(r.record || '')
     };
   });
   return {
@@ -1917,6 +1929,8 @@ function transformFighter(f){
     avatarThumb: safeExternalUrl(f.avatar_thumb_url || f.avatar || f.avatar_url || ''),
     avatarSource: safeExternalUrl(f.avatar_source || ''),
     avatarProvider: cleanExternalText(f.avatar_provider || (f.avatar_url?.includes('ufc.com/images/')?'UFC':'Wikimedia')),
+    historySource: safeExternalUrl(f.history_source || ''),
+    historyScope: cleanExternalText(f.history_scope || ''),
     style: '', recent: recent, next: f.next || null
   };
 }
@@ -2000,8 +2014,8 @@ function transformJsonEvent(je,status){
 function transformDivision(d){
   return {
     wc: cleanExternalText(d.wc),
-    champ: d.champion ? slugify(d.champion.name) : null,
-    list: (d.ranked||[]).map(function(r){ return slugify(r.name); }),
+    champ: d.champion ? cleanExternalText(d.champion.fighter_id || slugify(d.champion.name)) : null,
+    list: (d.ranked||[]).map(function(r){ return cleanExternalText(r.fighter_id || slugify(r.name)); }),
     desc: ''
   };
 }

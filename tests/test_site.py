@@ -77,6 +77,33 @@ class DataContractTests(unittest.TestCase):
         ]
         self.assertFalse(missing, f"Ranked fighters missing Korean names: {missing}")
 
+    def test_official_rankings_link_to_complete_fighter_profiles(self):
+        rankings = load_json("rankings.json")
+        fighters = {fighter["id"]: fighter for fighter in load_json("fighters.json")["fighters"]}
+        self.assertIn("UFC 공식", rankings.get("source", ""))
+        entries = [
+            fighter
+            for division in rankings.get("divisions", [])
+            for fighter in ([division.get("champion")] + division.get("ranked", []))
+            if fighter
+        ]
+        self.assertEqual(len(entries), 176)
+        linked = [fighters.get(entry.get("fighter_id")) for entry in entries]
+        self.assertTrue(all(linked), "every official ranking row must link to a fighter")
+        self.assertTrue(all(fighter.get("avatar_url") or fighter.get("avatar") for fighter in linked))
+        self.assertTrue(all(fighter.get("history") for fighter in linked))
+        self.assertTrue(all(re.search(r"[가-힣]", fighter.get("name_ko", "")) for fighter in linked))
+
+    def test_tom_aspinall_has_photo_and_full_professional_record(self):
+        fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
+        tom = fighters["Tom Aspinall"]
+        self.assertEqual(tom.get("avatar_provider"), "UFC")
+        self.assertTrue(tom.get("avatar_url", "").endswith("tom-aspinall-full.webp"))
+        self.assertGreaterEqual(len(tom.get("history", [])), 19)
+        latest = tom["history"][0]
+        self.assertEqual(latest.get("opp_ko"), "시릴 가네")
+        self.assertEqual(latest.get("result"), "nc")
+
     def test_recent_result_cards_have_korean_fighter_names(self):
         events = load_json("events.json").get("past_events", [])
         fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
@@ -285,6 +312,15 @@ class FrontendContractTests(unittest.TestCase):
         fighter_list = self.html.split("function fighterListHtml", 1)[1].split("function renderFighterList", 1)[0]
         self.assertNotIn("name-original", fight_row)
         self.assertNotIn("name-original", fighter_list)
+
+    def test_rankings_show_photos_and_fighter_page_shows_full_history(self):
+        ranking_view = self.html.split("function viewRankings", 1)[1].split("function fighterMatches", 1)[0]
+        fighter_view = self.html.split("function viewFighter(id)", 1)[1].split("const REACTIONS", 1)[0]
+        self.assertIn("${avatarBox(f,48)}", ranking_view)
+        self.assertIn("fighter_id || slugify", self.html)
+        self.assertIn("f.history&&f.history.length", self.html)
+        self.assertIn("프로 MMA 전적", fighter_view)
+        self.assertIn("resultMethodKo(r.way||'')", fighter_view)
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)

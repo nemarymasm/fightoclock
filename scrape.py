@@ -284,14 +284,14 @@ def ufc_slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
 
 
-def fetch_ufc_profile_photos(name):
+def fetch_ufc_profile_photos(name, source_override=None):
     """UFC 공식 선수 페이지의 전신 프로필과 헤드샷 URL을 추출한다."""
     if name in UFC_PHOTO_OVERRIDES:
         return dict(UFC_PHOTO_OVERRIDES[name])
     slug = UFC_SLUG_OVERRIDES.get(name) or ufc_slugify(name)
     if not slug:
         return {}
-    source = UFC_ATHLETE + slug
+    source = source_override or (UFC_ATHLETE + slug)
     try:
         r = requests.get(source, headers=HEADERS, timeout=25)
         r.raise_for_status()
@@ -309,9 +309,13 @@ def fetch_ufc_profile_photos(name):
         full = urljoin(r.url, full) if full else ""
         thumb = urljoin(r.url, thumb) if thumb else ""
         if re.search(r"silhouette|placeholder|default", full, re.IGNORECASE):
-            return {}
+            full = ""
         if re.search(r"silhouette|placeholder|default", thumb, re.IGNORECASE):
-            thumb = full
+            thumb = ""
+        # 신인 프로필은 전신 컷 없이 og:image 헤드샷만 등록된 경우가 있다.
+        # 그때도 빈 실루엣보다 공식 헤드샷을 우선한다.
+        if not full.startswith("https://ufc.com/images/") and thumb.startswith("https://ufc.com/images/"):
+            full = thumb
         if not full.startswith("https://ufc.com/images/"):
             return {}
         if not thumb.startswith("https://ufc.com/images/"):
@@ -326,6 +330,112 @@ def fetch_ufc_profile_photos(name):
         }
     except Exception as e:
         print(f"  ⚠️ UFC 프로필 사진 실패 ({name}): {e}")
+        return {}
+
+
+def fetch_ufc_profile_history(name, source_override=None):
+    """위키 프로 전적표가 없는 신인은 UFC 공식 프로필의 UFC History를 사용한다."""
+    source = source_override or (UFC_ATHLETE + (UFC_SLUG_OVERRIDES.get(name) or ufc_slugify(name)))
+    if not source:
+        return {}
+    try:
+        response = requests.get(source, headers=HEADERS, timeout=25)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        paragraphs = soup.select(".field--name-qna-ufc p")
+        if not paragraphs:
+            return {}
+        subject = unicodedata.normalize(
+            "NFKD", (name or "").split()[-1]
+        ).encode("ascii", "ignore").decode()
+        subject = re.sub(r"[^\w'-]", "", subject)
+        subject_re = re.escape(subject).replace(r"\'", "['’]")
+        rounds = {
+            "first": "1", "second": "2", "third": "3",
+            "fourth": "4", "fifth": "5",
+        }
+        history = []
+        for paragraph in paragraphs:
+            event_tag = paragraph.find("strong")
+            event = clean_text(event_tag.get_text()) if event_tag else ""
+            text = clean_text(paragraph.get_text(" ", strip=True))
+            match_text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+            if not event or not re.search(r"\(\d{1,2}/\d{1,2}/\d{2,4}\)", match_text):
+                continue
+            lower = match_text.lower()
+            result = ""
+            opponent = ""
+            patterns = []
+            if "no contest" in lower or "fought to a draw" in lower:
+                result = "nc" if "no contest" in lower else "draw"
+                patterns = [
+                    rf"{subject_re}\s+and\s+(.+?)\s+fought\s+to",
+                    rf"between\s+{subject_re}\s+and\s+(.+?)\s+was",
+                ]
+            elif re.search(rf"{subject_re}\s+(?:was\s+)?(?:submitted|stopped|knocked out)", match_text, re.I):
+                result = "loss"
+                patterns = [
+                    rf"{subject_re}\s+was\s+(?:submitted|stopped|knocked out)\s+by\s+(.+?)(?:\s+via|\s+at|\s+in\s+round|$)",
+                ]
+            elif re.search(rf"{subject_re}\s+lost\b", match_text, re.I):
+                result = "loss"
+                patterns = [
+                    rf"{subject_re}\s+lost.*?\s+to\s+(.+?)(?:\s+via|\s+by|\s+at|\s+in\s+round|$)",
+                ]
+            else:
+                result = "win"
+                patterns = [
+                    rf"{subject_re}\s+(?:submitted|stopped|knocked out|defeated)\s+(.+?)(?:\s+via|\s+at|\s+by|\s+in\s+round|$)",
+                    rf"{subject_re}\s+won.*?(?:decision\s+)?over\s+(.+?)(?:\s+at|\s+in\s+round|$)",
+                ]
+            for pattern in patterns:
+                match = re.search(pattern, match_text, re.I)
+                if match:
+                    opponent = clean_text(match.group(1)).strip(" .,-")
+                    break
+            if not opponent:
+                continue
+
+            if "no contest" in lower:
+                method = "NC"
+            elif "unanimous decision" in lower:
+                method = "Decision (unanimous)"
+            elif "split decision" in lower:
+                method = "Decision (split)"
+            elif "majority decision" in lower:
+                method = "Decision (majority)"
+            elif "decision" in lower:
+                method = "Decision"
+            elif "submitted" in lower or "submission" in lower:
+                via = re.search(r"\bvia\s+(.+?)\s+at\s+", match_text, re.I)
+                method = f"Submission ({clean_text(via.group(1))})" if via else "Submission"
+            elif "knocked out" in lower:
+                method = "KO"
+            elif "stopped" in lower or "tko" in lower:
+                method = "TKO"
+            else:
+                method = "UFC 공식 결과"
+            date_match = re.search(r"\((\d{1,2}/\d{1,2}/\d{2,4})\)", match_text)
+            round_match = re.search(r"\b(first|second|third|fourth|fifth)\s+round\b", lower)
+            time_match = re.search(r"\bat\s+(\d{1,2}:\d{2})\b", match_text, re.I)
+            history.append({
+                "result": result,
+                "record": "",
+                "opp": opponent,
+                "opp_ko": tr_fighter(opponent),
+                "method": method,
+                "event": tr_event_title(event),
+                "date": date_match.group(1) if date_match else "",
+                "round": rounds.get(round_match.group(1), "") if round_match else "",
+                "time": time_match.group(1) if time_match else "",
+            })
+        return {
+            "history": history,
+            "history_source": source,
+            "history_scope": "UFC 경기",
+        } if history else {}
+    except Exception as e:
+        print(f"  ⚠️ UFC 공식 전적 실패 ({name}): {e}")
         return {}
 
 
@@ -747,7 +857,7 @@ def apply_translations(ev):
     return ev
 
 
-def fetch_rankings():
+def fetch_wikipedia_rankings():
     """UFC rankings 페이지의 Meta rankings(남 8체급 + 여 3체급) 수집."""
     print("\n→ Wikipedia: UFC 랭킹 가져오는 중...")
     html = http_get(WIKI + "UFC_rankings")
@@ -839,6 +949,101 @@ def fetch_rankings():
     return divisions
 
 
+def _fighter_name_key(name):
+    ascii_name = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]", "", ascii_name.lower())
+
+
+def fetch_rankings():
+    """UFC 공식 일반 랭킹 11개 체급을 수집하고 위키 데이터로 전적·국적을 보강한다.
+
+    UFC 페이지 뒤쪽에는 별도의 META 랭킹 11개가 반복되므로 체급별 첫 그룹만
+    사용한다. 공식 페이지 장애 시에는 Wikipedia 랭킹으로 안전하게 폴백한다.
+    """
+    wiki_divisions = fetch_wikipedia_rankings()
+    wiki_entries = {}
+    for division in wiki_divisions:
+        for entry in [division.get("champion")] + division.get("ranked", []):
+            if entry:
+                wiki_entries[_fighter_name_key(entry.get("name"))] = entry
+
+    def official_name_ko(name, base):
+        translated = tr_fighter(name)
+        if re.search(r"[가-힣]", translated):
+            return translated
+        return base.get("name_ko") or translated
+
+    print("\n→ UFC 공식 체급 랭킹 가져오는 중...")
+    try:
+        html = http_get("https://www.ufc.com/rankings")
+        soup = BeautifulSoup(html, "html.parser")
+        divisions = []
+        seen = set()
+        valid_weights = {
+            re.sub(r"\s+", "", value): value
+            for value in WEIGHT_KO.values()
+        }
+        for group in soup.select(".view-grouping"):
+            header = group.select_one(".view-grouping-header")
+            wc_raw = clean_text(header.get_text(" ", strip=True)) if header else ""
+            wc = valid_weights.get(re.sub(r"\s+", "", wc_raw), "")
+            if not wc or wc in seen:
+                continue
+            seen.add(wc)
+            champion_link = group.select_one(
+                ".rankings--athlete--champion h5 a, caption h5 a"
+            )
+            champion = None
+            if champion_link:
+                name = clean_text(champion_link.get_text())
+                base = wiki_entries.get(_fighter_name_key(name), {})
+                champion = {
+                    "fighter_id": slugify(name),
+                    "name": name,
+                    "name_ko": official_name_ko(name, base),
+                    "record": base.get("record", ""),
+                    "country": base.get("country", ""),
+                    "country_ko": base.get("country_ko", ""),
+                    "url": base.get("url") or (WIKI + name.replace(" ", "_")),
+                    "ufc_url": urljoin("https://www.ufc.com/", champion_link.get("href", "")),
+                }
+
+            ranked = []
+            for row in group.select("tbody tr"):
+                rank_cell = row.select_one(".views-field-weight-class-rank")
+                fighter_link = row.select_one(".views-field-title a")
+                rank_raw = clean_text(rank_cell.get_text()) if rank_cell else ""
+                if not fighter_link or not rank_raw.isdigit():
+                    continue
+                name = clean_text(fighter_link.get_text())
+                base = wiki_entries.get(_fighter_name_key(name), {})
+                ranked.append({
+                    "fighter_id": slugify(name),
+                    "name": name,
+                    "name_ko": official_name_ko(name, base),
+                    "record": base.get("record", ""),
+                    "country": base.get("country", ""),
+                    "country_ko": base.get("country_ko", ""),
+                    "url": base.get("url") or (WIKI + name.replace(" ", "_")),
+                    "ufc_url": urljoin("https://www.ufc.com/", fighter_link.get("href", "")),
+                    "rank": int(rank_raw),
+                })
+            if champion and ranked:
+                divisions.append({
+                    "wc": wc,
+                    "wc_en": next((en for en, ko in WEIGHT_KO.items() if ko == wc), wc),
+                    "champion": champion,
+                    "ranked": ranked,
+                })
+                print(f"  ✓ {wc}: 챔피언 + 랭커 {len(ranked)}명")
+        if len(divisions) >= 11:
+            return divisions
+        raise ValueError(f"공식 체급을 {len(divisions)}개만 찾음")
+    except Exception as e:
+        print(f"  ⚠️ UFC 공식 랭킹 실패, Wikipedia 폴백: {e}")
+        return wiki_divisions
+
+
 def fetch_recent_past_events(limit=6):
     """List of UFC events 의 'Past events' 표에서 최근 종료 이벤트 목록.
     표는 최신이 맨 위(내림차순)라 앞에서부터 limit 개만 취함."""
@@ -923,9 +1128,10 @@ def fetch_recent_past_events(limit=6):
 
 
 def fetch_fighter_detail(url):
-    """선수 개별 위키 페이지 인포박스에서 신체·전적·피니시 정보 추출.
+    """선수 개별 위키 페이지에서 신체·전적·피니시·프로 경기 기록 추출.
     반환 dict: nick, height, reach, stance, age, record, name_ko,
               avatar_url/avatar_source,
+              history/history_source,
               win_ko/win_sub/win_dec (승리 방식 분해, 없는 항목은 생략)."""
     out = {}
     if not url:
@@ -1042,6 +1248,67 @@ def fetch_fighter_detail(url):
 
         if wins is not None and losses is not None:
             out["record"] = f"{wins}승 {losses}패"
+
+        # 프로 MMA 전적 표 전체를 저장한다. 같은 문서의 아마추어/복싱 전적 표와
+        # 혼동하지 않도록 "Mixed martial arts record" 제목 바로 뒤 첫 표만 쓴다.
+        record_heading = soup.find(id=re.compile(r"^Mixed_martial_arts_record$"))
+        record_table = None
+        if record_heading:
+            for table in record_heading.find_all_next("table"):
+                first_row = table.find("tr")
+                headers = [
+                    clean_text(cell.get_text()).lower().rstrip(".")
+                    for cell in first_row.find_all(["th", "td"])
+                ] if first_row else []
+                if {"res", "record", "opponent", "method", "event", "date"}.issubset(set(headers)):
+                    record_table = table
+                    break
+        if record_table:
+            rows = record_table.find_all("tr")
+            header_cells = rows[0].find_all(["th", "td"])
+            headers = [clean_text(cell.get_text()).lower().rstrip(".") for cell in header_cells]
+
+            def column(*names):
+                return next((i for i, value in enumerate(headers) if value in names), -1)
+
+            res_i = column("res", "result")
+            record_i = column("record")
+            opponent_i = column("opponent")
+            method_i = column("method")
+            event_i = column("event")
+            date_i = column("date")
+            round_i = column("round")
+            time_i = column("time")
+            history = []
+            for row in rows[1:]:
+                cells = row.find_all(["th", "td"])
+                if opponent_i < 0 or len(cells) <= opponent_i:
+                    continue
+                result_raw = clean_text(cells[res_i].get_text()) if 0 <= res_i < len(cells) else ""
+                opponent = clean_text(cells[opponent_i].get_text())
+                if not opponent or result_raw.lower() not in ("win", "loss", "draw", "nc"):
+                    continue
+                result = {
+                    "win": "win",
+                    "loss": "loss",
+                    "draw": "draw",
+                    "nc": "nc",
+                }[result_raw.lower()]
+                event = clean_text(cells[event_i].get_text()) if 0 <= event_i < len(cells) else ""
+                history.append({
+                    "result": result,
+                    "record": clean_text(cells[record_i].get_text()) if 0 <= record_i < len(cells) else "",
+                    "opp": opponent,
+                    "opp_ko": tr_fighter(opponent),
+                    "method": clean_text(cells[method_i].get_text()) if 0 <= method_i < len(cells) else "",
+                    "event": tr_event_title(event),
+                    "date": clean_text(cells[date_i].get_text()) if 0 <= date_i < len(cells) else "",
+                    "round": clean_text(cells[round_i].get_text()) if 0 <= round_i < len(cells) else "",
+                    "time": clean_text(cells[time_i].get_text()) if 0 <= time_i < len(cells) else "",
+                })
+            if history:
+                out["history"] = history
+                out["history_source"] = url
     except Exception as e:
         print(f"  ⚠️  선수 상세 실패 ({url.split('/')[-1]}): {e}")
     return out
@@ -1052,8 +1319,17 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     detail_limit: 개별 위키 인포박스를 긁을 최대 인원(None=전원). 우선순위=랭커>다음경기>기타."""
     print("\n→ 선수 디렉터리 구성 중 (수집 데이터 교차연결)...")
     fighters = {}
+    previous = {}
+    if FIGHTERS_FILE.exists():
+        try:
+            previous = {
+                fighter["id"]: fighter
+                for fighter in json.loads(FIGHTERS_FILE.read_text(encoding="utf-8")).get("fighters", [])
+            }
+        except Exception as e:
+            print(f"  ⚠️ 기존 선수 데이터 재사용 실패: {e}")
 
-    def ensure(name, division_ko="", url=None):
+    def ensure(name, division_ko="", url=None, ufc_url=None):
         if not name:
             return None
         fid = slugify(name)
@@ -1065,19 +1341,33 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
                 "nick": "", "height": "", "reach": "", "stance": "", "age": "",
                 "win_ko": 0, "win_sub": 0, "win_dec": 0,
                 "url": url,
+                "ufc_url": ufc_url,
                 "recent": [], "next": None,
             }
+            old = previous.get(fid, {})
+            for key in (
+                "avatar", "avatar_url", "avatar_thumb_url", "avatar_remote_url",
+                "avatar_thumb_remote_url", "avatar_source", "avatar_provider",
+                "history", "history_source", "history_scope",
+            ):
+                if old.get(key):
+                    fighters[fid][key] = old[key]
         else:
             if division_ko and not fighters[fid]["division"]:
                 fighters[fid]["division"] = division_ko
             if url and not fighters[fid].get("url"):
                 fighters[fid]["url"] = url
+            if ufc_url and not fighters[fid].get("ufc_url"):
+                fighters[fid]["ufc_url"] = ufc_url
         return fid
 
     # 1. 랭킹 (전적/국적/랭크의 1차 출처)
     for d in divisions:
         if d.get("champion"):
-            fid = ensure(d["champion"]["name"], d["wc"], d["champion"].get("url"))
+            fid = ensure(
+                d["champion"]["name"], d["wc"], d["champion"].get("url"),
+                d["champion"].get("ufc_url"),
+            )
             f = fighters[fid]
             f["rank"] = "챔피언"
             f["record"] = d["champion"]["record"]
@@ -1085,7 +1375,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
             f["country_ko"] = d["champion"]["country_ko"]
             f["division"] = d["wc"]
         for r in d.get("ranked", []):
-            fid = ensure(r["name"], d["wc"], r.get("url"))
+            fid = ensure(r["name"], d["wc"], r.get("url"), r.get("ufc_url"))
             f = fighters[fid]
             if f["rank"] == "랭킹 외":
                 f["rank"] = "잠정챔프" if r.get("interim") else ("#" + str(r["rank"]))
@@ -1175,6 +1465,9 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
         for k in ("avatar_url", "avatar_source"):
             if det.get(k):
                 f[k] = det[k]
+        for k in ("history", "history_source", "history_scope"):
+            if det.get(k):
+                f[k] = det[k]
         for k in ("win_ko", "win_sub", "win_dec"):
             if det.get(k) is not None:
                 f[k] = det[k]
@@ -1186,13 +1479,17 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     if skipped > 0:
         print(f"  ⚠️ {skipped}명은 상세 생략(cap) — 전적/랭크 기본정보는 유지")
 
-    # 다음 카드에 등장하는 선수는 UFC 공식 프로필 사진을 최우선으로 쓴다.
+    # 다음 카드 선수는 UFC 공식 사진을 우선하고, 사진이 없는 랭커도 함께 보강한다.
     # 큰 화면용 전신 PNG와 작은 카드용 헤드샷을 분리해 저장한다.
-    official_targets = [f for f in fighters.values() if f.get("next")]
+    official_targets = [
+        f for f in fighters.values()
+        if (f.get("next") and f.get("avatar_provider") != "UFC")
+        or (f.get("rank") != "랭킹 외" and not (f.get("avatar_url") or f.get("avatar")))
+    ]
     print(f"\n→ UFC 공식 선수 사진 수집: {len(official_targets)}명...")
     official_count = 0
     for i, f in enumerate(official_targets):
-        photos = fetch_ufc_profile_photos(f["name"])
+        photos = fetch_ufc_profile_photos(f["name"], f.get("ufc_url"))
         if photos:
             photos = cache_profile_photos(f["id"], photos)
             f.update(photos)
@@ -1204,6 +1501,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     result = list(fighters.values())
     for f in result:
         f.pop("url", None)  # 내부용 링크는 출력에서 제거
+        f.pop("ufc_url", None)
     print(f"  ✓ 선수 {len(result)}명 (랭커 + 카드 등장 선수)")
     return result
 
@@ -1577,7 +1875,7 @@ def main():
         rankings_out = {
             "schema_version": 1,
             "generated_at": now_iso,
-            "source": "Wikipedia: UFC rankings (Meta)",
+            "source": "UFC 공식 체급 랭킹 (Wikipedia 전적·국적 보강)",
             "division_count": len(divisions),
             "divisions": divisions,
         }
@@ -1644,8 +1942,161 @@ def refresh_official_photos():
     print(f"✓ UFC 공식 프로필 {success}/{len(targets)}명 저장")
 
 
+def refresh_ranked_profiles():
+    """현재 랭커의 전체 프로 전적과 누락 사진을 기존 JSON에 보강한다."""
+    fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    rankings_data = json.loads(RANKINGS_FILE.read_text(encoding="utf-8"))
+    fighters = fighters_data.get("fighters", [])
+    by_key = {_fighter_name_key(fighter.get("name")): fighter for fighter in fighters}
+    ranked_profiles = {}
+    for division in rankings_data.get("divisions", []):
+        entries = [division.get("champion")] + division.get("ranked", [])
+        for entry in entries:
+            if entry and entry.get("name"):
+                ranked_profiles.setdefault(_fighter_name_key(entry["name"]), entry)
+
+    targets = [
+        (by_key[key], entry)
+        for key, entry in ranked_profiles.items()
+        if key in by_key
+    ]
+    print(f"→ 랭커 프로필 보강: {len(targets)}명")
+    histories = photos = 0
+    for i, (fighter, ranking_entry) in enumerate(targets):
+        detail = (
+            fetch_fighter_detail(ranking_entry.get("url"))
+            if not fighter.get("history") and ranking_entry.get("url")
+            else {}
+        )
+        for key in (
+            "name_ko", "nick", "height", "reach", "stance", "age",
+            "record", "win_ko", "win_sub", "win_dec",
+        ):
+            if detail.get(key) not in (None, ""):
+                fighter[key] = detail[key]
+        if detail.get("history"):
+            fighter["history"] = detail["history"]
+            fighter["history_source"] = detail["history_source"]
+            fighter.pop("history_scope", None)
+        if not fighter.get("history"):
+            official_history = fetch_ufc_profile_history(
+                fighter["name"],
+                ranking_entry.get("ufc_url"),
+            )
+            if official_history.get("history"):
+                fighter.update(official_history)
+        if fighter.get("history"):
+            histories += 1
+        if not (fighter.get("avatar_url") or fighter.get("avatar")):
+            profile_photos = fetch_ufc_profile_photos(
+                fighter["name"],
+                ranking_entry.get("ufc_url"),
+            )
+            if not profile_photos and detail.get("avatar_url"):
+                profile_photos = {
+                    "avatar_url": detail["avatar_url"],
+                    "avatar_thumb_url": detail["avatar_url"],
+                    "avatar_source": detail.get("avatar_source", ranking_entry.get("url", "")),
+                    "avatar_provider": "Wikimedia",
+                }
+            if profile_photos:
+                if profile_photos.get("avatar_provider") == "UFC":
+                    profile_photos = cache_profile_photos(fighter["id"], profile_photos)
+                fighter.update(profile_photos)
+                photos += 1
+        if (i + 1) % 10 == 0:
+            print(f"  {i+1}/{len(targets)} · 전체 전적 {histories}명 · 새 사진 {photos}명")
+
+    now_iso = datetime.now(KST).isoformat(timespec="seconds")
+    fighters_data["generated_at"] = now_iso
+    fighters_data["ranked_profiles_refreshed_at"] = now_iso
+    fighters_data["source"] = "Wikipedia 랭킹·프로 MMA 전적 + UFC 공식 프로필 사진"
+    FIGHTERS_FILE.write_text(
+        json.dumps(fighters_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ 전체 전적 {histories}/{len(targets)}명 · 새 사진 {photos}명 저장")
+
+
+def refresh_rankings_and_profiles():
+    """공식 UFC 랭킹을 저장하고 선수 디렉터리의 랭크를 같은 기준으로 맞춘다."""
+    divisions = fetch_rankings()
+    now_iso = datetime.now(KST).isoformat(timespec="seconds")
+    rankings_data = {
+        "schema_version": 1,
+        "generated_at": now_iso,
+        "source": "UFC 공식 체급 랭킹 (Wikipedia 전적·국적 보강)",
+        "division_count": len(divisions),
+        "divisions": divisions,
+    }
+    RANKINGS_FILE.write_text(
+        json.dumps(rankings_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    fighters = fighters_data.get("fighters", [])
+    by_key = {_fighter_name_key(fighter.get("name")): fighter for fighter in fighters}
+    for fighter in fighters:
+        fighter["rank"] = "랭킹 외"
+    for division in divisions:
+        entries = [(division.get("champion"), "챔피언")]
+        entries.extend((entry, "#" + str(entry["rank"])) for entry in division.get("ranked", []))
+        for entry, rank in entries:
+            if not entry:
+                continue
+            key = _fighter_name_key(entry.get("name"))
+            fighter = by_key.get(key)
+            if not fighter:
+                fighter = {
+                    "id": slugify(entry["name"]),
+                    "name": entry["name"],
+                    "name_ko": entry.get("name_ko") or tr_fighter(entry["name"]),
+                    "record": entry.get("record", ""),
+                    "country": entry.get("country", ""),
+                    "country_ko": entry.get("country_ko", ""),
+                    "division": division["wc"],
+                    "rank": rank,
+                    "nick": "", "height": "", "reach": "", "stance": "", "age": "",
+                    "win_ko": 0, "win_sub": 0, "win_dec": 0,
+                    "recent": [], "next": None,
+                }
+                fighters.append(fighter)
+                by_key[key] = fighter
+            entry["fighter_id"] = fighter["id"]
+            if entry.get("name_ko") and re.search(r"[가-힣]", entry["name_ko"]):
+                fighter["name_ko"] = entry["name_ko"]
+            fighter["rank"] = rank
+            fighter["division"] = division["wc"]
+            for key_name in ("record", "country", "country_ko"):
+                if entry.get(key_name) and not fighter.get(key_name):
+                    fighter[key_name] = entry[key_name]
+    for name, rank in FIGHTER_RANK_OVERRIDES.items():
+        fighter = by_key.get(_fighter_name_key(name))
+        if fighter:
+            fighter["rank"] = rank
+    fighters_data["generated_at"] = now_iso
+    fighters_data["source"] = "UFC 공식 랭킹 + Wikipedia 프로 MMA 전적 + UFC 공식 프로필 사진"
+    fighters_data["fighter_count"] = len(fighters)
+    # 위의 이름 정규화로 연결한 실제 선수 id를 랭킹 JSON에도 반영한다.
+    RANKINGS_FILE.write_text(
+        json.dumps(rankings_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    FIGHTERS_FILE.write_text(
+        json.dumps(fighters_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ UFC 공식 랭킹 {len(divisions)}체급 저장 · 선수 랭크 동기화")
+    refresh_ranked_profiles()
+
+
 if __name__ == "__main__":
-    if "--photos-only" in sys.argv:
+    if "--rankings-only" in sys.argv:
+        refresh_rankings_and_profiles()
+    elif "--ranked-profiles" in sys.argv:
+        refresh_ranked_profiles()
+    elif "--photos-only" in sys.argv:
         refresh_official_photos()
     else:
         main()
