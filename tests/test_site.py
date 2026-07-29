@@ -104,9 +104,10 @@ class DataContractTests(unittest.TestCase):
         self.assertGreaterEqual(len(with_photo) / len(upcoming), 0.95)
         self.assertGreaterEqual(len(official), 90)
 
-    def test_weekly_brief_has_editorial_fan_reactions_and_time_estimate(self):
+    def test_weekly_brief_separates_fan_reactions_and_time_estimate(self):
         insight = load_json("insights.json")["events"]["ufc-fight-night-medi-vs-rodriguez"]
-        self.assertTrue(insight["schedule"].get("main_event_estimate"))
+        self.assertTrue(insight["schedule"].get("main_event_window"))
+        self.assertTrue(insight.get("viewing_hook"))
         self.assertGreaterEqual(len(insight.get("fan_reactions", [])), 3)
         self.assertGreaterEqual(len(insight.get("fan_topics", [])), 3)
         self.assertTrue(insight["fans"].get("source", "").startswith("https://"))
@@ -149,16 +150,26 @@ class FrontendContractTests(unittest.TestCase):
 
     def test_home_surfaces_weekly_fight_intelligence(self):
         for required in (
-            "메인은 언제쯤?",
+            "한 줄만 알고 보면",
+            "메인이벤트 예상",
+            "팬 픽",
+            "댓글에서 반복된 얘기",
+            "볼 것 세 가지",
+            "메인카드 예상 시각",
+            "시장 배당",
+            "공개 분석 모델",
+            "data/insights.json",
+            'class="crowd-panel"',
+            'class="signal-grid"',
+        ):
+            self.assertIn(required, self.html)
+        for removed in (
             "다들 뭐래?",
             "뭘 보면서 보면 돼?",
             "몇 시쯤 보면 될까?",
             "숫자와 출처도 볼래요?",
-            "data/insights.json",
-            'class="crowd-panel"',
-            'class="support-details"',
         ):
-            self.assertIn(required, self.html)
+            self.assertNotIn(removed, self.html)
 
 
 if __name__ == "__main__":

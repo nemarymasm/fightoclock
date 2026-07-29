@@ -8,7 +8,8 @@
         "prelims": "8월 1일(토) 오후 11시",
         "main_card": "8월 2일(일) 오전 2시",
         "main_event_estimate": "오전 4시 20분",
-        "estimate_note": "앞 경기가 빨리 끝나면 이보다 일찍 시작할 수 있어요.",
+        "main_event_window": "오전 4:10–4:40",
+        "estimate_note": "앞 경기에서 KO가 많이 나오면 더 빨라집니다.",
         "bout_count": 12,
         "note": "메인이벤트 입장 시각은 앞 경기 진행에 따라 달라집니다.",
         "source": "https://www.ufc.com/event/ufc-fight-night-august-01-2026"
@@ -29,7 +30,7 @@
         "sample": 36,
         "discussion_count": 27,
         "label": "Sherdog 공개 투표",
-        "note": "36명만 참여한 투표라 가볍게 참고하면 돼요.",
+        "note": "표본 36명 · 가볍게 참고",
         "source": "https://forums.sherdog.com/threads/uros-medic-vs-daniel-rodriguez-set-for-main-event-of-ufc-belgrade-on-august-1st.4384444/"
       },
       "models": {
@@ -38,21 +39,22 @@
         "label": "분석 모델은 배당보다 접전으로 봐요",
         "source": "https://www.ufcalendar.com/events/ufc-fight-night-2026-08-01/uros-medic-vs-daniel-rodriguez"
       },
-      "thesis": "메디치는 초반에 무섭고, 로드리게스는 길어질수록 살아나요. 관건은 초반 5분이에요.",
-      "mobile_thesis": "메디치는 초반, 로드리게스는 장기전이 좋아요.",
-      "fan_summary": "메디치가 이긴다는 쪽이 압도적이에요. 그래도 5라운드는 모른다는 반론도 보여요.",
+      "viewing_hook": "메디치가 초반에 끝내느냐, 로드리게스가 3라운드까지 버티느냐.",
+      "thesis": "메디치가 초반에 끝내느냐, 로드리게스가 3라운드까지 버티느냐.",
+      "mobile_thesis": "초반의 메디치, 버텨야 하는 로드리게스.",
+      "fan_summary": "Sherdog 공개 투표와 댓글에서 반복된 쟁점을 따로 정리했습니다.",
       "fan_reactions": [
         {
-          "label": "대세는 메디치",
-          "text": "대부분 메디치의 초반 KO를 예상해요. 팬 투표도 89%가 메디치 쪽이고요."
+          "label": "메디치 초반 KO",
+          "text": "가장 많이 반복된 예상"
         },
         {
-          "label": "잠깐, 반론도",
-          "text": "둘 다 왼손잡이라 메디치의 왼손이 덜 통할 수 있어요. 5라운드라면 로드리게스가 해볼 만하다는 의견도 있고요."
+          "label": "5라운드 변수",
+          "text": "로드리게스 쪽에서 나온 반론"
         },
         {
-          "label": "대진 자체는?",
-          "text": "화끈한 경기는 되겠지만, 메인이벤트로는 이름값이 아쉽다는 반응도 적지 않아요."
+          "label": "메인이벤트급인가",
+          "text": "승패와 별개로 이어진 대진 평가"
         }
       ],
       "fan_topics": [
@@ -63,19 +65,19 @@
       "community_tone": "세르비아 첫 UFC와 홈 파이터 메디치에는 기대가 커요. 다만 메인이벤트의 이름값은 아쉽다는 반응도 있고요.",
       "watch_points": [
         {
-          "title": "첫 5분, 놓치지 마세요",
-          "text": "메디치는 최근 3경기를 전부 1라운드 KO로 끝냈어요. 시작하자마자 밀어붙이는지 보면 돼요."
+          "title": "첫 5분",
+          "text": "메디치의 최근 3경기는 모두 1라운드 KO."
         },
         {
-          "title": "정확한 메디치 vs 바쁜 로드리게스",
-          "text": "메디치는 적게 쳐도 정확하고, 로드리게스는 훨씬 많이 때려요. 누구 리듬으로 흘러가는지가 포인트예요."
+          "title": "타격량 차이",
+          "text": "메디치는 정확도, 로드리게스는 볼륨."
         },
         {
-          "title": "둘 다 처음인 5라운드",
-          "text": "둘 다 UFC에서 5라운드는 처음이에요. 팔이 더 긴 로드리게스가 후반까지 끌고 갈 수 있을까요?"
+          "title": "처음인 5라운드",
+          "text": "둘 다 UFC 5라운드 경험이 없습니다."
         }
       ],
-      "responsible_note": "배당은 정답이 아니라 시장 분위기예요. 참고만 해주세요.",
+      "responsible_note": "배당은 시장 정보이며 베팅 권유가 아닙니다.",
       "sources": [
         {
           "label": "UFC 공식 이벤트",
