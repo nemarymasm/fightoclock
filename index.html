@@ -455,7 +455,8 @@
   .week-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:20px 4px 17px}
   .week-eyebrow{font-size:11px;font-weight:850;letter-spacing:.13em;color:#ff7d82;text-transform:uppercase}
   .week-time{margin-top:7px;font-size:28px;font-weight:900;letter-spacing:-.045em;line-height:1.1}
-  .week-sub{margin-top:7px;color:var(--muted);font-size:12px;line-height:1.5}
+  .week-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+  .week-meta span{padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:#c9c9c9;font-size:11px;font-weight:700}
   .week-d{flex-shrink:0;margin-top:2px;color:#ff8d91;font-size:12px;font-weight:800}
   .brief-grid{display:grid;grid-template-columns:1fr;min-width:0;border-top:1px solid var(--line)}
   .match-stage{min-width:0;padding:14px 8px 15px;background:
@@ -474,57 +475,57 @@
   .brief-intel{padding:19px 4px 21px;border-top:1px solid var(--line)}
   .brief-kicker{margin-bottom:9px;color:#ff8589;font-size:10px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
   .brief-thesis{max-width:29em;font-size:21px;line-height:1.45;font-weight:820;letter-spacing:-.035em}
-  .main-eta{margin-top:20px;padding:15px 16px;border:1px solid var(--line);border-radius:13px;background:#111113}
-  .main-eta span{display:block;color:var(--muted);font-size:10px;font-weight:750;letter-spacing:.08em}
+  .main-eta{position:relative;width:100%;margin-top:20px;padding:15px 44px 15px 16px;border:1px solid var(--line);border-radius:13px;background:#111113;text-align:left;cursor:pointer}
+  .main-eta::after{content:"↓";position:absolute;right:16px;top:50%;translate:0 -50%;color:#ff8589;font-size:15px;font-weight:850}
+  .main-eta span{display:block;color:#c5c5c5;font-size:11px;font-weight:750}
   .main-eta b{display:block;margin-top:4px;font-size:20px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-  .eta-note{margin-top:6px;color:var(--muted);font-size:11px;line-height:1.45}
-  .brief-link{display:inline-flex;align-items:center;min-height:38px;margin-top:5px;color:#ff8589;font-size:12px;font-weight:800}
+  .eta-note{margin-top:6px;color:#a9a9a9;font-size:11px;line-height:1.45}
 
   .crowd-panel{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line-2)}
   .fan-pick,.fan-talk{min-width:0;padding:22px 4px}
   .fan-talk{border-top:1px solid var(--line)}
-  .editorial-heading{display:flex;align-items:end;justify-content:space-between;gap:14px}
+  .editorial-heading{display:flex;align-items:center;justify-content:space-between;gap:14px}
   .editorial-heading h2{margin:0;font-size:19px;letter-spacing:-.035em}
-  .editorial-heading a{color:var(--muted);font-size:10px;text-decoration:underline;text-underline-offset:3px}
-  .panel-source{margin-top:5px;color:var(--muted);font-size:11px}
-  .crowd-poll{margin-top:17px;max-width:560px}
+  .editorial-heading a{color:#c2c2c2;font-size:12px;font-weight:700;text-decoration:none}
+  .crowd-poll{margin-top:20px;max-width:560px}
   .crowd-poll-head{display:flex;justify-content:space-between;gap:12px;font-size:12px;font-weight:750}
   .crowd-poll-head span:last-child{color:var(--muted)}
   .signal-bar{height:7px;margin-top:8px;overflow:hidden;display:flex;border-radius:99px;background:var(--line-2)}
   .signal-bar .fav{background:var(--red)}
   .signal-bar .dog{background:#536780}
-  .poll-note{margin-top:9px;color:var(--muted);font-size:10px;line-height:1.45}
   .crowd-list{margin-top:12px;border-top:1px solid var(--line)}
-  .crowd-voice{display:grid;grid-template-columns:25px minmax(0,1fr) auto;gap:9px;align-items:start;padding:12px 0;border-bottom:1px solid var(--line)}
-  .crowd-index{color:#ff8589;font-size:10px;font-weight:850;font-variant-numeric:tabular-nums}
-  .crowd-voice b{display:block;font-size:13px;line-height:1.35}
-  .crowd-voice p{margin:3px 0 0;color:var(--muted);font-size:11px;line-height:1.45}
+  .crowd-voice{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+  .crowd-index{color:#ff8589;font-size:11px;font-weight:850;font-variant-numeric:tabular-nums}
+  .crowd-voice b{display:block;font-size:14px;line-height:1.4}
+  .crowd-voice p{margin:5px 0 0;color:#b5b5b5;font-size:12px;line-height:1.5}
   .crowd-score{color:var(--dim);font-size:10px;white-space:nowrap}
   .signal-grid{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
   .signal-card{min-width:0;padding:16px 4px;border-bottom:1px solid var(--line)}
   .signal-card:last-child{border-bottom:0}
-  .signal-card span{display:block;color:var(--muted);font-size:10px;font-weight:750;letter-spacing:.06em}
+  .signal-card span{display:block;color:#b8b8b8;font-size:12px;font-weight:750}
   .signal-card b{display:block;margin-top:5px;font-size:16px;letter-spacing:-.02em}
-  .signal-card small{display:block;margin-top:4px;color:var(--dim);font-size:10px;line-height:1.4}
-  .signal-card a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 
   .watch-panel{padding:22px 4px 19px}
   .watch-title{font-size:21px;font-weight:850;letter-spacing:-.035em}
-  .watch-sub{margin-top:4px;color:var(--muted);font-size:11px}
   .watch-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:12px}
   .watch-item{display:grid;grid-template-columns:22px 1fr;gap:9px;padding:12px 0;border-top:1px solid var(--line)}
   .watch-num{color:#ff8589;font-size:11px;font-weight:850}
   .watch-item b{display:block;font-size:14px}
-  .watch-item p{margin:4px 0 0;color:var(--muted);font-size:13px;line-height:1.55}
+  .watch-item p{margin:5px 0 0;color:#b8b8b8;font-size:13px;line-height:1.55}
   .brief-actions{display:flex;gap:9px;padding:0 4px 22px}
   .brief-actions .btn{max-width:240px}
-  .brief-sources{padding:11px 4px;border-top:1px solid var(--line);color:var(--dim);font-size:10px;line-height:1.5}
+  .brief-sources{border-top:1px solid var(--line)}
+  .brief-sources summary{list-style:none;display:flex;align-items:center;justify-content:space-between;min-height:48px;padding:0 4px;color:#aaa;font-size:12px;font-weight:700;cursor:pointer}
+  .brief-sources summary::-webkit-details-marker{display:none}
+  .brief-sources summary::after{content:"＋";color:#888;font-size:16px;font-weight:500}
+  .brief-sources[open] summary::after{content:"－"}
+  .source-list{display:grid;gap:10px;padding:2px 4px 18px;color:#aaa;font-size:12px;line-height:1.5}
+  .source-list a{color:#c8c8c8;text-decoration:underline;text-underline-offset:3px}
   .source-desktop{display:none}
 
   .card-preview{margin-top:34px}
   .card-preview-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:9px}
   .card-preview-head h2{margin:0;font-size:21px;letter-spacing:-.035em}
-  .card-preview-head span{color:var(--muted);font-size:11px}
   .card-preview-list{border-top:1px solid var(--line-2)}
   .preview-fight{display:grid;grid-template-columns:66px minmax(0,1fr);align-items:center;gap:10px;padding:12px 2px;border-bottom:1px solid var(--line)}
   .preview-time{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -549,7 +550,7 @@
     .crowd-panel{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
     .fan-pick,.fan-talk{padding:25px 28px}
     .fan-talk{border-top:0;border-left:1px solid var(--line)}
-    .signal-grid{grid-template-columns:repeat(3,1fr)}
+    .signal-grid{grid-template-columns:repeat(2,1fr)}
     .signal-card{padding:18px 22px;border-bottom:0;border-right:1px solid var(--line)}
     .signal-card:last-child{border-right:0}
     .watch-grid{grid-template-columns:repeat(3,1fr);gap:20px}
@@ -559,7 +560,6 @@
   @media (max-width:779px){
     .week-head{padding-top:16px}
     .week-time{font-size:25px}
-    .week-sub{font-size:11px}
     .match-stage{padding-top:8px;padding-bottom:10px}
     .match-stage .cf-img{width:108px;height:134px;max-width:34vw;max-height:42vw}
     .match-stage .cf-vs{margin-top:47px}
@@ -567,7 +567,6 @@
     .brief-intel{padding-top:15px;padding-bottom:16px}
     .brief-thesis{font-size:18px}
     .main-eta{margin-top:14px;padding-top:12px}
-    .brief-link{min-height:38px;margin-top:5px}
     .fan-pick,.fan-talk,.watch-panel{padding-top:18px}
     .brief-actions{display:block}
     .brief-actions .btn{max-width:none}
@@ -887,8 +886,6 @@ function weekBrief(e, main, a, b){
   const reactions = intel.fan_reactions || [];
   const fanAPct = Number(fans.fighter_a_pct ?? 50);
   const fanBPct = Number(fans.fighter_b_pct ?? (100-fanAPct));
-  const marketAPct = Number(market.fighter_a_pct ?? market.aPct ?? 50);
-  const marketBPct = Number(market.fighter_b_pct ?? market.bPct ?? (100-marketAPct));
   const mainEstimate = schedule.main_event_window || schedule.main_event_estimate || estimatedBoutTime(e,0,(e.mainCard||[]).length);
   const sourceLink = (url,label)=>url?`<a href="${esc(safeExternalUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:esc(label);
   const opinionQuotes = (OPINIONS[e.id]?.communities||[]).flatMap(c=>
@@ -907,7 +904,7 @@ function weekBrief(e, main, a, b){
       <span class="crowd-index">${String(i+1).padStart(2,'0')}</span>
       <div>
         <b>${esc(r.quote?r.text:(r.label||'팬 반응'))}</b>
-        ${r.quote?`<p>${esc(r.label||'원문 댓글')}</p>`:`<p>${esc(r.text||'')}</p>`}
+        ${r.quote?`<p>${esc(r.label||'원문 댓글')}</p>`:''}
       </div>
       ${r.quote&&r.score?`<span class="crowd-score">▲ ${r.score}</span>`:''}
     </div>`).join('');
@@ -917,7 +914,10 @@ function weekBrief(e, main, a, b){
       <div>
         <div class="week-eyebrow">이번 주 UFC · ${esc(e.city||'')}</div>
         <div class="week-time" id="weekFightTitle">${esc(schedule.label || eventTimeLabel(e))}</div>
-        <div class="week-sub">프릴림 ${esc(schedule.prelims||'시각 확인 중')} · 전체 ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기</div>
+        <div class="week-meta">
+          <span>프릴림 ${esc(schedule.prelims||'시각 확인 중')}</span>
+          <span>전체 ${Number(schedule.bout_count)||((e.mainCard||[]).length+(e.prelims||[]).length)}경기</span>
+        </div>
       </div>
       <div class="week-d">${esc(dLabel(e.dateUtc))}</div>
     </div>
@@ -944,35 +944,31 @@ function weekBrief(e, main, a, b){
         <div class="brief-thesis">
           ${esc(intel.viewing_hook || intel.thesis || `${a.name}와 ${b.name}의 메인이벤트`)}
         </div>
-        <div class="main-eta">
+        <button class="main-eta" type="button" onclick="document.getElementById('fightTimes')?.scrollIntoView({behavior:'smooth',block:'start'})">
           <span>메인이벤트 예상</span>
           <b>${esc(mainEstimate)}</b>
           <div class="eta-note">${esc(schedule.estimate_note||'앞 경기 길이에 따라 달라집니다.')}</div>
-        </div>
-        <button class="brief-link" type="button" onclick="document.getElementById('fightTimes')?.scrollIntoView({behavior:'smooth',block:'start'})">메인카드 예상 시각 ↓</button>
+        </button>
       </aside>
     </div>
     <section class="crowd-panel" aria-labelledby="crowdTitle">
       <div class="fan-pick">
         <div class="editorial-heading">
           <h2 id="crowdTitle">팬 픽</h2>
-          ${fans.source?sourceLink(fans.source,'원문 투표'):''}
+          ${fans.source?sourceLink(fans.source,`${fans.label||'Sherdog'} · ${Number(fans.sample)||0}명`):''}
         </div>
-        <div class="panel-source">${esc(fans.label||'공개 팬 투표')} · ${Number(fans.sample)||0}명</div>
         <div class="crowd-poll">
           <div class="crowd-poll-head"><span>${esc(a.name)} ${fanAPct}%</span><span>${esc(b.name)} ${fanBPct}%</span></div>
           <div class="signal-bar" aria-label="팬 투표 ${esc(a.name)} ${fanAPct}%, ${esc(b.name)} ${fanBPct}%">
             <i class="fav" style="width:${Math.max(0,Math.min(100,fanAPct))}%"></i><i class="dog" style="width:${Math.max(0,Math.min(100,fanBPct))}%"></i>
           </div>
         </div>
-        <div class="poll-note">${esc(fans.note||'공개 투표 표본을 그대로 표시합니다.')}</div>
       </div>
       <div class="fan-talk">
         <div class="editorial-heading">
-          <h2>${opinionQuotes.length?'많이 공감한 댓글':'댓글에서 반복된 얘기'}</h2>
+          <h2>${opinionQuotes.length?'많이 공감한 댓글':'댓글에서 많이 나온 주제'}</h2>
           ${fans.source?sourceLink(fans.source,`댓글 ${Number(fans.discussion_count)||crowdRows.length}개`):''}
         </div>
-        <div class="panel-source">${opinionQuotes.length?'번역된 원문 댓글':'원문 토론을 주제별로 요약 · 직접 인용 아님'}</div>
         <div class="crowd-list">${crowdItems || '<div class="crowd-voice"><span class="crowd-index">—</span><div><b>아직 정리된 반응이 없습니다</b><p>원문 댓글이 모이면 이곳에 표시됩니다.</p></div></div>'}</div>
       </div>
     </section>
@@ -980,31 +976,29 @@ function weekBrief(e, main, a, b){
       <div class="signal-card">
         <span>시장 배당</span>
         <b>${esc(a.name)} ${esc(market.fighter_a_odds||'-')} · ${esc(b.name)} ${esc(market.fighter_b_odds||'-')}</b>
-        <small>${esc(market.as_of||'업데이트 시각 확인 중')} · ${sourceLink(market.source,'출처')}</small>
       </div>
       <div class="signal-card">
-        <span>배당 환산</span>
-        <b>${esc(a.name)} ${marketAPct}% · ${esc(b.name)} ${marketBPct}%</b>
-        <small>북메이커 마진을 뺀 대략적인 시장 확률</small>
-      </div>
-      <div class="signal-card">
-        <span>공개 분석 모델</span>
+        <span>분석 모델</span>
         <b>${models.fighter_a_low&&models.fighter_a_high?`${esc(a.name)} ${models.fighter_a_low}–${models.fighter_a_high}%`:'자료 확인 중'}</b>
-        <small>${sourceLink(models.source,'모델 출처')} · 팬 픽·시장 배당과 별도</small>
       </div>
     </section>
     <div class="watch-panel">
       <div class="watch-title">볼 것 세 가지</div>
-      <div class="watch-sub">경기 시작 전에 기억해둘 내용만 남겼습니다.</div>
       <div class="watch-grid">${watchItems}</div>
     </div>
     <div class="brief-actions">
       <a class="btn primary" href="#event/${e.id}">전체 대진 한눈에 보기</a>
       <button class="btn ghost" type="button" onclick="downloadCalendar('${e.id}')">캘린더 저장</button>
     </div>
-    <div class="brief-sources">
-      ${esc(schedule.note||'')} ${intel.responsible_note?`· ${esc(intel.responsible_note)}`:''}
-    </div>
+    <details class="brief-sources">
+      <summary>출처와 계산 기준</summary>
+      <div class="source-list">
+        <span>${fans.source?sourceLink(fans.source,`${fans.label||'팬 투표'} 원문`):'팬 투표 출처 확인 중'} · ${opinionQuotes.length?'번역된 원문 댓글':'댓글 주제는 원문 토론 요약이며 직접 인용이 아닙니다.'}</span>
+        <span>${market.source?sourceLink(market.source,'시장 배당 출처'):'배당 출처 확인 중'} · ${esc(market.as_of||'업데이트 시각 확인 중')}</span>
+        <span>${models.source?sourceLink(models.source,'분석 모델 출처'):'모델 출처 확인 중'} · 팬 픽·시장 배당과 별도</span>
+        <span>${esc(schedule.note||'')} ${intel.responsible_note?`· ${esc(intel.responsible_note)}`:''}</span>
+      </div>
+    </details>
   </section>`;
 }
 
@@ -1013,7 +1007,7 @@ function homeCardPreview(e){
   if(!fights.length) return '';
   return `
   <section class="card-preview" id="fightTimes">
-    <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2><span>오전 2시 시작 기준 · 앞 경기 길이에 따라 변동</span></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+    <div class="card-preview-head"><div><h2>메인카드 예상 시각</h2></div><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
     <div class="card-preview-list">${fights.map((f,i)=>{
       const a=getFighter(f.a), b=getFighter(f.b);
       return `<a class="preview-fight" href="#event/${e.id}">

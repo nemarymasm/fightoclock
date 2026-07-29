@@ -153,11 +153,12 @@ class FrontendContractTests(unittest.TestCase):
             "한 줄만 알고 보면",
             "메인이벤트 예상",
             "팬 픽",
-            "댓글에서 반복된 얘기",
+            "댓글에서 많이 나온 주제",
             "볼 것 세 가지",
             "메인카드 예상 시각",
             "시장 배당",
-            "공개 분석 모델",
+            "분석 모델",
+            "출처와 계산 기준",
             "data/insights.json",
             'class="crowd-panel"',
             'class="signal-grid"',
@@ -168,6 +169,10 @@ class FrontendContractTests(unittest.TestCase):
             "뭘 보면서 보면 돼?",
             "몇 시쯤 보면 될까?",
             "숫자와 출처도 볼래요?",
+            "배당 환산",
+            'class="panel-source"',
+            'class="poll-note"',
+            'class="watch-sub"',
         ):
             self.assertNotIn(removed, self.html)
 
