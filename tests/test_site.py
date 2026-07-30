@@ -549,7 +549,7 @@ class FrontendContractTests(unittest.TestCase):
         ):
             self.assertIn(required, self.html)
 
-    def test_rankings_use_large_faces_and_labeled_columns(self):
+    def test_rankings_use_large_faces_and_one_shared_column_header(self):
         ranking_view = self.html.split("function viewRankings", 1)[1].split("function fighterMatches", 1)[0]
         for required in (
             'class="rankings-page"',
@@ -559,6 +559,7 @@ class FrontendContractTests(unittest.TestCase):
             'class="ranking-list-head"',
             'class="rank-photo"',
             'class="rank-athlete"',
+            'class="rank-row-stats"',
             'class="rank-country"',
             'class="rank-record"',
             "<span>순위</span>",
@@ -567,6 +568,8 @@ class FrontendContractTests(unittest.TestCase):
             "<span>전적</span>",
         ):
             self.assertIn(required, ranking_view)
+        self.assertNotIn('<div class="rank-country"><span>국가</span>', ranking_view)
+        self.assertNotIn('<div class="rank-record"><span>전적</span>', ranking_view)
         for css_class in (
             ".view.rankings-view",
             ".champion-photo",

@@ -264,7 +264,7 @@
   .champion-en{margin-top:5px;color:#bcbcc0;font-size:15px;font-weight:700}
   .champion-data{display:flex;gap:24px;margin-top:17px}
   .champion-data div{min-width:120px}
-  .champion-data span,.rank-country span,.rank-record span{display:block;color:#929298;font-size:12px;font-weight:800;letter-spacing:.06em}
+  .champion-data span{display:block;color:#929298;font-size:12px;font-weight:800;letter-spacing:.06em}
   .champion-data strong{display:block;margin-top:4px;color:#f1f1f2;font-size:17px;font-weight:850}
   .champion-mark{display:grid;place-items:center;width:62px;height:62px;border:2px solid #d3a645;border-radius:50%;color:#e8c66d;font-size:28px;font-weight:950}
   .ranking-list{overflow:hidden;margin-top:16px;border:1px solid var(--line-2);border-radius:18px;background:var(--card)}
@@ -295,8 +295,9 @@
   .fan-tag.quiet{border-color:#303034;background:#18181a;color:#a8a8ad;font-weight:750}
   .fan-tag.quiet::before{background:#68686e;box-shadow:none}
   .fighter-hero .fan-tag{margin-top:10px}
+  .rank-row-stats{display:contents}
   .rank-country,.rank-record{min-width:0}
-  .rank-country b,.rank-record b{display:block;margin-top:5px;color:#e4e4e6;font-size:16px;font-weight:800;white-space:nowrap}
+  .rank-country b,.rank-record b{display:block;color:#e4e4e6;font-size:17px;font-weight:850;white-space:nowrap}
   .champion-data .country-value,.rank-country .country-value{display:flex;align-items:center;gap:8px}
   .country-flag{display:block;flex:0 0 auto;width:24px;height:16px;object-fit:cover;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.14);filter:saturate(.92)}
   .rank-row .chev{color:#cfcfd2;font-size:24px}
@@ -797,9 +798,8 @@
     .ranking-list-head{display:none}
     .rank-row{grid-template-columns:42px 64px minmax(0,1fr) 20px;grid-template-areas:
       "num photo athlete chev"
-      "num photo country chev"
-      "num photo record chev";
-      gap:4px 10px;min-height:116px;padding:12px}
+      "num photo stats chev";
+      gap:7px 10px;min-height:112px;padding:12px}
     .rank-num{grid-area:num;font-size:22px}
     .rank-photo{grid-area:photo}
     .rank-photo,.rank-photo .avatar-box{width:64px!important;height:78px!important}
@@ -810,11 +810,10 @@
     .rank-athlete .fan-tag{min-height:25px;padding:3px 8px;font-size:12px;white-space:normal}
     .champion-profile .fighter-name-line{display:block}
     .champion-profile .fan-tag{margin-top:8px;white-space:normal}
-    .rank-country{grid-area:country}
-    .rank-record{grid-area:record}
-    .rank-country,.rank-record{display:flex;align-items:baseline;gap:8px}
-    .rank-country span,.rank-record span{min-width:29px}
-    .rank-country b,.rank-record b{margin-top:0;font-size:14px}
+    .rank-row-stats{grid-area:stats;display:flex;align-items:center;gap:10px;min-width:0}
+    .rank-country,.rank-record{display:flex;align-items:center}
+    .rank-country b,.rank-record b{font-size:15px}
+    .rank-record::before{content:"·";margin-right:10px;color:#5d5d63;font-size:17px;font-weight:900}
     .rank-row .chev{grid-area:chev}
     .result-head{padding:18px 15px 16px}
     .result-card h3{font-size:21px}
@@ -1797,8 +1796,10 @@ function viewRankings(){
               </div>
               ${f.en&&f.en!==f.name?`<div class="en">${esc(f.en)}</div>`:''}
             </div>
-            <div class="rank-country"><span>국가</span><b class="country-value">${countryValueHtml(f.country)}</b></div>
-            <div class="rank-record"><span>전적</span><b>${esc(f.record||'-')}</b></div>
+            <div class="rank-row-stats">
+              <div class="rank-country"><b class="country-value">${countryValueHtml(f.country)}</b></div>
+              <div class="rank-record"><b>${esc(f.record||'-')}</b></div>
+            </div>
             <div class="chev" aria-hidden="true">›</div>
           </a>`;
         }).join('')}
