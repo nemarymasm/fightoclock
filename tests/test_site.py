@@ -134,6 +134,34 @@ class DataContractTests(unittest.TestCase):
         ]
         self.assertFalse(missing, f"Recent result fighters missing photos: {missing}")
 
+    def test_recent_result_matches_have_editorial_talking_points(self):
+        events = load_json("events.json").get("past_events", [])
+        fights = [
+            fight
+            for event in events
+            for fight in event.get("main_card", [])
+        ]
+        missing = [
+            f"{fight.get('fighter_a')} vs {fight.get('fighter_b')}"
+            for fight in fights
+            if not fight.get("talking_point_ko")
+        ]
+        self.assertFalse(missing, f"Recent result fights missing talking points: {missing}")
+        usman_fight = next(
+            fight for fight in fights
+            if fight.get("fighter_b") == "Kamaru Usman"
+        )
+        self.assertIn("우스만의 5라운드 분전", usman_fight["talking_point_ko"])
+        self.assertIn("타이틀전?", usman_fight["talking_point_ko"])
+
+    def test_alexander_volkov_uses_current_official_ufc_photo(self):
+        fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
+        volkov = fighters["Alexander Volkov"]
+        self.assertEqual(volkov.get("avatar_provider"), "UFC")
+        self.assertTrue(volkov.get("avatar_url", "").endswith("alexander-volkov-full.webp"))
+        self.assertTrue(volkov.get("avatar_thumb_url", "").endswith("alexander-volkov-thumb.webp"))
+        self.assertEqual(volkov.get("avatar_source"), "https://www.ufc.com/athlete/alexander-volkov")
+
     def test_recent_result_event_metadata_is_korean(self):
         events = {event["name"]: event for event in load_json("events.json").get("past_events", [])}
         usman = events["UFC Fight Night: du Plessis vs. Usman"]
@@ -336,8 +364,12 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("${avatarBox(f,48)}", ranking_view)
         self.assertIn("fighter_id || slugify", self.html)
         self.assertIn("f.history&&f.history.length", self.html)
-        self.assertIn("프로 MMA 전적", fighter_view)
-        self.assertIn("resultMethodKo(r.way||'')", fighter_view)
+        self.assertIn("UFC 전적", fighter_view)
+        self.assertIn("UFC 입성 이전 전적", fighter_view)
+        self.assertIn("onlyUfcHistory", fighter_view)
+        self.assertIn("fighterHistoryList(ufcHistory)", fighter_view)
+        self.assertIn('class="pre-ufc-history"', fighter_view)
+        self.assertIn("resultMethodKo(r.way||'')", self.html)
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)
@@ -396,6 +428,14 @@ class FrontendContractTests(unittest.TestCase):
             ".result-fighter.win .avatar-box",
         ):
             self.assertIn(css_class, self.html)
+
+    def test_result_cards_show_short_match_talking_points(self):
+        results = self.html.split("function resultMethodMeta", 1)[1].split("function setRankingFilter", 1)[0]
+        self.assertIn("talkingPoint: cleanExternalText(m.talking_point_ko || '')", self.html)
+        self.assertIn('class="result-talking-point"', results)
+        self.assertIn("${esc(f.talkingPoint)}", results)
+        self.assertIn(".result-talking-point{", self.html)
+        self.assertIn(".result-card.numbered .result-talking-point", self.html)
 
     def test_upcoming_events_are_visually_separate_from_this_week(self):
         self.assertIn('class="upcoming-section"', self.html)

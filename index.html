@@ -234,6 +234,15 @@
   .recent-item .way{font-size:14px;color:#d1d1d3;margin-top:4px}
   .recent-item .event{font-size:13px;color:#aaaab0;margin-top:4px}
   .recent-item .when{font-size:14px;color:#bdbdc0;text-align:right;white-space:nowrap}
+  .history-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:28px 6px 12px}
+  .history-heading h2{margin:0;font-size:21px;font-weight:900;letter-spacing:-.035em}
+  .history-heading span{color:#c7c7ca;font-size:15px;font-weight:750}
+  .pre-ufc-history{margin-top:18px;border:1px solid var(--line);border-radius:14px;background:#101012;overflow:hidden}
+  .pre-ufc-history summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:0 16px;cursor:pointer;list-style:none;color:#e7e7e8;font-size:18px;font-weight:850}
+  .pre-ufc-history summary::-webkit-details-marker{display:none}
+  .pre-ufc-history summary::after{content:"+";display:grid;place-items:center;width:30px;height:30px;border:1px solid var(--line-2);border-radius:50%;color:#fff;font-size:20px;font-weight:500}
+  .pre-ufc-history[open] summary::after{content:"−"}
+  .pre-ufc-history .recent-list{border-width:1px 0 0;border-radius:0}
 
   /* ---------- 랭킹 ---------- */
   .rank-row{display:grid;grid-template-columns:34px 48px 1fr auto;gap:11px;align-items:center;padding:11px 12px;border-top:1px solid var(--line)}
@@ -272,7 +281,7 @@
   .result-meta-item span{display:block;color:#aaaab0;font-size:12px;font-weight:850;letter-spacing:.08em}
   .result-meta-item b{display:block;margin-top:5px;color:#f0f0f1;font-size:16px;font-weight:800;line-height:1.35}
   .result-fights{padding:0 18px}
-  .result-fight{display:grid;grid-template-columns:minmax(0,1fr) 154px minmax(0,1fr);gap:12px;align-items:center;min-height:76px;padding:12px 0;border-top:1px solid var(--line)}
+  .result-fight{display:grid;grid-template-columns:minmax(0,1fr) 154px minmax(0,1fr);column-gap:12px;row-gap:9px;align-items:center;min-height:76px;padding:12px 0;border-top:1px solid var(--line)}
   .result-fight:first-child{border-top:0}
   .result-fighter{display:flex;align-items:center;gap:10px;min-width:0}
   .result-fighter.right{justify-content:flex-end;text-align:right}
@@ -292,6 +301,8 @@
   .method-badge.nc{color:#d0d0d3;background:#29292d;border-color:#45454b}
   .method-badge.other{color:#d5d5d7;background:#242427;border-color:#414146}
   .method-detail{color:#bdbdc0;font-size:13px;font-weight:750;font-variant-numeric:tabular-nums}
+  .result-talking-point{grid-column:1/-1;padding:10px 13px;border-left:3px solid var(--red);background:#0d0d0f;color:#ededee;font-size:15px;font-weight:820;line-height:1.42;letter-spacing:-.015em}
+  .result-card.numbered .result-talking-point{border-left-color:#d3a645;background:rgba(211,166,69,.055)}
   .result-actions{padding:2px 18px 17px}
   .result-actions .pill{font-size:14px}
 
@@ -647,7 +658,10 @@
     .result-fighter .avatar-box{width:42px!important;height:42px!important;border-radius:10px!important}
     .method-badge{min-width:88px;padding-inline:8px;font-size:12px}
     .method-detail{font-size:12px}
+    .result-talking-point{padding:9px 11px;font-size:14px}
     .result-actions{padding:3px 14px 15px}
+    .history-heading{align-items:flex-start;flex-direction:column;gap:5px}
+    .history-heading h2{font-size:20px}
     .week-head{gap:12px;padding:18px 4px}
     .week-time-line{display:block}
     .week-time{font-size:27px;white-space:normal}
@@ -1353,6 +1367,7 @@ function viewResults(){
             <span class="nm">${bWin?'<span class="winner-mark">✓</span> ':''}${esc(b.name)}</span>
             ${avatarBox(b,48)}
           </a>
+          ${f.talkingPoint?`<div class="result-talking-point">${esc(f.talkingPoint)}</div>`:''}
         </div>`;
       }).join('')}
       </div>
@@ -1500,10 +1515,29 @@ function recentFormText(recent){
   return s;
 }
 
+function fighterHistoryList(rows){
+  return `
+  <div class="recent-list">
+    ${rows.map(r=>`
+      <div class="recent-item">
+        <div class="res-tag ${r.res}">${r.res==='W'?'승':r.res==='L'?'패':r.res==='N'?'NC':'무'}</div>
+        <div>
+          <div class="opp">vs ${r.opp}</div>
+          <div class="way">${resultMethodKo(r.way||'')}${r.round?` · ${r.round}라운드`:''}${r.time?` ${r.time}`:''}</div>
+          ${r.event?`<div class="event">${r.event}</div>`:''}
+        </div>
+        <div class="when">${r.when||''}</div>
+      </div>
+    `).join('')}
+  </div>`;
+}
+
 function viewFighter(id){
   if(!FIGHTERS[id] && !REAL_FIGHTERS[id]) return `<div class="state-card"><div><h1>선수를 찾을 수 없습니다</h1><p>주소가 바뀌었거나 선수 데이터가 갱신 중일 수 있습니다.</p><a class="btn primary" href="#fighters">선수 목록으로</a></div></div>`;
   const f = getFighter(id);
-  const form = recentFormText(f.recent);
+  const onlyUfcHistory = f.historyScope==='UFC 경기';
+  const ufcHistory = (f.recent||[]).filter(r=>onlyUfcHistory || /^UFC(?:\s|$)/i.test(r.event||''));
+  const preUfcHistory = onlyUfcHistory ? [] : (f.recent||[]).filter(r=>!/^UFC(?:\s|$)/i.test(r.event||''));
   return `
   <div class="back-bar"><button type="button" aria-label="이전 화면으로" onclick="history.back()">←</button><span>${esc(f.weight||'선수')}</span></div>
 
@@ -1538,21 +1572,20 @@ function viewFighter(id){
     <p>${f.next.event||''}</p>
   </div>`:''}
 
-  <div class="section-title"><span class="bar"></span>${esc(f.historyScope||'프로 MMA 전적')}${form?` <span style="font-weight:650;font-size:14px;color:#c7c7ca">· ${form}</span>`:''}</div>
   ${f.recent && f.recent.length ? `
-  <div class="recent-list">
-    ${f.recent.map(r=>`
-      <div class="recent-item">
-        <div class="res-tag ${r.res}">${r.res==='W'?'승':r.res==='L'?'패':r.res==='N'?'NC':'무'}</div>
-        <div>
-          <div class="opp">vs ${r.opp}</div>
-          <div class="way">${resultMethodKo(r.way||'')}${r.round?` · ${r.round}라운드`:''}${r.time?` ${r.time}`:''}</div>
-          ${r.event?`<div class="event">${r.event}</div>`:''}
-        </div>
-        <div class="when">${r.when||''}</div>
-      </div>
-    `).join('')}
-  </div>
+  ${ufcHistory.length?`
+    <div class="history-heading">
+      <h2>UFC 전적</h2>
+      <span>${recentFormText(ufcHistory)}</span>
+    </div>
+    ${fighterHistoryList(ufcHistory)}
+  `:''}
+  ${preUfcHistory.length?`
+    <details class="pre-ufc-history">
+      <summary>UFC 입성 이전 전적 <span>${preUfcHistory.length}경기</span></summary>
+      ${fighterHistoryList(preUfcHistory)}
+    </details>
+  `:''}
   ${f.historySource?`<a class="photo-credit" href="${esc(f.historySource)}" target="_blank" rel="noopener noreferrer">전적 원문 확인 ↗</a>`:''}
   ` : `<div class="box" style="color:var(--muted)">전적을 갱신하고 있습니다.</div>`}
 
@@ -2104,7 +2137,14 @@ function transformFight(m){
   const winner = m.winner==='a' ? a : (m.winner==='b' ? b : null);
   let way = cleanExternalText(m.method_ko || resultMethodKo(m.method || ''));
   if(m.round) way += (way?' · ':'') + m.round + '라운드' + (m.time ? ' ' + m.time : '');
-  return { wc: cleanExternalText(m.weight_ko || m.weight || ''), a: a, b: b, winner: winner, way: cleanExternalText(way) };
+  return {
+    wc: cleanExternalText(m.weight_ko || m.weight || ''),
+    a: a,
+    b: b,
+    winner: winner,
+    way: cleanExternalText(way),
+    talkingPoint: cleanExternalText(m.talking_point_ko || '')
+  };
 }
 function transformJsonEvent(je,status){
   const titleSource = je.name_ko || je.name;

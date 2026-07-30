@@ -777,7 +777,8 @@
           "time": "2:41",
           "fighter_a_ko": "마고메드 안칼라예프",
           "fighter_b_ko": "보그단 구스코프",
-          "weight_ko": "라이트헤비급"
+          "weight_ko": "라이트헤비급",
+          "talking_point_ko": "5라운드까지 몰아붙인 안칼라예프, 마지막에 직접 끝냈다"
         },
         {
           "weight": "Flyweight",
@@ -789,7 +790,8 @@
           "time": "4:21",
           "fighter_a_ko": "라마잔 테미로프",
           "fighter_b_ko": "스티브 얼섹",
-          "weight_ko": "플라이급"
+          "weight_ko": "플라이급",
+          "talking_point_ko": "얼섹을 1라운드에 재운 테미로프의 한 방"
         },
         {
           "weight": "Lightweight",
@@ -801,7 +803,8 @@
           "time": "5:00",
           "fighter_a_ko": "마고메드 자이누코프",
           "fighter_b_ko": "다미안 르제페키",
-          "weight_ko": "라이트급"
+          "weight_ko": "라이트급",
+          "talking_point_ko": "세 장 모두 30-27, 자이누코프의 완승"
         },
         {
           "weight": "Heavyweight",
@@ -813,7 +816,8 @@
           "time": "1:12",
           "fighter_a_ko": "리즈반 쿠니예프",
           "fighter_b_ko": "Tyrell Fortune",
-          "weight_ko": "헤비급"
+          "weight_ko": "헤비급",
+          "talking_point_ko": "니킥으로 흐름을 끝낸 쿠니예프"
         },
         {
           "weight": "Welterweight",
@@ -825,7 +829,8 @@
           "time": "5:00",
           "fighter_a_ko": "아부바카르 바가예프",
           "fighter_b_ko": "사이기드 이자가흐마예프",
-          "weight_ko": "웰터급"
+          "weight_ko": "웰터급",
+          "talking_point_ko": "세 장 모두 29-28, 바가예프가 접전을 가져갔다"
         }
       ],
       "prelims": [
@@ -939,7 +944,8 @@
           "time": "5:00",
           "fighter_a_ko": "드리퀴스 뒤 플레시",
           "fighter_b_ko": "카마루 우스만",
-          "weight_ko": "미들급"
+          "weight_ko": "미들급",
+          "talking_point_ko": "39세 우스만의 5라운드 분전 · 뒤 플레시 괴물 카디오, 다음은 타이틀전?"
         },
         {
           "weight": "Middleweight",
@@ -951,7 +957,8 @@
           "time": "5:00",
           "fighter_a_ko": "크리스천 리로이 던컨",
           "fighter_b_ko": "자레드 캐노니어",
-          "weight_ko": "미들급"
+          "weight_ko": "미들급",
+          "talking_point_ko": "노련한 캐노니어를 상대로 던컨이 3라운드 내내 우세"
         },
         {
           "weight": "Catchweight (157.5 lb)",
@@ -963,7 +970,8 @@
           "time": "2:15",
           "fighter_a_ko": "체이스 후퍼",
           "fighter_b_ko": "미치 라미레스",
-          "weight_ko": "Catchweight (157.5 lb)"
+          "weight_ko": "Catchweight (157.5 lb)",
+          "talking_point_ko": "후퍼가 1라운드부터 등을 잡고 초크로 마무리"
         },
         {
           "weight": "Women's Strawweight",
@@ -975,7 +983,8 @@
           "time": "5:00",
           "fighter_a_ko": "파티마 클라인",
           "fighter_b_ko": "타바사 리치",
-          "weight_ko": "여성 스트로급"
+          "weight_ko": "여성 스트로급",
+          "talking_point_ko": "세 장 모두 30-27, 클라인의 깔끔한 셧아웃"
         },
         {
           "weight": "Featherweight",
@@ -987,7 +996,8 @@
           "time": "3:29",
           "fighter_a_ko": "토미 맥밀런",
           "fighter_b_ko": "알베르토 몬테스",
-          "weight_ko": "페더급"
+          "weight_ko": "페더급",
+          "talking_point_ko": "맥밀런, 후반 압박으로 3라운드 TKO"
         }
       ],
       "prelims": [
@@ -1101,7 +1111,8 @@
           "time": "1:09",
           "fighter_a_ko": "맥스 할로웨이",
           "fighter_b_ko": "코너 맥그리거",
-          "weight_ko": "웰터급"
+          "weight_ko": "웰터급",
+          "talking_point_ko": "부상으로 너무 일찍 끝난 라이벌전"
         },
         {
           "weight": "Lightweight",
@@ -1113,7 +1124,8 @@
           "time": "0:52",
           "fighter_a_ko": "패디 핌블렛",
           "fighter_b_ko": "브누아 생드니",
-          "weight_ko": "라이트급"
+          "weight_ko": "라이트급",
+          "talking_point_ko": "52초 페루비안 넥타이, 핌블렛의 깜짝 서브미션"
         },
         {
           "weight": "Bantamweight",
@@ -1125,7 +1137,8 @@
           "time": "5:00",
           "fighter_a_ko": "마리오 바우티스타",
           "fighter_b_ko": "코리 샌드하겐",
-          "weight_ko": "밴텀급"
+          "weight_ko": "밴텀급",
+          "talking_point_ko": "접전이었지만 바우티스타가 세 장 모두 가져갔다"
         },
         {
           "weight": "Flyweight",
@@ -1137,7 +1150,8 @@
           "time": "3:40",
           "fighter_a_ko": "브랜든 로이발",
           "fighter_b_ko": "로니어 카바나",
-          "weight_ko": "플라이급"
+          "weight_ko": "플라이급",
+          "talking_point_ko": "3라운드 끝자락, 로이발이 결국 등을 잡았다"
         },
         {
           "weight": "Lightweight",
@@ -1149,7 +1163,8 @@
           "time": "4:59",
           "fighter_a_ko": "킹 그린",
           "fighter_b_ko": "테런스 맥키니",
-          "weight_ko": "라이트급"
+          "weight_ko": "라이트급",
+          "talking_point_ko": "1라운드 종료 1초 전, 킹 그린의 극적인 TKO"
         }
       ],
       "prelims": [
@@ -1287,7 +1302,8 @@
           "time": "0:15",
           "fighter_a_ko": "라파엘 피지에프",
           "fighter_b_ko": "마누엘 토레스",
-          "weight_ko": "라이트급"
+          "weight_ko": "라이트급",
+          "talking_point_ko": "스피닝 휠킥 한 방, 2라운드 시작 15초 만에 끝"
         },
         {
           "weight": "Middleweight",
@@ -1299,7 +1315,8 @@
           "time": "5:00",
           "fighter_a_ko": "샤라 마고메도프",
           "fighter_b_ko": "미첼 페레이라",
-          "weight_ko": "미들급"
+          "weight_ko": "미들급",
+          "talking_point_ko": "화려함보다 운영, 샤라가 29-28로 정리"
         },
         {
           "weight": "Lightweight",
@@ -1311,7 +1328,8 @@
           "time": "1:31",
           "fighter_a_ko": "마테우스 카밀루",
           "fighter_b_ko": "나짐 사디호프",
-          "weight_ko": "라이트급"
+          "weight_ko": "라이트급",
+          "talking_point_ko": "카밀루가 91초 만에 화력을 증명했다"
         },
         {
           "weight": "Flyweight",
@@ -1323,7 +1341,8 @@
           "time": "3:33",
           "fighter_a_ko": "아수 알마바예프",
           "fighter_b_ko": "찰스 존슨",
-          "weight_ko": "플라이급"
+          "weight_ko": "플라이급",
+          "talking_point_ko": "보기 드문 설로예프 스트레치로 피니시"
         },
         {
           "weight": "Middleweight",
@@ -1335,7 +1354,8 @@
           "time": "5:00",
           "fighter_a_ko": "이크람 알리스케로프",
           "fighter_b_ko": "브루누 페레이라",
-          "weight_ko": "미들급"
+          "weight_ko": "미들급",
+          "talking_point_ko": "세 장 모두 30-27, 알리스케로프의 압도"
         },
         {
           "weight": "Middleweight",
@@ -1347,7 +1367,8 @@
           "time": "3:25",
           "fighter_a_ko": "아부수피얀 마고메도프",
           "fighter_b_ko": "미하우 올렉셰이추크",
-          "weight_ko": "미들급"
+          "weight_ko": "미들급",
+          "talking_point_ko": "1라운드 길로틴, 마고메도프가 기회를 놓치지 않았다"
         }
       ],
       "prelims": [
@@ -1461,7 +1482,8 @@
           "time": "2:42",
           "fighter_a_ko": "마넬 캅",
           "fighter_b_ko": "호리구치 쿄지",
-          "weight_ko": "플라이급"
+          "weight_ko": "플라이급",
+          "talking_point_ko": "두 라운드 접전 뒤, 캅이 3라운드 화력으로 끝냈다"
         },
         {
           "weight": "Light Heavyweight",
@@ -1473,7 +1495,8 @@
           "time": "3:23",
           "fighter_a_ko": "나바호 스털링",
           "fighter_b_ko": "이온 쿠텔라바",
-          "weight_ko": "라이트헤비급"
+          "weight_ko": "라이트헤비급",
+          "talking_point_ko": "엘보와 펀치를 섞은 스털링의 2라운드 피니시"
         },
         {
           "weight": "Featherweight",
@@ -1485,7 +1508,8 @@
           "time": "3:43",
           "fighter_a_ko": "크리스천 로드리게스",
           "fighter_b_ko": "하이더 아밀",
-          "weight_ko": "페더급"
+          "weight_ko": "페더급",
+          "talking_point_ko": "로드리게스, 1라운드 길로틴으로 빠르게 정리"
         },
         {
           "weight": "Featherweight",
@@ -1497,7 +1521,8 @@
           "time": "1:17",
           "fighter_a_ko": "무르타잘리 마고메도프",
           "fighter_b_ko": "멜식 바그다사리안",
-          "weight_ko": "페더급"
+          "weight_ko": "페더급",
+          "talking_point_ko": "트위스터까지 나왔다, 77초 희귀 서브미션"
         },
         {
           "weight": "Featherweight",
@@ -1509,7 +1534,8 @@
           "time": "4:56",
           "fighter_a_ko": "비니시우스 올리베이라",
           "fighter_b_ko": "Andre Fili",
-          "weight_ko": "페더급"
+          "weight_ko": "페더급",
+          "talking_point_ko": "올리베이라가 2라운드 막판 엘보로 마무리"
         }
       ],
       "prelims": [
@@ -1623,7 +1649,8 @@
           "time": "5:00",
           "fighter_a_ko": "저스틴 게이치",
           "fighter_b_ko": "일리아 토푸리아",
-          "weight_ko": "라이트급"
+          "weight_ko": "라이트급",
+          "talking_point_ko": "4라운드 코너 스톱, 게이치가 토푸리아의 연승을 끊었다"
         },
         {
           "weight": "Heavyweight",
@@ -1635,7 +1662,8 @@
           "time": "1:27",
           "fighter_a_ko": "시릴 가네",
           "fighter_b_ko": "알렉스 페레이라",
-          "weight_ko": "헤비급"
+          "weight_ko": "헤비급",
+          "talking_point_ko": "가네가 페레이라를 2라운드 펀치로 멈췄다"
         },
         {
           "weight": "Bantamweight",
@@ -1647,7 +1675,8 @@
           "time": "4:02",
           "fighter_a_ko": "션 오말리",
           "fighter_b_ko": "아이만 자하비",
-          "weight_ko": "밴텀급"
+          "weight_ko": "밴텀급",
+          "talking_point_ko": "오말리의 정확도가 2라운드에 승부를 갈랐다"
         },
         {
           "weight": "Heavyweight",
@@ -1659,7 +1688,8 @@
           "time": "4:09",
           "fighter_a_ko": "조시 호킷",
           "fighter_b_ko": "데릭 루이스",
-          "weight_ko": "헤비급"
+          "weight_ko": "헤비급",
+          "talking_point_ko": "호킷, 루이스의 한 방을 넘고 2라운드 TKO"
         },
         {
           "weight": "Lightweight",
@@ -1671,7 +1701,8 @@
           "time": "4:29",
           "fighter_a_ko": "마우리시우 후피",
           "fighter_b_ko": "마이클 챈들러",
-          "weight_ko": "라이트급"
+          "weight_ko": "라이트급",
+          "talking_point_ko": "1라운드 스피닝 휠킥, 후피가 챈들러를 무너뜨렸다"
         }
       ],
       "prelims": [
@@ -1707,5 +1738,6 @@
       "start_time_utc": null,
       "time_status": "date_only"
     }
-  ]
+  ],
+  "talking_points_refreshed_at": "2026-07-30T09:06:23+09:00"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T08:04:35+09:00",
+  "generated_at": "2026-07-30T09:10:30+09:00",
   "source": "Wikipedia 랭킹·프로 MMA 전적 + UFC 공식 프로필 사진",
   "fighter_count": 351,
   "fighters": [
@@ -270,8 +270,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_64%28cropped%29.jpg/250px-thumbnail.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250,_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship,_Sunday,_June_14,_2026,_in_the_Grand_Foyer_of_the_White_House_-_64(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/ciryl-gane-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/ciryl-gane",
       "history": [
         {
           "result": "win",
@@ -461,7 +461,11 @@
           "time": "1:42"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Ciryl_Gane"
+      "history_source": "https://en.wikipedia.org/wiki/Ciryl_Gane",
+      "avatar_thumb_url": "/data/avatars/generated/ciryl-gane-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GANE_CIRYL_L_BELT_01-22.png?itok=6Dy6iwAT",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/GANE_CIRYL_BELT_01-22.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "alexander-volkov",
@@ -482,8 +486,8 @@
       "win_dec": 12,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Sergei_Pavlovich_vs_Alexander_Volkov_face_off_%28cropped%29.png/250px-Sergei_Pavlovich_vs_Alexander_Volkov_face_off_%28cropped%29.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Sergei_Pavlovich_vs_Alexander_Volkov_face_off_(cropped).png",
+      "avatar_url": "/data/avatars/generated/alexander-volkov-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/alexander-volkov",
       "history": [
         {
           "result": "win",
@@ -1047,7 +1051,11 @@
           "time": "1:20"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Alexander_Volkov_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Alexander_Volkov_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/alexander-volkov-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/VOLKOV_ALEXANDER_L_05-09.png?itok=Z7Pt4p3a",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/VOLKOV_ALEXANDER_05-09.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "sergei-pavlovich",
@@ -1366,8 +1374,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alex_Pereira_in_the_Oval_Office_(while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters).jpg",
+      "avatar_url": "/data/avatars/generated/alex-pereira-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/alex-pereira",
       "history": [
         {
           "result": "loss",
@@ -1557,7 +1565,11 @@
           "time": "2:52"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Alex_Pereira"
+      "history_source": "https://en.wikipedia.org/wiki/Alex_Pereira",
+      "avatar_thumb_url": "/data/avatars/generated/alex-pereira-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/PEREIRA_ALEX_L.png?itok=AMZ6OfEA",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-10/PEREIRA_ALEX_10-04.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "josh-hokit",
@@ -1587,8 +1599,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/UFC_Freedom_250_Press_Conference_%289747953%29_%28cropped%29.jpg/250px-UFC_Freedom_250_Press_Conference_%289747953%29_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_Press_Conference_(9747953)_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/josh-hokit-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/josh-hokit",
       "history": [
         {
           "result": "win",
@@ -1701,7 +1713,11 @@
           "time": "3:48"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Josh_Hokit"
+      "history_source": "https://en.wikipedia.org/wiki/Josh_Hokit",
+      "avatar_thumb_url": "/data/avatars/generated/josh-hokit-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/HOKIT_JOSH_L_06-14.png?itok=Es1_9BbW",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/HOKIT_JOSH_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "waldo-cortes-acosta",
@@ -4192,8 +4208,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg/250px-Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow,_Russia.jpg",
+      "avatar_url": "/data/avatars/generated/magomed-ankalaev-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/magomed-ankalaev",
       "history": [
         {
           "result": "win",
@@ -4471,7 +4487,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Magomed_Ankalaev"
+      "history_source": "https://en.wikipedia.org/wiki/Magomed_Ankalaev",
+      "avatar_thumb_url": "/data/avatars/generated/magomed-ankalaev-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/ANKALAEV_MAGOMED_L_07-25.png?itok=LWk-G7kA",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/ANKALAEV_MAGOMED_07-25.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ji-proch-zka",
@@ -9250,8 +9270,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/IMG-Dricus-Duplessis%28cropped%29.jpg/250px-IMG-Dricus-Duplessis%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:IMG-Dricus-Duplessis(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/dricus-du-plessis-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/dricus-du-plessis",
       "history": [
         {
           "result": "win",
@@ -9551,7 +9571,11 @@
           "time": "1:18"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Dricus_du_Plessis"
+      "history_source": "https://en.wikipedia.org/wiki/Dricus_du_Plessis",
+      "avatar_thumb_url": "/data/avatars/generated/dricus-du-plessis-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/DU_PLESSIS_DRICUS_L_07-18.png?itok=ms17eNrc",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/DU_PLESSIS_DRICUS_07-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "nassourdine-imavov",
@@ -11873,8 +11897,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/KamaruUsmanPress2018.png/250px-KamaruUsmanPress2018.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:KamaruUsmanPress2018.png",
+      "avatar_url": "/data/avatars/generated/kamaru-usman-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/kamaru-usman",
       "history": [
         {
           "result": "loss",
@@ -12163,7 +12187,11 @@
           "time": "4:50"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Kamaru_Usman"
+      "history_source": "https://en.wikipedia.org/wiki/Kamaru_Usman",
+      "avatar_thumb_url": "/data/avatars/generated/kamaru-usman-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/USMAN_KAMARU_L_06-14.png?itok=_E2PDHo4",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/USMAN_KAMARU_07-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ikram-aliskerov",
@@ -12193,8 +12221,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ikram_Aliskerov_2024.png/250px-Ikram_Aliskerov_2024.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ikram_Aliskerov_2024.png",
+      "avatar_url": "/data/avatars/generated/ikram-aliskerov-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/ikram-aliskerov",
       "history": [
         {
           "result": "win",
@@ -12417,7 +12445,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Ikram_Aliskerov"
+      "history_source": "https://en.wikipedia.org/wiki/Ikram_Aliskerov",
+      "avatar_thumb_url": "/data/avatars/generated/ikram-aliskerov-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ALISKEROV_IKRAM_L_06-27.png?itok=3ij01m2a",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/ALISKEROV_IKRAM_06-27.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "bo-nickal",
@@ -18098,8 +18130,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_67%28cropped%29.jpg/250px-thumbnail.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250,_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship,_Sunday,_June_14,_2026,_in_the_Grand_Foyer_of_the_White_House_-_67(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/justin-gaethje-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/justin-gaethje",
       "history": [
         {
           "result": "win",
@@ -18465,7 +18497,11 @@
           "time": "1:01"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Justin_Gaethje"
+      "history_source": "https://en.wikipedia.org/wiki/Justin_Gaethje",
+      "avatar_thumb_url": "/data/avatars/generated/justin-gaethje-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png?itok=cyzUtrXX",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/GAETHJE_JUSTIN_BELT_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ilia-topuria",
@@ -18495,8 +18531,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ilia_Topuria_in_the_Oval_Office_(while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters).jpg",
+      "avatar_url": "/data/avatars/generated/ilia-topuria-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/ilia-topuria",
       "history": [
         {
           "result": "loss",
@@ -18697,7 +18733,11 @@
           "time": "3:30"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Ilia_Topuria"
+      "history_source": "https://en.wikipedia.org/wiki/Ilia_Topuria",
+      "avatar_thumb_url": "/data/avatars/generated/ilia-topuria-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/TOPURIA_ILIA_L_06-28.png?itok=DRPWPNCZ",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-06/TOPURIA_ILIA_06-28.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "arman-tsarukyan",
@@ -19602,8 +19642,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg/250px-Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Blue_Angels'_VIP_Rider_Max_Holloway_(1)_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/max-holloway-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/max-holloway",
       "history": [
         {
           "result": "win",
@@ -20013,7 +20053,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Max_Holloway"
+      "history_source": "https://en.wikipedia.org/wiki/Max_Holloway",
+      "avatar_thumb_url": "/data/avatars/generated/max-holloway-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-04/HOLLOWAY_MAX_L_04-13.png?itok=mcRfmIq0",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2024-04/HOLLOWAY_MAX_04-13.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "paddy-pimblett",
@@ -20043,8 +20087,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/UFC_Star_Paddy_The_Baddy_Pimblett_tells_his_story_%28cropped%29.jpg/250px-UFC_Star_Paddy_The_Baddy_Pimblett_tells_his_story_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Star_Paddy_The_Baddy_Pimblett_tells_his_story_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/paddy-pimblett-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/paddy-pimblett",
       "history": [
         {
           "result": "win",
@@ -20355,7 +20399,11 @@
           "time": "1:51"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Paddy_Pimblett"
+      "history_source": "https://en.wikipedia.org/wiki/Paddy_Pimblett",
+      "avatar_thumb_url": "/data/avatars/generated/paddy-pimblett-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/PIMBLETT_PADDY_L_07-27.png?itok=SOnIEjUC",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/PIMBLETT_PADDY_07-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mateusz-gamrot",
@@ -21104,8 +21152,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Benoit_Saint_Denis_2023.png/250px-Benoit_Saint_Denis_2023.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Benoit_Saint_Denis_2023.png",
+      "avatar_url": "/data/avatars/generated/beno-t-saint-denis-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/benoit-saint-denis",
       "history": [
         {
           "result": "loss",
@@ -21350,7 +21398,11 @@
           "time": "3:29"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Benoît_Saint_Denis"
+      "history_source": "https://en.wikipedia.org/wiki/Benoît_Saint_Denis",
+      "avatar_thumb_url": "/data/avatars/generated/beno-t-saint-denis-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/SAINT_DENIS_BENOIT_L_07-11.png?itok=vdOsXo4G",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/SAINT_DENIS_BENOIT_07-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "quillan-salkilld",
@@ -21557,8 +21609,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_22%28cropped%29.jpg/250px-UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_22%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington,_D.C.,_Friday,_June_12,_2026_-_22(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/maur-cio-ruffy-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/mauricio-ruffy",
       "history": [
         {
           "result": "win",
@@ -21737,7 +21789,11 @@
           "time": "0:30"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Maurício_Ruffy"
+      "history_source": "https://en.wikipedia.org/wiki/Maurício_Ruffy",
+      "avatar_thumb_url": "/data/avatars/generated/maur-cio-ruffy-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/RUFFY_MAURICIO_L_06-14.png?itok=CtSQD7Ui",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/RUFFY_MAURICIO_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "tom-nolan",
@@ -22284,8 +22340,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Fiziev_2023.png/250px-Fiziev_2023.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Fiziev_2023.png",
+      "avatar_url": "/data/avatars/generated/rafael-fiziev-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/rafael-fiziev",
       "history": [
         {
           "result": "win",
@@ -22497,7 +22553,11 @@
           "time": "N/A"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Rafael_Fiziev"
+      "history_source": "https://en.wikipedia.org/wiki/Rafael_Fiziev",
+      "avatar_thumb_url": "/data/avatars/generated/rafael-fiziev-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/FIZIEV_RAFAEL_L_06-27.png?itok=9yGMUIvE",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/FIZIEV_RAFAEL_06-27.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "grant-dawson",
@@ -29270,8 +29330,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/UFC%27s_Corey_Sandhagen_brings_his_fighting_spirit_to_the_1st_SOW_%281%29_%28cropped%29.jpg/250px-UFC%27s_Corey_Sandhagen_brings_his_fighting_spirit_to_the_1st_SOW_%281%29_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC's_Corey_Sandhagen_brings_his_fighting_spirit_to_the_1st_SOW_(1)_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/cory-sandhagen-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/cory-sandhagen",
       "history": [
         {
           "result": "loss",
@@ -29549,7 +29609,11 @@
           "time": "1:16"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Cory_Sandhagen"
+      "history_source": "https://en.wikipedia.org/wiki/Cory_Sandhagen",
+      "avatar_thumb_url": "/data/avatars/generated/cory-sandhagen-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/SANDHAGEN_CORY_L_07-11.png?itok=js9SxyWU",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/SANDHAGEN_CORY_07-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "song-yadong",
@@ -31281,8 +31345,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/UFC_Freedom_250_Press_Conference_%289747954%29%28cropped%29.jpg/250px-UFC_Freedom_250_Press_Conference_%289747954%29%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_Press_Conference_(9747954)(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/aiemann-zahabi-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/aiemann-zahabi",
       "history": [
         {
           "result": "loss",
@@ -31472,7 +31536,11 @@
           "time": "1:28"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Aiemann_Zahabi"
+      "history_source": "https://en.wikipedia.org/wiki/Aiemann_Zahabi",
+      "avatar_thumb_url": "/data/avatars/generated/aiemann-zahabi-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ZAHABI_AIEMANN_R_06-14.png?itok=Rkew0wVb",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/ZAHABI_AIEMANN_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "charles-jourdain",
@@ -32992,8 +33060,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/ManelKape2017.png/250px-ManelKape2017.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:ManelKape2017.png",
+      "avatar_url": "/data/avatars/generated/manel-kape-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/manel-kape",
       "history": [
         {
           "result": "win",
@@ -33326,7 +33394,11 @@
           "time": "4:27"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Manel_Kape"
+      "history_source": "https://en.wikipedia.org/wiki/Manel_Kape",
+      "avatar_thumb_url": "/data/avatars/generated/manel-kape-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/KAPE_MANEL_L_06-20.png?itok=hx-69Gee",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/KAPE_MANEL_06-20.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "brandon-royval",
@@ -33936,8 +34008,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/AsuAlmabayev.png/250px-AsuAlmabayev.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:AsuAlmabayev.png",
+      "avatar_url": "/data/avatars/generated/asu-almabayev-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/asu-almabayev",
       "history": [
         {
           "result": "win",
@@ -34237,7 +34309,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Asu_Almabayev"
+      "history_source": "https://en.wikipedia.org/wiki/Asu_Almabayev",
+      "avatar_thumb_url": "/data/avatars/generated/asu-almabayev-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ALMABAYEV_ASU_L_06-27.png?itok=Y0SjNrdV",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/ALMABAYEV_ASU_06-27.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "lone-er-kavanagh",
@@ -34437,8 +34513,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kyoji_Horiguchi_2017.jpg/250px-Kyoji_Horiguchi_2017.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Kyoji_Horiguchi_2017.jpg",
+      "avatar_url": "/data/avatars/generated/kyoji-horiguchi-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/kyoji-horiguchi",
       "history": [
         {
           "result": "loss",
@@ -34914,7 +34990,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Kyoji_Horiguchi"
+      "history_source": "https://en.wikipedia.org/wiki/Kyoji_Horiguchi",
+      "avatar_thumb_url": "/data/avatars/generated/kyoji-horiguchi-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/HORIGUCHI_KYOJI_R_11-22.png?itok=Dn6SxnwP",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/HORIGUCHI_KYOJI_11-22.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "amir-albazi",
@@ -50039,8 +50119,12 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%D0%97%D0%B0%D0%B9%D0%BD%D1%83%D0%BA%D0%BE%D0%B2_%D0%9C%D0%B0%D0%B3%D0%BE%D0%BC%D0%B5%D0%B4_%D0%91%D0%B5%D0%BA%D1%88%D0%B8%D0%B5%D0%B2%D0%B8%D1%87.jpg/250px-%D0%97%D0%B0%D0%B9%D0%BD%D1%83%D0%BA%D0%BE%D0%B2_%D0%9C%D0%B0%D0%B3%D0%BE%D0%BC%D0%B5%D0%B4_%D0%91%D0%B5%D0%BA%D1%88%D0%B8%D0%B5%D0%B2%D0%B8%D1%87.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Зайнуков_Магомед_Бекшиевич.jpg"
+      "avatar_url": "/data/avatars/generated/magomed-zaynukov-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/magomed-zaynukov",
+      "avatar_thumb_url": "/data/avatars/generated/magomed-zaynukov-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/ZAYNUKOV_MAGOMED_L_07-25.png?itok=KmVELNju",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/ZAYNUKOV_MAGOMED_07-25.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "damian-rzepecki",
@@ -50833,8 +50917,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jared_Cannonier_at_UFC_Fight_Night_160_in_Copenhagen.jpg/250px-Jared_Cannonier_at_UFC_Fight_Night_160_in_Copenhagen.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jared_Cannonier_at_UFC_Fight_Night_160_in_Copenhagen.jpg",
+      "avatar_url": "/data/avatars/generated/jared-cannonier-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/jared-cannonier",
       "history": [
         {
           "result": "loss",
@@ -51145,7 +51229,11 @@
           "time": "N/A"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Jared_Cannonier"
+      "history_source": "https://en.wikipedia.org/wiki/Jared_Cannonier",
+      "avatar_thumb_url": "/data/avatars/generated/jared-cannonier-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/CANNONIER_JARED_L_07-18.png?itok=_lep6e-l",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/CANNONIER_JARED_07-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "chase-hooper",
@@ -51175,8 +51263,12 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chase_Hooper_2022.png/250px-Chase_Hooper_2022.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Chase_Hooper_2022.png"
+      "avatar_url": "/data/avatars/generated/chase-hooper-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/chase-hooper",
+      "avatar_thumb_url": "/data/avatars/generated/chase-hooper-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/HOOPER_CHASE_L_07-18.png?itok=ZcYh3rCA",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/HOOPER_CHASE_07-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mitch-ramirez",
@@ -51688,8 +51780,12 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Conor_McGregor_2025.jpeg/250px-Conor_McGregor_2025.jpeg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Conor_McGregor_2025.jpeg"
+      "avatar_url": "/data/avatars/generated/conor-mcgregor-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/conor-mcgregor",
+      "avatar_thumb_url": "/data/avatars/generated/conor-mcgregor-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/MCGREGOR_CONOR_L_07-11.png?itok=oPFhXwIA",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/MCGREGOR_CONOR_07-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "king-green",
@@ -53011,8 +53107,12 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Vinicius_Oliveira_2026.jpg/250px-Vinicius_Oliveira_2026.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Vinicius_Oliveira_2026.jpg"
+      "avatar_url": "/data/avatars/generated/vinicius-oliveira-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/vinicius-oliveira",
+      "avatar_thumb_url": "/data/avatars/generated/vinicius-oliveira-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/OLIVEIRA_VINICIUS_L_06-20.png?itok=1W04x7_K",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/OLIVEIRA_VINICIUS_06-20.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "andre-fili",
@@ -53338,8 +53438,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Derrick_Lewis_after_UFC_239.jpg/250px-Derrick_Lewis_after_UFC_239.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Derrick_Lewis_after_UFC_239.jpg",
+      "avatar_url": "/data/avatars/generated/derrick-lewis-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/derrick-lewis",
       "history": [
         {
           "result": "loss",
@@ -53826,7 +53926,11 @@
           "time": "1:33"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Derrick_Lewis"
+      "history_source": "https://en.wikipedia.org/wiki/Derrick_Lewis",
+      "avatar_thumb_url": "/data/avatars/generated/derrick-lewis-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/LEWIS_DERRICK_R_06-14.png?itok=MYYFS9tO",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/LEWIS_DERRICK_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "michael-chandler",
@@ -53856,8 +53960,12 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/MichaelChandler0523_%28cropped%29.jpg/250px-MichaelChandler0523_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:MichaelChandler0523_(cropped).jpg"
+      "avatar_url": "/data/avatars/generated/michael-chandler-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/michael-chandler",
+      "avatar_thumb_url": "/data/avatars/generated/michael-chandler-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/CHANDLER_MICHAEL_R_06-14.png?itok=Tg_XY15B",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/CHANDLER_MICHAEL_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "kyle-daukaus",
@@ -59056,5 +59164,6 @@
   ],
   "official_photos_refreshed_at": "2026-07-28T11:46:22+09:00",
   "ranked_profiles_refreshed_at": "2026-07-30T01:21:18+09:00",
-  "result_photos_refreshed_at": "2026-07-30T08:04:35+09:00"
+  "result_photos_refreshed_at": "2026-07-30T09:10:30+09:00",
+  "profile_photos_refreshed_at": "2026-07-30T09:11:39+09:00"
 }

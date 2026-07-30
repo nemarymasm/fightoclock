@@ -84,6 +84,42 @@ EVENT_CARD_ADDITIONS = {
     ],
 }
 
+# 경기 결과만으로는 보이지 않는 맥락을 짧게 전달하는 편집 한줄평.
+# 자동수집 결과 위에 덧씌우므로 다음 데이터 갱신에서도 유지된다.
+RESULT_TALKING_POINTS = {
+    ("Magomed Ankalaev", "Bogdan Guskov"): "5라운드까지 몰아붙인 안칼라예프, 마지막에 직접 끝냈다",
+    ("Ramazan Temirov", "Steve Erceg"): "얼섹을 1라운드에 재운 테미로프의 한 방",
+    ("Magomed Zaynukov", "Damian Rzepecki"): "세 장 모두 30-27, 자이누코프의 완승",
+    ("Rizvan Kuniev", "Tyrell Fortune"): "니킥으로 흐름을 끝낸 쿠니예프",
+    ("Abubakar Vagaev", "Saygid Izagakhmaev"): "세 장 모두 29-28, 바가예프가 접전을 가져갔다",
+    ("Dricus du Plessis", "Kamaru Usman"): "39세 우스만의 5라운드 분전 · 뒤 플레시 괴물 카디오, 다음은 타이틀전?",
+    ("Christian Leroy Duncan", "Jared Cannonier"): "노련한 캐노니어를 상대로 던컨이 3라운드 내내 우세",
+    ("Chase Hooper", "Mitch Ramirez"): "후퍼가 1라운드부터 등을 잡고 초크로 마무리",
+    ("Fatima Kline", "Tabatha Ricci"): "세 장 모두 30-27, 클라인의 깔끔한 셧아웃",
+    ("Tommy McMillen", "Alberto Montes"): "맥밀런, 후반 압박으로 3라운드 TKO",
+    ("Max Holloway", "Conor McGregor"): "부상으로 너무 일찍 끝난 라이벌전",
+    ("Paddy Pimblett", "Benoît Saint Denis"): "52초 페루비안 넥타이, 핌블렛의 깜짝 서브미션",
+    ("Mario Bautista", "Cory Sandhagen"): "접전이었지만 바우티스타가 세 장 모두 가져갔다",
+    ("Brandon Royval", "Lone'er Kavanagh"): "3라운드 끝자락, 로이발이 결국 등을 잡았다",
+    ("King Green", "Terrance McKinney"): "1라운드 종료 1초 전, 킹 그린의 극적인 TKO",
+    ("Rafael Fiziev", "Manuel Torres"): "스피닝 휠킥 한 방, 2라운드 시작 15초 만에 끝",
+    ("Sharabutdin Magomedov", "Michel Pereira"): "화려함보다 운영, 샤라가 29-28로 정리",
+    ("Matheus Camilo", "Nazim Sadykhov"): "카밀루가 91초 만에 화력을 증명했다",
+    ("Asu Almabayev", "Charles Johnson"): "보기 드문 설로예프 스트레치로 피니시",
+    ("Ikram Aliskerov", "Brunno Ferreira"): "세 장 모두 30-27, 알리스케로프의 압도",
+    ("Abusupiyan Magomedov", "Michał Oleksiejczuk"): "1라운드 길로틴, 마고메도프가 기회를 놓치지 않았다",
+    ("Manel Kape", "Kyoji Horiguchi"): "두 라운드 접전 뒤, 캅이 3라운드 화력으로 끝냈다",
+    ("Navajo Stirling", "Ion Cuțelaba"): "엘보와 펀치를 섞은 스털링의 2라운드 피니시",
+    ("Christian Rodriguez", "Hyder Amil"): "로드리게스, 1라운드 길로틴으로 빠르게 정리",
+    ("Murtazali Magomedov", "Melsik Baghdasaryan"): "트위스터까지 나왔다, 77초 희귀 서브미션",
+    ("Vinicius Oliveira", "Andre Fili"): "올리베이라가 2라운드 막판 엘보로 마무리",
+    ("Justin Gaethje", "Ilia Topuria"): "4라운드 코너 스톱, 게이치가 토푸리아의 연승을 끊었다",
+    ("Ciryl Gane", "Alex Pereira"): "가네가 페레이라를 2라운드 펀치로 멈췄다",
+    ("Sean O'Malley", "Aiemann Zahabi"): "오말리의 정확도가 2라운드에 승부를 갈랐다",
+    ("Josh Hokit", "Derrick Lewis"): "호킷, 루이스의 한 방을 넘고 2라운드 TKO",
+    ("Maurício Ruffy", "Michael Chandler"): "1라운드 스피닝 휠킥, 후피가 챈들러를 무너뜨렸다",
+}
+
 # 국가별 MMA 커뮤니티 (레딧 서브레딧 → 지역 매핑). 하나의 레딧 앱으로 전부 커버.
 OPINION_COMMUNITIES = [
     {"flag": "🌐", "region": "글로벌", "subreddit": "MMA", "lang": "영어"},
@@ -192,6 +228,19 @@ def tr_location(location):
     if not location:
         return location
     return TRANSLATIONS.get("locations", {}).get(location.strip(), location.strip())
+
+
+def apply_result_talking_points(events):
+    """최근 결과의 메인카드에 사람이 읽기 좋은 한줄평을 붙인다."""
+    applied = 0
+    for event in events:
+        for fight in event.get("main_card", []):
+            key = (fight.get("fighter_a", ""), fight.get("fighter_b", ""))
+            note = RESULT_TALKING_POINTS.get(key)
+            if note:
+                fight["talking_point_ko"] = note
+                applied += 1
+    return applied
 
 
 def tr_event_title(name):
@@ -1830,6 +1879,7 @@ def main():
         apply_translations(ev)
     for ev in past:
         apply_translations(ev)
+    apply_result_talking_points(past)
 
     # ── 랭킹 수집 ──
     divisions = []
@@ -1945,7 +1995,7 @@ def refresh_official_photos():
 
 
 def refresh_result_photos():
-    """최근 결과 메인카드 선수의 누락된 UFC 공식 사진을 보강한다."""
+    """최근 결과 메인카드 선수 사진을 최신 UFC 공식 프로필로 교체한다."""
     fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
     events_data = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
     fighters = fighters_data.get("fighters", [])
@@ -1960,9 +2010,9 @@ def refresh_result_photos():
     targets = [
         by_name[name]
         for name in sorted(result_names)
-        if name in by_name and not (by_name[name].get("avatar_url") or by_name[name].get("avatar"))
+        if name in by_name and by_name[name].get("avatar_provider") != "UFC"
     ]
-    print(f"→ 최근 결과 선수 사진 보강: {len(targets)}명")
+    print(f"→ 최근 결과 선수 공식 사진 갱신: {len(targets)}명")
     success = 0
     for i, fighter in enumerate(targets):
         photos = fetch_ufc_profile_photos(fighter["name"])
@@ -1980,6 +2030,41 @@ def refresh_result_photos():
         encoding="utf-8",
     )
     print(f"✓ 최근 결과 공식 사진 {success}/{len(targets)}명 저장")
+
+
+def refresh_result_talking_points():
+    """현재 events.json에 편집 한줄평을 즉시 반영한다."""
+    events_data = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
+    count = apply_result_talking_points(events_data.get("past_events", []))
+    events_data["talking_points_refreshed_at"] = datetime.now(KST).isoformat(timespec="seconds")
+    EVENTS_FILE.write_text(
+        json.dumps(events_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ 최근 결과 한줄평 {count}경기 저장")
+
+
+def refresh_named_profile_photos(names):
+    """지정한 선수의 사진만 UFC 공식 프로필로 갱신한다."""
+    fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    fighters = fighters_data.get("fighters", [])
+    wanted = {_fighter_name_key(name) for name in names}
+    targets = [
+        fighter for fighter in fighters
+        if _fighter_name_key(fighter.get("name")) in wanted
+    ]
+    success = 0
+    for fighter in targets:
+        photos = fetch_ufc_profile_photos(fighter["name"])
+        if photos:
+            fighter.update(cache_profile_photos(fighter["id"], photos))
+            success += 1
+    fighters_data["profile_photos_refreshed_at"] = datetime.now(KST).isoformat(timespec="seconds")
+    FIGHTERS_FILE.write_text(
+        json.dumps(fighters_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ 지정 선수 공식 사진 {success}/{len(targets)}명 저장")
 
 
 def refresh_ranked_profiles():
@@ -2136,6 +2221,11 @@ if __name__ == "__main__":
         refresh_rankings_and_profiles()
     elif "--result-photos" in sys.argv:
         refresh_result_photos()
+    elif "--result-notes" in sys.argv:
+        refresh_result_talking_points()
+    elif "--profile-photo" in sys.argv:
+        flag_index = sys.argv.index("--profile-photo")
+        refresh_named_profile_photos(sys.argv[flag_index + 1:])
     elif "--ranked-profiles" in sys.argv:
         refresh_ranked_profiles()
     elif "--photos-only" in sys.argv:
