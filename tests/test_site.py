@@ -667,6 +667,7 @@ class FrontendContractTests(unittest.TestCase):
             "function viewStats()",
             "function setStatsFilter(group)",
             "function officialStatFighter(leader)",
+            "function statIcon(id,variant,group)",
             "data/stats.json",
             "UFC 공식 스탯",
             "지금 눈에 띄는 기록",
@@ -676,6 +677,8 @@ class FrontendContractTests(unittest.TestCase):
             ".view.stats-view",
             ".stats-featured",
             ".stats-grid",
+            ".stat-pictogram",
+            ".stat-board-title",
             ".discipline-panel",
         ):
             self.assertIn(required, self.html)

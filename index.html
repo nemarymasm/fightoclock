@@ -308,11 +308,25 @@
   .stats-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
   .stats-section-head h2{margin:0;color:#f4f4f5;font-size:23px;font-weight:950;letter-spacing:-.035em}
   .stats-section-head p{margin:5px 0 0;color:#bdbdc1;font-size:14px;font-weight:650}
+  .stats-title-line{display:flex;align-items:center;gap:11px}
+  .stat-pictogram{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;width:32px;height:32px;border:1px solid rgba(255,255,255,.13);border-radius:10px;background:#1b1b1e;color:#ddd}
+  .stat-pictogram svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .stat-pictogram.feature{width:38px;height:38px;border-radius:11px}
+  .stat-pictogram.feature svg{width:22px;height:22px}
+  .stat-pictogram.section{width:43px;height:43px;border-radius:13px}
+  .stat-pictogram.section svg{width:25px;height:25px}
+  .stat-pictogram.tab{width:22px;height:22px;border:0;border-radius:0;background:transparent}
+  .stat-pictogram.tab svg{width:17px;height:17px}
+  .stat-tone-overview{border-color:rgba(229,72,77,.36);background:rgba(229,72,77,.11);color:#ff777c}
+  .stat-tone-fight{border-color:rgba(224,180,76,.34);background:rgba(224,180,76,.1);color:#e4ba55}
+  .stat-tone-striking{border-color:rgba(255,105,82,.35);background:rgba(255,105,82,.1);color:#ff765f}
+  .stat-tone-grappling{border-color:rgba(83,199,163,.32);background:rgba(83,199,163,.1);color:#62cfad}
+  .stat-tone-time{border-color:rgba(116,154,235,.34);background:rgba(116,154,235,.1);color:#86aaef}
   .stats-featured{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
   .stat-feature-card{position:relative;overflow:hidden;min-height:170px;padding:18px;border:1px solid var(--line-2);border-radius:17px;background:#141416}
   .stat-feature-card::before{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:var(--red)}
-  .stat-feature-label{color:#ff858a;font-size:14px;font-weight:950}
-  .stat-feature-leader{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;margin-top:17px}
+  .stat-feature-label{display:flex;align-items:center;gap:10px;color:#f2f2f3;font-size:16px;font-weight:950}
+  .stat-feature-leader{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;margin-top:14px}
   .stat-feature-photo,.stat-feature-photo .avatar-box{width:72px!important;height:76px!important}
   .stat-feature-photo .avatar-box{border-radius:15px!important}
   .stat-feature-name{color:#f5f5f6;font-size:19px;font-weight:950;line-height:1.2;letter-spacing:-.025em}
@@ -321,13 +335,14 @@
   .stat-feature-value small,.stat-leader-value small{margin-left:3px;color:#c7c7cb;font-size:13px;font-weight:850;letter-spacing:0}
   .stats-tabs{display:flex;gap:8px;overflow-x:auto;padding:1px 0 4px;scrollbar-width:none}
   .stats-tabs::-webkit-scrollbar{display:none}
-  .stats-tab{min-height:42px;padding:0 15px;border:1px solid var(--line-2);border-radius:999px;background:#151517;color:#bdbdc1;font-size:14px;font-weight:900;white-space:nowrap}
+  .stats-tab{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:42px;padding:0 15px;border:1px solid var(--line-2);border-radius:999px;background:#151517;color:#bdbdc1;font-size:14px;font-weight:900;white-space:nowrap}
   .stats-tab.active{border-color:var(--red);background:var(--red);color:#fff}
   .stats-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
   .stat-board{overflow:hidden;border:1px solid var(--line-2);border-radius:17px;background:#131315}
   .stat-board-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-height:75px;padding:16px;border-bottom:1px solid var(--line)}
   .stat-board-head h3{margin:0;color:#f2f2f3;font-size:18px;font-weight:950;line-height:1.25;letter-spacing:-.025em}
   .stat-board-head p{margin:5px 0 0;color:#b6b6ba;font-size:13px;font-weight:650}
+  .stat-board-title{display:flex;align-items:flex-start;gap:10px}
   .stat-board-source{color:#77777d;font-size:12px;font-weight:850;white-space:nowrap}
   .stat-leader-row{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:11px;align-items:center;min-height:58px;padding:9px 15px;border-top:1px solid rgba(255,255,255,.065)}
   .stat-leader-row:first-child{border-top:0}
@@ -1951,11 +1966,40 @@ function setStatsFilter(group){
   statsFilter=group||'전체';
   route({preserveScroll:true});
 }
+function statTone(group){
+  return ({
+    '경기':'fight',
+    '타격':'striking',
+    '그래플링':'grappling',
+    '시간':'time'
+  })[group]||'overview';
+}
+function statIcon(id,variant,group){
+  const icons={
+    'wins':'<path d="M8 4h8v3.5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1a4 4 0 0 0 4 4"/><path d="M16 6h3v1a4 4 0 0 1-4 4"/><path d="M12 12v4"/><path d="M8.5 20h7"/><path d="M10 16h4v4"/>',
+    'finishes':'<path d="M6 21V4"/><path d="M7 5h10l-2 3 2 3H7"/><path d="M4 21h5"/>',
+    'ko-wins':'<path d="m12 2 1.7 5.1L18 4l-.5 5.3L23 9l-4.6 2.7L22 15l-5.2-.7.2 5.3-4-3.5-2.2 4.8-1.5-5.1L5 19l.5-5.2L1 14l4.5-2.7L2 8l5.2.7L7 3.4l4 3.5z"/>',
+    'submission-wins':'<path d="M9.5 14.5 7 17a3 3 0 0 1-4.2-4.2l3-3A3 3 0 0 1 10 9"/><path d="m14.5 9.5 2.5-2.5a3 3 0 0 1 4.2 4.2l-3 3A3 3 0 0 1 14 15"/><path d="m8.5 15.5 7-7"/>',
+    'win-streak':'<path d="M4 18 9 13l3 3 7-9"/><path d="M14 7h5v5"/>',
+    'title-fight-wins':'<circle cx="12" cy="9" r="5"/><path d="m8.5 13-1 8 4.5-2.5 4.5 2.5-1-8"/><path d="m12 6 1 2 2 .3-1.5 1.5.4 2.2-1.9-1-1.9 1 .4-2.2L9 8.3l2-.3z"/>',
+    'shortest-average':'<circle cx="12" cy="13" r="7"/><path d="M9 2h6"/><path d="M12 6V3"/><path d="m12 13 3-2"/><path d="M4 8 2.5 6.5"/>',
+    'total-fight-time':'<path d="M6 3h12"/><path d="M6 21h12"/><path d="M7 3c0 5 3 6 5 9-2 3-5 4-5 9"/><path d="M17 3c0 5-3 6-5 9 2 3 5 4 5 9"/>',
+    'strikes-per-minute':'<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3"/><path d="M22 12h-3"/><path d="M12 22v-3"/><path d="M2 12h3"/>',
+    'striking-differential':'<path d="M4 7h13"/><path d="m14 4 3 3-3 3"/><path d="M20 17H7"/><path d="m10 14-3 3 3 3"/>',
+    'knockdowns':'<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 20h16"/><path d="m5 17-2 3"/><path d="m19 17 2 3"/>',
+    'takedowns':'<path d="M8 4v10"/><path d="m5 11 3 3 3-3"/><path d="M16 4v10"/><path d="m13 11 3 3 3-3"/><path d="M4 20h16"/>',
+    'takedown-defense':'<path d="M12 3 5 6v5c0 4.6 2.8 8 7 10 4.2-2 7-5.4 7-10V6z"/><path d="M12 8v7"/><path d="m9 12 3 3 3-3"/>',
+    'control-percentage':'<circle cx="12" cy="12" r="8"/><path d="M12 4v8h8"/><path d="M5.5 17.5 12 12"/>',
+    'record-room':'<path d="M4 19V9"/><path d="M10 19V5"/><path d="M16 19v-7"/><path d="M22 19H2"/><path d="m4 7 6-4 6 5 5-4"/>'
+  };
+  const tone=statTone(group);
+  return `<span class="stat-pictogram ${variant||''} stat-tone-${tone}" aria-hidden="true"><svg viewBox="0 0 24 24">${icons[id]||icons['record-room']}</svg></span>`;
+}
 function statBoardHtml(category){
   return `
     <section class="stat-board" aria-label="${esc(category.title)}">
       <div class="stat-board-head">
-        <div><h3>${esc(category.title)}</h3>${category.qualifier?`<p>${esc(category.qualifier)}</p>`:''}</div>
+        <div class="stat-board-title">${statIcon(category.id,'board',category.group)}<div><h3>${esc(category.title)}</h3>${category.qualifier?`<p>${esc(category.qualifier)}</p>`:''}</div></div>
         <span class="stat-board-source">UFC 공식</span>
       </div>
       <div>
@@ -2005,7 +2049,7 @@ function viewStats(){
             const leader=category.leaders?.[0]||{};
             const fighter=officialStatFighter(leader);
             return `<a class="stat-feature-card" href="${esc(safeExternalUrl(leader.athlete_url)||'#stats')}" target="_blank" rel="noopener">
-              <div class="stat-feature-label">${esc(category.title)}</div>
+              <div class="stat-feature-label">${statIcon(category.id,'feature',category.group)}<span>${esc(category.title)}</span></div>
               <div class="stat-feature-leader">
                 <div class="stat-feature-photo">${avatarBox(fighter,72)}</div>
                 <div>
@@ -2021,10 +2065,13 @@ function viewStats(){
 
       <section>
         <div class="stats-section-head">
-          <div><h2>기록실</h2><p>부문마다 공식 상위 5명을 확인하세요.</p></div>
+          <div class="stats-title-line">${statIcon('record-room','section','전체')}<div><h2>기록실</h2><p>부문마다 공식 상위 5명을 확인하세요.</p></div></div>
         </div>
         <div class="stats-tabs" role="tablist" aria-label="스탯 분류">
-          ${groups.map(group=>`<button class="stats-tab ${statsFilter===group?'active':''}" type="button" role="tab" aria-selected="${statsFilter===group}" onclick="setStatsFilter('${group}')">${group}</button>`).join('')}
+          ${groups.map(group=>{
+            const groupIcon=group==='전체'?'record-room':group==='경기'?'wins':group==='타격'?'strikes-per-minute':group==='그래플링'?'takedowns':'shortest-average';
+            return `<button class="stats-tab ${statsFilter===group?'active':''}" type="button" role="tab" aria-selected="${statsFilter===group}" onclick="setStatsFilter('${group}')">${statIcon(groupIcon,'tab',group)}<span>${group}</span></button>`;
+          }).join('')}
         </div>
         <div class="stats-grid">${visible.map(statBoardHtml).join('')}</div>
       </section>
