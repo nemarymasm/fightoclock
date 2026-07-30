@@ -344,9 +344,11 @@
   .stat-board-head p{margin:5px 0 0;color:#b6b6ba;font-size:13px;font-weight:650}
   .stat-board-title{display:flex;align-items:flex-start;gap:10px}
   .stat-board-source{color:#77777d;font-size:12px;font-weight:850;white-space:nowrap}
-  .stat-leader-row{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:11px;align-items:center;min-height:58px;padding:9px 15px;border-top:1px solid rgba(255,255,255,.065)}
+  .stat-leader-row{display:grid;grid-template-columns:32px 44px minmax(0,1fr) auto;gap:11px;align-items:center;min-height:68px;padding:9px 15px;border-top:1px solid rgba(255,255,255,.065)}
   .stat-leader-row:first-child{border-top:0}
   .stat-leader-rank{color:#d3a645;font-size:17px;font-weight:950;font-variant-numeric:tabular-nums}
+  .stat-leader-photo,.stat-leader-photo .avatar-box{width:44px!important;height:48px!important}
+  .stat-leader-photo .avatar-box{border-radius:12px!important}
   .stat-leader-name{min-width:0;color:#e9e9eb;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .stat-leader-value{color:#fff;font-size:17px;font-weight:950;font-variant-numeric:tabular-nums;white-space:nowrap}
   .discipline-panel{padding:20px;border:1px solid rgba(211,166,69,.36);border-radius:18px;background:rgba(211,166,69,.055)}
@@ -1947,7 +1949,12 @@ function viewFighters(){
 /* ---------- 뷰: 공식 스탯 ---------- */
 function officialStatFighter(leader){
   const local=FIGHTERS[leader?.fighter_id]||REAL_FIGHTERS[leader?.fighter_id];
-  if(local) return local;
+  if(local) return {
+    ...local,
+    avatar:local.avatar||local.avatarThumb||leader?.photo_url||'',
+    avatarThumb:local.avatarThumb||local.avatar||leader?.photo_url||'',
+    avatarProvider:local.avatarProvider||(leader?.photo_url?'UFC':'')
+  };
   return {
     id:leader?.fighter_id||'record-holder',
     name:leader?.name_ko||leader?.name||'기록 보유자',
@@ -2004,8 +2011,10 @@ function statBoardHtml(category){
       </div>
       <div>
         ${(category.leaders||[]).map(function(leader){
+          const fighter=officialStatFighter(leader);
           return `<a class="stat-leader-row" href="${esc(safeExternalUrl(leader.athlete_url)||'#stats')}" target="_blank" rel="noopener">
             <span class="stat-leader-rank">${esc(leader.rank)}</span>
+            <span class="stat-leader-photo">${avatarBox(fighter,44)}</span>
             <span class="stat-leader-name">${esc(leader.name_ko||leader.name)}</span>
             <strong class="stat-leader-value">${officialStatValue(category,leader)}</strong>
           </a>`;

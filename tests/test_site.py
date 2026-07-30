@@ -58,6 +58,7 @@ class DataContractTests(unittest.TestCase):
                 self.assertRegex(leader.get("name_ko", ""), r"[가-힣]", leader.get("name"))
                 self.assertTrue(leader.get("value"))
                 self.assertTrue(leader.get("athlete_url", "").startswith("https://www.ufc.com/athlete/"))
+                self.assertTrue(leader.get("photo_url"), f"missing stats photo: {leader.get('name')}")
         jim_miller = next(
             leader
             for category in categories
@@ -696,6 +697,7 @@ class FrontendContractTests(unittest.TestCase):
             ".stats-grid",
             ".stat-pictogram",
             ".stat-board-title",
+            ".stat-leader-photo",
             ".discipline-panel",
         ):
             self.assertIn(required, self.html)

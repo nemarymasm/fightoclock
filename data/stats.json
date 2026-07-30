@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T21:45:56+09:00",
+  "generated_at": "2026-07-30T23:04:47+09:00",
   "source": {
     "name": "UFC 공식 Record Book",
     "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
@@ -32,7 +32,7 @@
           "fighter_id": "charles-oliveira",
           "value": "25",
           "athlete_url": "https://www.ufc.com/athlete/Charles-Oliveira",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/876a16e2-3e7c-42c1-81ed-b45569a8519d/OLIVEIRA_CHARLES_BMFMOCK.png"
         },
         {
           "rank": 3,
@@ -41,7 +41,7 @@
           "fighter_id": "max-holloway",
           "value": "24",
           "athlete_url": "https://www.ufc.com/athlete/Max-Holloway",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/01001199-97f7-404d-a0b9-0cea2c6a4e99/HOLLOWAY_MAX_07-11.png"
         },
         {
           "rank": 3,
@@ -50,7 +50,7 @@
           "fighter_id": "neil-magny",
           "value": "24",
           "athlete_url": "https://www.ufc.com/athlete/Neil-Magny",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/neil-magny-thumb.webp"
         },
         {
           "rank": 5,
@@ -59,7 +59,7 @@
           "fighter_id": "andrei-arlovski",
           "value": "23",
           "athlete_url": "https://www.ufc.com/athlete/Andrei-Arlovski",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2024-06/ARLOVSKI_ANDREI_06-29.png"
         }
       ]
     },
@@ -87,7 +87,7 @@
           "fighter_id": "jim-miller",
           "value": "20",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
         },
         {
           "rank": 3,
@@ -96,7 +96,7 @@
           "fighter_id": "donald-cerrone",
           "value": "16",
           "athlete_url": "https://www.ufc.com/athlete/Donald-Cerrone",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/c84552bb-6649-4a0e-b27e-1c7b46cea699%2FCERRONE_DONALD_05-08.png"
         },
         {
           "rank": 3,
@@ -105,7 +105,7 @@
           "fighter_id": "derrick-lewis",
           "value": "16",
           "athlete_url": "https://www.ufc.com/athlete/Derrick-Lewis",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/0d4bdf63-4169-496a-b4e3-83b6733c100d/LEWIS_DERRICK_06-14.png"
         },
         {
           "rank": 5,
@@ -114,7 +114,7 @@
           "fighter_id": "matt-brown",
           "value": "15",
           "athlete_url": "https://www.ufc.com/athlete/Matt-Brown",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2023-05/BROWN_MATT_05-13.png"
         }
       ]
     },
@@ -142,7 +142,7 @@
           "fighter_id": "matt-brown",
           "value": "13",
           "athlete_url": "https://www.ufc.com/athlete/Matt-Brown",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2023-05/BROWN_MATT_05-13.png"
         },
         {
           "rank": 3,
@@ -151,7 +151,7 @@
           "fighter_id": "max-holloway",
           "value": "12",
           "athlete_url": "https://www.ufc.com/athlete/Max-Holloway",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/01001199-97f7-404d-a0b9-0cea2c6a4e99/HOLLOWAY_MAX_07-11.png"
         },
         {
           "rank": 4,
@@ -160,7 +160,7 @@
           "fighter_id": "anderson-silva",
           "value": "11",
           "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8828346d-d9d4-49c9-9ad8-63fcf29d170a%2FSILVA_ANDERSON_10-31.png"
         },
         {
           "rank": 4,
@@ -169,7 +169,7 @@
           "fighter_id": "anthony-johnson",
           "value": "11",
           "athlete_url": "https://www.ufc.com/athlete/Anthony-Johnson",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/ufc-fighter-container/67359/profile-galery/profile-picture/AnthonyJohnson_Headshot.png?VersionId=53BHqNLZsDwSiHzt.yaQmJNb6n7K3s0k"
         }
       ]
     },
@@ -197,7 +197,7 @@
           "fighter_id": "jim-miller",
           "value": "14",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
         },
         {
           "rank": 3,
@@ -206,7 +206,7 @@
           "fighter_id": "demian-maia",
           "value": "11",
           "athlete_url": "https://www.ufc.com/athlete/Demian-Maia",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2021-06/67794%252Fprofile-galery%252Fprofile-picture%252FMAIA_DEMIAN_06-12.png"
         },
         {
           "rank": 3,
@@ -215,7 +215,7 @@
           "fighter_id": "gerald-meerschaert",
           "value": "11",
           "athlete_url": "https://www.ufc.com/athlete/Gerald-Meerschaert",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2026-04/MEERSCHAERT_GERALD_05-02.png"
         },
         {
           "rank": 5,
@@ -224,7 +224,7 @@
           "fighter_id": "nate-diaz",
           "value": "10",
           "athlete_url": "https://www.ufc.com/athlete/Nate-Diaz",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2022-09/DIAZ_NATE_09-10.png"
         }
       ]
     },
@@ -252,7 +252,7 @@
           "fighter_id": "islam-makhachev",
           "value": "16",
           "athlete_url": "https://www.ufc.com/athlete/Islam-Makhachev",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/islam-makhachev-thumb.webp"
         },
         {
           "rank": 3,
@@ -261,7 +261,7 @@
           "fighter_id": "kamaru-usman",
           "value": "15",
           "athlete_url": "https://www.ufc.com/athlete/Kamaru-Usman",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/kamaru-usman-thumb.webp"
         },
         {
           "rank": 4,
@@ -270,7 +270,7 @@
           "fighter_id": "merab-dvalishvili",
           "value": "14",
           "athlete_url": "https://www.ufc.com/athlete/Merab-Dvalishvili",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8a8024f6-2b73-4fef-a376-888a9176df79/DVALISHVILI_MERAB_CG_09-14.png"
         },
         {
           "rank": 5,
@@ -279,7 +279,7 @@
           "fighter_id": "georges-st-pierre",
           "value": "13",
           "athlete_url": "https://www.ufc.com/athlete/Georges-St-Pierre",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/fighter_images/Georges_St-Pierre/ST-PIERRE_GEORGES.png?VersionId=n5_fjK_Bf6ElxjMIB90eh2jgE3v045Fl"
         }
       ]
     },
@@ -307,7 +307,7 @@
           "fighter_id": "georges-st-pierre",
           "value": "13",
           "athlete_url": "https://www.ufc.com/athlete/Georges-St-Pierre",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/fighter_images/Georges_St-Pierre/ST-PIERRE_GEORGES.png?VersionId=n5_fjK_Bf6ElxjMIB90eh2jgE3v045Fl"
         },
         {
           "rank": 3,
@@ -316,7 +316,7 @@
           "fighter_id": "demetrious-johnson",
           "value": "12",
           "athlete_url": "https://www.ufc.com/athlete/Demetrious-Johnson",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/fighter_images/Demitrious_Johnson/JOHNSON_DEMETRIOUS_BELT_LS.png?VersionId=ja07yc5FMt1dRehw6sAhh1HUnei8Shuf"
         },
         {
           "rank": 4,
@@ -325,7 +325,7 @@
           "fighter_id": "anderson-silva",
           "value": "11",
           "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8828346d-d9d4-49c9-9ad8-63fcf29d170a%2FSILVA_ANDERSON_10-31.png"
         },
         {
           "rank": 4,
@@ -334,7 +334,7 @@
           "fighter_id": "amanda-nunes",
           "value": "11",
           "athlete_url": "https://www.ufc.com/athlete/Amanda-Nunes",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2025-12/NUNES_AMANDA.png"
         }
       ]
     },
@@ -362,7 +362,7 @@
           "fighter_id": "drew-mcfedries",
           "value": "2:20",
           "athlete_url": "https://www.ufc.com/athlete/Drew-McFedries",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/fighter_images/Drew_McFedries/Drew_McFedries_500x325.png?VersionId=dR6lAlkMCEkXT0bdmiepqDmSnRJ8ZiYd"
         },
         {
           "rank": 3,
@@ -371,7 +371,7 @@
           "fighter_id": "terrance-mckinney",
           "value": "2:28",
           "athlete_url": "https://www.ufc.com/athlete/Terrance-McKinney",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/terrance-mckinney-thumb.webp"
         },
         {
           "rank": 4,
@@ -380,7 +380,7 @@
           "fighter_id": "james-irvin",
           "value": "2:53",
           "athlete_url": "https://www.ufc.com/athlete/James-Irvin",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/fighter_images/James_Irvin/James_Irvin_500x325.png?VersionId=pHBX4qZEX6vwfw4tkmveT4FWB.P_Ducl"
         },
         {
           "rank": 5,
@@ -389,7 +389,7 @@
           "fighter_id": "manuel-torres",
           "value": "2:56",
           "athlete_url": "https://www.ufc.com/athlete/Manuel-Torres",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/manuel-torres-thumb.webp"
         }
       ]
     },
@@ -417,7 +417,7 @@
           "fighter_id": "rafael-dos-anjos",
           "value": "8:43:19",
           "athlete_url": "https://www.ufc.com/athlete/Rafael-Dos-Anjos",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2024-10/2/DOS_ANJOS_RAFAEL_10-26.png"
         },
         {
           "rank": 3,
@@ -426,7 +426,7 @@
           "fighter_id": "frankie-edgar",
           "value": "7:57:10",
           "athlete_url": "https://www.ufc.com/athlete/Frankie-Edgar",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2021-11/67978%252Fprofile-galery%252Fprofile-picture%252FEDGAR_FRANKIE_11-06.png"
         },
         {
           "rank": 4,
@@ -435,7 +435,7 @@
           "fighter_id": "jim-miller",
           "value": "7:32:57",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
         },
         {
           "rank": 5,
@@ -444,7 +444,7 @@
           "fighter_id": "neil-magny",
           "value": "7:22:49",
           "athlete_url": "https://www.ufc.com/athlete/Neil-Magny",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/neil-magny-thumb.webp"
         }
       ]
     },
@@ -472,7 +472,7 @@
           "fighter_id": "terrance-mckinney",
           "value": "7.95",
           "athlete_url": "https://www.ufc.com/athlete/Terrance-McKinney",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/terrance-mckinney-thumb.webp"
         },
         {
           "rank": 3,
@@ -481,7 +481,7 @@
           "fighter_id": "casey-o-neill",
           "value": "7.89",
           "athlete_url": "https://www.ufc.com/athlete/Casey-ONeill",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/casey-o-neill-thumb.webp"
         },
         {
           "rank": 4,
@@ -490,7 +490,7 @@
           "fighter_id": "tom-aspinall",
           "value": "7.63",
           "athlete_url": "https://www.ufc.com/athlete/Tom-Aspinall",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/cc25ffd8-c84e-4bce-b813-bcf22527b549/ASPINALL_TOM_BELT_10-25.png"
         },
         {
           "rank": 5,
@@ -499,7 +499,7 @@
           "fighter_id": "leslie-smith",
           "value": "7.56",
           "athlete_url": "https://www.ufc.com/athlete/Leslie-Smith",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/ufc-fighter-container/68577/profile-galery/profile-picture/Leslie_Smith_Headshot.png?VersionId=zl7TC4mDWCbtp18zDlr8beOaBTb8At_G"
         }
       ]
     },
@@ -527,7 +527,7 @@
           "fighter_id": "cain-velasquez",
           "value": "4.08",
           "athlete_url": "https://www.ufc.com/athlete/Cain-Velasquez",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/ufc-fighter-container/67538/profile-galery/profile-picture/VELASQUEZ_CAIN.png?VersionId=JaXRhB6YDvfst7NRvqhW9N0hh0UuV5cC"
         },
         {
           "rank": 3,
@@ -536,7 +536,7 @@
           "fighter_id": "wang-cong",
           "value": "4.02",
           "athlete_url": "https://www.ufc.com/athlete/Wang-Cong",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/wang-cong-thumb.webp"
         },
         {
           "rank": 4,
@@ -545,7 +545,7 @@
           "fighter_id": "tom-aspinall",
           "value": "4.01",
           "athlete_url": "https://www.ufc.com/athlete/Tom-Aspinall",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/cc25ffd8-c84e-4bce-b813-bcf22527b549/ASPINALL_TOM_BELT_10-25.png"
         },
         {
           "rank": 5,
@@ -554,7 +554,7 @@
           "fighter_id": "navajo-stirling",
           "value": "3.62",
           "athlete_url": "https://www.ufc.com/athlete/Navajo-Stirling",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/navajo-stirling-thumb.webp"
         }
       ]
     },
@@ -582,7 +582,7 @@
           "fighter_id": "anderson-silva",
           "value": "18",
           "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8828346d-d9d4-49c9-9ad8-63fcf29d170a%2FSILVA_ANDERSON_10-31.png"
         },
         {
           "rank": 2,
@@ -591,7 +591,7 @@
           "fighter_id": "jeremy-stephens",
           "value": "18",
           "athlete_url": "https://www.ufc.com/athlete/Jeremy-Stephens",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2026-05/STEPHENS_JEREMY_05-09.png"
         },
         {
           "rank": 4,
@@ -600,7 +600,7 @@
           "fighter_id": "edson-barboza",
           "value": "16",
           "athlete_url": "https://www.ufc.com/athlete/Edson-Barboza",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/edson-barboza-thumb.webp"
         },
         {
           "rank": 5,
@@ -609,7 +609,7 @@
           "fighter_id": "dustin-poirier",
           "value": "15",
           "athlete_url": "https://www.ufc.com/athlete/Dustin-Poirier",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2025-07/POIRIER_DUSTIN_07-19.png"
         }
       ]
     },
@@ -637,7 +637,7 @@
           "fighter_id": "georges-st-pierre",
           "value": "90",
           "athlete_url": "https://www.ufc.com/athlete/Georges-St-Pierre",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/fighter_images/Georges_St-Pierre/ST-PIERRE_GEORGES.png?VersionId=n5_fjK_Bf6ElxjMIB90eh2jgE3v045Fl"
         },
         {
           "rank": 3,
@@ -646,7 +646,7 @@
           "fighter_id": "gleison-tibau",
           "value": "84",
           "athlete_url": "https://www.ufc.com/athlete/Gleison-Tibau",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/ufc-fighter-container/68033/profile-galery/profile-picture/GleisonTibau_Headshot2012.png?VersionId=thNUHTpDxk4nJmMrUx9v._xQXEQe7jWC"
         },
         {
           "rank": 4,
@@ -655,7 +655,7 @@
           "fighter_id": "clay-guida",
           "value": "78",
           "athlete_url": "https://www.ufc.com/athlete/Clay-Guida",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2025-01/2/GUIDA_CLAY_12-07.png"
         },
         {
           "rank": 5,
@@ -664,7 +664,7 @@
           "fighter_id": "demetrious-johnson",
           "value": "74",
           "athlete_url": "https://www.ufc.com/athlete/Demetrious-Johnson",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/image/fighter_images/Demitrious_Johnson/JOHNSON_DEMETRIOUS_BELT_LS.png?VersionId=ja07yc5FMt1dRehw6sAhh1HUnei8Shuf"
         }
       ]
     },
@@ -692,7 +692,7 @@
           "fighter_id": "ilia-topuria",
           "value": "95.2%",
           "athlete_url": "https://www.ufc.com/athlete/Ilia-Topuria",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/ilia-topuria-thumb.webp"
         },
         {
           "rank": 3,
@@ -701,7 +701,7 @@
           "fighter_id": "jon-jones",
           "value": "95.0%",
           "athlete_url": "https://www.ufc.com/athlete/Jon-Jones",
-          "photo_url": ""
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/fe4afd10-41ba-466a-8daf-53731aebcc90/JONES_JON.png"
         },
         {
           "rank": 4,
@@ -710,7 +710,7 @@
           "fighter_id": "eddie-wineland",
           "value": "93.3%",
           "athlete_url": "https://www.ufc.com/athlete/Eddie-Wineland",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2022-06/72285b57-6974-4049-8e57-96a76ae0b94d%252FWINELAND_EDDIE_06-18.png"
         },
         {
           "rank": 5,
@@ -719,7 +719,7 @@
           "fighter_id": "jimmie-rivera",
           "value": "92.6%",
           "athlete_url": "https://www.ufc.com/athlete/Jimmie-Rivera",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2020-07/RIVERA_JIMMIE_09-08.png?VersionId=qeziKqMHSqs8VLztVeX1vrQB3pC_xiRp"
         }
       ]
     },
@@ -747,7 +747,7 @@
           "fighter_id": "gregor-gillespie",
           "value": "71.9%",
           "athlete_url": "https://www.ufc.com/athlete/Gregor-Gillespie",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2021-05/68048%252Fprofile-galery%252Fprofile-picture%252FGILLESPIE_GREGOR_05-08.png"
         },
         {
           "rank": 3,
@@ -756,7 +756,7 @@
           "fighter_id": "pat-sabatini",
           "value": "71.0%",
           "athlete_url": "https://www.ufc.com/athlete/Pat-Sabatini",
-          "photo_url": ""
+          "photo_url": "/data/avatars/generated/pat-sabatini-thumb.webp"
         },
         {
           "rank": 4,
@@ -765,7 +765,7 @@
           "fighter_id": "jailton-almeida",
           "value": "69.9%",
           "athlete_url": "https://www.ufc.com/athlete/Jailton-Almeida",
-          "photo_url": ""
+          "photo_url": "https://ufc.com/images/2026-02/ALMEIDA_JAILTON_02-07.png"
         },
         {
           "rank": 5,
@@ -774,7 +774,7 @@
           "fighter_id": "chael-sonnen",
           "value": "69.3%",
           "athlete_url": "https://www.ufc.com/athlete/Chael-Sonnen",
-          "photo_url": ""
+          "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg/250px-Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg"
         }
       ]
     }

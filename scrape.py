@@ -54,6 +54,16 @@ UFC_PHOTO_OVERRIDES = {
         "avatar_source": "https://www.ufc.com/event/ufc-fight-night-august-08-2026",
         "avatar_provider": "UFC",
     },
+    # The retired UFC profile redirects to a blocked regional page.
+    # This cropped U.S. Marine Corps photograph is public domain.
+    "Chael Sonnen": {
+        "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg/250px-Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg",
+        "avatar_thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg/250px-Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg",
+        "avatar_remote_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg/250px-Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg",
+        "avatar_thumb_remote_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg/250px-Meet_and_Greet_with_Special_MMA_Clinic_%282%29_%28cropped%29.jpg",
+        "avatar_source": "https://commons.wikimedia.org/wiki/File:Meet_and_Greet_with_Special_MMA_Clinic_(2)_(cropped).jpg",
+        "avatar_provider": "Wikimedia Commons",
+    },
 }
 KOREAN_UFC_FIGHTERS = [
     {
@@ -2285,6 +2295,52 @@ def fetch_official_stat_leaders(now_iso=None):
                 "leaders": leaders,
             }
         )
+
+    # Record Book tables only expose a headshot on some first-place rows.
+    # Reuse previously verified/profile photos so every leaderboard occurrence
+    # of the same fighter has a stable face without re-fetching on every run.
+    photo_cache = {}
+    for category in categories:
+        for leader in category["leaders"]:
+            if leader.get("photo_url"):
+                photo_cache.setdefault(leader["fighter_id"], leader["photo_url"])
+
+    if STATS_FILE.exists():
+        try:
+            previous_stats = json.loads(STATS_FILE.read_text(encoding="utf-8"))
+            for category in previous_stats.get("categories", []):
+                for leader in category.get("leaders", []):
+                    if leader.get("fighter_id") and leader.get("photo_url"):
+                        photo_cache.setdefault(leader["fighter_id"], leader["photo_url"])
+        except Exception as e:
+            print(f"WARN previous stats photo cache unavailable: {e}")
+
+    if FIGHTERS_FILE.exists():
+        try:
+            fighter_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+            for fighter in fighter_data.get("fighters", []):
+                photo = fighter.get("avatar_thumb_url") or fighter.get("avatar_url")
+                if fighter.get("id") and photo:
+                    photo_cache.setdefault(fighter["id"], photo)
+        except Exception as e:
+            print(f"WARN fighter photo cache unavailable: {e}")
+
+    unique_leaders = {}
+    for category in categories:
+        for leader in category["leaders"]:
+            unique_leaders.setdefault(leader["fighter_id"], leader)
+
+    for fighter_id, leader in unique_leaders.items():
+        if fighter_id in photo_cache:
+            continue
+        photos = fetch_ufc_profile_photos(leader["name"], leader.get("athlete_url"))
+        photo = photos.get("avatar_thumb_url") or photos.get("avatar_url")
+        if photo:
+            photo_cache[fighter_id] = photo
+
+    for category in categories:
+        for leader in category["leaders"]:
+            leader["photo_url"] = photo_cache.get(leader["fighter_id"], leader.get("photo_url", ""))
 
     return {
         "schema_version": 1,
