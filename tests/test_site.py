@@ -44,6 +44,26 @@ class DataContractTests(unittest.TestCase):
         ids = [fighter["id"] for fighter in fighters["fighters"]]
         self.assertEqual(len(ids), len(set(ids)), "fighter ids must be unique")
 
+    def test_official_stats_have_traceable_ufc_sources_and_no_fabricated_foul_ranking(self):
+        stats = load_json("stats.json")
+        self.assertEqual(stats.get("source", {}).get("name"), "UFC 공식 Record Book")
+        self.assertTrue(stats.get("source", {}).get("url", "").startswith("https://statleaders.ufc.com/"))
+        categories = stats.get("categories", [])
+        self.assertGreaterEqual(len(categories), 12)
+        self.assertTrue({"경기", "타격", "그래플링", "시간"}.issubset({item.get("group") for item in categories}))
+        for category in categories:
+            self.assertTrue(category.get("source_metric"), category.get("id"))
+            self.assertEqual(len(category.get("leaders", [])), 5, category.get("id"))
+            for leader in category["leaders"]:
+                self.assertRegex(leader.get("name_ko", ""), r"[가-힣]", leader.get("name"))
+                self.assertTrue(leader.get("value"))
+                self.assertTrue(leader.get("athlete_url", "").startswith("https://www.ufc.com/athlete/"))
+        discipline = stats.get("discipline", {})
+        self.assertEqual(discipline.get("status"), "coverage_building")
+        self.assertEqual(discipline.get("leaders"), [])
+        self.assertIn("심판의 구두경고", discipline.get("excluded", []))
+        self.assertIn("체육위원회 공식 감점", discipline.get("counted", []))
+
     def test_upcoming_fighters_have_readable_korean_names(self):
         events = load_json("events.json").get("events", [])
         fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
@@ -634,11 +654,37 @@ class FrontendContractTests(unittest.TestCase):
     def test_navigation_uses_large_pictograms_without_covering_desktop_content(self):
         nav = self.html.split('<nav class="tabbar"', 1)[1].split("</nav>", 1)[0]
         self.assertEqual(nav.count("<svg "), 5)
-        for label in ("홈", "일정", "결과", "랭킹", "선수"):
+        for label in ("홈", "일정", "결과", "랭킹", "스탯"):
             self.assertIn(f"<span>{label}</span>", nav)
+        self.assertNotIn('data-tab="fighters"', nav)
+        self.assertIn('href="#fighters">선수 도감', self.html)
         self.assertIn(".topbar{\n    position:relative", self.html)
         self.assertIn(".tabbar{position:relative;top:auto", self.html)
         self.assertIn(".tabbar a{height:72px;font-size:17px}", self.html)
+
+    def test_stats_are_a_primary_view_and_fighter_directory_is_secondary(self):
+        for required in (
+            "function viewStats()",
+            "function setStatsFilter(group)",
+            "function officialStatFighter(leader)",
+            "data/stats.json",
+            "UFC 공식 스탯",
+            "지금 눈에 띄는 기록",
+            "공식 반칙·제재 장부",
+            "선수 도감 →",
+            "case 'stats': html = viewStats();",
+            ".view.stats-view",
+            ".stats-featured",
+            ".stats-grid",
+            ".discipline-panel",
+        ):
+            self.assertIn(required, self.html)
+        workflow = (ROOT / ".github" / "workflows" / "scrape.yml").read_text(encoding="utf-8")
+        scraper = (ROOT / "scrape.py").read_text(encoding="utf-8")
+        self.assertIn("data/stats.json", workflow)
+        self.assertIn("UFC_RECORD_BOOK_URL", scraper)
+        self.assertIn("refresh_official_stats(now_iso)", scraper)
+        self.assertIn("--stats-only", scraper)
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)

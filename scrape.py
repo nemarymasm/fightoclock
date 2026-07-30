@@ -108,6 +108,7 @@ OPINIONS_FILE = DATA_DIR / "opinions.json"
 INSIGHTS_FILE = DATA_DIR / "insights.json"
 TRANSLATIONS_FILE = DATA_DIR / "translations.json"
 FAN_TAGS_FILE = DATA_DIR / "fan_tags.json"
+STATS_FILE = DATA_DIR / "stats.json"
 AVATAR_CACHE_DIR = DATA_DIR / "avatars" / "generated"
 
 EVENT_START_OVERRIDES = {
@@ -124,6 +125,59 @@ EVENT_CARD_ADDITIONS = {
         {"weight": "Heavyweight", "fighter_a": "Jovan Leka", "fighter_b": "Max Gimenis"},
     ],
 }
+
+UFC_RECORD_BOOK_URL = "https://statleaders.ufc.com/?fighter_status=0&lang=en"
+UFC_STAT_CATEGORIES = [
+    {"id": "wins", "group": "경기", "heading": "Wins", "title": "UFC 최다승", "unit": "승"},
+    {"id": "finishes", "group": "경기", "heading": "Finishes", "title": "최다 피니시", "unit": "회"},
+    {"id": "ko-wins", "group": "경기", "heading": "KO/TKO Wins", "title": "최다 KO·TKO승", "unit": "회"},
+    {"id": "submission-wins", "group": "경기", "heading": "Submission Wins", "title": "최다 서브미션승", "unit": "회"},
+    {"id": "win-streak", "group": "경기", "heading": "Win Streak", "title": "최장 연승", "unit": "연승"},
+    {"id": "title-fight-wins", "group": "경기", "heading": "Title Fight Wins", "title": "타이틀전 최다승", "unit": "승"},
+    {
+        "id": "shortest-average",
+        "group": "시간",
+        "heading": "Shortest Avg. Fight Time",
+        "title": "가장 짧은 평균 경기시간",
+        "unit": "",
+        "qualifier": "UFC 5경기 이상",
+    },
+    {"id": "total-fight-time", "group": "시간", "heading": "Total Fight Time", "title": "옥타곤 누적 경기시간", "unit": ""},
+    {
+        "id": "strikes-per-minute",
+        "group": "타격",
+        "heading": "Strikes Landed per Min.",
+        "title": "분당 유효타 적중",
+        "unit": "회",
+        "qualifier": "UFC 5경기 이상",
+    },
+    {
+        "id": "striking-differential",
+        "group": "타격",
+        "heading": "Striking Differential",
+        "title": "분당 유효타 차이",
+        "unit": "",
+        "qualifier": "UFC 5경기 이상",
+    },
+    {"id": "knockdowns", "group": "타격", "heading": "Knockdowns Landed", "title": "최다 녹다운", "unit": "회"},
+    {"id": "takedowns", "group": "그래플링", "heading": "Takedowns Landed", "title": "최다 테이크다운", "unit": "회"},
+    {
+        "id": "takedown-defense",
+        "group": "그래플링",
+        "heading": "Takedown Defense",
+        "title": "테이크다운 방어율",
+        "unit": "",
+        "qualifier": "UFC 5경기 이상",
+    },
+    {
+        "id": "control-percentage",
+        "group": "그래플링",
+        "heading": "Control Time Percentage",
+        "title": "경기시간 대비 컨트롤",
+        "unit": "",
+        "qualifier": "UFC 5경기 이상",
+    },
+]
 
 # 경기 결과만으로는 보이지 않는 맥락을 짧게 전달하는 편집 한줄평.
 # 자동수집 결과 위에 덧씌우므로 다음 데이터 갱신에서도 유지된다.
@@ -2155,6 +2209,128 @@ def fetch_odds(events):
     print(f"  ✓ {matched}경기 배당 매칭")
 
 
+def fetch_official_stat_leaders(now_iso=None):
+    """UFC 공식 Record Book에서 팬이 바로 읽을 수 있는 리더보드를 가져온다.
+
+    UFC가 집계하지 않는 반칙·논란 횟수는 만들지 않는다. 반칙 관련 수치는
+    향후 각 체육위원회의 공식 감점·실격·결과 번복 문서를 별도 장부로
+    완전하게 수집한 뒤에만 공개한다.
+    """
+    response = requests.get(UFC_RECORD_BOOK_URL, headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    headings = {
+        heading.get_text(" ", strip=True): heading
+        for heading in soup.find_all("h3")
+    }
+
+    body_text = soup.get_text(" ", strip=True)
+    updated_match = re.search(r"Last Update:\s*([0-9/: ]+\s+GMT)", body_text)
+    coverage = next(
+        (
+            paragraph.get_text(" ", strip=True)
+            for paragraph in soup.find_all("p")
+            if "Records reflect all UFC fights from UFC 28" in paragraph.get_text(" ", strip=True)
+        ),
+        "UFC 28 이후 현대 UFC 경기 기록",
+    )
+
+    categories = []
+    for definition in UFC_STAT_CATEGORIES:
+        heading = headings.get(definition["heading"])
+        if not heading:
+            raise RuntimeError(f"UFC Record Book 항목 없음: {definition['heading']}")
+        table = heading.find_next("div", class_="results-table")
+        if not table:
+            raise RuntimeError(f"UFC Record Book 표 없음: {definition['heading']}")
+
+        leaders = []
+        for row in table.select(".results-table--tr"):
+            if "results-table--th" in (row.get("class") or []):
+                continue
+            cells = row.find_all("span", recursive=False)
+            if len(cells) < 3:
+                continue
+            athlete_link = cells[1].find("a")
+            name = cells[1].get_text(" ", strip=True)
+            athlete_url = urljoin(UFC_RECORD_BOOK_URL, athlete_link.get("href", "")) if athlete_link else ""
+            if athlete_url.startswith("http://"):
+                athlete_url = "https://" + athlete_url.removeprefix("http://")
+            photo = row.find("img")
+            photo_url = urljoin(UFC_RECORD_BOOK_URL, photo.get("src", "")) if photo else ""
+            leaders.append(
+                {
+                    "rank": int(cells[0].get_text(" ", strip=True)),
+                    "name": name,
+                    "name_ko": tr_fighter(name),
+                    "fighter_id": slugify(name),
+                    "value": cells[2].get_text(" ", strip=True),
+                    "athlete_url": athlete_url,
+                    "photo_url": photo_url,
+                }
+            )
+            if len(leaders) == 5:
+                break
+
+        if len(leaders) < 5:
+            raise RuntimeError(f"UFC Record Book 상위 5명 파싱 실패: {definition['heading']}")
+        categories.append(
+            {
+                "id": definition["id"],
+                "group": definition["group"],
+                "title": definition["title"],
+                "source_metric": definition["heading"],
+                "unit": definition.get("unit", ""),
+                "qualifier": definition.get("qualifier", ""),
+                "leaders": leaders,
+            }
+        )
+
+    return {
+        "schema_version": 1,
+        "generated_at": now_iso or datetime.now(KST).isoformat(timespec="seconds"),
+        "source": {
+            "name": "UFC 공식 Record Book",
+            "url": UFC_RECORD_BOOK_URL,
+            "last_update": updated_match.group(1) if updated_match else "",
+            "coverage": coverage,
+        },
+        "categories": categories,
+        "discipline": {
+            "status": "coverage_building",
+            "title": "공식 반칙·제재 장부",
+            "summary": "UFC는 선수별 반칙 횟수를 공식 통계로 공개하지 않습니다. 체육위원회 문서에 남은 감점·실격·결과 번복만 수집하며, 전체 대회 범위를 채우기 전에는 순위를 표시하지 않습니다.",
+            "counted": ["체육위원회 공식 감점", "공식 실격패", "공식 결과 번복", "공식 반도핑 제재"],
+            "excluded": ["심판의 구두경고", "영상만 보고 추정한 반칙", "커뮤니티의 논란 평가"],
+            "sources": [
+                {
+                    "name": "UFC 공식 경기 통계",
+                    "url": "https://ufcstats.com/statistics/events/completed?page=all",
+                },
+                {
+                    "name": "UFC 공식 반도핑 프로그램",
+                    "url": "https://ufcantidoping.com/",
+                },
+                {
+                    "name": "네바다주 체육위원회 공식 결과",
+                    "url": "https://boxing.nv.gov/results/Results/",
+                },
+            ],
+            "leaders": [],
+        },
+    }
+
+
+def refresh_official_stats(now_iso=None):
+    stats = fetch_official_stat_leaders(now_iso)
+    STATS_FILE.write_text(
+        json.dumps(stats, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"=== Saved: {STATS_FILE.name} ({len(stats['categories'])} official categories) ===")
+    return stats
+
+
 def refresh_fan_tag_review_queue(divisions, fighters, now_iso=None):
     """팬 밈을 자동 창작하지 않고, 재조사가 필요한 선수 대기열만 매일 갱신한다."""
     if not FAN_TAGS_FILE.exists():
@@ -2409,6 +2585,12 @@ def main():
     # 리서치 대기열을 다시 계산해 오래된 밈이 방치되지 않게 한다.
     if divisions and fighters:
         refresh_fan_tag_review_queue(divisions, fighters, now_iso)
+
+    # UFC 공식 Record Book 리더보드. 수집 실패 시 기존 stats.json을 유지한다.
+    try:
+        refresh_official_stats(now_iso)
+    except Exception as e:
+        print("WARN UFC 공식 스탯 수집 실패:", e)
 
     # ── 국가별 커뮤니티 여론 (Reddit, 열쇠 있을 때만) ──
     opinions = None
@@ -2760,7 +2942,9 @@ def refresh_fan_tags_from_files():
 
 
 if __name__ == "__main__":
-    if "--champions-only" in sys.argv:
+    if "--stats-only" in sys.argv:
+        refresh_official_stats()
+    elif "--champions-only" in sys.argv:
         refresh_champion_history()
     elif "--rankings-only" in sys.argv:
         refresh_rankings_and_profiles()

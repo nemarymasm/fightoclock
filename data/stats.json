@@ -1,0 +1,813 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-30T21:45:56+09:00",
+  "source": {
+    "name": "UFC 공식 Record Book",
+    "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
+    "last_update": "07/26/2026 07:45 GMT",
+    "coverage": "Records reflect all UFC fights from UFC 28 to the present (UFC 28 was the first event to use the Unified Rules of MMA)."
+  },
+  "categories": [
+    {
+      "id": "wins",
+      "group": "경기",
+      "title": "UFC 최다승",
+      "source_metric": "Wins",
+      "unit": "승",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Jim Miller",
+          "name_ko": "짐 밀러",
+          "fighter_id": "jim-miller",
+          "value": "28",
+          "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
+        },
+        {
+          "rank": 2,
+          "name": "Charles Oliveira",
+          "name_ko": "찰스 올리베이라",
+          "fighter_id": "charles-oliveira",
+          "value": "25",
+          "athlete_url": "https://www.ufc.com/athlete/Charles-Oliveira",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Max Holloway",
+          "name_ko": "맥스 할로웨이",
+          "fighter_id": "max-holloway",
+          "value": "24",
+          "athlete_url": "https://www.ufc.com/athlete/Max-Holloway",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Neil Magny",
+          "name_ko": "닐 매그니",
+          "fighter_id": "neil-magny",
+          "value": "24",
+          "athlete_url": "https://www.ufc.com/athlete/Neil-Magny",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Andrei Arlovski",
+          "name_ko": "안드레이 알롭스키",
+          "fighter_id": "andrei-arlovski",
+          "value": "23",
+          "athlete_url": "https://www.ufc.com/athlete/Andrei-Arlovski",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "finishes",
+      "group": "경기",
+      "title": "최다 피니시",
+      "source_metric": "Finishes",
+      "unit": "회",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Charles Oliveira",
+          "name_ko": "찰스 올리베이라",
+          "fighter_id": "charles-oliveira",
+          "value": "21",
+          "athlete_url": "https://www.ufc.com/athlete/Charles-Oliveira",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/876a16e2-3e7c-42c1-81ed-b45569a8519d/OLIVEIRA_CHARLES_BMFMOCK.png"
+        },
+        {
+          "rank": 2,
+          "name": "Jim Miller",
+          "name_ko": "짐 밀러",
+          "fighter_id": "jim-miller",
+          "value": "20",
+          "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Donald Cerrone",
+          "name_ko": "도널드 세로니",
+          "fighter_id": "donald-cerrone",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Donald-Cerrone",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Derrick Lewis",
+          "name_ko": "데릭 루이스",
+          "fighter_id": "derrick-lewis",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Derrick-Lewis",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Matt Brown",
+          "name_ko": "맷 브라운",
+          "fighter_id": "matt-brown",
+          "value": "15",
+          "athlete_url": "https://www.ufc.com/athlete/Matt-Brown",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "ko-wins",
+      "group": "경기",
+      "title": "최다 KO·TKO승",
+      "source_metric": "KO/TKO Wins",
+      "unit": "회",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Derrick Lewis",
+          "name_ko": "데릭 루이스",
+          "fighter_id": "derrick-lewis",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Derrick-Lewis",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/0d4bdf63-4169-496a-b4e3-83b6733c100d/LEWIS_DERRICK_06-14.png"
+        },
+        {
+          "rank": 2,
+          "name": "Matt Brown",
+          "name_ko": "맷 브라운",
+          "fighter_id": "matt-brown",
+          "value": "13",
+          "athlete_url": "https://www.ufc.com/athlete/Matt-Brown",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Max Holloway",
+          "name_ko": "맥스 할로웨이",
+          "fighter_id": "max-holloway",
+          "value": "12",
+          "athlete_url": "https://www.ufc.com/athlete/Max-Holloway",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Anderson Silva",
+          "name_ko": "앤더슨 실바",
+          "fighter_id": "anderson-silva",
+          "value": "11",
+          "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Anthony Johnson",
+          "name_ko": "앤서니 존슨",
+          "fighter_id": "anthony-johnson",
+          "value": "11",
+          "athlete_url": "https://www.ufc.com/athlete/Anthony-Johnson",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "submission-wins",
+      "group": "경기",
+      "title": "최다 서브미션승",
+      "source_metric": "Submission Wins",
+      "unit": "회",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Charles Oliveira",
+          "name_ko": "찰스 올리베이라",
+          "fighter_id": "charles-oliveira",
+          "value": "17",
+          "athlete_url": "https://www.ufc.com/athlete/Charles-Oliveira",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/876a16e2-3e7c-42c1-81ed-b45569a8519d/OLIVEIRA_CHARLES_BMFMOCK.png"
+        },
+        {
+          "rank": 2,
+          "name": "Jim Miller",
+          "name_ko": "짐 밀러",
+          "fighter_id": "jim-miller",
+          "value": "14",
+          "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Demian Maia",
+          "name_ko": "데미안 마이아",
+          "fighter_id": "demian-maia",
+          "value": "11",
+          "athlete_url": "https://www.ufc.com/athlete/Demian-Maia",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Gerald Meerschaert",
+          "name_ko": "제럴드 미어샤트",
+          "fighter_id": "gerald-meerschaert",
+          "value": "11",
+          "athlete_url": "https://www.ufc.com/athlete/Gerald-Meerschaert",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Nate Diaz",
+          "name_ko": "네이트 디아즈",
+          "fighter_id": "nate-diaz",
+          "value": "10",
+          "athlete_url": "https://www.ufc.com/athlete/Nate-Diaz",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "win-streak",
+      "group": "경기",
+      "title": "최장 연승",
+      "source_metric": "Win Streak",
+      "unit": "연승",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Anderson Silva",
+          "name_ko": "앤더슨 실바",
+          "fighter_id": "anderson-silva",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8828346d-d9d4-49c9-9ad8-63fcf29d170a%2FSILVA_ANDERSON_10-31.png"
+        },
+        {
+          "rank": 1,
+          "name": "Islam Makhachev",
+          "name_ko": "이슬람 마카체프",
+          "fighter_id": "islam-makhachev",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Islam-Makhachev",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Kamaru Usman",
+          "name_ko": "카마루 우스만",
+          "fighter_id": "kamaru-usman",
+          "value": "15",
+          "athlete_url": "https://www.ufc.com/athlete/Kamaru-Usman",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Merab Dvalishvili",
+          "name_ko": "메랍 드발리시빌리",
+          "fighter_id": "merab-dvalishvili",
+          "value": "14",
+          "athlete_url": "https://www.ufc.com/athlete/Merab-Dvalishvili",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Georges St-Pierre",
+          "name_ko": "조르주 생피에르",
+          "fighter_id": "georges-st-pierre",
+          "value": "13",
+          "athlete_url": "https://www.ufc.com/athlete/Georges-St-Pierre",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "title-fight-wins",
+      "group": "경기",
+      "title": "타이틀전 최다승",
+      "source_metric": "Title Fight Wins",
+      "unit": "승",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Jon Jones",
+          "name_ko": "존 존스",
+          "fighter_id": "jon-jones",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Jon-Jones",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/fe4afd10-41ba-466a-8daf-53731aebcc90/JONES_JON.png"
+        },
+        {
+          "rank": 2,
+          "name": "Georges St-Pierre",
+          "name_ko": "조르주 생피에르",
+          "fighter_id": "georges-st-pierre",
+          "value": "13",
+          "athlete_url": "https://www.ufc.com/athlete/Georges-St-Pierre",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Demetrious Johnson",
+          "name_ko": "드미트리우스 존슨",
+          "fighter_id": "demetrious-johnson",
+          "value": "12",
+          "athlete_url": "https://www.ufc.com/athlete/Demetrious-Johnson",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Anderson Silva",
+          "name_ko": "앤더슨 실바",
+          "fighter_id": "anderson-silva",
+          "value": "11",
+          "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Amanda Nunes",
+          "name_ko": "아만다 누네스",
+          "fighter_id": "amanda-nunes",
+          "value": "11",
+          "athlete_url": "https://www.ufc.com/athlete/Amanda-Nunes",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "shortest-average",
+      "group": "시간",
+      "title": "가장 짧은 평균 경기시간",
+      "source_metric": "Shortest Avg. Fight Time",
+      "unit": "",
+      "qualifier": "UFC 5경기 이상",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Tom Aspinall",
+          "name_ko": "톰 아스피날",
+          "fighter_id": "tom-aspinall",
+          "value": "2:18",
+          "athlete_url": "https://www.ufc.com/athlete/Tom-Aspinall",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/cc25ffd8-c84e-4bce-b813-bcf22527b549/ASPINALL_TOM_BELT_10-25.png"
+        },
+        {
+          "rank": 2,
+          "name": "Drew McFedries",
+          "name_ko": "드루 맥페드리스",
+          "fighter_id": "drew-mcfedries",
+          "value": "2:20",
+          "athlete_url": "https://www.ufc.com/athlete/Drew-McFedries",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Terrance McKinney",
+          "name_ko": "테런스 맥키니",
+          "fighter_id": "terrance-mckinney",
+          "value": "2:28",
+          "athlete_url": "https://www.ufc.com/athlete/Terrance-McKinney",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "James Irvin",
+          "name_ko": "제임스 어빈",
+          "fighter_id": "james-irvin",
+          "value": "2:53",
+          "athlete_url": "https://www.ufc.com/athlete/James-Irvin",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Manuel Torres",
+          "name_ko": "마누엘 토레스",
+          "fighter_id": "manuel-torres",
+          "value": "2:56",
+          "athlete_url": "https://www.ufc.com/athlete/Manuel-Torres",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "total-fight-time",
+      "group": "시간",
+      "title": "옥타곤 누적 경기시간",
+      "source_metric": "Total Fight Time",
+      "unit": "",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Max Holloway",
+          "name_ko": "맥스 할로웨이",
+          "fighter_id": "max-holloway",
+          "value": "8:53:52",
+          "athlete_url": "https://www.ufc.com/athlete/Max-Holloway",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/01001199-97f7-404d-a0b9-0cea2c6a4e99/HOLLOWAY_MAX_07-11.png"
+        },
+        {
+          "rank": 2,
+          "name": "Rafael Dos Anjos",
+          "name_ko": "하파엘 도스 안요스",
+          "fighter_id": "rafael-dos-anjos",
+          "value": "8:43:19",
+          "athlete_url": "https://www.ufc.com/athlete/Rafael-Dos-Anjos",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Frankie Edgar",
+          "name_ko": "프랭키 에드가",
+          "fighter_id": "frankie-edgar",
+          "value": "7:57:10",
+          "athlete_url": "https://www.ufc.com/athlete/Frankie-Edgar",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Jim Miller",
+          "name_ko": "짐 밀러",
+          "fighter_id": "jim-miller",
+          "value": "7:32:57",
+          "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Neil Magny",
+          "name_ko": "닐 매그니",
+          "fighter_id": "neil-magny",
+          "value": "7:22:49",
+          "athlete_url": "https://www.ufc.com/athlete/Neil-Magny",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "strikes-per-minute",
+      "group": "타격",
+      "title": "분당 유효타 적중",
+      "source_metric": "Strikes Landed per Min.",
+      "unit": "회",
+      "qualifier": "UFC 5경기 이상",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Joshua Van",
+          "name_ko": "조슈아 반",
+          "fighter_id": "joshua-van",
+          "value": "8.43",
+          "athlete_url": "https://www.ufc.com/athlete/Joshua-Van",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/562231f7-c7a4-46b9-80b0-e23325e3d256/VAN_JOSHUA_BELT_05-09.png"
+        },
+        {
+          "rank": 2,
+          "name": "Terrance McKinney",
+          "name_ko": "테런스 맥키니",
+          "fighter_id": "terrance-mckinney",
+          "value": "7.95",
+          "athlete_url": "https://www.ufc.com/athlete/Terrance-McKinney",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Casey O'Neill",
+          "name_ko": "케이시 오닐",
+          "fighter_id": "casey-o-neill",
+          "value": "7.89",
+          "athlete_url": "https://www.ufc.com/athlete/Casey-ONeill",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Tom Aspinall",
+          "name_ko": "톰 아스피날",
+          "fighter_id": "tom-aspinall",
+          "value": "7.63",
+          "athlete_url": "https://www.ufc.com/athlete/Tom-Aspinall",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Leslie Smith",
+          "name_ko": "레슬리 스미스",
+          "fighter_id": "leslie-smith",
+          "value": "7.56",
+          "athlete_url": "https://www.ufc.com/athlete/Leslie-Smith",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "striking-differential",
+      "group": "타격",
+      "title": "분당 유효타 차이",
+      "source_metric": "Striking Differential",
+      "unit": "",
+      "qualifier": "UFC 5경기 이상",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Cristiane Justino",
+          "name_ko": "크리스 사이보그",
+          "fighter_id": "cristiane-justino",
+          "value": "4.79",
+          "athlete_url": "https://www.ufc.com/athlete/Cris-Cyborg",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/9f34da2f-30f6-441d-9c95-2ac07727e365%2FCYBORG_CRIS.png"
+        },
+        {
+          "rank": 2,
+          "name": "Cain Velasquez",
+          "name_ko": "케인 벨라스케즈",
+          "fighter_id": "cain-velasquez",
+          "value": "4.08",
+          "athlete_url": "https://www.ufc.com/athlete/Cain-Velasquez",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Wang Cong",
+          "name_ko": "왕충",
+          "fighter_id": "wang-cong",
+          "value": "4.02",
+          "athlete_url": "https://www.ufc.com/athlete/Wang-Cong",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Tom Aspinall",
+          "name_ko": "톰 아스피날",
+          "fighter_id": "tom-aspinall",
+          "value": "4.01",
+          "athlete_url": "https://www.ufc.com/athlete/Tom-Aspinall",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Navajo Stirling",
+          "name_ko": "나바호 스털링",
+          "fighter_id": "navajo-stirling",
+          "value": "3.62",
+          "athlete_url": "https://www.ufc.com/athlete/Navajo-Stirling",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "knockdowns",
+      "group": "타격",
+      "title": "최다 녹다운",
+      "source_metric": "Knockdowns Landed",
+      "unit": "회",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Donald Cerrone",
+          "name_ko": "도널드 세로니",
+          "fighter_id": "donald-cerrone",
+          "value": "20",
+          "athlete_url": "https://www.ufc.com/athlete/Donald-Cerrone",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/c84552bb-6649-4a0e-b27e-1c7b46cea699%2FCERRONE_DONALD_05-08.png"
+        },
+        {
+          "rank": 2,
+          "name": "Anderson Silva",
+          "name_ko": "앤더슨 실바",
+          "fighter_id": "anderson-silva",
+          "value": "18",
+          "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
+          "photo_url": ""
+        },
+        {
+          "rank": 2,
+          "name": "Jeremy Stephens",
+          "name_ko": "제레미 스티븐스",
+          "fighter_id": "jeremy-stephens",
+          "value": "18",
+          "athlete_url": "https://www.ufc.com/athlete/Jeremy-Stephens",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Edson Barboza",
+          "name_ko": "에드손 바르보자",
+          "fighter_id": "edson-barboza",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Edson-Barboza",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Dustin Poirier",
+          "name_ko": "더스틴 포이리어",
+          "fighter_id": "dustin-poirier",
+          "value": "15",
+          "athlete_url": "https://www.ufc.com/athlete/Dustin-Poirier",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "takedowns",
+      "group": "그래플링",
+      "title": "최다 테이크다운",
+      "source_metric": "Takedowns Landed",
+      "unit": "회",
+      "qualifier": "",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Merab Dvalishvili",
+          "name_ko": "메랍 드발리시빌리",
+          "fighter_id": "merab-dvalishvili",
+          "value": "119",
+          "athlete_url": "https://www.ufc.com/athlete/Merab-Dvalishvili",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8a8024f6-2b73-4fef-a376-888a9176df79/DVALISHVILI_MERAB_CG_09-14.png"
+        },
+        {
+          "rank": 2,
+          "name": "Georges St-Pierre",
+          "name_ko": "조르주 생피에르",
+          "fighter_id": "georges-st-pierre",
+          "value": "90",
+          "athlete_url": "https://www.ufc.com/athlete/Georges-St-Pierre",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Gleison Tibau",
+          "name_ko": "글레이슨 티바우",
+          "fighter_id": "gleison-tibau",
+          "value": "84",
+          "athlete_url": "https://www.ufc.com/athlete/Gleison-Tibau",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Clay Guida",
+          "name_ko": "클레이 구이다",
+          "fighter_id": "clay-guida",
+          "value": "78",
+          "athlete_url": "https://www.ufc.com/athlete/Clay-Guida",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Demetrious Johnson",
+          "name_ko": "드미트리우스 존슨",
+          "fighter_id": "demetrious-johnson",
+          "value": "74",
+          "athlete_url": "https://www.ufc.com/athlete/Demetrious-Johnson",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "takedown-defense",
+      "group": "그래플링",
+      "title": "테이크다운 방어율",
+      "source_metric": "Takedown Defense",
+      "unit": "",
+      "qualifier": "UFC 5경기 이상",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Julio Arce",
+          "name_ko": "훌리오 아르세",
+          "fighter_id": "julio-arce",
+          "value": "96.2%",
+          "athlete_url": "https://www.ufc.com/athlete/Julio-Arce",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/33dfc38f-6918-4b04-8994-723e19e716e6/ARCE_JULIO_03-30.png"
+        },
+        {
+          "rank": 2,
+          "name": "Ilia Topuria",
+          "name_ko": "일리아 토푸리아",
+          "fighter_id": "ilia-topuria",
+          "value": "95.2%",
+          "athlete_url": "https://www.ufc.com/athlete/Ilia-Topuria",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Jon Jones",
+          "name_ko": "존 존스",
+          "fighter_id": "jon-jones",
+          "value": "95.0%",
+          "athlete_url": "https://www.ufc.com/athlete/Jon-Jones",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Eddie Wineland",
+          "name_ko": "에디 와인랜드",
+          "fighter_id": "eddie-wineland",
+          "value": "93.3%",
+          "athlete_url": "https://www.ufc.com/athlete/Eddie-Wineland",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Jimmie Rivera",
+          "name_ko": "지미 리베라",
+          "fighter_id": "jimmie-rivera",
+          "value": "92.6%",
+          "athlete_url": "https://www.ufc.com/athlete/Jimmie-Rivera",
+          "photo_url": ""
+        }
+      ]
+    },
+    {
+      "id": "control-percentage",
+      "group": "그래플링",
+      "title": "경기시간 대비 컨트롤",
+      "source_metric": "Control Time Percentage",
+      "unit": "",
+      "qualifier": "UFC 5경기 이상",
+      "leaders": [
+        {
+          "rank": 1,
+          "name": "Bartosz Fabinski",
+          "name_ko": "바르토시 파빈스키",
+          "fighter_id": "bartosz-fabinski",
+          "value": "79.1%",
+          "athlete_url": "https://www.ufc.com/athlete/Bartosz-Fabinski",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/159b2db1-7c45-4b22-b6f2-623094c12d49%2FFABINSKI_BARTOSZ_04-17.png"
+        },
+        {
+          "rank": 2,
+          "name": "Gregor Gillespie",
+          "name_ko": "그레고르 길레스피",
+          "fighter_id": "gregor-gillespie",
+          "value": "71.9%",
+          "athlete_url": "https://www.ufc.com/athlete/Gregor-Gillespie",
+          "photo_url": ""
+        },
+        {
+          "rank": 3,
+          "name": "Pat Sabatini",
+          "name_ko": "팻 사바티니",
+          "fighter_id": "pat-sabatini",
+          "value": "71.0%",
+          "athlete_url": "https://www.ufc.com/athlete/Pat-Sabatini",
+          "photo_url": ""
+        },
+        {
+          "rank": 4,
+          "name": "Jailton Almeida",
+          "name_ko": "자일톤 알메이다",
+          "fighter_id": "jailton-almeida",
+          "value": "69.9%",
+          "athlete_url": "https://www.ufc.com/athlete/Jailton-Almeida",
+          "photo_url": ""
+        },
+        {
+          "rank": 5,
+          "name": "Chael Sonnen",
+          "name_ko": "차엘 소넨",
+          "fighter_id": "chael-sonnen",
+          "value": "69.3%",
+          "athlete_url": "https://www.ufc.com/athlete/Chael-Sonnen",
+          "photo_url": ""
+        }
+      ]
+    }
+  ],
+  "discipline": {
+    "status": "coverage_building",
+    "title": "공식 반칙·제재 장부",
+    "summary": "UFC는 선수별 반칙 횟수를 공식 통계로 공개하지 않습니다. 체육위원회 문서에 남은 감점·실격·결과 번복만 수집하며, 전체 대회 범위를 채우기 전에는 순위를 표시하지 않습니다.",
+    "counted": [
+      "체육위원회 공식 감점",
+      "공식 실격패",
+      "공식 결과 번복",
+      "공식 반도핑 제재"
+    ],
+    "excluded": [
+      "심판의 구두경고",
+      "영상만 보고 추정한 반칙",
+      "커뮤니티의 논란 평가"
+    ],
+    "sources": [
+      {
+        "name": "UFC 공식 경기 통계",
+        "url": "https://ufcstats.com/statistics/events/completed?page=all"
+      },
+      {
+        "name": "UFC 공식 반도핑 프로그램",
+        "url": "https://ufcantidoping.com/"
+      },
+      {
+        "name": "네바다주 체육위원회 공식 결과",
+        "url": "https://boxing.nv.gov/results/Results/"
+      }
+    ],
+    "leaders": []
+  }
+}

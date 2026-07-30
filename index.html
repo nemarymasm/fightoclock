@@ -295,6 +295,61 @@
   .fan-tag.quiet{border-color:#303034;background:#18181a;color:#a8a8ad;font-weight:750}
   .fan-tag.quiet::before{background:#68686e;box-shadow:none}
   .fighter-hero .fan-tag{margin-top:10px}
+  .stats-page{display:flex;flex-direction:column;gap:22px}
+  .stats-page-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+  .stats-page-head h1{margin:0;color:#f5f5f6;font-size:31px;font-weight:950;line-height:1.08;letter-spacing:-.045em}
+  .stats-page-head p{max-width:620px;margin:10px 0 0;color:#c7c7ca;font-size:16px;font-weight:650;line-height:1.55}
+  .atlas-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 15px;border:1px solid var(--line-2);border-radius:12px;color:#e7e7e9;font-size:15px;font-weight:900;white-space:nowrap}
+  .atlas-link:hover{border-color:#77777d;color:#fff}
+  .stats-source{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 17px;border:1px solid rgba(229,72,77,.32);border-radius:14px;background:rgba(229,72,77,.055)}
+  .stats-source strong{display:block;color:#fff;font-size:16px;font-weight:950}
+  .stats-source span{display:block;margin-top:4px;color:#c7c7cb;font-size:14px;font-weight:650;line-height:1.45}
+  .stats-source a{color:#ff9296;font-size:14px;font-weight:900;white-space:nowrap}
+  .stats-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+  .stats-section-head h2{margin:0;color:#f4f4f5;font-size:23px;font-weight:950;letter-spacing:-.035em}
+  .stats-section-head p{margin:5px 0 0;color:#bdbdc1;font-size:14px;font-weight:650}
+  .stats-featured{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+  .stat-feature-card{position:relative;overflow:hidden;min-height:170px;padding:18px;border:1px solid var(--line-2);border-radius:17px;background:#141416}
+  .stat-feature-card::before{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:var(--red)}
+  .stat-feature-label{color:#ff858a;font-size:14px;font-weight:950}
+  .stat-feature-leader{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;margin-top:17px}
+  .stat-feature-photo,.stat-feature-photo .avatar-box{width:72px!important;height:76px!important}
+  .stat-feature-photo .avatar-box{border-radius:15px!important}
+  .stat-feature-name{color:#f5f5f6;font-size:19px;font-weight:950;line-height:1.2;letter-spacing:-.025em}
+  .stat-feature-en{margin-top:3px;color:#aaaab0;font-size:13px;font-weight:700}
+  .stat-feature-value{margin-top:8px;color:#fff;font-size:29px;font-weight:950;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+  .stat-feature-value small,.stat-leader-value small{margin-left:3px;color:#c7c7cb;font-size:13px;font-weight:850;letter-spacing:0}
+  .stats-tabs{display:flex;gap:8px;overflow-x:auto;padding:1px 0 4px;scrollbar-width:none}
+  .stats-tabs::-webkit-scrollbar{display:none}
+  .stats-tab{min-height:42px;padding:0 15px;border:1px solid var(--line-2);border-radius:999px;background:#151517;color:#bdbdc1;font-size:14px;font-weight:900;white-space:nowrap}
+  .stats-tab.active{border-color:var(--red);background:var(--red);color:#fff}
+  .stats-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+  .stat-board{overflow:hidden;border:1px solid var(--line-2);border-radius:17px;background:#131315}
+  .stat-board-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-height:75px;padding:16px;border-bottom:1px solid var(--line)}
+  .stat-board-head h3{margin:0;color:#f2f2f3;font-size:18px;font-weight:950;line-height:1.25;letter-spacing:-.025em}
+  .stat-board-head p{margin:5px 0 0;color:#b6b6ba;font-size:13px;font-weight:650}
+  .stat-board-source{color:#77777d;font-size:12px;font-weight:850;white-space:nowrap}
+  .stat-leader-row{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:11px;align-items:center;min-height:58px;padding:9px 15px;border-top:1px solid rgba(255,255,255,.065)}
+  .stat-leader-row:first-child{border-top:0}
+  .stat-leader-rank{color:#d3a645;font-size:17px;font-weight:950;font-variant-numeric:tabular-nums}
+  .stat-leader-name{min-width:0;color:#e9e9eb;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .stat-leader-value{color:#fff;font-size:17px;font-weight:950;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .discipline-panel{padding:20px;border:1px solid rgba(211,166,69,.36);border-radius:18px;background:rgba(211,166,69,.055)}
+  .discipline-kicker{color:#efc966;font-size:14px;font-weight:950}
+  .discipline-panel h2{margin:7px 0 0;color:#fff;font-size:23px;font-weight:950;letter-spacing:-.035em}
+  .discipline-panel>p{max-width:760px;margin:10px 0 0;color:#d0d0d3;font-size:15px;font-weight:650;line-height:1.6}
+  .discipline-columns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:17px}
+  .discipline-column{padding:15px;border:1px solid var(--line);border-radius:13px;background:#121214}
+  .discipline-column b{display:block;margin-bottom:9px;color:#f0f0f1;font-size:15px}
+  .discipline-column span{display:block;margin-top:6px;color:#bdbdc1;font-size:14px;font-weight:650;line-height:1.45}
+  @media (max-width:700px){
+    .stats-page-head{display:block}
+    .stats-page-head h1{font-size:28px}
+    .atlas-link{width:100%;margin-top:16px}
+    .stats-source{display:block}
+    .stats-source a{display:inline-block;margin-top:11px}
+    .stats-featured,.stats-grid,.discipline-columns{grid-template-columns:1fr}
+  }
   .rank-row-stats{display:contents}
   .rank-country,.rank-record{min-width:0}
   .rank-country b,.rank-record b{display:block;color:#e4e4e6;font-size:17px;font-weight:850;white-space:nowrap}
@@ -543,6 +598,7 @@
     .view{max-width:760px;margin:0 auto}
     .view.home-view{max-width:1080px}
     .view.rankings-view{max-width:980px}
+    .view.stats-view{max-width:1080px}
     .ranking-division-tabs{flex-wrap:wrap;overflow:visible}
   }
   @media (min-width:1180px){
@@ -938,7 +994,7 @@
   <a href="#schedule" data-tab="schedule"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></span><span>일정</span></a>
   <a href="#results" data-tab="results"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg></span><span>결과</span></a>
   <a href="#rankings" data-tab="rankings"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span>랭킹</span></a>
-  <a href="#fighters" data-tab="fighters"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 3.5a4 4 0 0 1 0 8M18 14a6 6 0 0 1 4 7"/></svg></span><span>선수</span></a>
+  <a href="#stats" data-tab="stats"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 20h18"/><path d="m5 16 4-5 4 3 6-8"/><circle cx="5" cy="16" r="1"/><circle cx="9" cy="11" r="1"/><circle cx="13" cy="14" r="1"/><circle cx="19" cy="6" r="1"/></svg></span><span>스탯</span></a>
 </nav>
 
 <main id="app" tabindex="-1" aria-live="polite" aria-busy="true">
@@ -961,6 +1017,12 @@ let FAN_TAGS = {
   tags:{},
   generatedAt:null
 };
+let OFFICIAL_STATS = {
+  categories:[],
+  source:{},
+  discipline:{},
+  generatedAt:null
+};
 
 /* =========================================================
    라우터 / 뷰
@@ -974,6 +1036,7 @@ let loadErrors = [];
 let DATA_META = {generatedAt:null, source:'Wikipedia', upcoming:0, past:0};
 let scheduleFilter = 'all';
 let rankingFilter = 0;
+let statsFilter = '전체';
 let fighterQuery = '';
 let fighterLimit = 60;
 
@@ -1866,6 +1929,118 @@ function viewFighters(){
   `;
 }
 
+/* ---------- 뷰: 공식 스탯 ---------- */
+function officialStatFighter(leader){
+  const local=FIGHTERS[leader?.fighter_id]||REAL_FIGHTERS[leader?.fighter_id];
+  if(local) return local;
+  return {
+    id:leader?.fighter_id||'record-holder',
+    name:leader?.name_ko||leader?.name||'기록 보유자',
+    en:leader?.name||'',
+    avatar:leader?.photo_url||'',
+    avatarThumb:leader?.photo_url||'',
+    avatarProvider:leader?.photo_url?'UFC':''
+  };
+}
+function officialStatValue(category,leader){
+  const value=esc(leader?.value||'-');
+  const unit=category?.unit||'';
+  return `${value}${unit?`<small>${esc(unit)}</small>`:''}`;
+}
+function setStatsFilter(group){
+  statsFilter=group||'전체';
+  route({preserveScroll:true});
+}
+function statBoardHtml(category){
+  return `
+    <section class="stat-board" aria-label="${esc(category.title)}">
+      <div class="stat-board-head">
+        <div><h3>${esc(category.title)}</h3>${category.qualifier?`<p>${esc(category.qualifier)}</p>`:''}</div>
+        <span class="stat-board-source">UFC 공식</span>
+      </div>
+      <div>
+        ${(category.leaders||[]).map(function(leader){
+          return `<a class="stat-leader-row" href="${esc(safeExternalUrl(leader.athlete_url)||'#stats')}" target="_blank" rel="noopener">
+            <span class="stat-leader-rank">${esc(leader.rank)}</span>
+            <span class="stat-leader-name">${esc(leader.name_ko||leader.name)}</span>
+            <strong class="stat-leader-value">${officialStatValue(category,leader)}</strong>
+          </a>`;
+        }).join('')}
+      </div>
+    </section>`;
+}
+function viewStats(){
+  const categories=OFFICIAL_STATS.categories||[];
+  if(!categories.length) return `<div class="state-card"><div><h1>공식 스탯을 불러오지 못했습니다</h1><p>UFC Record Book 자동수집 상태를 확인해주세요.</p><a class="btn ghost" href="#fighters">선수 도감 보기</a></div></div>`;
+  const groups=['전체','경기','타격','그래플링','시간'];
+  const visible=statsFilter==='전체'?categories:categories.filter(category=>category.group===statsFilter);
+  const featuredIds=['wins','finishes','shortest-average','strikes-per-minute'];
+  const featured=featuredIds.map(id=>categories.find(category=>category.id===id)).filter(Boolean);
+  const discipline=OFFICIAL_STATS.discipline||{};
+  const source=OFFICIAL_STATS.source||{};
+  return `
+    <div class="stats-page">
+      <div class="stats-page-head">
+        <div>
+          <h1>UFC 공식 스탯</h1>
+          <p>감으로 줄 세우지 않고 UFC가 직접 집계한 기록만 보여줍니다. 선수 정보와 전적은 별도의 선수 도감으로 분리했습니다.</p>
+        </div>
+        <a class="atlas-link" href="#fighters">선수 도감 →</a>
+      </div>
+
+      <div class="stats-source">
+        <div>
+          <strong>${esc(source.name||'UFC 공식 Record Book')}</strong>
+          <span>UFC 28 이후 현대 UFC 기록 · 공식 페이지 갱신 ${esc(source.last_update||'확인 중')}</span>
+        </div>
+        <a href="${esc(safeExternalUrl(source.url))}" target="_blank" rel="noopener">원문 확인 ↗</a>
+      </div>
+
+      <section>
+        <div class="stats-section-head">
+          <div><h2>지금 눈에 띄는 기록</h2><p>각 공식 부문 전체 1위입니다.</p></div>
+        </div>
+        <div class="stats-featured">
+          ${featured.map(function(category){
+            const leader=category.leaders?.[0]||{};
+            const fighter=officialStatFighter(leader);
+            return `<a class="stat-feature-card" href="${esc(safeExternalUrl(leader.athlete_url)||'#stats')}" target="_blank" rel="noopener">
+              <div class="stat-feature-label">${esc(category.title)}</div>
+              <div class="stat-feature-leader">
+                <div class="stat-feature-photo">${avatarBox(fighter,72)}</div>
+                <div>
+                  <div class="stat-feature-name">${esc(leader.name_ko||leader.name)}</div>
+                  ${leader.name_ko&&leader.name_ko!==leader.name?`<div class="stat-feature-en">${esc(leader.name)}</div>`:''}
+                  <div class="stat-feature-value">${officialStatValue(category,leader)}</div>
+                </div>
+              </div>
+            </a>`;
+          }).join('')}
+        </div>
+      </section>
+
+      <section>
+        <div class="stats-section-head">
+          <div><h2>기록실</h2><p>부문마다 공식 상위 5명을 확인하세요.</p></div>
+        </div>
+        <div class="stats-tabs" role="tablist" aria-label="스탯 분류">
+          ${groups.map(group=>`<button class="stats-tab ${statsFilter===group?'active':''}" type="button" role="tab" aria-selected="${statsFilter===group}" onclick="setStatsFilter('${group}')">${group}</button>`).join('')}
+        </div>
+        <div class="stats-grid">${visible.map(statBoardHtml).join('')}</div>
+      </section>
+
+      <section class="discipline-panel">
+        <div class="discipline-kicker">반칙·논란 데이터 원칙</div>
+        <h2>${esc(discipline.title||'공식 반칙·제재 장부')}</h2>
+        <p>${esc(discipline.summary||'공식 문서로 확인할 수 있는 사건만 집계합니다.')}</p>
+        <div class="discipline-columns">
+          <div class="discipline-column"><b>집계하는 것</b>${(discipline.counted||[]).map(item=>`<span>✓ ${esc(item)}</span>`).join('')}</div>
+          <div class="discipline-column"><b>집계하지 않는 것</b>${(discipline.excluded||[]).map(item=>`<span>— ${esc(item)}</span>`).join('')}</div>
+        </div>
+      </section>
+    </div>`;
+}
+
 /* ---------- 뷰: 선수 상세 ---------- */
 /* 피니시 스타일 분석 (승리 방식 분해 기반, 사실) */
 function finishBlock(f){
@@ -2262,7 +2437,7 @@ function viewEvent(id){
 
 /* ---------- 라우터 ---------- */
 function updateDocumentMeta(base,arg){
-  const labels={home:'홈',schedule:'일정',results:'결과',rankings:'랭킹',fighters:'선수'};
+  const labels={home:'홈',schedule:'일정',results:'결과',rankings:'랭킹',stats:'스탯',fighters:'선수 도감'};
   let title=labels[base]||'홈';
   if(base==='event'){
     const e=getEvent(arg); title=e?`${eventCodeKo(e.code)}: ${e.titleKo||e.title}`:'대회';
@@ -2294,13 +2469,14 @@ function route(options={}){
     case 'schedule': html = viewSchedule(); break;
     case 'results': html = viewResults(); break;
     case 'rankings': html = viewRankings(); break;
+    case 'stats': html = viewStats(); break;
     case 'fighters': html = viewFighters(); break;
     case 'fighter': html = viewFighter(arg); break;
     case 'event': html = viewEvent(arg); break;
     default: html = viewHome();
   }
   $app.setAttribute('aria-busy','false');
-  const viewClass = base==='home' ? 'home-view' : (base==='rankings' ? 'rankings-view' : '');
+  const viewClass = base==='home' ? 'home-view' : (base==='rankings' ? 'rankings-view' : (base==='stats' ? 'stats-view' : ''));
   $app.innerHTML = `<div class="view active ${viewClass}">${html}</div>`;
   updateDocumentMeta(base,arg);
   if(!options.preserveScroll) window.scrollTo({top:0,behavior:'instant'});
@@ -2369,6 +2545,7 @@ function showSettingsDialog(){
   showDialog('사이트 설정',`
     <div class="setting-row"><label for="wideSetting"><strong>넓은 화면 사용</strong><br><span style="color:var(--muted);font-size:12px">데스크톱에서 카드 영역을 넓힙니다.</span></label><input id="wideSetting" type="checkbox" ${wide?'checked':''} onchange="setWideLayout(this.checked)"></div>
     <div class="setting-row"><div><strong>데이터 상태</strong><br><span style="color:var(--muted);font-size:12px">${esc(freshnessInfo().text)}</span></div><button type="button" class="pill ghost" onclick="retryData()">새로고침</button></div>
+    <div class="setting-row"><div><strong>선수 도감</strong><br><span style="color:var(--muted);font-size:12px">선수 프로필과 전체 경기 기록을 찾습니다.</span></div><a class="pill ghost" href="#fighters" onclick="closeDialog()">열기</a></div>
     <div class="setting-row"><div><strong>내 반응 초기화</strong><br><span style="color:var(--muted);font-size:12px">이 기기에 저장된 투표와 반응만 삭제합니다.</span></div><button type="button" class="pill ghost" onclick="clearPreferences()">초기화</button></div>
   `);
 }
@@ -2754,7 +2931,7 @@ async function loadJSON(path){
 
 async function loadRealData(){
   loadErrors=[];
-  const [fightersResult,rankingsResult,championsResult,eventsResult,opinionsResult,insightsResult,translationsResult,fanTagsResult]=await Promise.allSettled([
+  const [fightersResult,rankingsResult,championsResult,eventsResult,opinionsResult,insightsResult,translationsResult,fanTagsResult,statsResult]=await Promise.allSettled([
     loadJSON('./data/fighters.json'),
     loadJSON('./data/rankings.json'),
     loadJSON('./data/champions.json'),
@@ -2762,7 +2939,8 @@ async function loadRealData(){
     loadJSON('./data/opinions.json'),
     loadJSON('./data/insights.json'),
     loadJSON('./data/translations.json'),
-    loadJSON('./data/fan_tags.json')
+    loadJSON('./data/fan_tags.json'),
+    loadJSON('./data/stats.json')
   ]);
 
   if(fanTagsResult.status==='fulfilled'){
@@ -2775,6 +2953,19 @@ async function loadRealData(){
     console.log('[fightoclock] fan tags:', Object.keys(FAN_TAGS.tags).length);
   } else {
     console.warn('[fightoclock] fan tags load failed; unverified fighters stay blank');
+  }
+
+  if(statsResult.status==='fulfilled'){
+    const data=statsResult.value;
+    OFFICIAL_STATS={
+      categories:data.categories||[],
+      source:data.source||{},
+      discipline:data.discipline||{},
+      generatedAt:data.generated_at||null
+    };
+    console.log('[fightoclock] official stats:', OFFICIAL_STATS.categories.length, 'categories');
+  } else {
+    console.warn('[fightoclock] official stats load failed:', statsResult.reason?.message);
   }
 
   if(fightersResult.status==='fulfilled'){
