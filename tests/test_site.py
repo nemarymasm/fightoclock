@@ -538,16 +538,26 @@ class FrontendContractTests(unittest.TestCase):
             "Jairzinho Rozenstruik",
             "Alistair Overeem",
             "Fabrício Werdum",
+            "Derek Brunson",
+            "Darren Till",
+            "Brad Tavares",
+            "Trevin Giles",
+            "Markus Perez",
         ):
             self.assertRegex(translations.get(name, ""), r"[가-힣]")
         for required in (
             "function formatHistoryDateKo(value)",
             "function localizeFighterName(value)",
             "function localizeHistoryEvent(value)",
-            "'Submission (Ezekiel choke)':'에제키엘 초크 서브미션'",
-            "'TKO (body kick and punches)':'TKO(보디킥·펀치)'",
+            "match=raw.match(/^(\\d{1,2})\\s+([A-Za-z]+)\\s+(\\d{4})$/)",
+            "'face crank':'페이스 크랭크'",
+            "'body kick and punches':'보디킥·펀치'",
+            '<div class="opp">${r.opp}전</div>',
+            ".replace(/UFC on ESPN/gi,'UFC ESPN 대회')",
         ):
             self.assertIn(required, self.html)
+        fighter_view = self.html.split("function fighterHistoryList", 1)[1].split("function viewFighter", 1)[0]
+        self.assertNotIn('>vs ${r.opp}', fighter_view)
 
     def test_rankings_use_large_faces_and_one_shared_column_header(self):
         ranking_view = self.html.split("function viewRankings", 1)[1].split("function fighterMatches", 1)[0]
@@ -615,8 +625,10 @@ class FrontendContractTests(unittest.TestCase):
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)
-        self.assertIn("'Decision (unanimous)':'전원일치 판정'", self.html)
-        self.assertIn("'Submission (rear-naked choke)':'리어네이키드초크 서브미션'", self.html)
+        self.assertIn("'decision':'판정'", self.html)
+        self.assertIn("'unanimous':'전원일치'", self.html)
+        self.assertIn("'rear-naked choke':'리어네이키드 초크'", self.html)
+        self.assertIn("if(prefix==='submission')", self.html)
         self.assertIn("m.round + '라운드'", self.html)
 
     def test_result_cards_distinguish_method_date_and_place(self):

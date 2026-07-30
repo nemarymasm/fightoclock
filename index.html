@@ -225,20 +225,20 @@
   .stat-cell{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center}
   .stat-cell .k{font-size:12px;color:#bdbdc0;letter-spacing:.05em;text-transform:uppercase}
   .stat-cell .v{font-size:16px;font-weight:800;margin-top:4px}
-  .recent-list{display:flex;flex-direction:column;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:14px}
-  .recent-item{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px;border-top:1px solid var(--line)}
+  .recent-list{display:flex;flex-direction:column;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:18px}
+  .recent-item{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:15px;align-items:center;min-height:92px;padding:17px 18px;border-top:1px solid var(--line)}
   .recent-item:first-child{border-top:0}
-  .res-tag{width:34px;height:34px;border-radius:9px;font-weight:900;font-size:13px;display:grid;place-items:center}
+  .res-tag{width:42px;height:42px;border-radius:12px;font-weight:950;font-size:15px;display:grid;place-items:center}
   .res-tag.W{background:rgba(34,197,94,.18);color:#7ee2a4}
   .res-tag.L{background:rgba(210,10,10,.18);color:#ff7676}
   .res-tag.D,.res-tag.N{background:#2a2a2a;color:#d1d1d3}
-  .recent-item .opp{font-weight:800;font-size:16px}
-  .recent-item .way{font-size:14px;color:#d1d1d3;margin-top:4px}
-  .recent-item .event{font-size:13px;color:#aaaab0;margin-top:4px}
-  .recent-item .when{font-size:14px;color:#bdbdc0;text-align:right;white-space:nowrap}
+  .recent-item .opp{color:#f3f3f4;font-weight:900;font-size:18px;line-height:1.25;letter-spacing:-.025em}
+  .recent-item .way{font-size:15px;font-weight:750;color:#d9d9dc;margin-top:5px;line-height:1.4}
+  .recent-item .event{font-size:14px;font-weight:650;color:#b7b7bc;margin-top:5px;line-height:1.35}
+  .recent-item .when{font-size:15px;font-weight:800;color:#d5d5d8;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
   .history-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:28px 6px 12px}
-  .history-heading h2{margin:0;font-size:21px;font-weight:900;letter-spacing:-.035em}
-  .history-heading span{color:#c7c7ca;font-size:15px;font-weight:750}
+  .history-heading h2{margin:0;font-size:24px;font-weight:950;letter-spacing:-.04em}
+  .history-heading span{color:#d0d0d3;font-size:16px;font-weight:800}
   .pre-ufc-history{margin-top:18px;border:1px solid var(--line);border-radius:14px;background:#101012;overflow:hidden}
   .pre-ufc-history summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:0 16px;cursor:pointer;list-style:none;color:#e7e7e8;font-size:18px;font-weight:850}
   .pre-ufc-history summary::-webkit-details-marker{display:none}
@@ -833,9 +833,13 @@
     .result-talking-point{padding:9px 11px;font-size:14px}
     .result-actions{padding:3px 14px 15px}
     .history-heading{align-items:flex-start;flex-direction:column;gap:5px}
-    .history-heading h2{font-size:20px}
-    .recent-item{grid-template-columns:auto minmax(0,1fr);align-items:start}
-    .recent-item .when{grid-column:2;text-align:left;margin-top:4px;color:#d0d0d3}
+    .history-heading h2{font-size:22px}
+    .history-heading span{font-size:15px}
+    .recent-item{grid-template-columns:42px minmax(0,1fr);gap:10px 12px;align-items:start;min-height:0;padding:15px}
+    .recent-item .opp{font-size:17px}
+    .recent-item .way{font-size:15px}
+    .recent-item .event{font-size:14px}
+    .recent-item .when{grid-column:2;text-align:left;margin-top:0;color:#d0d0d3;font-size:14px}
     .week-head{gap:12px;padding:18px 4px}
     .week-time-line{display:block}
     .week-time{font-size:27px;white-space:normal}
@@ -1910,7 +1914,7 @@ function fighterHistoryList(rows){
       <div class="recent-item">
         <div class="res-tag ${r.res}">${r.res==='W'?'승':r.res==='L'?'패':r.res==='N'?'NC':'무'}</div>
         <div>
-          <div class="opp">vs ${r.opp}</div>
+          <div class="opp">${r.opp}전</div>
           <div class="way">${resultMethodKo(r.way||'')}${r.round?` · ${r.round}라운드`:''}${r.time?` ${r.time}`:''}</div>
           ${r.event?`<div class="event">${r.event}</div>`:''}
         </div>
@@ -2461,6 +2465,10 @@ function formatHistoryDateKo(value){
   if(match && MONTHS_KO[match[1].toLowerCase()]){
     return `${match[3]}년 ${MONTHS_KO[match[1].toLowerCase()]}월 ${Number(match[2])}일`;
   }
+  match=raw.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+  if(match && MONTHS_KO[match[2].toLowerCase()]){
+    return `${match[3]}년 ${MONTHS_KO[match[2].toLowerCase()]}월 ${Number(match[1])}일`;
+  }
   match=raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
   if(match) return `${match[1]}년 ${Number(match[2])}월 ${Number(match[3])}일`;
   match=raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
@@ -2486,6 +2494,12 @@ function localizeHistoryEvent(value){
     .forEach(item=>{ text=text.replace(new RegExp(item.en.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'),item.ko); });
   return text
     .replace(/UFC Fight Night/gi,'UFC 파이트 나이트')
+    .replace(/UFC on ESPN/gi,'UFC ESPN 대회')
+    .replace(/UFC on ABC/gi,'UFC ABC 대회')
+    .replace(/UFC on Fox/gi,'UFC FOX 대회')
+    .replace(/UFC Live/gi,'UFC 라이브')
+    .replace(/The Ultimate Fighter/gi,'디 얼티밋 파이터')
+    .replace(/\bMoraes\b/gi,'모라에스')
     .replace(/\s+vs\.?\s+/gi,' 대 ');
 }
 const COUNTRY_LABELS_KO = {
@@ -2577,53 +2591,93 @@ function transformFighter(f){
 function resultMethodKo(method){
   const raw=cleanExternalText(method||'').trim();
   if(!raw) return '';
-  const exact={
-    'Decision (unanimous)':'전원일치 판정',
-    'Decision (split)':'2:1 판정',
-    'Decision (majority)':'2:0 판정',
-    'Technical Decision (unanimous)':'전원일치 테크니컬 판정',
-    'KO (punch)':'KO(펀치)',
-    'KO (punches)':'KO(펀치)',
-    'TKO (punch)':'TKO(펀치)',
-    'TKO (punches)':'TKO(펀치)',
-    'TKO (knees)':'TKO(니킥)',
-    'TKO (knee injury)':'TKO(무릎 부상)',
-    'TKO (corner stoppage)':'TKO(코너 스톱)',
-    'TKO (punches and elbows)':'TKO(펀치·엘보)',
-    'TKO (elbows and punches)':'TKO(엘보·펀치)',
-    'KO (spinning wheel kick and punches)':'KO(스피닝 휠킥·펀치)',
-    'TKO (spinning wheel kick and punches)':'TKO(스피닝 휠킥·펀치)',
-    'Submission (rear-naked choke)':'리어네이키드초크 서브미션',
-    'Submission (guillotine choke)':'길로틴초크 서브미션',
-    'Submission (Suloev stretch)':'술로에프 스트레치 서브미션',
-    'Submission (twister)':'트위스터 서브미션',
-    'Submission (Ezekiel choke)':'에제키엘 초크 서브미션',
-    'Submission (straight armbar)':'스트레이트 암바 서브미션',
-    'Submission (armbar)':'암바 서브미션',
-    'Submission (triangle choke)':'트라이앵글 초크 서브미션',
-    'Submission (shoulder choke)':'숄더 초크 서브미션',
-    'TKO (body kick and punches)':'TKO(보디킥·펀치)',
-    'KO (head kick)':'KO(헤드킥)',
-    'Technical Submission (Peruvian necktie)':'페루비안 넥타이 테크니컬 서브미션'
+  const match=raw.match(/^([^()]+?)(?:\s*\((.+)\))?$/);
+  if(!match) return '기타 방식';
+  const prefix=match[1].trim().toLowerCase();
+  const detailRaw=(match[2]||'').trim().toLowerCase().replace('сhoke','choke');
+  const prefixKo={
+    'decision':'판정',
+    'technical decision':'테크니컬 판정',
+    'draw':'무승부',
+    'dq':'반칙패',
+    'nc':'무효 경기',
+    'submission':'서브미션',
+    'technical submission':'테크니컬 서브미션',
+    'ko':'KO',
+    'tko':'TKO'
+  }[prefix] || '';
+  const details={
+    'unanimous':'전원일치','split':'2:1','majority':'2:0','referee decision':'레프리 판정',
+    'accidental clash of heads':'우발적 헤드클래시','accidental eye poke':'우발적 눈 찌르기',
+    'accidental foul':'우발적 반칙','accidental groin kick':'우발적 로블로 킥',
+    'accidental groin strike':'우발적 로블로','accidental knee to groin':'우발적 로블로 니킥',
+    'eye poke':'눈 찌르기','groin kicks':'로블로 킥','illegal downward elbow':'수직 엘보 반칙',
+    'illegal elbow strikes':'엘보 반칙','illegal knee':'니킥 반칙','illegal knees':'니킥 반칙',
+    'illegal upkick':'업킥 반칙','overturned':'결과 번복','overturned by promoter':'프로모터 결정으로 번복',
+    'punches to back of head':'후두부 펀치',
+    'achilles lock':'아킬레스 락','americana':'아메리카나','anaconda choke':'아나콘다 초크',
+    'ankle lock':'앵클 락','armbar':'암바','arm-triangle choke':'암 트라이앵글 초크',
+    'brabo choke':'브라보 초크','bulldog choke':'불독 초크','calf slicer':'카프 슬라이서',
+    'ezekiel choke':'에제키엘 초크','face crank':'페이스 크랭크','flying armbar':'플라잉 암바',
+    'flying triangle choke':'플라잉 트라이앵글 초크','guillotine choke':'길로틴 초크',
+    'hammerlock':'해머락','heel hook':'힐훅','inverted heel hook':'인버티드 힐훅',
+    'inverted triangle choke':'인버티드 트라이앵글 초크','keylock':'키락','kimura':'기무라',
+    'kneebar':'니바','neck crank':'넥 크랭크','ninja choke':'닌자 초크',
+    'north-south choke':'노스사우스 초크','peruvian necktie':'페루비안 넥타이',
+    'rear naked choke':'리어네이키드 초크','rear-naked choke':'리어네이키드 초크',
+    'reverse triangle armbar':'리버스 트라이앵글 암바','shoulder choke':'숄더 초크',
+    'standing guillotine':'스탠딩 길로틴','straight armbar':'스트레이트 암바',
+    'suloev stretch':'술로에프 스트레치','triangle armbar':'트라이앵글 암바',
+    'triangle choke':'트라이앵글 초크','triangle straight armbar':'트라이앵글 스트레이트 암바',
+    'twister':'트위스터','von flue choke':'본플루 초크',
+    'arm injury':'팔 부상','elbow injury':'팔꿈치 부상','eye injury':'눈 부상',
+    'jaw injury':'턱 부상','knee injury':'무릎 부상','leg injury':'다리 부상',
+    'neck injury':'목 부상','shoulder injury':'어깨 부상','corner stoppage':'코너 스톱',
+    'doctor stoppage':'닥터 스톱','retirement':'경기 포기',
+    'flying knee to the body':'플라잉 보디 니킥','front kick to the body':'보디 프런트킥',
+    'front kick to the body and punches':'보디 프런트킥·펀치',
+    'knee to the body':'보디 니킥','knee to the body and head kicks':'보디 니킥·헤드킥',
+    'knee to the body and punches':'보디 니킥·펀치','knees to the body':'보디 니킥',
+    'knees to the body and punches':'보디 니킥·펀치','kick to the body':'보디킥',
+    'kick to the body and punches':'보디킥·펀치','punch to the body':'보디 펀치',
+    'punches to the body':'보디 펀치','upkick to the body':'보디 업킥',
+    'spinning back kick to the body and punches':'스피닝 백 보디킥·펀치',
+    'submission to knee to the body':'보디 니킥에 의한 기권',
+    'submission to punches':'펀치에 의한 기권','submission to strikes':'타격에 의한 기권',
+    'body kick':'보디킥','body kick and punch':'보디킥·펀치','body kick and punches':'보디킥·펀치',
+    'body punch':'보디 펀치','elbow':'엘보','elbow and punch':'엘보·펀치',
+    'elbow and punches':'엘보·펀치','elbows':'엘보','elbows and punches':'엘보·펀치',
+    'flying knee':'플라잉 니킥','flying knee and punches':'플라잉 니킥·펀치',
+    'flying switch kick and punches':'플라잉 스위치킥·펀치','front kick':'프런트킥',
+    'front kick and punch':'프런트킥·펀치','front kick and punches':'프런트킥·펀치',
+    'head kick':'헤드킥','head kick and knees':'헤드킥·니킥','head kick and punch':'헤드킥·펀치',
+    'head kick and punches':'헤드킥·펀치','head kicks and punches':'헤드킥·펀치',
+    'hook kick and punches':'훅킥·펀치','knee':'니킥','knee and elbows':'니킥·엘보',
+    'knee and punches':'니킥·펀치','knees':'니킥','knees and elbow':'니킥·엘보',
+    'knees and punches':'니킥·펀치','leg kick':'레그킥','leg kicks':'레그킥',
+    'leg kicks and elbows':'레그킥·엘보','leg kicks and punches':'레그킥·펀치',
+    'punch':'펀치','punch and elbow':'펀치·엘보','punches':'펀치',
+    'punches and body kick':'펀치·보디킥','punches and elbows':'펀치·엘보',
+    'punches and head kick':'펀치·헤드킥','punches and knee':'펀치·니킥',
+    'punches and knees':'펀치·니킥','side kick and punch':'사이드킥·펀치',
+    'slam':'슬램','slam and elbows':'슬램·엘보','slam and punches':'슬램·펀치',
+    'spinning back elbow':'스피닝 백 엘보','spinning back elbow and punches':'스피닝 백 엘보·펀치',
+    'spinning back fist':'스피닝 백피스트','spinning backfist':'스피닝 백피스트',
+    'spinning backfist and elbows':'스피닝 백피스트·엘보',
+    'spinning backfist and punches':'스피닝 백피스트·펀치',
+    'spinning back kick':'스피닝 백킥','spinning back kick and punches':'스피닝 백킥·펀치',
+    'spinning heel kick and punches':'스피닝 힐킥·펀치','spinning wheel kick':'스피닝 휠킥',
+    'spinning wheel kick and punches':'스피닝 휠킥·펀치','stomps and punches':'스톰프·펀치',
+    'strikes':'타격','tornado kick':'토네이도 킥'
   };
-  if(exact[raw]) return exact[raw];
-  return raw
-    .replace(/^Decision \(unanimous\)/i,'전원일치 판정')
-    .replace(/^Decision \(split\)/i,'2:1 판정')
-    .replace(/^Decision \(majority\)/i,'2:0 판정')
-    .replace(/^Submission/i,'서브미션')
-    .replace(/^Technical Submission/i,'테크니컬 서브미션')
-    .replace(/punches?/gi,'펀치')
-    .replace(/elbows?/gi,'엘보')
-    .replace(/knees?/gi,'니킥')
-    .replace(/rear-naked choke/gi,'리어네이키드초크')
-    .replace(/guillotine choke/gi,'길로틴초크')
-    .replace(/Ezekiel choke/gi,'에제키엘 초크')
-    .replace(/straight armbar/gi,'스트레이트 암바')
-    .replace(/triangle choke/gi,'트라이앵글 초크')
-    .replace(/shoulder choke/gi,'숄더 초크')
-    .replace(/body kick/gi,'보디킥')
-    .replace(/head kick/gi,'헤드킥');
+  const detailKo=detailRaw ? (details[detailRaw] || '기타 방식') : '';
+  if(prefix==='decision') return `${detailKo||''}${detailKo?' ':''}판정`;
+  if(prefix==='technical decision') return `${detailKo||''}${detailKo?' ':''}테크니컬 판정`;
+  if(prefix==='draw') return `${detailKo||''}${detailKo?' ':''}무승부`;
+  if(prefix==='submission') return `${detailKo||''}${detailKo?' ':''}서브미션`;
+  if(prefix==='technical submission') return `${detailKo||''}${detailKo?' ':''}테크니컬 서브미션`;
+  if(prefix==='dq'||prefix==='nc') return `${prefixKo}${detailKo?`(${detailKo})`:''}`;
+  return prefixKo ? `${prefixKo}${detailKo?`(${detailKo})`:''}` : '기타 방식';
 }
 
 /* 실 이벤트 JSON → 내부 fight/event shape */
