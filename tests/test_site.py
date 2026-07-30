@@ -145,12 +145,12 @@ class DataContractTests(unittest.TestCase):
             "alexander-volkanovski": "볼황",
             "conor-mcgregor": "다리가 불편함",
             "max-holloway": "맥또 당첨자",
-            "jon-jones": "신존스",
             "islam-makhachev": "마황",
             "ilia-topuria": "토황",
             "dricus-du-plessis": "허우적대는데 또 이김",
         }
         self.assertEqual({fighter_id: tags.get(fighter_id, {}).get("text") for fighter_id in expected}, expected)
+        self.assertNotIn("jon-jones", tags, "최근 팬 여론과 충돌하는 과거 찬양 별명을 자동 게시하면 안 됩니다.")
         for fighter_id, tag in tags.items():
             self.assertEqual(tag.get("status"), "verified", fighter_id)
             self.assertTrue(tag.get("context"), fighter_id)

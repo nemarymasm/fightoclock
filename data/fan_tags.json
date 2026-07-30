@@ -104,24 +104,6 @@
         }
       ]
     },
-    "jon-jones": {
-      "text": "신존스",
-      "tone": "royal",
-      "status": "verified",
-      "context": "커리어와 경기력을 과장되게 숭배하는 국내 커뮤니티식 별명.",
-      "reviewed_at": "2026-07-30",
-      "review_after": "2026-09-30",
-      "sources": [
-        {
-          "label": "UFC MMA 갤러리 · 신존스 사용례",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=468431"
-        },
-        {
-          "label": "UFC 갤러리 · 신존스 숭배 밈",
-          "url": "https://gall.dcinside.com/board/view/?id=dcbest&no=347125"
-        }
-      ]
-    },
     "islam-makhachev": {
       "text": "마황",
       "tone": "royal",
@@ -464,7 +446,7 @@
     }
   ],
   "review_stats": {
-    "verified_count": 8,
+    "verified_count": 7,
     "waiting_count": 170,
     "queue_limit": 40
   }
