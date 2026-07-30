@@ -954,7 +954,7 @@ let EVENTS = [];
 const RANKINGS = {'체급별 랭킹':[]};
 let CHAMPION_HISTORY = [];
 let FAN_TAGS = {
-  fallback:{text:'하루하루 성실히 살자',tone:'quiet'},
+  fallback:{text:'',tone:'quiet'},
   tags:{},
   generatedAt:null
 };
@@ -1034,15 +1034,14 @@ function fanTagFor(fighter){
   if(verified && verified.status==='verified' && verified.text){
     return {...verified,isFallback:false};
   }
-  return {...FAN_TAGS.fallback,isFallback:true};
+  return null;
 }
 function fanTagHtml(fighter){
   const tag=fanTagFor(fighter);
+  if(!tag) return '';
   const tone=/^(royal|warning|lottery|odd|quiet)$/.test(tag.tone||'') ? tag.tone : 'quiet';
   const sourceCount=Array.isArray(tag.sources) ? tag.sources.filter(source=>source?.url).length : 0;
-  const title=tag.isFallback
-    ? '반복 사용되는 국내 팬 표현을 더 찾는 중'
-    : `팬 커뮤니티 표현 · 근거 ${sourceCount}개 · ${tag.reviewed_at||'최근'} 검수`;
+  const title=`팬 커뮤니티 표현 · 근거 ${sourceCount}개 · ${tag.reviewed_at||'최근'} 검수`;
   return `<span class="fan-tag ${tone}" title="${esc(title)}" aria-label="${esc(title)}">${esc(tag.text)}</span>`;
 }
 function getEvent(id){ return EVENTS.find(e=>e.id===id) }
@@ -2719,7 +2718,7 @@ async function loadRealData(){
     };
     console.log('[fightoclock] fan tags:', Object.keys(FAN_TAGS.tags).length);
   } else {
-    console.warn('[fightoclock] fan tags load failed; fallback copy is active');
+    console.warn('[fightoclock] fan tags load failed; unverified fighters stay blank');
   }
 
   if(fightersResult.status==='fulfilled'){

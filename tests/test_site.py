@@ -138,7 +138,7 @@ class DataContractTests(unittest.TestCase):
 
     def test_fan_tags_are_researched_curated_and_reviewable(self):
         data = load_json("fan_tags.json")
-        self.assertEqual(data["fallback"]["text"], "하루하루 성실히 살자")
+        self.assertEqual(data["fallback"]["text"], "")
         tags = data.get("tags", {})
         expected = {
             "ciryl-gane": "드릴과 후두부를 잘 노림",
@@ -403,6 +403,7 @@ class FrontendContractTests(unittest.TestCase):
             "${fanTagHtml(f)}",
             ".fan-tag.warning",
             ".fan-tag.quiet",
+            "if(!tag) return '';",
         ):
             self.assertIn(required, self.html)
         self.assertIn("def refresh_fan_tag_review_queue", scraper)
