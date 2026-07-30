@@ -21,7 +21,7 @@
         {
           "fighter_id": "alexandre-pantoja",
           "name": "Alexandre Pantoja",
-          "name_ko": "알렉산드르 판토자",
+          "name_ko": "알렉산드레 판토자",
           "record": "30–6",
           "country": "Brazil",
           "country_ko": "브라질",
@@ -438,7 +438,7 @@
         {
           "fighter_id": "jean-silva",
           "name": "Jean Silva",
-          "name_ko": "진 실바",
+          "name_ko": "제앙 실바",
           "record": "17–3",
           "country": "Brazil",
           "country_ko": "브라질",
@@ -575,7 +575,7 @@
         {
           "fighter_id": "arman-tsarukyan",
           "name": "Arman Tsarukyan",
-          "name_ko": "아르만 차루키안",
+          "name_ko": "아르만 사루키안",
           "record": "23–3",
           "country": "Armenia",
           "country_ko": "아르메니아",
@@ -745,7 +745,7 @@
         {
           "fighter_id": "ian-machado-garry",
           "name": "Ian Machado Garry",
-          "name_ko": "이언 마샤두 개리",
+          "name_ko": "이안 마샤두 개리",
           "record": "17–1",
           "country": "Republic of Ireland",
           "country_ko": "아일랜드",
@@ -756,7 +756,7 @@
         {
           "fighter_id": "carlos-prates",
           "name": "Carlos Prates",
-          "name_ko": "카를로스 프라치",
+          "name_ko": "카를로스 프라치스",
           "record": "24–7",
           "country": "Brazil",
           "country_ko": "브라질",
@@ -926,7 +926,7 @@
         {
           "fighter_id": "khamzat-chimaev",
           "name": "Khamzat Chimaev",
-          "name_ko": "카마줏 치마예프",
+          "name_ko": "함자트 치마예프",
           "record": "15–1",
           "country": "United Arab Emirates",
           "country_ko": "United Arab Emirates",
@@ -1014,7 +1014,7 @@
         {
           "fighter_id": "reinier-de-ridder",
           "name": "Reinier de Ridder",
-          "name_ko": "라이니어 데 리더",
+          "name_ko": "레이니어 더 리더",
           "record": "",
           "country": "",
           "country_ko": "",

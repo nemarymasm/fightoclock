@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T09:10:30+09:00",
+  "generated_at": "2026-07-30T16:22:51+09:00",
   "source": "Wikipedia 랭킹·프로 MMA 전적 + UFC 공식 프로필 사진",
-  "fighter_count": 355,
+  "fighter_count": 364,
   "fighters": [
     {
       "id": "tom-aspinall",
@@ -1076,8 +1076,8 @@
       "win_dec": 5,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/SergeiPavlovich2018.png/250px-SergeiPavlovich2018.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:SergeiPavlovich2018.png",
+      "avatar_url": "/data/avatars/generated/sergei-pavlovich-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/sergei-pavlovich",
       "history": [
         {
           "result": "win",
@@ -1344,7 +1344,11 @@
           "time": "3:52"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Sergei_Pavlovich"
+      "history_source": "https://en.wikipedia.org/wiki/Sergei_Pavlovich",
+      "avatar_thumb_url": "/data/avatars/generated/sergei-pavlovich-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/PAVLOVICH_SERGEI_L_05-30.png?itok=4VRfER2s",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/PAVLOVICH_SERGEI_05-30.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "alex-pereira",
@@ -4009,8 +4013,8 @@
       "win_dec": 4,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg/250px-Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250,_Saturday,_June_13,_2026_-_11(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/carlos-ulberg-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/carlos-ulberg",
       "history": [
         {
           "result": "win",
@@ -4178,7 +4182,11 @@
           "time": "N/A"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Carlos_Ulberg"
+      "history_source": "https://en.wikipedia.org/wiki/Carlos_Ulberg",
+      "avatar_thumb_url": "/data/avatars/generated/carlos-ulberg-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/ULBERG_CARLOS_L_BELTMOCK.png?itok=fE8o1Ek2",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/ULBERG_CARLOS_BELTMOCK.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "magomed-ankalaev",
@@ -4512,8 +4520,8 @@
       "win_dec": 1,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/JiriProchazka2022.png/250px-JiriProchazka2022.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:JiriProchazka2022.png",
+      "avatar_url": "/data/avatars/generated/ji-proch-zka-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/jiri-prochazka",
       "history": [
         {
           "result": "loss",
@@ -4945,7 +4953,11 @@
           "time": "0:53"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Jiří_Procházka"
+      "history_source": "https://en.wikipedia.org/wiki/Jiří_Procházka",
+      "avatar_thumb_url": "/data/avatars/generated/ji-proch-zka-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/PROCHAZKA_JIRI_L_04-11.png?itok=kzDQfMFd",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/PROCHAZKA_JIRI_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "paulo-costa",
@@ -4966,8 +4978,8 @@
       "win_dec": 3,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Borrachinha_galo.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Borrachinha_galo.jpg",
+      "avatar_url": "/data/avatars/generated/paulo-costa-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/paulo-costa",
       "history": [
         {
           "result": "win",
@@ -5190,7 +5202,11 @@
           "time": "2:08"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Paulo_Costa"
+      "history_source": "https://en.wikipedia.org/wiki/Paulo_Costa",
+      "avatar_thumb_url": "/data/avatars/generated/paulo-costa-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/COSTA_PAULO_L_07-19.png?itok=Z_3tTUCi",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/COSTA_PAULO_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jamahal-hill",
@@ -5427,8 +5443,8 @@
       "win_dec": 5,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Khalil_Rountree%2C_Jr.._%28cropped%29.jpg/250px-Khalil_Rountree%2C_Jr.._%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Khalil_Rountree,_Jr.._(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/khalil-rountree-jr-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/khalil-rountree-jr",
       "history": [
         {
           "result": "loss",
@@ -5673,7 +5689,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr."
+      "history_source": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr.",
+      "avatar_thumb_url": "/data/avatars/generated/khalil-rountree-jr-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/ROUNTREE_KHALIL_L_12-09.png?itok=jdBjK2dO",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-10/ROUNTREE_KHALIL_10-04.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "dominick-reyes",
@@ -5694,8 +5714,8 @@
       "win_dec": 4,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dominick_Reyes_%2854451224096%29.jpg/250px-Dominick_Reyes_%2854451224096%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Dominick_Reyes_(54451224096).jpg",
+      "avatar_url": "/data/avatars/generated/dominick-reyes-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/dominick-reyes",
       "history": [
         {
           "result": "win",
@@ -5929,7 +5949,11 @@
           "time": "3:23"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Dominick_Reyes"
+      "history_source": "https://en.wikipedia.org/wiki/Dominick_Reyes",
+      "avatar_thumb_url": "/data/avatars/generated/dominick-reyes-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/REYES_DOMINICK_L_04-11.png?itok=7HSVtv1p",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/REYES_DOMINICK_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "azamat-murzakanov",
@@ -7016,8 +7040,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Robert_Whittaker_2024.png/250px-Robert_Whittaker_2024.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Robert_Whittaker_2024.png",
+      "avatar_url": "/data/avatars/generated/robert-whittaker-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/robert-whittaker",
       "history": [
         {
           "result": "win",
@@ -7034,7 +7058,7 @@
           "result": "loss",
           "record": "26–9",
           "opp": "Reinier de Ridder",
-          "opp_ko": "라이니어 데 리더",
+          "opp_ko": "레이니어 더 리더",
           "method": "Decision (split)",
           "event": "UFC on ABC: 휘태커 대 리더",
           "date": "26 July 2025",
@@ -7045,7 +7069,7 @@
           "result": "loss",
           "record": "26–8",
           "opp": "Khamzat Chimaev",
-          "opp_ko": "카마줏 치마예프",
+          "opp_ko": "함자트 치마예프",
           "method": "Submission (face crank)",
           "event": "UFC 308",
           "date": "26 October 2024",
@@ -7416,7 +7440,11 @@
           "time": "N/A"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Robert_Whittaker_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Robert_Whittaker_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/robert-whittaker-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/WHITTAKER_ROBERT_L_07-26.png?itok=9PCu_K6-",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/WHITTAKER_ROBERT_07-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "alonzo-menifield",
@@ -7437,8 +7465,8 @@
       "win_dec": 4,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Alonzo_Menifield_Jan_20%2C_2019.jpg/250px-Alonzo_Menifield_Jan_20%2C_2019.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alonzo_Menifield_Jan_20,_2019.jpg",
+      "avatar_url": "/data/avatars/generated/alonzo-menifield-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/alonzo-menifield",
       "history": [
         {
           "result": "win",
@@ -7716,7 +7744,11 @@
           "time": "0:38"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Alonzo_Menifield"
+      "history_source": "https://en.wikipedia.org/wiki/Alonzo_Menifield",
+      "avatar_thumb_url": "/data/avatars/generated/alonzo-menifield-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/MENIFIELD_ALONZO_L_06-14.png?itok=2VKbZoXE",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/MENIFIELD_ALONZO_05-30.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "johnny-walker",
@@ -7737,8 +7769,8 @@
       "win_dec": 2,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/AFSOC_celebrates_Outstanding_Airmen_of_the_Year_%285%29.jpg/250px-AFSOC_celebrates_Outstanding_Airmen_of_the_Year_%285%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:AFSOC_celebrates_Outstanding_Airmen_of_the_Year_(5).jpg",
+      "avatar_url": "/data/avatars/generated/johnny-walker-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/johnny-walker",
       "history": [
         {
           "result": "loss",
@@ -8104,7 +8136,11 @@
           "time": "0:49"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Johnny_Walker_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Johnny_Walker_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/johnny-walker-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/WALKER_JOHNNY_L_08-23.png?itok=cy7jdBoB",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/WALKER_JOHNNY_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jan-b-achowicz",
@@ -8130,8 +8166,8 @@
         "event": "UFC Fight Night: 메디치 대 로드리게스",
         "date": "2026-08-01"
       },
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Jan_Blachowicz_at_UFC_Fight_Night_136.jpg/250px-Jan_Blachowicz_at_UFC_Fight_Night_136.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jan_Blachowicz_at_UFC_Fight_Night_136.jpg",
+      "avatar_url": "/data/avatars/generated/jan-b-achowicz-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/jan-blachowicz",
       "history": [
         {
           "result": "draw",
@@ -8596,7 +8632,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Jan_Błachowicz"
+      "history_source": "https://en.wikipedia.org/wiki/Jan_Błachowicz",
+      "avatar_thumb_url": "/data/avatars/generated/jan-b-achowicz-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/BLACHOWICZ_JAN_L_12-06.png?itok=brwfKlEP",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-12/BLACHOWICZ_JAN_12-06.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "sean-strickland",
@@ -8617,14 +8657,14 @@
       "win_dec": 15,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sean_Strickland_at_UFN_200.png/250px-Sean_Strickland_at_UFN_200.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Sean_Strickland_at_UFN_200.png",
+      "avatar_url": "/data/avatars/generated/sean-strickland-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/sean-strickland",
       "history": [
         {
           "result": "win",
           "record": "31–7",
           "opp": "Khamzat Chimaev",
-          "opp_ko": "카마줏 치마예프",
+          "opp_ko": "함자트 치마예프",
           "method": "Decision (split)",
           "event": "UFC 328",
           "date": "May 9, 2026",
@@ -9039,12 +9079,16 @@
           "time": "1:53"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Sean_Strickland"
+      "history_source": "https://en.wikipedia.org/wiki/Sean_Strickland",
+      "avatar_thumb_url": "/data/avatars/generated/sean-strickland-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-01/STRICKLAND_SEAN_L_BELT_01-20.png?itok=4lpTjgRZ",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2024-01/STRICKLAND_SEAN_BELT_01-20.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "khamzat-chimaev",
       "name": "Khamzat Chimaev",
-      "name_ko": "카마줏 치마예프",
+      "name_ko": "함자트 치마예프",
       "record": "15승 1패",
       "country": "United Arab Emirates",
       "country_ko": "United Arab Emirates",
@@ -9060,8 +9104,8 @@
       "win_dec": 3,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Khamzat_Chimaev_2022_%28cropped%29.png/250px-Khamzat_Chimaev_2022_%28cropped%29.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Khamzat_Chimaev_2022_(cropped).png",
+      "avatar_url": "/data/avatars/generated/khamzat-chimaev-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/khamzat-chimaev",
       "history": [
         {
           "result": "loss",
@@ -9240,7 +9284,11 @@
           "time": "0:05"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Khamzat_Chimaev"
+      "history_source": "https://en.wikipedia.org/wiki/Khamzat_Chimaev",
+      "avatar_thumb_url": "/data/avatars/generated/khamzat-chimaev-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/CHIMAEV_KHAMZAT_L_10-26.png?itok=j3RFR7hz",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-05/CHIMAEV_KHAMZAT_10-26.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "dricus-du-plessis",
@@ -9288,7 +9336,7 @@
           "result": "loss",
           "record": "23–3",
           "opp": "Khamzat Chimaev",
-          "opp_ko": "카마줏 치마예프",
+          "opp_ko": "함자트 치마예프",
           "method": "Decision (unanimous)",
           "event": "UFC 319",
           "date": "16 August 2025",
@@ -9596,8 +9644,8 @@
       "win_dec": 6,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Nassourdine_Imavov.jpg/250px-Nassourdine_Imavov.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Nassourdine_Imavov.jpg",
+      "avatar_url": "/data/avatars/generated/nassourdine-imavov-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/nassourdine-imavov",
       "history": [
         {
           "result": "win",
@@ -9842,7 +9890,11 @@
           "time": "4:49"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Nassourdine_Imavov"
+      "history_source": "https://en.wikipedia.org/wiki/Nassourdine_Imavov",
+      "avatar_thumb_url": "/data/avatars/generated/nassourdine-imavov-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-09/IMAVOV_NASSOURDINE_L_09-06.png?itok=gNf34xg2",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-09/IMAVOV_NASSOURDINE_09-06.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "joe-pyfer",
@@ -10101,8 +10153,8 @@
       "win_dec": 7,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BrendanAllen.png/250px-BrendanAllen.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:BrendanAllen.png",
+      "avatar_url": "/data/avatars/generated/brendan-allen-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/brendan-allen",
       "history": [
         {
           "result": "win",
@@ -10119,7 +10171,7 @@
           "result": "win",
           "record": "26–7",
           "opp": "Reinier de Ridder",
-          "opp_ko": "라이니어 데 리더",
+          "opp_ko": "레이니어 더 리더",
           "method": "TKO (corner stoppage)",
           "event": "UFC Fight Night: 리더 대 앨런",
           "date": "October 18, 2025",
@@ -10479,7 +10531,11 @@
           "time": "4:40"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Brendan_Allen"
+      "history_source": "https://en.wikipedia.org/wiki/Brendan_Allen",
+      "avatar_thumb_url": "/data/avatars/generated/brendan-allen-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ALLEN_BRENDAN_L_06-06.png?itok=ww_FOqAD",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/ALLEN_BRENDAN_06-06.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "caio-borralho",
@@ -10500,14 +10556,14 @@
       "win_dec": 9,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Caio_Borralho_2025.jpg/250px-Caio_Borralho_2025.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Caio_Borralho_2025.jpg",
+      "avatar_url": "/data/avatars/generated/caio-borralho-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/caio-borralho",
       "history": [
         {
           "result": "win",
           "record": "18–2 (1)",
           "opp": "Reinier de Ridder",
-          "opp_ko": "라이니어 데 리더",
+          "opp_ko": "레이니어 더 리더",
           "method": "Decision (unanimous)",
           "event": "UFC 326",
           "date": "March 7, 2026",
@@ -10735,7 +10791,11 @@
           "time": "1:48"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Caio_Borralho"
+      "history_source": "https://en.wikipedia.org/wiki/Caio_Borralho",
+      "avatar_thumb_url": "/data/avatars/generated/caio-borralho-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/BORRALHO_CAIO_L_03-07.png?itok=uKHF4K2U",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-03/BORRALHO_CAIO_03-07.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "anthony-hernandez",
@@ -10999,8 +11059,8 @@
       "win_dec": 8,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Israel_Adesanya_at_UFC_230.jpg/250px-Israel_Adesanya_at_UFC_230.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Israel_Adesanya_at_UFC_230.jpg",
+      "avatar_url": "/data/avatars/generated/israel-adesanya-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/israel-adesanya",
       "history": [
         {
           "result": "loss",
@@ -11333,7 +11393,11 @@
           "time": "2:09"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Israel_Adesanya"
+      "history_source": "https://en.wikipedia.org/wiki/Israel_Adesanya",
+      "avatar_thumb_url": "/data/avatars/generated/israel-adesanya-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/ADESANYA_ISRAEL_L_03-28.png?itok=RopFx9gx",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-03/ADESANYA_ISRAEL_03-28.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "gregory-rodrigues",
@@ -11926,7 +11990,7 @@
           "result": "loss",
           "record": "20–4",
           "opp": "Khamzat Chimaev",
-          "opp_ko": "카마줏 치마예프",
+          "opp_ko": "함자트 치마예프",
           "method": "Decision (majority)",
           "event": "UFC 294",
           "date": "October 21, 2023",
@@ -12349,7 +12413,7 @@
           "result": "loss",
           "record": "8–1",
           "opp": "Khamzat Chimaev",
-          "opp_ko": "카마줏 치마예프",
+          "opp_ko": "함자트 치마예프",
           "method": "KO (punch)",
           "event": "Brave CF 23",
           "date": "April 19, 2019",
@@ -12479,8 +12543,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Bo_Nickal_%2852791819473%29.jpg/250px-Bo_Nickal_%2852791819473%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Bo_Nickal_(52791819473).jpg",
+      "avatar_url": "/data/avatars/generated/bo-nickal-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/bo-nickal",
       "history": [
         {
           "result": "win",
@@ -12508,7 +12572,7 @@
           "result": "loss",
           "record": "7–1",
           "opp": "Reinier de Ridder",
-          "opp_ko": "라이니어 데 리더",
+          "opp_ko": "레이니어 더 리더",
           "method": "TKO (knee to the body)",
           "event": "UFC on ESPN: 샌드하겐 대 피게이레두",
           "date": "May 3, 2025",
@@ -12593,7 +12657,11 @@
           "time": "0:33"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Bo_Nickal"
+      "history_source": "https://en.wikipedia.org/wiki/Bo_Nickal",
+      "avatar_thumb_url": "/data/avatars/generated/bo-nickal-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/NICKAL_BO_L_06-14.png?itok=h1bBmnmS",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/NICKAL_BO_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "abusupiyan-magomedov",
@@ -13653,7 +13721,7 @@
       "recent": [],
       "next": {
         "opp": "Ian Machado Garry",
-        "opp_ko": "이언 마샤두 개리",
+        "opp_ko": "이안 마샤두 개리",
         "event": "UFC 330: 마카체프 대 개리",
         "date": "2026-08-15"
       },
@@ -13789,7 +13857,7 @@
           "result": "win",
           "record": "17–1",
           "opp": "Arman Tsarukyan",
-          "opp_ko": "아르만 차루키안",
+          "opp_ko": "아르만 사루키안",
           "method": "Decision (unanimous)",
           "event": "UFC Fight Night: Overeem vs. Oleinik",
           "date": "20 April 2019",
@@ -13989,7 +14057,7 @@
     {
       "id": "carlos-prates",
       "name": "Carlos Prates",
-      "name_ko": "카를로스 프라치",
+      "name_ko": "카를로스 프라치스",
       "record": "24승 7패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -14005,8 +14073,8 @@
       "win_dec": 2,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Carlos_Prates_2026.jpg/250px-Carlos_Prates_2026.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Carlos_Prates_2026.jpg",
+      "avatar_url": "/data/avatars/generated/carlos-prates-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/carlos-prates",
       "history": [
         {
           "result": "win",
@@ -14045,7 +14113,7 @@
           "result": "loss",
           "record": "21–7",
           "opp": "Ian Machado Garry",
-          "opp_ko": "이언 마샤두 개리",
+          "opp_ko": "이안 마샤두 개리",
           "method": "Decision (unanimous)",
           "event": "UFC on ESPN: 개리 대 프라치",
           "date": "April 26, 2025",
@@ -14350,12 +14418,16 @@
           "time": "2:05"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Carlos_Prates"
+      "history_source": "https://en.wikipedia.org/wiki/Carlos_Prates",
+      "avatar_thumb_url": "/data/avatars/generated/carlos-prates-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/PRATES_CARLOS_L_08-17.png?itok=_Hqd6Xfd",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/PRATES_CARLOS_05-02.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "ian-machado-garry",
       "name": "Ian Machado Garry",
-      "name_ko": "이언 마샤두 개리",
+      "name_ko": "이안 마샤두 개리",
       "record": "17승 1패",
       "country": "Republic of Ireland",
       "country_ko": "아일랜드",
@@ -14398,7 +14470,7 @@
           "result": "win",
           "record": "16–1",
           "opp": "Carlos Prates",
-          "opp_ko": "카를로스 프라치",
+          "opp_ko": "카를로스 프라치스",
           "method": "Decision (unanimous)",
           "event": "UFC on ESPN: 개리 대 프라치",
           "date": "April 26, 2025",
@@ -14603,8 +14675,8 @@
       "win_dec": 4,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Michael_Morales._QUITO%2C_27_DE_MAYO_DEL_2025_%28cropped%29.jpg/250px-Michael_Morales._QUITO%2C_27_DE_MAYO_DEL_2025_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Michael_Morales._QUITO,_27_DE_MAYO_DEL_2025_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/michael-morales-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/michael-morales",
       "history": [
         {
           "result": "win",
@@ -14816,7 +14888,11 @@
           "time": "3:15"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Michael_Morales_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Michael_Morales_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/michael-morales-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/MORALES_MICHAEL_L_08-24.png?itok=CCXil9g6",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/MORALES_MICHAEL_11-15.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jack-della-maddalena",
@@ -14842,7 +14918,7 @@
           "result": "loss",
           "record": "18–4",
           "opp": "Carlos Prates",
-          "opp_ko": "카를로스 프라치",
+          "opp_ko": "카를로스 프라치스",
           "method": "TKO (leg kicks and elbows)",
           "event": "UFC Fight Night: 마달레나 대 프라치",
           "date": "2 May 2026",
@@ -15108,8 +15184,8 @@
       "win_dec": 10,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/SeanBrady.jpg/250px-SeanBrady.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:SeanBrady.jpg",
+      "avatar_url": "/data/avatars/generated/sean-brady-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/sean-brady",
       "history": [
         {
           "result": "win",
@@ -15343,7 +15419,11 @@
           "time": "0:33"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Sean_Brady_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Sean_Brady_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/sean-brady-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/BRADY_SEAN_L_05-09.png?itok=lfpHN5PX",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/BRADY_SEAN_05-09.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "gabriel-bonfim",
@@ -15364,8 +15444,8 @@
       "win_dec": 3,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Gabriel_Bonfim_2025.jpg/250px-Gabriel_Bonfim_2025.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Gabriel_Bonfim_2025.jpg",
+      "avatar_url": "/data/avatars/generated/gabriel-bonfim-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/gabriel-bonfim",
       "history": [
         {
           "result": "win",
@@ -15599,7 +15679,11 @@
           "time": "3:20"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Gabriel_Bonfim"
+      "history_source": "https://en.wikipedia.org/wiki/Gabriel_Bonfim",
+      "avatar_thumb_url": "/data/avatars/generated/gabriel-bonfim-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/BONFIM_GABRIEL_L_11-08.png?itok=FGdOTced",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/BONFIM_GABRIEL_06-06.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "belal-muhammad",
@@ -15620,8 +15704,8 @@
       "win_dec": 18,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Belal_Muhammad_UFC_%28cropped%29.jpg/250px-Belal_Muhammad_UFC_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Belal_Muhammad_UFC_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/belal-muhammad-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/belal-muhammad",
       "history": [
         {
           "result": "loss",
@@ -15638,7 +15722,7 @@
           "result": "loss",
           "record": "24–5 (1)",
           "opp": "Ian Machado Garry",
-          "opp_ko": "이언 마샤두 개리",
+          "opp_ko": "이안 마샤두 개리",
           "method": "Decision (unanimous)",
           "event": "UFC Fight Night: 차루키안 대 후커",
           "date": "November 22, 2025",
@@ -15965,7 +16049,11 @@
           "time": "2:17"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Belal_Muhammad"
+      "history_source": "https://en.wikipedia.org/wiki/Belal_Muhammad",
+      "avatar_thumb_url": "/data/avatars/generated/belal-muhammad-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/MUHAMMAD_BELAL_L_06-06.png?itok=sZ00w5IQ",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/MUHAMMAD_BELAL_06-06.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "leon-edwards",
@@ -15986,14 +16074,14 @@
       "win_dec": 12,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Leon_Edwards_2021.png/250px-Leon_Edwards_2021.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Leon_Edwards_2021.png",
+      "avatar_url": "/data/avatars/generated/leon-edwards-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/leon-edwards",
       "history": [
         {
           "result": "loss",
           "record": "22–6 (1)",
           "opp": "Carlos Prates",
-          "opp_ko": "카를로스 프라치",
+          "opp_ko": "카를로스 프라치스",
           "method": "KO (punches)",
           "event": "UFC 322",
           "date": "15 November 2025",
@@ -16309,7 +16397,11 @@
           "time": "2:15"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Leon_Edwards"
+      "history_source": "https://en.wikipedia.org/wiki/Leon_Edwards",
+      "avatar_thumb_url": "/data/avatars/generated/leon-edwards-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/EDWARDS_LEON_L_11-15.png?itok=sqp_GH1G",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/EDWARDS_LEON_11-15.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "joaquin-buckley",
@@ -16678,8 +16770,8 @@
       "win_dec": 2,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mike-malott-2023-ufc-fighter-canada.png/250px-Mike-malott-2023-ufc-fighter-canada.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Mike-malott-2023-ufc-fighter-canada.png",
+      "avatar_url": "/data/avatars/generated/mike-malott-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/mike-malott",
       "history": [
         {
           "result": "win",
@@ -16869,7 +16961,11 @@
           "time": "0:32"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Mike_Malott"
+      "history_source": "https://en.wikipedia.org/wiki/Mike_Malott",
+      "avatar_thumb_url": "/data/avatars/generated/mike-malott-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/MALOTT_MIKE_L_05-10.png?itok=d0J2-On7",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/MALOTT_MIKE_04-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "michael-page",
@@ -16939,7 +17035,7 @@
           "result": "loss",
           "record": "22–3",
           "opp": "Ian Machado Garry",
-          "opp_ko": "이언 마샤두 개리",
+          "opp_ko": "이안 마샤두 개리",
           "method": "Decision (unanimous)",
           "event": "UFC 303",
           "date": "29 June 2024",
@@ -17292,7 +17388,7 @@
           "result": "loss",
           "record": "17–4",
           "opp": "Ian Machado Garry",
-          "opp_ko": "이언 마샤두 개리",
+          "opp_ko": "이안 마샤두 개리",
           "method": "TKO (head kick and punches)",
           "event": "UFC on ABC: Rozenstruik 대 알메이다",
           "date": "May 13, 2023",
@@ -18742,7 +18838,7 @@
     {
       "id": "arman-tsarukyan",
       "name": "Arman Tsarukyan",
-      "name_ko": "아르만 차루키안",
+      "name_ko": "아르만 사루키안",
       "record": "23승 3패",
       "country": "Armenia",
       "country_ko": "아르메니아",
@@ -18758,8 +18854,8 @@
       "win_dec": 8,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Arman_Tsarukyan_2019.jpg/250px-Arman_Tsarukyan_2019.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Arman_Tsarukyan_2019.jpg",
+      "avatar_url": "/data/avatars/generated/arman-tsarukyan-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/arman-tsarukyan",
       "history": [
         {
           "result": "win",
@@ -19048,7 +19144,11 @@
           "time": "2:47"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Arman_Tsarukyan"
+      "history_source": "https://en.wikipedia.org/wiki/Arman_Tsarukyan",
+      "avatar_thumb_url": "/data/avatars/generated/arman-tsarukyan-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/TSARUKYAN_ARMAN_L_11-22.png?itok=19p_TvDH",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/TSARUKYAN_ARMAN_11-22.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "charles-oliveira",
@@ -19069,8 +19169,8 @@
       "win_dec": 5,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Charles_Oliveira_do_Bronxs.jpg/250px-Charles_Oliveira_do_Bronxs.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Charles_Oliveira_do_Bronxs.jpg",
+      "avatar_url": "/data/avatars/generated/charles-oliveira-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/charles-oliveira",
       "history": [
         {
           "result": "win",
@@ -19120,7 +19220,7 @@
           "result": "loss",
           "record": "34–10 (1)",
           "opp": "Arman Tsarukyan",
-          "opp_ko": "아르만 차루키안",
+          "opp_ko": "아르만 사루키안",
           "method": "Decision (split)",
           "event": "UFC 300",
           "date": "April 13, 2024",
@@ -19612,7 +19712,11 @@
           "time": ""
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Charles_Oliveira"
+      "history_source": "https://en.wikipedia.org/wiki/Charles_Oliveira",
+      "avatar_thumb_url": "/data/avatars/generated/charles-oliveira-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/OLIVEIRA_CHARLES_L_BMFMOCK.png?itok=Up-QPLgQ",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-03/OLIVEIRA_CHARLES_BMFMOCK.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "max-holloway",
@@ -20528,7 +20632,7 @@
           "result": "win",
           "record": "21–1 (1)",
           "opp": "Arman Tsarukyan",
-          "opp_ko": "아르만 차루키안",
+          "opp_ko": "아르만 사루키안",
           "method": "Decision (unanimous)",
           "event": "UFC on ESPN: 차루키안 대 감로트",
           "date": "June 25, 2022",
@@ -20799,8 +20903,8 @@
       "win_dec": 8,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Renato_Moicano_2025.jpg/250px-Renato_Moicano_2025.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Renato_Moicano_2025.jpg",
+      "avatar_url": "/data/avatars/generated/renato-moicano-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/renato-moicano",
       "history": [
         {
           "result": "win",
@@ -21122,7 +21226,11 @@
           "time": "1:56"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Renato_Moicano"
+      "history_source": "https://en.wikipedia.org/wiki/Renato_Moicano",
+      "avatar_thumb_url": "/data/avatars/generated/renato-moicano-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/MOICANO_RENATO_L_04-04.png?itok=2zj_9GSb",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/MOICANO_RENATO_04-04.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "beno-t-saint-denis",
@@ -21888,8 +21996,8 @@
       "win_dec": 6,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/DanHooker2016.png/250px-DanHooker2016.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:DanHooker2016.png",
+      "avatar_url": "/data/avatars/generated/dan-hooker-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/dan-hooker",
       "history": [
         {
           "result": "loss",
@@ -21906,7 +22014,7 @@
           "result": "loss",
           "record": "24–13",
           "opp": "Arman Tsarukyan",
-          "opp_ko": "아르만 차루키안",
+          "opp_ko": "아르만 사루키안",
           "method": "Submission (arm-triangle choke)",
           "event": "UFC Fight Night: 차루키안 대 후커",
           "date": "22 November 2025",
@@ -22310,7 +22418,11 @@
           "time": "0:48"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Dan_Hooker"
+      "history_source": "https://en.wikipedia.org/wiki/Dan_Hooker",
+      "avatar_thumb_url": "/data/avatars/generated/dan-hooker-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/HOOKER_DAN_L_01-31.png?itok=GV6BT7Q-",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-01/HOOKER_DAN_01-31.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "rafael-fiziev",
@@ -23186,8 +23298,8 @@
       "win_dec": 12,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Alexander_Volkanovski_at_UFC_232.jpg/250px-Alexander_Volkanovski_at_UFC_232.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alexander_Volkanovski_at_UFC_232.jpg",
+      "avatar_url": "/data/avatars/generated/alexander-volkanovski-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/alexander-volkanovski",
       "history": [
         {
           "result": "win",
@@ -23542,7 +23654,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Alexander_Volkanovski"
+      "history_source": "https://en.wikipedia.org/wiki/Alexander_Volkanovski",
+      "avatar_thumb_url": "/data/avatars/generated/alexander-volkanovski-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/VOLKANOVSKI_ALEXANDER_L_BELT_01-31.png?itok=hfZR81xh",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-01/VOLKANOVSKI_ALEXANDER_BELT_01-31.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "movsar-evloev",
@@ -23563,8 +23679,8 @@
       "win_dec": 13,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Movsar_Evloev_M-1_Challenge_2018.jpg/250px-Movsar_Evloev_M-1_Challenge_2018.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Movsar_Evloev_M-1_Challenge_2018.jpg",
+      "avatar_url": "/data/avatars/generated/movsar-evloev-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/movsar-evloev",
       "history": [
         {
           "result": "win",
@@ -23787,7 +23903,11 @@
           "time": "1:45"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Movsar_Evloev"
+      "history_source": "https://en.wikipedia.org/wiki/Movsar_Evloev",
+      "avatar_thumb_url": "/data/avatars/generated/movsar-evloev-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/EVLOEV_MOVSAR_L_03-21.png?itok=X2qAuG7T",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-03/EVLOEV_MOVSAR_03-21.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "diego-lopes",
@@ -23817,8 +23937,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_31%28cropped%29.jpg/250px-thumbnail.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250,_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship,_Sunday,_June_14,_2026,_in_the_Grand_Foyer_of_the_White_House_-_31(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/diego-lopes-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/diego-lopes",
       "history": [
         {
           "result": "win",
@@ -23846,7 +23966,7 @@
           "result": "win",
           "record": "27–7",
           "opp": "Jean Silva",
-          "opp_ko": "진 실바",
+          "opp_ko": "제앙 실바",
           "method": "TKO (spinning back elbow and punches)",
           "event": "UFC Fight Night: 로페스 대 실바",
           "date": "13 September 2025",
@@ -24217,7 +24337,11 @@
           "time": "N/A"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Diego_Lopes_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Diego_Lopes_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/diego-lopes-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/LOPES_DIEGO_L_06-14.png?itok=UQIuHbZC",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/LOPES_DIEGO_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "lerone-murphy",
@@ -24476,8 +24600,8 @@
       "win_dec": 14,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Alijamain_Sterling_at_UFC_228.jpg/250px-Alijamain_Sterling_at_UFC_228.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Alijamain_Sterling_at_UFC_228.jpg",
+      "avatar_url": "/data/avatars/generated/aljamain-sterling-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/aljamain-sterling",
       "history": [
         {
           "result": "win",
@@ -24821,7 +24945,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Aljamain_Sterling"
+      "history_source": "https://en.wikipedia.org/wiki/Aljamain_Sterling",
+      "avatar_thumb_url": "/data/avatars/generated/aljamain-sterling-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/STERLING_ALJAMAIN_L_04-25.png?itok=lJPFybAO",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/STERLING_ALJAMAIN_04-25.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "arnold-allen",
@@ -24842,8 +24970,8 @@
       "win_dec": 2,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Arnold_Allen_at_UFC_Fight_Night_147_in_London.jpg/250px-Arnold_Allen_at_UFC_Fight_Night_147_in_London.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Arnold_Allen_at_UFC_Fight_Night_147_in_London.jpg",
+      "avatar_url": "/data/avatars/generated/arnold-allen-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/arnold-allen",
       "history": [
         {
           "result": "win",
@@ -24860,7 +24988,7 @@
           "result": "loss",
           "record": "20–4",
           "opp": "Jean Silva",
-          "opp_ko": "진 실바",
+          "opp_ko": "제앙 실바",
           "method": "Decision (unanimous)",
           "event": "UFC 324",
           "date": "24 January 2026",
@@ -25121,12 +25249,16 @@
           "time": "0:40"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Arnold_Allen"
+      "history_source": "https://en.wikipedia.org/wiki/Arnold_Allen",
+      "avatar_thumb_url": "/data/avatars/generated/arnold-allen-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/ALLEN_ARNOLD_L_05-16.png?itok=d2l8gVp-",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/ALLEN_ARNOLD_05-16.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jean-silva",
       "name": "Jean Silva",
-      "name_ko": "진 실바",
+      "name_ko": "제앙 실바",
       "record": "17승 3패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -25142,8 +25274,8 @@
       "win_dec": 2,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jean_Silva_%2854451587575%29.jpg/250px-Jean_Silva_%2854451587575%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jean_Silva_(54451587575).jpg",
+      "avatar_url": "/data/avatars/generated/jean-silva-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/jean-silva",
       "history": [
         {
           "result": "win",
@@ -25366,7 +25498,11 @@
           "time": "0:15"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Jean_Silva"
+      "history_source": "https://en.wikipedia.org/wiki/Jean_Silva",
+      "avatar_thumb_url": "/data/avatars/generated/jean-silva-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-02/SILVA_JEAN_L_02-22.png?itok=619VgmC4",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-01/SILVA_JEAN_01-24.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "pat-sabatini",
@@ -26443,7 +26579,7 @@
           "result": "loss",
           "record": "11–1",
           "opp": "Jean Silva",
-          "opp_ko": "진 실바",
+          "opp_ko": "제앙 실바",
           "method": "Decision (unanimous)",
           "event": "Dana White's Contender Series 61",
           "date": "5 September 2023",
@@ -27011,8 +27147,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_10%28cropped%29.jpg/250px-UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_10%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington,_D.C.,_Friday,_June_12,_2026_-_10(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/steve-garcia-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/steve-garcia",
       "history": [
         {
           "result": "loss",
@@ -27290,7 +27426,11 @@
           "time": "1:52"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Steve_Garcia"
+      "history_source": "https://en.wikipedia.org/wiki/Steve_Garcia",
+      "avatar_thumb_url": "/data/avatars/generated/steve-garcia-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GARCIA_STEVE_R_06-14.png?itok=Xi8Pxast",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/GARCIA_STEVE_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "aaron-pico",
@@ -27311,8 +27451,8 @@
       "win_dec": 3,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wrestler_Aaron_Pico_2014.png/250px-Wrestler_Aaron_Pico_2014.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Wrestler_Aaron_Pico_2014.png",
+      "avatar_url": "/data/avatars/generated/aaron-pico-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/aaron-pico",
       "history": [
         {
           "result": "win",
@@ -27524,7 +27664,11 @@
           "time": "0:24"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Aaron_Pico"
+      "history_source": "https://en.wikipedia.org/wiki/Aaron_Pico",
+      "avatar_thumb_url": "/data/avatars/generated/aaron-pico-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/PICO_AARON_R_08-16.png?itok=90xvvwSZ",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-08/PICO_AARON_08-16.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "jose-miguel-delgado",
@@ -27878,8 +28022,8 @@
       "win_dec": 12,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg/250px-Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_at_award_ceremonies_(2026-04-22)_24(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/petr-yan-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/petr-yan",
       "history": [
         {
           "result": "win",
@@ -28157,7 +28301,11 @@
           "time": "0:45"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Petr_Yan"
+      "history_source": "https://en.wikipedia.org/wiki/Petr_Yan",
+      "avatar_thumb_url": "/data/avatars/generated/petr-yan-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/YAN_PETR_L_BELT_04-09.png?itok=rEIQhNvw",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-12/YAN_PETR_BELT.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "merab-dvalishvili",
@@ -28178,8 +28326,8 @@
       "win_dec": 16,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg/250px-Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Merab_Dvalishvili_at_UFC_316_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/merab-dvalishvili-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/merab-dvalishvili",
       "history": [
         {
           "result": "loss",
@@ -28468,7 +28616,11 @@
           "time": "4:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Merab_Dvalishvili"
+      "history_source": "https://en.wikipedia.org/wiki/Merab_Dvalishvili",
+      "avatar_thumb_url": "/data/avatars/generated/merab-dvalishvili-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2022-08/DVALISHVILI_MERAB_L_08-20.png?itok=UNfxCucB",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2024-09/DVALISHVILI_MERAB_CG_09-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "umar-nurmagomedov",
@@ -28763,8 +28915,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_25%28cropped%29.jpg/250px-UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_25%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington,_D.C.,_Friday,_June_12,_2026_-_25(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/sean-o-malley-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/sean-omalley",
       "history": [
         {
           "result": "win",
@@ -29031,7 +29183,11 @@
           "time": "1:33"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Sean_O'Malley_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Sean_O'Malley_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/sean-o-malley-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/OMALLEY_SEAN_L_06-14.png?itok=mk-P63ge",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-06/OMALLEY_SEAN_06-14.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "mario-bautista",
@@ -30948,8 +31104,8 @@
       "win_dec": 7,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Deiveson_Figueiredo_2024.jpg/250px-Deiveson_Figueiredo_2024.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Deiveson_Figueiredo_2024.jpg",
+      "avatar_url": "/data/avatars/generated/deiveson-figueiredo-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/deiveson-figueiredo",
       "history": [
         {
           "result": "loss",
@@ -31131,7 +31287,7 @@
           "result": "win",
           "record": "16–1",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Decision (unanimous)",
           "event": "UFC 240",
           "date": "July 27, 2019",
@@ -31315,7 +31471,11 @@
           "time": "3:02"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Deiveson_Figueiredo"
+      "history_source": "https://en.wikipedia.org/wiki/Deiveson_Figueiredo",
+      "avatar_thumb_url": "/data/avatars/generated/deiveson-figueiredo-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/FIGUEIREDO_DEIVESON_L_10-11.png?itok=arHv-wVH",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/FIGUEIREDO_DEIVESON_05-30.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "aiemann-zahabi",
@@ -31599,7 +31759,7 @@
           "result": "loss",
           "record": "15–8–1",
           "opp": "Jean Silva",
-          "opp_ko": "진 실바",
+          "opp_ko": "제앙 실바",
           "method": "KO (punch)",
           "event": "UFC 303",
           "date": "June 29, 2024",
@@ -31914,7 +32074,7 @@
           "result": "loss",
           "record": "17–3",
           "opp": "Jean Silva",
-          "opp_ko": "진 실바",
+          "opp_ko": "제앙 실바",
           "method": "Submission (ninja choke)",
           "event": "UFC 314",
           "date": "April 12, 2025",
@@ -32408,7 +32568,7 @@
           "result": "win",
           "record": "16–2",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "TKO (arm injury)",
           "event": "UFC 323",
           "date": "December 6, 2025",
@@ -32614,7 +32774,7 @@
     {
       "id": "alexandre-pantoja",
       "name": "Alexandre Pantoja",
-      "name_ko": "알렉산드르 판토자",
+      "name_ko": "알렉산드레 판토자",
       "record": "30승 6패",
       "country": "Brazil",
       "country_ko": "브라질",
@@ -32630,8 +32790,8 @@
       "win_dec": 10,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pantoja_2025.jpg/250px-Pantoja_2025.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Pantoja_2025.jpg",
+      "avatar_url": "/data/avatars/generated/alexandre-pantoja-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/alexandre-pantoja",
       "history": [
         {
           "result": "loss",
@@ -33030,7 +33190,11 @@
           "time": "N/A"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Alexandre_Pantoja"
+      "history_source": "https://en.wikipedia.org/wiki/Alexandre_Pantoja",
+      "avatar_thumb_url": "/data/avatars/generated/alexandre-pantoja-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/PANTOJA_ALEXANDRE_L_07-08.png?itok=djxLt29b",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2023-07/PANTOJA_ALEXANDRE_07-08.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "manel-kape",
@@ -33177,7 +33341,7 @@
           "result": "loss",
           "record": "15–5",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Decision (unanimous)",
           "event": "UFC Fight Night: Overeem 대 볼코프",
           "date": "February 6, 2021",
@@ -33488,7 +33652,7 @@
           "result": "loss",
           "record": "15–7",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Decision (unanimous)",
           "event": "UFC 296",
           "date": "December 16, 2023",
@@ -33532,7 +33696,7 @@
           "result": "loss",
           "record": "12–6",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Submission (rear-naked choke)",
           "event": "UFC on ESPN: 캐노니어 대 가스텔럼",
           "date": "August 21, 2021",
@@ -33754,8 +33918,8 @@
       "win_dec": 4,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tatsuro_taira_2025.png/250px-Tatsuro_taira_2025.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Tatsuro_taira_2025.png",
+      "avatar_url": "/data/avatars/generated/tatsuro-taira-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/tatsuro-taira",
       "history": [
         {
           "result": "loss",
@@ -33978,7 +34142,11 @@
           "time": "2:46"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Tatsuro_Taira"
+      "history_source": "https://en.wikipedia.org/wiki/Tatsuro_Taira",
+      "avatar_thumb_url": "/data/avatars/generated/tatsuro-taira-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/TAIRA_TATSURO_L_08-02.png?itok=pMtfQ6S3",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/TAIRA_TATSURO_05-09.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "asu-almabayev",
@@ -35335,7 +35503,7 @@
           "result": "loss",
           "record": "21–7–2",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Decision (split)",
           "event": "UFC 290",
           "date": "July 8, 2023",
@@ -35456,7 +35624,7 @@
           "result": "loss",
           "record": "14–5",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Decision (unanimous)",
           "event": "UFC Fight Night: Maia 대 우스만",
           "date": "May 19, 2018",
@@ -36152,7 +36320,7 @@
           "result": "loss",
           "record": "12–2",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Decision (unanimous)",
           "event": "UFC 301",
           "date": "May 4, 2024",
@@ -36412,7 +36580,7 @@
           "result": "loss",
           "record": "24–7",
           "opp": "Alexandre Pantoja",
-          "opp_ko": "알렉산드르 판토자",
+          "opp_ko": "알렉산드레 판토자",
           "method": "Submission (neck crank)",
           "event": "UFC 277",
           "date": "July 30, 2022",
@@ -36800,8 +36968,8 @@
       "win_dec": 5,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg/250px-President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_(54577590491)_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/kayla-harrison-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/kayla-harrison",
       "history": [
         {
           "result": "win",
@@ -37024,7 +37192,11 @@
           "time": "3:18"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Kayla_Harrison"
+      "history_source": "https://en.wikipedia.org/wiki/Kayla_Harrison",
+      "avatar_thumb_url": "/data/avatars/generated/kayla-harrison-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/HARRISON_KAYLA_L_BELTMOCK.png?itok=goxu4s1i",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-06/HARRISON_KAYLA_BELTMOCK.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "joselyne-edwards",
@@ -37338,8 +37510,8 @@
       "win_dec": 11,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Norma_Dumont_OF.jpg/250px-Norma_Dumont_OF.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Norma_Dumont_OF.jpg",
+      "avatar_url": "/data/avatars/generated/norma-dumont-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/norma-dumont",
       "history": [
         {
           "result": "loss",
@@ -37518,7 +37690,11 @@
           "time": "2:58"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Norma_Dumont"
+      "history_source": "https://en.wikipedia.org/wiki/Norma_Dumont",
+      "avatar_thumb_url": "/data/avatars/generated/norma-dumont-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/DUMONT_NORMA_L_04-25.png?itok=uOQsIEx0",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/DUMONT_NORMA_04-25.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "luana-santos",
@@ -37805,8 +37981,8 @@
       "win_dec": 4,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Peña_UFC_269_-_YouTube_-_0_23_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/julianna-pe-a-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/julianna-pena",
       "history": [
         {
           "result": "loss",
@@ -38007,7 +38183,11 @@
           "time": "2:58"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Julianna_Peña"
+      "history_source": "https://en.wikipedia.org/wiki/Julianna_Peña",
+      "avatar_thumb_url": "/data/avatars/generated/julianna-pe-a-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2022-08/PENA_JULIANNA_L_12-11.png?itok=sk8A1suM",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2024-10/PENA_JULIANNA_10-05.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "yana-santos",
@@ -39288,8 +39468,8 @@
       "win_dec": 11,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg/250px-Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_(5)_(cropped).jpg",
+      "avatar_url": "/data/avatars/generated/raquel-pennington-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/raquel-pennington",
       "history": [
         {
           "result": "loss",
@@ -39567,7 +39747,11 @@
           "time": "2:25"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Raquel_Pennington"
+      "history_source": "https://en.wikipedia.org/wiki/Raquel_Pennington",
+      "avatar_thumb_url": "/data/avatars/generated/raquel-pennington-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/PENNINGTON_RAQUEL_L_01-20.png?itok=QF26tOJG",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-01/5/PENNINGTON_RAQUEL_01-20.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "klaudia-sygu-a",
@@ -39608,8 +39792,8 @@
       "win_dec": 11,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Valentina_Shevchenko_2020.jpg/250px-Valentina_Shevchenko_2020.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Valentina_Shevchenko_2020.jpg",
+      "avatar_url": "/data/avatars/generated/valentina-shevchenko-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/valentina-shevchenko",
       "history": [
         {
           "result": "win",
@@ -39953,7 +40137,11 @@
           "time": "N/A"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Valentina_Shevchenko"
+      "history_source": "https://en.wikipedia.org/wiki/Valentina_Shevchenko",
+      "avatar_thumb_url": "/data/avatars/generated/valentina-shevchenko-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png?itok=4KuKr99O",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_BELT_11-15.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "nat-lia-silva",
@@ -39974,8 +40162,8 @@
       "win_dec": 7,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Nat%C3%A1lia_Silva_2025.jpg/250px-Nat%C3%A1lia_Silva_2025.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Natália_Silva_2025.jpg",
+      "avatar_url": "/data/avatars/generated/nat-lia-silva-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/natalia-silva",
       "history": [
         {
           "result": "win",
@@ -40264,7 +40452,11 @@
           "time": "3:26"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Natália_Silva_(fighter)"
+      "history_source": "https://en.wikipedia.org/wiki/Natália_Silva_(fighter)",
+      "avatar_thumb_url": "/data/avatars/generated/nat-lia-silva-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/SILVA_NATALIA_L_01-24.png?itok=A5iY_ScW",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-01/SILVA_NATALIA_01-24.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "manon-fiorot",
@@ -40976,8 +41168,8 @@
       "win_dec": 7,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%E5%BC%A0%E4%BC%9F%E4%B8%BD.png/250px-%E5%BC%A0%E4%BC%9F%E4%B8%BD.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:张伟丽.png",
+      "avatar_url": "/data/avatars/generated/zhang-weili-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/zhang-weili",
       "history": [
         {
           "result": "loss",
@@ -41310,7 +41502,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Zhang_Weili"
+      "history_source": "https://en.wikipedia.org/wiki/Zhang_Weili",
+      "avatar_thumb_url": "/data/avatars/generated/zhang-weili-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2022-06/d6bd47bc-d423-4ae8-9073-f0abd7777751%252FWEILI_ZHANG_L_06-11.png?itok=QDyjRoZ7",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/WEILI_ZHANG_11-15.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "wang-cong",
@@ -41490,8 +41686,8 @@
       "win_dec": 9,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jasmine_Jasudavicius_2023.png/250px-Jasmine_Jasudavicius_2023.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Jasmine_Jasudavicius_2023.png",
+      "avatar_url": "/data/avatars/generated/jasmine-jasudavicius-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/jasmine-jasudavicius",
       "history": [
         {
           "result": "win",
@@ -41703,7 +41899,11 @@
           "time": "1:17"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Jasmine_Jasudavicius"
+      "history_source": "https://en.wikipedia.org/wiki/Jasmine_Jasudavicius",
+      "avatar_thumb_url": "/data/avatars/generated/jasmine-jasudavicius-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/JASUDAVICIUS_JASMINE_L_04-18.png?itok=brWuBeJK",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/JASUDAVICIUS_JASMINE_04-18.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "rose-namajunas",
@@ -41724,8 +41924,8 @@
       "win_dec": 7,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rose_Namajunas.jpg/250px-Rose_Namajunas.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Rose_Namajunas.jpg",
+      "avatar_url": "/data/avatars/generated/rose-namajunas-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/rose-namajunas",
       "history": [
         {
           "result": "loss",
@@ -41970,7 +42170,11 @@
           "time": "3:44"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Rose_Namajunas"
+      "history_source": "https://en.wikipedia.org/wiki/Rose_Namajunas",
+      "avatar_thumb_url": "/data/avatars/generated/rose-namajunas-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/NAMAJUNAS_ROSE_L_06-14.png?itok=SA42vJhp",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-01/NAMAJUNAS_ROSE_01-24.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "maycee-barber",
@@ -42227,8 +42431,8 @@
         }
       ],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tracy_Cortez_UFC.png/250px-Tracy_Cortez_UFC.png",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Tracy_Cortez_UFC.png",
+      "avatar_url": "/data/avatars/generated/tracy-cortez-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/tracy-cortez",
       "history": [
         {
           "result": "loss",
@@ -42407,7 +42611,11 @@
           "time": "2:42"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Tracy_Cortez"
+      "history_source": "https://en.wikipedia.org/wiki/Tracy_Cortez",
+      "avatar_thumb_url": "/data/avatars/generated/tracy-cortez-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/CORTEZ_TRACY_L_07-11.png?itok=Yp7AqE4a",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/CORTEZ_TRACY_07-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "miranda-maverick",
@@ -44116,8 +44324,8 @@
       "win_dec": 4,
       "recent": [],
       "next": null,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tatiana_Suarez_at_UFC_228.jpg/250px-Tatiana_Suarez_at_UFC_228.jpg",
-      "avatar_source": "https://commons.wikimedia.org/wiki/File:Tatiana_Suarez_at_UFC_228.jpg",
+      "avatar_url": "/data/avatars/generated/tatiana-suarez-full.webp",
+      "avatar_source": "https://www.ufc.com/athlete/tatiana-suarez",
       "history": [
         {
           "result": "win",
@@ -44263,7 +44471,11 @@
           "time": "5:00"
         }
       ],
-      "history_source": "https://en.wikipedia.org/wiki/Tatiana_Suarez"
+      "history_source": "https://en.wikipedia.org/wiki/Tatiana_Suarez",
+      "avatar_thumb_url": "/data/avatars/generated/tatiana-suarez-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/SUAREZ_TATIANA_L_04-11.png?itok=hkAiQqtr",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-04/SUAREZ_TATIANA_04-11.png",
+      "avatar_provider": "UFC"
     },
     {
       "id": "gillian-robertson",
@@ -48406,7 +48618,7 @@
       "recent": [],
       "next": {
         "opp": "Reinier de Ridder",
-        "opp_ko": "라이니어 데 리더",
+        "opp_ko": "레이니어 더 리더",
         "event": "UFC Fight Night: 에르난데스 대 호드리게스",
         "date": "2026-08-22"
       },
@@ -48643,7 +48855,7 @@
     {
       "id": "reinier-de-ridder",
       "name": "Reinier de Ridder",
-      "name_ko": "라이니어 데 리더",
+      "name_ko": "레이니어 더 리더",
       "record": "21승 4패",
       "country": "",
       "country_ko": "",
@@ -56399,7 +56611,7 @@
           "result": "loss",
           "record": "22–6–1",
           "opp": "Arman Tsarukyan",
-          "opp_ko": "아르만 차루키안",
+          "opp_ko": "아르만 사루키안",
           "method": "KO (knee and punches)",
           "event": "UFC on ESPN: 다리우시 대 차루키안",
           "date": "December 2, 2023",
@@ -56786,7 +56998,7 @@
           "result": "loss",
           "record": "",
           "opp": "Ian Machado Garry",
-          "opp_ko": "이언 마샤두 개리",
+          "opp_ko": "이안 마샤두 개리",
           "method": "Decision (unanimous)",
           "event": "UFC 303",
           "date": "6/29/24",
@@ -59339,10 +59551,620 @@
       "avatar_thumb_remote_url": "https://ufc.com/images/2025-11/GIMENIS_MAX_11-08.png",
       "avatar_source": "https://www.ufc.com/athlete/max-gimenis",
       "avatar_provider": "UFC"
+    },
+    {
+      "id": "hyunsung-park",
+      "name": "HyunSung Park",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "박현성",
+      "record": "10승 2패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "플라이급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/hyunsung-park-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/hyunsung-park-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/PARK_HYUNSUNG_L_05-17.png?itok=B7E07bcL",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-10/PARK_HYUN_SUNG_10-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/hyunsung-park",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Bruno Silva",
+          "opp_ko": "Bruno Silva",
+          "method": "Submission (rear-naked choke)",
+          "event": "UFC Fight Night",
+          "date": "10/18/25",
+          "round": "3",
+          "time": "2:15"
+        },
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Tatsuro Taira",
+          "opp_ko": "타이라 타츠로",
+          "method": "Submission (Face Crank)",
+          "event": "UFC Fight Night",
+          "date": "8/2/25",
+          "round": "2",
+          "time": "1:06"
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/hyunsung-park",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "suyoung-you",
+      "name": "SuYoung You",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "유수영",
+      "record": "16승 4패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "밴텀급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/suyoung-you-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/suyoung-you-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/YOU_SUYOUNG_L_03-15.png?itok=Mfh4XApl",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-03/YOU_SUYOUNG_03-14.png",
+      "avatar_source": "https://www.ufc.com/athlete/suyoung-yu",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Xiao Long",
+          "opp_ko": "Xiao Long",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "8/23/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "AJ Cunningham",
+          "opp_ko": "AJ Cunningham",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "3/15/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Jieleyisi Baergeng to win the Road to UFC bantamweight tournament",
+          "opp_ko": "Jieleyisi Baergeng to win the Road to UFC bantamweight tournament",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "11/23/24",
+          "round": "",
+          "time": ""
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/suyoung-yu",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "changho-lee",
+      "name": "ChangHo Lee",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "이창호",
+      "record": "11승 2패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "밴텀급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/changho-lee-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/changho-lee-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-04/LEE_CHANGHO_L_06-22.png?itok=G0v-0vwz",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-10/LEE_CHANGHO_11-01.png",
+      "avatar_source": "https://www.ufc.com/athlete/chang-ho-lee",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Timmy Cuamba",
+          "opp_ko": "Timmy Cuamba",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "11/1/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Xiao Long to win the Road to UFC 2 bantamweight tournament",
+          "opp_ko": "Xiao Long to win the Road to UFC 2 bantamweight tournament",
+          "method": "Decision (unanimous)",
+          "event": "UFC on ABC",
+          "date": "6/22/24",
+          "round": "",
+          "time": ""
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/chang-ho-lee",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "dooho-choi",
+      "name": "Dooho Choi",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "최두호",
+      "record": "17승 4패 1무",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "페더급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/dooho-choi-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/dooho-choi-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/CHOI_DOOHO_L_05-16.png?itok=pN8VMyeW",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/CHOI_DOOHO_05-16.png",
+      "avatar_source": "https://www.ufc.com/athlete/dooho-choi",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Charles Jourdain",
+          "opp_ko": "샤를 주르댕",
+          "method": "TKO",
+          "event": "UFC Fight Night",
+          "date": "12/21/19",
+          "round": "2",
+          "time": "4:32"
+        },
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Jeremy Stephens",
+          "opp_ko": "Jeremy Stephens",
+          "method": "TKO",
+          "event": "UFC Fight Night",
+          "date": "1/14/18",
+          "round": "2",
+          "time": "2:36"
+        },
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Cub Swanson",
+          "opp_ko": "Cub Swanson",
+          "method": "Decision (unanimous)",
+          "event": "UFC 206",
+          "date": "12/10/16",
+          "round": "",
+          "time": ""
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/dooho-choi",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "jeongyeong-lee",
+      "name": "JeongYeong Lee",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "이정영",
+      "record": "11승 3패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "페더급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/jeongyeong-lee-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/jeongyeong-lee-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/LEE_JEONGYEONG_L_03-07.png?itok=Znq_QNLd",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-03/LEE_JEONGYEONG_03-07.png",
+      "avatar_source": "https://www.ufc.com/athlete/jeongyeong-lee",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Daniel Santos",
+          "opp_ko": "Daniel Santos",
+          "method": "Decision (unanimous)",
+          "event": "UFC 315",
+          "date": "5/10/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Hyder Amil",
+          "opp_ko": "하이더 아밀",
+          "method": "TKO",
+          "event": "UFC on ESPN",
+          "date": "7/20/24",
+          "round": "1",
+          "time": "1:05"
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Blake Bilder",
+          "opp_ko": "Blake Bilder",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "2/3/24",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Yi Zha to win the RTUA featherweight title",
+          "opp_ko": "Yi Zha to win the RTUA featherweight title",
+          "method": "Decision (split)",
+          "event": "UFC Fight Night",
+          "date": "2/4/23",
+          "round": "",
+          "time": ""
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/jeongyeong-lee",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "joosang-yoo",
+      "name": "JooSang Yoo",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "유주상",
+      "record": "9승 1패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "페더급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/joosang-yoo-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/joosang-yoo-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/YOO_JOOSANG_R_06-07.png?itok=sFYPXELB",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-10/YOO_JOOSANG_10-04.png",
+      "avatar_source": "https://www.ufc.com/athlete/joo-sang-yoo",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Daniel Santos",
+          "opp_ko": "Daniel Santos",
+          "method": "TKO",
+          "event": "UFC 320",
+          "date": "10/4/25",
+          "round": "2",
+          "time": ""
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/joo-sang-yoo",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "seokhyeon-ko",
+      "name": "Seokhyeon Ko",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "고석현",
+      "record": "13승 3패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "웰터급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/seokhyeon-ko-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/seokhyeon-ko-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/KO_SEOKHYEON_L_06-21.png?itok=QRZ7e0tm",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-07/KO_SEOKHYEON_07-18.png",
+      "avatar_source": "https://www.ufc.com/athlete/seokhyeon-ko",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Jean-Paul Lebosnoyani",
+          "opp_ko": "Jean-Paul Lebosnoyani",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "7/18/26",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Phil Rowe",
+          "opp_ko": "Phil Rowe",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "11/1/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Oban Elliott",
+          "opp_ko": "오반 엘리엇",
+          "method": "Decision (unanimous)",
+          "event": "UFC on ABC",
+          "date": "6/21/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Igor Cavalcanti",
+          "opp_ko": "Igor Cavalcanti",
+          "method": "Decision (unanimous)",
+          "event": "Episode four",
+          "date": "9/3/24",
+          "round": "",
+          "time": ""
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/seokhyeon-ko",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "junyong-park",
+      "name": "JunYong Park",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "박준용",
+      "record": "19승 7패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "미들급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/junyong-park-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/junyong-park-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2023-12/PARK_JUNYONG_L_12-09.png?itok=LeEvSHc5",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2025-10/PARK_JUNYONG_10-25.png",
+      "avatar_source": "https://www.ufc.com/athlete/jun-yong-park",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Ikram Aliskerov",
+          "opp_ko": "이크람 알리스케로프",
+          "method": "Decision (unanimous)",
+          "event": "UFC 321",
+          "date": "10/25/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Ismail Naurdiev",
+          "opp_ko": "Ismail Naurdiev",
+          "method": "Decision (unanimous)",
+          "event": "UFC on ABC",
+          "date": "6/21/25",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Brad Tavares",
+          "opp_ko": "Brad Tavares",
+          "method": "Decision (split)",
+          "event": "UFC Fight Night",
+          "date": "10/12/24",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Andre Muniz",
+          "opp_ko": "Andre Muniz",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "12/9/23",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Eryk Anders",
+          "opp_ko": "Eryk Anders",
+          "method": "Decision (split)",
+          "event": "UFC Fight Night",
+          "date": "5/21/22",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Gregory Rodrigues",
+          "opp_ko": "그레고리 호드리게스",
+          "method": "KO",
+          "event": "UFC Fight Night",
+          "date": "10/23/21",
+          "round": "2",
+          "time": "3:13"
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Tafon Nchukwi",
+          "opp_ko": "Tafon Nchukwi",
+          "method": "Decision (majority)",
+          "event": "UFC on ESPN",
+          "date": "5/8/21",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "John Phillips",
+          "opp_ko": "John Phillips",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "10/17/20",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "win",
+          "record": "",
+          "opp": "Marc-Andre Barriault",
+          "opp_ko": "Marc-Andre Barriault",
+          "method": "Decision (unanimous)",
+          "event": "UFC Fight Night",
+          "date": "12/21/19",
+          "round": "",
+          "time": ""
+        },
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Anthony Hernandez",
+          "opp_ko": "안소니 에르난데스",
+          "method": "Submission (anaconda choke)",
+          "event": "UFC Fight Night",
+          "date": "8/31/19",
+          "round": "2",
+          "time": "4:39"
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/jun-yong-park",
+      "history_scope": "UFC 경기"
+    },
+    {
+      "id": "yisak-lee",
+      "name": "YiSak Lee",
+      "nick": "",
+      "height": "",
+      "reach": "",
+      "stance": "",
+      "age": "",
+      "win_ko": 0,
+      "win_sub": 0,
+      "win_dec": 0,
+      "recent": [],
+      "next": null,
+      "name_ko": "이이삭",
+      "record": "8승 2패",
+      "country": "South Korea",
+      "country_ko": "대한민국",
+      "division": "미들급",
+      "korean_focus": true,
+      "rank": "랭킹 외",
+      "avatar_url": "/data/avatars/generated/yisak-lee-full.webp",
+      "avatar_thumb_url": "/data/avatars/generated/yisak-lee-thumb.webp",
+      "avatar_remote_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/LEE_YISAK_L_05-30.png?itok=lwpEKxvo",
+      "avatar_thumb_remote_url": "https://ufc.com/images/2026-05/LEE_YISAK_05-30.png",
+      "avatar_source": "https://www.ufc.com/athlete/yi-sak-lee",
+      "avatar_provider": "UFC",
+      "history": [
+        {
+          "result": "loss",
+          "record": "",
+          "opp": "Luis Felipe Dias",
+          "opp_ko": "Luis Felipe Dias",
+          "method": "TKO",
+          "event": "UFC Fight Night",
+          "date": "5/30/26",
+          "round": "1",
+          "time": "3:40"
+        }
+      ],
+      "history_source": "https://www.ufc.com/athlete/yi-sak-lee",
+      "history_scope": "UFC 경기"
     }
   ],
   "official_photos_refreshed_at": "2026-07-28T11:46:22+09:00",
-  "ranked_profiles_refreshed_at": "2026-07-30T01:21:18+09:00",
+  "ranked_profiles_refreshed_at": "2026-07-30T16:22:51+09:00",
   "result_photos_refreshed_at": "2026-07-30T09:10:30+09:00",
-  "profile_photos_refreshed_at": "2026-07-30T09:11:39+09:00"
+  "profile_photos_refreshed_at": "2026-07-30T09:11:39+09:00",
+  "korean_roster_refreshed_at": "2026-07-30T16:17:08+09:00"
 }

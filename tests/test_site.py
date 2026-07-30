@@ -77,6 +77,65 @@ class DataContractTests(unittest.TestCase):
         ]
         self.assertFalse(missing, f"Ranked fighters missing Korean names: {missing}")
 
+    def test_ranked_names_follow_curated_korean_broadcast_labels(self):
+        translations = load_json("translations.json").get("fighters", {})
+        expected = {
+            "Jean Silva": "제앙 실바",
+            "Alexandre Pantoja": "알렉산드레 판토자",
+            "Arman Tsarukyan": "아르만 사루키안",
+            "Khamzat Chimaev": "함자트 치마예프",
+            "Carlos Prates": "카를로스 프라치스",
+            "Ian Machado Garry": "이안 마샤두 개리",
+            "Reinier de Ridder": "레이니어 더 리더",
+        }
+        self.assertEqual({name: translations.get(name) for name in expected}, expected)
+        ranked = {
+            entry["name"]: entry.get("name_ko")
+            for division in load_json("rankings.json").get("divisions", [])
+            for entry in ([division.get("champion")] + division.get("ranked", []))
+            if entry
+        }
+        for name, korean in expected.items():
+            if name in ranked:
+                self.assertEqual(ranked[name], korean)
+
+    def test_unranked_korean_ufc_roster_is_kept_with_official_profiles(self):
+        fighters = load_json("fighters.json").get("fighters", [])
+        korean = [fighter for fighter in fighters if fighter.get("korean_focus")]
+        self.assertGreaterEqual(len(korean), 9)
+        featherweights = {
+            fighter["name_ko"]
+            for fighter in korean
+            if fighter.get("division") == "페더급"
+        }
+        self.assertEqual(featherweights, {"최두호", "이정영", "유주상"})
+        for fighter in korean:
+            self.assertEqual(fighter.get("country_ko"), "대한민국")
+            self.assertEqual(fighter.get("avatar_provider"), "UFC")
+            self.assertTrue(fighter.get("avatar_url", "").endswith("-full.webp"))
+            self.assertTrue(fighter.get("history"), fighter["name"])
+
+    def test_every_official_ranked_fighter_uses_an_official_ufc_photo(self):
+        rankings = load_json("rankings.json").get("divisions", [])
+        fighters = {
+            fighter["id"]: fighter
+            for fighter in load_json("fighters.json").get("fighters", [])
+        }
+        ranked_ids = {
+            entry["fighter_id"]
+            for division in rankings
+            for entry in ([division.get("champion")] + division.get("ranked", []))
+            if entry
+        }
+        self.assertGreaterEqual(len(ranked_ids), 165)
+        non_official = [
+            fighters[fighter_id]["name"]
+            for fighter_id in ranked_ids
+            if fighters.get(fighter_id, {}).get("avatar_provider") != "UFC"
+        ]
+        self.assertFalse(non_official, f"Rankers without current UFC photos: {non_official}")
+        self.assertIn("weekly_ranked_photo_refresh", (ROOT / "scrape.py").read_text(encoding="utf-8"))
+
     def test_official_rankings_link_to_complete_fighter_profiles(self):
         rankings = load_json("rankings.json")
         fighters = {fighter["id"]: fighter for fighter in load_json("fighters.json")["fighters"]}
@@ -479,6 +538,29 @@ class FrontendContractTests(unittest.TestCase):
             self.assertIn(flag, self.html)
         self.assertIn('src="https://flagcdn.com/w40/${flagCode}.png"', self.html)
         self.assertIn("https://flagcdn.com", (ROOT / "vercel.json").read_text(encoding="utf-8"))
+        for required in (
+            "function koreanRosterPanel(group)",
+            "한국 UFC 선수",
+            "공식 랭킹 밖",
+            "koreanFocus: Boolean(f.korean_focus)",
+            "'대한민국':'kr'",
+        ):
+            self.assertIn(required, self.html)
+        for css_class in (
+            ".korean-roster",
+            ".korean-roster-grid",
+            ".korean-athlete",
+        ):
+            self.assertIn(css_class, self.html)
+
+    def test_navigation_uses_large_pictograms_without_covering_desktop_content(self):
+        nav = self.html.split('<nav class="tabbar"', 1)[1].split("</nav>", 1)[0]
+        self.assertEqual(nav.count("<svg "), 5)
+        for label in ("홈", "일정", "결과", "랭킹", "선수"):
+            self.assertIn(f"<span>{label}</span>", nav)
+        self.assertIn(".topbar{\n    position:relative", self.html)
+        self.assertIn(".tabbar{position:relative;top:auto", self.html)
+        self.assertIn(".tabbar a{height:72px;font-size:17px}", self.html)
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)

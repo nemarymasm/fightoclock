@@ -55,6 +55,44 @@ UFC_PHOTO_OVERRIDES = {
         "avatar_provider": "UFC",
     },
 }
+KOREAN_UFC_FIGHTERS = [
+    {
+        "name": "HyunSung Park", "name_ko": "박현성", "division": "플라이급",
+        "record": "10승 2패", "ufc_url": "https://www.ufc.com/athlete/hyunsung-park",
+    },
+    {
+        "name": "SuYoung You", "name_ko": "유수영", "division": "밴텀급",
+        "record": "16승 4패", "ufc_url": "https://www.ufc.com/athlete/suyoung-yu",
+    },
+    {
+        "name": "ChangHo Lee", "name_ko": "이창호", "division": "밴텀급",
+        "record": "11승 2패", "ufc_url": "https://www.ufc.com/athlete/chang-ho-lee",
+    },
+    {
+        "name": "Dooho Choi", "name_ko": "최두호", "division": "페더급",
+        "record": "17승 4패 1무", "ufc_url": "https://www.ufc.com/athlete/dooho-choi",
+    },
+    {
+        "name": "JeongYeong Lee", "name_ko": "이정영", "division": "페더급",
+        "record": "11승 3패", "ufc_url": "https://www.ufc.com/athlete/jeongyeong-lee",
+    },
+    {
+        "name": "JooSang Yoo", "name_ko": "유주상", "division": "페더급",
+        "record": "9승 1패", "ufc_url": "https://www.ufc.com/athlete/joo-sang-yoo",
+    },
+    {
+        "name": "Seokhyeon Ko", "name_ko": "고석현", "division": "웰터급",
+        "record": "13승 3패", "ufc_url": "https://www.ufc.com/athlete/seokhyeon-ko",
+    },
+    {
+        "name": "JunYong Park", "name_ko": "박준용", "division": "미들급",
+        "record": "19승 7패", "ufc_url": "https://www.ufc.com/athlete/jun-yong-park",
+    },
+    {
+        "name": "YiSak Lee", "name_ko": "이이삭", "division": "미들급",
+        "record": "8승 2패", "ufc_url": "https://www.ufc.com/athlete/yi-sak-lee",
+    },
+]
 HEADERS = {
     "User-Agent": "FightOclockBot/2.0 (https://fightoclock.kr; nemarymasm@gmail.com)"
 }
@@ -1543,6 +1581,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
                 "avatar", "avatar_url", "avatar_thumb_url", "avatar_remote_url",
                 "avatar_thumb_remote_url", "avatar_source", "avatar_provider",
                 "history", "history_source", "history_scope",
+                "korean_focus",
             ):
                 if old.get(key):
                     fighters[fid][key] = old[key]
@@ -1579,6 +1618,19 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
                 f["country"] = r["country"]
                 f["country_ko"] = r["country_ko"]
             f["division"] = d["wc"]
+
+    # 공식 랭킹 밖에 있는 한국 UFC 선수도 체급 화면에서 놓치지 않게 유지한다.
+    for seed in KOREAN_UFC_FIGHTERS:
+        fid = ensure(seed["name"], seed["division"], ufc_url=seed["ufc_url"])
+        fighter = fighters[fid]
+        fighter.update({
+            "name_ko": seed["name_ko"],
+            "record": seed["record"],
+            "country": "South Korea",
+            "country_ko": "대한민국",
+            "division": seed["division"],
+            "korean_focus": True,
+        })
 
     # 2. 대진표에 등장하는 선수 전원 등록 (선수별 위키 링크 포함)
     for ev in upcoming + past:
@@ -1675,10 +1727,16 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
 
     # 다음 카드 선수는 UFC 공식 사진을 우선하고, 사진이 없는 랭커도 함께 보강한다.
     # 큰 화면용 전신 PNG와 작은 카드용 헤드샷을 분리해 저장한다.
+    # 월요일에는 전 랭커를 UFC 프로필과 다시 대조해 경기 후 갱신된 공식 컷을 놓치지 않는다.
+    weekly_ranked_photo_refresh = TODAY.weekday() == 0
     official_targets = [
         f for f in fighters.values()
         if (f.get("next") and f.get("avatar_provider") != "UFC")
-        or (f.get("rank") != "랭킹 외" and not (f.get("avatar_url") or f.get("avatar")))
+        or (
+            f.get("rank") != "랭킹 외"
+            and (f.get("avatar_provider") != "UFC" or weekly_ranked_photo_refresh)
+        )
+        or (f.get("korean_focus") and f.get("avatar_provider") != "UFC")
         or (f.get("recent") and not (f.get("avatar_url") or f.get("avatar")))
     ]
     print(f"\n→ UFC 공식 선수 사진 수집: {len(official_targets)}명...")
@@ -1692,6 +1750,16 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
         if (i + 1) % 25 == 0:
             print(f"    {i+1}/{len(official_targets)}")
     print(f"  ✓ 공식 프로필 사진 {official_count}/{len(official_targets)}명")
+
+    korean_history_count = 0
+    for f in fighters.values():
+        if not f.get("korean_focus") or f.get("history"):
+            continue
+        history = fetch_ufc_profile_history(f["name"], f.get("ufc_url"))
+        if history.get("history"):
+            f.update(history)
+            korean_history_count += 1
+    print(f"  ✓ 한국 선수 UFC 전적 {korean_history_count}명 보강")
 
     result = list(fighters.values())
     for f in result:
@@ -2349,6 +2417,55 @@ def refresh_named_profile_photos(names):
     print(f"✓ 지정 선수 공식 사진 {success}/{len(targets)}명 저장")
 
 
+def refresh_korean_roster():
+    """공식 랭킹 밖 한국 UFC 선수의 프로필·사진·UFC 전적을 유지한다."""
+    fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    fighters = fighters_data.get("fighters", [])
+    by_key = {_fighter_name_key(fighter.get("name")): fighter for fighter in fighters}
+    photos = histories = 0
+    for seed in KOREAN_UFC_FIGHTERS:
+        key = _fighter_name_key(seed["name"])
+        fighter = by_key.get(key)
+        if not fighter:
+            fighter = {
+                "id": slugify(seed["name"]),
+                "name": seed["name"],
+                "nick": "", "height": "", "reach": "", "stance": "", "age": "",
+                "win_ko": 0, "win_sub": 0, "win_dec": 0,
+                "recent": [], "next": None,
+            }
+            fighters.append(fighter)
+            by_key[key] = fighter
+        fighter.update({
+            "name_ko": seed["name_ko"],
+            "record": seed["record"],
+            "country": "South Korea",
+            "country_ko": "대한민국",
+            "division": seed["division"],
+            "korean_focus": True,
+        })
+        if fighter.get("rank") in (None, ""):
+            fighter["rank"] = "랭킹 외"
+        profile_photos = fetch_ufc_profile_photos(seed["name"], seed["ufc_url"])
+        if profile_photos:
+            fighter.update(cache_profile_photos(fighter["id"], profile_photos))
+            photos += 1
+        if not fighter.get("history"):
+            history = fetch_ufc_profile_history(seed["name"], seed["ufc_url"])
+            if history.get("history"):
+                fighter.update(history)
+                histories += 1
+    now_iso = datetime.now(KST).isoformat(timespec="seconds")
+    fighters_data["generated_at"] = now_iso
+    fighters_data["fighter_count"] = len(fighters)
+    fighters_data["korean_roster_refreshed_at"] = now_iso
+    FIGHTERS_FILE.write_text(
+        json.dumps(fighters_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ 한국 UFC 선수 {len(KOREAN_UFC_FIGHTERS)}명 · 사진 {photos}명 · 전적 {histories}명 저장")
+
+
 def refresh_ranked_profiles():
     """현재 랭커의 전체 프로 전적과 누락 사진을 기존 JSON에 보강한다."""
     fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
@@ -2394,7 +2511,7 @@ def refresh_ranked_profiles():
                 fighter.update(official_history)
         if fighter.get("history"):
             histories += 1
-        if not (fighter.get("avatar_url") or fighter.get("avatar")):
+        if fighter.get("avatar_provider") != "UFC":
             profile_photos = fetch_ufc_profile_photos(
                 fighter["name"],
                 ranking_entry.get("ufc_url"),
@@ -2524,6 +2641,8 @@ if __name__ == "__main__":
     elif "--profile-photo" in sys.argv:
         flag_index = sys.argv.index("--profile-photo")
         refresh_named_profile_photos(sys.argv[flag_index + 1:])
+    elif "--korean-roster" in sys.argv:
+        refresh_korean_roster()
     elif "--ranked-profiles" in sys.argv:
         refresh_ranked_profiles()
     elif "--photos-only" in sys.argv:
