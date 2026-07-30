@@ -1033,9 +1033,9 @@ function eventTimeLabel(e){
 }
 function getFighter(id){ return FIGHTERS[id] || REAL_FIGHTERS[id] || {name: (id||'TBA').replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase()), record:'-', rank:'-', recent:[], style:'데이터 수집 중'} }
 function fanTagFor(fighter){
-  const verified=FAN_TAGS.tags?.[fighter?.id];
-  if(verified && verified.status==='verified' && verified.text){
-    return {...verified,isFallback:false};
+  const tag=FAN_TAGS.tags?.[fighter?.id];
+  if(tag && ['verified','owner_approved'].includes(tag.status) && tag.text){
+    return {...tag,isFallback:false};
   }
   return null;
 }
@@ -1044,7 +1044,8 @@ function fanTagHtml(fighter){
   if(!tag) return '';
   const tone=/^(royal|warning|lottery|odd|quiet)$/.test(tag.tone||'') ? tag.tone : 'quiet';
   const sourceCount=Array.isArray(tag.sources) ? tag.sources.filter(source=>source?.url).length : 0;
-  const title=`팬 커뮤니티 표현 · 근거 ${sourceCount}개 · ${tag.reviewed_at||'최근'} 검수`;
+  const provenance=tag.status==='owner_approved' ? '운영자 승인' : `근거 ${sourceCount}개`;
+  const title=`국내 팬 표현 · ${provenance} · ${tag.reviewed_at||'최근'} 검수`;
   return `<span class="fan-tag ${tone}" title="${esc(title)}" aria-label="${esc(title)}">${esc(tag.text)}</span>`;
 }
 function getEvent(id){ return EVENTS.find(e=>e.id===id) }

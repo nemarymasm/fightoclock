@@ -141,24 +141,40 @@ class DataContractTests(unittest.TestCase):
         self.assertEqual(data["fallback"]["text"], "")
         tags = data.get("tags", {})
         expected = {
-            "ciryl-gane": "드릴과 후두부를 잘 노림",
+            "ciryl-gane": "드릴러",
+            "tom-aspinall": "눈이 불편함",
             "alexander-volkanovski": "볼황",
             "conor-mcgregor": "다리가 불편함",
+            "diego-lopes": "볼카 아들",
             "max-holloway": "맥또 당첨자",
-            "islam-makhachev": "마황",
-            "ilia-topuria": "토황",
-            "dricus-du-plessis": "허우적대는데 또 이김",
+            "chan-sung-jung": "코리안좀비",
+            "ilia-topuria": "끌어당김 1회 실패함",
+            "justin-gaethje": "안 끌어당겨짐 1회 성공함",
+            "jon-jones": "자동사냥중",
+            "alex-pereira": "샤마",
+            "ji-proch-zka": "오륜서 압수",
+            "dricus-du-plessis": "뒷점멸",
+            "khamzat-chimaev": "스트릭랜드한테 입양됨",
+            "kamaru-usman": "차은우스만",
+            "sean-o-malley": "ㄲㅂ",
+            "marlon-vera": "페스",
+            "dustin-poirier": "간바레 다이아몬드",
+            "islam-makhachev": "은퇴전까지 승리?",
+            "michael-chandler": "한게임만 이기자",
+            "sean-strickland": "뒤플이 노리고있음",
         }
         self.assertEqual({fighter_id: tags.get(fighter_id, {}).get("text") for fighter_id in expected}, expected)
-        self.assertNotIn("jon-jones", tags, "최근 팬 여론과 충돌하는 과거 찬양 별명을 자동 게시하면 안 됩니다.")
         for fighter_id, tag in tags.items():
-            self.assertEqual(tag.get("status"), "verified", fighter_id)
+            self.assertIn(tag.get("status"), {"verified", "owner_approved"}, fighter_id)
             self.assertTrue(tag.get("context"), fighter_id)
             self.assertRegex(tag.get("reviewed_at", ""), r"^\d{4}-\d{2}-\d{2}$")
             self.assertRegex(tag.get("review_after", ""), r"^\d{4}-\d{2}-\d{2}$")
-            sources = [source for source in tag.get("sources", []) if source.get("url")]
-            self.assertGreaterEqual(len(sources), 2, fighter_id)
-            self.assertTrue(all(source["url"].startswith("https://") for source in sources))
+            if tag.get("status") == "verified":
+                sources = [source for source in tag.get("sources", []) if source.get("url")]
+                self.assertGreaterEqual(len(sources), 2, fighter_id)
+                self.assertTrue(all(source["url"].startswith("https://") for source in sources))
+            else:
+                self.assertRegex(tag.get("approved_at", ""), r"^\d{4}-\d{2}-\d{2}$")
         stats = data.get("review_stats", {})
         self.assertGreaterEqual(stats.get("waiting_count", 0), 100)
         self.assertLessEqual(len(data.get("review_queue", [])), stats.get("queue_limit", 40))
@@ -407,6 +423,7 @@ class FrontendContractTests(unittest.TestCase):
         ):
             self.assertIn(required, self.html)
         self.assertIn("def refresh_fan_tag_review_queue", scraper)
+        self.assertIn('{"verified", "owner_approved"}', scraper)
         self.assertIn("refresh_fan_tag_review_queue(divisions, fighters, now_iso)", scraper)
         self.assertIn("--fan-tags-review", scraper)
         self.assertIn("data/fan_tags.json", workflow)

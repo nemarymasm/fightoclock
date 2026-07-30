@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T16:41:40+09:00",
+  "generated_at": "2026-07-30T21:28:49+09:00",
   "source": "국내 UFC 커뮤니티·공식 경기 기록을 함께 확인한 수동 큐레이션",
   "fallback": {
     "text": "",
@@ -8,7 +8,7 @@
     "context": "검증된 표현이 없는 선수는 아무 배지도 표시하지 않습니다."
   },
   "policy": {
-    "publish_rule": "실제 팬 사용례와 밈의 배경이 함께 확인된 표현만 게시",
+    "publish_rule": "실제 팬 사용례와 밈의 배경을 확인했거나 운영자가 직접 승인한 표현만 게시",
     "blocked": [
       "확인되지 않은 사생활",
       "인종·국적·성별 비하",
@@ -21,26 +21,22 @@
   },
   "tags": {
     "ciryl-gane": {
-      "text": "드릴과 후두부를 잘 노림",
+      "text": "드릴러",
       "tone": "warning",
-      "status": "verified",
-      "context": "아스피날전 눈 찌르기와 페레이라전 후두부 공격 논란 뒤 국내 팬들이 반복한 반칙 밈.",
+      "status": "owner_approved",
+      "context": "시릴 간을 두고 국내 팬들이 사용하는 짧은 반칙 밈.",
+      "approved_at": "2026-07-30",
       "reviewed_at": "2026-07-30",
-      "review_after": "2026-08-13",
-      "sources": [
-        {
-          "label": "UFC 갤러리 · 후두부 수직 엘보 반응",
-          "url": "https://gall.dcinside.com/board/view/?id=ufc&no=1887425&page=1"
-        },
-        {
-          "label": "UFC 갤러리 · 반복 반칙 반응",
-          "url": "https://gall.dcinside.com/board/view/?id=ufc&no=1887357&page=1"
-        },
-        {
-          "label": "MLBPARK · 눈 찌르기 팬 반응",
-          "url": "https://mlbpark.donga.com/mp/b.php?b=bullpen&id=202510260110182476"
-        }
-      ]
+      "review_after": "2026-08-13"
+    },
+    "tom-aspinall": {
+      "text": "눈이 불편함",
+      "tone": "quiet",
+      "status": "owner_approved",
+      "context": "시릴 간전 눈 찌르기 이후 현재 상태를 건조하게 줄인 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
     },
     "alexander-volkanovski": {
       "text": "볼황",
@@ -104,63 +100,149 @@
         }
       ]
     },
-    "islam-makhachev": {
-      "text": "마황",
-      "tone": "royal",
-      "status": "verified",
-      "context": "마카체프의 ‘마’에 황제를 붙인 국내 팬덤식 별명.",
+    "diego-lopes": {
+      "text": "볼카 아들",
+      "tone": "odd",
+      "status": "owner_approved",
+      "context": "볼카노프스키와의 경기 결과를 가족관계처럼 비튼 팬 표현.",
+      "approved_at": "2026-07-30",
       "reviewed_at": "2026-07-30",
-      "review_after": "2026-09-30",
-      "sources": [
-        {
-          "label": "UFC 갤러리 · 라이트급 마황 사용례",
-          "url": "https://gall.dcinside.com/board/view/?id=ufc&no=1303440"
-        },
-        {
-          "label": "UFC MMA 갤러리 · 마황 사용례",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=544078"
-        }
-      ]
+      "review_after": "2026-08-13"
+    },
+    "chan-sung-jung": {
+      "text": "코리안좀비",
+      "tone": "royal",
+      "status": "owner_approved",
+      "context": "정찬성의 공식 링네임이자 국내외에서 가장 널리 알려진 이름.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30"
+    },
+    "islam-makhachev": {
+      "text": "은퇴전까지 승리?",
+      "tone": "warning",
+      "status": "owner_approved",
+      "context": "은퇴 전까지 현재의 연승 흐름이 이어질지를 묻는 상태형 문구.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
     },
     "ilia-topuria": {
-      "text": "토황",
-      "tone": "royal",
-      "status": "verified",
-      "context": "토푸리아의 ‘토’에 황제를 붙인 국내 팬덤식 별명.",
+      "text": "끌어당김 1회 실패함",
+      "tone": "odd",
+      "status": "owner_approved",
+      "context": "선수 간 신경전에서 나온 장면을 전적처럼 기록한 팬 표현.",
+      "approved_at": "2026-07-30",
       "reviewed_at": "2026-07-30",
-      "review_after": "2026-09-30",
-      "sources": [
-        {
-          "label": "UFC MMA 갤러리 · 토황 사용례",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=1295565"
-        },
-        {
-          "label": "UFC MMA 갤러리 · 반복 사용례",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=1287031"
-        },
-        {
-          "label": "UFC MMA 갤러리 · 토황 팬 반응",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=346506"
-        }
-      ]
+      "review_after": "2026-08-13"
+    },
+    "justin-gaethje": {
+      "text": "안 끌어당겨짐 1회 성공함",
+      "tone": "odd",
+      "status": "owner_approved",
+      "context": "토푸리아와 대비되는 같은 장면을 성공 기록처럼 적은 팬 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
+    },
+    "jon-jones": {
+      "text": "자동사냥중",
+      "tone": "warning",
+      "status": "owner_approved",
+      "context": "최근 존 존스를 둘러싼 상황을 게임 상태처럼 줄인 팬 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
+    },
+    "alex-pereira": {
+      "text": "샤마",
+      "tone": "royal",
+      "status": "owner_approved",
+      "context": "알렉스 페레이라를 상징하는 구호.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30"
+    },
+    "ji-proch-zka": {
+      "text": "오륜서 압수",
+      "tone": "odd",
+      "status": "owner_approved",
+      "context": "이리 프로하즈카의 무사 이미지와 최근 상황을 엮은 팬 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
     },
     "dricus-du-plessis": {
-      "text": "허우적대는데 또 이김",
+      "text": "뒷점멸",
       "tone": "odd",
-      "status": "verified",
-      "context": "정석적이지 않아 보이는 움직임과 달리 강자들을 계속 이기는 경기 스타일을 요약한 팬 반응.",
+      "status": "owner_approved",
+      "context": "뒤 플레시의 이름을 게임 용어처럼 줄인 팬 표현.",
+      "approved_at": "2026-07-30",
       "reviewed_at": "2026-07-30",
-      "review_after": "2026-08-30",
-      "sources": [
-        {
-          "label": "MMA 갤러리 · 잭 슬랙 분석 번역",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=mma&no=282047"
-        },
-        {
-          "label": "UFC · 공식 선수 기록",
-          "url": "https://www.ufc.com/athlete/dricus-du-plessis"
-        }
-      ]
+      "review_after": "2026-08-13"
+    },
+    "khamzat-chimaev": {
+      "text": "스트릭랜드한테 입양됨",
+      "tone": "warning",
+      "status": "owner_approved",
+      "context": "스트릭랜드와 치마예프를 엮는 국내 팬들의 관계형 드립.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
+    },
+    "kamaru-usman": {
+      "text": "차은우스만",
+      "tone": "royal",
+      "status": "owner_approved",
+      "context": "카마루 우스만의 이름을 한국식 언어유희로 바꾼 별명.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30"
+    },
+    "sean-o-malley": {
+      "text": "ㄲㅂ",
+      "tone": "quiet",
+      "status": "owner_approved",
+      "context": "션 오말리의 현재 상황에 대한 짧은 팬 반응.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
+    },
+    "marlon-vera": {
+      "text": "페스",
+      "tone": "quiet",
+      "status": "owner_approved",
+      "context": "말론 베라에게 붙이는 짧은 국내 팬 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
+    },
+    "dustin-poirier": {
+      "text": "간바레 다이아몬드",
+      "tone": "lottery",
+      "status": "owner_approved",
+      "context": "포이리에의 별명 다이아몬드에 응원 문구를 붙인 팬 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30"
+    },
+    "michael-chandler": {
+      "text": "한게임만 이기자",
+      "tone": "quiet",
+      "status": "owner_approved",
+      "context": "최근 성적을 두고 다음 한 경기의 승리를 바라는 팬 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
+    },
+    "sean-strickland": {
+      "text": "뒤플이 노리고있음",
+      "tone": "warning",
+      "status": "owner_approved",
+      "context": "뒤 플레시와 스트릭랜드의 관계를 현재 상태처럼 적은 팬 표현.",
+      "approved_at": "2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13"
     }
   },
   "review_queue": [
@@ -382,23 +464,9 @@
       "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
     },
     {
-      "fighter_id": "justin-gaethje",
-      "name": "저스틴 게이치",
-      "division": "라이트급",
-      "rank": "챔피언",
-      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
-    },
-    {
       "fighter_id": "carlos-ulberg",
       "name": "카를로스 울버그",
       "division": "라이트헤비급",
-      "rank": "챔피언",
-      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
-    },
-    {
-      "fighter_id": "sean-strickland",
-      "name": "션 스트릭랜드",
-      "division": "미들급",
       "rank": "챔피언",
       "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
     },
@@ -431,23 +499,38 @@
       "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
     },
     {
-      "fighter_id": "tom-aspinall",
-      "name": "톰 아스피날",
-      "division": "헤비급",
-      "rank": "챔피언",
-      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
-    },
-    {
       "fighter_id": "magomed-ankalaev",
       "name": "마고메드 안칼라예프",
       "division": "라이트헤비급",
       "rank": "#1",
       "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "merab-dvalishvili",
+      "name": "메랍 드발리시빌리",
+      "division": "밴텀급",
+      "rank": "#1",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "julianna-pe-a",
+      "name": "줄리아나 페냐",
+      "division": "여성 밴텀급",
+      "rank": "#1",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "zhang-weili",
+      "name": "장 웨일리",
+      "division": "여성 스트로급",
+      "rank": "#1",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
     }
   ],
   "review_stats": {
-    "verified_count": 7,
-    "waiting_count": 170,
+    "verified_count": 3,
+    "owner_approved_count": 18,
+    "waiting_count": 160,
     "queue_limit": 40
   }
 }

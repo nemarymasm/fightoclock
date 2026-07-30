@@ -2206,7 +2206,7 @@ def refresh_fan_tag_review_queue(divisions, fighters, now_iso=None):
             except ValueError:
                 due = True
 
-        if tag and tag.get("status") == "verified" and not due:
+        if tag and tag.get("status") in {"verified", "owner_approved"} and not due:
             continue
 
         if due:
@@ -2250,6 +2250,9 @@ def refresh_fan_tag_review_queue(divisions, fighters, now_iso=None):
     data["review_stats"] = {
         "verified_count": sum(
             1 for tag in tags.values() if tag.get("status") == "verified"
+        ),
+        "owner_approved_count": sum(
+            1 for tag in tags.values() if tag.get("status") == "owner_approved"
         ),
         "waiting_count": len(queue),
         "queue_limit": queue_limit,
