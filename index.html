@@ -283,6 +283,8 @@
   .rank-athlete .en{margin-top:5px;color:#aaaab0;font-size:13px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .rank-country,.rank-record{min-width:0}
   .rank-country b,.rank-record b{display:block;margin-top:5px;color:#e4e4e6;font-size:16px;font-weight:800;white-space:nowrap}
+  .champion-data .country-value,.rank-country .country-value{display:flex;align-items:center;gap:8px}
+  .country-flag{display:block;flex:0 0 auto;width:24px;height:16px;object-fit:cover;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.14);filter:saturate(.92)}
   .rank-row .chev{color:#cfcfd2;font-size:24px}
   .champion-lineage{overflow:hidden;border:1px solid var(--line-2);border-radius:20px;background:#121214}
   .lineage-desktop{display:none}
@@ -292,10 +294,14 @@
   .lineage-eyebrow{color:var(--gold-2);font-size:13px;font-weight:900;letter-spacing:.08em}
   .lineage-title{margin-top:6px;color:#f4f4f5;font-size:24px;font-weight:950;line-height:1.15;letter-spacing:-.04em}
   .lineage-sub{margin-top:7px;color:#c5c5c9;font-size:14px;font-weight:700;line-height:1.45}
-  .lineage-record{display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:center;margin:16px 14px 8px;padding:13px;border:1px solid rgba(211,166,69,.27);border-radius:14px;background:rgba(211,166,69,.065)}
-  .lineage-record-mark{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(226,190,106,.48);border-radius:50%;color:#efc966;font-size:20px;font-weight:950}
+  .lineage-record{display:grid;grid-template-columns:58px minmax(0,1fr) auto;gap:12px;align-items:center;margin:16px 14px 8px;padding:13px;border:1px solid rgba(211,166,69,.27);border-radius:14px;background:rgba(211,166,69,.065)}
+  .lineage-record-photo,.lineage-record-photo .avatar-box{width:58px!important;height:62px!important}
+  .lineage-record-photo .avatar-box{border-color:rgba(226,190,106,.48)!important;border-radius:13px!important;background:#1b1b1e}
   .lineage-record span{display:block;color:#bdbdc1;font-size:12px;font-weight:800}
   .lineage-record strong{display:block;margin-top:3px;color:#f2f2f3;font-size:16px;font-weight:900;line-height:1.3}
+  .lineage-record-count{min-width:48px;text-align:center}
+  .lineage-record-count b{display:block;color:#efc966;font-size:25px;font-weight:950;line-height:1}
+  .lineage-record-count span{margin-top:4px;color:#d4b867;font-size:11px}
   .lineage-list{position:relative;padding:6px 14px 10px}
   .lineage-list::before{content:"";position:absolute;left:40px;top:10px;bottom:16px;width:1px;background:linear-gradient(var(--gold),rgba(255,255,255,.12))}
   .lineage-row{position:relative;z-index:1;display:grid;grid-template-columns:54px minmax(0,1fr) auto;gap:12px;align-items:center;min-height:82px;padding:10px 2px;color:inherit;border-top:1px solid rgba(255,255,255,.07)}
@@ -309,7 +315,6 @@
   .lineage-meta{margin-top:5px;color:#aeadb2;font-size:13px;font-weight:700;line-height:1.35}
   .lineage-defense{min-width:68px;padding:8px 9px;border:1px solid var(--line-2);border-radius:11px;background:#19191b;text-align:center}
   .lineage-defense b{display:block;color:#f0f0f1;font-size:15px;font-weight:950;white-space:nowrap}
-  .lineage-defense span{display:block;margin-top:3px;color:#aeadb2;font-size:11px;font-weight:800}
   .lineage-row.record .lineage-defense{border-color:rgba(211,166,69,.45);background:rgba(211,166,69,.09)}
   .lineage-row.record .lineage-defense b{color:#efc966}
   .lineage-row.current .lineage-defense{border-color:rgba(239,68,78,.5);background:rgba(239,68,78,.09)}
@@ -322,7 +327,6 @@
   .lineage-mobile .lineage-row{grid-template-columns:54px minmax(0,1fr);grid-template-rows:auto auto;min-height:116px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#171719;scroll-snap-align:start}
   .lineage-mobile .lineage-photo{grid-row:1/3}
   .lineage-mobile .lineage-defense{grid-column:2;display:flex;align-items:center;gap:7px;justify-self:start;min-width:0;padding:5px 8px}
-  .lineage-mobile .lineage-defense span{margin:0}
 
   /* ---------- 결과 리스트 ---------- */
   .result-card{overflow:hidden;background:var(--card);border:1px solid var(--line-2);border-radius:18px;margin-bottom:14px}
@@ -1599,13 +1603,24 @@ function championLineagePanel(group,variant){
   const variantClass=variant==='desktop'?'lineage-desktop':'lineage-mobile';
   const reigns=[...history.reigns].reverse();
   const record=history.record||{};
+  const recordReign=history.reigns.find(function(reign){
+    return reign.fighter_id===record.fighter_id && Number(reign.defenses)===Number(record.defenses);
+  });
+  const recordFighter=recordReign?championHistoryFighter(recordReign):{
+    id:record.fighter_id||'defense-record-holder',
+    name:record.name_ko||record.name||'기록 보유자',
+    en:record.name||'',
+    avatar:'',
+    avatarThumb:''
+  };
   const rows=reigns.map(function(reign){
     const fighter=championHistoryFighter(reign);
     const known=Boolean(FIGHTERS[reign.fighter_id]||REAL_FIGHTERS[reign.fighter_id]);
     const href=known?`#fighter/${reign.fighter_id}`:safeExternalUrl(reign.wiki_url||'');
     const reignCopy=reign.reign_total>1?`${reign.reign}번째 집권 · `:'';
-    const defenseCopy=reign.defenses>0?`${reign.defenses}차 방어`:(reign.current?'첫 방어 전':'방어 없음');
-    const defenseSub=reign.current?'현 챔피언':(reign.defenses===record.defenses?'체급 기록':'이 재임');
+    const defenseCopy=reign.current
+      ? (reign.defenses>0?`현재 ${reign.defenses}차 방어`:'첫 방어 전')
+      : (reign.defenses>0?`${reign.defenses}차 방어`:'방어 0회');
     return `
       <a class="lineage-row ${reign.current?'current':''} ${reign.defenses===record.defenses?'record':''}"
          href="${esc(href||'#rankings')}" ${known?'':`target="_blank" rel="noopener"`}>
@@ -1615,7 +1630,7 @@ function championLineagePanel(group,variant){
           <div class="lineage-name">${esc(reign.name_ko||reign.name)}</div>
           <div class="lineage-meta">${esc(reignCopy+crownedLabel(reign.crowned_at))}</div>
         </div>
-        <div class="lineage-defense"><b>${esc(defenseCopy)}</b><span>${esc(defenseSub)}</span></div>
+        <div class="lineage-defense"><b>${esc(defenseCopy)}</b></div>
       </a>`;
   }).join('');
   return `
@@ -1626,8 +1641,9 @@ function championLineagePanel(group,variant){
         <div class="lineage-sub">현재 챔피언부터 초대 챔피언까지, 집권기별로 봅니다.</div>
       </div>
       <div class="lineage-record">
-        <div class="lineage-record-mark">${Number(record.defenses)||0}</div>
-        <div><span>체급 최다 연속 방어</span><strong>${esc(record.name_ko||record.name||'-')} · ${Number(record.defenses)||0}차</strong></div>
+        <div class="lineage-record-photo">${avatarBox(recordFighter,58)}</div>
+        <div><span>체급 최다 연속 방어</span><strong>${esc(record.name_ko||record.name||'-')}</strong></div>
+        <div class="lineage-record-count"><b>${Number(record.defenses)||0}</b><span>차 방어</span></div>
       </div>
       <div class="lineage-list">${rows}</div>
       <a class="lineage-source" href="${esc(safeExternalUrl(history.source_url||'https://en.wikipedia.org/wiki/List_of_UFC_champions'))}" target="_blank" rel="noopener">
@@ -1662,7 +1678,7 @@ function viewRankings(){
             <div class="champion-name">${esc(champ.name)}</div>
             ${champ.en&&champ.en!==champ.name?`<div class="champion-en">${esc(champ.en)}</div>`:''}
             <div class="champion-data">
-              <div><span>국가</span><strong>${esc(champ.country||'정보 없음')}</strong></div>
+              <div><span>국가</span><strong class="country-value">${countryValueHtml(champ.country)}</strong></div>
               <div><span>전적</span><strong>${esc(champ.record||'-')}</strong></div>
               ${currentReign?`<div><span>현재 타이틀 방어</span><strong>${currentReign.defenses}회</strong></div>`:''}
             </div>
@@ -1687,7 +1703,7 @@ function viewRankings(){
               <div class="nm">${esc(f.name)}</div>
               ${f.en&&f.en!==f.name?`<div class="en">${esc(f.en)}</div>`:''}
             </div>
-            <div class="rank-country"><span>국가</span><b>${esc(f.country||'정보 없음')}</b></div>
+            <div class="rank-country"><span>국가</span><b class="country-value">${countryValueHtml(f.country)}</b></div>
             <div class="rank-record"><span>전적</span><b>${esc(f.record||'-')}</b></div>
             <div class="chev" aria-hidden="true">›</div>
           </a>`;
@@ -2379,6 +2395,13 @@ const COUNTRY_LABELS_KO = {
   Myanmar:'미얀마',
   Portugal:'포르투갈',
   Iraq:'이라크',
+  Morocco:'모로코',
+  Panama:'파나마',
+  Serbia:'세르비아',
+  Ukraine:'우크라이나',
+  Uzbekistan:'우즈베키스탄',
+  'United Arab Emirates':'아랍에미리트',
+  'Dominican Republic':'도미니카 공화국',
   England:'잉글랜드',
   Australia:'호주',
   Brazil:'브라질',
@@ -2393,6 +2416,24 @@ const COUNTRY_LABELS_KO = {
 function countryLabelKo(country){
   const value=cleanExternalText(country||'');
   return COUNTRY_LABELS_KO[value] || value;
+}
+const COUNTRY_FLAGS = {
+  '미얀마':'mm','포르투갈':'pt','이라크':'iq','모로코':'ma','파나마':'pa',
+  '세르비아':'rs','우크라이나':'ua','우즈베키스탄':'uz','아랍에미리트':'ae',
+  '도미니카 공화국':'do','잉글랜드':'gb-eng','호주':'au','브라질':'br','멕시코':'mx',
+  '일본':'jp','카자흐스탄':'kz','키르기스스탄':'kg','러시아':'ru','남아공':'za',
+  '미국':'us','나이지리아':'ng','뉴질랜드':'nz','몰도바':'md','아르메니아':'am',
+  '아르헨티나':'ar','아일랜드':'ie','아제르바이잔':'az','에콰도르':'ec',
+  '조지아':'ge','중국':'cn','체코':'cz','캐나다':'ca','폴란드':'pl',
+  '프랑스':'fr'
+};
+function countryValueHtml(country){
+  const label=countryLabelKo(country)||'정보 없음';
+  const flagCode=COUNTRY_FLAGS[label]||'';
+  const flag=flagCode
+    ? `<img class="country-flag" src="https://flagcdn.com/w40/${flagCode}.png" width="24" height="16" alt="" loading="lazy">`
+    : '';
+  return `${flag}${esc(label)}`;
 }
 
 /* 신장/리치 정규화: 위키가 미터로 준 "1.80cm" → "180cm" 보정 */

@@ -472,6 +472,12 @@ class FrontendContractTests(unittest.TestCase):
             self.assertIn(css_class, self.html)
         self.assertIn("base==='rankings' ? 'rankings-view'", self.html)
         self.assertIn("function countryLabelKo(country)", self.html)
+        self.assertIn("function countryValueHtml(country)", self.html)
+        self.assertIn("const COUNTRY_FLAGS", self.html)
+        self.assertIn('class="country-value"', ranking_view)
+        for flag in ("'미얀마':'mm'", "'브라질':'br'", "'미국':'us'", "'일본':'jp'", "'카자흐스탄':'kz'"):
+            self.assertIn(flag, self.html)
+        self.assertIn('src="https://flagcdn.com/w40/${flagCode}.png"', self.html)
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)
@@ -577,9 +583,14 @@ class FrontendContractTests(unittest.TestCase):
             "lineage-mobile",
             "lineage-desktop",
             "현재 타이틀 방어",
+            "lineage-record-photo",
+            "lineage-record-count",
+            "방어 0회",
             "data/champions.json",
         ):
             self.assertIn(required, ranking_view if required != "data/champions.json" else self.html)
+        self.assertNotIn("이 재임", ranking_view)
+        self.assertNotIn("defenseSub", ranking_view)
         for css_class in (
             ".champion-lineage",
             ".lineage-record",
