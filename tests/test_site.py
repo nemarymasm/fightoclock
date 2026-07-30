@@ -478,6 +478,7 @@ class FrontendContractTests(unittest.TestCase):
         for flag in ("'미얀마':'mm'", "'브라질':'br'", "'미국':'us'", "'일본':'jp'", "'카자흐스탄':'kz'"):
             self.assertIn(flag, self.html)
         self.assertIn('src="https://flagcdn.com/w40/${flagCode}.png"', self.html)
+        self.assertIn("https://flagcdn.com", (ROOT / "vercel.json").read_text(encoding="utf-8"))
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)
