@@ -281,6 +281,20 @@
   .rank-athlete{min-width:0}
   .rank-athlete .nm{color:#f2f2f3;font-size:19px;font-weight:900;line-height:1.2;letter-spacing:-.025em}
   .rank-athlete .en{margin-top:5px;color:#aaaab0;font-size:13px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fighter-name-line{display:flex;align-items:center;gap:9px;min-width:0;flex-wrap:wrap}
+  .fan-tag{display:inline-flex;align-items:center;gap:6px;max-width:100%;min-height:28px;padding:4px 10px;border:1px solid #3b3b40;border-radius:999px;background:#202023;color:#dddde0;font-size:13px;font-weight:900;line-height:1.2;letter-spacing:-.02em;white-space:nowrap}
+  .fan-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:#8d8d93;box-shadow:0 0 0 3px rgba(141,141,147,.12)}
+  .fan-tag.royal{border-color:rgba(211,166,69,.48);background:rgba(211,166,69,.1);color:#f1d47f}
+  .fan-tag.royal::before{background:#d3a645;box-shadow:0 0 0 3px rgba(211,166,69,.15)}
+  .fan-tag.warning{border-color:rgba(229,72,77,.52);background:rgba(229,72,77,.1);color:#ff9296}
+  .fan-tag.warning::before{background:#e5484d;box-shadow:0 0 0 3px rgba(229,72,77,.15)}
+  .fan-tag.lottery{border-color:rgba(59,185,124,.48);background:rgba(59,185,124,.1);color:#88e3b5}
+  .fan-tag.lottery::before{background:#3bb97c;box-shadow:0 0 0 3px rgba(59,185,124,.15)}
+  .fan-tag.odd{border-color:rgba(151,116,226,.48);background:rgba(151,116,226,.1);color:#c9b4ff}
+  .fan-tag.odd::before{background:#9774e2;box-shadow:0 0 0 3px rgba(151,116,226,.15)}
+  .fan-tag.quiet{border-color:#303034;background:#18181a;color:#a8a8ad;font-weight:750}
+  .fan-tag.quiet::before{background:#68686e;box-shadow:none}
+  .fighter-hero .fan-tag{margin-top:10px}
   .rank-country,.rank-record{min-width:0}
   .rank-country b,.rank-record b{display:block;margin-top:5px;color:#e4e4e6;font-size:16px;font-weight:800;white-space:nowrap}
   .champion-data .country-value,.rank-country .country-value{display:flex;align-items:center;gap:8px}
@@ -792,6 +806,10 @@
     .rank-athlete{grid-area:athlete}
     .rank-athlete .nm{font-size:18px}
     .rank-athlete .en{font-size:12px}
+    .rank-athlete .fighter-name-line{align-items:flex-start;gap:6px}
+    .rank-athlete .fan-tag{min-height:25px;padding:3px 8px;font-size:12px;white-space:normal}
+    .champion-profile .fighter-name-line{display:block}
+    .champion-profile .fan-tag{margin-top:8px;white-space:normal}
     .rank-country{grid-area:country}
     .rank-record{grid-area:record}
     .rank-country,.rank-record{display:flex;align-items:baseline;gap:8px}
@@ -935,6 +953,11 @@ const FIGHTERS = {};
 let EVENTS = [];
 const RANKINGS = {'체급별 랭킹':[]};
 let CHAMPION_HISTORY = [];
+let FAN_TAGS = {
+  fallback:{text:'하루하루 성실히 살자',tone:'quiet'},
+  tags:{},
+  generatedAt:null
+};
 
 /* =========================================================
    라우터 / 뷰
@@ -1006,6 +1029,22 @@ function eventTimeLabel(e){
   return e.timeConfirmed ? `${fmtDate(e.dateUtc)} KST` : `현지 날짜 ${e.dateLabel||e.dateIso||'미정'} · 시작 시각 확인 중`;
 }
 function getFighter(id){ return FIGHTERS[id] || REAL_FIGHTERS[id] || {name: (id||'TBA').replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase()), record:'-', rank:'-', recent:[], style:'데이터 수집 중'} }
+function fanTagFor(fighter){
+  const verified=FAN_TAGS.tags?.[fighter?.id];
+  if(verified && verified.status==='verified' && verified.text){
+    return {...verified,isFallback:false};
+  }
+  return {...FAN_TAGS.fallback,isFallback:true};
+}
+function fanTagHtml(fighter){
+  const tag=fanTagFor(fighter);
+  const tone=/^(royal|warning|lottery|odd|quiet)$/.test(tag.tone||'') ? tag.tone : 'quiet';
+  const sourceCount=Array.isArray(tag.sources) ? tag.sources.filter(source=>source?.url).length : 0;
+  const title=tag.isFallback
+    ? '반복 사용되는 국내 팬 표현을 더 찾는 중'
+    : `팬 커뮤니티 표현 · 근거 ${sourceCount}개 · ${tag.reviewed_at||'최근'} 검수`;
+  return `<span class="fan-tag ${tone}" title="${esc(title)}" aria-label="${esc(title)}">${esc(tag.text)}</span>`;
+}
 function getEvent(id){ return EVENTS.find(e=>e.id===id) }
 function nextEvent(){
   return upcomingEvents()[0];
@@ -1725,7 +1764,10 @@ function viewRankings(){
         <a class="champion-profile" href="#fighter/${g.champ}">
           <div class="champion-photo">${avatarBox(champ,112)}</div>
           <div>
-            <div class="champion-name">${esc(champ.name)}</div>
+            <div class="fighter-name-line">
+              <div class="champion-name">${esc(champ.name)}</div>
+              ${fanTagHtml(champ)}
+            </div>
             ${champ.en&&champ.en!==champ.name?`<div class="champion-en">${esc(champ.en)}</div>`:''}
             <div class="champion-data">
               <div><span>국가</span><strong class="country-value">${countryValueHtml(champ.country)}</strong></div>
@@ -1750,7 +1792,10 @@ function viewRankings(){
             <div class="rank-num"><small>#</small>${idx+1}</div>
             <div class="rank-photo">${avatarBox(f,72)}</div>
             <div class="rank-athlete">
-              <div class="nm">${esc(f.name)}</div>
+              <div class="fighter-name-line">
+                <div class="nm">${esc(f.name)}</div>
+                ${fanTagHtml(f)}
+              </div>
               ${f.en&&f.en!==f.name?`<div class="en">${esc(f.en)}</div>`:''}
             </div>
             <div class="rank-country"><span>국가</span><b class="country-value">${countryValueHtml(f.country)}</b></div>
@@ -1889,6 +1934,7 @@ function viewFighter(id){
     <div>
       <h1>${esc(f.name)}</h1>
       ${f.en && f.en!==f.name ? `<div class="nick">${esc(f.en)}${f.nick?` · "${esc(f.nick)}"`:''}</div>` : (f.nick?`<div class="nick">"${esc(f.nick)}"</div>`:'')}
+      ${fanTagHtml(f)}
       <div class="rec">${esc(f.record||'-')} · ${esc(f.weight||'-')}</div>
       <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
         <span class="pill gold">${esc(f.rank||'랭킹 외')}</span>
@@ -2653,15 +2699,28 @@ async function loadJSON(path){
 
 async function loadRealData(){
   loadErrors=[];
-  const [fightersResult,rankingsResult,championsResult,eventsResult,opinionsResult,insightsResult,translationsResult]=await Promise.allSettled([
+  const [fightersResult,rankingsResult,championsResult,eventsResult,opinionsResult,insightsResult,translationsResult,fanTagsResult]=await Promise.allSettled([
     loadJSON('./data/fighters.json'),
     loadJSON('./data/rankings.json'),
     loadJSON('./data/champions.json'),
     loadJSON('./data/events.json'),
     loadJSON('./data/opinions.json'),
     loadJSON('./data/insights.json'),
-    loadJSON('./data/translations.json')
+    loadJSON('./data/translations.json'),
+    loadJSON('./data/fan_tags.json')
   ]);
+
+  if(fanTagsResult.status==='fulfilled'){
+    const data=fanTagsResult.value;
+    FAN_TAGS={
+      fallback:data.fallback||FAN_TAGS.fallback,
+      tags:data.tags||{},
+      generatedAt:data.generated_at||null
+    };
+    console.log('[fightoclock] fan tags:', Object.keys(FAN_TAGS.tags).length);
+  } else {
+    console.warn('[fightoclock] fan tags load failed; fallback copy is active');
+  }
 
   if(fightersResult.status==='fulfilled'){
     const data=fightersResult.value;

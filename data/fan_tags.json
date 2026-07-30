@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-30T16:41:40+09:00",
+  "source": "국내 UFC 커뮤니티·공식 경기 기록을 함께 확인한 수동 큐레이션",
+  "fallback": {
+    "text": "하루하루 성실히 살자",
+    "tone": "quiet",
+    "context": "반복 사용되는 국내 팬 표현을 아직 확인하지 못한 선수에게만 표시합니다."
+  },
+  "policy": {
+    "publish_rule": "실제 팬 사용례와 밈의 배경이 함께 확인된 표현만 게시",
+    "blocked": [
+      "확인되지 않은 사생활",
+      "인종·국적·성별 비하",
+      "외모·장애 비하",
+      "선수에게 위해를 가하는 표현",
+      "모델이 새로 만든 별명"
+    ],
+    "review_cycle_days": 14,
+    "stable_nickname_review_cycle_days": 60
+  },
+  "tags": {
+    "ciryl-gane": {
+      "text": "드릴과 후두부를 잘 노림",
+      "tone": "warning",
+      "status": "verified",
+      "context": "아스피날전 눈 찌르기와 페레이라전 후두부 공격 논란 뒤 국내 팬들이 반복한 반칙 밈.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13",
+      "sources": [
+        {
+          "label": "UFC 갤러리 · 후두부 수직 엘보 반응",
+          "url": "https://gall.dcinside.com/board/view/?id=ufc&no=1887425&page=1"
+        },
+        {
+          "label": "UFC 갤러리 · 반복 반칙 반응",
+          "url": "https://gall.dcinside.com/board/view/?id=ufc&no=1887357&page=1"
+        },
+        {
+          "label": "MLBPARK · 눈 찌르기 팬 반응",
+          "url": "https://mlbpark.donga.com/mp/b.php?b=bullpen&id=202510260110182476"
+        }
+      ]
+    },
+    "alexander-volkanovski": {
+      "text": "볼황",
+      "tone": "royal",
+      "status": "verified",
+      "context": "볼카노프스키를 높여 부르는 국내 팬덤의 대표 축약 별명.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30",
+      "sources": [
+        {
+          "label": "UFC MMA 갤러리 · 볼황 사용례",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=1315679"
+        },
+        {
+          "label": "UFC MMA 갤러리 · 볼황 고트 사용례",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=1280674"
+        }
+      ]
+    },
+    "conor-mcgregor": {
+      "text": "다리가 불편함",
+      "tone": "warning",
+      "status": "verified",
+      "context": "UFC 264 정강이 골절 뒤 5년 만의 복귀전에서도 무릎 부상으로 경기가 끝난 일을 건조하게 줄인 표현.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13",
+      "sources": [
+        {
+          "label": "UFC · UFC 264 공식 결과",
+          "url": "https://www.ufc.com/event/ufc-264"
+        },
+        {
+          "label": "UFC · 경기 전 피로골절 보도",
+          "url": "https://kr.ufc.com/news/maeggeuligeo-gyeonggi-jeon-pilogoljeol"
+        },
+        {
+          "label": "AP · UFC 329 무릎 부상",
+          "url": "https://apnews.com/article/a7a3446abf143aaac32777d262612bb0"
+        }
+      ]
+    },
+    "max-holloway": {
+      "text": "맥또 당첨자",
+      "tone": "lottery",
+      "status": "verified",
+      "context": "큰 흥행 수익이 따라오는 맥그리거전을 뜻하는 국내 팬 용어 ‘맥또’와 UFC 329 대진을 결합한 표현.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-13",
+      "sources": [
+        {
+          "label": "UFC · UFC 329 공식 대진",
+          "url": "https://www.ufc.com/event/ufc-329"
+        },
+        {
+          "label": "UFC 갤러리 · 맥또 뜻",
+          "url": "https://gall.dcinside.com/board/view/?id=ufc&no=1094316"
+        },
+        {
+          "label": "UFC · 할로웨이 UFC 329 결과",
+          "url": "https://www.ufc.com/athlete/max-holloway"
+        }
+      ]
+    },
+    "jon-jones": {
+      "text": "신존스",
+      "tone": "royal",
+      "status": "verified",
+      "context": "커리어와 경기력을 과장되게 숭배하는 국내 커뮤니티식 별명.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30",
+      "sources": [
+        {
+          "label": "UFC MMA 갤러리 · 신존스 사용례",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=468431"
+        },
+        {
+          "label": "UFC 갤러리 · 신존스 숭배 밈",
+          "url": "https://gall.dcinside.com/board/view/?id=dcbest&no=347125"
+        }
+      ]
+    },
+    "islam-makhachev": {
+      "text": "마황",
+      "tone": "royal",
+      "status": "verified",
+      "context": "마카체프의 ‘마’에 황제를 붙인 국내 팬덤식 별명.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30",
+      "sources": [
+        {
+          "label": "UFC 갤러리 · 라이트급 마황 사용례",
+          "url": "https://gall.dcinside.com/board/view/?id=ufc&no=1303440"
+        },
+        {
+          "label": "UFC MMA 갤러리 · 마황 사용례",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=544078"
+        }
+      ]
+    },
+    "ilia-topuria": {
+      "text": "토황",
+      "tone": "royal",
+      "status": "verified",
+      "context": "토푸리아의 ‘토’에 황제를 붙인 국내 팬덤식 별명.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-09-30",
+      "sources": [
+        {
+          "label": "UFC MMA 갤러리 · 토황 사용례",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=1295565"
+        },
+        {
+          "label": "UFC MMA 갤러리 · 반복 사용례",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=1287031"
+        },
+        {
+          "label": "UFC MMA 갤러리 · 토황 팬 반응",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=ufcmma&no=346506"
+        }
+      ]
+    },
+    "dricus-du-plessis": {
+      "text": "허우적대는데 또 이김",
+      "tone": "odd",
+      "status": "verified",
+      "context": "정석적이지 않아 보이는 움직임과 달리 강자들을 계속 이기는 경기 스타일을 요약한 팬 반응.",
+      "reviewed_at": "2026-07-30",
+      "review_after": "2026-08-30",
+      "sources": [
+        {
+          "label": "MMA 갤러리 · 잭 슬랙 분석 번역",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=mma&no=282047"
+        },
+        {
+          "label": "UFC · 공식 선수 기록",
+          "url": "https://www.ufc.com/athlete/dricus-du-plessis"
+        }
+      ]
+    }
+  },
+  "review_queue": [
+    {
+      "fighter_id": "mackenzie-dern",
+      "name": "맥켄지 던",
+      "division": "여성 스트로급",
+      "rank": "챔피언",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "ian-machado-garry",
+      "name": "이안 마샤두 개리",
+      "division": "웰터급",
+      "rank": "#1",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "manon-fiorot",
+      "name": "마농 피오로",
+      "division": "여성 플라이급",
+      "rank": "#2",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "umar-nurmagomedov",
+      "name": "우마르 누르마고메도프",
+      "division": "밴텀급",
+      "rank": "#3",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "alexa-grasso",
+      "name": "알렉사 그라소",
+      "division": "여성 플라이급",
+      "rank": "#3",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "jan-b-achowicz",
+      "name": "얀 블라호비치",
+      "division": "라이트헤비급",
+      "rank": "#4",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "yan-xiaonan",
+      "name": "얀 시아오난",
+      "division": "여성 스트로급",
+      "rank": "#4",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "gillian-robertson",
+      "name": "질리언 로버트슨",
+      "division": "여성 스트로급",
+      "rank": "#5",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "waldo-cortes-acosta",
+      "name": "왈도 코르테스-아코스타",
+      "division": "헤비급",
+      "rank": "#5",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "anthony-hernandez",
+      "name": "안소니 에르난데스",
+      "division": "미들급",
+      "rank": "#6",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "song-yadong",
+      "name": "송 야둥",
+      "division": "밴텀급",
+      "rank": "#6",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "serghei-spivac",
+      "name": "세르게이 스피박",
+      "division": "헤비급",
+      "rank": "#6",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "curtis-blaydes",
+      "name": "커티스 블레이즈",
+      "division": "헤비급",
+      "rank": "#7",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "mateusz-gamrot",
+      "name": "마테우시 감로트",
+      "division": "라이트급",
+      "rank": "#8",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "amanda-lemos",
+      "name": "아만다 레모스",
+      "division": "여성 스트로급",
+      "rank": "#8",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "reinier-de-ridder",
+      "name": "레이니어 더 리더",
+      "division": "미들급",
+      "rank": "#9",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "brandon-moreno",
+      "name": "브랜든 모레노",
+      "division": "플라이급",
+      "rank": "#9",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "alex-perez",
+      "name": "알렉스 페레즈",
+      "division": "플라이급",
+      "rank": "#10",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "gregory-rodrigues",
+      "name": "그레고리 호드리게스",
+      "division": "미들급",
+      "rank": "#11",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "quillan-salkilld",
+      "name": "퀼런 살킬드",
+      "division": "라이트급",
+      "rank": "#12",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "alexia-thainara",
+      "name": "알렉시아 타이나라",
+      "division": "여성 스트로급",
+      "rank": "#12",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "tim-elliott",
+      "name": "팀 엘리엇",
+      "division": "플라이급",
+      "rank": "#12",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "aleksandar-raki",
+      "name": "알렉산다르 라키치",
+      "division": "라이트헤비급",
+      "rank": "#13",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "denise-gomes",
+      "name": "데니지 고메스",
+      "division": "여성 스트로급",
+      "rank": "#13",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "marcin-tybura",
+      "name": "마르친 티부라",
+      "division": "헤비급",
+      "rank": "#13",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "jj-aldrich",
+      "name": "JJ 알드리치",
+      "division": "여성 플라이급",
+      "rank": "#14",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "uro-medi",
+      "name": "우로시 메디치",
+      "division": "웰터급",
+      "rank": "#14",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "navajo-stirling",
+      "name": "나바호 스털링",
+      "division": "라이트헤비급",
+      "rank": "#15",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "roman-dolidze",
+      "name": "로만 돌리제",
+      "division": "미들급",
+      "rank": "#15",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "daniel-rodriguez",
+      "name": "다니엘 로드리게스",
+      "division": "웰터급",
+      "rank": "#15",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "dgar-ch-irez",
+      "name": "에드가르 차이레스",
+      "division": "플라이급",
+      "rank": "#15",
+      "reason": "다음 경기 전 팬 반응을 먼저 조사합니다."
+    },
+    {
+      "fighter_id": "justin-gaethje",
+      "name": "저스틴 게이치",
+      "division": "라이트급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "carlos-ulberg",
+      "name": "카를로스 울버그",
+      "division": "라이트헤비급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "sean-strickland",
+      "name": "션 스트릭랜드",
+      "division": "미들급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "petr-yan",
+      "name": "페트르 얀",
+      "division": "밴텀급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "kayla-harrison",
+      "name": "케일라 해리슨",
+      "division": "여성 밴텀급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "valentina-shevchenko",
+      "name": "발렌티나 셰브첸코",
+      "division": "여성 플라이급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "joshua-van",
+      "name": "조슈아 반",
+      "division": "플라이급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "tom-aspinall",
+      "name": "톰 아스피날",
+      "division": "헤비급",
+      "rank": "챔피언",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    },
+    {
+      "fighter_id": "magomed-ankalaev",
+      "name": "마고메드 안칼라예프",
+      "division": "라이트헤비급",
+      "rank": "#1",
+      "reason": "챔피언·상위 랭커 우선 조사 대상입니다."
+    }
+  ],
+  "review_stats": {
+    "verified_count": 8,
+    "waiting_count": 170,
+    "queue_limit": 40
+  }
+}

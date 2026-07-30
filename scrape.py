@@ -107,6 +107,7 @@ FIGHTERS_FILE = DATA_DIR / "fighters.json"
 OPINIONS_FILE = DATA_DIR / "opinions.json"
 INSIGHTS_FILE = DATA_DIR / "insights.json"
 TRANSLATIONS_FILE = DATA_DIR / "translations.json"
+FAN_TAGS_FILE = DATA_DIR / "fan_tags.json"
 AVATAR_CACHE_DIR = DATA_DIR / "avatars" / "generated"
 
 EVENT_START_OVERRIDES = {
@@ -2154,6 +2155,116 @@ def fetch_odds(events):
     print(f"  ✓ {matched}경기 배당 매칭")
 
 
+def refresh_fan_tag_review_queue(divisions, fighters, now_iso=None):
+    """팬 밈을 자동 창작하지 않고, 재조사가 필요한 선수 대기열만 매일 갱신한다."""
+    if not FAN_TAGS_FILE.exists():
+        print("WARN fan_tags.json 없음 — 팬 별명 검수 대기열 생략")
+        return
+
+    data = json.loads(FAN_TAGS_FILE.read_text(encoding="utf-8"))
+    tags = data.get("tags", {})
+    fighter_by_id = {fighter.get("id"): fighter for fighter in fighters if fighter.get("id")}
+    candidates = {}
+
+    def add_candidate(entry, division, rank, is_champion=False):
+        if not entry:
+            return
+        fighter_id = entry.get("fighter_id") or slugify(entry.get("name", ""))
+        if not fighter_id:
+            return
+        candidate = candidates.setdefault(
+            fighter_id,
+            {
+                "fighter_id": fighter_id,
+                "name": entry.get("name_ko") or entry.get("name") or fighter_id,
+                "division": division,
+                "rank": "챔피언" if is_champion else f"#{rank}",
+                "is_champion": is_champion,
+                "rank_number": 0 if is_champion else int(rank or 99),
+            },
+        )
+        fighter = fighter_by_id.get(fighter_id, {})
+        candidate["has_next_fight"] = bool(fighter.get("next"))
+
+    for division in divisions:
+        add_candidate(division.get("champion"), division.get("wc", ""), 0, True)
+        for index, entry in enumerate(division.get("ranked", []), start=1):
+            add_candidate(
+                entry,
+                division.get("wc", ""),
+                entry.get("rank") or index,
+                False,
+            )
+
+    queue = []
+    for fighter_id, candidate in candidates.items():
+        tag = tags.get(fighter_id)
+        due = False
+        if tag and tag.get("review_after"):
+            try:
+                due = datetime.fromisoformat(tag["review_after"]).date() <= TODAY
+            except ValueError:
+                due = True
+
+        if tag and tag.get("status") == "verified" and not due:
+            continue
+
+        if due:
+            priority, reason = 0, "재검수 날짜가 지났습니다."
+        elif candidate.get("has_next_fight"):
+            priority, reason = 1, "다음 경기 전 팬 반응을 먼저 조사합니다."
+        elif candidate.get("is_champion") or candidate.get("rank_number", 99) <= 5:
+            priority, reason = 2, "챔피언·상위 랭커 우선 조사 대상입니다."
+        else:
+            priority, reason = 3, "반복 사용되는 국내 팬 표현을 아직 확인하지 못했습니다."
+
+        queue.append(
+            {
+                "fighter_id": fighter_id,
+                "name": candidate["name"],
+                "division": candidate["division"],
+                "rank": candidate["rank"],
+                "reason": reason,
+                "_priority": priority,
+                "_rank_number": candidate.get("rank_number", 99),
+            }
+        )
+
+    queue.sort(
+        key=lambda item: (
+            item["_priority"],
+            item["_rank_number"],
+            item["division"],
+            item["name"],
+        )
+    )
+    queue_limit = int(data.get("review_stats", {}).get("queue_limit", 40))
+    published_queue = []
+    for item in queue[:queue_limit]:
+        item.pop("_priority", None)
+        item.pop("_rank_number", None)
+        published_queue.append(item)
+
+    data["generated_at"] = now_iso or datetime.now(KST).isoformat(timespec="seconds")
+    data["review_queue"] = published_queue
+    data["review_stats"] = {
+        "verified_count": sum(
+            1 for tag in tags.values() if tag.get("status") == "verified"
+        ),
+        "waiting_count": len(queue),
+        "queue_limit": queue_limit,
+    }
+    FAN_TAGS_FILE.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(
+        "=== Saved:",
+        FAN_TAGS_FILE.name,
+        f"(검증 {data['review_stats']['verified_count']} / 재조사 {len(queue)}) ===",
+    )
+
+
 def main():
     print("=== fightoclock 데이터 수집 시작:", datetime.now(KST).isoformat(timespec="seconds"), "===")
     DATA_DIR.mkdir(exist_ok=True)
@@ -2290,6 +2401,11 @@ def main():
         }
         FIGHTERS_FILE.write_text(json.dumps(fighters_out, ensure_ascii=False, indent=2), encoding="utf-8")
         print("=== Saved:", FIGHTERS_FILE.name, "(" + str(len(fighters)) + " fighters) ===")
+
+    # 팬 별명은 자동으로 쓰지 않는다. 대신 매일 다음 경기·상위 랭커 순으로
+    # 리서치 대기열을 다시 계산해 오래된 밈이 방치되지 않게 한다.
+    if divisions and fighters:
+        refresh_fan_tag_review_queue(divisions, fighters, now_iso)
 
     # ── 국가별 커뮤니티 여론 (Reddit, 열쇠 있을 때만) ──
     opinions = None
@@ -2629,6 +2745,17 @@ def refresh_champion_history():
     print(f"✓ UFC 챔피언 계보 {history['division_count']}체급 저장")
 
 
+def refresh_fan_tags_from_files():
+    """전체 수집 없이 현재 랭킹 기준 팬 별명 검수 대기열만 다시 만든다."""
+    rankings = json.loads(RANKINGS_FILE.read_text(encoding="utf-8"))
+    fighters = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    refresh_fan_tag_review_queue(
+        rankings.get("divisions", []),
+        fighters.get("fighters", []),
+        datetime.now(KST).isoformat(timespec="seconds"),
+    )
+
+
 if __name__ == "__main__":
     if "--champions-only" in sys.argv:
         refresh_champion_history()
@@ -2645,6 +2772,8 @@ if __name__ == "__main__":
         refresh_korean_roster()
     elif "--ranked-profiles" in sys.argv:
         refresh_ranked_profiles()
+    elif "--fan-tags-review" in sys.argv:
+        refresh_fan_tags_from_files()
     elif "--photos-only" in sys.argv:
         refresh_official_photos()
     else:

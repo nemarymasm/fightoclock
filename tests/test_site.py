@@ -136,6 +136,33 @@ class DataContractTests(unittest.TestCase):
         self.assertFalse(non_official, f"Rankers without current UFC photos: {non_official}")
         self.assertIn("weekly_ranked_photo_refresh", (ROOT / "scrape.py").read_text(encoding="utf-8"))
 
+    def test_fan_tags_are_researched_curated_and_reviewable(self):
+        data = load_json("fan_tags.json")
+        self.assertEqual(data["fallback"]["text"], "하루하루 성실히 살자")
+        tags = data.get("tags", {})
+        expected = {
+            "ciryl-gane": "드릴과 후두부를 잘 노림",
+            "alexander-volkanovski": "볼황",
+            "conor-mcgregor": "다리가 불편함",
+            "max-holloway": "맥또 당첨자",
+            "jon-jones": "신존스",
+            "islam-makhachev": "마황",
+            "ilia-topuria": "토황",
+            "dricus-du-plessis": "허우적대는데 또 이김",
+        }
+        self.assertEqual({fighter_id: tags.get(fighter_id, {}).get("text") for fighter_id in expected}, expected)
+        for fighter_id, tag in tags.items():
+            self.assertEqual(tag.get("status"), "verified", fighter_id)
+            self.assertTrue(tag.get("context"), fighter_id)
+            self.assertRegex(tag.get("reviewed_at", ""), r"^\d{4}-\d{2}-\d{2}$")
+            self.assertRegex(tag.get("review_after", ""), r"^\d{4}-\d{2}-\d{2}$")
+            sources = [source for source in tag.get("sources", []) if source.get("url")]
+            self.assertGreaterEqual(len(sources), 2, fighter_id)
+            self.assertTrue(all(source["url"].startswith("https://") for source in sources))
+        stats = data.get("review_stats", {})
+        self.assertGreaterEqual(stats.get("waiting_count", 0), 100)
+        self.assertLessEqual(len(data.get("review_queue", [])), stats.get("queue_limit", 40))
+
     def test_official_rankings_link_to_complete_fighter_profiles(self):
         rankings = load_json("rankings.json")
         fighters = {fighter["id"]: fighter for fighter in load_json("fighters.json")["fighters"]}
@@ -362,6 +389,26 @@ class FrontendContractTests(unittest.TestCase):
             '{"weight": "Heavyweight", "fighter_a": "Jovan Leka", "fighter_b": "Max Gimenis"}',
             scraper,
         )
+
+    def test_fan_tags_render_beside_fighters_and_refresh_a_review_queue(self):
+        scraper = (ROOT / "scrape.py").read_text(encoding="utf-8")
+        workflow = (ROOT / ".github" / "workflows" / "scrape.yml").read_text(encoding="utf-8")
+        for required in (
+            "let FAN_TAGS",
+            "function fanTagFor",
+            "function fanTagHtml",
+            "data/fan_tags.json",
+            'class="fan-tag ${tone}"',
+            "${fanTagHtml(champ)}",
+            "${fanTagHtml(f)}",
+            ".fan-tag.warning",
+            ".fan-tag.quiet",
+        ):
+            self.assertIn(required, self.html)
+        self.assertIn("def refresh_fan_tag_review_queue", scraper)
+        self.assertIn("refresh_fan_tag_review_queue(divisions, fighters, now_iso)", scraper)
+        self.assertIn("--fan-tags-review", scraper)
+        self.assertIn("data/fan_tags.json", workflow)
 
     def test_avatar_fallback_is_not_a_stick_figure(self):
         self.assertIn('class="avatar-fallback"', self.html)
