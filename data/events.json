@@ -135,7 +135,7 @@
           "weight_ko": "여성 밴텀급"
         },
         {
-          "weight": "Light Heavyweight",
+          "weight": "Bantamweight",
           "fighter_a": "Mark Vologdin",
           "fighter_b": "Josias Musasa",
           "winner": null,
@@ -144,10 +144,10 @@
           "time": "",
           "fighter_a_ko": "마크 볼로그딘",
           "fighter_b_ko": "조시아스 무사사",
-          "weight_ko": "라이트헤비급"
+          "weight_ko": "밴텀급"
         },
         {
-          "weight": "Middleweight",
+          "weight": "Heavyweight",
           "fighter_a": "Jovan Leka",
           "fighter_b": "Max Gimenis",
           "winner": null,
@@ -156,7 +156,7 @@
           "time": "",
           "fighter_a_ko": "요반 레카",
           "fighter_b_ko": "맥스 지메니스",
-          "weight_ko": "미들급"
+          "weight_ko": "헤비급"
         }
       ],
       "name_ko": "UFC Fight Night: 메디치 대 로드리게스",

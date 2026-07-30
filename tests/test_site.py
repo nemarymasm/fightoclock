@@ -215,6 +215,30 @@ class DataContractTests(unittest.TestCase):
         self.assertGreaterEqual(len(with_photo) / len(upcoming), 0.95)
         self.assertGreaterEqual(len(official), 90)
 
+    def test_this_week_roster_has_korean_profiles_and_near_complete_photos(self):
+        event = load_json("events.json")["events"][0]
+        fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
+        names = {
+            name
+            for fight in event.get("main_card", []) + event.get("prelims", [])
+            for name in (fight.get("fighter_a"), fight.get("fighter_b"))
+        }
+        self.assertTrue(all(name in fighters for name in names))
+        self.assertTrue(all(re.search(r"[가-힣]", fighters[name].get("name_ko", "")) for name in names))
+        with_photo = [
+            name for name in names
+            if fighters[name].get("avatar_url") or fighters[name].get("avatar")
+        ]
+        self.assertGreaterEqual(len(with_photo) / len(names), 0.95)
+        self.assertEqual(
+            next(f for f in event["prelims"] if f["fighter_a"] == "Mark Vologdin")["weight_ko"],
+            "밴텀급",
+        )
+        self.assertEqual(
+            next(f for f in event["prelims"] if f["fighter_a"] == "Jovan Leka")["weight_ko"],
+            "헤비급",
+        )
+
     def test_weekly_brief_separates_fan_reactions_and_time_estimate(self):
         insight = load_json("insights.json")["events"]["ufc-fight-night-medi-vs-rodriguez"]
         self.assertTrue(insight["schedule"].get("main_event_window"))
@@ -263,6 +287,22 @@ class FrontendContractTests(unittest.TestCase):
     def test_supporting_public_files_exist(self):
         for name in ("robots.txt", "sitemap.xml", "site.webmanifest", "favicon.svg", "og-image.svg", "vercel.json"):
             self.assertTrue((ROOT / name).is_file(), name)
+
+    def test_weekly_intelligence_is_part_of_daily_refresh(self):
+        scraper = (ROOT / "scrape.py").read_text(encoding="utf-8")
+        workflow = (ROOT / ".github" / "workflows" / "scrape.yml").read_text(encoding="utf-8")
+        self.assertIn("INSIGHTS_FILE = DATA_DIR / \"insights.json\"", scraper)
+        self.assertIn("def refresh_insights(events, opinions, now_iso)", scraper)
+        self.assertIn("refresh_insights(events, opinions, now_iso)", scraper)
+        self.assertIn("data/insights.json", workflow)
+        self.assertIn(
+            '{"weight": "Bantamweight", "fighter_a": "Mark Vologdin", "fighter_b": "Josias Musasa"}',
+            scraper,
+        )
+        self.assertIn(
+            '{"weight": "Heavyweight", "fighter_a": "Jovan Leka", "fighter_b": "Max Gimenis"}',
+            scraper,
+        )
 
     def test_avatar_fallback_is_not_a_stick_figure(self):
         self.assertIn('class="avatar-fallback"', self.html)
@@ -371,6 +411,36 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("fighterHistoryList(ufcHistory)", fighter_view)
         self.assertIn('class="pre-ufc-history"', fighter_view)
         self.assertIn("resultMethodKo(r.way||'')", self.html)
+
+    def test_event_detail_reuses_time_odds_and_editorial_intelligence(self):
+        event_view = self.html.split("function viewEvent(id)", 1)[1].split("/* ---------- 라우터", 1)[0]
+        for required in (
+            "homeCardPreview(e,{detail:true})",
+            "eventIntelligence(e)",
+            "이 경기, 이렇게 보면 됩니다",
+            "팬 투표",
+            "UFC 일정",
+            "배당 ${market.as_of",
+        ):
+            self.assertIn(required, self.html if required != "homeCardPreview(e,{detail:true})" else event_view)
+
+    def test_fighter_history_localizes_dates_opponents_and_common_methods(self):
+        translations = load_json("translations.json")["fighters"]
+        for name in (
+            "Tai Tuivasa",
+            "Jairzinho Rozenstruik",
+            "Alistair Overeem",
+            "Fabrício Werdum",
+        ):
+            self.assertRegex(translations.get(name, ""), r"[가-힣]")
+        for required in (
+            "function formatHistoryDateKo(value)",
+            "function localizeFighterName(value)",
+            "function localizeHistoryEvent(value)",
+            "'Submission (Ezekiel choke)':'에제키엘 초크 서브미션'",
+            "'TKO (body kick and punches)':'TKO(보디킥·펀치)'",
+        ):
+            self.assertIn(required, self.html)
 
     def test_rankings_use_large_faces_and_labeled_columns(self):
         ranking_view = self.html.split("function viewRankings", 1)[1].split("function fighterMatches", 1)[0]

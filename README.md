@@ -9,6 +9,7 @@
 - 선수 사진: UFC 공식 프로필을 WebP로 최적화해 사이트 내부에서 제공, 없으면 Wikimedia Commons 연결
 - 선수명: 한글명을 기본 표기하고 원문명은 보조 표기
 - 주간 브리핑: 공식 시작 시각, 시장 암시확률, 공개 팬 투표, 관전 포인트와 출처 표시
+- 브리핑 연속성: 다음 대회가 바뀌면 `insights.json`의 시각·메인이벤트 예상 범위·배당·커뮤니티 뼈대를 매일 자동 갱신
 
 ## 로컬 실행
 
@@ -56,8 +57,9 @@ Wikipedia 이벤트 목록은 날짜만 제공하고 시작 시각·타임존은
 
 1. GitHub Actions의 `데이터 자동수집` 실행이 성공했는지 확인합니다.
 2. `data/events.json`의 `generated_at`이 72시간 이내인지 확인합니다.
-3. 루트 URL과 `#schedule`, `#rankings`, `#fighters`를 모바일·데스크톱에서 확인합니다.
-4. 테스트가 실패하면 데이터 커밋과 Vercel 배포를 중단합니다.
+3. `data/insights.json`의 `generated_at`과 다음 대회 ID가 `events.json`과 일치하는지 확인합니다.
+4. 루트 URL과 `#schedule`, `#rankings`, `#fighters`를 모바일·데스크톱에서 확인합니다.
+5. 테스트가 실패하면 데이터 커밋과 Vercel 배포를 중단합니다.
 
 ## 구조
 

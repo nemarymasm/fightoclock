@@ -66,6 +66,7 @@ EVENTS_FILE = DATA_DIR / "events.json"
 RANKINGS_FILE = DATA_DIR / "rankings.json"
 FIGHTERS_FILE = DATA_DIR / "fighters.json"
 OPINIONS_FILE = DATA_DIR / "opinions.json"
+INSIGHTS_FILE = DATA_DIR / "insights.json"
 TRANSLATIONS_FILE = DATA_DIR / "translations.json"
 AVATAR_CACHE_DIR = DATA_DIR / "avatars" / "generated"
 
@@ -79,8 +80,8 @@ FIGHTER_RANK_OVERRIDES = {
 }
 EVENT_CARD_ADDITIONS = {
     "UFC Fight Night: Medić vs. Rodriguez": [
-        {"weight": "Light Heavyweight", "fighter_a": "Mark Vologdin", "fighter_b": "Josias Musasa"},
-        {"weight": "Middleweight", "fighter_a": "Jovan Leka", "fighter_b": "Max Gimenis"},
+        {"weight": "Bantamweight", "fighter_a": "Mark Vologdin", "fighter_b": "Josias Musasa"},
+        {"weight": "Heavyweight", "fighter_a": "Jovan Leka", "fighter_b": "Max Gimenis"},
     ],
 }
 
@@ -1714,6 +1715,111 @@ def fetch_opinions(client, events):
     return result
 
 
+def _kst_clock_label(value):
+    """UTC ISO 시각을 한국 팬이 읽는 날짜·오전/오후 시각으로 바꾼다."""
+    if not value:
+        return ""
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(KST)
+    except (TypeError, ValueError):
+        return ""
+    hour = dt.hour % 12 or 12
+    minute = f" {dt.minute}분" if dt.minute else ""
+    ampm = "오전" if dt.hour < 12 else "오후"
+    return f"한국시간 {dt.month}월 {dt.day}일({WEEKDAY_KO[dt.weekday()]}) {ampm} {hour}시{minute}"
+
+
+def _clock_only(dt):
+    hour = dt.hour % 12 or 12
+    ampm = "오전" if dt.hour < 12 else "오후"
+    return f"{ampm} {hour}:{dt.minute:02d}"
+
+
+def refresh_insights(events, opinions, now_iso):
+    """주간 브리핑이 다음 대회로 넘어가도 빈 화면이 되지 않게 기본 인사이트를 만든다.
+
+    사람이 편집한 문구·팬 투표·전체 메인카드 배당은 그대로 보존하고,
+    공식 시각·대진 수·The Odds API 메인이벤트 값만 매일 새로 맞춘다.
+    """
+    try:
+        current = json.loads(INSIGHTS_FILE.read_text(encoding="utf-8")) if INSIGHTS_FILE.exists() else {}
+    except (OSError, json.JSONDecodeError):
+        current = {}
+    previous = current.get("events", {})
+    refreshed = {}
+    for event in events:
+        event_id = slugify(event.get("name", ""))
+        entry = dict(previous.get(event_id, {}))
+        fights = event.get("main_card", []) + event.get("prelims", [])
+        schedule = dict(entry.get("schedule", {}))
+        start_value = event.get("start_time_utc")
+        start = None
+        if start_value:
+            try:
+                start = datetime.fromisoformat(start_value.replace("Z", "+00:00")).astimezone(KST)
+            except (TypeError, ValueError):
+                start = None
+        schedule.update({
+            "label": _kst_clock_label(start_value) or "한국시간 확인 중",
+            "main_card": _kst_clock_label(start_value) or "시작 시각 확인 중",
+            "bout_count": len(fights),
+            "source": event.get("time_source") or event.get("wiki_url") or "",
+        })
+        if start and event.get("main_card"):
+            target = start + timedelta(minutes=10 + max(0, len(event["main_card"]) - 1) * 30 + 10)
+            schedule.setdefault("main_event_estimate", _clock_only(target))
+            schedule.setdefault(
+                "main_event_window",
+                f"{_clock_only(target - timedelta(minutes=10))}–{_clock_only(target + timedelta(minutes=20)).split(' ', 1)[1]}",
+            )
+            schedule.setdefault("estimate_note", "앞 경기에서 KO가 많이 나오면 더 빨라집니다.")
+        entry["schedule"] = schedule
+
+        prediction = event.get("prediction") or {}
+        if prediction:
+            market = dict(entry.get("market", {}))
+            market.update({
+                "fighter_a_pct": prediction.get("aPct"),
+                "fighter_b_pct": prediction.get("bPct"),
+                "label": prediction.get("note", "공개 배당을 승률로 환산한 값"),
+                "as_of": prediction.get("as_of", now_iso),
+                "source": prediction.get("source_url", ""),
+            })
+            if prediction.get("aOdds") and prediction.get("bOdds"):
+                market["fighter_a_odds"] = prediction["aOdds"]
+                market["fighter_b_odds"] = prediction["bOdds"]
+            entry["market"] = market
+
+        opinion = (opinions or {}).get(event_id)
+        if opinion and not entry.get("fan_reactions"):
+            quotes = [
+                quote
+                for community in opinion.get("communities", [])
+                for quote in community.get("quotes", [])
+            ]
+            entry["fan_reactions"] = [
+                {"label": quote.get("text_ko", ""), "text": "팬 댓글"}
+                for quote in quotes[:3] if quote.get("text_ko")
+            ]
+            entry["fan_summary"] = "해외 MMA 커뮤니티에서 많이 공감한 댓글을 정리했습니다."
+
+        main = (event.get("main_card") or [{}])[0]
+        a_name = tr_fighter(main.get("fighter_a", ""))
+        b_name = tr_fighter(main.get("fighter_b", ""))
+        entry.setdefault("viewing_hook", f"{a_name} 대 {b_name}".strip())
+        entry.setdefault("thesis", entry["viewing_hook"])
+        refreshed[event_id] = entry
+
+    output = {
+        "schema_version": 1,
+        "generated_at": now_iso,
+        "source": "UFC 공식 일정 · The Odds API · 공개 MMA 커뮤니티",
+        "events": refreshed,
+    }
+    INSIGHTS_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"=== Saved: {INSIGHTS_FILE.name} ({len(refreshed)} events) ===")
+
+
 def eventCodeFromName_py(name):
     m = re.match(r"^(UFC[^:]*?)(?::|$)", name or "", re.IGNORECASE)
     return m.group(1).strip() if m else "UFC"
@@ -1818,6 +1924,18 @@ def fetch_odds(events):
             ev["prediction"] = {
                 "aId": slugify(fa), "bId": slugify(fb),
                 "aPct": aPct, "bPct": bPct,
+                "aOdds": (
+                    f"+{round(((1 / avg[na]) - 1) * 100)}"
+                    if (1 / avg[na]) >= 2
+                    else str(round(-100 / ((1 / avg[na]) - 1)))
+                ),
+                "bOdds": (
+                    f"+{round(((1 / avg[nb]) - 1) * 100)}"
+                    if (1 / avg[nb]) >= 2
+                    else str(round(-100 / ((1 / avg[nb]) - 1)))
+                ),
+                "as_of": datetime.now(KST).isoformat(timespec="minutes"),
+                "source_url": "https://the-odds-api.com/",
                 "note": f"해외 북메이커 {nbk}곳의 배당을 승률로 환산한 값입니다. 시장(=베터들)이 보는 우세를 나타내는 여론 지표예요.",
                 "sources": ["The Odds API", f"북메이커 {nbk}곳 평균"],
             }
@@ -1947,6 +2065,7 @@ def main():
         print("=== Saved:", FIGHTERS_FILE.name, "(" + str(len(fighters)) + " fighters) ===")
 
     # ── 국가별 커뮤니티 여론 (Reddit, 열쇠 있을 때만) ──
+    opinions = None
     try:
         opinions = fetch_opinions(client, events)
         if opinions:
@@ -1961,6 +2080,9 @@ def main():
             print("=== Saved:", OPINIONS_FILE.name, "(" + str(len(opinions)) + " events) ===")
     except Exception as e:
         print("WARN opinions 수집 실패:", e)
+
+    # 이번 주 이벤트가 바뀌어도 시간·배당·커뮤니티 브리핑 뼈대가 자동으로 따라간다.
+    refresh_insights(events, opinions, now_iso)
 
 
 def refresh_official_photos():

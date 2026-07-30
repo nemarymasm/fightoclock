@@ -170,22 +170,24 @@
   /* ---------- 이벤트 상세 ---------- */
   .ev-banner{background:linear-gradient(180deg,#1a0808,#0c0c0c);border:1px solid var(--line);border-radius:18px;padding:16px}
   .ev-banner .badge{display:inline-block;background:var(--red);color:#fff;padding:5px 11px;border-radius:999px;font-weight:850;font-size:13px;letter-spacing:.04em}
-  .ev-banner h1,.ev-banner h2{margin:8px 0 4px;font-size:22px;font-weight:900;letter-spacing:-.02em}
-  .ev-banner .when{color:#ddd;font-size:15px}
+  .ev-banner h1,.ev-banner h2{margin:8px 0 4px;font-size:24px;font-weight:900;letter-spacing:-.02em}
+  .ev-banner .when{color:#ddd;font-size:17px;font-weight:750}
   .ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+  .ev-banner .meta-cell .k{font-size:13px;font-weight:750}
+  .ev-banner .meta-cell .v{font-size:15px;line-height:1.45}
 
-  .fight-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:10px}
-  .fight-card .head{display:flex;justify-content:space-between;font-size:13px;color:#c1c1c4;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+  .fight-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:10px}
+  .fight-card .head{display:flex;justify-content:space-between;font-size:14px;color:#c1c1c4;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}
   .fight-card .head b{color:var(--gold-2);font-weight:700}
   .fight-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px}
   .f-side{display:flex;align-items:center;gap:10px;min-width:0}
   .f-side.right{flex-direction:row-reverse;text-align:right}
   .f-side .av{flex:0 0 auto}
   .f-side .nm-wrap{min-width:0}
-  .f-side .nm{font-weight:800;font-size:15px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .f-side .nm{font-weight:800;font-size:16px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .f-side .sub{font-size:13px;color:#c1c1c4;margin-top:3px}
   .f-side .rank{font-size:10px;color:var(--gold-2);font-weight:700;letter-spacing:.04em}
-  .vs-tiny{font-size:14px;color:#d2d2d4;font-weight:900}
+  .vs-tiny{font-size:15px;color:#f1f1f2;font-weight:950}
   .result-row{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:14px;color:#ddd}
   .result-row.win{color:#7ee2a4}
   .winbadge{display:inline-block;font-size:10px;font-weight:800;padding:2px 6px;border-radius:6px;background:var(--green);color:#04210e;margin-right:6px}
@@ -576,6 +578,17 @@
   .main-eta span{display:block;color:#f1f1f2;font-size:15px;font-weight:850}
   .main-eta b{display:block;margin-top:6px;font-size:25px;letter-spacing:-.035em;font-variant-numeric:tabular-nums}
   .eta-note{margin-top:9px;color:#f1bd61;font-size:14px;font-weight:750;line-height:1.5}
+  .hero-signals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;border:0}
+  .hero-signal{min-width:0;padding:12px;border:1px solid var(--line);border-radius:12px;background:#111113}
+  .hero-signal span{display:block;color:#c7c7ca;font-size:13px;font-weight:800}
+  .hero-signal b{display:block;margin-top:5px;font-size:16px;line-height:1.25;letter-spacing:-.025em}
+  .hero-signal.fan b{color:#ff8f93}
+  .hero-signal.market b{color:#f1bd61}
+  .hero-signal.model b{color:#a9c1f4}
+  .brief-intel>.signal-grid{margin-top:12px;border:0}
+  .brief-intel>.signal-grid .hero-signals{margin-top:0}
+  .insight-trust{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px;color:#ceced1;font-size:14px;font-weight:700}
+  .insight-trust a{display:inline-flex;align-items:center;min-height:34px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#111113}
 
   .crowd-panel{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line-2)}
   .fan-pick,.fan-talk{min-width:0;padding:22px 4px}
@@ -644,6 +657,19 @@
   .preview-fight:first-child .preview-fighter-copy b{font-size:20px}
   .preview-fight:first-child .preview-order{font-size:19px}
   .preview-outcome{grid-column:2;margin-top:-3px;padding:9px 0 0;border-top:1px solid rgba(55,200,113,.22);color:#7ee2a4;font-size:14px;font-weight:850;text-align:center}
+  .event-card-preview{margin:18px 0 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+  .event-card-preview .card-preview-head{margin-bottom:12px}
+  .event-intelligence{margin-top:18px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+  .event-intelligence-head{padding:22px;border-bottom:1px solid var(--line)}
+  .event-intelligence-kicker{color:#ff8589;font-size:14px;font-weight:900}
+  .event-intelligence h2{max-width:24em;margin:8px 0 0;font-size:25px;line-height:1.35;letter-spacing:-.04em}
+  .event-intelligence .hero-signals{margin:18px 0 0}
+  .event-watch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+  .event-watch-item{padding:18px 20px;border-right:1px solid var(--line)}
+  .event-watch-item:last-child{border-right:0}
+  .event-watch-item span{display:block;color:#ff8589;font-size:13px;font-weight:950}
+  .event-watch-item b{display:block;margin-top:7px;font-size:17px}
+  .event-watch-item p{margin:6px 0 0;color:#c7c7ca;font-size:15px;line-height:1.5}
 
   .upcoming-section{margin-top:64px;padding:28px;border:1px solid #303034;border-top:4px solid var(--red);border-radius:20px;background:#151517}
   .upcoming-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
@@ -669,6 +695,7 @@
     .fan-pick,.fan-talk{padding:25px 28px}
     .fan-talk{border-top:0;border-left:1px solid var(--line)}
     .signal-grid{grid-template-columns:1fr}
+    .hero-signals{grid-template-columns:repeat(3,minmax(0,1fr))}
     .signal-card{padding:18px 22px;border-bottom:0}
     .watch-grid{grid-template-columns:repeat(3,1fr);gap:20px}
     .watch-item{border-top:0}
@@ -721,6 +748,8 @@
     .result-actions{padding:3px 14px 15px}
     .history-heading{align-items:flex-start;flex-direction:column;gap:5px}
     .history-heading h2{font-size:20px}
+    .recent-item{grid-template-columns:auto minmax(0,1fr);align-items:start}
+    .recent-item .when{grid-column:2;text-align:left;margin-top:4px;color:#d0d0d3}
     .week-head{gap:12px;padding:18px 4px}
     .week-time-line{display:block}
     .week-time{font-size:27px;white-space:normal}
@@ -736,7 +765,13 @@
     .brief-intel{padding-top:15px;padding-bottom:16px}
     .brief-thesis{font-size:18px}
     .main-eta{margin-top:14px;padding-top:12px}
+    .hero-signals{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+    .hero-signal{padding:10px 8px}
+    .hero-signal span{font-size:12px}
+    .hero-signal b{font-size:15px}
+    .insight-trust{font-size:13px}
     .fan-pick,.fan-talk,.watch-panel{padding-top:18px}
+    .crowd-voice:nth-child(n+3){display:none}
     .brief-actions{display:block}
     .brief-actions .btn{max-width:none}
     .brief-actions .btn.ghost{display:none}
@@ -762,6 +797,12 @@
     .preview-fight:first-child .preview-order{font-size:15px}
     .preview-vs{width:40px;height:40px;font-size:13px;box-shadow:0 0 0 3px rgba(255,255,255,.025)}
     .preview-outcome{font-size:14px}
+    .event-card-preview{padding:18px 4px;border-left:0;border-right:0;border-radius:0}
+    .event-intelligence{border-left:0;border-right:0;border-radius:0}
+    .event-intelligence-head{padding:19px 4px}
+    .event-intelligence h2{font-size:22px}
+    .event-watch{grid-template-columns:1fr}
+    .event-watch-item{padding:15px 4px;border-right:0;border-top:1px solid var(--line)}
     .upcoming-section{margin-top:48px;padding:22px 14px;border-radius:16px}
     .upcoming-head{align-items:flex-start;margin-bottom:16px}
     .upcoming-title{font-size:23px}
@@ -965,7 +1006,7 @@ function avatarBox(f, size){
   return `<div class="avatar-box ${kindClass}" style="width:${size}px;height:${size}px;border-radius:${size>=80?16:12}px">${inner}</div>`;
 }
 function fighterAvatar(f, side){
-  return avatarBox(f, 44);
+  return avatarBox(f, 56);
 }
 function fightRow(fight, opts={}){
   const a = getFighter(fight.a), b = getFighter(fight.b);
@@ -1050,10 +1091,10 @@ function homeSortSection(){
       <span class="upcoming-sort">${seg('time','시간순')}<span class="upcoming-sort-separator">⇄</span>${seg('pop','인기순')}</span>
     </header>
     <div class="bigcards">
-    ${rest.slice(0,6).map((ev,i)=>{
+    ${rest.slice(0,3).map((ev,i)=>{
       const m = ev.mainCard?.[0];
       const fa = m?getFighter(m.a):null, fb = m?getFighter(m.b):null;
-      const big = i<2;
+      const big = i===0;
       if(!m) return '';
       return `
       <a href="#event/${ev.id}" class="mcard ${big?'big':''}">
@@ -1067,6 +1108,7 @@ function homeSortSection(){
       </a>`;
     }).join('')}
     </div>
+    <a class="btn ghost" style="margin-top:16px" href="#schedule">전체 일정 보기</a>
   </section>`;
 }
 
@@ -1109,9 +1151,14 @@ function weekBrief(e, main, a, b){
   const models = intel.models || {};
   const points = intel.watch_points || newbieGuide(e)?.points?.slice(0,3).map((text,i)=>({title:`관전 포인트 ${i+1}`,text:text.replace(/<[^>]+>/g,'')})) || [];
   const reactions = intel.fan_reactions || [];
-  const fanAPct = Number(fans.fighter_a_pct ?? 50);
-  const fanBPct = Number(fans.fighter_b_pct ?? (100-fanAPct));
+  const hasFanPct = Number.isFinite(Number(fans.fighter_a_pct));
+  const fanAPct = hasFanPct ? Number(fans.fighter_a_pct) : null;
+  const fanBPct = hasFanPct ? Number(fans.fighter_b_pct ?? (100-fanAPct)) : null;
   const mainEstimate = schedule.main_event_window || schedule.main_event_estimate || estimatedBoutTime(e,0,(e.mainCard||[]).length);
+  const marketOdds = market.fighter_a_odds && market.fighter_b_odds
+    ? `${market.fighter_a_odds} / ${market.fighter_b_odds}` : '확인 중';
+  const modelRange = models.fighter_a_low&&models.fighter_a_high
+    ? `${models.fighter_a_low}–${models.fighter_a_high}% ${a.name}` : '확인 중';
   const sourceLink = (url,label)=>url?`<a href="${esc(safeExternalUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:esc(label);
   const opinionQuotes = (OPINIONS[e.id]?.communities||[]).flatMap(c=>
     (c.quotes||[]).map(q=>({
@@ -1174,6 +1221,13 @@ function weekBrief(e, main, a, b){
           <b>${esc(mainEstimate)}</b>
           <div class="eta-note">${esc(schedule.estimate_note||'앞 경기 길이에 따라 달라집니다.')}</div>
         </button>
+        <section class="signal-grid" aria-label="팬, 배당, 분석 요약">
+          <div class="hero-signals">
+            <div class="hero-signal fan"><span>팬 예상</span><b>${hasFanPct?`${fanAPct}% ${esc(a.name)}`:'반응 수집 중'}</b></div>
+            <div class="hero-signal market"><span>현재 배당</span><b>${esc(marketOdds)}</b></div>
+            <div class="hero-signal model"><span>분석 모델</span><b>${esc(modelRange)}</b></div>
+          </div>
+        </section>
       </aside>
     </div>
     ${homeCardPreview(e)}
@@ -1183,12 +1237,12 @@ function weekBrief(e, main, a, b){
           <h2 id="crowdTitle">팬 픽</h2>
           ${fans.source?sourceLink(fans.source,`${fans.label||'Sherdog'} · ${Number(fans.sample)||0}명`):''}
         </div>
-        <div class="crowd-poll">
+        ${hasFanPct?`<div class="crowd-poll">
           <div class="crowd-poll-head"><span>${esc(a.name)} ${fanAPct}%</span><span>${esc(b.name)} ${fanBPct}%</span></div>
           <div class="signal-bar" aria-label="팬 투표 ${esc(a.name)} ${fanAPct}%, ${esc(b.name)} ${fanBPct}%">
             <i class="fav" style="width:${Math.max(0,Math.min(100,fanAPct))}%"></i><i class="dog" style="width:${Math.max(0,Math.min(100,fanBPct))}%"></i>
           </div>
-        </div>
+        </div>`:'<div class="crowd-poll"><b>팬 반응을 모으고 있습니다</b></div>'}
       </div>
       <div class="fan-talk">
         <div class="editorial-heading">
@@ -1196,12 +1250,6 @@ function weekBrief(e, main, a, b){
           ${fans.source?sourceLink(fans.source,`댓글 ${Number(fans.discussion_count)||crowdRows.length}개`):''}
         </div>
         <div class="crowd-list">${crowdItems || '<div class="crowd-voice"><span class="crowd-index">—</span><div><b>아직 정리된 반응이 없습니다</b><p>원문 댓글이 모이면 이곳에 표시됩니다.</p></div></div>'}</div>
-      </div>
-    </section>
-    <section class="signal-grid" aria-label="분석 모델 정보">
-      <div class="signal-card">
-        <span>분석 모델</span>
-        <b>${models.fighter_a_low&&models.fighter_a_high?`${esc(a.name)} ${models.fighter_a_low}–${models.fighter_a_high}%`:'자료 확인 중'}</b>
       </div>
     </section>
     <div class="watch-panel">
@@ -1215,14 +1263,15 @@ function weekBrief(e, main, a, b){
   </section>`;
 }
 
-function homeCardPreview(e){
+function homeCardPreview(e, options={}){
   const fights=(e.mainCard||[]).slice(0,5);
   if(!fights.length) return '';
+  const detail=Boolean(options.detail);
   const market=insightFor(e).market||e.prediction||{};
   const orderLabel=(i)=>i===0?'메인':i===1?'코메인':i===fights.length-1?'첫 경기':`${fights.length-i}번째 경기`;
   return `
-  <section class="card-preview" id="fightTimes">
-    <div class="card-preview-head"><h2>메인카드 예상 시각</h2><a class="pill ghost" href="#event/${e.id}">전체 대진 →</a></div>
+  <section class="card-preview${detail?' event-card-preview':''}" id="${detail?'eventFightTimes':'fightTimes'}">
+    <div class="card-preview-head"><h2>메인카드 예상 시각</h2>${detail?'':`<a class="pill ghost" href="#event/${e.id}">전체 대진 →</a>`}</div>
     <div class="card-order-guide" aria-label="아래 첫 경기부터 위 메인이벤트 방향으로 진행">
       <strong>아래쪽이 첫 경기</strong><span aria-hidden="true">↑</span><strong>위쪽이 메인</strong>
     </div>
@@ -1245,6 +1294,43 @@ function homeCardPreview(e){
         ${winner?`<span class="preview-outcome">${esc(winner.name)} 승${f.way?` · ${esc(f.way)}`:''}</span>`:''}
       </a>`;
     }).join('')}</div>
+  </section>`;
+}
+
+function eventIntelligence(e){
+  const intel=insightFor(e);
+  if(!Object.keys(intel).length) return '';
+  const main=e.mainCard?.[0];
+  if(!main) return '';
+  const a=getFighter(main.a), b=getFighter(main.b);
+  const fans=intel.fans||{}, market=intel.market||{}, models=intel.models||{};
+  const hasFanPct=Number.isFinite(Number(fans.fighter_a_pct));
+  const fanAPct=hasFanPct?Number(fans.fighter_a_pct):null;
+  const marketOdds=market.fighter_a_odds&&market.fighter_b_odds
+    ? `${market.fighter_a_odds} / ${market.fighter_b_odds}` : '확인 중';
+  const modelRange=models.fighter_a_low&&models.fighter_a_high
+    ? `${models.fighter_a_low}–${models.fighter_a_high}% ${a.name}` : '확인 중';
+  const watch=(intel.watch_points||[]).slice(0,3);
+  const source=(url,label)=>url?`<a href="${esc(safeExternalUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:'';
+  return `
+  <section class="event-intelligence" aria-labelledby="eventIntelTitle">
+    <div class="event-intelligence-head">
+      <div class="event-intelligence-kicker">이 경기, 이렇게 보면 됩니다</div>
+      <h2 id="eventIntelTitle">${esc(intel.viewing_hook||intel.thesis||`${a.name} 대 ${b.name}`)}</h2>
+      <div class="hero-signals" aria-label="팬, 배당, 분석 요약">
+        <div class="hero-signal fan"><span>팬 예상</span><b>${hasFanPct?`${fanAPct}% ${esc(a.name)}`:'반응 수집 중'}</b></div>
+        <div class="hero-signal market"><span>현재 배당</span><b>${esc(marketOdds)}</b></div>
+        <div class="hero-signal model"><span>분석 모델</span><b>${esc(modelRange)}</b></div>
+      </div>
+      <div class="insight-trust">
+        ${source(intel.schedule?.source,'UFC 일정')}
+        ${source(market.source,`배당 ${market.as_of||'업데이트'}`)}
+        ${source(fans.source,`팬 투표 ${Number(fans.sample)||0}명`)}
+      </div>
+    </div>
+    ${watch.length?`<div class="event-watch">${watch.map((p,i)=>`
+      <div class="event-watch-item"><span>${String(i+1).padStart(2,'0')}</span><b>${esc(p.title||'')}</b><p>${esc(p.text||'')}</p></div>
+    `).join('')}</div>`:''}
   </section>`;
 }
 
@@ -1871,13 +1957,9 @@ function viewEvent(id){
     ${!isPast?`<div class="cta"><button class="btn ghost" type="button" onclick="downloadCalendar('${e.id}')">캘린더에 추가</button></div>`:''}
   </div>
 
-  ${hypeBlock(e)}
+  ${!isPast?homeCardPreview(e,{detail:true}):''}
 
-  ${newbieBlock(id)}
-
-  ${pollBlock(id, e)}
-
-  ${reactionBar(id)}
+  ${eventIntelligence(e) || `${hypeBlock(e)}${newbieBlock(id)}`}
 
   ${e.summary?`
   <div class="section-title"><span class="bar"></span>한국어 요약</div>
@@ -1892,14 +1974,14 @@ function viewEvent(id){
 
   ${opinionBlock(id)}
 
-  ${e.keyPoints && e.keyPoints.length ? `
+  ${!Object.keys(insightFor(e)).length && e.keyPoints && e.keyPoints.length ? `
   <div class="section-title"><span class="bar"></span>관전 포인트</div>
   <div class="box gold">
     <h3><span class="ic">🎯</span>이 경기에서 봐야 할 것</h3>
     <ul>${e.keyPoints.map(k=>`<li>${k}</li>`).join('')}</ul>
   </div>`:''}
 
-  ${e.prediction?`
+  ${!Object.keys(insightFor(e)).length && e.prediction?`
   <div class="section-title"><span class="bar"></span>📊 배당 기반 승률 (여론 지표)</div>
   <div class="box blue">
     <h3><span class="ic">💹</span>시장이 보는 우세 · 베팅 권유 아님</h3>
@@ -1938,6 +2020,10 @@ function viewEvent(id){
 
   ${(!e.mainCard.length && !e.prelims.length)?`
   <div class="box" style="text-align:center;color:var(--muted)">매치업이 아직 발표되지 않았습니다.</div>`:''}
+
+  ${pollBlock(id, e)}
+
+  ${reactionBar(id)}
   `;
 }
 
@@ -2096,6 +2182,26 @@ async function retryData(){
 let REAL_FIGHTERS = {};
 let OPINIONS = {};
 let INSIGHTS = {};
+let INSIGHTS_META = {};
+let FIGHTER_NAME_KO = {};
+let FIGHTER_NAME_EN = {};
+function registerFighterTranslation(en,ko){
+  const source=cleanExternalText(en||'').trim();
+  const translated=cleanExternalText(ko||source).trim();
+  if(!source) return;
+  const key=fighterNameKey(source);
+  FIGHTER_NAME_KO[key]=translated;
+  FIGHTER_NAME_EN[key]=source;
+  const enParts=source.split(/\s+/), koParts=translated.split(/\s+/);
+  if(enParts.length>1 && koParts.length){
+    const surname=enParts[enParts.length-1];
+    const surnameKey=fighterNameKey(surname);
+    if(!FIGHTER_NAME_KO[surnameKey]){
+      FIGHTER_NAME_KO[surnameKey]=koParts[koParts.length-1];
+      FIGHTER_NAME_EN[surnameKey]=surname;
+    }
+  }
+}
 
 function slugify(s){
   return (s||'').toString().toLowerCase().trim()
@@ -2115,6 +2221,44 @@ function eventCodeKo(code){
   return cleanExternalText(code||'UFC')
     .replace(/UFC Fight Night/gi,'UFC 파이트 나이트')
     .replace(/^Fight Night/gi,'파이트 나이트');
+}
+const MONTHS_KO = {
+  january:1,february:2,march:3,april:4,may:5,june:6,
+  july:7,august:8,september:9,october:10,november:11,december:12
+};
+function formatHistoryDateKo(value){
+  const raw=cleanExternalText(value||'').trim();
+  if(!raw || /년\s*\d{1,2}월/.test(raw)) return raw;
+  let match=raw.match(/^([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})$/);
+  if(match && MONTHS_KO[match[1].toLowerCase()]){
+    return `${match[3]}년 ${MONTHS_KO[match[1].toLowerCase()]}월 ${Number(match[2])}일`;
+  }
+  match=raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  if(match) return `${match[1]}년 ${Number(match[2])}월 ${Number(match[3])}일`;
+  match=raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
+  if(match){
+    const year=match[3].length===2?`20${match[3]}`:match[3];
+    return `${year}년 ${Number(match[1])}월 ${Number(match[2])}일`;
+  }
+  return raw;
+}
+function localizeFighterName(value){
+  const raw=cleanExternalText(value||'').trim();
+  if(!raw) return '';
+  if (/[가-힣]/.test(raw)) return raw;
+  return FIGHTER_NAME_KO[fighterNameKey(raw)] || raw;
+}
+function localizeHistoryEvent(value){
+  let text=cleanExternalText(value||'').trim();
+  if(!text) return '';
+  Object.entries(FIGHTER_NAME_KO)
+    .map(([key,ko])=>({key,ko,en:FIGHTER_NAME_EN[key]||''}))
+    .filter(item=>item.en && item.ko!==item.en)
+    .sort((a,b)=>b.en.length-a.en.length)
+    .forEach(item=>{ text=text.replace(new RegExp(item.en.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'),item.ko); });
+  return text
+    .replace(/UFC Fight Night/gi,'UFC 파이트 나이트')
+    .replace(/\s+vs\.?\s+/gi,' 대 ');
 }
 const COUNTRY_LABELS_KO = {
   Myanmar:'미얀마',
@@ -2149,10 +2293,10 @@ function transformFighter(f){
   const recent = rawHistory.map(function(r){
     return {
       res: r.result==='win' ? 'W' : (r.result==='loss' ? 'L' : (r.result==='nc' ? 'N' : 'D')),
-      opp: cleanExternalText(r.opp_ko || r.opp || ''),
+      opp: localizeFighterName(r.opp_ko || r.opp || ''),
       way: cleanExternalText(r.method || ''),
-      when: cleanExternalText(r.date || ''),
-      event: cleanExternalText(r.event || ''),
+      when: formatHistoryDateKo(r.date || ''),
+      event: localizeHistoryEvent(r.event || ''),
       round: cleanExternalText(r.round || ''),
       time: cleanExternalText(r.time || ''),
       record: cleanExternalText(r.record || '')
@@ -2197,6 +2341,13 @@ function resultMethodKo(method){
     'Submission (guillotine choke)':'길로틴초크 서브미션',
     'Submission (Suloev stretch)':'술로에프 스트레치 서브미션',
     'Submission (twister)':'트위스터 서브미션',
+    'Submission (Ezekiel choke)':'에제키엘 초크 서브미션',
+    'Submission (straight armbar)':'스트레이트 암바 서브미션',
+    'Submission (armbar)':'암바 서브미션',
+    'Submission (triangle choke)':'트라이앵글 초크 서브미션',
+    'Submission (shoulder choke)':'숄더 초크 서브미션',
+    'TKO (body kick and punches)':'TKO(보디킥·펀치)',
+    'KO (head kick)':'KO(헤드킥)',
     'Technical Submission (Peruvian necktie)':'페루비안 넥타이 테크니컬 서브미션'
   };
   if(exact[raw]) return exact[raw];
@@ -2210,7 +2361,13 @@ function resultMethodKo(method){
     .replace(/elbows?/gi,'엘보')
     .replace(/knees?/gi,'니킥')
     .replace(/rear-naked choke/gi,'리어네이키드초크')
-    .replace(/guillotine choke/gi,'길로틴초크');
+    .replace(/guillotine choke/gi,'길로틴초크')
+    .replace(/Ezekiel choke/gi,'에제키엘 초크')
+    .replace(/straight armbar/gi,'스트레이트 암바')
+    .replace(/triangle choke/gi,'트라이앵글 초크')
+    .replace(/shoulder choke/gi,'숄더 초크')
+    .replace(/body kick/gi,'보디킥')
+    .replace(/head kick/gi,'헤드킥');
 }
 
 /* 실 이벤트 JSON → 내부 fight/event shape */
@@ -2286,18 +2443,28 @@ async function loadJSON(path){
 
 async function loadRealData(){
   loadErrors=[];
-  const [fightersResult,rankingsResult,eventsResult,opinionsResult,insightsResult]=await Promise.allSettled([
+  const [fightersResult,rankingsResult,eventsResult,opinionsResult,insightsResult,translationsResult]=await Promise.allSettled([
     loadJSON('./data/fighters.json'),
     loadJSON('./data/rankings.json'),
     loadJSON('./data/events.json'),
     loadJSON('./data/opinions.json'),
-    loadJSON('./data/insights.json')
+    loadJSON('./data/insights.json'),
+    loadJSON('./data/translations.json')
   ]);
 
   if(fightersResult.status==='fulfilled'){
     const data=fightersResult.value;
     if(data.fighters && data.fighters.length){
       Object.keys(FIGHTERS).forEach(function(k){ delete FIGHTERS[k]; });
+      FIGHTER_NAME_KO={};
+      FIGHTER_NAME_EN={};
+      if(translationsResult.status==='fulfilled'){
+        Object.entries(translationsResult.value.fighters||{}).forEach(([en,ko])=>registerFighterTranslation(en,ko));
+      }
+      data.fighters.forEach(function(f){
+        const ko=cleanExternalText(f.name_ko||f.name||'');
+        if(f.name) registerFighterTranslation(f.name,ko);
+      });
       data.fighters.forEach(function(f){ const item=transformFighter(f); FIGHTERS[item.id]=item; });
       console.log('[fightoclock] fighters:', data.fighters.length);
     }
@@ -2343,6 +2510,10 @@ async function loadRealData(){
   }
   if(insightsResult.status==='fulfilled'){
     INSIGHTS = insightsResult.value.events || {};
+    INSIGHTS_META = {
+      generatedAt: insightsResult.value.generated_at || '',
+      source: insightsResult.value.source || ''
+    };
     console.log('[fightoclock] insights:', Object.keys(INSIGHTS).length, 'events');
   } else {
     console.warn('[fightoclock] insights load failed:', insightsResult.reason?.message);
