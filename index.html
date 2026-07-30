@@ -250,6 +250,7 @@
   .rankings-page{min-width:0}
   .ranking-division-label{margin:18px 2px 8px;color:#d6d6d8;font-size:16px;font-weight:850}
   .ranking-division-tabs{padding-bottom:14px}
+  .rankings-layout{min-width:0}
   .champion-card{position:relative;overflow:hidden;margin-top:4px;padding:20px;border:1px solid rgba(211,166,69,.4);border-radius:20px;background:
     linear-gradient(115deg,rgba(211,166,69,.16),transparent 50%),
     #121214}
@@ -283,6 +284,45 @@
   .rank-country,.rank-record{min-width:0}
   .rank-country b,.rank-record b{display:block;margin-top:5px;color:#e4e4e6;font-size:16px;font-weight:800;white-space:nowrap}
   .rank-row .chev{color:#cfcfd2;font-size:24px}
+  .champion-lineage{overflow:hidden;border:1px solid var(--line-2);border-radius:20px;background:#121214}
+  .lineage-desktop{display:none}
+  .lineage-head{padding:20px;border-bottom:1px solid var(--line);background:
+    radial-gradient(circle at 100% 0,rgba(211,166,69,.13),transparent 46%),
+    linear-gradient(135deg,rgba(211,166,69,.08),transparent 58%)}
+  .lineage-eyebrow{color:var(--gold-2);font-size:13px;font-weight:900;letter-spacing:.08em}
+  .lineage-title{margin-top:6px;color:#f4f4f5;font-size:24px;font-weight:950;line-height:1.15;letter-spacing:-.04em}
+  .lineage-sub{margin-top:7px;color:#c5c5c9;font-size:14px;font-weight:700;line-height:1.45}
+  .lineage-record{display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:center;margin:16px 14px 8px;padding:13px;border:1px solid rgba(211,166,69,.27);border-radius:14px;background:rgba(211,166,69,.065)}
+  .lineage-record-mark{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(226,190,106,.48);border-radius:50%;color:#efc966;font-size:20px;font-weight:950}
+  .lineage-record span{display:block;color:#bdbdc1;font-size:12px;font-weight:800}
+  .lineage-record strong{display:block;margin-top:3px;color:#f2f2f3;font-size:16px;font-weight:900;line-height:1.3}
+  .lineage-list{position:relative;padding:6px 14px 10px}
+  .lineage-list::before{content:"";position:absolute;left:40px;top:10px;bottom:16px;width:1px;background:linear-gradient(var(--gold),rgba(255,255,255,.12))}
+  .lineage-row{position:relative;z-index:1;display:grid;grid-template-columns:54px minmax(0,1fr) auto;gap:12px;align-items:center;min-height:82px;padding:10px 2px;color:inherit;border-top:1px solid rgba(255,255,255,.07)}
+  .lineage-row:first-child{border-top:0}
+  .lineage-row:hover .lineage-name{color:#fff}
+  .lineage-photo,.lineage-photo .avatar-box{width:54px!important;height:58px!important}
+  .lineage-photo .avatar-box{border-radius:13px!important;background:#1b1b1e}
+  .lineage-row.current .lineage-photo .avatar-box{border-color:rgba(226,190,106,.6)}
+  .lineage-order{color:#d3a645;font-size:12px;font-weight:900}
+  .lineage-name{margin-top:2px;color:#e7e7e9;font-size:17px;font-weight:900;line-height:1.2;letter-spacing:-.025em}
+  .lineage-meta{margin-top:5px;color:#aeadb2;font-size:13px;font-weight:700;line-height:1.35}
+  .lineage-defense{min-width:68px;padding:8px 9px;border:1px solid var(--line-2);border-radius:11px;background:#19191b;text-align:center}
+  .lineage-defense b{display:block;color:#f0f0f1;font-size:15px;font-weight:950;white-space:nowrap}
+  .lineage-defense span{display:block;margin-top:3px;color:#aeadb2;font-size:11px;font-weight:800}
+  .lineage-row.record .lineage-defense{border-color:rgba(211,166,69,.45);background:rgba(211,166,69,.09)}
+  .lineage-row.record .lineage-defense b{color:#efc966}
+  .lineage-row.current .lineage-defense{border-color:rgba(239,68,78,.5);background:rgba(239,68,78,.09)}
+  .lineage-row.current .lineage-defense b{color:#ff7b83}
+  .lineage-source{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;padding:0 16px;border-top:1px solid var(--line);color:#bdbdc1;font-size:13px;font-weight:800}
+  .lineage-source:hover{color:#fff}
+  .lineage-mobile{margin-top:16px}
+  .lineage-mobile .lineage-list{display:grid;grid-auto-flow:column;grid-auto-columns:274px;gap:10px;overflow-x:auto;padding:10px 14px 16px;scroll-snap-type:x mandatory;overscroll-behavior-x:contain}
+  .lineage-mobile .lineage-list::before{display:none}
+  .lineage-mobile .lineage-row{grid-template-columns:54px minmax(0,1fr);grid-template-rows:auto auto;min-height:116px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#171719;scroll-snap-align:start}
+  .lineage-mobile .lineage-photo{grid-row:1/3}
+  .lineage-mobile .lineage-defense{grid-column:2;display:flex;align-items:center;gap:7px;justify-self:start;min-width:0;padding:5px 8px}
+  .lineage-mobile .lineage-defense span{margin:0}
 
   /* ---------- 결과 리스트 ---------- */
   .result-card{overflow:hidden;background:var(--card);border:1px solid var(--line-2);border-radius:18px;margin-bottom:14px}
@@ -467,6 +507,13 @@
     .view.home-view{max-width:1080px}
     .view.rankings-view{max-width:980px}
     .ranking-division-tabs{flex-wrap:wrap;overflow:visible}
+  }
+  @media (min-width:1180px){
+    main{max-width:1320px}
+    .view.rankings-view{max-width:1280px}
+    .rankings-layout{display:grid;grid-template-columns:minmax(790px,1fr) 330px;gap:22px;align-items:start}
+    .lineage-mobile{display:none}
+    .lineage-desktop{display:block;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto;scrollbar-width:thin;scrollbar-color:#47474b transparent}
   }
 
   /* ---- 홈 커버 (잡지 표지형: 톱 매치업 얼굴 크게) ---- */
@@ -865,6 +912,7 @@
 const FIGHTERS = {};
 let EVENTS = [];
 const RANKINGS = {'체급별 랭킹':[]};
+let CHAMPION_HISTORY = [];
 
 /* =========================================================
    라우터 / 뷰
@@ -1527,12 +1575,74 @@ function setRankingFilter(index){
   rankingFilter=Number(index)||0;
   route({preserveScroll:true});
 }
+function championHistoryFor(wc){
+  return CHAMPION_HISTORY.find(function(item){ return item.wc===wc; }) || null;
+}
+function championHistoryFighter(reign){
+  return FIGHTERS[reign.fighter_id] || REAL_FIGHTERS[reign.fighter_id] || {
+    id:reign.fighter_id,
+    name:reign.name_ko||reign.name,
+    en:reign.name,
+    avatar:reign.portrait_url||'',
+    avatarThumb:reign.portrait_url||'',
+    avatarProvider:reign.portrait_url?'Wikimedia':''
+  };
+}
+function crownedLabel(value){
+  const date=new Date(value);
+  if(Number.isNaN(date.getTime())) return value||'등극일 미상';
+  return `${date.getFullYear()}.${String(date.getMonth()+1).padStart(2,'0')} 등극`;
+}
+function championLineagePanel(group,variant){
+  const history=championHistoryFor(group.wc);
+  if(!history||!history.reigns?.length) return '';
+  const variantClass=variant==='desktop'?'lineage-desktop':'lineage-mobile';
+  const reigns=[...history.reigns].reverse();
+  const record=history.record||{};
+  const rows=reigns.map(function(reign){
+    const fighter=championHistoryFighter(reign);
+    const known=Boolean(FIGHTERS[reign.fighter_id]||REAL_FIGHTERS[reign.fighter_id]);
+    const href=known?`#fighter/${reign.fighter_id}`:safeExternalUrl(reign.wiki_url||'');
+    const reignCopy=reign.reign_total>1?`${reign.reign}번째 집권 · `:'';
+    const defenseCopy=reign.defenses>0?`${reign.defenses}차 방어`:(reign.current?'첫 방어 전':'방어 없음');
+    const defenseSub=reign.current?'현 챔피언':(reign.defenses===record.defenses?'체급 기록':'이 재임');
+    return `
+      <a class="lineage-row ${reign.current?'current':''} ${reign.defenses===record.defenses?'record':''}"
+         href="${esc(href||'#rankings')}" ${known?'':`target="_blank" rel="noopener"`}>
+        <div class="lineage-photo">${avatarBox(fighter,54)}</div>
+        <div>
+          <div class="lineage-order">${reign.current?'현재 챔피언':`${reign.order}대 챔피언`}</div>
+          <div class="lineage-name">${esc(reign.name_ko||reign.name)}</div>
+          <div class="lineage-meta">${esc(reignCopy+crownedLabel(reign.crowned_at))}</div>
+        </div>
+        <div class="lineage-defense"><b>${esc(defenseCopy)}</b><span>${esc(defenseSub)}</span></div>
+      </a>`;
+  }).join('');
+  return `
+    <aside class="champion-lineage ${variantClass}" aria-label="${esc(group.wc)} 역대 챔피언">
+      <div class="lineage-head">
+        <div class="lineage-eyebrow">BELT LINEAGE</div>
+        <div class="lineage-title">${esc(group.wc)} 챔피언 계보</div>
+        <div class="lineage-sub">현재 챔피언부터 초대 챔피언까지, 집권기별로 봅니다.</div>
+      </div>
+      <div class="lineage-record">
+        <div class="lineage-record-mark">${Number(record.defenses)||0}</div>
+        <div><span>체급 최다 연속 방어</span><strong>${esc(record.name_ko||record.name||'-')} · ${Number(record.defenses)||0}차</strong></div>
+      </div>
+      <div class="lineage-list">${rows}</div>
+      <a class="lineage-source" href="${esc(safeExternalUrl(history.source_url||'https://en.wikipedia.org/wiki/List_of_UFC_champions'))}" target="_blank" rel="noopener">
+        <span>기록 기준 · UFC 챔피언 계보</span><span>↗</span>
+      </a>
+    </aside>`;
+}
 function viewRankings(){
   const groups=RANKINGS['체급별 랭킹'];
   if(!groups.length) return `<h1 class="page-heading">UFC 랭킹</h1><div class="state-card"><div><h2>랭킹 데이터가 없습니다</h2><p>다음 자동수집 후 다시 확인해주세요.</p></div></div>`;
   rankingFilter=Math.min(rankingFilter,groups.length-1);
   const g=groups[rankingFilter];
   const champ = getFighter(g.champ);
+  const history=championHistoryFor(g.wc);
+  const currentReign=history?.reigns?.find(function(item){ return item.current&&item.fighter_id===g.champ; });
   return `
   <div class="rankings-page">
     <h1 class="page-heading">UFC 랭킹<small>체급별 챔피언과 공식 랭커를 한눈에 확인하세요.</small></h1>
@@ -1542,6 +1652,7 @@ function viewRankings(){
       ${groups.map((item,i)=>`<button type="button" class="chip ${i===rankingFilter?'active':''}" role="tab" aria-selected="${i===rankingFilter}" onclick="setRankingFilter(${i})">${esc(item.wc)}</button>`).join('')}
     </div>
 
+    <div class="rankings-layout">
     <section role="tabpanel" aria-label="${esc(g.wc)} 랭킹">
       <div class="champion-card">
         <div class="champion-kicker"><b>챔피언</b><span>${esc(g.wc)}</span></div>
@@ -1553,12 +1664,14 @@ function viewRankings(){
             <div class="champion-data">
               <div><span>국가</span><strong>${esc(champ.country||'정보 없음')}</strong></div>
               <div><span>전적</span><strong>${esc(champ.record||'-')}</strong></div>
+              ${currentReign?`<div><span>현재 타이틀 방어</span><strong>${currentReign.defenses}회</strong></div>`:''}
             </div>
           </div>
           <div class="champion-mark" aria-hidden="true">C</div>
         </a>
         ${g.desc?`<div style="margin-top:10px;font-size:14px;color:#c2c2c5">${esc(g.desc)}</div>`:''}
       </div>
+      ${championLineagePanel(g,'mobile')}
 
       <div class="ranking-list">
         <div class="ranking-list-head" aria-hidden="true">
@@ -1581,6 +1694,8 @@ function viewRankings(){
         }).join('')}
       </div>
     </section>
+    ${championLineagePanel(g,'desktop')}
+    </div>
   </div>
   `;
 }
@@ -2443,9 +2558,10 @@ async function loadJSON(path){
 
 async function loadRealData(){
   loadErrors=[];
-  const [fightersResult,rankingsResult,eventsResult,opinionsResult,insightsResult,translationsResult]=await Promise.allSettled([
+  const [fightersResult,rankingsResult,championsResult,eventsResult,opinionsResult,insightsResult,translationsResult]=await Promise.allSettled([
     loadJSON('./data/fighters.json'),
     loadJSON('./data/rankings.json'),
+    loadJSON('./data/champions.json'),
     loadJSON('./data/events.json'),
     loadJSON('./data/opinions.json'),
     loadJSON('./data/insights.json'),
@@ -2482,6 +2598,17 @@ async function loadRealData(){
   } else {
     loadErrors.push('랭킹');
     console.warn('[fightoclock] rankings load failed:', rankingsResult.reason?.message);
+  }
+
+  if(championsResult.status==='fulfilled'){
+    const data=championsResult.value;
+    CHAMPION_HISTORY=(data.divisions||[]).map(function(division){
+      return {...division,source_url:data.source_url};
+    });
+    console.log('[fightoclock] champion lineage:', CHAMPION_HISTORY.length, 'divisions');
+  } else {
+    loadErrors.push('챔피언 계보');
+    console.warn('[fightoclock] champion lineage load failed:', championsResult.reason?.message);
   }
 
   if(eventsResult.status==='fulfilled'){

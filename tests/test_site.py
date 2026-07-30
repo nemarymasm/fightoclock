@@ -545,6 +545,53 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("이번 주 대회 이후에 열리는 다른 대회입니다.", self.html)
         self.assertIn(".upcoming-section{margin-top:64px", self.html)
 
+    def test_champion_history_covers_every_ranked_division(self):
+        champions = load_json("champions.json")
+        rankings = load_json("rankings.json")
+        divisions = champions.get("divisions", [])
+        self.assertEqual(champions.get("division_count"), 11)
+        self.assertEqual(
+            {division["wc"] for division in divisions},
+            {division["wc"] for division in rankings.get("divisions", [])},
+        )
+        reigns = [reign for division in divisions for reign in division.get("reigns", [])]
+        self.assertGreaterEqual(len(reigns), 130)
+        self.assertTrue(all(re.search(r"[가-힣]", reign.get("name_ko", "")) for reign in reigns))
+        self.assertTrue(all(isinstance(reign.get("defenses"), int) for reign in reigns))
+        self.assertGreaterEqual(
+            sum(bool(reign.get("portrait_url")) for reign in reigns) / len(reigns),
+            0.9,
+        )
+        flyweight = next(division for division in divisions if division["wc"] == "플라이급")
+        self.assertEqual(flyweight["record"]["name_ko"], "드미트리우스 존슨")
+        self.assertEqual(flyweight["record"]["defenses"], 11)
+
+    def test_rankings_have_responsive_champion_lineage(self):
+        ranking_view = self.html.split("function setRankingFilter", 1)[1].split(
+            "function fighterMatches", 1
+        )[0]
+        for required in (
+            "function championLineagePanel(group,variant)",
+            "체급 최다 연속 방어",
+            "현재 챔피언부터 초대 챔피언까지",
+            "lineage-mobile",
+            "lineage-desktop",
+            "현재 타이틀 방어",
+            "data/champions.json",
+        ):
+            self.assertIn(required, ranking_view if required != "data/champions.json" else self.html)
+        for css_class in (
+            ".champion-lineage",
+            ".lineage-record",
+            ".lineage-row",
+            ".lineage-defense",
+            ".lineage-mobile .lineage-list",
+            ".rankings-layout",
+        ):
+            self.assertIn(css_class, self.html)
+        self.assertIn("@media (min-width:1180px)", self.html)
+        self.assertIn("grid-template-columns:minmax(790px,1fr) 330px", self.html)
+
 
 if __name__ == "__main__":
     unittest.main()

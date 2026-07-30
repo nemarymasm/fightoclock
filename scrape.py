@@ -64,6 +64,7 @@ TODAY = datetime.now(KST).date()
 DATA_DIR = Path(__file__).parent / "data"
 EVENTS_FILE = DATA_DIR / "events.json"
 RANKINGS_FILE = DATA_DIR / "rankings.json"
+CHAMPIONS_FILE = DATA_DIR / "champions.json"
 FIGHTERS_FILE = DATA_DIR / "fighters.json"
 OPINIONS_FILE = DATA_DIR / "opinions.json"
 INSIGHTS_FILE = DATA_DIR / "insights.json"
@@ -1096,6 +1097,147 @@ def fetch_rankings():
         return wiki_divisions
 
 
+def fetch_champion_history():
+    """UFC 정규 챔피언 계보와 재임별 방어 횟수를 수집한다.
+
+    잠정 챔피언은 번호가 없는 별도 행이므로 제외한다. 같은 선수가 벨트를
+    되찾은 경우에는 집권기를 합치지 않고 각각 남겨 실제 계보 순서를 보존한다.
+    """
+    print("\n→ Wikipedia: 체급별 UFC 챔피언 계보 가져오는 중...")
+    source_url = WIKI + "List_of_UFC_champions"
+    soup = BeautifulSoup(http_get(source_url), "html.parser")
+    division_names = [
+        "Heavyweight",
+        "Light Heavyweight",
+        "Middleweight",
+        "Welterweight",
+        "Lightweight",
+        "Featherweight",
+        "Bantamweight",
+        "Flyweight",
+        "Women's Bantamweight",
+        "Women's Flyweight",
+        "Women's Strawweight",
+    ]
+    raw_divisions = []
+    wiki_titles = set()
+
+    for division_en in division_names:
+        heading = next(
+            (
+                h for h in soup.select("h3")
+                if clean_text(h.get_text(" ", strip=True)) == division_en + " Championship"
+            ),
+            None,
+        )
+        if not heading:
+            raise ValueError(f"{division_en} 챔피언 표를 찾지 못함")
+        table = heading.find_next("table")
+        reigns = []
+        reign_numbers = {}
+        for row in table.select("tr")[1:]:
+            cells = row.find_all(["th", "td"], recursive=False)
+            if len(cells) < 5:
+                continue
+            number = clean_text(cells[0].get_text(" ", strip=True))
+            if not number.isdigit():
+                continue
+            name_links = [
+                link for link in cells[1].find_all("a")
+                if clean_text(link.get_text(" ", strip=True))
+            ]
+            if not name_links:
+                continue
+            name_link = name_links[0]
+            name = clean_text(name_link.get_text(" ", strip=True))
+            wiki_title = clean_text(name_link.get("title") or name)
+            wiki_titles.add(wiki_title)
+            key = _fighter_name_key(name)
+            reign_numbers[key] = reign_numbers.get(key, 0) + 1
+
+            defense_text = clean_text(cells[-1].get_text(" ", strip=True))
+            defense_numbers = [
+                int(value)
+                for value in re.findall(r"(\d+)\.\s*(?:def\.|drew)", defense_text, re.I)
+            ]
+            reigns.append({
+                "order": int(number),
+                "fighter_id": slugify(name),
+                "name": name,
+                "name_ko": tr_fighter(name),
+                "wiki_title": wiki_title,
+                "wiki_url": urljoin("https://en.wikipedia.org/", name_link.get("href", "")),
+                "crowned_at": clean_text(cells[3].get_text(" ", strip=True)),
+                "reign": reign_numbers[key],
+                "defenses": max(defense_numbers, default=0),
+            })
+
+        if not reigns:
+            raise ValueError(f"{division_en} 챔피언 행을 찾지 못함")
+        total_reigns = {}
+        for reign in reigns:
+            key = _fighter_name_key(reign["name"])
+            total_reigns[key] = total_reigns.get(key, 0) + 1
+        for reign in reigns:
+            reign["reign_total"] = total_reigns[_fighter_name_key(reign["name"])]
+            reign["current"] = reign is reigns[-1]
+        raw_divisions.append({
+            "wc": WEIGHT_KO[division_en],
+            "wc_en": division_en,
+            "reigns": reigns,
+        })
+
+    portraits = {}
+    title_list = sorted(wiki_titles)
+    for offset in range(0, len(title_list), 45):
+        chunk = title_list[offset:offset + 45]
+        response = requests.get(
+            "https://en.wikipedia.org/w/api.php",
+            params={
+                "action": "query",
+                "format": "json",
+                "redirects": 1,
+                "prop": "pageimages",
+                "piprop": "thumbnail",
+                "pithumbsize": 240,
+                "titles": "|".join(chunk),
+            },
+            headers=HEADERS,
+            timeout=25,
+        )
+        response.raise_for_status()
+        for page in response.json().get("query", {}).get("pages", {}).values():
+            thumbnail = page.get("thumbnail", {}).get("source")
+            if thumbnail:
+                portraits[_fighter_name_key(page.get("title"))] = thumbnail
+
+    for division in raw_divisions:
+        for reign in division["reigns"]:
+            reign["portrait_url"] = portraits.get(_fighter_name_key(reign["wiki_title"]), "")
+            reign.pop("wiki_title", None)
+        record_reign = max(division["reigns"], key=lambda item: item["defenses"])
+        division["record"] = {
+            "label": "최다 연속 방어",
+            "defenses": record_reign["defenses"],
+            "fighter_id": record_reign["fighter_id"],
+            "name": record_reign["name"],
+            "name_ko": record_reign["name_ko"],
+        }
+        print(
+            f"  ✓ {division['wc']}: {len(division['reigns'])}번의 집권 · "
+            f"최다 {record_reign['defenses']}차 방어"
+        )
+
+    return {
+        "schema_version": 1,
+        "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
+        "source": "Wikipedia: List of UFC champions",
+        "source_url": source_url,
+        "division_count": len(raw_divisions),
+        "divisions": raw_divisions,
+    }
+
+
 def fetch_recent_past_events(limit=6):
     """List of UFC events 의 'Past events' 표에서 최근 종료 이벤트 목록.
     표는 최신이 맨 위(내림차순)라 앞에서부터 limit 개만 취함."""
@@ -2007,6 +2149,12 @@ def main():
     except Exception as e:
         print("WARN rankings 수집 실패:", e)
 
+    champion_history = None
+    try:
+        champion_history = fetch_champion_history()
+    except Exception as e:
+        print("WARN 챔피언 계보 수집 실패:", e)
+
     # ── 선수 디렉터리 구성 (events + rankings 교차연결, 개별 상세 수집) ──
     fighters = []
     try:
@@ -2052,6 +2200,17 @@ def main():
         }
         RANKINGS_FILE.write_text(json.dumps(rankings_out, ensure_ascii=False, indent=2), encoding="utf-8")
         print("=== Saved:", RANKINGS_FILE.name, "(" + str(len(divisions)) + " divisions) ===")
+
+    if champion_history:
+        CHAMPIONS_FILE.write_text(
+            json.dumps(champion_history, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        print(
+            "=== Saved:",
+            CHAMPIONS_FILE.name,
+            "(" + str(champion_history["division_count"]) + " divisions) ===",
+        )
 
     if fighters:
         fighters_out = {
@@ -2269,6 +2428,7 @@ def refresh_ranked_profiles():
 def refresh_rankings_and_profiles():
     """공식 UFC 랭킹을 저장하고 선수 디렉터리의 랭크를 같은 기준으로 맞춘다."""
     divisions = fetch_rankings()
+    champion_history = fetch_champion_history()
     now_iso = datetime.now(KST).isoformat(timespec="seconds")
     rankings_data = {
         "schema_version": 1,
@@ -2279,6 +2439,10 @@ def refresh_rankings_and_profiles():
     }
     RANKINGS_FILE.write_text(
         json.dumps(rankings_data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    CHAMPIONS_FILE.write_text(
+        json.dumps(champion_history, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
@@ -2339,8 +2503,19 @@ def refresh_rankings_and_profiles():
     refresh_ranked_profiles()
 
 
+def refresh_champion_history():
+    history = fetch_champion_history()
+    CHAMPIONS_FILE.write_text(
+        json.dumps(history, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ UFC 챔피언 계보 {history['division_count']}체급 저장")
+
+
 if __name__ == "__main__":
-    if "--rankings-only" in sys.argv:
+    if "--champions-only" in sys.argv:
+        refresh_champion_history()
+    elif "--rankings-only" in sys.argv:
         refresh_rankings_and_profiles()
     elif "--result-photos" in sys.argv:
         refresh_result_photos()
