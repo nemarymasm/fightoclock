@@ -58,6 +58,23 @@ class DataContractTests(unittest.TestCase):
                 self.assertRegex(leader.get("name_ko", ""), r"[가-힣]", leader.get("name"))
                 self.assertTrue(leader.get("value"))
                 self.assertTrue(leader.get("athlete_url", "").startswith("https://www.ufc.com/athlete/"))
+        jim_miller = next(
+            leader
+            for category in categories
+            if category.get("id") == "wins"
+            for leader in category["leaders"]
+            if leader.get("name") == "Jim Miller"
+        )
+        photo_host = "https://azuswufclivepubstorstd.blob.core.windows.net"
+        self.assertTrue(jim_miller.get("photo_url", "").startswith(photo_host))
+        vercel = json.loads((ROOT / "vercel.json").read_text(encoding="utf-8"))
+        csp = next(
+            header["value"]
+            for route in vercel["headers"]
+            for header in route["headers"]
+            if header["key"] == "Content-Security-Policy"
+        )
+        self.assertIn(photo_host, csp, "CSP must allow the official stats headshot host")
         discipline = stats.get("discipline", {})
         self.assertEqual(discipline.get("status"), "coverage_building")
         self.assertEqual(discipline.get("leaders"), [])
