@@ -245,16 +245,42 @@
   .pre-ufc-history .recent-list{border-width:1px 0 0;border-radius:0}
 
   /* ---------- 랭킹 ---------- */
-  .rank-row{display:grid;grid-template-columns:34px 48px 1fr auto;gap:11px;align-items:center;padding:11px 12px;border-top:1px solid var(--line)}
-  .rank-row:first-child{border-top:0}
-  .rank-num{font-weight:900;color:var(--gold-2);font-variant-numeric:tabular-nums;font-size:14px}
-  .rank-row .avatar-box{border-radius:11px!important}
-  .rank-row .nm{font-weight:800;font-size:16px}
-  .rank-row .country{font-size:13px;color:#bdbdc0}
-  .rank-row .rec{font-size:13px;color:#aaaab0}
-  .champ-row{background:linear-gradient(90deg,rgba(212,160,23,.12),transparent);border-radius:12px}
-  .champ-row .rank-num{color:#fff}
-  .crown{color:var(--gold-2)}
+  .rankings-page{min-width:0}
+  .ranking-division-label{margin:18px 2px 8px;color:#d6d6d8;font-size:16px;font-weight:850}
+  .ranking-division-tabs{padding-bottom:14px}
+  .champion-card{position:relative;overflow:hidden;margin-top:4px;padding:20px;border:1px solid rgba(211,166,69,.4);border-radius:20px;background:
+    linear-gradient(115deg,rgba(211,166,69,.16),transparent 50%),
+    #121214}
+  .champion-card::after{content:"C";position:absolute;right:14px;bottom:-34px;color:rgba(211,166,69,.055);font-size:150px;font-weight:950;line-height:1;pointer-events:none}
+  .champion-kicker{display:flex;align-items:center;gap:10px;margin-bottom:14px;color:#e8d096;font-size:15px;font-weight:850}
+  .champion-kicker b{display:inline-flex;align-items:center;min-height:30px;padding:0 10px;border-radius:99px;background:#d3a645;color:#171109;font-size:13px;font-weight:950}
+  .champion-profile{position:relative;z-index:1;display:grid;grid-template-columns:112px minmax(0,1fr) 68px;gap:20px;align-items:center}
+  .champion-photo,.champion-photo .avatar-box{width:112px!important;height:112px!important}
+  .champion-photo .avatar-box{border-radius:18px!important;border-color:rgba(226,190,106,.42)}
+  .champion-name{font-size:28px;font-weight:950;line-height:1.08;letter-spacing:-.045em}
+  .champion-en{margin-top:5px;color:#bcbcc0;font-size:15px;font-weight:700}
+  .champion-data{display:flex;gap:24px;margin-top:17px}
+  .champion-data div{min-width:120px}
+  .champion-data span,.rank-country span,.rank-record span{display:block;color:#929298;font-size:12px;font-weight:800;letter-spacing:.06em}
+  .champion-data strong{display:block;margin-top:4px;color:#f1f1f2;font-size:17px;font-weight:850}
+  .champion-mark{display:grid;place-items:center;width:62px;height:62px;border:2px solid #d3a645;border-radius:50%;color:#e8c66d;font-size:28px;font-weight:950}
+  .ranking-list{overflow:hidden;margin-top:16px;border:1px solid var(--line-2);border-radius:18px;background:var(--card)}
+  .ranking-list-head,.rank-row{display:grid;grid-template-columns:68px 76px minmax(220px,1fr) 150px 150px 24px;gap:14px;align-items:center}
+  .ranking-list-head{min-height:44px;padding:0 18px;border-bottom:1px solid var(--line);background:#171719;color:#a8a8ad;font-size:12px;font-weight:850;letter-spacing:.07em}
+  .ranking-list-head span:nth-child(2){grid-column:2/4}
+  .rank-row{min-height:96px;padding:10px 18px;border-top:1px solid var(--line)}
+  .rank-row:first-of-type{border-top:0}
+  .rank-row:hover{background:#171719}
+  .rank-num{color:var(--gold-2);font-size:25px;font-weight:950;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+  .rank-num small{margin-right:2px;font-size:14px;font-weight:850}
+  .rank-photo,.rank-photo .avatar-box{width:72px!important;height:76px!important}
+  .rank-photo .avatar-box{border-radius:14px!important}
+  .rank-athlete{min-width:0}
+  .rank-athlete .nm{color:#f2f2f3;font-size:19px;font-weight:900;line-height:1.2;letter-spacing:-.025em}
+  .rank-athlete .en{margin-top:5px;color:#aaaab0;font-size:13px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rank-country,.rank-record{min-width:0}
+  .rank-country b,.rank-record b{display:block;margin-top:5px;color:#e4e4e6;font-size:16px;font-weight:800;white-space:nowrap}
+  .rank-row .chev{color:#cfcfd2;font-size:24px}
 
   /* ---------- 결과 리스트 ---------- */
   .result-card{overflow:hidden;background:var(--card);border:1px solid var(--line-2);border-radius:18px;margin-bottom:14px}
@@ -433,7 +459,13 @@
   /* 콘텐츠를 가운데 좁은 칼럼으로 (데스크톱에서 너무 퍼지지 않게) */
   body{margin-left:auto;margin-right:auto}
   .topbar,.tabbar{max-width:1080px;margin-left:auto!important;margin-right:auto!important}
-  @media (min-width:780px){ main{max-width:1080px}.view{max-width:760px;margin:0 auto}.view.home-view{max-width:1080px} }
+  @media (min-width:780px){
+    main{max-width:1080px}
+    .view{max-width:760px;margin:0 auto}
+    .view.home-view{max-width:1080px}
+    .view.rankings-view{max-width:980px}
+    .ranking-division-tabs{flex-wrap:wrap;overflow:visible}
+  }
 
   /* ---- 홈 커버 (잡지 표지형: 톱 매치업 얼굴 크게) ---- */
   .cover{text-align:center;padding:20px 0 10px}
@@ -643,6 +675,33 @@
     .source-desktop{display:inline}.source-mobile{display:none}
   }
   @media (max-width:779px){
+    .champion-card{padding:16px}
+    .champion-profile{grid-template-columns:92px minmax(0,1fr);gap:14px}
+    .champion-photo,.champion-photo .avatar-box{width:92px!important;height:104px!important}
+    .champion-name{font-size:24px}
+    .champion-en{font-size:13px}
+    .champion-data{flex-wrap:wrap;gap:10px 18px;margin-top:13px}
+    .champion-data div{min-width:94px}
+    .champion-data strong{font-size:15px}
+    .champion-mark{display:none}
+    .ranking-list-head{display:none}
+    .rank-row{grid-template-columns:42px 64px minmax(0,1fr) 20px;grid-template-areas:
+      "num photo athlete chev"
+      "num photo country chev"
+      "num photo record chev";
+      gap:4px 10px;min-height:116px;padding:12px}
+    .rank-num{grid-area:num;font-size:22px}
+    .rank-photo{grid-area:photo}
+    .rank-photo,.rank-photo .avatar-box{width:64px!important;height:78px!important}
+    .rank-athlete{grid-area:athlete}
+    .rank-athlete .nm{font-size:18px}
+    .rank-athlete .en{font-size:12px}
+    .rank-country{grid-area:country}
+    .rank-record{grid-area:record}
+    .rank-country,.rank-record{display:flex;align-items:baseline;gap:8px}
+    .rank-country span,.rank-record span{min-width:29px}
+    .rank-country b,.rank-record b{margin-top:0;font-size:14px}
+    .rank-row .chev{grid-area:chev}
     .result-head{padding:18px 15px 16px}
     .result-card h3{font-size:21px}
     .result-card.numbered .result-head{padding-top:19px}
@@ -1389,37 +1448,53 @@ function viewRankings(){
   const g=groups[rankingFilter];
   const champ = getFighter(g.champ);
   return `
-  <h1 class="page-heading">UFC 랭킹<small>체급을 선택해 챔피언과 랭커를 확인하세요.</small></h1>
-  ${freshnessBanner()}
-  <div class="chips" role="tablist" aria-label="체급 선택">
-    ${groups.map((item,i)=>`<button type="button" class="chip ${i===rankingFilter?'active':''}" role="tab" aria-selected="${i===rankingFilter}" onclick="setRankingFilter(${i})">${esc(item.wc)}</button>`).join('')}
-  </div>
+  <div class="rankings-page">
+    <h1 class="page-heading">UFC 랭킹<small>체급별 챔피언과 공식 랭커를 한눈에 확인하세요.</small></h1>
+    ${freshnessBanner()}
+    <div class="ranking-division-label">체급 선택</div>
+    <div class="chips ranking-division-tabs" role="tablist" aria-label="체급 선택">
+      ${groups.map((item,i)=>`<button type="button" class="chip ${i===rankingFilter?'active':''}" role="tab" aria-selected="${i===rankingFilter}" onclick="setRankingFilter(${i})">${esc(item.wc)}</button>`).join('')}
+    </div>
 
-  <div class="card" style="margin-bottom:12px" role="tabpanel">
-      <div style="padding:14px 14px 10px 14px;border-bottom:1px solid var(--line)">
-        <div style="font-size:12px;color:var(--gold-2);font-weight:800;letter-spacing:.06em">챔피언 · ${esc(g.wc)}</div>
-        <a href="#fighter/${g.champ}" style="display:flex;align-items:center;gap:10px;margin-top:6px">
-          ${avatarBox(champ,44)}
+    <section role="tabpanel" aria-label="${esc(g.wc)} 랭킹">
+      <div class="champion-card">
+        <div class="champion-kicker"><b>챔피언</b><span>${esc(g.wc)}</span></div>
+        <a class="champion-profile" href="#fighter/${g.champ}">
+          <div class="champion-photo">${avatarBox(champ,112)}</div>
           <div>
-            <div style="font-weight:800">${esc(champ.name)}</div>
-            <div style="font-size:12px;color:var(--muted)">${esc(champ.record)} · ${esc(champ.country||'')}</div>
+            <div class="champion-name">${esc(champ.name)}</div>
+            ${champ.en&&champ.en!==champ.name?`<div class="champion-en">${esc(champ.en)}</div>`:''}
+            <div class="champion-data">
+              <div><span>국가</span><strong>${esc(champ.country||'정보 없음')}</strong></div>
+              <div><span>전적</span><strong>${esc(champ.record||'-')}</strong></div>
+            </div>
           </div>
+          <div class="champion-mark" aria-hidden="true">C</div>
         </a>
-        ${g.desc?`<div style="margin-top:8px;font-size:12px;color:var(--muted)">${esc(g.desc)}</div>`:''}
+        ${g.desc?`<div style="margin-top:10px;font-size:14px;color:#c2c2c5">${esc(g.desc)}</div>`:''}
       </div>
-      ${g.list.map((id,idx)=>{
-        const f = getFighter(id);
-        return `
-        <a href="#fighter/${id}" class="rank-row">
-          <div class="rank-num">#${idx+1}</div>
-          ${avatarBox(f,48)}
-          <div>
-            <div class="nm">${esc(f.name)}</div>
-            <div class="country">${esc(f.country||'')} · <span class="rec">${esc(f.record)}</span></div>
-          </div>
-          <div class="chev" aria-hidden="true">›</div>
-        </a>`;
-      }).join('')}
+
+      <div class="ranking-list">
+        <div class="ranking-list-head" aria-hidden="true">
+          <span>순위</span><span>선수</span><span>국가</span><span>전적</span><span></span>
+        </div>
+        ${g.list.map((id,idx)=>{
+          const f = getFighter(id);
+          return `
+          <a href="#fighter/${id}" class="rank-row">
+            <div class="rank-num"><small>#</small>${idx+1}</div>
+            <div class="rank-photo">${avatarBox(f,72)}</div>
+            <div class="rank-athlete">
+              <div class="nm">${esc(f.name)}</div>
+              ${f.en&&f.en!==f.name?`<div class="en">${esc(f.en)}</div>`:''}
+            </div>
+            <div class="rank-country"><span>국가</span><b>${esc(f.country||'정보 없음')}</b></div>
+            <div class="rank-record"><span>전적</span><b>${esc(f.record||'-')}</b></div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>`;
+        }).join('')}
+      </div>
+    </section>
   </div>
   `;
 }
@@ -1906,7 +1981,8 @@ function route(options={}){
     default: html = viewHome();
   }
   $app.setAttribute('aria-busy','false');
-  $app.innerHTML = `<div class="view active ${base==='home'?'home-view':''}">${html}</div>`;
+  const viewClass = base==='home' ? 'home-view' : (base==='rankings' ? 'rankings-view' : '');
+  $app.innerHTML = `<div class="view active ${viewClass}">${html}</div>`;
   updateDocumentMeta(base,arg);
   if(!options.preserveScroll) window.scrollTo({top:0,behavior:'instant'});
 
@@ -2040,6 +2116,25 @@ function eventCodeKo(code){
     .replace(/UFC Fight Night/gi,'UFC 파이트 나이트')
     .replace(/^Fight Night/gi,'파이트 나이트');
 }
+const COUNTRY_LABELS_KO = {
+  Myanmar:'미얀마',
+  Portugal:'포르투갈',
+  Iraq:'이라크',
+  England:'잉글랜드',
+  Australia:'호주',
+  Brazil:'브라질',
+  Mexico:'멕시코',
+  Japan:'일본',
+  Kazakhstan:'카자흐스탄',
+  Kyrgyzstan:'키르기스스탄',
+  Russia:'러시아',
+  'South Africa':'남아공',
+  'United States':'미국'
+};
+function countryLabelKo(country){
+  const value=cleanExternalText(country||'');
+  return COUNTRY_LABELS_KO[value] || value;
+}
 
 /* 신장/리치 정규화: 위키가 미터로 준 "1.80cm" → "180cm" 보정 */
 function normHeight(h){
@@ -2065,7 +2160,7 @@ function transformFighter(f){
   });
   return {
     id: slugify(f.id||f.name), name: cleanExternalText(f.name_ko || f.name), en: cleanExternalText(f.name), nick: cleanExternalText(f.nick || ''),
-    country: cleanExternalText(f.country_ko || f.country || ''),
+    country: countryLabelKo(f.country_ko || f.country || ''),
     age: cleanExternalText(f.age || ''), height: cleanExternalText(normHeight(f.height||'')), reach: cleanExternalText(normHeight(f.reach||'')), stance: cleanExternalText(f.stance || ''),
     record: cleanExternalText(f.record || '-'), weight: cleanExternalText(f.division || '-'), rank: cleanExternalText(f.rank || '랭킹 외'),
     ko: f.win_ko||0, sub: f.win_sub||0, dec: f.win_dec||0,

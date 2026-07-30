@@ -154,6 +154,7 @@ COUNTRY_KO = {
     "Dagestan": "러시아", "Australia": "호주", "New Zealand": "뉴질랜드",
     "Canada": "캐나다", "Mexico": "멕시코", "Poland": "폴란드",
     "Cameroon": "카메룬", "Nigeria": "나이지리아", "China": "중국",
+    "Myanmar": "미얀마", "Portugal": "포르투갈", "Iraq": "이라크",
     "South Korea": "대한민국", "Kazakhstan": "카자흐스탄", "Kyrgyzstan": "키르기스스탄",
     "Spain": "스페인", "Netherlands": "네덜란드", "Sweden": "스웨덴",
     "Germany": "독일", "Ecuador": "에콰도르", "Chile": "칠레",

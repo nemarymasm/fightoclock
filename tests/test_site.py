@@ -361,7 +361,8 @@ class FrontendContractTests(unittest.TestCase):
     def test_rankings_show_photos_and_fighter_page_shows_full_history(self):
         ranking_view = self.html.split("function viewRankings", 1)[1].split("function fighterMatches", 1)[0]
         fighter_view = self.html.split("function viewFighter(id)", 1)[1].split("const REACTIONS", 1)[0]
-        self.assertIn("${avatarBox(f,48)}", ranking_view)
+        self.assertIn("${avatarBox(champ,112)}", ranking_view)
+        self.assertIn("${avatarBox(f,72)}", ranking_view)
         self.assertIn("fighter_id || slugify", self.html)
         self.assertIn("f.history&&f.history.length", self.html)
         self.assertIn("UFC 전적", fighter_view)
@@ -370,6 +371,37 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("fighterHistoryList(ufcHistory)", fighter_view)
         self.assertIn('class="pre-ufc-history"', fighter_view)
         self.assertIn("resultMethodKo(r.way||'')", self.html)
+
+    def test_rankings_use_large_faces_and_labeled_columns(self):
+        ranking_view = self.html.split("function viewRankings", 1)[1].split("function fighterMatches", 1)[0]
+        for required in (
+            'class="rankings-page"',
+            'class="champion-card"',
+            'class="champion-profile"',
+            'class="champion-data"',
+            'class="ranking-list-head"',
+            'class="rank-photo"',
+            'class="rank-athlete"',
+            'class="rank-country"',
+            'class="rank-record"',
+            "<span>순위</span>",
+            "<span>선수</span>",
+            "<span>국가</span>",
+            "<span>전적</span>",
+        ):
+            self.assertIn(required, ranking_view)
+        for css_class in (
+            ".view.rankings-view",
+            ".champion-photo",
+            ".champion-name",
+            ".ranking-list-head,.rank-row",
+            ".rank-photo",
+            ".rank-athlete .nm",
+            ".rank-country b,.rank-record b",
+        ):
+            self.assertIn(css_class, self.html)
+        self.assertIn("base==='rankings' ? 'rankings-view'", self.html)
+        self.assertIn("function countryLabelKo(country)", self.html)
 
     def test_fight_results_translate_method_round_and_time(self):
         self.assertIn("function resultMethodKo(method)", self.html)
