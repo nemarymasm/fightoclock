@@ -82,6 +82,34 @@ class DataContractTests(unittest.TestCase):
         self.assertIn("심판의 구두경고", discipline.get("excluded", []))
         self.assertIn("체육위원회 공식 감점", discipline.get("counted", []))
 
+    def test_discipline_ledger_is_cautious_traceable_and_not_presented_as_complete(self):
+        ledger = load_json("discipline.json")
+        incidents = ledger.get("incidents", [])
+        self.assertEqual(ledger.get("status"), "initial_build")
+        self.assertFalse(ledger.get("coverage", {}).get("complete"))
+        self.assertEqual(ledger.get("coverage", {}).get("verified_bouts"), len(incidents))
+        self.assertGreaterEqual(len(incidents), 10)
+        self.assertIn("틀릴 수 있습니다", ledger.get("notice", ""))
+        self.assertIn("전수 검증 전", ledger.get("coverage", {}).get("note", ""))
+        self.assertEqual(len({item["id"] for item in incidents}), len(incidents))
+        self.assertTrue(
+            {"point_deduction", "disqualification", "no_contest", "result_overturned"}
+            .issubset({item.get("type") for item in incidents})
+        )
+        for incident in incidents:
+            self.assertRegex(incident.get("date", ""), r"^\d{4}-\d{2}-\d{2}$")
+            self.assertTrue(incident.get("fighter_ko"))
+            self.assertTrue(incident.get("opponent_ko"))
+            self.assertTrue(incident.get("foul_ko"))
+            self.assertEqual(incident.get("verification"), "official_ufc")
+            sources = incident.get("sources", [])
+            self.assertTrue(sources, incident.get("id"))
+            for source in sources:
+                self.assertTrue(
+                    source.get("url", "").startswith("https://www.ufc.com/"),
+                    f"non-official source in {incident.get('id')}",
+                )
+
     def test_upcoming_fighters_have_readable_korean_names(self):
         events = load_json("events.json").get("events", [])
         fighters = {fighter["name"]: fighter for fighter in load_json("fighters.json")["fighters"]}
@@ -684,9 +712,12 @@ class FrontendContractTests(unittest.TestCase):
         for required in (
             "function viewStats()",
             "function setStatsFilter(group)",
+            "function setDisciplineFilter(type)",
+            "function disciplineRowHtml(item)",
             "function officialStatFighter(leader)",
             "function statIcon(id,variant,group)",
             "data/stats.json",
+            "data/discipline.json",
             "UFC 공식 스탯",
             "지금 눈에 띄는 기록",
             "공식 반칙·제재 장부",
@@ -699,11 +730,14 @@ class FrontendContractTests(unittest.TestCase):
             ".stat-board-title",
             ".stat-leader-photo",
             ".discipline-panel",
+            ".discipline-warning",
+            ".discipline-list",
         ):
             self.assertIn(required, self.html)
         workflow = (ROOT / ".github" / "workflows" / "scrape.yml").read_text(encoding="utf-8")
         scraper = (ROOT / "scrape.py").read_text(encoding="utf-8")
         self.assertIn("data/stats.json", workflow)
+        self.assertIn("data/discipline.json", workflow)
         self.assertIn("UFC_RECORD_BOOK_URL", scraper)
         self.assertIn("refresh_official_stats(now_iso)", scraper)
         self.assertIn("--stats-only", scraper)

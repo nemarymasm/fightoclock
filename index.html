@@ -351,12 +351,46 @@
   .stat-leader-photo .avatar-box{border-radius:12px!important}
   .stat-leader-name{min-width:0;color:#e9e9eb;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .stat-leader-value{color:#fff;font-size:17px;font-weight:950;font-variant-numeric:tabular-nums;white-space:nowrap}
-  .discipline-panel{padding:20px;border:1px solid rgba(211,166,69,.36);border-radius:18px;background:rgba(211,166,69,.055)}
-  .discipline-kicker{color:#efc966;font-size:14px;font-weight:950}
-  .discipline-panel h2{margin:7px 0 0;color:#fff;font-size:23px;font-weight:950;letter-spacing:-.035em}
-  .discipline-panel>p{max-width:760px;margin:10px 0 0;color:#d0d0d3;font-size:15px;font-weight:650;line-height:1.6}
+  .discipline-panel{overflow:hidden;border:1px solid rgba(211,166,69,.4);border-radius:20px;background:#121214}
+  .discipline-intro{padding:22px;background:radial-gradient(circle at 92% 0,rgba(211,166,69,.13),transparent 37%),linear-gradient(135deg,rgba(211,166,69,.075),transparent 55%)}
+  .discipline-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+  .discipline-kicker{display:flex;align-items:center;gap:8px;color:#efc966;font-size:14px;font-weight:950}
+  .discipline-status{display:inline-flex;align-items:center;min-height:32px;padding:0 11px;border:1px solid rgba(239,201,102,.42);border-radius:999px;background:rgba(239,201,102,.08);color:#f3cf70;font-size:13px;font-weight:950;white-space:nowrap}
+  .discipline-panel h2{margin:8px 0 0;color:#fff;font-size:26px;font-weight:950;letter-spacing:-.04em}
+  .discipline-summary{max-width:790px;margin:10px 0 0;color:#d4d4d7;font-size:16px;font-weight:700;line-height:1.58}
+  .discipline-warning{display:flex;gap:10px;align-items:flex-start;margin-top:18px;padding:14px 15px;border:1px solid rgba(255,117,91,.42);border-radius:13px;background:rgba(255,91,77,.09);color:#ffe0d8;font-size:14px;font-weight:750;line-height:1.5}
+  .discipline-warning strong{flex:0 0 auto;color:#ff8776;font-size:15px}
+  .discipline-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:16px}
+  .discipline-metric{padding:14px;border:1px solid var(--line);border-radius:13px;background:rgba(8,8,9,.62)}
+  .discipline-metric span{display:block;color:#aaaab0;font-size:12px;font-weight:850}
+  .discipline-metric strong{display:block;margin-top:5px;color:#fff;font-size:22px;font-weight:950;font-variant-numeric:tabular-nums}
+  .discipline-metric small{margin-left:3px;color:#bdbdc1;font-size:12px;font-weight:800}
+  .discipline-ledger{padding:20px 22px 22px;border-top:1px solid var(--line)}
+  .discipline-ledger-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px}
+  .discipline-ledger-head h3{margin:0;color:#f4f4f5;font-size:20px;font-weight:950;letter-spacing:-.03em}
+  .discipline-ledger-head p{margin:5px 0 0;color:#aaaab0;font-size:13px;font-weight:700}
+  .discipline-filters{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none}
+  .discipline-filters::-webkit-scrollbar{display:none}
+  .discipline-filter{min-height:36px;padding:0 12px;border:1px solid var(--line-2);border-radius:999px;background:#171719;color:#bdbdc1;font-size:13px;font-weight:900;white-space:nowrap}
+  .discipline-filter.active{border-color:#efc966;background:#efc966;color:#17120a}
+  .discipline-list{margin-top:15px;border:1px solid var(--line);border-radius:15px;background:#0e0e10}
+  .discipline-row{display:grid;grid-template-columns:122px minmax(190px,1.25fr) minmax(150px,.9fr) minmax(165px,1fr) 84px;gap:16px;align-items:center;min-height:92px;padding:14px 15px;border-top:1px solid var(--line)}
+  .discipline-row:first-child{border-top:0}
+  .discipline-date{color:#fff;font-size:14px;font-weight:900;font-variant-numeric:tabular-nums}
+  .discipline-event{display:block;margin-top:5px;color:#929298;font-size:12px;font-weight:750;line-height:1.35}
+  .discipline-fighter{color:#f2f2f3;font-size:16px;font-weight:950;line-height:1.25}
+  .discipline-opponent{display:block;margin-top:5px;color:#aaaab0;font-size:13px;font-weight:750}
+  .discipline-badge{display:inline-flex;align-items:center;min-height:29px;padding:0 10px;border:1px solid;border-radius:999px;font-size:12px;font-weight:950}
+  .discipline-badge.point_deduction{border-color:#a77d24;background:rgba(211,166,69,.12);color:#f1cb70}
+  .discipline-badge.disqualification{border-color:#a7393e;background:rgba(229,72,77,.12);color:#ff858a}
+  .discipline-badge.no_contest,.discipline-badge.result_overturned{border-color:#6252a8;background:rgba(118,96,206,.14);color:#b9aaff}
+  .discipline-foul{display:block;margin-top:6px;color:#bdbdc1;font-size:13px;font-weight:800}
+  .discipline-outcome{color:#e2e2e4;font-size:14px;font-weight:900;line-height:1.35}
+  .discipline-note{display:block;margin-top:5px;color:#96969c;font-size:12px;font-weight:650;line-height:1.4}
+  .discipline-source{display:inline-flex;align-items:center;justify-content:center;min-height:34px;border:1px solid var(--line-2);border-radius:9px;color:#d5d5d8;font-size:12px;font-weight:900}
+  .discipline-source:hover{border-color:#efc966;color:#efc966}
   .discipline-columns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:17px}
-  .discipline-column{padding:15px;border:1px solid var(--line);border-radius:13px;background:#121214}
+  .discipline-column{padding:15px;border:1px solid var(--line);border-radius:13px;background:#101012}
   .discipline-column b{display:block;margin-bottom:9px;color:#f0f0f1;font-size:15px}
   .discipline-column span{display:block;margin-top:6px;color:#bdbdc1;font-size:14px;font-weight:650;line-height:1.45}
   @media (max-width:700px){
@@ -366,6 +400,17 @@
     .stats-source{display:block}
     .stats-source a{display:inline-block;margin-top:11px}
     .stats-featured,.stats-grid,.discipline-columns{grid-template-columns:1fr}
+    .discipline-intro,.discipline-ledger{padding:18px 15px}
+    .discipline-head,.discipline-ledger-head{display:block}
+    .discipline-status{margin-top:14px}
+    .discipline-panel h2{font-size:24px}
+    .discipline-summary{font-size:15px}
+    .discipline-metrics{grid-template-columns:1fr 1fr}
+    .discipline-filters{margin-top:14px}
+    .discipline-row{display:grid;grid-template-columns:1fr auto;gap:11px 12px;min-height:0;padding:15px}
+    .discipline-row>div:nth-child(1),.discipline-row>div:nth-child(2),.discipline-row>div:nth-child(4){grid-column:1/-1}
+    .discipline-row>div:nth-child(3){grid-column:1}
+    .discipline-row>.discipline-source{grid-column:2;grid-row:5;align-self:end;padding:0 11px}
   }
   .rank-row-stats{display:contents}
   .rank-country,.rank-record{min-width:0}
@@ -1040,6 +1085,12 @@ let OFFICIAL_STATS = {
   discipline:{},
   generatedAt:null
 };
+let DISCIPLINE_LEDGER = {
+  status:'initial_build',
+  coverage:{},
+  methodology:{counted:[],excluded:[]},
+  incidents:[]
+};
 
 /* =========================================================
    라우터 / 뷰
@@ -1054,6 +1105,7 @@ let DATA_META = {generatedAt:null, source:'Wikipedia', upcoming:0, past:0};
 let scheduleFilter = 'all';
 let rankingFilter = 0;
 let statsFilter = '전체';
+let disciplineFilter = 'all';
 let fighterQuery = '';
 let fighterLimit = 60;
 
@@ -2022,6 +2074,45 @@ function statBoardHtml(category){
       </div>
     </section>`;
 }
+function setDisciplineFilter(type){
+  disciplineFilter=type||'all';
+  route({preserveScroll:true});
+}
+function disciplineDateKo(value){
+  const match=String(value||'').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return match?`${match[1]}.${Number(match[2])}.${Number(match[3])}`:String(value||'날짜 확인 중');
+}
+function disciplineCounts(incidents){
+  return (incidents||[]).reduce((counts,item)=>{
+    counts.total+=1;
+    if(item.type==='point_deduction') counts.point+=1;
+    else if(item.type==='disqualification') counts.dq+=1;
+    else if(item.type==='no_contest'||item.type==='result_overturned') counts.changed+=1;
+    return counts;
+  },{total:0,point:0,dq:0,changed:0});
+}
+function disciplineRowHtml(item){
+  const source=(item.sources||[])[0]||{};
+  return `<article class="discipline-row">
+    <div>
+      <div class="discipline-date">${esc(disciplineDateKo(item.date))}</div>
+      <span class="discipline-event">${esc(item.event)}</span>
+    </div>
+    <div>
+      <div class="discipline-fighter">${esc(item.fighter_ko||item.fighter)}</div>
+      <span class="discipline-opponent">상대 · ${esc(item.opponent_ko||item.opponent)}</span>
+    </div>
+    <div>
+      <span class="discipline-badge ${esc(item.type)}">${esc(item.type_ko)}</span>
+      <span class="discipline-foul">${esc(item.foul_ko)}</span>
+    </div>
+    <div>
+      <div class="discipline-outcome">${esc(item.outcome)}</div>
+      <span class="discipline-note">${esc(item.note)}</span>
+    </div>
+    <a class="discipline-source" href="${esc(safeExternalUrl(source.url))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(source.name||'공식 근거')} 열기">공식 근거 ↗</a>
+  </article>`;
+}
 function viewStats(){
   const categories=OFFICIAL_STATS.categories||[];
   if(!categories.length) return `<div class="state-card"><div><h1>공식 스탯을 불러오지 못했습니다</h1><p>UFC Record Book 자동수집 상태를 확인해주세요.</p><a class="btn ghost" href="#fighters">선수 도감 보기</a></div></div>`;
@@ -2029,7 +2120,20 @@ function viewStats(){
   const visible=statsFilter==='전체'?categories:categories.filter(category=>category.group===statsFilter);
   const featuredIds=['wins','finishes','shortest-average','strikes-per-minute'];
   const featured=featuredIds.map(id=>categories.find(category=>category.id===id)).filter(Boolean);
-  const discipline=OFFICIAL_STATS.discipline||{};
+  const discipline=(DISCIPLINE_LEDGER.incidents||[]).length?DISCIPLINE_LEDGER:(OFFICIAL_STATS.discipline||{});
+  const incidents=(discipline.incidents||[]).slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+  const disciplineSummary=disciplineCounts(incidents);
+  const disciplineFilters=[
+    {id:'all',label:`전체 ${disciplineSummary.total}`},
+    {id:'point_deduction',label:`감점 ${disciplineSummary.point}`},
+    {id:'disqualification',label:`실격 ${disciplineSummary.dq}`},
+    {id:'changed',label:`무효·번복 ${disciplineSummary.changed}`}
+  ];
+  const filteredIncidents=disciplineFilter==='all'?incidents:incidents.filter(item=>
+    disciplineFilter==='changed'
+      ? item.type==='no_contest'||item.type==='result_overturned'
+      : item.type===disciplineFilter
+  );
   const source=OFFICIAL_STATS.source||{};
   return `
     <div class="stats-page">
@@ -2086,12 +2190,40 @@ function viewStats(){
       </section>
 
       <section class="discipline-panel">
-        <div class="discipline-kicker">반칙·논란 데이터 원칙</div>
-        <h2>${esc(discipline.title||'공식 반칙·제재 장부')}</h2>
-        <p>${esc(discipline.summary||'공식 문서로 확인할 수 있는 사건만 집계합니다.')}</p>
-        <div class="discipline-columns">
-          <div class="discipline-column"><b>집계하는 것</b>${(discipline.counted||[]).map(item=>`<span>✓ ${esc(item)}</span>`).join('')}</div>
-          <div class="discipline-column"><b>집계하지 않는 것</b>${(discipline.excluded||[]).map(item=>`<span>— ${esc(item)}</span>`).join('')}</div>
+        <div class="discipline-intro">
+          <div class="discipline-head">
+            <div>
+              <div class="discipline-kicker">⚑ 공식 결과에 남은 것만 기록</div>
+              <h2>${esc(discipline.title||'UFC 공식 반칙·제재 장부')}</h2>
+              <p class="discipline-summary">${esc(discipline.summary||'공식 문서로 확인할 수 있는 사건만 집계합니다.')}</p>
+            </div>
+            <span class="discipline-status">${esc(discipline.coverage?.label||'초기 구축 중')}</span>
+          </div>
+          <div class="discipline-warning"><strong>비고</strong><span>${esc(discipline.notice||'자료의 누락이나 정정으로 일부 내용이 틀릴 수 있습니다.')}</span></div>
+          <div class="discipline-metrics" aria-label="현재 검증 범위">
+            <div class="discipline-metric"><span>공식 문서 확인</span><strong>${disciplineSummary.total}<small>경기</small></strong></div>
+            <div class="discipline-metric"><span>감점 확인</span><strong>${disciplineSummary.point}<small>건</small></strong></div>
+            <div class="discipline-metric"><span>실격 확인</span><strong>${disciplineSummary.dq}<small>건</small></strong></div>
+            <div class="discipline-metric"><span>무효·번복</span><strong>${disciplineSummary.changed}<small>건</small></strong></div>
+          </div>
+          <div class="discipline-columns">
+            <div class="discipline-column"><b>숫자에 넣는 것</b>${(discipline.methodology?.counted||discipline.counted||[]).map(item=>`<span>✓ ${esc(item)}</span>`).join('')}</div>
+            <div class="discipline-column"><b>숫자에서 빼는 것</b>${(discipline.methodology?.excluded||discipline.excluded||[]).map(item=>`<span>— ${esc(item)}</span>`).join('')}</div>
+          </div>
+        </div>
+        <div class="discipline-ledger">
+          <div class="discipline-ledger-head">
+            <div>
+              <h3>현재 확인된 사례</h3>
+              <p>${esc(discipline.coverage?.note||'전체 경기 전수 검증 전입니다.')}</p>
+            </div>
+            <div class="discipline-filters" role="tablist" aria-label="반칙 장부 분류">
+              ${disciplineFilters.map(filter=>`<button class="discipline-filter ${disciplineFilter===filter.id?'active':''}" type="button" role="tab" aria-selected="${disciplineFilter===filter.id}" onclick="setDisciplineFilter('${filter.id}')">${esc(filter.label)}</button>`).join('')}
+            </div>
+          </div>
+          <div class="discipline-list">
+            ${filteredIncidents.map(disciplineRowHtml).join('')||'<div class="empty">아직 공식 문서로 확인한 사례가 없습니다.</div>'}
+          </div>
         </div>
       </section>
     </div>`;
@@ -2987,7 +3119,7 @@ async function loadJSON(path){
 
 async function loadRealData(){
   loadErrors=[];
-  const [fightersResult,rankingsResult,championsResult,eventsResult,opinionsResult,insightsResult,translationsResult,fanTagsResult,statsResult]=await Promise.allSettled([
+  const [fightersResult,rankingsResult,championsResult,eventsResult,opinionsResult,insightsResult,translationsResult,fanTagsResult,statsResult,disciplineResult]=await Promise.allSettled([
     loadJSON('./data/fighters.json'),
     loadJSON('./data/rankings.json'),
     loadJSON('./data/champions.json'),
@@ -2996,7 +3128,8 @@ async function loadRealData(){
     loadJSON('./data/insights.json'),
     loadJSON('./data/translations.json'),
     loadJSON('./data/fan_tags.json'),
-    loadJSON('./data/stats.json')
+    loadJSON('./data/stats.json'),
+    loadJSON('./data/discipline.json')
   ]);
 
   if(fanTagsResult.status==='fulfilled'){
@@ -3022,6 +3155,23 @@ async function loadRealData(){
     console.log('[fightoclock] official stats:', OFFICIAL_STATS.categories.length, 'categories');
   } else {
     console.warn('[fightoclock] official stats load failed:', statsResult.reason?.message);
+  }
+
+  if(disciplineResult.status==='fulfilled'){
+    const data=disciplineResult.value;
+    DISCIPLINE_LEDGER={
+      status:data.status||'initial_build',
+      title:data.title||'UFC 공식 반칙·제재 장부',
+      summary:data.summary||'',
+      notice:data.notice||'',
+      coverage:data.coverage||{},
+      methodology:data.methodology||{counted:[],excluded:[]},
+      incidents:data.incidents||[],
+      generatedAt:data.generated_at||null
+    };
+    console.log('[fightoclock] discipline ledger:', DISCIPLINE_LEDGER.incidents.length, 'verified incidents');
+  } else {
+    console.warn('[fightoclock] discipline ledger load failed:', disciplineResult.reason?.message);
   }
 
   if(fightersResult.status==='fulfilled'){

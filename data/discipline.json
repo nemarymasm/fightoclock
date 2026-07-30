@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-30T00:00:00+09:00",
+  "status": "initial_build",
+  "title": "UFC 공식 반칙·제재 장부",
+  "summary": "감점, 실격, 반칙으로 인한 무효·결과 번복처럼 공식 결과에 남은 사례만 모읍니다.",
+  "notice": "초기 구축 중인 참고 장부입니다. 공식 기록의 추후 정정, 관할 위원회 자료의 공개 범위, 표기 과정 때문에 누락되거나 일부 내용이 틀릴 수 있습니다.",
+  "coverage": {
+    "label": "초기 구축 중",
+    "verified_bouts": 13,
+    "verified_events": 13,
+    "complete": false,
+    "note": "전체 UFC 경기 전수 검증 전 · 아래 숫자는 현재 공식 문서로 확인한 사례만 반영"
+  },
+  "methodology": {
+    "counted": [
+      "공식 결과에 기록된 감점",
+      "반칙으로 확정된 실격패",
+      "반칙으로 인한 무효 경기·결과 번복"
+    ],
+    "excluded": [
+      "방송에서만 들린 구두경고",
+      "영상을 보고 자체 판단한 반칙",
+      "커뮤니티에서 논란이 된 판정"
+    ]
+  },
+  "incidents": [
+    {
+      "id": "2009-12-05-jones-hamill",
+      "date": "2009-12-05",
+      "event": "디 얼티밋 파이터 10 피날레",
+      "fighter": "Jon Jones",
+      "fighter_ko": "존 존스",
+      "opponent": "Matt Hamill",
+      "opponent_ko": "맷 해밀",
+      "type": "disqualification",
+      "type_ko": "실격패",
+      "foul": "illegal_downward_elbows",
+      "foul_ko": "수직 엘보 반칙",
+      "outcome": "1라운드 4:14 실격",
+      "note": "불법 수직 엘보로 감점된 뒤 상대가 경기를 이어가지 못해 실격 처리됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 경기 기사",
+          "url": "https://www.ufc.com/news/jones-dqed-against-hamill-kimbo-outpoints-alexander"
+        }
+      ]
+    },
+    {
+      "id": "2011-06-26-oliveira-lentz",
+      "date": "2011-06-26",
+      "event": "UFC 온 버서스 4",
+      "fighter": "Charles Oliveira",
+      "fighter_ko": "찰스 올리베이라",
+      "opponent": "Nik Lentz",
+      "opponent_ko": "닉 렌츠",
+      "type": "result_overturned",
+      "type_ko": "결과 번복",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "승리에서 무효 경기로 정정",
+      "note": "양 무릎이 바닥에 닿은 상대의 머리에 니킥을 사용한 뒤 나온 승리가 무효 경기로 변경됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 정정 공지",
+          "url": "https://www.ufc.com/news/oliveira-lentz-result-changed-no-contest"
+        }
+      ]
+    },
+    {
+      "id": "2012-12-15-papazian-elliott",
+      "date": "2012-12-15",
+      "event": "디 얼티밋 파이터 16 피날레",
+      "fighter": "Jared Papazian",
+      "fighter_ko": "재러드 파파지안",
+      "opponent": "Tim Elliott",
+      "opponent_ko": "팀 엘리엇",
+      "type": "point_deduction",
+      "type_ko": "1점 감점",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "1라운드 1점 감점",
+      "note": "무릎을 꿇어 다운 상태가 된 상대에게 니킥을 사용해 1점이 감점됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 경기 기사",
+          "url": "https://www.ufc.com/news/pyle-piles-it-tuf-16-finale-prelim-results"
+        }
+      ]
+    },
+    {
+      "id": "2015-10-03-eye-pena",
+      "date": "2015-10-03",
+      "event": "UFC 192",
+      "fighter": "Jessica Eye",
+      "fighter_ko": "제시카 아이",
+      "opponent": "Julianna Peña",
+      "opponent_ko": "줄리아나 페냐",
+      "type": "point_deduction",
+      "type_ko": "1점 감점",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "2라운드 1점 감점",
+      "note": "2라운드 불법 니킥으로 1점이 감점됐고, 최종 스코어는 세 심판 모두 29-27이었습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 192 공식 결과",
+          "url": "https://www.ufc.com/news/ufc-192-cormier-vs-gustafsson-results"
+        }
+      ]
+    },
+    {
+      "id": "2016-07-23-pepey-elkins",
+      "date": "2016-07-23",
+      "event": "UFC 온 폭스: 홈 대 셰브첸코",
+      "fighter": "Godofredo Pepey",
+      "fighter_ko": "고도프레도 페페이",
+      "opponent": "Darren Elkins",
+      "opponent_ko": "대런 엘킨스",
+      "type": "point_deduction",
+      "type_ko": "1점 감점",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "2라운드 1점 감점",
+      "note": "2라운드 그라운드 상태 상대에게 니킥을 사용해 1점이 감점됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 경기 기사",
+          "url": "https://www.ufc.com/news/fight-night-chicago-prelims-wineland-elkins-usman-july-2016"
+        }
+      ]
+    },
+    {
+      "id": "2016-07-23-yakovlev-usman",
+      "date": "2016-07-23",
+      "event": "UFC 온 폭스: 홈 대 셰브첸코",
+      "fighter": "Alexander Yakovlev",
+      "fighter_ko": "알렉산더 야코블레프",
+      "opponent": "Kamaru Usman",
+      "opponent_ko": "카마루 우스만",
+      "type": "point_deduction",
+      "type_ko": "1점 감점",
+      "foul": "fence_grab",
+      "foul_ko": "펜스 잡기",
+      "outcome": "1라운드 1점 감점",
+      "note": "펜스를 잡은 행위로 1점이 감점됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 경기 기사",
+          "url": "https://www.ufc.com/news/fight-night-chicago-prelims-wineland-elkins-usman-july-2016"
+        }
+      ]
+    },
+    {
+      "id": "2016-09-03-colombo-danho",
+      "date": "2016-09-03",
+      "event": "UFC 파이트 나이트: 알롭스키 대 바넷",
+      "fighter": "Christian Colombo",
+      "fighter_ko": "크리스티안 콜롬보",
+      "opponent": "Jarjis Danho",
+      "opponent_ko": "자르지스 단호",
+      "type": "point_deduction",
+      "type_ko": "1점 감점",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "1라운드 1점 감점",
+      "note": "손끝이 바닥에 닿은 상대에게 니킥을 사용해 1점이 감점됐고 경기는 무승부가 됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 경기 기사",
+          "url": "https://www.ufc.com/node/79718"
+        }
+      ]
+    },
+    {
+      "id": "2017-05-13-alvarez-poirier",
+      "date": "2017-05-13",
+      "event": "UFC 211",
+      "fighter": "Eddie Alvarez",
+      "fighter_ko": "에디 알바레즈",
+      "opponent": "Dustin Poirier",
+      "opponent_ko": "더스틴 포이리에",
+      "type": "no_contest",
+      "type_ko": "무효 경기",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "2라운드 4:12 무효",
+      "note": "그라운드 상태 상대에게 우발적으로 불법 니킥이 들어가 경기가 무효 처리됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 211 공식 결과",
+          "url": "https://www.ufc.com/news/ufc-211-miocic-vs-dos-santos-2-final-results"
+        }
+      ]
+    },
+    {
+      "id": "2017-10-07-vannata-green",
+      "date": "2017-10-07",
+      "event": "UFC 216",
+      "fighter": "Lando Vannata",
+      "fighter_ko": "랜도 바나타",
+      "opponent": "Bobby Green",
+      "opponent_ko": "바비 그린",
+      "type": "point_deduction",
+      "type_ko": "1점 감점",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "1라운드 1점 감점",
+      "note": "그라운드 상태 상대에게 불법 니킥을 사용해 1점이 감점됐고 경기는 무승부가 됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 216 공식 결과",
+          "url": "https://www.ufc.com/news/ufc-216-ferguson-vs-lee-final-results?language_content_entity=en"
+        }
+      ]
+    },
+    {
+      "id": "2019-01-19-hardy-crowder",
+      "date": "2019-01-19",
+      "event": "UFC 파이트 나이트: 세후도 대 딜라쇼",
+      "fighter": "Greg Hardy",
+      "fighter_ko": "그렉 하디",
+      "opponent": "Allen Crowder",
+      "opponent_ko": "앨런 크라우더",
+      "type": "disqualification",
+      "type_ko": "실격패",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "2라운드 2:28 실격",
+      "note": "그라운드 상태 상대에게 니킥을 사용해 실격됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 결과",
+          "url": "https://www.ufc.com/news/fight-night-brooklyn-final-results"
+        }
+      ]
+    },
+    {
+      "id": "2019-12-07-song-stamann",
+      "date": "2019-12-07",
+      "event": "UFC 온 ESPN: 오브레임 대 로젠스트루이크",
+      "fighter": "Song Yadong",
+      "fighter_ko": "송 야동",
+      "opponent": "Cody Stamann",
+      "opponent_ko": "코디 스테이먼",
+      "type": "point_deduction",
+      "type_ko": "1점 감점",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "1라운드 1점 감점",
+      "note": "그라운드 상태 상대에게 니킥을 사용해 1점이 감점됐고 경기는 무승부가 됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC DC 공식 결과",
+          "url": "https://www.ufc.com/news/ufc-washington-dc-results-alistair-overeem-jairzinho-rozenstruik"
+        }
+      ]
+    },
+    {
+      "id": "2020-02-15-pereira-sanchez",
+      "date": "2020-02-15",
+      "event": "UFC 파이트 나이트: 앤더슨 대 블라코비치 2",
+      "fighter": "Michel Pereira",
+      "fighter_ko": "미첼 페레이라",
+      "opponent": "Diego Sanchez",
+      "opponent_ko": "디에고 산체스",
+      "type": "disqualification",
+      "type_ko": "실격패",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "3라운드 3:09 실격",
+      "note": "그라운드 상태 상대에게 니킥을 사용했고 상대가 경기를 이어가지 못해 실격 처리됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 리오 랜초 공식 결과",
+          "url": "https://www.ufc.com/news/ufc-rio-rancho-results-anderson-blachowicz-2"
+        }
+      ]
+    },
+    {
+      "id": "2021-03-06-yan-sterling",
+      "date": "2021-03-06",
+      "event": "UFC 259",
+      "fighter": "Petr Yan",
+      "fighter_ko": "표트르 얀",
+      "opponent": "Aljamain Sterling",
+      "opponent_ko": "알저메인 스털링",
+      "type": "disqualification",
+      "type_ko": "실격패",
+      "foul": "illegal_knee",
+      "foul_ko": "그라운드 니킥",
+      "outcome": "4라운드 4:29 실격",
+      "note": "심판이 다운 상태임을 알린 뒤 니킥을 사용했고 고의 반칙으로 판정돼 타이틀을 잃었습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "알저메인 스털링 UFC 공식 전적",
+          "url": "https://www.ufc.com/athlete/aljamain-sterling"
+        }
+      ]
+    }
+  ]
+}
