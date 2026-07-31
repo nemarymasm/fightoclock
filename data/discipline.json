@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T00:00:00+09:00",
+  "generated_at": "2026-07-31T00:00:00+09:00",
   "status": "initial_build",
   "title": "UFC 공식 반칙·제재 장부",
-  "summary": "감점, 실격, 반칙으로 인한 무효·결과 번복처럼 공식 결과에 남은 사례만 모읍니다.",
+  "summary": "감점, 실격, 반칙·심판 판단으로 인한 무효·결과 번복처럼 공식 결과에 남은 사례를 모읍니다. 이 숫자는 UFC 역대 전체 노 콘테스트 수가 아닙니다.",
   "notice": "초기 구축 중인 참고 장부입니다. 공식 기록의 추후 정정, 관할 위원회 자료의 공개 범위, 표기 과정 때문에 누락되거나 일부 내용이 틀릴 수 있습니다.",
   "coverage": {
-    "label": "초기 구축 중",
-    "verified_bouts": 13,
-    "verified_events": 13,
+    "label": "18건 등록 · 전수 검증 전",
+    "verified_bouts": 18,
+    "verified_events": 17,
     "complete": false,
-    "note": "전체 UFC 경기 전수 검증 전 · 아래 숫자는 현재 공식 문서로 확인한 사례만 반영"
+    "note": "전체 UFC 경기 전수 검증 전 · 아래 숫자는 현재 장부에 등록한 사례만 반영 · 역대 전체 노콘 수가 아님"
   },
   "methodology": {
     "counted": [
       "공식 결과에 기록된 감점",
       "반칙으로 확정된 실격패",
-      "반칙으로 인한 무효 경기·결과 번복"
+      "반칙·심판 판단 정정으로 인한 무효 경기·결과 번복"
     ],
     "excluded": [
       "방송에서만 들린 구두경고",
@@ -308,6 +308,116 @@
         {
           "name": "알저메인 스털링 UFC 공식 전적",
           "url": "https://www.ufc.com/athlete/aljamain-sterling"
+        }
+      ]
+    },
+    {
+      "id": "2015-03-21-silva-dober",
+      "date": "2015-03-21",
+      "event": "UFC 파이트 나이트: 마초다 대 돌러웨이",
+      "fighter": "Leandro Silva",
+      "fighter_ko": "레안드로 실바",
+      "opponent": "Drew Dober",
+      "opponent_ko": "드류 도버",
+      "type": "result_overturned",
+      "type_ko": "결과 번복",
+      "foul": "premature_stoppage",
+      "foul_ko": "잘못된 경기 중단",
+      "outcome": "서브미션승에서 무효 경기로 정정",
+      "note": "초크가 풀린 시점에 경기가 종료됐고, 브라질 MMA 위원회가 결과를 무효로 바꿘습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 정정 공지",
+          "url": "https://www.ufc.com/news/silva-dober-result-overturned-no-contest"
+        }
+      ]
+    },
+    {
+      "id": "2015-12-19-alers-miller",
+      "date": "2015-12-19",
+      "event": "UFC 파이트 나이트: 도스 안요스 대 세로니 2",
+      "fighter": "Jim Alers",
+      "fighter_ko": "짐 앨러스",
+      "opponent": "Cole Miller",
+      "opponent_ko": "콜 밀러",
+      "type": "no_contest",
+      "type_ko": "무효 경기",
+      "foul": "accidental_eye_poke",
+      "foul_ko": "우발적 눈 찌르기",
+      "outcome": "2라운드 1:44 무효",
+      "note": "우발적 눈 찌르기 후 의사가 경기 진행을 막아 무효 처리됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 공식 결과",
+          "url": "https://www.ufc.com/news/fight-night-dos-anjos-vs-cerrone-results"
+        }
+      ]
+    },
+    {
+      "id": "2019-09-14-hughes-duffee",
+      "date": "2019-09-14",
+      "event": "UFC 파이트 나이트: 커보이 대 게이치",
+      "fighter": "Jeff Hughes",
+      "fighter_ko": "제프 휴스",
+      "opponent": "Todd Duffee",
+      "opponent_ko": "토드 더피",
+      "type": "no_contest",
+      "type_ko": "무효 경기",
+      "foul": "accidental_eye_poke",
+      "foul_ko": "우발적 눈 찌르기",
+      "outcome": "1라운드 4:03 무효",
+      "note": "눈 찌르기 후 상대가 이중으로 보인다고 호소해 의사 판단으로 중단됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 밴쿠버 공식 결과",
+          "url": "https://www.ufc.com/news/ufc-vancouver-results"
+        }
+      ]
+    },
+    {
+      "id": "2019-09-21-rodriguez-stephens",
+      "date": "2019-09-21",
+      "event": "UFC 파이트 나이트: 로드리게스 대 스티븐스",
+      "fighter": "Yair Rodriguez",
+      "fighter_ko": "야이르 로드리게스",
+      "opponent": "Jeremy Stephens",
+      "opponent_ko": "제레미 스티븐스",
+      "type": "no_contest",
+      "type_ko": "무효 경기",
+      "foul": "accidental_eye_poke",
+      "foul_ko": "우발적 눈 찌르기",
+      "outcome": "1라운드 0:15 무효",
+      "note": "경기 시작 15초 만의 눈 찌르기로 상대가 눈을 뜨지 못해 무효 처리됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 멕시코시티 공식 결과",
+          "url": "https://www.ufc.com/news/ufc-mexico-city-results"
+        }
+      ]
+    },
+    {
+      "id": "2025-06-14-craig-bellato",
+      "date": "2025-06-14",
+      "event": "UFC 파이트 나이트: 우스만 대 버클리",
+      "fighter": "Paul Craig",
+      "fighter_ko": "폴 크레이그",
+      "opponent": "Rodolfo Bellato",
+      "opponent_ko": "호돌포 벨라토",
+      "type": "no_contest",
+      "type_ko": "무효 경기",
+      "foul": "accidental_illegal_upkick",
+      "foul_ko": "우발적 업킥 반칙",
+      "outcome": "1라운드 4:58 무효",
+      "note": "그라운드 상태의 상대에게 업킥이 들어가 경기를 이어갈 수 없었고 무효 처리됐습니다.",
+      "verification": "official_ufc",
+      "sources": [
+        {
+          "name": "UFC 애틀랜타 공식 결과",
+          "url": "https://www.ufc.com/news/prelim-results-highlights-winner-interviews-ufc-fight-night-usman-vs-buckley-ufc-tonight-atlanta"
         }
       ]
     }

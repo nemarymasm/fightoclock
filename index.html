@@ -333,10 +333,26 @@
   .stat-feature-en{margin-top:3px;color:#aaaab0;font-size:13px;font-weight:700}
   .stat-feature-value{margin-top:8px;color:#fff;font-size:29px;font-weight:950;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
   .stat-feature-value small,.stat-leader-value small{margin-left:3px;color:#c7c7cb;font-size:13px;font-weight:850;letter-spacing:0}
-  .stats-tabs{display:flex;gap:8px;overflow-x:auto;padding:1px 0 4px;scrollbar-width:none}
-  .stats-tabs::-webkit-scrollbar{display:none}
-  .stats-tab{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:42px;padding:0 15px;border:1px solid var(--line-2);border-radius:999px;background:#151517;color:#bdbdc1;font-size:14px;font-weight:900;white-space:nowrap}
-  .stats-tab.active{border-color:var(--red);background:var(--red);color:#fff}
+  .stats-workbench{display:grid;grid-template-columns:280px minmax(0,1fr);gap:15px;align-items:start;margin-top:15px}
+  .stats-catalog{position:sticky;top:14px;overflow:hidden;border:1px solid var(--line-2);border-radius:17px;background:#121214}
+  .stats-catalog-head{padding:16px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(229,72,77,.09),transparent 72%)}
+  .stats-catalog-head strong{display:block;color:#fff;font-size:17px;font-weight:950}
+  .stats-catalog-head span{display:block;margin-top:5px;color:#aaaab0;font-size:13px;font-weight:700;line-height:1.4}
+  .stats-catalog-list{max-height:660px;overflow-y:auto;padding:7px;scrollbar-color:#3b3b40 transparent;scrollbar-width:thin}
+  .stats-catalog-item{display:grid;grid-template-columns:36px minmax(0,1fr) 28px;gap:10px;align-items:center;width:100%;min-height:58px;padding:8px 9px;border:1px solid transparent;border-radius:11px;background:transparent;text-align:left;color:inherit}
+  .stats-catalog-item:hover{background:#19191c}
+  .stats-catalog-item.selected{border-color:rgba(229,72,77,.42);background:rgba(229,72,77,.09)}
+  .stats-catalog-item .stat-pictogram{width:34px;height:34px;border-radius:10px}
+  .stats-catalog-item .stat-pictogram svg{width:19px;height:19px}
+  .stats-catalog-copy{min-width:0}
+  .stats-catalog-copy b{display:block;overflow:hidden;color:#e9e9eb;font-size:14px;font-weight:900;line-height:1.25;text-overflow:ellipsis;white-space:nowrap}
+  .stats-catalog-copy small{display:block;margin-top:4px;color:#8e8e94;font-size:11px;font-weight:800}
+  .stats-catalog-slot{display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;border:1px solid var(--line-2);border-radius:50%;color:#8d8d92;font-size:14px;font-weight:950}
+  .stats-catalog-item.selected .stats-catalog-slot{border-color:var(--red);background:var(--red);color:#fff}
+  .stats-selection{min-width:0}
+  .stats-selection-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;padding:0 2px}
+  .stats-selection-head strong{color:#f1f1f2;font-size:16px;font-weight:950}
+  .stats-selection-head span{color:#aaaab0;font-size:13px;font-weight:750}
   .stats-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
   .stat-board{overflow:hidden;border:1px solid var(--line-2);border-radius:17px;background:#131315}
   .stat-board-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-height:75px;padding:16px;border-bottom:1px solid var(--line)}
@@ -400,6 +416,14 @@
     .stats-source{display:block}
     .stats-source a{display:inline-block;margin-top:11px}
     .stats-featured,.stats-grid,.discipline-columns{grid-template-columns:1fr}
+    .stats-workbench{grid-template-columns:1fr}
+    .stats-catalog{position:relative;top:auto}
+    .stats-catalog-list{display:grid;grid-template-columns:1fr;max-height:360px;gap:3px}
+    .stats-catalog-item{grid-template-columns:30px minmax(0,1fr) 25px;min-height:53px;padding:7px}
+    .stats-catalog-item .stat-pictogram{width:29px;height:29px}
+    .stats-catalog-copy b{font-size:13px}
+    .stats-selection-head{display:block}
+    .stats-selection-head span{display:block;margin-top:5px;line-height:1.4}
     .discipline-intro,.discipline-ledger{padding:18px 15px}
     .discipline-head,.discipline-ledger-head{display:block}
     .discipline-status{margin-top:14px}
@@ -1104,7 +1128,7 @@ let loadErrors = [];
 let DATA_META = {generatedAt:null, source:'Wikipedia', upcoming:0, past:0};
 let scheduleFilter = 'all';
 let rankingFilter = 0;
-let statsFilter = '전체';
+let selectedStatIds = ['wins','finishes'];
 let disciplineFilter = 'all';
 let fighterQuery = '';
 let fighterLimit = 60;
@@ -2021,8 +2045,9 @@ function officialStatValue(category,leader){
   const unit=category?.unit||'';
   return `${value}${unit?`<small>${esc(unit)}</small>`:''}`;
 }
-function setStatsFilter(group){
-  statsFilter=group||'전체';
+function selectStatCategory(id){
+  if(!id||selectedStatIds.includes(id)) return;
+  selectedStatIds=[...(selectedStatIds.slice(-1)),id];
   route({preserveScroll:true});
 }
 function statTone(group){
@@ -2116,8 +2141,10 @@ function disciplineRowHtml(item){
 function viewStats(){
   const categories=OFFICIAL_STATS.categories||[];
   if(!categories.length) return `<div class="state-card"><div><h1>공식 스탯을 불러오지 못했습니다</h1><p>UFC Record Book 자동수집 상태를 확인해주세요.</p><a class="btn ghost" href="#fighters">선수 도감 보기</a></div></div>`;
-  const groups=['전체','경기','타격','그래플링','시간'];
-  const visible=statsFilter==='전체'?categories:categories.filter(category=>category.group===statsFilter);
+  const validSelected=selectedStatIds.filter(id=>categories.some(category=>category.id===id));
+  categories.forEach(category=>{ if(validSelected.length<2&&!validSelected.includes(category.id)) validSelected.push(category.id); });
+  selectedStatIds=validSelected.slice(0,2);
+  const selectedCategories=selectedStatIds.map(id=>categories.find(category=>category.id===id)).filter(Boolean);
   const featuredIds=['wins','finishes','shortest-average','strikes-per-minute'];
   const featured=featuredIds.map(id=>categories.find(category=>category.id===id)).filter(Boolean);
   const discipline=(DISCIPLINE_LEDGER.incidents||[]).length?DISCIPLINE_LEDGER:(OFFICIAL_STATS.discipline||{});
@@ -2178,15 +2205,27 @@ function viewStats(){
 
       <section>
         <div class="stats-section-head">
-          <div class="stats-title-line">${statIcon('record-room','section','전체')}<div><h2>기록실</h2><p>부문마다 공식 상위 5명을 확인하세요.</p></div></div>
+          <div class="stats-title-line">${statIcon('record-room','section','전체')}<div><h2>기록실</h2><p>목차에서 보고 싶은 기록을 누르면 오른쪽 두 칸에 바로 바뀌어 나옵니다.</p></div></div>
         </div>
-        <div class="stats-tabs" role="tablist" aria-label="스탯 분류">
-          ${groups.map(group=>{
-            const groupIcon=group==='전체'?'record-room':group==='경기'?'wins':group==='타격'?'strikes-per-minute':group==='그래플링'?'takedowns':'shortest-average';
-            return `<button class="stats-tab ${statsFilter===group?'active':''}" type="button" role="tab" aria-selected="${statsFilter===group}" onclick="setStatsFilter('${group}')">${statIcon(groupIcon,'tab',group)}<span>${group}</span></button>`;
-          }).join('')}
+        <div class="stats-workbench">
+          <aside class="stats-catalog" aria-label="기록실 전체 목차">
+            <div class="stats-catalog-head"><strong>전체 기록 목차</strong><span>두 개를 고르면 오른쪽에서 함께 볼 수 있어요.</span></div>
+            <div class="stats-catalog-list">
+              ${categories.map(category=>{
+                const slot=selectedStatIds.indexOf(category.id)+1;
+                return `<button class="stats-catalog-item ${slot?'selected':''}" type="button" data-stat-id="${esc(category.id)}" aria-pressed="${Boolean(slot)}" onclick="selectStatCategory('${category.id}')">
+                  ${statIcon(category.id,'catalog',category.group)}
+                  <span class="stats-catalog-copy"><b>${esc(category.title)}</b><small>${esc(category.group)}${category.qualifier?` · ${esc(category.qualifier)}`:''}</small></span>
+                  <span class="stats-catalog-slot" aria-hidden="true">${slot||'+'}</span>
+                </button>`;
+              }).join('')}
+            </div>
+          </aside>
+          <div class="stats-selection">
+            <div class="stats-selection-head"><strong>선택한 기록 2개</strong><span>목차에서 다른 기록을 누르면 오래된 선택이 바뀌어요.</span></div>
+            <div class="stats-grid">${selectedCategories.map(statBoardHtml).join('')}</div>
+          </div>
         </div>
-        <div class="stats-grid">${visible.map(statBoardHtml).join('')}</div>
       </section>
 
       <section class="discipline-panel">
@@ -2201,7 +2240,7 @@ function viewStats(){
           </div>
           <div class="discipline-warning"><strong>비고</strong><span>${esc(discipline.notice||'자료의 누락이나 정정으로 일부 내용이 틀릴 수 있습니다.')}</span></div>
           <div class="discipline-metrics" aria-label="현재 검증 범위">
-            <div class="discipline-metric"><span>공식 문서 확인</span><strong>${disciplineSummary.total}<small>경기</small></strong></div>
+            <div class="discipline-metric"><span>현재 장부 등록</span><strong>${disciplineSummary.total}<small>경기</small></strong></div>
             <div class="discipline-metric"><span>감점 확인</span><strong>${disciplineSummary.point}<small>건</small></strong></div>
             <div class="discipline-metric"><span>실격 확인</span><strong>${disciplineSummary.dq}<small>건</small></strong></div>
             <div class="discipline-metric"><span>무효·번복</span><strong>${disciplineSummary.changed}<small>건</small></strong></div>

@@ -88,9 +88,10 @@ class DataContractTests(unittest.TestCase):
         self.assertEqual(ledger.get("status"), "initial_build")
         self.assertFalse(ledger.get("coverage", {}).get("complete"))
         self.assertEqual(ledger.get("coverage", {}).get("verified_bouts"), len(incidents))
-        self.assertGreaterEqual(len(incidents), 10)
+        self.assertGreaterEqual(len(incidents), 18)
         self.assertIn("틀릴 수 있습니다", ledger.get("notice", ""))
         self.assertIn("전수 검증 전", ledger.get("coverage", {}).get("note", ""))
+        self.assertIn("역대 전체 노콘 수가 아님", ledger.get("coverage", {}).get("note", ""))
         self.assertEqual(len({item["id"] for item in incidents}), len(incidents))
         self.assertTrue(
             {"point_deduction", "disqualification", "no_contest", "result_overturned"}
@@ -711,7 +712,7 @@ class FrontendContractTests(unittest.TestCase):
     def test_stats_are_a_primary_view_and_fighter_directory_is_secondary(self):
         for required in (
             "function viewStats()",
-            "function setStatsFilter(group)",
+            "function selectStatCategory(id)",
             "function setDisciplineFilter(type)",
             "function disciplineRowHtml(item)",
             "function officialStatFighter(leader)",
@@ -726,6 +727,10 @@ class FrontendContractTests(unittest.TestCase):
             ".view.stats-view",
             ".stats-featured",
             ".stats-grid",
+            ".stats-workbench",
+            ".stats-catalog",
+            ".stats-catalog-item",
+            ".stats-selection",
             ".stat-pictogram",
             ".stat-board-title",
             ".stat-leader-photo",
