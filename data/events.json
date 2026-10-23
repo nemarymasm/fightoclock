@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-23T14:52:00+09:00",
+  "generated_at": "2026-10-23T14:55:21+09:00",
   "source": "UFC 공식 일정·대진·결과 / 장애 시 Wikipedia",
   "translations_applied": true,
   "event_count": 8,
@@ -19,7 +19,7 @@
       "early_prelims_start_time_utc": "2026-10-24T14:00:00Z",
       "main_card": [
         {
-          "weight": "페더급 Title Bout",
+          "weight": "Featherweight Title Bout",
           "fighter_a": "Alexander Volkanovski",
           "fighter_b": "Movsar Evloev",
           "winner": null,
@@ -32,10 +32,10 @@
           "time": "",
           "fighter_a_ko": "알렉산더 볼카노프스키",
           "fighter_b_ko": "모브사르 에블로예프",
-          "weight_ko": "페더급 Title Bout"
+          "weight_ko": "Featherweight Title Bout"
         },
         {
-          "weight": "밴텀급 Title Bout",
+          "weight": "Bantamweight Title Bout",
           "fighter_a": "Petr Yan",
           "fighter_b": "Merab Dvalishvili",
           "winner": null,
@@ -48,10 +48,10 @@
           "time": "",
           "fighter_a_ko": "페트르 얀",
           "fighter_b_ko": "메랍 드발리시빌리",
-          "weight_ko": "밴텀급 Title Bout"
+          "weight_ko": "Bantamweight Title Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Lone'er Kavanagh",
           "fighter_b": "Ramazan Temirov",
           "winner": null,
@@ -64,10 +64,10 @@
           "time": "",
           "fighter_a_ko": "로니어 카바나",
           "fighter_b_ko": "라마잔 테미로프",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Alexander Volkov",
           "fighter_b": "Rizvan Kuniev",
           "winner": null,
@@ -80,10 +80,10 @@
           "time": "",
           "fighter_a_ko": "알렉산더 볼코프",
           "fighter_b_ko": "리즈반 쿠니예프",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Aaron Pico",
           "fighter_b": "Losene Keita",
           "winner": null,
@@ -96,12 +96,12 @@
           "time": "",
           "fighter_a_ko": "에런 피코",
           "fighter_b_ko": "로센 케이타",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Azamat Murzakanov",
           "fighter_b": "Dominick Reyes",
           "winner": null,
@@ -114,10 +114,10 @@
           "time": "",
           "fighter_a_ko": "아자마트 무르자카노프",
           "fighter_b_ko": "도미닉 레예스",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Nikita Krylov",
           "fighter_b": "Abdul-Rakhman Yakhyaev",
           "winner": null,
@@ -130,10 +130,10 @@
           "time": "",
           "fighter_a_ko": "니키타 크릴로프",
           "fighter_b_ko": "압둘라흐만 야흐야예프",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Abusupiyan Magomedov",
           "fighter_b": "Cam Rowston",
           "winner": null,
@@ -146,10 +146,10 @@
           "time": "",
           "fighter_a_ko": "아부수피얀 마고메도프",
           "fighter_b_ko": "캠 로스턴",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Grant Dawson",
           "fighter_b": "Nurullo Aliev",
           "winner": null,
@@ -162,10 +162,10 @@
           "time": "",
           "fighter_a_ko": "그랜트 도슨",
           "fighter_b_ko": "누룰로 알리예프",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Colby Thicknesse",
           "fighter_b": "Asaf Chopurov",
           "winner": null,
@@ -179,10 +179,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "콜비 시크니스",
           "fighter_b_ko": "아사프 초푸로프",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Abubakar Vagaev",
           "fighter_b": "Jacob Malkoun",
           "winner": null,
@@ -196,10 +196,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "아부바카르 바가예프",
           "fighter_b_ko": "제이콥 말쿤",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Bolaji Oki",
           "fighter_b": "Daniel Santos",
           "winner": null,
@@ -213,10 +213,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "볼라지 오키",
           "fighter_b_ko": "다니엘 산투스",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Kody Steele",
           "fighter_b": "Noah Gugnon",
           "winner": null,
@@ -230,10 +230,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "코디 스틸",
           "fighter_b_ko": "노아 구뇽",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Iasmin Lucindo",
           "fighter_b": "Nicolle Caliari",
           "winner": null,
@@ -247,12 +247,12 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "야스민 루신두",
           "fighter_b_ko": "니콜리 칼리아리",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC 333: 볼카노프스키 대 에블로예프",
       "venue_ko": "에티하드 아레나",
       "location_ko": "아랍에미리트 아부다비",
@@ -271,7 +271,7 @@
       "prelims_start_time_utc": "2026-10-31T21:00:00Z",
       "main_card": [
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Renato Moicano",
           "fighter_b": "Tom Nolan",
           "winner": null,
@@ -284,10 +284,10 @@
           "time": "",
           "fighter_a_ko": "헤나토 모이카노",
           "fighter_b_ko": "톰 놀란",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Randy Brown",
           "fighter_b": "Carlos Leal",
           "winner": null,
@@ -300,10 +300,10 @@
           "time": "",
           "fighter_a_ko": "랜디 브라운",
           "fighter_b_ko": "카를로스 레알",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "여성 밴텀급 Bout",
+          "weight": "Women's Bantamweight Bout",
           "fighter_a": "Yana Santos",
           "fighter_b": "Luana Santos",
           "winner": null,
@@ -316,10 +316,10 @@
           "time": "",
           "fighter_a_ko": "야나 산토스",
           "fighter_b_ko": "루아나 산토스",
-          "weight_ko": "여성 밴텀급 Bout"
+          "weight_ko": "Women's Bantamweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Jean-Paul Lebosnoyani",
           "fighter_b": "Farman Hasanov",
           "winner": null,
@@ -332,12 +332,12 @@
           "time": "",
           "fighter_a_ko": "장폴 르보스노야니",
           "fighter_b_ko": "파르만 하사노프",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Francis Marshall",
           "fighter_b": "Gastón Bolaños",
           "winner": null,
@@ -350,10 +350,10 @@
           "time": "",
           "fighter_a_ko": "프랜시스 마셜",
           "fighter_b_ko": "가스톤 볼라뇨스",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Azamat Bekoev",
           "fighter_b": "Andre Petroski",
           "winner": null,
@@ -366,10 +366,10 @@
           "time": "",
           "fighter_a_ko": "아자마트 베코예프",
           "fighter_b_ko": "안드레 페트로스키",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Rodrigo Sezinando",
           "fighter_b": "Theodor Berggren",
           "winner": null,
@@ -382,10 +382,10 @@
           "time": "",
           "fighter_a_ko": "호드리구 세지난두",
           "fighter_b_ko": "테오도르 베르그렌",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Julian Erosa",
           "fighter_b": "JeongYeong Lee",
           "winner": null,
@@ -398,10 +398,10 @@
           "time": "",
           "fighter_a_ko": "줄리안 에로사",
           "fighter_b_ko": "이정영",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Nick Klein",
           "fighter_b": "Joseph Kropschot",
           "winner": null,
@@ -414,10 +414,10 @@
           "time": "",
           "fighter_a_ko": "닉 클라인",
           "fighter_b_ko": "조지프 크롭쇼트",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Talita Alencar",
           "fighter_b": "Piera Rodriguez",
           "winner": null,
@@ -430,10 +430,10 @@
           "time": "",
           "fighter_a_ko": "탈리타 알렌카르",
           "fighter_b_ko": "피에라 로드리게스",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "Lucia Szabova",
           "fighter_b": "Tainara Lisboa",
           "winner": null,
@@ -446,12 +446,12 @@
           "time": "",
           "fighter_a_ko": "루치아 사보바",
           "fighter_b_ko": "타이나라 리스보아",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 모이카노 대 놀란",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -470,7 +470,7 @@
       "prelims_start_time_utc": "2026-11-07T22:00:00Z",
       "main_card": [
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Gabriel Bonfim",
           "fighter_b": "Sean Brady",
           "winner": null,
@@ -483,10 +483,10 @@
           "time": "",
           "fighter_a_ko": "가브리엘 본핌",
           "fighter_b_ko": "션 브래디",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Tatiana Suarez",
           "fighter_b": "Virna Jandiroba",
           "winner": null,
@@ -499,10 +499,10 @@
           "time": "",
           "fighter_a_ko": "타티아나 수아레스",
           "fighter_b_ko": "비르나 잔디로바",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Davey Grant",
           "fighter_b": "Elijah Smith",
           "winner": null,
@@ -515,10 +515,10 @@
           "time": "",
           "fighter_a_ko": "데이비 그랜트",
           "fighter_b_ko": "일라이저 스미스",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Seokhyeon Ko",
           "fighter_b": "Wellington Turman",
           "winner": null,
@@ -531,10 +531,10 @@
           "time": "",
           "fighter_a_ko": "고석현",
           "fighter_b_ko": "웰링턴 투르만",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Billy Elekana",
           "fighter_b": "Lucas Fernando",
           "winner": null,
@@ -547,10 +547,10 @@
           "time": "",
           "fighter_a_ko": "빌리 엘레카나",
           "fighter_b_ko": "루카스 페르난두",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Mantas Kondratavičius",
           "fighter_b": "Wesley Schultz",
           "winner": null,
@@ -563,12 +563,12 @@
           "time": "",
           "fighter_a_ko": "만타스 콘드라타비추스",
           "fighter_b_ko": "웨슬리 슐츠",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Gabriel Lorenco",
           "fighter_b": "Alvin Hines",
           "winner": null,
@@ -581,10 +581,10 @@
           "time": "",
           "fighter_a_ko": "가브리에우 로렌수",
           "fighter_b_ko": "앨빈 하인스",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "Karine Silva",
           "fighter_b": "Gabriella Fernandes",
           "winner": null,
@@ -597,10 +597,10 @@
           "time": "",
           "fighter_a_ko": "카리니 실바",
           "fighter_b_ko": "가브리엘라 페르난데스",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Jose Delano",
           "fighter_b": "Murtazali Magomedov",
           "winner": null,
@@ -613,10 +613,10 @@
           "time": "",
           "fighter_a_ko": "조제 델라누",
           "fighter_b_ko": "무르타잘리 마고메도프",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Keiichiro Nakamura",
           "fighter_b": "Ollie Schmid",
           "winner": null,
@@ -629,10 +629,10 @@
           "time": "",
           "fighter_a_ko": "나카무라 케이이치로",
           "fighter_b_ko": "올리 슈미트",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Austin Bashi",
           "fighter_b": "Lucas Brennan",
           "winner": null,
@@ -645,10 +645,10 @@
           "time": "",
           "fighter_a_ko": "오스틴 바시",
           "fighter_b_ko": "루카스 브레넌",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "여성 밴텀급 Bout",
+          "weight": "Women's Bantamweight Bout",
           "fighter_a": "Priscila Cachoeira",
           "fighter_b": "Nina Milošević",
           "winner": null,
@@ -661,14 +661,14 @@
           "time": "",
           "fighter_a_ko": "프리실라 카쇼에이라",
           "fighter_b_ko": "니나 밀로셰비치",
-          "weight_ko": "여성 밴텀급 Bout"
+          "weight_ko": "Women's Bantamweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Jonny Parsons",
           "fighter_b": "José Souza",
           "winner": null,
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/norma-dyumont-viana-3",
+          "fighter_a_ufc_url": "https://www.ufc.com/athlete/jonny-parsons",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/PARSONS_JONNY_L_07-22.png?itok=izstbTRw",
           "fighter_b_ufc_url": "https://www.ufc.com/athlete/jose-henrique",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-05/SOUZA_JOSE_R_05-30.png?itok=A8mXxqVU",
@@ -677,12 +677,12 @@
           "time": "",
           "fighter_a_ko": "조니 파슨스",
           "fighter_b_ko": "조제 소우자",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 본핌 대 브래디",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -702,7 +702,7 @@
       "early_prelims_start_time_utc": "2026-11-14T22:00:00Z",
       "main_card": [
         {
-          "weight": "헤비급 Title Bout",
+          "weight": "Heavyweight Title Bout",
           "fighter_a": "Ciryl Gane",
           "fighter_b": "Josh Hokit",
           "winner": null,
@@ -715,10 +715,10 @@
           "time": "",
           "fighter_a_ko": "시릴 가네",
           "fighter_b_ko": "조시 호킷",
-          "weight_ko": "헤비급 Title Bout"
+          "weight_ko": "Heavyweight Title Bout"
         },
         {
-          "weight": "여성 밴텀급 Title Bout",
+          "weight": "Women's Bantamweight Title Bout",
           "fighter_a": "Kayla Harrison",
           "fighter_b": "Amanda Nunes",
           "winner": null,
@@ -731,10 +731,10 @@
           "time": "",
           "fighter_a_ko": "케일라 해리슨",
           "fighter_b_ko": "아만다 누네스",
-          "weight_ko": "여성 밴텀급 Title Bout"
+          "weight_ko": "Women's Bantamweight Title Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Caio Borralho",
           "fighter_b": "Yousri Belgaroui",
           "winner": null,
@@ -747,10 +747,10 @@
           "time": "",
           "fighter_a_ko": "카이오 보랄료",
           "fighter_b_ko": "유스리 벨가루이",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Uroš Medić",
           "fighter_b": "Kevin Holland",
           "winner": null,
@@ -763,10 +763,10 @@
           "time": "",
           "fighter_a_ko": "우로시 메디치",
           "fighter_b_ko": "케빈 홀랜드",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Bilal Hasan",
           "fighter_b": "Luis Gurule",
           "winner": null,
@@ -779,12 +779,12 @@
           "time": "",
           "fighter_a_ko": "빌랄 하산",
           "fighter_b_ko": "루이스 구룰레",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Stephen Thompson",
           "fighter_b": "Charles Radtke",
           "winner": null,
@@ -797,10 +797,10 @@
           "time": "",
           "fighter_a_ko": "스티븐 톰슨",
           "fighter_b_ko": "찰스 래드키",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Drew Dober",
           "fighter_b": "Chris Duncan",
           "winner": null,
@@ -813,10 +813,10 @@
           "time": "",
           "fighter_a_ko": "드루 도버",
           "fighter_b_ko": "크리스 던컨",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Jim Miller",
           "fighter_b": "Terrance McKinney",
           "winner": null,
@@ -829,10 +829,10 @@
           "time": "",
           "fighter_a_ko": "짐 밀러",
           "fighter_b_ko": "테런스 맥키니",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Donte Johnson",
           "fighter_b": "Baisangur Susurkaev",
           "winner": null,
@@ -845,10 +845,10 @@
           "time": "",
           "fighter_a_ko": "돈테 존슨",
           "fighter_b_ko": "바이산구르 수수르카예프",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "여성 밴텀급 Bout",
+          "weight": "Women's Bantamweight Bout",
           "fighter_a": "Macy Chiasson",
           "fighter_b": "Bia Mesquita",
           "winner": null,
@@ -862,10 +862,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "메이시 치아슨",
           "fighter_b_ko": "비아 메스키타",
-          "weight_ko": "여성 밴텀급 Bout"
+          "weight_ko": "Women's Bantamweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Adrian Yañez",
           "fighter_b": "Juan Diaz",
           "winner": null,
@@ -879,10 +879,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "에이드리언 야네즈",
           "fighter_b_ko": "후안 디아스",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Nazim Sadykhov",
           "fighter_b": "Jefferson Nascimento",
           "winner": null,
@@ -896,12 +896,12 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "나짐 사디호프",
           "fighter_b_ko": "제페르송 나시멘투",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC 334: 가네 대 호킷",
       "venue_ko": "매디슨 스퀘어 가든",
       "location_ko": "미국 뉴욕",
@@ -922,7 +922,7 @@
       "prelims": [],
       "announced_card": [
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Jiří Procházka",
           "fighter_b": "Navajo Stirling",
           "winner": null,
@@ -935,10 +935,10 @@
           "time": "",
           "fighter_a_ko": "이리 프로하즈카",
           "fighter_b_ko": "나바호 스털링",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Aljamain Sterling",
           "fighter_b": "Kevin Vallejos",
           "winner": null,
@@ -951,10 +951,10 @@
           "time": "",
           "fighter_a_ko": "알저메인 스털링",
           "fighter_b_ko": "케빈 바예호스",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Dan Hooker",
           "fighter_b": "Brian Ortega",
           "winner": null,
@@ -967,10 +967,10 @@
           "time": "",
           "fighter_a_ko": "댄 후커",
           "fighter_b_ko": "브라이언 오르테가",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Jared Cannonier",
           "fighter_b": "Ikram Aliskerov",
           "winner": null,
@@ -983,10 +983,10 @@
           "time": "",
           "fighter_a_ko": "자레드 캐노니어",
           "fighter_b_ko": "이크람 알리스케로프",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Shamil Gaziev",
           "fighter_b": "Tallison Teixeira",
           "winner": null,
@@ -999,10 +999,10 @@
           "time": "",
           "fighter_a_ko": "샤밀 가지예프",
           "fighter_b_ko": "Tallison Teixeira",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Jake Matthews",
           "fighter_b": "Tahir Abdullayev",
           "winner": null,
@@ -1015,10 +1015,10 @@
           "time": "",
           "fighter_a_ko": "Jake Matthews",
           "fighter_b_ko": "Tahir Abdullayev",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Aleksandre Topuria",
           "fighter_b": "Santiago Luna",
           "winner": null,
@@ -1031,10 +1031,10 @@
           "time": "",
           "fighter_a_ko": "Aleksandre Topuria",
           "fighter_b_ko": "Santiago Luna",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Asu Almabayev",
           "fighter_b": "Kyoji Horiguchi",
           "winner": null,
@@ -1047,10 +1047,10 @@
           "time": "",
           "fighter_a_ko": "아수 알마바예프",
           "fighter_b_ko": "호리구치 쿄지",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Amir Albazi",
           "fighter_b": "Alessandro Costa",
           "winner": null,
@@ -1063,11 +1063,11 @@
           "time": "",
           "fighter_a_ko": "아미르 알바지",
           "fighter_b_ko": "알레산드로 코스타",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         }
       ],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 프로하즈카 대 스털링",
       "venue_ko": "아브하 아레나",
       "location_ko": "카타르 도하",
@@ -1089,7 +1089,7 @@
       "prelims": [],
       "announced_card": [
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Charles Oliveira",
           "fighter_b": "Diego Lopes",
           "winner": null,
@@ -1102,10 +1102,10 @@
           "time": "",
           "fighter_a_ko": "찰스 올리베이라",
           "fighter_b_ko": "디에고 로페스",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Sergei Pavlovich",
           "fighter_b": "Alex Pereira",
           "winner": null,
@@ -1118,10 +1118,10 @@
           "time": "",
           "fighter_a_ko": "세르게이 파블로비치",
           "fighter_b_ko": "알렉스 페레이라",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Brandon Moreno",
           "fighter_b": "Charles Johnson",
           "winner": null,
@@ -1134,26 +1134,26 @@
           "time": "",
           "fighter_a_ko": "브랜든 모레노",
           "fighter_b_ko": "찰스 존슨",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Quentin Pasley",
           "fighter_b": "Junior Tafa",
           "winner": null,
           "fighter_a_ufc_url": "https://www.ufc.com/athlete/quentin-pasley",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/PASLEY_QUENTEN_L_09-08.png?itok=zn-OfZXx",
-          "fighter_b_ufc_url": "https://www.ufc.com/athlete/shiyunia-tafua",
+          "fighter_b_ufc_url": "https://www.ufc.com/athlete/junior-tafa",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-06/TAFA_JUNIOR_R_06-06.png?itok=O41jc27J",
           "method": "",
           "round": "",
           "time": "",
           "fighter_a_ko": "Quentin Pasley",
           "fighter_b_ko": "주니어 타파",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Joe Pyfer",
           "fighter_b": "Bo Nickal",
           "winner": null,
@@ -1166,11 +1166,11 @@
           "time": "",
           "fighter_a_ko": "조 파이퍼",
           "fighter_b_ko": "보 니컬",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         }
       ],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC 335: 올리베이라 대 로페스",
       "venue_ko": "T-모바일 아레나",
       "location_ko": "미국 네바다 라스베이거스",
@@ -1191,7 +1191,7 @@
       "prelims": [],
       "announced_card": [],
       "card_status": "to_be_announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC 336: 대진 미정",
       "venue_ko": "스코샤뱅크 아레나",
       "location_ko": "캐나다 온타리오 토론토",
@@ -1212,7 +1212,7 @@
       "prelims": [],
       "announced_card": [],
       "card_status": "to_be_announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 대진 미정",
       "venue_ko": "애프터페이 아레나",
       "location_ko": "호주 시드니 올림픽파크",
@@ -1234,7 +1234,7 @@
       "prelims_start_time_utc": "2026-10-17T21:00:00Z",
       "main_card": [
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Joaquin Buckley",
           "fighter_b": "Mike Malott",
           "winner": "b",
@@ -1247,10 +1247,10 @@
           "time": "2:32",
           "fighter_a_ko": "호아킨 버클리",
           "fighter_b_ko": "마이크 말롯",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "Erin Blanchfield",
           "fighter_b": "Jasmine Jasudavicius",
           "winner": "b",
@@ -1263,10 +1263,10 @@
           "time": "5:00",
           "fighter_a_ko": "에린 블랜치필드",
           "fighter_b_ko": "재스민 재수다비시우스",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Kyle Nelson",
           "fighter_b": "Cristian Perez",
           "winner": "b",
@@ -1279,10 +1279,10 @@
           "time": "0:27",
           "fighter_a_ko": "카일 넬슨",
           "fighter_b_ko": "크리스티안 페레스",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Marc-Andre Barriault",
           "fighter_b": "Kyle Daukaus",
           "winner": "a",
@@ -1295,10 +1295,10 @@
           "time": "4:28",
           "fighter_a_ko": "마크앙드레 바리오",
           "fighter_b_ko": "카일 다우카우스",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Louis Jourdain",
           "fighter_b": "Timmy Cuamba",
           "winner": "b",
@@ -1311,10 +1311,10 @@
           "time": "2:48",
           "fighter_a_ko": "루이 주르댕",
           "fighter_b_ko": "티미 쿠암바",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Mandel Nallo",
           "fighter_b": "Nate Landwehr",
           "winner": "a",
@@ -1327,12 +1327,12 @@
           "time": "0:47",
           "fighter_a_ko": "만델 날로",
           "fighter_b_ko": "네이트 랜드웨어",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Tanner Boser",
           "fighter_b": "Jhonata Diniz",
           "winner": "a",
@@ -1345,10 +1345,10 @@
           "time": "4:26",
           "fighter_a_ko": "태너 보저",
           "fighter_b_ko": "조나타 디니즈",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Julien Leblanc",
           "fighter_b": "Nick Galanti",
           "winner": "b",
@@ -1361,10 +1361,10 @@
           "time": "1:26",
           "fighter_a_ko": "줄리앵 르블랑",
           "fighter_b_ko": "닉 갈란티",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Javad Mahjoub",
           "fighter_b": "Joel Faglier",
           "winner": "b",
@@ -1377,14 +1377,14 @@
           "time": "2:11",
           "fighter_a_ko": "자바드 마흐주브",
           "fighter_b_ko": "조엘 파글리에",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "Katlyn Cerminara",
           "fighter_b": "Mackenzie Stiller",
           "winner": "a",
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/katlyn-chookagian",
+          "fighter_a_ufc_url": "https://www.ufc.com/athlete/katlyn-cerminara",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/CERMINARA_KATLYN_L_10-17.png?itok=DK6LE0RG",
           "fighter_b_ufc_url": "https://www.ufc.com/athlete/mackenzie-stiller",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/STILLER_MACKENZIE_R_10-17.png?itok=9EGBdPD0",
@@ -1393,14 +1393,14 @@
           "time": "4:46",
           "fighter_a_ko": "케이틀린 세르미나라",
           "fighter_b_ko": "매켄지 스틸러",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Chad Anheliger",
           "fighter_b": "Steven Koslow",
           "winner": "b",
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/meyson-dzhons-0",
+          "fighter_a_ufc_url": "https://www.ufc.com/athlete/chad-anheliger",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/ANHELIGER_CHAD_L_10-17.png?itok=yqzBN79z",
           "fighter_b_ufc_url": "https://www.ufc.com/athlete/steven-koslow",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/KOSLOW_STEVEN_R_10-17.png?itok=X1DzTyee",
@@ -1409,10 +1409,10 @@
           "time": "4:31",
           "fighter_a_ko": "채드 앤헬리거",
           "fighter_b_ko": "스티븐 코슬로",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "여성 밴텀급 Bout",
+          "weight": "Women's Bantamweight Bout",
           "fighter_a": "Melissa Croden",
           "fighter_b": "Chelsea Chandler",
           "winner": "b",
@@ -1425,10 +1425,10 @@
           "time": "4:52",
           "fighter_a_ko": "멜리사 크로든",
           "fighter_b_ko": "첼시 챈들러",
-          "weight_ko": "여성 밴텀급 Bout"
+          "weight_ko": "Women's Bantamweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Cody Chovancek",
           "fighter_b": "SuYoung You",
           "winner": "b",
@@ -1441,12 +1441,12 @@
           "time": "4:19",
           "fighter_a_ko": "코디 초반섹",
           "fighter_b_ko": "유수영",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 버클리 대 말롯",
       "venue_ko": "로저스 플레이스",
       "location_ko": "캐나다 앨버타 에드먼턴",
@@ -1465,7 +1465,7 @@
       "prelims_start_time_utc": "2026-10-10T21:00:00Z",
       "main_card": [
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Brendan Allen",
           "fighter_b": "Christian Leroy Duncan",
           "winner": "a",
@@ -1478,10 +1478,10 @@
           "time": "2:46",
           "fighter_a_ko": "브렌든 앨런",
           "fighter_b_ko": "크리스천 리로이 던컨",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Matheus Camilo",
           "fighter_b": "Jai Herbert",
           "winner": "b",
@@ -1494,10 +1494,10 @@
           "time": "5:00",
           "fighter_a_ko": "마테우스 카밀루",
           "fighter_b_ko": "자이 허버트",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Loopy Godinez",
           "fighter_b": "Ketlen Souza",
           "winner": "a",
@@ -1510,26 +1510,26 @@
           "time": "5:00",
           "fighter_a_ko": "루피 고디네즈",
           "fighter_b_ko": "케틀렌 소우자",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Andre Fili",
           "fighter_b": "Kai Kamaka III",
           "winner": "a",
           "fighter_a_ufc_url": "https://www.ufc.com/athlete/andre-fili",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/FILI_ANDRE_L_10-10.png?itok=oAMyjBAO",
-          "fighter_b_ufc_url": "https://www.ufc.com/athlete/kai-kamaka",
+          "fighter_b_ufc_url": "https://www.ufc.com/athlete/kai-kamaka-iii",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/KAMAKA_KAI_R_10-10.png?itok=76iakX5J",
           "method": "KO/TKO",
           "round": "2",
           "time": "0:22",
           "fighter_a_ko": "안드레 필리",
           "fighter_b_ko": "카이 카마카 3세",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Malcolm Wellmaker",
           "fighter_b": "Otari Tanzilovi",
           "winner": "b",
@@ -1542,12 +1542,12 @@
           "time": "2:39",
           "fighter_a_ko": "말콤 웰메이커",
           "fighter_b_ko": "오타리 탄질로비",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Julius Walker",
           "fighter_b": "Gerald Meerschaert",
           "winner": "a",
@@ -1560,10 +1560,10 @@
           "time": "3:35",
           "fighter_a_ko": "줄리어스 워커",
           "fighter_b_ko": "제럴드 미어샤트",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Francisco Prado",
           "fighter_b": "Ismael Bonfim",
           "winner": "a",
@@ -1576,10 +1576,10 @@
           "time": "4:23",
           "fighter_a_ko": "프란시스코 프라도",
           "fighter_b_ko": "이스마엘 본핌",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Niko Price",
           "fighter_b": "Leon Shahbazyan",
           "winner": "a",
@@ -1592,10 +1592,10 @@
           "time": "1:58",
           "fighter_a_ko": "니코 프라이스",
           "fighter_b_ko": "레온 샤바지안",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Felipe Franco",
           "fighter_b": "Brendson Ribeiro",
           "winner": "b",
@@ -1608,10 +1608,10 @@
           "time": "1:49",
           "fighter_a_ko": "펠리페 프랑코",
           "fighter_b_ko": "브렌드송 히베이루",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Allen Frye Jr.",
           "fighter_b": "RJ Harris",
           "winner": "a",
@@ -1624,10 +1624,10 @@
           "time": "2:59",
           "fighter_a_ko": "앨런 프라이 주니어",
           "fighter_b_ko": "알제이 해리스",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "여성 밴텀급 Bout",
+          "weight": "Women's Bantamweight Bout",
           "fighter_a": "Alice Pereira",
           "fighter_b": "Daria Zhelezniakova",
           "winner": "a",
@@ -1640,10 +1640,10 @@
           "time": "5:00",
           "fighter_a_ko": "알리시 페레이라",
           "fighter_b_ko": "다리야 젤레즈냐코바",
-          "weight_ko": "여성 밴텀급 Bout"
+          "weight_ko": "Women's Bantamweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "Ernesta Kareckaitė",
           "fighter_b": "Melissa Gatto",
           "winner": null,
@@ -1656,12 +1656,12 @@
           "time": "5:00",
           "fighter_a_ko": "에르네스타 카레츠카이테",
           "fighter_b_ko": "멜리사 가투",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 앨런 대 던컨",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -1681,7 +1681,7 @@
       "early_prelims_start_time_utc": "2026-10-03T20:00:00Z",
       "main_card": [
         {
-          "weight": "여성 플라이급 Title Bout",
+          "weight": "Women's Flyweight Title Bout",
           "fighter_a": "Natália Silva",
           "fighter_b": "Wang Cong",
           "winner": "a",
@@ -1694,10 +1694,10 @@
           "time": "5:00",
           "fighter_a_ko": "나탈리아 실바",
           "fighter_b_ko": "왕충",
-          "weight_ko": "여성 플라이급 Title Bout"
+          "weight_ko": "Women's Flyweight Title Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Deiveson Figueiredo",
           "fighter_b": "Payton Talbott",
           "winner": "b",
@@ -1710,10 +1710,10 @@
           "time": "2:09",
           "fighter_a_ko": "데이베손 피게이레두",
           "fighter_b_ko": "페이튼 탤벗",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "King Green",
           "fighter_b": "Esteban Ribovics",
           "winner": "b",
@@ -1726,10 +1726,10 @@
           "time": "4:08",
           "fighter_a_ko": "킹 그린",
           "fighter_b_ko": "에스테반 리보빅스",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Roberto Soldić",
           "fighter_b": "Khaos Williams",
           "winner": "a",
@@ -1742,10 +1742,10 @@
           "time": "5:00",
           "fighter_a_ko": "로베르토 솔디치",
           "fighter_b_ko": "카오스 윌리엄스",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Ateba Gautier",
           "fighter_b": "Roman Kopylov",
           "winner": "b",
@@ -1758,12 +1758,12 @@
           "time": "3:12",
           "fighter_a_ko": "아테바 고티에",
           "fighter_b_ko": "로만 코필로프",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Imanol Rodriguez",
           "fighter_b": "Alden Coria",
           "winner": "a",
@@ -1776,10 +1776,10 @@
           "time": "3:11",
           "fighter_a_ko": "이마놀 로드리게스",
           "fighter_b_ko": "올든 코리아",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Damian Pinas",
           "fighter_b": "Andrey Pulyaev",
           "winner": "a",
@@ -1792,10 +1792,10 @@
           "time": "1:15",
           "fighter_a_ko": "다미안 피나스",
           "fighter_b_ko": "안드레이 풀리야예프",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Marcus McGhee",
           "fighter_b": "Anthony Romero",
           "winner": "a",
@@ -1808,10 +1808,10 @@
           "time": "4:58",
           "fighter_a_ko": "마커스 맥기",
           "fighter_b_ko": "앤서니 로메로",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Anthony Wint",
           "fighter_b": "Lucas Armand",
           "winner": "a",
@@ -1824,10 +1824,10 @@
           "time": "0:23",
           "fighter_a_ko": "앤서니 윈트",
           "fighter_b_ko": "루카스 아르망",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Johnny Walker",
           "fighter_b": "Mick Parkin",
           "winner": "a",
@@ -1841,10 +1841,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "조니 워커",
           "fighter_b_ko": "믹 파킨",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Jacobe Smith",
           "fighter_b": "Bruce Whitehead",
           "winner": "a",
@@ -1858,10 +1858,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "자코비 스미스",
           "fighter_b_ko": "브루스 화이트헤드",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Rafael Dos Anjos",
           "fighter_b": "Alexander Hernandez",
           "winner": "b",
@@ -1875,10 +1875,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "하파엘 도스 안요스",
           "fighter_b_ko": "알렉산더 에르난데스",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Marvin Vettori",
           "fighter_b": "Ismail Naurdiev",
           "winner": "b",
@@ -1892,10 +1892,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "마빈 베토리",
           "fighter_b_ko": "이스마일 나우르디예프",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Court McGee",
           "fighter_b": "Eric Nolan",
           "winner": "b",
@@ -1909,12 +1909,12 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "코트 맥기",
           "fighter_b_ko": "에릭 놀런",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC 332: 실바 대 왕",
       "venue_ko": "델타 센터",
       "location_ko": "미국 유타 솔트레이크시티",
@@ -1933,7 +1933,7 @@
       "prelims_start_time_utc": "2026-09-26T21:00:00Z",
       "main_card": [
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Raul Rosas Jr.",
           "fighter_b": "Raoni Barcelos",
           "winner": "a",
@@ -1946,10 +1946,10 @@
           "time": "1:38",
           "fighter_a_ko": "라울 로사스 주니어",
           "fighter_b_ko": "하오니 바르셀로스",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "여성 밴텀급 Bout",
+          "weight": "Women's Bantamweight Bout",
           "fighter_a": "Norma Dumont",
           "fighter_b": "Ailín Pérez",
           "winner": "b",
@@ -1962,10 +1962,10 @@
           "time": "5:00",
           "fighter_a_ko": "노르마 두몽",
           "fighter_b_ko": "아일린 페레스",
-          "weight_ko": "여성 밴텀급 Bout"
+          "weight_ko": "Women's Bantamweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Luis Hernandez",
           "fighter_b": "Sedriques Dumas",
           "winner": "a",
@@ -1978,10 +1978,10 @@
           "time": "0:57",
           "fighter_a_ko": "루이스 에르난데스",
           "fighter_b_ko": "세드리크 뒤마",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Mahammadali Osmanli",
           "fighter_b": "Ilimbek Akylbek",
           "winner": "b",
@@ -1994,10 +1994,10 @@
           "time": "2:19",
           "fighter_a_ko": "마하마달리 오스만리",
           "fighter_b_ko": "일림베크 아킬베크",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Melissa Amaya",
           "fighter_b": "Tina Black",
           "winner": "b",
@@ -2010,12 +2010,12 @@
           "time": "3:19",
           "fighter_a_ko": "멜리사 아마야",
           "fighter_b_ko": "티나 블랙",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Brady Hiestand",
           "fighter_b": "Rinya Nakamura",
           "winner": "a",
@@ -2028,10 +2028,10 @@
           "time": "4:07",
           "fighter_a_ko": "브레이디 히스탠드",
           "fighter_b_ko": "나카무라 린야",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Rodolfo Vieira",
           "fighter_b": "Robert Bryczek",
           "winner": "a",
@@ -2044,10 +2044,10 @@
           "time": "5:00",
           "fighter_a_ko": "호돌포 비에이라",
           "fighter_b_ko": "로베르트 브리체크",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Rodolfo Bellato",
           "fighter_b": "Christian Edwards",
           "winner": "b",
@@ -2060,10 +2060,10 @@
           "time": "1:47",
           "fighter_a_ko": "호돌포 벨라투",
           "fighter_b_ko": "크리스천 에드워즈",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Elves Brener",
           "fighter_b": "Josiah Harrell",
           "winner": "a",
@@ -2076,10 +2076,10 @@
           "time": "4:14",
           "fighter_a_ko": "엘베스 브레네르",
           "fighter_b_ko": "조시아 해럴",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Montel Jackson",
           "fighter_b": "Ricky Simon",
           "winner": "a",
@@ -2092,10 +2092,10 @@
           "time": "2:39",
           "fighter_a_ko": "몬텔 잭슨",
           "fighter_b_ko": "리키 시몬",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "John Castaneda",
           "fighter_b": "Alatengheili",
           "winner": "b",
@@ -2108,14 +2108,14 @@
           "time": "5:00",
           "fighter_a_ko": "존 카스타녜다",
           "fighter_b_ko": "알라텡헤일리",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Vanessa Demopoulos",
           "fighter_b": "Yazmin Jauregui",
           "winner": "b",
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/vanessa-demopulos",
+          "fighter_a_ufc_url": "https://www.ufc.com/athlete/vanessa-demopoulos",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/DEMOPOULOS_VANESSA_L_09-26.png?itok=Nkf8K-X6",
           "fighter_b_ufc_url": "https://www.ufc.com/athlete/yazmin-jauregui",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/JAUREGUI_YAZMIN_R_09-26.png?itok=hZtfZf_e",
@@ -2124,12 +2124,12 @@
           "time": "1:02",
           "fighter_a_ko": "바네사 데모풀로스",
           "fighter_b_ko": "야스민 하우레기",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 주니어 대 바르셀로스",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -2149,7 +2149,7 @@
       "early_prelims_start_time_utc": "2026-09-19T21:30:00Z",
       "main_card": [
         {
-          "weight": "플라이급 Title Bout",
+          "weight": "Flyweight Title Bout",
           "fighter_a": "Joshua Van",
           "fighter_b": "Alexandre Pantoja",
           "winner": "a",
@@ -2162,10 +2162,10 @@
           "time": "5:00",
           "fighter_a_ko": "조슈아 반",
           "fighter_b_ko": "알렉산드레 판토자",
-          "weight_ko": "플라이급 Title Bout"
+          "weight_ko": "Flyweight Title Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Arman Tsarukyan",
           "fighter_b": "Maurício Ruffy",
           "winner": "a",
@@ -2178,10 +2178,10 @@
           "time": "4:56",
           "fighter_a_ko": "아르만 사루키안",
           "fighter_b_ko": "마우리시우 후피",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Patricio Pitbull",
           "fighter_b": "Dooho Choi",
           "winner": "a",
@@ -2194,10 +2194,10 @@
           "time": "3:28",
           "fighter_a_ko": "파트리시오 핏불",
           "fighter_b_ko": "최두호",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Gable Steveson",
           "fighter_b": "Sean Sharaf",
           "winner": "b",
@@ -2210,10 +2210,10 @@
           "time": "0:12",
           "fighter_a_ko": "게이블 스티브슨",
           "fighter_b_ko": "션 샤라프",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Alonzo Menifield",
           "fighter_b": "Iwo Baraniewski",
           "winner": "a",
@@ -2226,12 +2226,12 @@
           "time": "5:00",
           "fighter_a_ko": "알론조 메니필드",
           "fighter_b_ko": "이보 바라니에프스키",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Marlon Vera",
           "fighter_b": "Charles Jourdain",
           "winner": "a",
@@ -2244,10 +2244,10 @@
           "time": "2:02",
           "fighter_a_ko": "마를론 베라",
           "fighter_b_ko": "샤를 주르댕",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Tai Tuivasa",
           "fighter_b": "Robelis Despaigne",
           "winner": "b",
@@ -2260,10 +2260,10 @@
           "time": "5:00",
           "fighter_a_ko": "타이 투이바사",
           "fighter_b_ko": "로벨리스 데스파이네",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Michael Aswell Jr.",
           "fighter_b": "JooSang Yoo",
           "winner": "a",
@@ -2276,10 +2276,10 @@
           "time": "5:00",
           "fighter_a_ko": "마이클 애즈웰 주니어",
           "fighter_b_ko": "유주상",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Ryan Gandra",
           "fighter_b": "Ozzy Diaz",
           "winner": "a",
@@ -2292,14 +2292,14 @@
           "time": "2:04",
           "fighter_a_ko": "라이언 간드라",
           "fighter_b_ko": "오지 디아스",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Edmen Shahbazyan",
           "fighter_b": "Brunno Ferreira",
           "winner": "a",
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/etomen-shiyahashian",
+          "fighter_a_ufc_url": "https://www.ufc.com/athlete/edmen-shahbazyan",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/SHAHBAZYAN_EDMEN_L_09-19.png?itok=GFUJfPbZ",
           "fighter_b_ufc_url": "https://www.ufc.com/athlete/brunno-ferreira",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/FERREIRA_BRUNNO_R_09-19.png?itok=HE3nibuG",
@@ -2309,10 +2309,10 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "에드먼 샤바지안",
           "fighter_b_ko": "브루누 페레이라",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "Casey O'Neill",
           "fighter_b": "Eduarda Moura",
           "winner": "a",
@@ -2326,16 +2326,16 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "케이시 오닐",
           "fighter_b_ko": "에두아르다 모우라",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Giga Chikadze",
           "fighter_b": "Joanderson Brito",
           "winner": "b",
           "fighter_a_ufc_url": "https://www.ufc.com/athlete/giga-chikadze",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/CHIKADZE_GIGA_L_09-19.png?itok=_uspisQi",
-          "fighter_b_ufc_url": "https://www.ufc.com/athlete/kori-makkenna-3",
+          "fighter_b_ufc_url": "https://www.ufc.com/athlete/joanderson-brito",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/BRITO_JOANDERSON_R_09-19.png?itok=npTfeyHc",
           "method": "KO/TKO",
           "round": "1",
@@ -2343,12 +2343,12 @@
           "card_section": "early_prelims",
           "fighter_a_ko": "기가 치카제",
           "fighter_b_ko": "조안데르송 브리투",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 반 대 Pantoja 2",
       "venue_ko": "크립토닷컴 아레나",
       "location_ko": "미국 캘리포니아 로스앤젤레스",
@@ -2367,7 +2367,7 @@
       "prelims_start_time_utc": "2026-09-12T18:00:00Z",
       "main_card": [
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Jean Silva",
           "fighter_b": "Jose Miguel Delgado",
           "winner": "a",
@@ -2380,10 +2380,10 @@
           "time": "2:57",
           "fighter_a_ko": "제앙 실바",
           "fighter_b_ko": "호세 미겔 델가도",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Brandon Moreno",
           "fighter_b": "Joseph Morales",
           "winner": "a",
@@ -2396,10 +2396,10 @@
           "time": "5:00",
           "fighter_a_ko": "브랜든 모레노",
           "fighter_b_ko": "조셉 모랄레스",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Tommy McMillen",
           "fighter_b": "Marwan Rahiki",
           "winner": "a",
@@ -2412,10 +2412,10 @@
           "time": "5:00",
           "fighter_a_ko": "토미 맥밀런",
           "fighter_b_ko": "마르완 라히키",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "Manon Fiorot",
           "fighter_b": "Alexa Grasso",
           "winner": "b",
@@ -2428,10 +2428,10 @@
           "time": "5:00",
           "fighter_a_ko": "마농 피오로",
           "fighter_b_ko": "알렉사 그라소",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Waldo Cortes-Acosta",
           "fighter_b": "Curtis Blaydes",
           "winner": "b",
@@ -2444,10 +2444,10 @@
           "time": "5:00",
           "fighter_a_ko": "왈도 코르테스-아코스타",
           "fighter_b_ko": "커티스 블레이즈",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "David Martínez",
           "fighter_b": "Dan Ige",
           "winner": "a",
@@ -2460,7 +2460,7 @@
           "time": "5:00",
           "fighter_a_ko": "다비드 마르티네스",
           "fighter_b_ko": "댄 이게",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         }
       ],
       "prelims": [
@@ -2481,7 +2481,7 @@
           "weight_ko": "Catchweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Ignacio Bahamondes",
           "fighter_b": "Muslim Salikhov",
           "winner": "a",
@@ -2494,10 +2494,10 @@
           "time": "5:00",
           "fighter_a_ko": "이그나시오 바하몬데스",
           "fighter_b_ko": "무슬림 살리호프",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Yousri Belgaroui",
           "fighter_b": "Djorden Santos",
           "winner": "a",
@@ -2510,10 +2510,10 @@
           "time": "4:25",
           "fighter_a_ko": "유스리 벨가루이",
           "fighter_b_ko": "조르덴 산투스",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Drakkar Klose",
           "fighter_b": "Tommy Gantt",
           "winner": "b",
@@ -2526,10 +2526,10 @@
           "time": "2:46",
           "fighter_a_ko": "드라카 클로즈",
           "fighter_b_ko": "토미 갠트",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Rafa García",
           "fighter_b": "Rongzhu",
           "winner": "b",
@@ -2542,10 +2542,10 @@
           "time": "5:00",
           "fighter_a_ko": "라파 가르시아",
           "fighter_b_ko": "롱주",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Sean King III",
           "fighter_b": "Jessie Rosas",
           "winner": "a",
@@ -2558,10 +2558,10 @@
           "time": "0:36",
           "fighter_a_ko": "션 킹 3세",
           "fighter_b_ko": "제시 로사스",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "여성 플라이급 Bout",
+          "weight": "Women's Flyweight Bout",
           "fighter_a": "JJ Aldrich",
           "fighter_b": "Regina Tarin",
           "winner": "b",
@@ -2574,12 +2574,12 @@
           "time": "5:00",
           "fighter_a_ko": "JJ 알드리치",
           "fighter_b_ko": "레지나 타린",
-          "weight_ko": "여성 플라이급 Bout"
+          "weight_ko": "Women's Flyweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 실바 대 델가도",
       "venue_ko": "데저트 다이아몬드 아레나",
       "location_ko": "미국 애리조나 글렌데일",
@@ -2598,7 +2598,7 @@
       "prelims_start_time_utc": "2026-09-05T16:00:00Z",
       "main_card": [
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Dan Hooker",
           "fighter_b": "Salahdine Parnasse",
           "winner": "b",
@@ -2611,10 +2611,10 @@
           "time": "2:35",
           "fighter_a_ko": "댄 후커",
           "fighter_b_ko": "살라딘 파르나스",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "라이트급 Bout",
+          "weight": "Lightweight Bout",
           "fighter_a": "Farès Ziam",
           "fighter_b": "Axel Sola",
           "winner": "b",
@@ -2627,10 +2627,10 @@
           "time": "1:40",
           "fighter_a_ko": "파레스 지암",
           "fighter_b_ko": "악셀 솔라",
-          "weight_ko": "라이트급 Bout"
+          "weight_ko": "Lightweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Michael Venom Page",
           "fighter_b": "Nursulton Ruziboev",
           "winner": "a",
@@ -2643,10 +2643,10 @@
           "time": "5:00",
           "fighter_a_ko": "마이클 베놈 페이지",
           "fighter_b_ko": "누르술톤 루지보예프",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Daniil Donchenko",
           "fighter_b": "Punahele Soriano",
           "winner": "a",
@@ -2659,10 +2659,10 @@
           "time": "5:00",
           "fighter_a_ko": "다닐 돈첸코",
           "fighter_b_ko": "푸나헬레 소리아노",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Kurtis Campbell",
           "fighter_b": "Trevor Peek",
           "winner": "a",
@@ -2675,10 +2675,10 @@
           "time": "3:07",
           "fighter_a_ko": "커티스 캠벨",
           "fighter_b_ko": "트레버 픽",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Losene Keita",
           "fighter_b": "Muhammad Naimov",
           "winner": "a",
@@ -2691,12 +2691,12 @@
           "time": "2:54",
           "fighter_a_ko": "로센 케이타",
           "fighter_b_ko": "무하마드 나이모프",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Morgan Charriere",
           "fighter_b": "Felipe Lima",
           "winner": "b",
@@ -2709,10 +2709,10 @@
           "time": "5:00",
           "fighter_a_ko": "모르강 샤리에르",
           "fighter_b_ko": "펠리페 리마",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "헤비급 Bout",
+          "weight": "Heavyweight Bout",
           "fighter_a": "Mário Pinto",
           "fighter_b": "Ryan Spann",
           "winner": "a",
@@ -2725,10 +2725,10 @@
           "time": "0:55",
           "fighter_a_ko": "마리오 핀투",
           "fighter_b_ko": "라이언 스팬",
-          "weight_ko": "헤비급 Bout"
+          "weight_ko": "Heavyweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Oumar Sy",
           "fighter_b": "Modestas Bukauskas",
           "winner": "b",
@@ -2741,10 +2741,10 @@
           "time": "3:57",
           "fighter_a_ko": "우마르 시",
           "fighter_b_ko": "모데스타스 부카우스카스",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Nathaniel Wood",
           "fighter_b": "Pavel Andrusca",
           "winner": "b",
@@ -2757,10 +2757,10 @@
           "time": "5:00",
           "fighter_a_ko": "나다니엘 우드",
           "fighter_b_ko": "파벨 안드루스카",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Michael Aljarouj",
           "fighter_b": "Fabia Sintes",
           "winner": "b",
@@ -2773,10 +2773,10 @@
           "time": "5:00",
           "fighter_a_ko": "마이클 알자루지",
           "fighter_b_ko": "파비아 신테스",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "여성 밴텀급 Bout",
+          "weight": "Women's Bantamweight Bout",
           "fighter_a": "Nora Cornolle",
           "fighter_b": "Klaudia Syguła",
           "winner": "a",
@@ -2789,10 +2789,10 @@
           "time": "5:00",
           "fighter_a_ko": "노라 코놀",
           "fighter_b_ko": "클라우디아 시구와",
-          "weight_ko": "여성 밴텀급 Bout"
+          "weight_ko": "Women's Bantamweight Bout"
         },
         {
-          "weight": "미들급 Bout",
+          "weight": "Middleweight Bout",
           "fighter_a": "Matthieu Duclos",
           "fighter_b": "Luis Felipe Dias",
           "winner": "a",
@@ -2805,10 +2805,10 @@
           "time": "4:35",
           "fighter_a_ko": "마티외 뒤클로",
           "fighter_b_ko": "루이스 펠리페 디아스",
-          "weight_ko": "미들급 Bout"
+          "weight_ko": "Middleweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Delphine Benouaich",
           "fighter_b": "Sofia Montenegro",
           "winner": "a",
@@ -2821,12 +2821,12 @@
           "time": "4:22",
           "fighter_a_ko": "델핀 베누아이시",
           "fighter_b_ko": "소피아 몬테네그로",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 후커 대 파르나스",
       "venue_ko": "아코르 아레나",
       "location_ko": "프랑스 파리",
@@ -2845,7 +2845,7 @@
       "prelims_start_time_utc": "2026-08-29T07:00:00Z",
       "main_card": [
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Umar Nurmagomedov",
           "fighter_b": "Song Yadong",
           "winner": "b",
@@ -2858,10 +2858,10 @@
           "time": "1:48",
           "fighter_a_ko": "우마르 누르마고메도프",
           "fighter_b_ko": "송 야둥",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Yan Xiaonan",
           "fighter_b": "Denise Gomes",
           "winner": "b",
@@ -2874,10 +2874,10 @@
           "time": "4:49",
           "fighter_a_ko": "얀 시아오난",
           "fighter_b_ko": "데니지 고메스",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Aoriqileng",
           "fighter_b": "Kai Asakura",
           "winner": "b",
@@ -2890,26 +2890,26 @@
           "time": "0:34",
           "fighter_a_ko": "아오리치렁",
           "fighter_b_ko": "카이 아사쿠라",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Alex Perez",
           "fighter_b": "Su Mudaerji",
           "winner": "b",
           "fighter_a_ufc_url": "https://www.ufc.com/athlete/alex-perez",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-08/PEREZ_ALEX_L_08-29.png?itok=iy1sCDJV",
-          "fighter_b_ufc_url": "https://www.ufc.com/athlete/sumudaerji",
+          "fighter_b_ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-08/SUMUDAERJI_R_08-29.png?itok=4a4_VNHQ",
           "method": "Decision - Unanimous",
           "round": "3",
           "time": "5:00",
           "fighter_a_ko": "알렉스 페레즈",
           "fighter_b_ko": "수 무다얼지",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "라이트 헤비급 Bout",
+          "weight": "Light Heavyweight Bout",
           "fighter_a": "Liu Ce",
           "fighter_b": "Levi Rodrigues Jr.",
           "winner": "a",
@@ -2922,10 +2922,10 @@
           "time": "4:26",
           "fighter_a_ko": "리우 처",
           "fighter_b_ko": "레비 호드리게스 주니어",
-          "weight_ko": "라이트 헤비급 Bout"
+          "weight_ko": "Light Heavyweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Bilal Hasan",
           "fighter_b": "Nilson Rojas",
           "winner": "a",
@@ -2938,12 +2938,12 @@
           "time": "2:28",
           "fighter_a_ko": "빌랄 하산",
           "fighter_b_ko": "닐손 로하스",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         }
       ],
       "prelims": [
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Namsrai Batbayar",
           "fighter_b": "André Lima",
           "winner": "b",
@@ -2956,10 +2956,10 @@
           "time": "3:03",
           "fighter_a_ko": "남스라이 바트바야르",
           "fighter_b_ko": "안드레 리마",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "플라이급 Bout",
+          "weight": "Flyweight Bout",
           "fighter_a": "Rei Tsuruya",
           "fighter_b": "Kevin Borjas",
           "winner": "a",
@@ -2972,10 +2972,10 @@
           "time": "4:14",
           "fighter_a_ko": "츠루야 레이",
           "fighter_b_ko": "케빈 보르하스",
-          "weight_ko": "플라이급 Bout"
+          "weight_ko": "Flyweight Bout"
         },
         {
-          "weight": "페더급 Bout",
+          "weight": "Featherweight Bout",
           "fighter_a": "Jack Jenkins",
           "fighter_b": "Sean Woodson",
           "winner": "b",
@@ -2988,14 +2988,14 @@
           "time": "5:00",
           "fighter_a_ko": "잭 젠킨스",
           "fighter_b_ko": "션 우드슨",
-          "weight_ko": "페더급 Bout"
+          "weight_ko": "Featherweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Xiao Long",
           "fighter_b": "Francesco Nuzzi",
           "winner": "b",
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/shiyao-ron",
+          "fighter_a_ufc_url": "https://www.ufc.com/athlete/xiao-long",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-08/LONG_XIAO_L_08-29.png?itok=mM46_MJN",
           "fighter_b_ufc_url": "https://www.ufc.com/athlete/francesco-nuzzi",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-08/NUZZI_FRANCESCO_R_08-29.png?itok=9kLYYSgB",
@@ -3004,10 +3004,10 @@
           "time": "1:00",
           "fighter_a_ko": "샤오롱",
           "fighter_b_ko": "프란체스코 누치",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "밴텀급 Bout",
+          "weight": "Bantamweight Bout",
           "fighter_a": "Lawrence Lui",
           "fighter_b": "Hector Santiago",
           "winner": "b",
@@ -3020,26 +3020,26 @@
           "time": "0:53",
           "fighter_a_ko": "로렌스 루이",
           "fighter_b_ko": "엑토르 산티아고",
-          "weight_ko": "밴텀급 Bout"
+          "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "여성 스트로급 Bout",
+          "weight": "Women's Strawweight Bout",
           "fighter_a": "Xiong Jingnan",
           "fighter_b": "Julia Polastri",
           "winner": "b",
           "fighter_a_ufc_url": "https://www.ufc.com/athlete/xiong-jingnan",
           "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-08/JINGNAN_XIONG_L_08-29.png?itok=AoTF2RPe",
-          "fighter_b_ufc_url": "https://www.ufc.com/athlete/kori-makkenna-7",
+          "fighter_b_ufc_url": "https://www.ufc.com/athlete/julia-polastri",
           "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-08/POLASTRI_JULIA_R_08-29.png?itok=wBm2Pz5O",
           "method": "KO/TKO",
           "round": "1",
           "time": "3:06",
           "fighter_a_ko": "슝징난",
           "fighter_b_ko": "줄리아 폴라스트리",
-          "weight_ko": "여성 스트로급 Bout"
+          "weight_ko": "Women's Strawweight Bout"
         },
         {
-          "weight": "웰터급 Bout",
+          "weight": "Welterweight Bout",
           "fighter_a": "Ding Meng",
           "fighter_b": "Cam Nelson",
           "winner": "b",
@@ -3052,12 +3052,12 @@
           "time": "5:00",
           "fighter_a_ko": "딩멍",
           "fighter_b_ko": "캠 넬슨",
-          "weight_ko": "웰터급 Bout"
+          "weight_ko": "Welterweight Bout"
         }
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-10-23T14:52:00+09:00",
+      "card_updated_at": "2026-10-23T14:55:21+09:00",
       "name_ko": "UFC Fight Night: 누르마고메도프 대 송",
       "venue_ko": "Oriental Sports Center",
       "location_ko": "중국 상하이 푸둥",
