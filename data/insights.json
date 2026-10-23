@@ -175,8 +175,8 @@
         "bout_count": 9,
         "source": "https://www.ufc.com/event/ufc-fight-night-november-21-2026"
       },
-      "viewing_hook": "대",
-      "thesis": "대"
+      "viewing_hook": "이리 프로하즈카 대 나바호 스털링",
+      "thesis": "이리 프로하즈카 대 나바호 스털링"
     },
     "ufc-335-oliveira-vs-lopes": {
       "schedule": {
@@ -185,8 +185,8 @@
         "bout_count": 5,
         "source": "https://www.ufc.com/event/ufc-335"
       },
-      "viewing_hook": "대",
-      "thesis": "대"
+      "viewing_hook": "찰스 올리베이라 대 디에고 로페스",
+      "thesis": "찰스 올리베이라 대 디에고 로페스"
     },
     "ufc-336-tbd-vs-tbd": {
       "schedule": {
@@ -195,8 +195,8 @@
         "bout_count": 0,
         "source": "https://www.ufc.com/event/ufc-336"
       },
-      "viewing_hook": "대",
-      "thesis": "대"
+      "viewing_hook": "UFC 336: 대진 미정",
+      "thesis": "UFC 336: 대진 미정"
     },
     "ufc-fight-night-tbd-vs-tbd": {
       "schedule": {
@@ -205,8 +205,8 @@
         "bout_count": 0,
         "source": "https://www.ufc.com/event/ufc-fight-night-february-06-2027"
       },
-      "viewing_hook": "대",
-      "thesis": "대"
+      "viewing_hook": "UFC Fight Night: 대진 미정",
+      "thesis": "UFC Fight Night: 대진 미정"
     }
   }
 }

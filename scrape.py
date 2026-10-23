@@ -2104,8 +2104,10 @@ def refresh_insights(events, opinions, now_iso):
         main = (event.get("main_card") or event.get("announced_card") or [{}])[0]
         a_name = tr_fighter(main.get("fighter_a", ""))
         b_name = tr_fighter(main.get("fighter_b", ""))
-        entry.setdefault("viewing_hook", f"{a_name} 대 {b_name}".strip())
-        entry.setdefault("thesis", entry["viewing_hook"])
+        if not entry.get("viewing_hook") or entry["viewing_hook"].strip() == "대":
+            entry["viewing_hook"] = f"{a_name} 대 {b_name}" if a_name and b_name else (event.get("name_ko") or event["name"])
+        if not entry.get("thesis") or entry["thesis"].strip() == "대":
+            entry["thesis"] = entry["viewing_hook"]
         refreshed[event_id] = entry
 
     output = {
