@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T23:04:47+09:00",
+  "generated_at": "2026-10-24T08:45:35+09:00",
   "source": {
     "name": "UFC 공식 Record Book",
     "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
-    "last_update": "07/26/2026 07:45 GMT",
+    "last_update": "10/18/2026 07:45 GMT",
     "coverage": "Records reflect all UFC fights from UFC 28 to the present (UFC 28 was the first event to use the Unified Rules of MMA)."
   },
   "categories": [
@@ -35,22 +35,22 @@
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/876a16e2-3e7c-42c1-81ed-b45569a8519d/OLIVEIRA_CHARLES_BMFMOCK.png"
         },
         {
-          "rank": 3,
+          "rank": 2,
+          "name": "Neil Magny",
+          "name_ko": "닐 매그니",
+          "fighter_id": "neil-magny",
+          "value": "25",
+          "athlete_url": "https://www.ufc.com/athlete/Neil-Magny",
+          "photo_url": "/data/avatars/generated/neil-magny-thumb.webp"
+        },
+        {
+          "rank": 4,
           "name": "Max Holloway",
           "name_ko": "맥스 할로웨이",
           "fighter_id": "max-holloway",
           "value": "24",
           "athlete_url": "https://www.ufc.com/athlete/Max-Holloway",
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/01001199-97f7-404d-a0b9-0cea2c6a4e99/HOLLOWAY_MAX_07-11.png"
-        },
-        {
-          "rank": 3,
-          "name": "Neil Magny",
-          "name_ko": "닐 매그니",
-          "fighter_id": "neil-magny",
-          "value": "24",
-          "athlete_url": "https://www.ufc.com/athlete/Neil-Magny",
-          "photo_url": "/data/avatars/generated/neil-magny-thumb.webp"
         },
         {
           "rank": 5,
@@ -238,21 +238,21 @@
       "leaders": [
         {
           "rank": 1,
+          "name": "Islam Makhachev",
+          "name_ko": "이슬람 마카체프",
+          "fighter_id": "islam-makhachev",
+          "value": "17",
+          "athlete_url": "https://www.ufc.com/athlete/Islam-Makhachev",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/bfbe33cd-b4e6-4ae8-92ec-9b8431bda0c2/MAKHACHEV_ISLAM_BELT_08-15.png"
+        },
+        {
+          "rank": 2,
           "name": "Anderson Silva",
           "name_ko": "앤더슨 실바",
           "fighter_id": "anderson-silva",
           "value": "16",
           "athlete_url": "https://www.ufc.com/athlete/Anderson-Silva",
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8828346d-d9d4-49c9-9ad8-63fcf29d170a%2FSILVA_ANDERSON_10-31.png"
-        },
-        {
-          "rank": 1,
-          "name": "Islam Makhachev",
-          "name_ko": "이슬람 마카체프",
-          "fighter_id": "islam-makhachev",
-          "value": "16",
-          "athlete_url": "https://www.ufc.com/athlete/Islam-Makhachev",
-          "photo_url": "/data/avatars/generated/islam-makhachev-thumb.webp"
         },
         {
           "rank": 3,
@@ -270,7 +270,7 @@
           "fighter_id": "merab-dvalishvili",
           "value": "14",
           "athlete_url": "https://www.ufc.com/athlete/Merab-Dvalishvili",
-          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8a8024f6-2b73-4fef-a376-888a9176df79/DVALISHVILI_MERAB_CG_09-14.png"
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/e5a19ba5-ac7d-4a2e-9752-5c36ebf8c876/DVALISHVILI_MERAB_10-24.png"
         },
         {
           "rank": 5,
@@ -415,7 +415,7 @@
           "name": "Rafael Dos Anjos",
           "name_ko": "하파엘 도스 안요스",
           "fighter_id": "rafael-dos-anjos",
-          "value": "8:43:19",
+          "value": "8:51:31",
           "athlete_url": "https://www.ufc.com/athlete/Rafael-Dos-Anjos",
           "photo_url": "https://ufc.com/images/2024-10/2/DOS_ANJOS_RAFAEL_10-26.png"
         },
@@ -442,7 +442,7 @@
           "name": "Neil Magny",
           "name_ko": "닐 매그니",
           "fighter_id": "neil-magny",
-          "value": "7:22:49",
+          "value": "7:31:09",
           "athlete_url": "https://www.ufc.com/athlete/Neil-Magny",
           "photo_url": "/data/avatars/generated/neil-magny-thumb.webp"
         }
@@ -458,30 +458,30 @@
       "leaders": [
         {
           "rank": 1,
+          "name": "Carli Judice",
+          "name_ko": "칼리 주디스",
+          "fighter_id": "carli-judice",
+          "value": "8.7",
+          "athlete_url": "https://www.ufc.com/athlete/Carli-Judice",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/eb81b3f4-07e0-43ff-978f-3028ede2cc20/JUDICE_CARLI_08-22.png"
+        },
+        {
+          "rank": 2,
           "name": "Joshua Van",
           "name_ko": "조슈아 반",
           "fighter_id": "joshua-van",
-          "value": "8.43",
+          "value": "8.26",
           "athlete_url": "https://www.ufc.com/athlete/Joshua-Van",
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/562231f7-c7a4-46b9-80b0-e23325e3d256/VAN_JOSHUA_BELT_05-09.png"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "Terrance McKinney",
           "name_ko": "테런스 맥키니",
           "fighter_id": "terrance-mckinney",
           "value": "7.95",
           "athlete_url": "https://www.ufc.com/athlete/Terrance-McKinney",
           "photo_url": "/data/avatars/generated/terrance-mckinney-thumb.webp"
-        },
-        {
-          "rank": 3,
-          "name": "Casey O'Neill",
-          "name_ko": "케이시 오닐",
-          "fighter_id": "casey-o-neill",
-          "value": "7.89",
-          "athlete_url": "https://www.ufc.com/athlete/Casey-ONeill",
-          "photo_url": "/data/avatars/generated/casey-o-neill-thumb.webp"
         },
         {
           "rank": 4,
@@ -494,12 +494,12 @@
         },
         {
           "rank": 5,
-          "name": "Leslie Smith",
-          "name_ko": "레슬리 스미스",
-          "fighter_id": "leslie-smith",
-          "value": "7.56",
-          "athlete_url": "https://www.ufc.com/athlete/Leslie-Smith",
-          "photo_url": "https://ufc.com/images/image/ufc-fighter-container/68577/profile-galery/profile-picture/Leslie_Smith_Headshot.png?VersionId=zl7TC4mDWCbtp18zDlr8beOaBTb8At_G"
+          "name": "Casey O'Neill",
+          "name_ko": "케이시 오닐",
+          "fighter_id": "casey-o-neill",
+          "value": "7.6",
+          "athlete_url": "https://www.ufc.com/athlete/Casey-ONeill",
+          "photo_url": "/data/avatars/generated/casey-o-neill-thumb.webp"
         }
       ]
     },
@@ -531,15 +531,6 @@
         },
         {
           "rank": 3,
-          "name": "Wang Cong",
-          "name_ko": "왕충",
-          "fighter_id": "wang-cong",
-          "value": "4.02",
-          "athlete_url": "https://www.ufc.com/athlete/Wang-Cong",
-          "photo_url": "/data/avatars/generated/wang-cong-thumb.webp"
-        },
-        {
-          "rank": 4,
           "name": "Tom Aspinall",
           "name_ko": "톰 아스피날",
           "fighter_id": "tom-aspinall",
@@ -548,11 +539,20 @@
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/cc25ffd8-c84e-4bce-b813-bcf22527b549/ASPINALL_TOM_BELT_10-25.png"
         },
         {
+          "rank": 4,
+          "name": "Carli Judice",
+          "name_ko": "칼리 주디스",
+          "fighter_id": "carli-judice",
+          "value": "3.99",
+          "athlete_url": "https://www.ufc.com/athlete/Carli-Judice",
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/eb81b3f4-07e0-43ff-978f-3028ede2cc20/JUDICE_CARLI_08-22.png"
+        },
+        {
           "rank": 5,
           "name": "Navajo Stirling",
           "name_ko": "나바호 스털링",
           "fighter_id": "navajo-stirling",
-          "value": "3.62",
+          "value": "3.95",
           "athlete_url": "https://www.ufc.com/athlete/Navajo-Stirling",
           "photo_url": "/data/avatars/generated/navajo-stirling-thumb.webp"
         }
@@ -603,13 +603,13 @@
           "photo_url": "/data/avatars/generated/edson-barboza-thumb.webp"
         },
         {
-          "rank": 5,
-          "name": "Dustin Poirier",
-          "name_ko": "더스틴 포이리어",
-          "fighter_id": "dustin-poirier",
-          "value": "15",
-          "athlete_url": "https://www.ufc.com/athlete/Dustin-Poirier",
-          "photo_url": "https://ufc.com/images/2025-07/POIRIER_DUSTIN_07-19.png"
+          "rank": 4,
+          "name": "Marlon Vera",
+          "name_ko": "마를론 베라",
+          "fighter_id": "marlon-vera",
+          "value": "16",
+          "athlete_url": "https://www.ufc.com/athlete/Marlon-Vera",
+          "photo_url": "/data/avatars/generated/marlon-vera-thumb.webp"
         }
       ]
     },
@@ -628,7 +628,7 @@
           "fighter_id": "merab-dvalishvili",
           "value": "119",
           "athlete_url": "https://www.ufc.com/athlete/Merab-Dvalishvili",
-          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/8a8024f6-2b73-4fef-a376-888a9176df79/DVALISHVILI_MERAB_CG_09-14.png"
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/e5a19ba5-ac7d-4a2e-9752-5c36ebf8c876/DVALISHVILI_MERAB_10-24.png"
         },
         {
           "rank": 2,
