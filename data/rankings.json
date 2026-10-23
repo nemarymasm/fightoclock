@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-23T15:49:29+09:00",
+  "generated_at": "2026-10-23T15:53:27+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -140,7 +140,7 @@
         },
         {
           "name": "Sumudaerji",
-          "ufc_url": "https://www.ufc.com/athlete/sumudaerji",
+          "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
           "rank": 13,
           "fighter_id": "su-mudaerji",
           "name_ko": "수무다얼지",
@@ -789,16 +789,6 @@
           "country_ko": "Ukraine"
         },
         {
-          "name": "Joaquin Buckley",
-          "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
-          "rank": 12,
-          "fighter_id": "joaquin-buckley",
-          "name_ko": "호아킨 버클리",
-          "record": "21승 9패",
-          "country": "United States",
-          "country_ko": "미국"
-        },
-        {
           "name": "Uroš Medić",
           "ufc_url": "https://www.ufc.com/athlete/uros-medic",
           "rank": 12,
@@ -807,6 +797,16 @@
           "record": "14승 3패",
           "country": "Serbia",
           "country_ko": "Serbia"
+        },
+        {
+          "name": "Joaquin Buckley",
+          "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
+          "rank": 12,
+          "fighter_id": "joaquin-buckley",
+          "name_ko": "호아킨 버클리",
+          "record": "21승 9패",
+          "country": "United States",
+          "country_ko": "미국"
         },
         {
           "name": "Daniel Rodriguez",
@@ -1959,7 +1959,7 @@
             },
             {
               "name": "Sumudaerji",
-              "ufc_url": "https://www.ufc.com/athlete/sumudaerji",
+              "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
               "rank": 13,
               "fighter_id": "su-mudaerji",
               "name_ko": "수무다얼지",
@@ -2608,16 +2608,6 @@
               "country_ko": "Ukraine"
             },
             {
-              "name": "Joaquin Buckley",
-              "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
-              "rank": 12,
-              "fighter_id": "joaquin-buckley",
-              "name_ko": "호아킨 버클리",
-              "record": "21승 9패",
-              "country": "United States",
-              "country_ko": "미국"
-            },
-            {
               "name": "Uroš Medić",
               "ufc_url": "https://www.ufc.com/athlete/uros-medic",
               "rank": 12,
@@ -2626,6 +2616,16 @@
               "record": "14승 3패",
               "country": "Serbia",
               "country_ko": "Serbia"
+            },
+            {
+              "name": "Joaquin Buckley",
+              "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
+              "rank": 12,
+              "fighter_id": "joaquin-buckley",
+              "name_ko": "호아킨 버클리",
+              "record": "21승 9패",
+              "country": "United States",
+              "country_ko": "미국"
             },
             {
               "name": "Daniel Rodriguez",
@@ -3759,7 +3759,7 @@
             },
             {
               "name": "Sumudaerji",
-              "ufc_url": "https://www.ufc.com/athlete/sumudaerji",
+              "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
               "rank": 11,
               "fighter_id": "su-mudaerji",
               "name_ko": "수무다얼지",
@@ -4089,7 +4089,7 @@
             },
             {
               "name": "Joanderson Brito",
-              "ufc_url": "https://www.ufc.com/athlete/kori-makkenna-3",
+              "ufc_url": "https://www.ufc.com/athlete/joanderson-brito",
               "rank": 11,
               "fighter_id": "joanderson-brito",
               "name_ko": "조안데르송 브리투",
