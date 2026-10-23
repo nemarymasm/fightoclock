@@ -1097,6 +1097,10 @@
 const FIGHTERS = {};
 let EVENTS = [];
 const RANKINGS = {'체급별 랭킹':[]};
+let RANKING_SYSTEMS = {};
+let RANKINGS_META = {};
+let FIGHTERS_META = {};
+let rankingSystem = 'media';
 let CHAMPION_HISTORY = [];
 let FAN_TAGS = {
   fallback:{text:'',tone:'quiet'},
@@ -1252,6 +1256,22 @@ function freshnessBanner(){
     <span><strong>데이터 상태</strong> · ${esc(f.text)}${f.stale?' — 일정이 변경됐을 수 있습니다.':''}</span>
     <span>${DATA_META.upcoming}개 예정</span>
   </div>`;
+}
+function sourceCheckedLabel(value){
+  if(!value) return '확인 시각 미기록';
+  const date=new Date(value);
+  if(!Number.isFinite(date.getTime())) return '확인 시각 미기록';
+  return date.toLocaleString('ko-KR',{timeZone:'Asia/Seoul',year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'});
+}
+function sourceFreshness(value,label,source=''){
+  const stale=!value || !Number.isFinite(Date.parse(value)) || Date.now()-Date.parse(value)>72*3600000;
+  return `<div class="freshness ${stale?'stale':''}" role="status"><span><strong>${esc(label)}</strong> · ${esc(sourceCheckedLabel(value))}${stale?' · 갱신 확인 필요':''}</span>${source?`<a href="${esc(safeExternalUrl(source))}" target="_blank" rel="noopener noreferrer">원문 ↗</a>`:''}</div>`;
+}
+function rankingAnnouncement(value){
+  const raw=(value||'').replace(/Last\s+updated:\s*/i,'');
+  const month=raw.match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})/i);
+  if(!month) return raw;
+  return `${['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(month[1].toLowerCase())+1}월 ${Number(month[2])}일`;
 }
 
 /* ---------- 컴포넌트 ---------- */
@@ -1809,6 +1829,11 @@ function setRankingFilter(index){
   rankingFilter=Number(index)||0;
   route({preserveScroll:true});
 }
+function setRankingSystem(value){
+  if(!RANKING_SYSTEMS[value]) return;
+  rankingSystem=value;
+  route({preserveScroll:true});
+}
 function championHistoryFor(wc){
   return CHAMPION_HISTORY.find(function(item){ return item.wc===wc; }) || null;
 }
@@ -1914,7 +1939,7 @@ function championLineagePanel(group,variant){
     </aside>`;
 }
 function viewRankings(){
-  const groups=RANKINGS['체급별 랭킹'];
+  const groups=RANKING_SYSTEMS[rankingSystem]?.divisions || RANKINGS['체급별 랭킹'];
   if(!groups.length) return `<h1 class="page-heading">UFC 랭킹</h1><div class="state-card"><div><h2>랭킹 데이터가 없습니다</h2><p>다음 자동수집 후 다시 확인해주세요.</p></div></div>`;
   rankingFilter=Math.min(rankingFilter,groups.length-1);
   const g=groups[rankingFilter];
@@ -1924,7 +1949,11 @@ function viewRankings(){
   return `
   <div class="rankings-page">
     <h1 class="page-heading">UFC 랭킹<small>체급별 챔피언과 공식 랭커를 한눈에 확인하세요.</small></h1>
-    ${freshnessBanner()}
+    ${sourceFreshness(RANKINGS_META.generatedAt,'랭킹 확인',RANKINGS_META.sourceUrl)}
+    <div class="chips" role="group" aria-label="랭킹 기준">
+      ${[['media','미디어 랭킹'],['meta','Meta 랭킹']].filter(([key])=>RANKING_SYSTEMS[key]).map(([key,label])=>`<button type="button" class="chip ${rankingSystem===key?'active':''}" aria-pressed="${rankingSystem===key}" onclick="setRankingSystem('${key}')">${label}</button>`).join('')}
+    </div>
+    <p class="disclaimer">${rankingSystem==='meta'?'Meta UFC 랭킹':'UFC 미디어 랭킹'} · 공식 발표 ${esc(rankingAnnouncement(RANKING_SYSTEMS[rankingSystem]?.source_updated_label||''))}</p>
     <div class="ranking-division-label">체급 선택</div>
     <div class="chips ranking-division-tabs" role="tablist" aria-label="체급 선택">
       ${groups.map((item,i)=>`<button type="button" class="chip ${i===rankingFilter?'active':''}" role="tab" aria-selected="${i===rankingFilter}" onclick="setRankingFilter(${i})">${esc(item.wc)}</button>`).join('')}
@@ -1962,7 +1991,7 @@ function viewRankings(){
           const f = getFighter(id);
           return `
           <a href="#fighter/${id}" class="rank-row">
-            <div class="rank-num"><small>#</small>${idx+1}</div>
+            <div class="rank-num"><small>#</small>${g.rankNumbers?.[idx]??idx+1}</div>
             <div class="rank-photo">${avatarBox(f,72)}</div>
             <div class="rank-athlete">
               <div class="fighter-name-line">
@@ -2365,6 +2394,10 @@ function viewFighter(id){
     </div>
   </div>
 
+  ${sourceFreshness(f.profileUpdatedAt,'신체·전적 확인',f.profileSource)}
+  ${f.rankingPositions?.length?`<div class="box"><h3>공식 랭킹</h3><div class="chips">${f.rankingPositions.map(p=>`<span class="pill ghost">${p.system==='meta'?'Meta':'미디어'} · ${esc(p.wc)} ${esc(p.rank)}</span>`).join('')}</div><p>순위 확인 · ${esc(sourceCheckedLabel(f.rankingsUpdatedAt))}</p></div>`:''}
+  ${f.profileStatus==='unavailable'?'<p class="disclaimer">이번 공식 프로필 조회에 실패해 이전 값과 확인 시각을 유지했습니다.</p>':''}
+
   ${(f.height||f.reach||f.stance||f.age) ? `
   <div class="stat-grid">
     <div class="stat-cell"><div class="k">신장</div><div class="v">${f.height||'-'}</div></div>
@@ -2374,6 +2407,8 @@ function viewFighter(id){
   </div>`:''}
 
   ${finishBlock(f)}
+
+  ${f.ufcRecent?.length?`<div class="section-title"><span class="bar"></span>UFC 공식 최근 결과</div>${fighterHistoryList(f.ufcRecent.slice(0,3))}<p class="disclaimer">공식 결과 확인 · ${esc(sourceCheckedLabel(f.ufcRecentUpdatedAt))} · 날짜는 UFC 원문 표시를 따릅니다.</p>`:''}
 
   ${f.next ? `
   <div class="section-title"><span class="bar"></span>다음 경기</div>
@@ -2399,7 +2434,7 @@ function viewFighter(id){
   ${f.historySource?`<a class="photo-credit" href="${esc(f.historySource)}" target="_blank" rel="noopener noreferrer">전적 원문 확인 ↗</a>`:''}
   ` : `<div class="box" style="color:var(--muted)">전적을 갱신하고 있습니다.</div>`}
 
-  <div class="disclaimer">랭킹과 프로 전적은 공개된 UFC 랭킹·선수 기록을 기준으로 갱신합니다. ${esc(freshnessInfo().text)}</div>
+  <div class="disclaimer">전체 프로 전적 확인 · ${esc(sourceCheckedLabel(f.historyUpdatedAt))}${f.historyScope==='UFC 경기'?' · UFC 경기 범위':''}. 신체·전적과 랭킹의 확인 시각을 각각 표시합니다.</div>
   `;
 }
 
@@ -2911,7 +2946,7 @@ function localizeHistoryEvent(value){
     .map(([key,ko])=>({key,ko,en:FIGHTER_NAME_EN[key]||''}))
     .filter(item=>item.en && item.ko!==item.en)
     .sort((a,b)=>b.en.length-a.en.length)
-    .forEach(item=>{ text=text.replace(new RegExp(item.en.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'),item.ko); });
+    .forEach(item=>{ text=text.replace(new RegExp('(?<![\\p{L}\\p{N}])'+item.en.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?![\\p{L}\\p{N}])','giu'),item.ko); });
   return text
     .replace(/UFC Fight Night/gi,'UFC 파이트 나이트')
     .replace(/UFC on ESPN/gi,'UFC ESPN 대회')
@@ -3003,6 +3038,14 @@ function transformFighter(f){
     avatarProvider: cleanExternalText(f.avatar_provider || (f.avatar_url?.includes('ufc.com/images/')?'UFC':'Wikimedia')),
     historySource: safeExternalUrl(f.history_source || ''),
     historyScope: cleanExternalText(f.history_scope || ''),
+    profileUpdatedAt: f.profile_updated_at||null,
+    profileSource: safeExternalUrl(f.profile_source||f.ufc_url||''),
+    profileStatus: f.profile_status||'',
+    historyUpdatedAt: f.history_updated_at||null,
+    rankingsUpdatedAt: f.rankings_updated_at||null,
+    rankingPositions: f.ranking_positions||[],
+    ufcRecentUpdatedAt: f.ufc_recent_updated_at||null,
+    ufcRecent: (f.ufc_recent||[]).map(r=>({res:r.result==='win'?'W':r.result==='loss'?'L':r.result==='nc'?'N':r.result==='draw'?'D':'?',opp:localizeFighterName(r.opp_ko||r.opp||''),way:r.method||'',when:formatHistoryDateKo(r.date||''),event:r.event||'UFC',round:r.round||'',time:r.time||''})),
     koreanFocus: Boolean(f.korean_focus),
     style: '', recent: recent, next: f.next || null
   };
@@ -3168,6 +3211,7 @@ function transformDivision(d){
     wc: cleanExternalText(d.wc),
     champ: d.champion ? cleanExternalText(d.champion.fighter_id || slugify(d.champion.name)) : null,
     list: (d.ranked||[]).map(function(r){ return cleanExternalText(r.fighter_id || slugify(r.name)); }),
+    rankNumbers: (d.ranked||[]).map(r=>r.rank),
     desc: ''
   };
 }
@@ -3237,6 +3281,7 @@ async function loadRealData(){
 
   if(fightersResult.status==='fulfilled'){
     const data=fightersResult.value;
+    FIGHTERS_META={generatedAt:data.generated_at||null,profilesCheckedAt:data.profiles_checked_at||null};
     if(data.fighters && data.fighters.length){
       Object.keys(FIGHTERS).forEach(function(k){ delete FIGHTERS[k]; });
       FIGHTER_NAME_KO={};
@@ -3258,6 +3303,8 @@ async function loadRealData(){
 
   if(rankingsResult.status==='fulfilled'){
     const data=rankingsResult.value;
+    RANKINGS_META={generatedAt:data.generated_at||null,sourceUrl:data.source_url||''};
+    RANKING_SYSTEMS=Object.fromEntries(Object.entries(data.systems||{}).map(([key,value])=>[key,{...value,divisions:(value.divisions||[]).map(transformDivision)}]));
     if(data.divisions && data.divisions.length){
       RANKINGS['체급별 랭킹'] = data.divisions.map(transformDivision);
       console.log('[fightoclock] rankings:', data.divisions.length, 'divisions');

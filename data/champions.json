@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T11:28:33+09:00",
+  "generated_at": "2026-10-23T15:45:00+09:00",
   "source": "Wikipedia: List of UFC champions",
   "source_url": "https://en.wikipedia.org/wiki/List_of_UFC_champions",
   "division_count": 11,
@@ -20,7 +20,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mark_Coleman_At_TIFF_2025_02.jpg/250px-Mark_Coleman_At_TIFF_2025_02.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Mark_Coleman_At_TIFF_2025_02.jpg/250px-Mark_Coleman_At_TIFF_2025_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -33,7 +33,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Maurice_Smith_1999.jpg"
+          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Maurice_Smith_1999.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
         },
         {
           "order": 3,
@@ -46,7 +46,7 @@
           "defenses": 0,
           "reign_total": 3,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -59,7 +59,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bas_Rutten.jpg/250px-Bas_Rutten.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Bas_Rutten.jpg/250px-Bas_Rutten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -72,7 +72,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kevin_Randleman.jpg/250px-Kevin_Randleman.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Kevin_Randleman.jpg/250px-Kevin_Randleman.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -85,7 +85,7 @@
           "defenses": 2,
           "reign_total": 3,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -98,7 +98,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Josh_Barnett_in_April_2024.jpg/250px-Josh_Barnett_in_April_2024.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Josh_Barnett_in_April_2024.jpg/250px-Josh_Barnett_in_April_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -111,7 +111,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/FFC_10_in_Skopje.jpg/250px-FFC_10_in_Skopje.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/FFC_10_in_Skopje.jpg/250px-FFC_10_in_Skopje.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 9,
@@ -124,7 +124,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/TimSylvia.png/250px-TimSylvia.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/TimSylvia.png/250px-TimSylvia.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 10,
@@ -137,7 +137,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Frank_Mir_GCW_Bloodsport_%28cropped%29.jpg/250px-Frank_Mir_GCW_Bloodsport_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Frank_Mir_GCW_Bloodsport_%28cropped%29.jpg/250px-Frank_Mir_GCW_Bloodsport_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 11,
@@ -150,7 +150,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Andrei_Arlovski_2018.jpg/250px-Andrei_Arlovski_2018.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Andrei_Arlovski_2018.jpg/250px-Andrei_Arlovski_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 12,
@@ -163,7 +163,7 @@
           "defenses": 2,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/TimSylvia.png/250px-TimSylvia.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/TimSylvia.png/250px-TimSylvia.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 13,
@@ -176,7 +176,7 @@
           "defenses": 1,
           "reign_total": 3,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 14,
@@ -189,7 +189,7 @@
           "defenses": 2,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Brock_Lesnar_At_SummerSlam_2023_%28cropped%29.jpg/250px-Brock_Lesnar_At_SummerSlam_2023_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Brock_Lesnar_At_SummerSlam_2023_%28cropped%29.jpg/250px-Brock_Lesnar_At_SummerSlam_2023_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 15,
@@ -202,7 +202,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cain_Velasquez.jpg/250px-Cain_Velasquez.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Cain_Velasquez.jpg/250px-Cain_Velasquez.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 16,
@@ -215,7 +215,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Junior_dos_Santos.jpg/250px-Junior_dos_Santos.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Junior_dos_Santos.jpg/250px-Junior_dos_Santos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 17,
@@ -228,7 +228,7 @@
           "defenses": 2,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cain_Velasquez.jpg/250px-Cain_Velasquez.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Cain_Velasquez.jpg/250px-Cain_Velasquez.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 18,
@@ -241,7 +241,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Fabricio_Werdum.jpg/250px-Fabricio_Werdum.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Fabr%C3%ADcio_Werdum_Web_Summit_Rio_2023.jpg/250px-Fabr%C3%ADcio_Werdum_Web_Summit_Rio_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 19,
@@ -254,7 +254,7 @@
           "defenses": 3,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg/250px-Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg/250px-Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 20,
@@ -267,7 +267,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Daniel_Cormier_taking_a_picture_with_a_fan..jpg/250px-Daniel_Cormier_taking_a_picture_with_a_fan..jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/JTF-DC_Freedom_UFC_250_Press_Conference_%289747806%29%28cropped%29.jpg/250px-JTF-DC_Freedom_UFC_250_Press_Conference_%289747806%29%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 21,
@@ -280,7 +280,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg/250px-Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg/250px-Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 22,
@@ -293,7 +293,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Francis_Ngannou_2023_%28cropped%29.png/250px-Francis_Ngannou_2023_%28cropped%29.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Francis_Ngannou_2023_%28cropped%29.png/250px-Francis_Ngannou_2023_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 23,
@@ -306,7 +306,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Jon_Jones_-_Supporting_Brain_Health_Study.jpg/250px-Jon_Jones_-_Supporting_Brain_Health_Study.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Jon_Jones_-_Supporting_Brain_Health_Study.jpg/250px-Jon_Jones_-_Supporting_Brain_Health_Study.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 24,
@@ -318,8 +318,21 @@
           "reign": 1,
           "defenses": 0,
           "reign_total": 1,
-          "current": true,
+          "current": false,
           "portrait_url": ""
+        },
+        {
+          "order": 25,
+          "fighter_id": "ciryl-gane",
+          "name": "Ciryl Gane",
+          "name_ko": "시릴 가네",
+          "wiki_url": "https://en.wikipedia.org/wiki/Ciryl_Gane",
+          "crowned_at": "Sep 14, 2026",
+          "reign": 1,
+          "defenses": 0,
+          "reign_total": 1,
+          "current": true,
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_64%28cropped%29.jpg/250px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -345,7 +358,7 @@
           "defenses": 4,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Frank_Shamrock.jpg/250px-Frank_Shamrock.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Frank_Shamrock.jpg/250px-Frank_Shamrock.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -358,7 +371,7 @@
           "defenses": 5,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Tito_Ortiz.jpg/250px-Tito_Ortiz.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tito_Ortiz.jpg/250px-Tito_Ortiz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -371,7 +384,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -384,7 +397,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Vitor_belfort_cropped.jpg/250px-Vitor_belfort_cropped.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Vitor_belfort_cropped.jpg/250px-Vitor_belfort_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -397,7 +410,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Randy_Couture_by_Gage_Skidmore_2.jpg/250px-Randy_Couture_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -410,7 +423,7 @@
           "defenses": 4,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Chuck_Liddell_in_Santa_Monica-California_2005_photo_by_Ithaka_Darin_Pappas.jpg/250px-Chuck_Liddell_in_Santa_Monica-California_2005_photo_by_Ithaka_Darin_Pappas.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Chuck_Liddell_in_Santa_Monica-California_2005_photo_by_Ithaka_Darin_Pappas.jpg/250px-Chuck_Liddell_in_Santa_Monica-California_2005_photo_by_Ithaka_Darin_Pappas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -423,7 +436,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/02-09JUL2019_CNGB_USO_Tour_2019_190705-F-WH816-1016_%2848531457487%29_%28cropped%29.jpg/250px-02-09JUL2019_CNGB_USO_Tour_2019_190705-F-WH816-1016_%2848531457487%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/02-09JUL2019_CNGB_USO_Tour_2019_190705-F-WH816-1016_%2848531457487%29_%28cropped%29.jpg/250px-02-09JUL2019_CNGB_USO_Tour_2019_190705-F-WH816-1016_%2848531457487%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -436,7 +449,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/USMC-100809-M-6457M-001_CROPPED.jpg"
+          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/USMC-100809-M-6457M-001_CROPPED.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
         },
         {
           "order": 9,
@@ -449,7 +462,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Rashad_Evans_joins_Fleet_Week_Miami_2024_%282%29_%28cropped%29.jpg/250px-Rashad_Evans_joins_Fleet_Week_Miami_2024_%282%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Rashad_Evans_joins_Fleet_Week_Miami_2024_%282%29_%28cropped%29.jpg/250px-Rashad_Evans_joins_Fleet_Week_Miami_2024_%282%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 10,
@@ -462,7 +475,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Lyoto_Machida_by_Marcos_Joel_Reis.jpg/250px-Lyoto_Machida_by_Marcos_Joel_Reis.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Lyoto_Machida_by_Marcos_Joel_Reis.jpg/250px-Lyoto_Machida_by_Marcos_Joel_Reis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 11,
@@ -475,7 +488,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/MauricioRua.png/250px-MauricioRua.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/MauricioRua.png/250px-MauricioRua.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 12,
@@ -488,7 +501,7 @@
           "defenses": 8,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Jon_Jones_-_Supporting_Brain_Health_Study.jpg/250px-Jon_Jones_-_Supporting_Brain_Health_Study.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Jon_Jones_-_Supporting_Brain_Health_Study.jpg/250px-Jon_Jones_-_Supporting_Brain_Health_Study.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 13,
@@ -501,7 +514,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Daniel_Cormier_taking_a_picture_with_a_fan..jpg/250px-Daniel_Cormier_taking_a_picture_with_a_fan..jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/JTF-DC_Freedom_UFC_250_Press_Conference_%289747806%29%28cropped%29.jpg/250px-JTF-DC_Freedom_UFC_250_Press_Conference_%289747806%29%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 14,
@@ -514,7 +527,7 @@
           "defenses": 3,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Jon_Jones_-_Supporting_Brain_Health_Study.jpg/250px-Jon_Jones_-_Supporting_Brain_Health_Study.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Jon_Jones_-_Supporting_Brain_Health_Study.jpg/250px-Jon_Jones_-_Supporting_Brain_Health_Study.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 15,
@@ -527,7 +540,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Jan_Blachowicz_at_UFC_Fight_Night_136.jpg/250px-Jan_Blachowicz_at_UFC_Fight_Night_136.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Jan_Blachowicz_at_UFC_Fight_Night_136.jpg/250px-Jan_Blachowicz_at_UFC_Fight_Night_136.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 16,
@@ -540,7 +553,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Teixeira_at_his_training_facility_%28cropped%29.jpg/250px-Teixeira_at_his_training_facility_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Teixeira_at_his_training_facility_%28cropped%29.jpg/250px-Teixeira_at_his_training_facility_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 17,
@@ -553,7 +566,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/JiriProchazka2022.png/250px-JiriProchazka2022.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/JiriProchazka2022.png/250px-JiriProchazka2022.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 18,
@@ -579,7 +592,7 @@
           "defenses": 3,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Freedom_250_press_conference_at_the_Lincoln_Memorial_on_June_12%2C_2026_-_26%28cropped%29.jpg/250px-Freedom_250_press_conference_at_the_Lincoln_Memorial_on_June_12%2C_2026_-_26%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 20,
@@ -592,7 +605,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg/250px-Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg/250px-Magomed_Ankalaev_at_UFC_Fight_Night_136_in_Moscow%2C_Russia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 21,
@@ -605,7 +618,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Freedom_250_press_conference_at_the_Lincoln_Memorial_on_June_12%2C_2026_-_26%28cropped%29.jpg/250px-Freedom_250_press_conference_at_the_Lincoln_Memorial_on_June_12%2C_2026_-_26%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 22,
@@ -618,7 +631,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg/250px-Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg/250px-Motorcycle_stunts_on_the_South_Lawn_of_the_White_House_ahead_of_UFC_Freedom_250%2C_Saturday%2C_June_13%2C_2026_-_11%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -683,7 +696,7 @@
           "defenses": 2,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/RichFranklinphoto.png"
+          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/RichFranklinphoto.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
         },
         {
           "order": 5,
@@ -696,7 +709,7 @@
           "defenses": 10,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Anderson_Silva.png/250px-Anderson_Silva.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Anderson_Silva.png/250px-Anderson_Silva.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -709,7 +722,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Chris_Weidman_at_UFC_230.jpg/250px-Chris_Weidman_at_UFC_230.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Chris_Weidman_at_UFC_230.jpg/250px-Chris_Weidman_at_UFC_230.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -722,7 +735,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Luke_Rockhold_2025.jpg/250px-Luke_Rockhold_2025.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Luke_Rockhold_2025.jpg/250px-Luke_Rockhold_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -735,7 +748,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/MichaelBispingProfile.png/250px-MichaelBispingProfile.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/MichaelBispingProfile.png/250px-MichaelBispingProfile.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 9,
@@ -748,7 +761,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg/250px-2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg/250px-2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 10,
@@ -761,7 +774,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Robert_Whittaker_2024.png/250px-Robert_Whittaker_2024.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Robert_Whittaker_2024.png/250px-Robert_Whittaker_2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 11,
@@ -774,7 +787,7 @@
           "defenses": 5,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Israel_Adesanya_at_UFC_230.jpg/250px-Israel_Adesanya_at_UFC_230.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Israel_Adesanya_at_UFC_230.jpg/250px-Israel_Adesanya_at_UFC_230.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 12,
@@ -787,7 +800,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Alex_Pereira_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Freedom_250_press_conference_at_the_Lincoln_Memorial_on_June_12%2C_2026_-_26%28cropped%29.jpg/250px-Freedom_250_press_conference_at_the_Lincoln_Memorial_on_June_12%2C_2026_-_26%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 13,
@@ -800,7 +813,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Israel_Adesanya_at_UFC_230.jpg/250px-Israel_Adesanya_at_UFC_230.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Israel_Adesanya_at_UFC_230.jpg/250px-Israel_Adesanya_at_UFC_230.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 14,
@@ -813,7 +826,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sean_Strickland_at_UFN_200.png/250px-Sean_Strickland_at_UFN_200.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Sean_Strickland_at_UFN_200.png/250px-Sean_Strickland_at_UFN_200.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 15,
@@ -826,7 +839,7 @@
           "defenses": 2,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/IMG-Dricus-Duplessis%28cropped%29.jpg/250px-IMG-Dricus-Duplessis%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/IMG-Dricus-Duplessis%28cropped%29.jpg/250px-IMG-Dricus-Duplessis%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 16,
@@ -839,7 +852,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Khamzat_Chimaev_2022_%28cropped%29.png/250px-Khamzat_Chimaev_2022_%28cropped%29.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Khamzat_Chimaev_2022_%28cropped%29.png/250px-Khamzat_Chimaev_2022_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 17,
@@ -852,7 +865,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sean_Strickland_at_UFN_200.png/250px-Sean_Strickland_at_UFN_200.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Sean_Strickland_at_UFN_200.png/250px-Sean_Strickland_at_UFN_200.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -878,7 +891,7 @@
           "defenses": 4,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/PatMiletich.png/250px-PatMiletich.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/PatMiletich.png/250px-PatMiletich.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -891,7 +904,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Carlos_Newton.jpg/250px-Carlos_Newton.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Carlos_Newton.jpg/250px-Carlos_Newton.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -904,7 +917,7 @@
           "defenses": 5,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Matt_Hughes_%28cropped%29.png/250px-Matt_Hughes_%28cropped%29.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Matt_Hughes_%28cropped%29.png/250px-Matt_Hughes_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -917,7 +930,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/B.J._Penn%2C_2019.jpg/250px-B.J._Penn%2C_2019.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/B.J._Penn%2C_2019.jpg/250px-B.J._Penn%2C_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -930,7 +943,7 @@
           "defenses": 2,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Matt_Hughes_%28cropped%29.png/250px-Matt_Hughes_%28cropped%29.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Matt_Hughes_%28cropped%29.png/250px-Matt_Hughes_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -943,7 +956,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg/250px-2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg/250px-2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -956,7 +969,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Matt_Serra_2024.png/250px-Matt_Serra_2024.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Matt_Serra_2024.png/250px-Matt_Serra_2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -969,7 +982,7 @@
           "defenses": 9,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg/250px-2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg/250px-2021_-_Centre_Stage_DG4_5765_%2851654942080%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 9,
@@ -982,7 +995,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Johny_Hendricks_MMA.jpg/250px-Johny_Hendricks_MMA.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Johny_Hendricks_MMA.jpg/250px-Johny_Hendricks_MMA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 10,
@@ -995,7 +1008,7 @@
           "defenses": 2,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Robbie_Lawler.png/250px-Robbie_Lawler.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Robbie_Lawler.png/250px-Robbie_Lawler.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 11,
@@ -1008,7 +1021,7 @@
           "defenses": 4,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tyron_Woodley.png/250px-Tyron_Woodley.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tyron_Woodley.png/250px-Tyron_Woodley.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 12,
@@ -1021,7 +1034,7 @@
           "defenses": 5,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/KamaruUsmanPress2018.png/250px-KamaruUsmanPress2018.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/KamaruUsmanPress2018.png/250px-KamaruUsmanPress2018.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 13,
@@ -1034,7 +1047,7 @@
           "defenses": 2,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Leon_Edwards_2021.png/250px-Leon_Edwards_2021.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Leon_Edwards_2021.png/250px-Leon_Edwards_2021.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 14,
@@ -1047,7 +1060,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Belal_Muhammad_UFC_%28cropped%29.jpg/250px-Belal_Muhammad_UFC_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Belal_Muhammad_UFC_%28cropped%29.jpg/250px-Belal_Muhammad_UFC_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 15,
@@ -1070,10 +1083,10 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Islam_Makhachev",
           "crowned_at": "Nov 15, 2025",
           "reign": 1,
-          "defenses": 0,
+          "defenses": 1,
           "reign_total": 1,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg/250px-Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg/250px-Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -1099,7 +1112,7 @@
           "defenses": 2,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Jens_Pulver_at_UFC_-_Neer_vs_Diaz_2013-12-03_22-51.jpg/250px-Jens_Pulver_at_UFC_-_Neer_vs_Diaz_2013-12-03_22-51.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Jens_Pulver_at_UFC_-_Neer_vs_Diaz_2013-12-03_22-51.jpg/250px-Jens_Pulver_at_UFC_-_Neer_vs_Diaz_2013-12-03_22-51.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -1112,7 +1125,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sean-sherk.jpg/250px-Sean-sherk.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Sean-sherk.jpg/250px-Sean-sherk.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -1125,7 +1138,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/B.J._Penn%2C_2019.jpg/250px-B.J._Penn%2C_2019.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/B.J._Penn%2C_2019.jpg/250px-B.J._Penn%2C_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -1138,7 +1151,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Frankie_Edgar.jpg/250px-Frankie_Edgar.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Frankie_Edgar.jpg/250px-Frankie_Edgar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -1151,7 +1164,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Benhendersonfighter.jpg/250px-Benhendersonfighter.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Benhendersonfighter.jpg/250px-Benhendersonfighter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -1164,7 +1177,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/USO_Spring_2016_Entertainment_Tour_%28cropped%29.jpg/250px-USO_Spring_2016_Entertainment_Tour_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/USO_Spring_2016_Entertainment_Tour_%28cropped%29.jpg/250px-USO_Spring_2016_Entertainment_Tour_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -1190,7 +1203,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eddie_Alvarez.jpg/250px-Eddie_Alvarez.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Eddie_Alvarez.jpg/250px-Eddie_Alvarez.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 9,
@@ -1203,7 +1216,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Conor_McGregor_2025.jpeg/250px-Conor_McGregor_2025.jpeg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Conor_McGregor_2025.jpeg/250px-Conor_McGregor_2025.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 10,
@@ -1216,7 +1229,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Khabib_nurmagomedov.jpg/250px-Khabib_nurmagomedov.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Khabib_nurmagomedov.jpg/250px-Khabib_nurmagomedov.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 11,
@@ -1229,7 +1242,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Charles_Oliveira_do_Bronxs.jpg/250px-Charles_Oliveira_do_Bronxs.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Charles_Oliveira_do_Bronxs.jpg/250px-Charles_Oliveira_do_Bronxs.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 12,
@@ -1242,7 +1255,7 @@
           "defenses": 4,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg/250px-Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg/250px-Islam_Makhachev_and_Sergey_Melikov_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 13,
@@ -1255,7 +1268,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/UFC_Freedom_250_Ceremonial_Weigh_In_%289748627%29%28cropped%29.jpg/250px-UFC_Freedom_250_Ceremonial_Weigh_In_%289748627%29%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 14,
@@ -1268,7 +1281,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_67%28cropped%29.jpg/250px-thumbnail.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_67%28cropped%29.jpg/250px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -1294,7 +1307,7 @@
           "defenses": 7,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg/250px-Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg/250px-Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -1307,7 +1320,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Conor_McGregor_2025.jpeg/250px-Conor_McGregor_2025.jpeg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Conor_McGregor_2025.jpeg/250px-Conor_McGregor_2025.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -1320,7 +1333,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg/250px-Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg/250px-Jos%C3%A9_Aldo%2C_UFC_189_World_Tour_London_%282%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -1333,7 +1346,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg/250px-Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg/250px-Blue_Angels%27_VIP_Rider_Max_Holloway_%281%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -1346,7 +1359,7 @@
           "defenses": 5,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Alexander_Volkanovski_at_UFC_232.jpg/250px-Alexander_Volkanovski_at_UFC_232.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c8/Volkanovski_2021_red_shirt.jpeg/250px-Volkanovski_2021_red_shirt.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -1359,7 +1372,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg/250px-Ilia_Topuria_in_the_Oval_Office_%28while_President_Donald_J._Trump_is_holding_a_meeting_with_UFC_fighters%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/UFC_Freedom_250_Ceremonial_Weigh_In_%289748627%29%28cropped%29.jpg/250px-UFC_Freedom_250_Ceremonial_Weigh_In_%289748627%29%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -1372,7 +1385,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Alexander_Volkanovski_at_UFC_232.jpg/250px-Alexander_Volkanovski_at_UFC_232.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c8/Volkanovski_2021_red_shirt.jpeg/250px-Volkanovski_2021_red_shirt.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -1398,7 +1411,7 @@
           "defenses": 2,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dom_Cruz_2.png/250px-Dom_Cruz_2.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Dom_Cruz_2.png/250px-Dom_Cruz_2.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -1411,7 +1424,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/UFC_173_Renan_Barao_Media_Day_Interview_-_YouTube_-_0-0-10_%28cropped%29.jpg/250px-UFC_173_Renan_Barao_Media_Day_Interview_-_YouTube_-_0-0-10_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/UFC_173_Renan_Barao_Media_Day_Interview_-_YouTube_-_0-0-10_%28cropped%29.jpg/250px-UFC_173_Renan_Barao_Media_Day_Interview_-_YouTube_-_0-0-10_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -1424,7 +1437,7 @@
           "defenses": 2,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TJ_Dillashaw.png/250px-TJ_Dillashaw.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/TJ_Dillashaw.png/250px-TJ_Dillashaw.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -1437,7 +1450,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dom_Cruz_2.png/250px-Dom_Cruz_2.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Dom_Cruz_2.png/250px-Dom_Cruz_2.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -1450,7 +1463,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Cody_Garbrandt.png/250px-Cody_Garbrandt.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cody_Garbrandt.png/250px-Cody_Garbrandt.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -1463,7 +1476,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TJ_Dillashaw.png/250px-TJ_Dillashaw.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/TJ_Dillashaw.png/250px-TJ_Dillashaw.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -1476,7 +1489,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg/250px-Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg/250px-Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -1489,7 +1502,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg/250px-Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg/250px-Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 9,
@@ -1502,7 +1515,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Alijamain_Sterling_at_UFC_228.jpg/250px-Alijamain_Sterling_at_UFC_228.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Alijamain_Sterling_at_UFC_228.jpg/250px-Alijamain_Sterling_at_UFC_228.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 10,
@@ -1515,7 +1528,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_25%28cropped%29.jpg/250px-UFC_Freedom_250_press_conference_at_the_Lincoln_Memorial_in_Washington%2C_D.C.%2C_Friday%2C_June_12%2C_2026_-_25%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/UFC_Freedom_250_on_the_South_Lawn_of_the_White_House_in_Washington%2C_D.C._on_June_14%2C_2026_-_29%28cropped%29.png/250px-UFC_Freedom_250_on_the_South_Lawn_of_the_White_House_in_Washington%2C_D.C._on_June_14%2C_2026_-_29%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 11,
@@ -1528,7 +1541,7 @@
           "defenses": 3,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg/250px-Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg/250px-Merab_Dvalishvili_at_UFC_316_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 12,
@@ -1541,7 +1554,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg/250px-Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg/250px-Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -1567,7 +1580,7 @@
           "defenses": 11,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Demetrious_Johnson_2024.png/250px-Demetrious_Johnson_2024.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Demetrious_Johnson_2024.png/250px-Demetrious_Johnson_2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -1580,7 +1593,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg/250px-Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg/250px-Henry_Cejudo_%2854235464255%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -1593,7 +1606,7 @@
           "defenses": 2,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Deiveson_Figueiredo_2024.jpg/250px-Deiveson_Figueiredo_2024.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Deiveson_Figueiredo_2024.jpg/250px-Deiveson_Figueiredo_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -1606,7 +1619,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Brandon_Moreno_February_2021.jpg/250px-Brandon_Moreno_February_2021.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Brandon_Moreno_February_2021_%28cropped%29.jpg/250px-Brandon_Moreno_February_2021_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -1619,7 +1632,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Deiveson_Figueiredo_2024.jpg/250px-Deiveson_Figueiredo_2024.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Deiveson_Figueiredo_2024.jpg/250px-Deiveson_Figueiredo_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -1632,7 +1645,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Brandon_Moreno_February_2021.jpg/250px-Brandon_Moreno_February_2021.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Brandon_Moreno_February_2021_%28cropped%29.jpg/250px-Brandon_Moreno_February_2021_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -1645,7 +1658,7 @@
           "defenses": 4,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pantoja_2025.jpg/250px-Pantoja_2025.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Pantoja_2025.jpg/250px-Pantoja_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -1655,10 +1668,10 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Joshua_Van",
           "crowned_at": "Dec 6, 2025",
           "reign": 1,
-          "defenses": 1,
+          "defenses": 2,
           "reign_total": 1,
           "current": true,
-          "portrait_url": ""
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Joshua_Van_1.png/250px-Joshua_Van_1.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -1684,7 +1697,7 @@
           "defenses": 6,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Rousey_HOF_2018_%28cropped%29.jpg/250px-Rousey_HOF_2018_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Rousey_HOF_2018_%28cropped%29.jpg/250px-Rousey_HOF_2018_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -1697,7 +1710,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Holly_Holm_at_UFC_246.jpg/250px-Holly_Holm_at_UFC_246.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Holly_Holm_at_UFC_246.jpg/250px-Holly_Holm_at_UFC_246.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -1710,7 +1723,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/MCAS_Yuma_hosts_MMA_Fight_Night_with_guest_of_honor%2C_Miesha_Tate_%286%29_%28cropped%29.jpg/250px-MCAS_Yuma_hosts_MMA_Fight_Night_with_guest_of_honor%2C_Miesha_Tate_%286%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/MCAS_Yuma_hosts_MMA_Fight_Night_with_guest_of_honor%2C_Miesha_Tate_%286%29_%28cropped%29.jpg/250px-MCAS_Yuma_hosts_MMA_Fight_Night_with_guest_of_honor%2C_Miesha_Tate_%286%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -1723,7 +1736,7 @@
           "defenses": 5,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -1736,7 +1749,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -1749,7 +1762,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -1762,7 +1775,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg/250px-Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg/250px-Raquel_Pennington_MCCS_Twentynine_Palms_presents_an_action-packed_MMA_Fight_Night_Live_at_The_Combat_Center_%285%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -1775,7 +1788,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg/250px-Ceremonial_weigh_ins_-_Amanda_Nunes_vs_Julianna_Pe%C3%B1a_UFC_269_-_YouTube_-_0_23_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 9,
@@ -1788,7 +1801,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg/250px-President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg/250px-President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -1814,7 +1827,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Nicco_Montano.jpg/250px-Nicco_Montano.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nicco_Montano.jpg/250px-Nicco_Montano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -1827,7 +1840,7 @@
           "defenses": 7,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Valentina_Shevchenko_2020.jpg/250px-Valentina_Shevchenko_2020.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Valentina_Shevchenko_2020.jpg/250px-Valentina_Shevchenko_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -1840,7 +1853,7 @@
           "defenses": 1,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Alexa_Grasso_2020_01.png/250px-Alexa_Grasso_2020_01.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Alexa_Grasso_2020_01.png/250px-Alexa_Grasso_2020_01.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -1852,8 +1865,21 @@
           "reign": 2,
           "defenses": 2,
           "reign_total": 2,
+          "current": false,
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Valentina_Shevchenko_2020.jpg/250px-Valentina_Shevchenko_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "order": 5,
+          "fighter_id": "nat-lia-silva",
+          "name": "Natália Silva",
+          "name_ko": "나탈리아 실바",
+          "wiki_url": "https://en.wikipedia.org/wiki/Natália_Silva_(fighter)",
+          "crowned_at": "Oct 3, 2026",
+          "reign": 1,
+          "defenses": 0,
+          "reign_total": 1,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Valentina_Shevchenko_2020.jpg/250px-Valentina_Shevchenko_2020.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Nat%C3%A1lia_Silva_2025.jpg/250px-Nat%C3%A1lia_Silva_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {
@@ -1879,7 +1905,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Carla_Esparza_2022_01.jpg/250px-Carla_Esparza_2022_01.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Carla_Esparza_2022_01.jpg/250px-Carla_Esparza_2022_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 2,
@@ -1892,7 +1918,7 @@
           "defenses": 5,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Joanna_J%C4%99drzejczyk.png/250px-Joanna_J%C4%99drzejczyk.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Joanna_J%C4%99drzejczyk.png/250px-Joanna_J%C4%99drzejczyk.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 3,
@@ -1905,7 +1931,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rose_Namajunas.jpg/250px-Rose_Namajunas.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Rose_Namajunas.jpg/250px-Rose_Namajunas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 4,
@@ -1918,7 +1944,7 @@
           "defenses": 0,
           "reign_total": 1,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Jessica_Andrade_at_UFC_228.jpg/250px-Jessica_Andrade_at_UFC_228.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Jessica_Andrade_at_UFC_228.jpg/250px-Jessica_Andrade_at_UFC_228.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 5,
@@ -1931,7 +1957,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%E5%BC%A0%E4%BC%9F%E4%B8%BD.png/250px-%E5%BC%A0%E4%BC%9F%E4%B8%BD.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/%E5%BC%A0%E4%BC%9F%E4%B8%BD.png/250px-%E5%BC%A0%E4%BC%9F%E4%B8%BD.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 6,
@@ -1944,7 +1970,7 @@
           "defenses": 1,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rose_Namajunas.jpg/250px-Rose_Namajunas.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Rose_Namajunas.jpg/250px-Rose_Namajunas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 7,
@@ -1957,7 +1983,7 @@
           "defenses": 0,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Carla_Esparza_2022_01.jpg/250px-Carla_Esparza_2022_01.jpg"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Carla_Esparza_2022_01.jpg/250px-Carla_Esparza_2022_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 8,
@@ -1970,7 +1996,7 @@
           "defenses": 3,
           "reign_total": 2,
           "current": false,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%E5%BC%A0%E4%BC%9F%E4%B8%BD.png/250px-%E5%BC%A0%E4%BC%9F%E4%B8%BD.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/%E5%BC%A0%E4%BC%9F%E4%B8%BD.png/250px-%E5%BC%A0%E4%BC%9F%E4%B8%BD.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
           "order": 9,
@@ -1980,10 +2006,10 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Mackenzie_Dern",
           "crowned_at": "Oct 25, 2025",
           "reign": 1,
-          "defenses": 0,
+          "defenses": 1,
           "reign_total": 1,
           "current": true,
-          "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mackenzie_Dern.png/250px-Mackenzie_Dern.png"
+          "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Mackenzie_Dern.png/250px-Mackenzie_Dern.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ],
       "record": {

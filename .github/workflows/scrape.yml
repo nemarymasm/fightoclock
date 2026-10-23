@@ -19,7 +19,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: 코드 받아오기
@@ -36,14 +36,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 일일 프로필·랭킹·스탯 보강
+      - name: 공식 미디어·Meta 랭킹 갱신
+        continue-on-error: true
+        run: python scrape.py --rankings-only
+
+      - name: 일일 선수 정보 재확인
         if: github.event.schedule == '0 21 * * *'
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
-          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        run: python scrape.py
+        continue-on-error: true
+        run: python scrape.py --profiles-current
+
+      - name: 일일 챔피언 계보·스탯 보강
+        if: github.event.schedule == '0 21 * * *'
+        continue-on-error: true
+        run: |
+          python scrape.py --champions-only
+          python scrape.py --stats-only
 
       - name: 일정·대진·결과 갱신
         run: python scrape.py --events-only
@@ -54,6 +61,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_event_feed.py' -v
           python -m unittest discover -s tests -p 'test_schedule_contract.py' -v
+          python -m unittest discover -s tests -p 'test_athlete_feed.py' -v
 
       - name: 변경사항 커밋 & 푸시
         run: |

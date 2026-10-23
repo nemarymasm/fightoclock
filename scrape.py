@@ -125,10 +125,8 @@ EVENT_START_OVERRIDES = {
     # UFC 공식 이벤트 페이지의 메인카드 시작 시각. 실제 메인이벤트 입장은 앞 경기 길이에 따라 변동.
     "UFC Fight Night: Medić vs. Rodriguez": "2026-08-01T17:00:00Z",
 }
-FIGHTER_RANK_OVERRIDES = {
-    "Uroš Medić": "#14",
-    "Daniel Rodriguez": "#15",
-}
+# Current ranks come from a validated official snapshot, never a dated override.
+FIGHTER_RANK_OVERRIDES = {}
 EVENT_CARD_ADDITIONS = {
     "UFC Fight Night: Medić vs. Rodriguez": [
         {"weight": "Bantamweight", "fighter_a": "Mark Vologdin", "fighter_b": "Josias Musasa"},
@@ -1139,7 +1137,10 @@ def fetch_rankings():
     UFC 페이지 뒤쪽에는 별도의 META 랭킹 11개가 반복되므로 체급별 첫 그룹만
     사용한다. 공식 페이지 장애 시에는 Wikipedia 랭킹으로 안전하게 폴백한다.
     """
-    wiki_divisions = fetch_wikipedia_rankings()
+    try:
+        wiki_divisions = fetch_wikipedia_rankings()
+    except Exception:
+        wiki_divisions = []
     wiki_entries = {}
     for division in wiki_divisions:
         for entry in [division.get("champion")] + division.get("ranked", []):
@@ -1162,7 +1163,9 @@ def fetch_rankings():
             re.sub(r"\s+", "", value): value
             for value in WEIGHT_KO.values()
         }
-        for group in soup.select(".view-grouping"):
+        valid_weights.update({re.sub(r"\s+", "", en): ko for en,ko in WEIGHT_KO.items()})
+        container = soup.select_one('.view-display-id-block_1') or soup
+        for group in container.select(".view-grouping"):
             header = group.select_one(".view-grouping-header")
             wc_raw = clean_text(header.get_text(" ", strip=True)) if header else ""
             wc = valid_weights.get(re.sub(r"\s+", "", wc_raw), "")
@@ -3099,14 +3102,18 @@ def refresh_event_schedule():
 
 
 if __name__ == "__main__":
-    if "--events-only" in sys.argv:
+    if "--profiles-all" in sys.argv or "--profiles-current" in sys.argv:
+        from athlete_feed import refresh_profiles
+        refresh_profiles(sys.modules[__name__], all_profiles="--profiles-all" in sys.argv)
+    elif "--events-only" in sys.argv:
         refresh_event_schedule()
     elif "--stats-only" in sys.argv:
         refresh_official_stats()
     elif "--champions-only" in sys.argv:
         refresh_champion_history()
     elif "--rankings-only" in sys.argv:
-        refresh_rankings_and_profiles()
+        from athlete_feed import refresh_rankings
+        refresh_rankings(sys.modules[__name__])
     elif "--result-photos" in sys.argv:
         refresh_result_photos()
     elif "--result-notes" in sys.argv:
