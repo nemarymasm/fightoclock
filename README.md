@@ -4,8 +4,8 @@
 
 - 서비스: <https://fightoclock.kr>
 - 배포: Vercel 정적 사이트
-- 데이터: Wikipedia 기반 Python 수집기
-- 갱신: GitHub Actions, 매일 오전 6시 KST
+- 일정·대진·최근 결과: UFC 공식 사이트 우선, 장애 시 Wikipedia 보완
+- 갱신: GitHub Actions, 6시간마다 (UTC 00:17·06:17·12:17·18:17)
 - 선수 사진: UFC 공식 프로필을 WebP로 최적화해 사이트 내부에서 제공, 없으면 Wikimedia Commons 연결
 - 선수명: 한글명을 기본 표기하고 원문명은 보조 표기
 - 공식 스탯: UFC Record Book의 14개 기록 부문 상위 5명을 매일 자동 갱신
@@ -31,6 +31,16 @@ pip install -r requirements.txt
 python scrape.py
 python -m unittest discover -s tests -v
 ```
+
+일정만 빠르게 갱신하려면 `python scrape.py --events-only`를 실행합니다.
+정기 작업은 이 경로를 사용하여 선수 프로필·사진·스탯 전체 수집과 분리합니다.
+기존 프로필·랭킹·스탯 전체 보강은 매일 오전 6시 KST 별도로 유지합니다.
+공식 일정의 Unix timestamp에서 UTC 시각을 읽고 한국시간은 화면에서 변환합니다.
+얼리 프릴림·프릴림·메인카드 시각은 구분하며 티켓 판매 시각을 사용하지 않습니다.
+공식 수집과 Wikipedia 모두 실패하면 기존 파일을 보존하고 실행을 실패 처리합니다.
+대진 미발표 대회도 목록에 남기고, 승패는 실제 공식 결과가 있는 경우만 표시합니다.
+`data/event_translations.json`은 새 대회의 보충 음역 사전이며 기존 개인 편집 사전
+`data/translations.json`을 덮어쓰지 않습니다. 팬 별명이나 사람의 관전평은 자동 생성하지 않습니다.
 
 선택 환경변수:
 

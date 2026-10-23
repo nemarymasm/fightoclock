@@ -3,7 +3,8 @@ name: 데이터 자동수집
 # 언제 실행할지 정의
 on:
   schedule:
-    # 매일 KST 오전 6시 (= UTC 21:00 전날)
+    # 매일 6시간 간격, 프로필 전체 수집과 일정 갱신을 분리
+    - cron: '17 */6 * * *'
     - cron: '0 21 * * *'
   workflow_dispatch:  # GitHub 화면에서 수동 실행 버튼
 
@@ -35,7 +36,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 데이터 수집 실행
+      - name: 일일 프로필·랭킹·스탯 보강
+        if: github.event.schedule == '0 21 * * *'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
@@ -43,8 +45,15 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scrape.py
 
+      - name: 일정·대진·결과 갱신
+        run: python scrape.py --events-only
+
       - name: 데이터와 사이트 검증
-        run: python -m unittest discover -s tests -v
+        # 일정 공개를 막는 구조/신선도/연결 검증. 수동 관전평·번역·사진
+        # 보강 여부는 일정 수집과 분리하고 전체 회귀 검사는 코드 수정 때 실행.
+        run: |
+          python -m unittest discover -s tests -p 'test_event_feed.py' -v
+          python -m unittest discover -s tests -p 'test_schedule_contract.py' -v
 
       - name: 변경사항 커밋 & 푸시
         run: |

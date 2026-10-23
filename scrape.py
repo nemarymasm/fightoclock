@@ -315,13 +315,24 @@ def load_translations():
 
 
 TRANSLATIONS = load_translations()
+EVENT_TRANSLATIONS_FILE = DATA_DIR / "event_translations.json"
+if EVENT_TRANSLATIONS_FILE.exists():
+    extra = json.loads(EVENT_TRANSLATIONS_FILE.read_text(encoding="utf-8"))
+    for group in ("fighters", "venues", "locations"):
+        for name, value in extra.get(group, {}).items():
+            TRANSLATIONS.setdefault(group, {}).setdefault(name, value)
 
 
 def tr_fighter(name):
     """선수 이름 영→한. 사전에 없으면 원문 유지."""
     if not name:
         return name
-    return TRANSLATIONS.get("fighters", {}).get(name.strip(), name.strip())
+    names = TRANSLATIONS.get("fighters", {})
+    exact = names.get(name.strip())
+    if exact:
+        return exact
+    key = ufc_slugify(name)
+    return next((ko for en, ko in names.items() if ufc_slugify(en) == key), name.strip())
 
 
 def tr_venue(venue):
@@ -357,6 +368,8 @@ def tr_event_title(name):
     if not m:
         return name
     prefix, a, b = m.group(1).strip(), m.group(2).strip(), m.group(3).strip()
+    if a.lower() == "tbd" and b.lower() == "tbd":
+        return f"{prefix}: 대진 미정"
     a_kr = lookup_surname_kr(a) or a
     b_kr = lookup_surname_kr(b) or b
     if a_kr != a or b_kr != b:
@@ -369,7 +382,7 @@ def lookup_surname_kr(surname):
     s = surname.lower().strip()
     # 동아시아식 성-이름 순서처럼 영문 이벤트 타이틀의 토큰이 풀네임 끝과
     # 일치하지 않는 소수 사례.
-    overrides = {"song": "송"}
+    overrides = {"song": "송", "wang": "왕", "tbd": "대진 미정"}
     if s in overrides:
         return overrides[s]
     for en_name, kr_name in TRANSLATIONS.get("fighters", {}).items():
@@ -389,7 +402,7 @@ def fill_missing_fighter_translations(client, events):
     names = sorted({
         name
         for event in events
-        for fight in event.get("main_card", []) + event.get("prelims", [])
+        for fight in event.get("main_card", []) + event.get("prelims", []) + event.get("announced_card", [])
         for name in (fight.get("fighter_a"), fight.get("fighter_b"))
         if name and tr_fighter(name) == name
     })
@@ -741,6 +754,16 @@ def clean_fighter_name(s):
 # Wikipedia 파싱: 다가오는 이벤트 목록
 # ────────────────────────────────────────────────────────────────
 def fetch_upcoming_events():
+    from event_feed import fetch_schedule, enrich_event
+    try:
+        feed = fetch_schedule(http_get)
+        return [enrich_event(event, http_get) for event in feed["events"]]
+    except Exception as exc:
+        print(f"WARN official schedule failed ({type(exc).__name__}); trying Wikipedia")
+        return fetch_wikipedia_upcoming_events()
+
+
+def fetch_wikipedia_upcoming_events():
     """List of UFC events 페이지에서 Scheduled events 표 가져오기."""
     print("\n→ Wikipedia: List of UFC events 가져오는 중...")
     html = http_get(WIKI + "List_of_UFC_events")
@@ -1003,13 +1026,13 @@ def apply_translations(ev):
     ev["name_ko"] = tr_event_title(ev["name"])
     ev["venue_ko"] = tr_venue(ev.get("venue", ""))
     ev["location_ko"] = tr_location(ev.get("location", ""))
-    for fight in ev.get("main_card", []) + ev.get("prelims", []):
+    for fight in ev.get("main_card", []) + ev.get("prelims", []) + ev.get("announced_card", []):
         fight["fighter_a_ko"] = tr_fighter(fight["fighter_a"])
         fight["fighter_b_ko"] = tr_fighter(fight["fighter_b"])
         fight["weight_ko"] = tr_weight(fight.get("weight", ""))
     ev["date_local_human"] = to_local_human(ev["date_iso"])
-    ev["start_time_utc"] = None
-    ev["time_status"] = "date_only"
+    ev.setdefault("start_time_utc", None)
+    ev.setdefault("time_status", "date_only")
     return ev
 
 
@@ -1699,7 +1722,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
 
     # 2. 대진표에 등장하는 선수 전원 등록 (선수별 위키 링크 포함)
     for ev in upcoming + past:
-        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+        for fight in ev.get("main_card", []) + ev.get("prelims", []) + ev.get("announced_card", []):
             wc = tr_weight(fight.get("weight", ""))
             ensure(fight["fighter_a"], wc, fight.get("fighter_a_url"))
             ensure(fight["fighter_b"], wc, fight.get("fighter_b_url"))
@@ -1708,7 +1731,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     for ev in past:
         ename = ev.get("name_ko") or ev.get("name")
         edate = ev.get("date_iso")
-        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+        for fight in ev.get("main_card", []) + ev.get("prelims", []) + ev.get("announced_card", []):
             a, b = slugify(fight["fighter_a"]), slugify(fight["fighter_b"])
             w = fight.get("winner")
             method = fight.get("method", "")
@@ -1729,7 +1752,7 @@ def build_fighters(upcoming, past, divisions, detail_limit=None):
     for ev in upcoming:
         ename = ev.get("name_ko") or ev.get("name")
         edate = ev.get("date_iso")
-        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+        for fight in ev.get("main_card", []) + ev.get("prelims", []) + ev.get("announced_card", []):
             a, b = slugify(fight["fighter_a"]), slugify(fight["fighter_b"])
             if a in fighters and not fighters[a]["next"]:
                 fighters[a]["next"] = {"opp": fight["fighter_b"], "opp_ko": fight.get("fighter_b_ko"), "event": ename, "date": edate}
@@ -2021,11 +2044,11 @@ def refresh_insights(events, opinions, now_iso):
     except (OSError, json.JSONDecodeError):
         current = {}
     previous = current.get("events", {})
-    refreshed = {}
+    refreshed = dict(previous)
     for event in events:
         event_id = slugify(event.get("name", ""))
         entry = dict(previous.get(event_id, {}))
-        fights = event.get("main_card", []) + event.get("prelims", [])
+        fights = event.get("main_card", []) + event.get("prelims", []) + event.get("announced_card", [])
         schedule = dict(entry.get("schedule", {}))
         start_value = event.get("start_time_utc")
         start = None
@@ -2078,7 +2101,7 @@ def refresh_insights(events, opinions, now_iso):
             ]
             entry["fan_summary"] = "해외 MMA 커뮤니티에서 많이 공감한 댓글을 정리했습니다."
 
-        main = (event.get("main_card") or [{}])[0]
+        main = (event.get("main_card") or event.get("announced_card") or [{}])[0]
         a_name = tr_fighter(main.get("fighter_a", ""))
         b_name = tr_fighter(main.get("fighter_b", ""))
         entry.setdefault("viewing_hook", f"{a_name} 대 {b_name}".strip())
@@ -2113,7 +2136,7 @@ def apply_official_event_overrides(events):
             continue
         existing = {
             frozenset((fight.get("fighter_a"), fight.get("fighter_b")))
-            for fight in event.get("main_card", []) + event.get("prelims", [])
+            for fight in event.get("main_card", []) + event.get("prelims", []) + event.get("announced_card", [])
         }
         event.setdefault("prelims", [])
         for fight in additions:
@@ -2584,7 +2607,7 @@ def main():
 
     # 내부용 선수 링크는 events.json 출력에서 제거 (build_fighters 가 다 쓴 뒤)
     for ev in events + past:
-        for fight in ev.get("main_card", []) + ev.get("prelims", []):
+        for fight in ev.get("main_card", []) + ev.get("prelims", []) + ev.get("announced_card", []):
             fight.pop("fighter_a_url", None)
             fight.pop("fighter_b_url", None)
 
@@ -2997,8 +3020,86 @@ def refresh_fan_tags_from_files():
     )
 
 
+def refresh_event_schedule():
+    """Fast scheduled refresh independent of expensive profile/photo/stat crawls."""
+    from event_feed import fetch_schedule, enrich_event
+    now_iso = datetime.now(KST).isoformat(timespec="seconds")
+    previous = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
+    try:
+        feed = fetch_schedule(http_get)
+        events, past = feed["events"], feed["past_events"]
+        for event in events + past:
+            enrich_event(event, http_get)
+            if event.get("card_status") == "unavailable":
+                old = next((e for e in previous.get("events", []) + previous.get("past_events", []) if e.get("official_url") == event["official_url"]), {})
+                for field in ("main_card", "prelims", "announced_card"):
+                    if field in old:
+                        event[field] = old[field]
+                event["card_updated_at"] = old.get("card_updated_at")
+            else:
+                event["card_updated_at"] = now_iso
+    except Exception as exc:
+        print(f"WARN official schedule failed ({type(exc).__name__}); trying Wikipedia")
+        events = fetch_wikipedia_upcoming_events()
+        if not events:
+            raise RuntimeError("Both schedule sources failed; previous files preserved") from exc
+        events = [fetch_event_detail(e) for e in events]
+        past = [fetch_event_detail(e) for e in fetch_recent_past_events(limit=8)]
+    if not events or not any(e["date_iso"] >= TODAY.isoformat() for e in events):
+        raise RuntimeError("No future events; previous files preserved")
+    # Keep historical links while refreshing recent results from an actual results source.
+    fighters_data = json.loads(FIGHTERS_FILE.read_text(encoding="utf-8"))
+    by_profile = {urlparse(f.get("ufc_url") or f.get("avatar_source") or "").path: f for f in fighters_data["fighters"] if "/athlete/" in (f.get("ufc_url") or f.get("avatar_source") or "")}
+    def name_key(name):
+        return re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower())
+    by_name = {name_key(f["name"]): f for f in fighters_data["fighters"]}
+    for event in events + past:
+        for fight in event.get("main_card", []) + event.get("prelims", []) + event.get("announced_card", []):
+            for side in ("a", "b"):
+                name = fight[f"fighter_{side}"]
+                old = by_profile.get(urlparse(fight.get(f"fighter_{side}_ufc_url", "")).path) or by_name.get(name_key(name))
+                if old:
+                    fight[f"fighter_{side}"] = old["name"]
+                    if re.search(r"[가-힣]", old.get("name_ko", "")):
+                        TRANSLATIONS["fighters"].setdefault(old["name"], old["name_ko"])
+    for event in events + past:
+        apply_translations(event)
+    known = {e["date_iso"] for e in past}
+    past += [e for e in previous.get("past_events", []) if e["date_iso"] not in known]
+    if not (events[0].get("main_card") or events[0].get("announced_card")):
+        raise RuntimeError("Next event card unavailable; previous files preserved")
+    fighters = {f["id"]: f for f in fighters_data["fighters"]}
+    for fighter in fighters.values():
+        fighter["next"] = None
+    for event in events + past:
+        for fight in event.get("main_card", []) + event.get("prelims", []) + event.get("announced_card", []):
+            for side, other in (("a", "b"), ("b", "a")):
+                name = fight[f"fighter_{side}"]
+                fid = slugify(name)
+                fighter = fighters.setdefault(fid, {"id": fid, "name": name, "name_ko": tr_fighter(name), "rank": "확인 중", "record": "", "recent": [], "next": None})
+                fighter["name_ko"] = tr_fighter(name)
+                fighter.setdefault("division", fight.get("weight_ko", ""))
+                if event in events and not fighter.get("next"):
+                    fighter["next"] = {"opp": fight[f"fighter_{other}"], "opp_ko": fight.get(f"fighter_{other}_ko"), "event": event["name_ko"], "date": event["date_iso"]}
+                profile, photo = fight.get(f"fighter_{side}_ufc_url"), fight.get(f"fighter_{side}_photo")
+                if profile:
+                    fighter["ufc_url"] = profile
+                if photo and photo.startswith("https://ufc.com/images/") and not fighter.get("avatar_url"):
+                    fighter.update(avatar_url=photo, avatar_thumb_url=photo, avatar_provider="UFC", avatar_source=event["official_url"])
+    fighters_data.update(fighters=list(fighters.values()), fighter_count=len(fighters), schedule_updated_at=now_iso)
+    payload = {"schema_version": 2, "generated_at": now_iso, "source": "UFC 공식 일정·대진·결과 / 장애 시 Wikipedia", "translations_applied": True, "event_count": len(events), "events": events, "past_count": len(past), "past_events": past}
+    for path, data in ((EVENTS_FILE, payload), (FIGHTERS_FILE, fighters_data)):
+        temporary = path.with_suffix(".tmp")
+        temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary.replace(path)
+    refresh_insights(events, {}, now_iso)
+    print(f"Schedule refreshed: {len(events)} upcoming / {len(past)} past")
+
+
 if __name__ == "__main__":
-    if "--stats-only" in sys.argv:
+    if "--events-only" in sys.argv:
+        refresh_event_schedule()
+    elif "--stats-only" in sys.argv:
         refresh_official_stats()
     elif "--champions-only" in sys.argv:
         refresh_champion_history()

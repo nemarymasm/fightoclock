@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T12:00:00+09:00",
+  "generated_at": "2026-10-23T14:52:00+09:00",
+  "source": "UFC 공식 일정 · The Odds API · 공개 MMA 커뮤니티",
   "events": {
     "ufc-fight-night-medi-vs-rodriguez": {
       "schedule": {
@@ -114,6 +115,98 @@
           "url": "https://ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
         }
       ]
+    },
+    "ufc-333-volkanovski-vs-evloev": {
+      "schedule": {
+        "label": "한국시간 10월 25일(일) 오전 3시",
+        "main_card": "한국시간 10월 25일(일) 오전 3시",
+        "bout_count": 14,
+        "source": "https://www.ufc.com/event/ufc-333",
+        "main_event_estimate": "오전 5:20",
+        "main_event_window": "오전 5:10–5:40",
+        "estimate_note": "앞 경기에서 KO가 많이 나오면 더 빨라집니다."
+      },
+      "viewing_hook": "알렉산더 볼카노프스키 대 모브사르 에블로예프",
+      "thesis": "알렉산더 볼카노프스키 대 모브사르 에블로예프"
+    },
+    "ufc-fight-night-moicano-vs-nolan": {
+      "schedule": {
+        "label": "한국시간 11월 1일(일) 오전 9시",
+        "main_card": "한국시간 11월 1일(일) 오전 9시",
+        "bout_count": 11,
+        "source": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+        "main_event_estimate": "오전 10:50",
+        "main_event_window": "오전 10:40–11:10",
+        "estimate_note": "앞 경기에서 KO가 많이 나오면 더 빨라집니다."
+      },
+      "viewing_hook": "헤나토 모이카노 대 톰 놀란",
+      "thesis": "헤나토 모이카노 대 톰 놀란"
+    },
+    "ufc-fight-night-bonfim-vs-brady": {
+      "schedule": {
+        "label": "한국시간 11월 8일(일) 오전 10시",
+        "main_card": "한국시간 11월 8일(일) 오전 10시",
+        "bout_count": 13,
+        "source": "https://www.ufc.com/event/ufc-fight-night-november-07-2026",
+        "main_event_estimate": "오후 12:50",
+        "main_event_window": "오후 12:40–1:10",
+        "estimate_note": "앞 경기에서 KO가 많이 나오면 더 빨라집니다."
+      },
+      "viewing_hook": "가브리엘 본핌 대 션 브래디",
+      "thesis": "가브리엘 본핌 대 션 브래디"
+    },
+    "ufc-334-gane-vs-hokit": {
+      "schedule": {
+        "label": "한국시간 11월 15일(일) 오전 11시",
+        "main_card": "한국시간 11월 15일(일) 오전 11시",
+        "bout_count": 12,
+        "source": "https://www.ufc.com/event/ufc-334",
+        "main_event_estimate": "오후 1:20",
+        "main_event_window": "오후 1:10–1:40",
+        "estimate_note": "앞 경기에서 KO가 많이 나오면 더 빨라집니다."
+      },
+      "viewing_hook": "시릴 가네 대 조시 호킷",
+      "thesis": "시릴 가네 대 조시 호킷"
+    },
+    "ufc-fight-night-prochazka-vs-stirling": {
+      "schedule": {
+        "label": "한국시간 11월 22일(일) 오전 3시",
+        "main_card": "한국시간 11월 22일(일) 오전 3시",
+        "bout_count": 9,
+        "source": "https://www.ufc.com/event/ufc-fight-night-november-21-2026"
+      },
+      "viewing_hook": "대",
+      "thesis": "대"
+    },
+    "ufc-335-oliveira-vs-lopes": {
+      "schedule": {
+        "label": "한국시간 12월 13일(일) 오전 11시",
+        "main_card": "한국시간 12월 13일(일) 오전 11시",
+        "bout_count": 5,
+        "source": "https://www.ufc.com/event/ufc-335"
+      },
+      "viewing_hook": "대",
+      "thesis": "대"
+    },
+    "ufc-336-tbd-vs-tbd": {
+      "schedule": {
+        "label": "한국시간 1월 31일(일) 오전 11시",
+        "main_card": "한국시간 1월 31일(일) 오전 11시",
+        "bout_count": 0,
+        "source": "https://www.ufc.com/event/ufc-336"
+      },
+      "viewing_hook": "대",
+      "thesis": "대"
+    },
+    "ufc-fight-night-tbd-vs-tbd": {
+      "schedule": {
+        "label": "한국시간 2월 7일(일) 오전 7시",
+        "main_card": "한국시간 2월 7일(일) 오전 7시",
+        "bout_count": 0,
+        "source": "https://www.ufc.com/event/ufc-fight-night-february-06-2027"
+      },
+      "viewing_hook": "대",
+      "thesis": "대"
     }
   }
 }

@@ -1158,6 +1158,17 @@ function todayKstIso(){
   const value=Object.fromEntries(parts.map(p=>[p.type,p.value]));
   return `${value.year}-${value.month}-${value.day}`;
 }
+function scheduleStatus(je,now=Date.now()){
+  const start=Date.parse(je.start_time_utc||je.date_utc||'');
+  if(Number.isFinite(start)) return now>start+8*3600000?'expired':'upcoming';
+  return je.date_iso&&je.date_iso<todayKstIso()?'expired':'upcoming';
+}
+function officialScheduleInfo(e){
+  const slots=[['얼리 프릴림',e.earlyPrelimsUtc],['프릴림',e.prelimsUtc],['메인카드',e.dateUtc]].filter(([,value])=>value);
+  return `<div class="box"><h3>대회 시작 · 한국시간</h3><div class="chips">${slots.map(([label,value])=>`<span class="pill ghost">${label} · ${esc(fmtDate(value))} KST</span>`).join('')}</div>
+    <p>${e.mainCard.length+e.prelims.length}경기 공개${e.cardStatus==='unavailable'?' · 대진 갱신 확인 중':e.cardStatus==='to_be_announced'?' · 상세 대진 발표 대기':''}</p>
+    ${e.officialUrl?`<a href="${esc(e.officialUrl)}" target="_blank" rel="noopener noreferrer">UFC 공식 대회 정보 ↗</a>`:''}</div>`;
+}
 
 function fmtDate(d){
   if(!d) return '시작 시각 확인 중';
@@ -1344,7 +1355,7 @@ function homeSortSection(){
   if(!cover) return '';
   const rest = upcomingEvents().filter(ev=>ev.id!==cover.id);
   if(homeSort==='pop') rest.sort((x,y)=>eventScore(y)-eventScore(x));
-  else rest.sort((x,y)=>new Date(x.dateUtc)-new Date(y.dateUtc));
+  else rest.sort((x,y)=>eventSortValue(x)-eventSortValue(y));
   const seg=(mode,label)=>{const on=homeSort===mode;
     return `<button onclick="setHomeSort('${mode}')" style="padding:6px 13px;border-radius:20px;font-size:12px;font-weight:700;transition:.14s;
       border:1px solid ${on?'var(--red)':'var(--line-2)'};background:${on?'var(--red)':'transparent'};color:${on?'#fff':'var(--dim)'}">${label}</button>`;};
@@ -1363,7 +1374,7 @@ function homeSortSection(){
       const m = ev.mainCard?.[0];
       const fa = m?getFighter(m.a):null, fb = m?getFighter(m.b):null;
       const big = i===0;
-      if(!m) return '';
+      if(!m) return `<a href="#event/${ev.id}" class="mcard ${big?'big':''}"><div class="mcard-top"><span class="mcard-code">${esc(eventCodeKo(ev.code))}</span><span>${dLabel(ev.dateUtc)}</span></div><h3>${esc(ev.titleKo||ev.title)}</h3><p>${esc(eventTimeLabel(ev))}</p><p>${esc(ev.city)} · 상세 대진 발표 대기</p></a>`;
       return `
       <a href="#event/${ev.id}" class="mcard ${big?'big':''}">
         <div class="mcard-top"><span class="mcard-code">${esc(eventCodeKo(ev.code))}</span><span class="mcard-d">${dLabel(ev.dateUtc)}</span></div>
@@ -1532,6 +1543,7 @@ function weekBrief(e, main, a, b){
 }
 
 function homeCardPreview(e, options={}){
+  if(e.cardAssigned===false) return `<section class="box"><h2>발표된 대진 · 카드 구분 미정</h2><p>메인·프릴림 구분과 경기 순서는 발표를 기다리고 있습니다.</p><a class="btn ghost" href="#event/${e.id}">대진 ${e.mainCard.length}경기 보기</a></section>`;
   const fights=(e.mainCard||[]).slice(0,5);
   if(!fights.length) return '';
   const detail=Boolean(options.detail);
@@ -1617,7 +1629,9 @@ function viewHome(){
   const b = main ? getFighter(main.b) : null;
 
   return `
-  ${main ? weekBrief(e,main,a,b) : freshnessBanner()}
+  ${freshnessBanner()}
+  ${main ? weekBrief(e,main,a,b) : `<h1>${esc(eventCodeKo(e.code))}: ${esc(e.titleKo||e.title)}</h1>`}
+  ${officialScheduleInfo(e)}
 
   <div id="homeSortSection">${homeSortSection()}</div>
 
@@ -1632,7 +1646,7 @@ function viewHome(){
         <div class="date-block"><div class="m">${d.m}</div><div class="d">${d.day}</div><div class="w">${d.w}</div></div>
         <div>
           <div class="title">${esc(eventCodeKo(ev.code))}: ${esc(ev.titleKo||ev.title)}</div>
-          <div class="meta"><span class="pill green">${winner} 승</span><span>· ${m?.way||''}</span></div>
+          <div class="meta"><span class="pill ${m?.winner?'green':'ghost'}">${esc(winner)}${m?.winner?' 승':''}</span><span>· ${m?.way||''}</span></div>
         </div>
         <div class="chev">›</div>
       </a>`;
@@ -1681,7 +1695,7 @@ function eventListItem(ev){
       <div>
         <div class="title">${esc(eventCodeKo(ev.code))}: ${esc(ev.titleKo||ev.title)}</div>
         <div class="meta">
-          <span><b>${esc(m1)}</b> vs <b>${esc(m2)}</b></span>
+          <span>${m?`<b>${esc(m1)}</b> vs <b>${esc(m2)}</b>`:'상세 대진 발표 대기'}</span>
           <span class="pill ghost">${esc(ev.timeConfirmed?fmtDate(ev.dateUtc)+' KST':'시작 시각 미정')}</span>
           <span>· ${esc(ev.city)}</span>
         </div>
@@ -2593,6 +2607,7 @@ function viewEvent(id){
   </div>
 
   ${!isPast?homeCardPreview(e,{detail:true}):''}
+  ${officialScheduleInfo(e)}
 
   ${eventIntelligence(e) || `${hypeBlock(e)}${newbieBlock(id)}`}
 
@@ -2644,7 +2659,7 @@ function viewEvent(id){
   ${toteBlock(e)}
 
   ${e.mainCard.length?`
-  <div class="section-title"><span class="bar"></span>메인 카드</div>
+  <div class="section-title"><span class="bar"></span>${e.cardAssigned===false?'발표된 대진 · 카드 구분 미정':'메인 카드'}</div>
   ${e.mainCard.map(f=>fightRow(f)).join('')}
   `:''}
 
@@ -2994,8 +3009,10 @@ function transformFighter(f){
 }
 
 function resultMethodKo(method){
-  const raw=cleanExternalText(method||'').trim();
+  let raw=cleanExternalText(method||'').trim();
   if(!raw) return '';
+  if(/^ko\/tko$/i.test(raw)) return 'KO/TKO';
+  raw=raw.replace(/^decision\s*-\s*(unanimous|split|majority)$/i,'Decision ($1)');
   const match=raw.match(/^([^()]+?)(?:\s*\((.+)\))?$/);
   if(!match) return '기타 방식';
   const prefix=match[1].trim().toLowerCase();
@@ -3135,7 +3152,12 @@ function transformJsonEvent(je,status){
     keyPoints: [],
     prediction: je.prediction || null,
     wikiUrl: safeExternalUrl(je.wiki_url||''),
-    mainCard: (je.main_card||[]).map(transformFight),
+    officialUrl: safeExternalUrl(je.official_url||''),
+    earlyPrelimsUtc: je.early_prelims_start_time_utc||null,
+    prelimsUtc: je.prelims_start_time_utc||null,
+    cardStatus: je.card_status||'',
+    cardAssigned: !(je.announced_card||[]).length,
+    mainCard: ((je.main_card||[]).length?je.main_card:(je.announced_card||[])).map(transformFight),
     prelims: (je.prelims||[]).map(transformFight)
   };
 }
@@ -3262,8 +3284,7 @@ async function loadRealData(){
     const past = data.past_events || [];
     if(up.length || past.length){
       EVENTS.length = 0;
-      const today=todayKstIso();
-      up.forEach(je=>EVENTS.push(transformJsonEvent(je,je.date_iso&&je.date_iso<today?'expired':'upcoming')));
+      up.forEach(je=>EVENTS.push(transformJsonEvent(je,scheduleStatus(je))));
       past.forEach(je=>EVENTS.push(transformJsonEvent(je,'past')));
       DATA_META={generatedAt:data.generated_at||null,source:data.source||'Wikipedia',upcoming:EVENTS.filter(e=>e.status==='upcoming').length,past:past.length};
       console.log('[fightoclock] events:', up.length, 'upcoming /', past.length, 'past @', data.generated_at);
