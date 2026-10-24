@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T08:45:34+09:00",
+  "generated_at": "2026-10-25T07:53:11+09:00",
   "source": "Wikipedia: List of UFC champions",
   "source_url": "https://en.wikipedia.org/wiki/List_of_UFC_champions",
   "division_count": 11,
@@ -1382,7 +1382,7 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Alexander_Volkanovski",
           "crowned_at": "Apr 12, 2025",
           "reign": 2,
-          "defenses": 1,
+          "defenses": 2,
           "reign_total": 2,
           "current": true,
           "portrait_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c8/Volkanovski_2021_red_shirt.jpeg/250px-Volkanovski_2021_red_shirt.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
@@ -1551,7 +1551,7 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Petr_Yan",
           "crowned_at": "Dec 6, 2025",
           "reign": 2,
-          "defenses": 0,
+          "defenses": 1,
           "reign_total": 2,
           "current": true,
           "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg/250px-Vladimir_Putin_at_award_ceremonies_%282026-04-22%29_24%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"

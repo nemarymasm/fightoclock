@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-25T05:56:07+09:00",
+  "generated_at": "2026-10-25T07:51:29+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -74,7 +74,7 @@
           "rank": 6,
           "fighter_id": "lone-er-kavanagh",
           "name_ko": "로니어 카바나",
-          "record": "10승 2패",
+          "record": "11승 2패",
           "country": "England",
           "country_ko": "잉글랜드"
         },
@@ -114,7 +114,7 @@
           "rank": 10,
           "fighter_id": "ramazan-temirov",
           "name_ko": "라마잔 테미로프",
-          "record": "20승 3패",
+          "record": "20승 4패",
           "country": "Uzbekistan",
           "country_ko": "Uzbekistan"
         },
@@ -178,7 +178,7 @@
         "ufc_url": "https://www.ufc.com/athlete/petr-yan",
         "fighter_id": "petr-yan",
         "name_ko": "페트르 얀",
-        "record": "20승 5패",
+        "record": "21승 5패",
         "country": "Russia",
         "country_ko": "러시아"
       },
@@ -189,7 +189,7 @@
           "rank": 1,
           "fighter_id": "merab-dvalishvili",
           "name_ko": "메랍 드발리시빌리",
-          "record": "21승 5패",
+          "record": "21승 6패",
           "country": "Georgia (country)",
           "country_ko": "조지아"
         },
@@ -343,7 +343,7 @@
         "ufc_url": "https://www.ufc.com/athlete/alexander-volkanovski",
         "fighter_id": "alexander-volkanovski",
         "name_ko": "알렉산더 볼카노프스키",
-        "record": "28승 4패",
+        "record": "29승 4패",
         "country": "Australia",
         "country_ko": "호주"
       },
@@ -354,7 +354,7 @@
           "rank": 1,
           "fighter_id": "movsar-evloev",
           "name_ko": "모브사르 에블로예프",
-          "record": "20승 0패",
+          "record": "20승 1패",
           "country": "Russia",
           "country_ko": "러시아"
         },
@@ -959,7 +959,7 @@
           "rank": 12,
           "fighter_id": "abusupiyan-magomedov",
           "name_ko": "아부스 마고메도프",
-          "record": "29승 7패 1무",
+          "record": "30승 7패 1무",
           "country": "Germany",
           "country_ko": "독일"
         },
@@ -1074,7 +1074,7 @@
           "rank": 7,
           "fighter_id": "azamat-murzakanov",
           "name_ko": "아자마트 무르자카노프",
-          "record": "16승 1패",
+          "record": "16승 2패",
           "country": "Russia",
           "country_ko": "러시아"
         },
@@ -1084,7 +1084,7 @@
           "rank": 8,
           "fighter_id": "dominick-reyes",
           "name_ko": "도미닉 레예스",
-          "record": "16승 5패",
+          "record": "17승 5패",
           "country": "United States",
           "country_ko": "미국"
         },
@@ -1154,7 +1154,7 @@
           "rank": 15,
           "fighter_id": "nikita-krylov",
           "name_ko": "니키타 크릴로프",
-          "record": "31승 12패",
+          "record": "31승 13패",
           "country": "",
           "country_ko": ""
         }
@@ -1189,7 +1189,7 @@
           "rank": 2,
           "fighter_id": "alexander-volkov",
           "name_ko": "알렉산더 볼코프",
-          "record": "40승 11패",
+          "record": "41승 11패",
           "country": "Russia",
           "country_ko": "러시아"
         },
@@ -1239,7 +1239,7 @@
           "rank": 7,
           "fighter_id": "rizvan-kuniev",
           "name_ko": "리즈반 쿠니예프",
-          "record": "14승 3패 1무",
+          "record": "14승 4패 1무",
           "country": "Russia",
           "country_ko": "러시아"
         },
@@ -1893,7 +1893,7 @@
               "rank": 6,
               "fighter_id": "lone-er-kavanagh",
               "name_ko": "로니어 카바나",
-              "record": "10승 2패",
+              "record": "11승 2패",
               "country": "England",
               "country_ko": "잉글랜드"
             },
@@ -1933,7 +1933,7 @@
               "rank": 10,
               "fighter_id": "ramazan-temirov",
               "name_ko": "라마잔 테미로프",
-              "record": "20승 3패",
+              "record": "20승 4패",
               "country": "Uzbekistan",
               "country_ko": "Uzbekistan"
             },
@@ -1997,7 +1997,7 @@
             "ufc_url": "https://www.ufc.com/athlete/petr-yan",
             "fighter_id": "petr-yan",
             "name_ko": "페트르 얀",
-            "record": "20승 5패",
+            "record": "21승 5패",
             "country": "Russia",
             "country_ko": "러시아"
           },
@@ -2008,7 +2008,7 @@
               "rank": 1,
               "fighter_id": "merab-dvalishvili",
               "name_ko": "메랍 드발리시빌리",
-              "record": "21승 5패",
+              "record": "21승 6패",
               "country": "Georgia (country)",
               "country_ko": "조지아"
             },
@@ -2162,7 +2162,7 @@
             "ufc_url": "https://www.ufc.com/athlete/alexander-volkanovski",
             "fighter_id": "alexander-volkanovski",
             "name_ko": "알렉산더 볼카노프스키",
-            "record": "28승 4패",
+            "record": "29승 4패",
             "country": "Australia",
             "country_ko": "호주"
           },
@@ -2173,7 +2173,7 @@
               "rank": 1,
               "fighter_id": "movsar-evloev",
               "name_ko": "모브사르 에블로예프",
-              "record": "20승 0패",
+              "record": "20승 1패",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -2778,7 +2778,7 @@
               "rank": 12,
               "fighter_id": "abusupiyan-magomedov",
               "name_ko": "아부스 마고메도프",
-              "record": "29승 7패 1무",
+              "record": "30승 7패 1무",
               "country": "Germany",
               "country_ko": "독일"
             },
@@ -2893,7 +2893,7 @@
               "rank": 7,
               "fighter_id": "azamat-murzakanov",
               "name_ko": "아자마트 무르자카노프",
-              "record": "16승 1패",
+              "record": "16승 2패",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -2903,7 +2903,7 @@
               "rank": 8,
               "fighter_id": "dominick-reyes",
               "name_ko": "도미닉 레예스",
-              "record": "16승 5패",
+              "record": "17승 5패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -2973,7 +2973,7 @@
               "rank": 15,
               "fighter_id": "nikita-krylov",
               "name_ko": "니키타 크릴로프",
-              "record": "31승 12패",
+              "record": "31승 13패",
               "country": "",
               "country_ko": ""
             }
@@ -3008,7 +3008,7 @@
               "rank": 2,
               "fighter_id": "alexander-volkov",
               "name_ko": "알렉산더 볼코프",
-              "record": "40승 11패",
+              "record": "41승 11패",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -3058,7 +3058,7 @@
               "rank": 7,
               "fighter_id": "rizvan-kuniev",
               "name_ko": "리즈반 쿠니예프",
-              "record": "14승 3패 1무",
+              "record": "14승 4패 1무",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -3713,7 +3713,7 @@
               "rank": 6,
               "fighter_id": "lone-er-kavanagh",
               "name_ko": "로니어 카바나",
-              "record": "10승 2패",
+              "record": "11승 2패",
               "country": "England",
               "country_ko": "잉글랜드"
             },
@@ -3723,7 +3723,7 @@
               "rank": 7,
               "fighter_id": "ramazan-temirov",
               "name_ko": "라마잔 테미로프",
-              "record": "20승 3패",
+              "record": "20승 4패",
               "country": "Uzbekistan",
               "country_ko": "Uzbekistan"
             },
@@ -3817,7 +3817,7 @@
             "ufc_url": "https://www.ufc.com/athlete/petr-yan",
             "fighter_id": "petr-yan",
             "name_ko": "페트르 얀",
-            "record": "20승 5패",
+            "record": "21승 5패",
             "country": "Russia",
             "country_ko": "러시아"
           },
@@ -3828,7 +3828,7 @@
               "rank": 1,
               "fighter_id": "merab-dvalishvili",
               "name_ko": "메랍 드발리시빌리",
-              "record": "21승 5패",
+              "record": "21승 6패",
               "country": "Georgia (country)",
               "country_ko": "조지아"
             },
@@ -3982,7 +3982,7 @@
             "ufc_url": "https://www.ufc.com/athlete/alexander-volkanovski",
             "fighter_id": "alexander-volkanovski",
             "name_ko": "알렉산더 볼카노프스키",
-            "record": "28승 4패",
+            "record": "29승 4패",
             "country": "Australia",
             "country_ko": "호주"
           },
@@ -3993,7 +3993,7 @@
               "rank": 1,
               "fighter_id": "movsar-evloev",
               "name_ko": "모브사르 에블로예프",
-              "record": "20승 0패",
+              "record": "20승 1패",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -4288,7 +4288,7 @@
               "rank": 14,
               "fighter_id": "grant-dawson",
               "name_ko": "그랜트 도슨",
-              "record": "24승 3패 1무",
+              "record": "25승 3패 1무",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -4608,7 +4608,7 @@
               "rank": 13,
               "fighter_id": "abusupiyan-magomedov",
               "name_ko": "아부스 마고메도프",
-              "record": "29승 7패 1무",
+              "record": "30승 7패 1무",
               "country": "Germany",
               "country_ko": "독일"
             },
@@ -4713,7 +4713,7 @@
               "rank": 7,
               "fighter_id": "dominick-reyes",
               "name_ko": "도미닉 레예스",
-              "record": "16승 5패",
+              "record": "17승 5패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -4733,7 +4733,7 @@
               "rank": 9,
               "fighter_id": "azamat-murzakanov",
               "name_ko": "아자마트 무르자카노프",
-              "record": "16승 1패",
+              "record": "16승 2패",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -4793,7 +4793,7 @@
               "rank": 15,
               "fighter_id": "abdul-rakhman-yakhyaev",
               "name_ko": "압둘라흐만 야흐야예프",
-              "record": "10승 0패",
+              "record": "11승 0패",
               "country": "Turkey",
               "country_ko": "튀르키예"
             }
@@ -4848,7 +4848,7 @@
               "rank": 4,
               "fighter_id": "alexander-volkov",
               "name_ko": "알렉산더 볼코프",
-              "record": "40승 11패",
+              "record": "41승 11패",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -4858,7 +4858,7 @@
               "rank": 5,
               "fighter_id": "rizvan-kuniev",
               "name_ko": "리즈반 쿠니예프",
-              "record": "14승 3패 1무",
+              "record": "14승 4패 1무",
               "country": "Russia",
               "country_ko": "러시아"
             },
