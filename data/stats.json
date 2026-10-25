@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T07:53:13+09:00",
+  "generated_at": "2026-10-26T08:01:25+09:00",
   "source": {
     "name": "UFC 공식 Record Book",
     "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
-    "last_update": "10/18/2026 07:45 GMT",
+    "last_update": "10/25/2026 07:45 GMT",
     "coverage": "Records reflect all UFC fights from UFC 28 to the present (UFC 28 was the first event to use the Unified Rules of MMA)."
   },
   "categories": [
@@ -626,7 +626,7 @@
           "name": "Merab Dvalishvili",
           "name_ko": "메랍 드발리시빌리",
           "fighter_id": "merab-dvalishvili",
-          "value": "119",
+          "value": "124",
           "athlete_url": "https://www.ufc.com/athlete/Merab-Dvalishvili",
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/e5a19ba5-ac7d-4a2e-9752-5c36ebf8c876/DVALISHVILI_MERAB_10-24.png"
         },
