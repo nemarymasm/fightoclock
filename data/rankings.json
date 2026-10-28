@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-28T14:52:03+09:00",
+  "generated_at": "2026-10-28T22:06:46+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -400,7 +400,7 @@
         },
         {
           "name": "Yair Rodriguez",
-          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/yair-rodriguez",
+          "ufc_url": "https://www.ufc.com/athlete/yair-rodriguez",
           "rank": 6,
           "fighter_id": "yair-rodriguez",
           "name_ko": "야이르 로드리게스",
@@ -700,7 +700,7 @@
         },
         {
           "name": "Michael Morales",
-          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/michael-morales",
+          "ufc_url": "https://www.ufc.com/athlete/michael-morales",
           "rank": 3,
           "fighter_id": "michael-morales",
           "name_ko": "마이클 모랄레스",
@@ -789,16 +789,6 @@
           "country_ko": "Ukraine"
         },
         {
-          "name": "Joaquin Buckley",
-          "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
-          "rank": 12,
-          "fighter_id": "joaquin-buckley",
-          "name_ko": "호아킨 버클리",
-          "record": "21승 9패",
-          "country": "United States",
-          "country_ko": "미국"
-        },
-        {
           "name": "Uroš Medić",
           "ufc_url": "https://www.ufc.com/athlete/uros-medic",
           "rank": 12,
@@ -807,6 +797,16 @@
           "record": "14승 3패",
           "country": "Serbia",
           "country_ko": "Serbia"
+        },
+        {
+          "name": "Joaquin Buckley",
+          "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
+          "rank": 12,
+          "fighter_id": "joaquin-buckley",
+          "name_ko": "호아킨 버클리",
+          "record": "21승 9패",
+          "country": "United States",
+          "country_ko": "미국"
         },
         {
           "name": "Daniel Rodriguez",
@@ -965,7 +965,7 @@
         },
         {
           "name": "Ikram Aliskerov",
-          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/ikram-aliskerov",
+          "ufc_url": "https://www.ufc.com/athlete/ikram-aliskerov",
           "rank": 13,
           "fighter_id": "ikram-aliskerov",
           "name_ko": "이크람 알리스케로프",
@@ -1284,22 +1284,22 @@
           "country_ko": "브라질"
         },
         {
-          "name": "Tyrell Fortune",
-          "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
-          "rank": 12,
-          "fighter_id": "tyrell-fortune",
-          "name_ko": "타이렐 포춘",
-          "record": "18승 4패",
-          "country": "",
-          "country_ko": ""
-        },
-        {
           "name": "Derrick Lewis",
           "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
           "rank": 12,
           "fighter_id": "derrick-lewis",
           "name_ko": "데릭 루이스",
           "record": "29승 14패",
+          "country": "",
+          "country_ko": ""
+        },
+        {
+          "name": "Tyrell Fortune",
+          "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
+          "rank": 12,
+          "fighter_id": "tyrell-fortune",
+          "name_ko": "타이렐 포춘",
+          "record": "18승 4패",
           "country": "",
           "country_ko": ""
         },
@@ -1625,7 +1625,7 @@
         },
         {
           "name": "Eduarda Moura",
-          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/eduarda-moura",
+          "ufc_url": "https://www.ufc.com/athlete/eduarda-moura",
           "rank": 13,
           "fighter_id": "eduarda-moura",
           "name_ko": "에두아르다 모우라",
@@ -2219,7 +2219,7 @@
             },
             {
               "name": "Yair Rodriguez",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/yair-rodriguez",
+              "ufc_url": "https://www.ufc.com/athlete/yair-rodriguez",
               "rank": 6,
               "fighter_id": "yair-rodriguez",
               "name_ko": "야이르 로드리게스",
@@ -2519,7 +2519,7 @@
             },
             {
               "name": "Michael Morales",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/michael-morales",
+              "ufc_url": "https://www.ufc.com/athlete/michael-morales",
               "rank": 3,
               "fighter_id": "michael-morales",
               "name_ko": "마이클 모랄레스",
@@ -2608,16 +2608,6 @@
               "country_ko": "Ukraine"
             },
             {
-              "name": "Joaquin Buckley",
-              "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
-              "rank": 12,
-              "fighter_id": "joaquin-buckley",
-              "name_ko": "호아킨 버클리",
-              "record": "21승 9패",
-              "country": "United States",
-              "country_ko": "미국"
-            },
-            {
               "name": "Uroš Medić",
               "ufc_url": "https://www.ufc.com/athlete/uros-medic",
               "rank": 12,
@@ -2626,6 +2616,16 @@
               "record": "14승 3패",
               "country": "Serbia",
               "country_ko": "Serbia"
+            },
+            {
+              "name": "Joaquin Buckley",
+              "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
+              "rank": 12,
+              "fighter_id": "joaquin-buckley",
+              "name_ko": "호아킨 버클리",
+              "record": "21승 9패",
+              "country": "United States",
+              "country_ko": "미국"
             },
             {
               "name": "Daniel Rodriguez",
@@ -2784,7 +2784,7 @@
             },
             {
               "name": "Ikram Aliskerov",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/ikram-aliskerov",
+              "ufc_url": "https://www.ufc.com/athlete/ikram-aliskerov",
               "rank": 13,
               "fighter_id": "ikram-aliskerov",
               "name_ko": "이크람 알리스케로프",
@@ -3103,22 +3103,22 @@
               "country_ko": "브라질"
             },
             {
-              "name": "Tyrell Fortune",
-              "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
-              "rank": 12,
-              "fighter_id": "tyrell-fortune",
-              "name_ko": "타이렐 포춘",
-              "record": "18승 4패",
-              "country": "",
-              "country_ko": ""
-            },
-            {
               "name": "Derrick Lewis",
               "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
               "rank": 12,
               "fighter_id": "derrick-lewis",
               "name_ko": "데릭 루이스",
               "record": "29승 14패",
+              "country": "",
+              "country_ko": ""
+            },
+            {
+              "name": "Tyrell Fortune",
+              "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
+              "rank": 12,
+              "fighter_id": "tyrell-fortune",
+              "name_ko": "타이렐 포춘",
+              "record": "18승 4패",
               "country": "",
               "country_ko": ""
             },
@@ -3444,7 +3444,7 @@
             },
             {
               "name": "Eduarda Moura",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/eduarda-moura",
+              "ufc_url": "https://www.ufc.com/athlete/eduarda-moura",
               "rank": 13,
               "fighter_id": "eduarda-moura",
               "name_ko": "에두아르다 모우라",
@@ -4234,7 +4234,7 @@
             },
             {
               "name": "Mateusz Gamrot",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/mateusz-gamrot",
+              "ufc_url": "https://www.ufc.com/athlete/mateusz-gamrot",
               "rank": 9,
               "fighter_id": "mateusz-gamrot",
               "name_ko": "마테우시 감로트",
@@ -4524,7 +4524,7 @@
             },
             {
               "name": "Joe Pyfer",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/joe-pyfer",
+              "ufc_url": "https://www.ufc.com/athlete/joe-pyfer",
               "rank": 5,
               "fighter_id": "joe-pyfer",
               "name_ko": "조 파이퍼",
@@ -4554,7 +4554,7 @@
             },
             {
               "name": "Anthony Hernandez",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/anthony-hernandez",
+              "ufc_url": "https://www.ufc.com/athlete/anthony-hernandez",
               "rank": 8,
               "fighter_id": "anthony-hernandez",
               "name_ko": "안소니 에르난데스",
@@ -4649,7 +4649,7 @@
           "ranked": [
             {
               "name": "Alex Pereira",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/alex-pereira",
+              "ufc_url": "https://www.ufc.com/athlete/alex-pereira",
               "rank": 1,
               "fighter_id": "alex-pereira",
               "name_ko": "알렉스 페레이라",
@@ -4729,7 +4729,7 @@
             },
             {
               "name": "Alonzo Menifield",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/alonzo-menifield",
+              "ufc_url": "https://www.ufc.com/athlete/alonzo-menifield",
               "rank": 9,
               "fighter_id": "alonzo-menifield",
               "name_ko": "알론조 메니필드",
@@ -4834,7 +4834,7 @@
             },
             {
               "name": "Alex Pereira",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/alex-pereira",
+              "ufc_url": "https://www.ufc.com/athlete/alex-pereira",
               "rank": 3,
               "fighter_id": "alex-pereira",
               "name_ko": "알렉스 페레이라",
@@ -5039,7 +5039,7 @@
             },
             {
               "name": "Iasmin Lucindo",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/iasmin-lucindo",
+              "ufc_url": "https://www.ufc.com/athlete/iasmin-lucindo",
               "rank": 7,
               "fighter_id": "iasmin-lucindo",
               "name_ko": "야스민 루신두",
