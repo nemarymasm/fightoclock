@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-29T07:40:17+09:00",
+  "generated_at": "2026-10-29T09:34:41+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -454,7 +454,7 @@
           "rank": 11,
           "fighter_id": "aaron-pico",
           "name_ko": "에런 피코",
-          "record": "14승 5패",
+          "record": "15승 5패",
           "country": "United States",
           "country_ko": "미국"
         },
@@ -2273,7 +2273,7 @@
               "rank": 11,
               "fighter_id": "aaron-pico",
               "name_ko": "에런 피코",
-              "record": "14승 5패",
+              "record": "15승 5패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -4083,7 +4083,7 @@
               "rank": 10,
               "fighter_id": "aaron-pico",
               "name_ko": "에런 피코",
-              "record": "14승 5패",
+              "record": "15승 5패",
               "country": "United States",
               "country_ko": "미국"
             },
