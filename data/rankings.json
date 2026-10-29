@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-29T22:13:03+09:00",
+  "generated_at": "2026-10-30T07:49:59+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -1284,22 +1284,22 @@
           "country_ko": "브라질"
         },
         {
-          "name": "Derrick Lewis",
-          "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
-          "rank": 12,
-          "fighter_id": "derrick-lewis",
-          "name_ko": "데릭 루이스",
-          "record": "29승 14패",
-          "country": "",
-          "country_ko": ""
-        },
-        {
           "name": "Tyrell Fortune",
           "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
           "rank": 12,
           "fighter_id": "tyrell-fortune",
           "name_ko": "타이렐 포춘",
           "record": "18승 4패",
+          "country": "",
+          "country_ko": ""
+        },
+        {
+          "name": "Derrick Lewis",
+          "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
+          "rank": 12,
+          "fighter_id": "derrick-lewis",
+          "name_ko": "데릭 루이스",
+          "record": "29승 14패",
           "country": "",
           "country_ko": ""
         },
@@ -3103,22 +3103,22 @@
               "country_ko": "브라질"
             },
             {
-              "name": "Derrick Lewis",
-              "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
-              "rank": 12,
-              "fighter_id": "derrick-lewis",
-              "name_ko": "데릭 루이스",
-              "record": "29승 14패",
-              "country": "",
-              "country_ko": ""
-            },
-            {
               "name": "Tyrell Fortune",
               "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
               "rank": 12,
               "fighter_id": "tyrell-fortune",
               "name_ko": "타이렐 포춘",
               "record": "18승 4패",
+              "country": "",
+              "country_ko": ""
+            },
+            {
+              "name": "Derrick Lewis",
+              "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
+              "rank": 12,
+              "fighter_id": "derrick-lewis",
+              "name_ko": "데릭 루이스",
+              "record": "29승 14패",
               "country": "",
               "country_ko": ""
             },
