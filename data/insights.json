@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T22:05:34+09:00",
+  "generated_at": "2026-10-31T07:27:10+09:00",
   "source": "UFC 공식 일정 · The Odds API · 공개 MMA 커뮤니티",
   "events": {
     "ufc-fight-night-medi-vs-rodriguez": {
@@ -220,6 +220,19 @@
       },
       "viewing_hook": "조슈아 반 대 마넬 캅",
       "thesis": "조슈아 반 대 마넬 캅"
+    },
+    "ufc-fight-night-cortes-acosta-vs-walker": {
+      "schedule": {
+        "label": "한국시간 11월 8일(일) 오전 10시",
+        "main_card": "한국시간 11월 8일(일) 오전 10시",
+        "bout_count": 14,
+        "source": "https://www.ufc.com/event/ufc-fight-night-november-07-2026",
+        "main_event_estimate": "오후 12:50",
+        "main_event_window": "오후 12:40–1:10",
+        "estimate_note": "앞 경기에서 KO가 많이 나오면 더 빨라집니다."
+      },
+      "viewing_hook": "왈도 코르테스-아코스타 대 조니 워커",
+      "thesis": "왈도 코르테스-아코스타 대 조니 워커"
     }
   }
 }
