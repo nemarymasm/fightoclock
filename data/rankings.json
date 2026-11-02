@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-02T07:08:07+09:00",
+  "generated_at": "2026-11-02T09:11:38+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -629,7 +629,7 @@
           "rank": 12,
           "fighter_id": "renato-moicano",
           "name_ko": "헤나토 모이카노",
-          "record": "21승 7패 1무",
+          "record": "21승 8패 1무",
           "country": "Brazil",
           "country_ko": "브라질"
         },
@@ -649,7 +649,7 @@
           "rank": 14,
           "fighter_id": "tom-nolan",
           "name_ko": "톰 놀란",
-          "record": "11승 1패",
+          "record": "12승 1패",
           "country": "Australia",
           "country_ko": "호주"
         },
@@ -1724,7 +1724,7 @@
           "rank": 6,
           "fighter_id": "yana-santos",
           "name_ko": "야나 산토스",
-          "record": "17승 8패",
+          "record": "17승 9패",
           "country": "Russia",
           "country_ko": "러시아"
         },
@@ -1734,7 +1734,7 @@
           "rank": 7,
           "fighter_id": "luana-santos",
           "name_ko": "루아나 산토스",
-          "record": "11승 2패",
+          "record": "12승 2패",
           "country": "Brazil",
           "country_ko": "브라질"
         },
@@ -2448,7 +2448,7 @@
               "rank": 12,
               "fighter_id": "renato-moicano",
               "name_ko": "헤나토 모이카노",
-              "record": "21승 7패 1무",
+              "record": "21승 8패 1무",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -2468,7 +2468,7 @@
               "rank": 14,
               "fighter_id": "tom-nolan",
               "name_ko": "톰 놀란",
-              "record": "11승 1패",
+              "record": "12승 1패",
               "country": "Australia",
               "country_ko": "호주"
             },
@@ -3543,7 +3543,7 @@
               "rank": 6,
               "fighter_id": "yana-santos",
               "name_ko": "야나 산토스",
-              "record": "17승 8패",
+              "record": "17승 9패",
               "country": "Russia",
               "country_ko": "러시아"
             },
@@ -3553,7 +3553,7 @@
               "rank": 7,
               "fighter_id": "luana-santos",
               "name_ko": "루아나 산토스",
-              "record": "11승 2패",
+              "record": "12승 2패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -4228,7 +4228,7 @@
               "rank": 8,
               "fighter_id": "renato-moicano",
               "name_ko": "헤나토 모이카노",
-              "record": "21승 7패 1무",
+              "record": "21승 8패 1무",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -4268,7 +4268,7 @@
               "rank": 12,
               "fighter_id": "tom-nolan",
               "name_ko": "톰 놀란",
-              "record": "11승 1패",
+              "record": "12승 1패",
               "country": "Australia",
               "country_ko": "호주"
             },
@@ -5073,7 +5073,7 @@
               "rank": 10,
               "fighter_id": "piera-rodriguez",
               "name_ko": "피에라 로드리게스",
-              "record": "12승 2패",
+              "record": "13승 2패",
               "country": "Venezuela",
               "country_ko": "Venezuela"
             },
@@ -5113,7 +5113,7 @@
               "rank": 14,
               "fighter_id": "talita-alencar",
               "name_ko": "탈리타 알렌카르",
-              "record": "8승 1패 1무",
+              "record": "8승 2패 1무",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -5343,7 +5343,7 @@
               "rank": 4,
               "fighter_id": "luana-santos",
               "name_ko": "루아나 산토스",
-              "record": "11승 2패",
+              "record": "12승 2패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -5363,7 +5363,7 @@
               "rank": 6,
               "fighter_id": "yana-santos",
               "name_ko": "야나 산토스",
-              "record": "17승 8패",
+              "record": "17승 9패",
               "country": "Russia",
               "country_ko": "러시아"
             },
