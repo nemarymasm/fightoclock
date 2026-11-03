@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T09:13:13+09:00",
+  "generated_at": "2026-11-03T11:46:30+09:00",
   "source": {
     "name": "UFC 공식 Record Book",
     "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
-    "last_update": "10/25/2026 07:45 GMT",
+    "last_update": "11/02/2026 08:45 GMT",
     "coverage": "Records reflect all UFC fights from UFC 28 to the present (UFC 28 was the first event to use the Unified Rules of MMA)."
   },
   "categories": [
