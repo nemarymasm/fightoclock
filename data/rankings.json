@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-03T15:56:11+09:00",
+  "generated_at": "2026-11-04T04:33:14+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -615,7 +615,7 @@
         },
         {
           "name": "Rafael Fiziev",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/rafael-fiziev",
+          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/rafael-fiziev",
           "rank": 11,
           "fighter_id": "rafael-fiziev",
           "name_ko": "라파엘 피지에프",
@@ -625,7 +625,7 @@
         },
         {
           "name": "Renato Moicano",
-          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/renato-moicano",
+          "ufc_url": "https://www.ufc.com/athlete/renato-moicano",
           "rank": 12,
           "fighter_id": "renato-moicano",
           "name_ko": "헤나토 모이카노",
@@ -1080,7 +1080,7 @@
         },
         {
           "name": "Bogdan Guskov",
-          "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
+          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/bogdan-guskov",
           "rank": 8,
           "fighter_id": "bogdan-guskov",
           "name_ko": "보그단 구스코프",
@@ -1720,7 +1720,7 @@
         },
         {
           "name": "Yana Santos",
-          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/yana-santos",
+          "ufc_url": "https://www.ufc.com/athlete/yana-santos",
           "rank": 6,
           "fighter_id": "yana-santos",
           "name_ko": "야나 산토스",
@@ -1730,7 +1730,7 @@
         },
         {
           "name": "Luana Santos",
-          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/luana-santos",
+          "ufc_url": "https://www.ufc.com/athlete/luana-santos",
           "rank": 7,
           "fighter_id": "luana-santos",
           "name_ko": "루아나 산토스",
@@ -2434,7 +2434,7 @@
             },
             {
               "name": "Rafael Fiziev",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/rafael-fiziev",
+              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/rafael-fiziev",
               "rank": 11,
               "fighter_id": "rafael-fiziev",
               "name_ko": "라파엘 피지에프",
@@ -2444,7 +2444,7 @@
             },
             {
               "name": "Renato Moicano",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/renato-moicano",
+              "ufc_url": "https://www.ufc.com/athlete/renato-moicano",
               "rank": 12,
               "fighter_id": "renato-moicano",
               "name_ko": "헤나토 모이카노",
@@ -2899,7 +2899,7 @@
             },
             {
               "name": "Bogdan Guskov",
-              "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
+              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/bogdan-guskov",
               "rank": 8,
               "fighter_id": "bogdan-guskov",
               "name_ko": "보그단 구스코프",
@@ -3539,7 +3539,7 @@
             },
             {
               "name": "Yana Santos",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/yana-santos",
+              "ufc_url": "https://www.ufc.com/athlete/yana-santos",
               "rank": 6,
               "fighter_id": "yana-santos",
               "name_ko": "야나 산토스",
@@ -3549,7 +3549,7 @@
             },
             {
               "name": "Luana Santos",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/luana-santos",
+              "ufc_url": "https://www.ufc.com/athlete/luana-santos",
               "rank": 7,
               "fighter_id": "luana-santos",
               "name_ko": "루아나 산토스",
@@ -3844,7 +3844,7 @@
             },
             {
               "name": "Sean O'Malley",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/sean-omalley",
+              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/sean-omalley",
               "rank": 3,
               "fighter_id": "sean-o-malley",
               "name_ko": "션 오말리",
@@ -4284,7 +4284,7 @@
             },
             {
               "name": "Renato Moicano",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/renato-moicano",
+              "ufc_url": "https://www.ufc.com/athlete/renato-moicano",
               "rank": 14,
               "fighter_id": "renato-moicano",
               "name_ko": "헤나토 모이카노",
@@ -4449,13 +4449,13 @@
             },
             {
               "name": "Jacobe Smith",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/jacobe-smith",
+              "ufc_url": "https://www.ufc.com/athlete/jacobe-smith",
               "rank": 14,
               "fighter_id": "jacobe-smith",
               "name_ko": "자코비 스미스",
               "record": "14승 0패",
-              "country": "",
-              "country_ko": ""
+              "country": "United States",
+              "country_ko": "미국"
             },
             {
               "name": "Kevin Holland",
@@ -4739,7 +4739,7 @@
             },
             {
               "name": "Bogdan Guskov",
-              "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
+              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/bogdan-guskov",
               "rank": 10,
               "fighter_id": "bogdan-guskov",
               "name_ko": "보그단 구스코프",
@@ -4989,7 +4989,7 @@
             },
             {
               "name": "Virna Jandiroba",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/virna-jandiroba",
+              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/virna-jandiroba",
               "rank": 2,
               "fighter_id": "virna-jandiroba",
               "name_ko": "비르나 잔디로바",
@@ -5039,7 +5039,7 @@
             },
             {
               "name": "Piera Rodriguez",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/piera-rodriguez",
+              "ufc_url": "https://www.ufc.com/athlete/piera-rodriguez",
               "rank": 7,
               "fighter_id": "piera-rodriguez",
               "name_ko": "피에라 로드리게스",
@@ -5329,7 +5329,7 @@
             },
             {
               "name": "Luana Santos",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/luana-santos",
+              "ufc_url": "https://www.ufc.com/athlete/luana-santos",
               "rank": 3,
               "fighter_id": "luana-santos",
               "name_ko": "루아나 산토스",
@@ -5379,7 +5379,7 @@
             },
             {
               "name": "Yana Santos",
-              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/yana-santos",
+              "ufc_url": "https://www.ufc.com/athlete/yana-santos",
               "rank": 8,
               "fighter_id": "yana-santos",
               "name_ko": "야나 산토스",
