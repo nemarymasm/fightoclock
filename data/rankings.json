@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-05T15:57:01+09:00",
+  "generated_at": "2026-11-06T05:02:29+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -20,7 +20,7 @@
       "ranked": [
         {
           "name": "Alexandre Pantoja",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexandre-pantoja",
+          "ufc_url": "https://www.ufc.com/athlete/alexandre-pantoja",
           "rank": 1,
           "fighter_id": "alexandre-pantoja",
           "name_ko": "알렉산드레 판토자",
@@ -30,7 +30,7 @@
         },
         {
           "name": "Manel Kape",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/manel-kape",
+          "ufc_url": "https://www.ufc.com/athlete/manel-kape",
           "rank": 2,
           "fighter_id": "manel-kape",
           "name_ko": "마넬 캅",
@@ -50,7 +50,7 @@
         },
         {
           "name": "Tatsuro Taira",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tatsuro-taira",
+          "ufc_url": "https://www.ufc.com/athlete/tatsuro-taira",
           "rank": 4,
           "fighter_id": "tatsuro-taira",
           "name_ko": "타이라 타츠로",
@@ -60,7 +60,7 @@
         },
         {
           "name": "Kyoji Horiguchi",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/kyoji-horiguchi",
+          "ufc_url": "https://www.ufc.com/athlete/kyoji-horiguchi",
           "rank": 5,
           "fighter_id": "kyoji-horiguchi",
           "name_ko": "호리구치 쿄지",
@@ -90,7 +90,7 @@
         },
         {
           "name": "Brandon Moreno",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/brandon-moreno",
+          "ufc_url": "https://www.ufc.com/athlete/brandon-moreno",
           "rank": 8,
           "fighter_id": "brandon-moreno",
           "name_ko": "브랜든 모레노",
@@ -150,7 +150,7 @@
         },
         {
           "name": "Tagir Ulanbekov",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tagir-ulanbekov",
+          "ufc_url": "https://www.ufc.com/athlete/tagir-ulanbekov",
           "rank": 14,
           "fighter_id": "tagir-ulanbekov",
           "name_ko": "타기르 울란베코프",
@@ -185,7 +185,7 @@
       "ranked": [
         {
           "name": "Merab Dvalishvili",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/merab-dvalishvili",
+          "ufc_url": "https://www.ufc.com/athlete/merab-dvalishvili",
           "rank": 1,
           "fighter_id": "merab-dvalishvili",
           "name_ko": "메랍 드발리시빌리",
@@ -195,7 +195,7 @@
         },
         {
           "name": "Sean O'Malley",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/sean-omalley",
+          "ufc_url": "https://www.ufc.com/athlete/sean-omalley",
           "rank": 2,
           "fighter_id": "sean-o-malley",
           "name_ko": "션 오말리",
@@ -215,7 +215,7 @@
         },
         {
           "name": "Umar Nurmagomedov",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/umar-nurmagomedov",
+          "ufc_url": "https://www.ufc.com/athlete/umar-nurmagomedov",
           "rank": 4,
           "fighter_id": "umar-nurmagomedov",
           "name_ko": "우마르 누르마고메도프",
@@ -225,7 +225,7 @@
         },
         {
           "name": "Mario Bautista",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mario-bautista",
+          "ufc_url": "https://www.ufc.com/athlete/mario-bautista",
           "rank": 5,
           "fighter_id": "mario-bautista",
           "name_ko": "마리오 바우티스타",
@@ -245,7 +245,7 @@
         },
         {
           "name": "Payton Talbott",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/payton-talbott",
+          "ufc_url": "https://www.ufc.com/athlete/payton-talbott",
           "rank": 7,
           "fighter_id": "payton-talbott",
           "name_ko": "페이튼 탤벗",
@@ -275,7 +275,7 @@
         },
         {
           "name": "Raul Rosas Jr.",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/raul-rosas-jr",
+          "ufc_url": "https://www.ufc.com/athlete/raul-rosas-jr",
           "rank": 10,
           "fighter_id": "raul-rosas-jr",
           "name_ko": "라울 로사스 주니어",
@@ -295,7 +295,7 @@
         },
         {
           "name": "Deiveson Figueiredo",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/deiveson-figueiredo",
+          "ufc_url": "https://www.ufc.com/athlete/deiveson-figueiredo",
           "rank": 12,
           "fighter_id": "deiveson-figueiredo",
           "name_ko": "데이베손 피게이레두",
@@ -305,7 +305,7 @@
         },
         {
           "name": "Marcus McGhee",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/marcus-mcghee",
+          "ufc_url": "https://www.ufc.com/athlete/marcus-mcghee",
           "rank": 13,
           "fighter_id": "marcus-mcghee",
           "name_ko": "마커스 맥기",
@@ -350,7 +350,7 @@
       "ranked": [
         {
           "name": "Movsar Evloev",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/movsar-evloev",
+          "ufc_url": "https://www.ufc.com/athlete/movsar-evloev",
           "rank": 1,
           "fighter_id": "movsar-evloev",
           "name_ko": "모브사르 에블로예프",
@@ -420,7 +420,7 @@
         },
         {
           "name": "Youssef Zalal",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/youssef-zalal",
+          "ufc_url": "https://www.ufc.com/athlete/youssef-zalal",
           "rank": 8,
           "fighter_id": "youssef-zalal",
           "name_ko": "유세프 잘랄",
@@ -535,7 +535,7 @@
         },
         {
           "name": "Charles Oliveira",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/charles-oliveira",
+          "ufc_url": "https://www.ufc.com/athlete/charles-oliveira",
           "rank": 3,
           "fighter_id": "charles-oliveira",
           "name_ko": "찰스 올리베이라",
@@ -645,7 +645,7 @@
         },
         {
           "name": "Dan Hooker",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/dan-hooker",
+          "ufc_url": "https://www.ufc.com/athlete/dan-hooker",
           "rank": 14,
           "fighter_id": "dan-hooker",
           "name_ko": "댄 후커",
@@ -655,7 +655,7 @@
         },
         {
           "name": "Beneil Dariush",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/beneil-dariush",
+          "ufc_url": "https://www.ufc.com/athlete/beneil-dariush",
           "rank": 15,
           "fighter_id": "beneil-dariush",
           "name_ko": "베니엘 다리우시",
@@ -670,7 +670,7 @@
       "wc_en": "Welterweight",
       "champion": {
         "name": "Islam Makhachev",
-        "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/islam-makhachev",
+        "ufc_url": "https://www.ufc.com/athlete/islam-makhachev",
         "fighter_id": "islam-makhachev",
         "name_ko": "이슬람 마카체프",
         "record": "29승 1패",
@@ -730,7 +730,7 @@
         },
         {
           "name": "Sean Brady",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/sean-brady",
+          "ufc_url": "https://www.ufc.com/athlete/sean-brady",
           "rank": 6,
           "fighter_id": "sean-brady",
           "name_ko": "션 브래디",
@@ -770,7 +770,7 @@
         },
         {
           "name": "Kamaru Usman",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/kamaru-usman",
+          "ufc_url": "https://www.ufc.com/athlete/kamaru-usman",
           "rank": 9,
           "fighter_id": "kamaru-usman",
           "name_ko": "카마루 우스만",
@@ -800,7 +800,7 @@
         },
         {
           "name": "Joaquin Buckley",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/joaquin-buckley",
+          "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
           "rank": 13,
           "fighter_id": "joaquin-buckley",
           "name_ko": "호아킨 버클리",
@@ -845,7 +845,7 @@
       "ranked": [
         {
           "name": "Khamzat Chimaev",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/khamzat-chimaev",
+          "ufc_url": "https://www.ufc.com/athlete/khamzat-chimaev",
           "rank": 1,
           "fighter_id": "khamzat-chimaev",
           "name_ko": "함자트 치마예프",
@@ -865,7 +865,7 @@
         },
         {
           "name": "Nassourdine Imavov",
-          "ufc_url": "https://www.ufc.com/athlete/nassourdine-imavov",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/nassourdine-imavov",
           "rank": 3,
           "fighter_id": "nassourdine-imavov",
           "name_ko": "나수르딘 이마보프",
@@ -925,7 +925,7 @@
         },
         {
           "name": "Israel Adesanya",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/israel-adesanya",
+          "ufc_url": "https://www.ufc.com/athlete/israel-adesanya",
           "rank": 9,
           "fighter_id": "israel-adesanya",
           "name_ko": "이스라엘 아데산야",
@@ -955,7 +955,7 @@
         },
         {
           "name": "Jared Cannonier",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jared-cannonier",
+          "ufc_url": "https://www.ufc.com/athlete/jared-cannonier",
           "rank": 12,
           "fighter_id": "jared-cannonier",
           "name_ko": "자레드 캐노니어",
@@ -985,7 +985,7 @@
         },
         {
           "name": "Shara Magomedov",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/shara-magomedov",
+          "ufc_url": "https://www.ufc.com/athlete/shara-magomedov",
           "rank": 15,
           "fighter_id": "shara-magomedov",
           "name_ko": "샤라 마고메도프",
@@ -1030,7 +1030,7 @@
         },
         {
           "name": "Alex Pereira",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alex-pereira",
+          "ufc_url": "https://www.ufc.com/athlete/alex-pereira",
           "rank": 3,
           "fighter_id": "alex-pereira",
           "name_ko": "알렉스 페레이라",
@@ -1040,7 +1040,7 @@
         },
         {
           "name": "Khalil Rountree Jr.",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/khalil-rountree-jr",
+          "ufc_url": "https://www.ufc.com/athlete/khalil-rountree-jr",
           "rank": 4,
           "fighter_id": "khalil-rountree-jr",
           "name_ko": "카릴 라운트리 주니어",
@@ -1050,7 +1050,7 @@
         },
         {
           "name": "Navajo Stirling",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/navajo-stirling",
+          "ufc_url": "https://www.ufc.com/athlete/navajo-stirling",
           "rank": 5,
           "fighter_id": "navajo-stirling",
           "name_ko": "나바호 스털링",
@@ -1070,7 +1070,7 @@
         },
         {
           "name": "Dominick Reyes",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/dominick-reyes",
+          "ufc_url": "https://www.ufc.com/athlete/dominick-reyes",
           "rank": 7,
           "fighter_id": "dominick-reyes",
           "name_ko": "도미닉 레예스",
@@ -1080,7 +1080,7 @@
         },
         {
           "name": "Bogdan Guskov",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bogdan-guskov",
+          "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
           "rank": 8,
           "fighter_id": "bogdan-guskov",
           "name_ko": "보그단 구스코프",
@@ -1090,7 +1090,7 @@
         },
         {
           "name": "Jan Błachowicz",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jan-blachowicz",
+          "ufc_url": "https://www.ufc.com/athlete/jan-blachowicz",
           "rank": 9,
           "fighter_id": "jan-b-achowicz",
           "name_ko": "얀 블라호비치",
@@ -1120,7 +1120,7 @@
         },
         {
           "name": "Abdul Rakhman Yakhyaev",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/abdulrakhman-yakhyaev",
+          "ufc_url": "https://www.ufc.com/athlete/abdulrakhman-yakhyaev",
           "rank": 12,
           "fighter_id": "abdul-rakhman-yakhyaev",
           "name_ko": "압둘라흐만 야흐야예프",
@@ -1205,7 +1205,7 @@
         },
         {
           "name": "Josh Hokit",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/josh-hokit",
+          "ufc_url": "https://www.ufc.com/athlete/josh-hokit",
           "rank": 4,
           "fighter_id": "josh-hokit",
           "name_ko": "조시 호킷",
@@ -1215,7 +1215,7 @@
         },
         {
           "name": "Curtis Blaydes",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/curtis-blaydes",
+          "ufc_url": "https://www.ufc.com/athlete/curtis-blaydes",
           "rank": 5,
           "fighter_id": "curtis-blaydes",
           "name_ko": "커티스 블레이즈",
@@ -1285,7 +1285,7 @@
         },
         {
           "name": "Derrick Lewis",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/derrick-lewis",
+          "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
           "rank": 12,
           "fighter_id": "derrick-lewis",
           "name_ko": "데릭 루이스",
@@ -1330,7 +1330,7 @@
       "wc_en": "Women's Strawweight",
       "champion": {
         "name": "Mackenzie Dern",
-        "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mackenzie-dern",
+        "ufc_url": "https://www.ufc.com/athlete/mackenzie-dern",
         "fighter_id": "mackenzie-dern",
         "name_ko": "맥켄지 던",
         "record": "17승 5패",
@@ -1340,7 +1340,7 @@
       "ranked": [
         {
           "name": "Zhang Weili",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/zhang-weili",
+          "ufc_url": "https://www.ufc.com/athlete/zhang-weili",
           "rank": 1,
           "fighter_id": "zhang-weili",
           "name_ko": "장 웨일리",
@@ -1370,7 +1370,7 @@
         },
         {
           "name": "Denise Gomes",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/denise-gomes",
+          "ufc_url": "https://www.ufc.com/athlete/denise-gomes",
           "rank": 4,
           "fighter_id": "denise-gomes",
           "name_ko": "데니지 고메스",
@@ -1380,7 +1380,7 @@
         },
         {
           "name": "Gillian Robertson",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gillian-robertson",
+          "ufc_url": "https://www.ufc.com/athlete/gillian-robertson",
           "rank": 5,
           "fighter_id": "gillian-robertson",
           "name_ko": "질리언 로버트슨",
@@ -1390,7 +1390,7 @@
         },
         {
           "name": "Yan Xiaonan",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/yan-xiaonan",
+          "ufc_url": "https://www.ufc.com/athlete/yan-xiaonan",
           "rank": 6,
           "fighter_id": "yan-xiaonan",
           "name_ko": "얀 시아오난",
@@ -1430,7 +1430,7 @@
         },
         {
           "name": "Tabatha Ricci",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tabatha-ricci",
+          "ufc_url": "https://www.ufc.com/athlete/tabatha-ricci",
           "rank": 10,
           "fighter_id": "tabatha-ricci",
           "name_ko": "타바사 리치",
@@ -1480,13 +1480,13 @@
         },
         {
           "name": "Mizuki",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mizuki-inoue",
+          "ufc_url": "https://www.ufc.com/athlete/mizuki-inoue",
           "rank": 15,
-          "fighter_id": "mizuki",
+          "fighter_id": "mizuki-inoue",
           "name_ko": "미즈키",
           "record": "16승 6패",
-          "country": "",
-          "country_ko": ""
+          "country": "Japan",
+          "country_ko": "일본"
         }
       ]
     },
@@ -1495,7 +1495,7 @@
       "wc_en": "Women's Flyweight",
       "champion": {
         "name": "Natalia Silva",
-        "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/natalia-silva",
+        "ufc_url": "https://www.ufc.com/athlete/natalia-silva",
         "fighter_id": "nat-lia-silva",
         "name_ko": "나탈리아 실바",
         "record": "21승 5패 1무",
@@ -1505,7 +1505,7 @@
       "ranked": [
         {
           "name": "Valentina Shevchenko",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/valentina-shevchenko",
+          "ufc_url": "https://www.ufc.com/athlete/valentina-shevchenko",
           "rank": 1,
           "fighter_id": "valentina-shevchenko",
           "name_ko": "발렌티나 셰브첸코",
@@ -1585,7 +1585,7 @@
         },
         {
           "name": "Tracy Cortez",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tracy-cortez",
+          "ufc_url": "https://www.ufc.com/athlete/tracy-cortez",
           "rank": 9,
           "fighter_id": "tracy-cortez",
           "name_ko": "트레이시 코르테스",
@@ -1615,7 +1615,7 @@
         },
         {
           "name": "Casey O'Neill",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/casey-oneill",
+          "ufc_url": "https://www.ufc.com/athlete/casey-oneill",
           "rank": 12,
           "fighter_id": "casey-o-neill",
           "name_ko": "케이시 오닐",
@@ -1645,7 +1645,7 @@
         },
         {
           "name": "Gabriella Fernandes",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gabriella-fernandes",
+          "ufc_url": "https://www.ufc.com/athlete/gabriella-fernandes",
           "rank": 15,
           "fighter_id": "gabriella-fernandes",
           "name_ko": "가브리엘라 페르난데스",
@@ -1670,7 +1670,7 @@
       "ranked": [
         {
           "name": "Julianna Peña",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/julianna-pena",
+          "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
           "rank": 1,
           "fighter_id": "julianna-pe-a",
           "name_ko": "줄리아나 페냐",
@@ -1690,7 +1690,7 @@
         },
         {
           "name": "Ailin Perez",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/ailin-perez",
+          "ufc_url": "https://www.ufc.com/athlete/ailin-perez",
           "rank": 3,
           "fighter_id": "ail-n-p-rez",
           "name_ko": "아일린 페레스",
@@ -1710,7 +1710,7 @@
         },
         {
           "name": "Raquel Pennington",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/raquel-pennington",
+          "ufc_url": "https://www.ufc.com/athlete/raquel-pennington",
           "rank": 5,
           "fighter_id": "raquel-pennington",
           "name_ko": "라켈 페닝턴",
@@ -1740,7 +1740,7 @@
         },
         {
           "name": "Jacqueline Cavalcanti",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jacqueline-cavalcanti",
+          "ufc_url": "https://www.ufc.com/athlete/jacqueline-cavalcanti",
           "rank": 8,
           "fighter_id": "jacqueline-cavalcanti",
           "name_ko": "자클린 카발칸티",
@@ -1750,7 +1750,7 @@
         },
         {
           "name": "Macy Chiasson",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/macy-chiasson",
+          "ufc_url": "https://www.ufc.com/athlete/macy-chiasson",
           "rank": 9,
           "fighter_id": "macy-chiasson",
           "name_ko": "메이시 치아슨",
@@ -1770,7 +1770,7 @@
         },
         {
           "name": "Bia Mesquita",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bia-mesquita",
+          "ufc_url": "https://www.ufc.com/athlete/bia-mesquita",
           "rank": 11,
           "fighter_id": "bia-mesquita",
           "name_ko": "비아 메스키타",
@@ -1839,7 +1839,7 @@
           "ranked": [
             {
               "name": "Alexandre Pantoja",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexandre-pantoja",
+              "ufc_url": "https://www.ufc.com/athlete/alexandre-pantoja",
               "rank": 1,
               "fighter_id": "alexandre-pantoja",
               "name_ko": "알렉산드레 판토자",
@@ -1849,7 +1849,7 @@
             },
             {
               "name": "Manel Kape",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/manel-kape",
+              "ufc_url": "https://www.ufc.com/athlete/manel-kape",
               "rank": 2,
               "fighter_id": "manel-kape",
               "name_ko": "마넬 캅",
@@ -1869,7 +1869,7 @@
             },
             {
               "name": "Tatsuro Taira",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tatsuro-taira",
+              "ufc_url": "https://www.ufc.com/athlete/tatsuro-taira",
               "rank": 4,
               "fighter_id": "tatsuro-taira",
               "name_ko": "타이라 타츠로",
@@ -1879,7 +1879,7 @@
             },
             {
               "name": "Kyoji Horiguchi",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/kyoji-horiguchi",
+              "ufc_url": "https://www.ufc.com/athlete/kyoji-horiguchi",
               "rank": 5,
               "fighter_id": "kyoji-horiguchi",
               "name_ko": "호리구치 쿄지",
@@ -1909,7 +1909,7 @@
             },
             {
               "name": "Brandon Moreno",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/brandon-moreno",
+              "ufc_url": "https://www.ufc.com/athlete/brandon-moreno",
               "rank": 8,
               "fighter_id": "brandon-moreno",
               "name_ko": "브랜든 모레노",
@@ -1969,7 +1969,7 @@
             },
             {
               "name": "Tagir Ulanbekov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tagir-ulanbekov",
+              "ufc_url": "https://www.ufc.com/athlete/tagir-ulanbekov",
               "rank": 14,
               "fighter_id": "tagir-ulanbekov",
               "name_ko": "타기르 울란베코프",
@@ -2004,7 +2004,7 @@
           "ranked": [
             {
               "name": "Merab Dvalishvili",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/merab-dvalishvili",
+              "ufc_url": "https://www.ufc.com/athlete/merab-dvalishvili",
               "rank": 1,
               "fighter_id": "merab-dvalishvili",
               "name_ko": "메랍 드발리시빌리",
@@ -2014,7 +2014,7 @@
             },
             {
               "name": "Sean O'Malley",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/sean-omalley",
+              "ufc_url": "https://www.ufc.com/athlete/sean-omalley",
               "rank": 2,
               "fighter_id": "sean-o-malley",
               "name_ko": "션 오말리",
@@ -2034,7 +2034,7 @@
             },
             {
               "name": "Umar Nurmagomedov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/umar-nurmagomedov",
+              "ufc_url": "https://www.ufc.com/athlete/umar-nurmagomedov",
               "rank": 4,
               "fighter_id": "umar-nurmagomedov",
               "name_ko": "우마르 누르마고메도프",
@@ -2044,7 +2044,7 @@
             },
             {
               "name": "Mario Bautista",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mario-bautista",
+              "ufc_url": "https://www.ufc.com/athlete/mario-bautista",
               "rank": 5,
               "fighter_id": "mario-bautista",
               "name_ko": "마리오 바우티스타",
@@ -2064,7 +2064,7 @@
             },
             {
               "name": "Payton Talbott",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/payton-talbott",
+              "ufc_url": "https://www.ufc.com/athlete/payton-talbott",
               "rank": 7,
               "fighter_id": "payton-talbott",
               "name_ko": "페이튼 탤벗",
@@ -2094,7 +2094,7 @@
             },
             {
               "name": "Raul Rosas Jr.",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/raul-rosas-jr",
+              "ufc_url": "https://www.ufc.com/athlete/raul-rosas-jr",
               "rank": 10,
               "fighter_id": "raul-rosas-jr",
               "name_ko": "라울 로사스 주니어",
@@ -2114,7 +2114,7 @@
             },
             {
               "name": "Deiveson Figueiredo",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/deiveson-figueiredo",
+              "ufc_url": "https://www.ufc.com/athlete/deiveson-figueiredo",
               "rank": 12,
               "fighter_id": "deiveson-figueiredo",
               "name_ko": "데이베손 피게이레두",
@@ -2124,7 +2124,7 @@
             },
             {
               "name": "Marcus McGhee",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/marcus-mcghee",
+              "ufc_url": "https://www.ufc.com/athlete/marcus-mcghee",
               "rank": 13,
               "fighter_id": "marcus-mcghee",
               "name_ko": "마커스 맥기",
@@ -2169,7 +2169,7 @@
           "ranked": [
             {
               "name": "Movsar Evloev",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/movsar-evloev",
+              "ufc_url": "https://www.ufc.com/athlete/movsar-evloev",
               "rank": 1,
               "fighter_id": "movsar-evloev",
               "name_ko": "모브사르 에블로예프",
@@ -2239,7 +2239,7 @@
             },
             {
               "name": "Youssef Zalal",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/youssef-zalal",
+              "ufc_url": "https://www.ufc.com/athlete/youssef-zalal",
               "rank": 8,
               "fighter_id": "youssef-zalal",
               "name_ko": "유세프 잘랄",
@@ -2354,7 +2354,7 @@
             },
             {
               "name": "Charles Oliveira",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/charles-oliveira",
+              "ufc_url": "https://www.ufc.com/athlete/charles-oliveira",
               "rank": 3,
               "fighter_id": "charles-oliveira",
               "name_ko": "찰스 올리베이라",
@@ -2464,7 +2464,7 @@
             },
             {
               "name": "Dan Hooker",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/dan-hooker",
+              "ufc_url": "https://www.ufc.com/athlete/dan-hooker",
               "rank": 14,
               "fighter_id": "dan-hooker",
               "name_ko": "댄 후커",
@@ -2474,7 +2474,7 @@
             },
             {
               "name": "Beneil Dariush",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/beneil-dariush",
+              "ufc_url": "https://www.ufc.com/athlete/beneil-dariush",
               "rank": 15,
               "fighter_id": "beneil-dariush",
               "name_ko": "베니엘 다리우시",
@@ -2489,7 +2489,7 @@
           "wc_en": "Welterweight",
           "champion": {
             "name": "Islam Makhachev",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/islam-makhachev",
+            "ufc_url": "https://www.ufc.com/athlete/islam-makhachev",
             "fighter_id": "islam-makhachev",
             "name_ko": "이슬람 마카체프",
             "record": "29승 1패",
@@ -2549,7 +2549,7 @@
             },
             {
               "name": "Sean Brady",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/sean-brady",
+              "ufc_url": "https://www.ufc.com/athlete/sean-brady",
               "rank": 6,
               "fighter_id": "sean-brady",
               "name_ko": "션 브래디",
@@ -2589,7 +2589,7 @@
             },
             {
               "name": "Kamaru Usman",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/kamaru-usman",
+              "ufc_url": "https://www.ufc.com/athlete/kamaru-usman",
               "rank": 9,
               "fighter_id": "kamaru-usman",
               "name_ko": "카마루 우스만",
@@ -2619,7 +2619,7 @@
             },
             {
               "name": "Joaquin Buckley",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/joaquin-buckley",
+              "ufc_url": "https://www.ufc.com/athlete/joaquin-buckley",
               "rank": 13,
               "fighter_id": "joaquin-buckley",
               "name_ko": "호아킨 버클리",
@@ -2664,7 +2664,7 @@
           "ranked": [
             {
               "name": "Khamzat Chimaev",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/khamzat-chimaev",
+              "ufc_url": "https://www.ufc.com/athlete/khamzat-chimaev",
               "rank": 1,
               "fighter_id": "khamzat-chimaev",
               "name_ko": "함자트 치마예프",
@@ -2684,7 +2684,7 @@
             },
             {
               "name": "Nassourdine Imavov",
-              "ufc_url": "https://www.ufc.com/athlete/nassourdine-imavov",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/nassourdine-imavov",
               "rank": 3,
               "fighter_id": "nassourdine-imavov",
               "name_ko": "나수르딘 이마보프",
@@ -2744,7 +2744,7 @@
             },
             {
               "name": "Israel Adesanya",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/israel-adesanya",
+              "ufc_url": "https://www.ufc.com/athlete/israel-adesanya",
               "rank": 9,
               "fighter_id": "israel-adesanya",
               "name_ko": "이스라엘 아데산야",
@@ -2774,7 +2774,7 @@
             },
             {
               "name": "Jared Cannonier",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jared-cannonier",
+              "ufc_url": "https://www.ufc.com/athlete/jared-cannonier",
               "rank": 12,
               "fighter_id": "jared-cannonier",
               "name_ko": "자레드 캐노니어",
@@ -2804,7 +2804,7 @@
             },
             {
               "name": "Shara Magomedov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/shara-magomedov",
+              "ufc_url": "https://www.ufc.com/athlete/shara-magomedov",
               "rank": 15,
               "fighter_id": "shara-magomedov",
               "name_ko": "샤라 마고메도프",
@@ -2849,7 +2849,7 @@
             },
             {
               "name": "Alex Pereira",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alex-pereira",
+              "ufc_url": "https://www.ufc.com/athlete/alex-pereira",
               "rank": 3,
               "fighter_id": "alex-pereira",
               "name_ko": "알렉스 페레이라",
@@ -2859,7 +2859,7 @@
             },
             {
               "name": "Khalil Rountree Jr.",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/khalil-rountree-jr",
+              "ufc_url": "https://www.ufc.com/athlete/khalil-rountree-jr",
               "rank": 4,
               "fighter_id": "khalil-rountree-jr",
               "name_ko": "카릴 라운트리 주니어",
@@ -2869,7 +2869,7 @@
             },
             {
               "name": "Navajo Stirling",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/navajo-stirling",
+              "ufc_url": "https://www.ufc.com/athlete/navajo-stirling",
               "rank": 5,
               "fighter_id": "navajo-stirling",
               "name_ko": "나바호 스털링",
@@ -2889,7 +2889,7 @@
             },
             {
               "name": "Dominick Reyes",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/dominick-reyes",
+              "ufc_url": "https://www.ufc.com/athlete/dominick-reyes",
               "rank": 7,
               "fighter_id": "dominick-reyes",
               "name_ko": "도미닉 레예스",
@@ -2899,7 +2899,7 @@
             },
             {
               "name": "Bogdan Guskov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bogdan-guskov",
+              "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
               "rank": 8,
               "fighter_id": "bogdan-guskov",
               "name_ko": "보그단 구스코프",
@@ -2909,7 +2909,7 @@
             },
             {
               "name": "Jan Błachowicz",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jan-blachowicz",
+              "ufc_url": "https://www.ufc.com/athlete/jan-blachowicz",
               "rank": 9,
               "fighter_id": "jan-b-achowicz",
               "name_ko": "얀 블라호비치",
@@ -2939,7 +2939,7 @@
             },
             {
               "name": "Abdul Rakhman Yakhyaev",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/abdulrakhman-yakhyaev",
+              "ufc_url": "https://www.ufc.com/athlete/abdulrakhman-yakhyaev",
               "rank": 12,
               "fighter_id": "abdul-rakhman-yakhyaev",
               "name_ko": "압둘라흐만 야흐야예프",
@@ -3024,7 +3024,7 @@
             },
             {
               "name": "Josh Hokit",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/josh-hokit",
+              "ufc_url": "https://www.ufc.com/athlete/josh-hokit",
               "rank": 4,
               "fighter_id": "josh-hokit",
               "name_ko": "조시 호킷",
@@ -3034,7 +3034,7 @@
             },
             {
               "name": "Curtis Blaydes",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/curtis-blaydes",
+              "ufc_url": "https://www.ufc.com/athlete/curtis-blaydes",
               "rank": 5,
               "fighter_id": "curtis-blaydes",
               "name_ko": "커티스 블레이즈",
@@ -3104,7 +3104,7 @@
             },
             {
               "name": "Derrick Lewis",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/derrick-lewis",
+              "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
               "rank": 12,
               "fighter_id": "derrick-lewis",
               "name_ko": "데릭 루이스",
@@ -3149,7 +3149,7 @@
           "wc_en": "Women's Strawweight",
           "champion": {
             "name": "Mackenzie Dern",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mackenzie-dern",
+            "ufc_url": "https://www.ufc.com/athlete/mackenzie-dern",
             "fighter_id": "mackenzie-dern",
             "name_ko": "맥켄지 던",
             "record": "17승 5패",
@@ -3159,7 +3159,7 @@
           "ranked": [
             {
               "name": "Zhang Weili",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/zhang-weili",
+              "ufc_url": "https://www.ufc.com/athlete/zhang-weili",
               "rank": 1,
               "fighter_id": "zhang-weili",
               "name_ko": "장 웨일리",
@@ -3189,7 +3189,7 @@
             },
             {
               "name": "Denise Gomes",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/denise-gomes",
+              "ufc_url": "https://www.ufc.com/athlete/denise-gomes",
               "rank": 4,
               "fighter_id": "denise-gomes",
               "name_ko": "데니지 고메스",
@@ -3199,7 +3199,7 @@
             },
             {
               "name": "Gillian Robertson",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gillian-robertson",
+              "ufc_url": "https://www.ufc.com/athlete/gillian-robertson",
               "rank": 5,
               "fighter_id": "gillian-robertson",
               "name_ko": "질리언 로버트슨",
@@ -3209,7 +3209,7 @@
             },
             {
               "name": "Yan Xiaonan",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/yan-xiaonan",
+              "ufc_url": "https://www.ufc.com/athlete/yan-xiaonan",
               "rank": 6,
               "fighter_id": "yan-xiaonan",
               "name_ko": "얀 시아오난",
@@ -3249,7 +3249,7 @@
             },
             {
               "name": "Tabatha Ricci",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tabatha-ricci",
+              "ufc_url": "https://www.ufc.com/athlete/tabatha-ricci",
               "rank": 10,
               "fighter_id": "tabatha-ricci",
               "name_ko": "타바사 리치",
@@ -3299,13 +3299,13 @@
             },
             {
               "name": "Mizuki",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mizuki-inoue",
+              "ufc_url": "https://www.ufc.com/athlete/mizuki-inoue",
               "rank": 15,
-              "fighter_id": "mizuki",
+              "fighter_id": "mizuki-inoue",
               "name_ko": "미즈키",
               "record": "16승 6패",
-              "country": "",
-              "country_ko": ""
+              "country": "Japan",
+              "country_ko": "일본"
             }
           ]
         },
@@ -3314,7 +3314,7 @@
           "wc_en": "Women's Flyweight",
           "champion": {
             "name": "Natalia Silva",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/natalia-silva",
+            "ufc_url": "https://www.ufc.com/athlete/natalia-silva",
             "fighter_id": "nat-lia-silva",
             "name_ko": "나탈리아 실바",
             "record": "21승 5패 1무",
@@ -3324,7 +3324,7 @@
           "ranked": [
             {
               "name": "Valentina Shevchenko",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/valentina-shevchenko",
+              "ufc_url": "https://www.ufc.com/athlete/valentina-shevchenko",
               "rank": 1,
               "fighter_id": "valentina-shevchenko",
               "name_ko": "발렌티나 셰브첸코",
@@ -3404,7 +3404,7 @@
             },
             {
               "name": "Tracy Cortez",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tracy-cortez",
+              "ufc_url": "https://www.ufc.com/athlete/tracy-cortez",
               "rank": 9,
               "fighter_id": "tracy-cortez",
               "name_ko": "트레이시 코르테스",
@@ -3434,7 +3434,7 @@
             },
             {
               "name": "Casey O'Neill",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/casey-oneill",
+              "ufc_url": "https://www.ufc.com/athlete/casey-oneill",
               "rank": 12,
               "fighter_id": "casey-o-neill",
               "name_ko": "케이시 오닐",
@@ -3464,7 +3464,7 @@
             },
             {
               "name": "Gabriella Fernandes",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gabriella-fernandes",
+              "ufc_url": "https://www.ufc.com/athlete/gabriella-fernandes",
               "rank": 15,
               "fighter_id": "gabriella-fernandes",
               "name_ko": "가브리엘라 페르난데스",
@@ -3489,7 +3489,7 @@
           "ranked": [
             {
               "name": "Julianna Peña",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/julianna-pena",
+              "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
               "rank": 1,
               "fighter_id": "julianna-pe-a",
               "name_ko": "줄리아나 페냐",
@@ -3509,7 +3509,7 @@
             },
             {
               "name": "Ailin Perez",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/ailin-perez",
+              "ufc_url": "https://www.ufc.com/athlete/ailin-perez",
               "rank": 3,
               "fighter_id": "ail-n-p-rez",
               "name_ko": "아일린 페레스",
@@ -3529,7 +3529,7 @@
             },
             {
               "name": "Raquel Pennington",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/raquel-pennington",
+              "ufc_url": "https://www.ufc.com/athlete/raquel-pennington",
               "rank": 5,
               "fighter_id": "raquel-pennington",
               "name_ko": "라켈 페닝턴",
@@ -3559,7 +3559,7 @@
             },
             {
               "name": "Jacqueline Cavalcanti",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jacqueline-cavalcanti",
+              "ufc_url": "https://www.ufc.com/athlete/jacqueline-cavalcanti",
               "rank": 8,
               "fighter_id": "jacqueline-cavalcanti",
               "name_ko": "자클린 카발칸티",
@@ -3569,7 +3569,7 @@
             },
             {
               "name": "Macy Chiasson",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/macy-chiasson",
+              "ufc_url": "https://www.ufc.com/athlete/macy-chiasson",
               "rank": 9,
               "fighter_id": "macy-chiasson",
               "name_ko": "메이시 치아슨",
@@ -3589,7 +3589,7 @@
             },
             {
               "name": "Bia Mesquita",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bia-mesquita",
+              "ufc_url": "https://www.ufc.com/athlete/bia-mesquita",
               "rank": 11,
               "fighter_id": "bia-mesquita",
               "name_ko": "비아 메스키타",
@@ -3649,7 +3649,7 @@
           "wc_en": "Flyweight",
           "champion": {
             "name": "Joshua Van",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/joshua-van",
+            "ufc_url": "https://www.ufc.com/athlete/joshua-van",
             "fighter_id": "joshua-van",
             "name_ko": "조슈아 반",
             "record": "18승 2패",
@@ -3669,7 +3669,7 @@
             },
             {
               "name": "Alexandre Pantoja",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexandre-pantoja",
+              "ufc_url": "https://www.ufc.com/athlete/alexandre-pantoja",
               "rank": 2,
               "fighter_id": "alexandre-pantoja",
               "name_ko": "알렉산드레 판토자",
@@ -3749,7 +3749,7 @@
             },
             {
               "name": "Ramazan Temirov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/ramazan-temirov",
+              "ufc_url": "https://www.ufc.com/athlete/ramazan-temirov",
               "rank": 10,
               "fighter_id": "ramazan-temirov",
               "name_ko": "라마잔 테미로프",
@@ -3759,7 +3759,7 @@
             },
             {
               "name": "Sumudaerji",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/su-mudaerji",
+              "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
               "rank": 11,
               "fighter_id": "su-mudaerji",
               "name_ko": "수무다얼지",
@@ -3799,7 +3799,7 @@
             },
             {
               "name": "Charles Johnson",
-              "ufc_url": "https://www.ufc.com/athlete/charles-johnson",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/charles-johnson",
               "rank": 15,
               "fighter_id": "charles-johnson",
               "name_ko": "찰스 존슨",
@@ -3824,7 +3824,7 @@
           "ranked": [
             {
               "name": "Merab Dvalishvili",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/merab-dvalishvili",
+              "ufc_url": "https://www.ufc.com/athlete/merab-dvalishvili",
               "rank": 1,
               "fighter_id": "merab-dvalishvili",
               "name_ko": "메랍 드발리시빌리",
@@ -3864,7 +3864,7 @@
             },
             {
               "name": "Umar Nurmagomedov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/umar-nurmagomedov",
+              "ufc_url": "https://www.ufc.com/athlete/umar-nurmagomedov",
               "rank": 5,
               "fighter_id": "umar-nurmagomedov",
               "name_ko": "우마르 누르마고메도프",
@@ -3914,7 +3914,7 @@
             },
             {
               "name": "Payton Talbott",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/payton-talbott",
+              "ufc_url": "https://www.ufc.com/athlete/payton-talbott",
               "rank": 10,
               "fighter_id": "payton-talbott",
               "name_ko": "페이튼 탤벗",
@@ -3924,7 +3924,7 @@
             },
             {
               "name": "Montel Jackson",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/montel-jackson",
+              "ufc_url": "https://www.ufc.com/athlete/montel-jackson",
               "rank": 11,
               "fighter_id": "montel-jackson",
               "name_ko": "몬텔 잭슨",
@@ -3954,7 +3954,7 @@
             },
             {
               "name": "Marlon Vera",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/marlon-vera",
+              "ufc_url": "https://www.ufc.com/athlete/marlon-vera",
               "rank": 14,
               "fighter_id": "marlon-vera",
               "name_ko": "마를론 베라",
@@ -3964,7 +3964,7 @@
             },
             {
               "name": "Raoni Barcelos",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/raoni-barcelos",
+              "ufc_url": "https://www.ufc.com/athlete/raoni-barcelos",
               "rank": 15,
               "fighter_id": "raoni-barcelos",
               "name_ko": "하오니 바르셀로스",
@@ -3979,7 +3979,7 @@
           "wc_en": "Featherweight",
           "champion": {
             "name": "Alexander Volkanovski",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexander-volkanovski",
+            "ufc_url": "https://www.ufc.com/athlete/alexander-volkanovski",
             "fighter_id": "alexander-volkanovski",
             "name_ko": "알렉산더 볼카노프스키",
             "record": "29승 4패",
@@ -3999,7 +3999,7 @@
             },
             {
               "name": "Diego Lopes",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/diego-lopes",
+              "ufc_url": "https://www.ufc.com/athlete/diego-lopes",
               "rank": 2,
               "fighter_id": "diego-lopes",
               "name_ko": "디에고 로페스",
@@ -4039,7 +4039,7 @@
             },
             {
               "name": "Arnold Allen",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/arnold-allen",
+              "ufc_url": "https://www.ufc.com/athlete/arnold-allen",
               "rank": 6,
               "fighter_id": "arnold-allen",
               "name_ko": "아놀드 앨런",
@@ -4059,7 +4059,7 @@
             },
             {
               "name": "Pavel Andrusca",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/pavel-andrusca",
+              "ufc_url": "https://www.ufc.com/athlete/pavel-andrusca",
               "rank": 8,
               "fighter_id": "pavel-andrusca",
               "name_ko": "파벨 안드루스카",
@@ -4079,7 +4079,7 @@
             },
             {
               "name": "Aaron Pico",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/aaron-pico",
+              "ufc_url": "https://www.ufc.com/athlete/aaron-pico",
               "rank": 10,
               "fighter_id": "aaron-pico",
               "name_ko": "에런 피코",
@@ -4129,7 +4129,7 @@
             },
             {
               "name": "Jamall Emmers",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jamall-emmers",
+              "ufc_url": "https://www.ufc.com/athlete/jamall-emmers",
               "rank": 15,
               "fighter_id": "jamall-emmers",
               "name_ko": "자말 에머스",
@@ -4164,7 +4164,7 @@
             },
             {
               "name": "Arman Tsarukyan",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/arman-tsarukyan",
+              "ufc_url": "https://www.ufc.com/athlete/arman-tsarukyan",
               "rank": 2,
               "fighter_id": "arman-tsarukyan",
               "name_ko": "아르만 사루키안",
@@ -4184,7 +4184,7 @@
             },
             {
               "name": "Max Holloway",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/max-holloway",
+              "ufc_url": "https://www.ufc.com/athlete/max-holloway",
               "rank": 4,
               "fighter_id": "max-holloway",
               "name_ko": "맥스 할로웨이",
@@ -4274,7 +4274,7 @@
             },
             {
               "name": "Rafael Fiziev",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/rafael-fiziev",
+              "ufc_url": "https://www.ufc.com/athlete/rafael-fiziev",
               "rank": 13,
               "fighter_id": "rafael-fiziev",
               "name_ko": "라파엘 피지에프",
@@ -4284,7 +4284,7 @@
             },
             {
               "name": "Renato Moicano",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/renato-moicano",
+              "ufc_url": "https://www.ufc.com/athlete/renato-moicano",
               "rank": 14,
               "fighter_id": "renato-moicano",
               "name_ko": "헤나토 모이카노",
@@ -4319,7 +4319,7 @@
           "ranked": [
             {
               "name": "Carlos Prates",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/carlos-prates",
+              "ufc_url": "https://www.ufc.com/athlete/carlos-prates",
               "rank": 1,
               "fighter_id": "carlos-prates",
               "name_ko": "카를로스 프라치스",
@@ -4329,7 +4329,7 @@
             },
             {
               "name": "Ian Machado Garry",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/ian-machado-garry",
+              "ufc_url": "https://www.ufc.com/athlete/ian-machado-garry",
               "rank": 2,
               "fighter_id": "ian-machado-garry",
               "name_ko": "이안 마샤두 개리",
@@ -4349,7 +4349,7 @@
             },
             {
               "name": "Jack Della Maddalena",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jack-della-maddalena",
+              "ufc_url": "https://www.ufc.com/athlete/jack-della-maddalena",
               "rank": 4,
               "fighter_id": "jack-della-maddalena",
               "name_ko": "잭 델라 마달레나",
@@ -4359,7 +4359,7 @@
             },
             {
               "name": "Sean Brady",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/sean-brady",
+              "ufc_url": "https://www.ufc.com/athlete/sean-brady",
               "rank": 5,
               "fighter_id": "sean-brady",
               "name_ko": "션 브래디",
@@ -4379,7 +4379,7 @@
             },
             {
               "name": "Belal Muhammad",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/belal-muhammad",
+              "ufc_url": "https://www.ufc.com/athlete/belal-muhammad",
               "rank": 7,
               "fighter_id": "belal-muhammad",
               "name_ko": "벨랄 무하마드",
@@ -4409,7 +4409,7 @@
             },
             {
               "name": "Leon Edwards",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/leon-edwards",
+              "ufc_url": "https://www.ufc.com/athlete/leon-edwards",
               "rank": 10,
               "fighter_id": "leon-edwards",
               "name_ko": "리온 에드워즈",
@@ -4419,7 +4419,7 @@
             },
             {
               "name": "Kamaru Usman",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/kamaru-usman",
+              "ufc_url": "https://www.ufc.com/athlete/kamaru-usman",
               "rank": 11,
               "fighter_id": "kamaru-usman",
               "name_ko": "카마루 우스만",
@@ -4474,7 +4474,7 @@
           "wc_en": "Middleweight",
           "champion": {
             "name": "Sean Strickland",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/sean-strickland",
+            "ufc_url": "https://www.ufc.com/athlete/sean-strickland",
             "fighter_id": "sean-strickland",
             "name_ko": "션 스트릭랜드",
             "record": "31승 7패",
@@ -4494,7 +4494,7 @@
             },
             {
               "name": "Dricus Du Plessis",
-              "ufc_url": "https://www.ufc.com/athlete/dricus-du-plessis",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/dricus-du-plessis",
               "rank": 2,
               "fighter_id": "dricus-du-plessis",
               "name_ko": "드리퀴스 뒤 플레시",
@@ -4514,7 +4514,7 @@
             },
             {
               "name": "Brendan Allen",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/brendan-allen",
+              "ufc_url": "https://www.ufc.com/athlete/brendan-allen",
               "rank": 4,
               "fighter_id": "brendan-allen",
               "name_ko": "브렌든 앨런",
@@ -4524,7 +4524,7 @@
             },
             {
               "name": "Joe Pyfer",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/joe-pyfer",
+              "ufc_url": "https://www.ufc.com/athlete/joe-pyfer",
               "rank": 5,
               "fighter_id": "joe-pyfer",
               "name_ko": "조 파이퍼",
@@ -4544,7 +4544,7 @@
             },
             {
               "name": "Gregory Rodrigues",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gregory-rodrigues",
+              "ufc_url": "https://www.ufc.com/athlete/gregory-rodrigues",
               "rank": 7,
               "fighter_id": "gregory-rodrigues",
               "name_ko": "그레고리 호드리게스",
@@ -4554,7 +4554,7 @@
             },
             {
               "name": "Anthony Hernandez",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/anthony-hernandez",
+              "ufc_url": "https://www.ufc.com/athlete/anthony-hernandez",
               "rank": 8,
               "fighter_id": "anthony-hernandez",
               "name_ko": "안소니 에르난데스",
@@ -4574,7 +4574,7 @@
             },
             {
               "name": "Israel Adesanya",
-              "ufc_url": "https://www.ufc.com/athlete/israel-adesanya",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/israel-adesanya",
               "rank": 10,
               "fighter_id": "israel-adesanya",
               "name_ko": "이스라엘 아데산야",
@@ -4594,7 +4594,7 @@
             },
             {
               "name": "Christian Leroy Duncan",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/christian-leroy-duncan",
+              "ufc_url": "https://www.ufc.com/athlete/christian-leroy-duncan",
               "rank": 12,
               "fighter_id": "christian-leroy-duncan",
               "name_ko": "크리스천 리로이 던컨",
@@ -4604,7 +4604,7 @@
             },
             {
               "name": "Bo Nickal",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bo-nickal",
+              "ufc_url": "https://www.ufc.com/athlete/bo-nickal",
               "rank": 13,
               "fighter_id": "bo-nickal",
               "name_ko": "보 니컬",
@@ -4614,7 +4614,7 @@
             },
             {
               "name": "Roman Kopylov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/roman-kopylov",
+              "ufc_url": "https://www.ufc.com/athlete/roman-kopylov",
               "rank": 14,
               "fighter_id": "roman-kopylov",
               "name_ko": "로만 코필로프",
@@ -4639,7 +4639,7 @@
           "wc_en": "Light Heavyweight",
           "champion": {
             "name": "Carlos Ulberg",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/carlos-ulberg",
+            "ufc_url": "https://www.ufc.com/athlete/carlos-ulberg",
             "fighter_id": "carlos-ulberg",
             "name_ko": "카를로스 울버그",
             "record": "15승 1패",
@@ -4699,7 +4699,7 @@
             },
             {
               "name": "Khalil Rountree Jr.",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/khalil-rountree-jr",
+              "ufc_url": "https://www.ufc.com/athlete/khalil-rountree-jr",
               "rank": 6,
               "fighter_id": "khalil-rountree-jr",
               "name_ko": "카릴 라운트리 주니어",
@@ -4739,7 +4739,7 @@
             },
             {
               "name": "Bogdan Guskov",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bogdan-guskov",
+              "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
               "rank": 10,
               "fighter_id": "bogdan-guskov",
               "name_ko": "보그단 구스코프",
@@ -4884,7 +4884,7 @@
             },
             {
               "name": "Waldo Cortes Acosta",
-              "ufc_url": "https://www.ufc.com/athlete/waldo-cortes-acosta",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/waldo-cortes-acosta",
               "rank": 8,
               "fighter_id": "waldo-cortes-acosta",
               "name_ko": "왈도 코르테스-아코스타",
@@ -4894,7 +4894,7 @@
             },
             {
               "name": "Vitor Petrino",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/vitor-petrino",
+              "ufc_url": "https://www.ufc.com/athlete/vitor-petrino",
               "rank": 9,
               "fighter_id": "vitor-petrino",
               "name_ko": "비토르 페트리노",
@@ -4904,7 +4904,7 @@
             },
             {
               "name": "Mario Pinto",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mario-pinto",
+              "ufc_url": "https://www.ufc.com/athlete/mario-pinto",
               "rank": 10,
               "fighter_id": "m-rio-pinto",
               "name_ko": "마리우 핀투",
@@ -4944,7 +4944,7 @@
             },
             {
               "name": "Serghei Spivac",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/serghei-spivac",
+              "ufc_url": "https://www.ufc.com/athlete/serghei-spivac",
               "rank": 14,
               "fighter_id": "serghei-spivac",
               "name_ko": "세르게이 스피박",
@@ -4969,7 +4969,7 @@
           "wc_en": "Women's Strawweight",
           "champion": {
             "name": "Mackenzie Dern",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mackenzie-dern",
+            "ufc_url": "https://www.ufc.com/athlete/mackenzie-dern",
             "fighter_id": "mackenzie-dern",
             "name_ko": "맥켄지 던",
             "record": "17승 5패",
@@ -4989,7 +4989,7 @@
             },
             {
               "name": "Virna Jandiroba",
-              "ufc_url": "https://www.ufc.com/athlete/virna-jandiroba",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/virna-jandiroba",
               "rank": 2,
               "fighter_id": "virna-jandiroba",
               "name_ko": "비르나 잔디로바",
@@ -5009,7 +5009,7 @@
             },
             {
               "name": "Denise Gomes",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/denise-gomes",
+              "ufc_url": "https://www.ufc.com/athlete/denise-gomes",
               "rank": 4,
               "fighter_id": "denise-gomes",
               "name_ko": "데니지 고메스",
@@ -5019,7 +5019,7 @@
             },
             {
               "name": "Gillian Robertson",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gillian-robertson",
+              "ufc_url": "https://www.ufc.com/athlete/gillian-robertson",
               "rank": 5,
               "fighter_id": "gillian-robertson",
               "name_ko": "질리언 로버트슨",
@@ -5079,7 +5079,7 @@
             },
             {
               "name": "Yan Xiaonan",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/yan-xiaonan",
+              "ufc_url": "https://www.ufc.com/athlete/yan-xiaonan",
               "rank": 11,
               "fighter_id": "yan-xiaonan",
               "name_ko": "얀 시아오난",
@@ -5099,7 +5099,7 @@
             },
             {
               "name": "Tabatha Ricci",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tabatha-ricci",
+              "ufc_url": "https://www.ufc.com/athlete/tabatha-ricci",
               "rank": 13,
               "fighter_id": "tabatha-ricci",
               "name_ko": "타바사 리치",
@@ -5144,7 +5144,7 @@
           "ranked": [
             {
               "name": "Valentina Shevchenko",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/valentina-shevchenko",
+              "ufc_url": "https://www.ufc.com/athlete/valentina-shevchenko",
               "rank": 1,
               "fighter_id": "valentina-shevchenko",
               "name_ko": "발렌티나 셰브첸코",
@@ -5154,7 +5154,7 @@
             },
             {
               "name": "Alexa Grasso",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexa-grasso",
+              "ufc_url": "https://www.ufc.com/athlete/alexa-grasso",
               "rank": 2,
               "fighter_id": "alexa-grasso",
               "name_ko": "알렉사 그라소",
@@ -5214,7 +5214,7 @@
             },
             {
               "name": "Wang Cong",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/wang-cong",
+              "ufc_url": "https://www.ufc.com/athlete/wang-cong",
               "rank": 8,
               "fighter_id": "wang-cong",
               "name_ko": "왕충",
@@ -5264,7 +5264,7 @@
             },
             {
               "name": "Regina Tarin",
-              "ufc_url": "https://www.ufc.com/athlete/regina-malpica-rivera",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/regina-malpica-rivera",
               "rank": 13,
               "fighter_id": "regina-tarin",
               "name_ko": "레지나 타린",
@@ -5274,7 +5274,7 @@
             },
             {
               "name": "Karine Silva",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/karine-silva",
+              "ufc_url": "https://www.ufc.com/athlete/karine-silva",
               "rank": 14,
               "fighter_id": "karine-silva",
               "name_ko": "카리니 실바",
@@ -5284,7 +5284,7 @@
             },
             {
               "name": "Carli Judice",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/carli-judice",
+              "ufc_url": "https://www.ufc.com/athlete/carli-judice",
               "rank": 15,
               "fighter_id": "carli-judice",
               "name_ko": "칼리 주디스",
@@ -5299,7 +5299,7 @@
           "wc_en": "Women's Bantamweight",
           "champion": {
             "name": "Kayla Harrison",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/kayla-harrison",
+            "ufc_url": "https://www.ufc.com/athlete/kayla-harrison",
             "fighter_id": "kayla-harrison",
             "name_ko": "케일라 해리슨",
             "record": "19승 1패",
@@ -5309,7 +5309,7 @@
           "ranked": [
             {
               "name": "Joselyne Edwards",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/joselyne-edwards",
+              "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
               "rank": 1,
               "fighter_id": "joselyne-edwards",
               "name_ko": "조슬린 에드워즈",
@@ -5329,7 +5329,7 @@
             },
             {
               "name": "Luana Santos",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/luana-santos",
+              "ufc_url": "https://www.ufc.com/athlete/luana-santos",
               "rank": 3,
               "fighter_id": "luana-santos",
               "name_ko": "루아나 산토스",
@@ -5359,7 +5359,7 @@
             },
             {
               "name": "Jacqueline Cavalcanti",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/jacqueline-cavalcanti",
+              "ufc_url": "https://www.ufc.com/athlete/jacqueline-cavalcanti",
               "rank": 6,
               "fighter_id": "jacqueline-cavalcanti",
               "name_ko": "자클린 카발칸티",
@@ -5389,7 +5389,7 @@
             },
             {
               "name": "Chelsea Chandler",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/chelsea-chandler",
+              "ufc_url": "https://www.ufc.com/athlete/chelsea-chandler",
               "rank": 9,
               "fighter_id": "chelsea-chandler",
               "name_ko": "첼시 챈들러",
@@ -5409,7 +5409,7 @@
             },
             {
               "name": "Bia Mesquita",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bia-mesquita",
+              "ufc_url": "https://www.ufc.com/athlete/bia-mesquita",
               "rank": 11,
               "fighter_id": "bia-mesquita",
               "name_ko": "비아 메스키타",
@@ -5419,7 +5419,7 @@
             },
             {
               "name": "Alice Pereira",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alice-pereira",
+              "ufc_url": "https://www.ufc.com/athlete/alice-pereira",
               "rank": 12,
               "fighter_id": "alice-pereira",
               "name_ko": "알리시 페레이라",
@@ -5429,7 +5429,7 @@
             },
             {
               "name": "Nora Cornolle",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/nora-cornolle",
+              "ufc_url": "https://www.ufc.com/athlete/nora-cornolle",
               "rank": 13,
               "fighter_id": "nora-cornolle",
               "name_ko": "노라 코놀",
@@ -5439,7 +5439,7 @@
             },
             {
               "name": "Macy Chiasson",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/macy-chiasson",
+              "ufc_url": "https://www.ufc.com/athlete/macy-chiasson",
               "rank": 14,
               "fighter_id": "macy-chiasson",
               "name_ko": "메이시 치아슨",
@@ -5449,7 +5449,7 @@
             },
             {
               "name": "Melissa Croden",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/melissa-croden",
+              "ufc_url": "https://www.ufc.com/athlete/melissa-croden",
               "rank": 15,
               "fighter_id": "melissa-croden",
               "name_ko": "멜리사 크로든",
