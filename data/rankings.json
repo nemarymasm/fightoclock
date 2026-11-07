@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-07T04:29:19+09:00",
+  "generated_at": "2026-11-07T09:36:08+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -1709,16 +1709,6 @@
           "country_ko": "브라질"
         },
         {
-          "name": "Raquel Pennington",
-          "ufc_url": "https://www.ufc.com/athlete/raquel-pennington",
-          "rank": 5,
-          "fighter_id": "raquel-pennington",
-          "name_ko": "라켈 페닝턴",
-          "record": "16승 10패",
-          "country": "United States",
-          "country_ko": "미국"
-        },
-        {
           "name": "Luana Santos",
           "ufc_url": "https://www.ufc.com/athlete/luana-santos",
           "rank": 5,
@@ -1727,6 +1717,16 @@
           "record": "12승 2패",
           "country": "Brazil",
           "country_ko": "브라질"
+        },
+        {
+          "name": "Raquel Pennington",
+          "ufc_url": "https://www.ufc.com/athlete/raquel-pennington",
+          "rank": 5,
+          "fighter_id": "raquel-pennington",
+          "name_ko": "라켈 페닝턴",
+          "record": "16승 10패",
+          "country": "United States",
+          "country_ko": "미국"
         },
         {
           "name": "Yana Santos",
@@ -3528,16 +3528,6 @@
               "country_ko": "브라질"
             },
             {
-              "name": "Raquel Pennington",
-              "ufc_url": "https://www.ufc.com/athlete/raquel-pennington",
-              "rank": 5,
-              "fighter_id": "raquel-pennington",
-              "name_ko": "라켈 페닝턴",
-              "record": "16승 10패",
-              "country": "United States",
-              "country_ko": "미국"
-            },
-            {
               "name": "Luana Santos",
               "ufc_url": "https://www.ufc.com/athlete/luana-santos",
               "rank": 5,
@@ -3546,6 +3536,16 @@
               "record": "12승 2패",
               "country": "Brazil",
               "country_ko": "브라질"
+            },
+            {
+              "name": "Raquel Pennington",
+              "ufc_url": "https://www.ufc.com/athlete/raquel-pennington",
+              "rank": 5,
+              "fighter_id": "raquel-pennington",
+              "name_ko": "라켈 페닝턴",
+              "record": "16승 10패",
+              "country": "United States",
+              "country_ko": "미국"
             },
             {
               "name": "Yana Santos",
