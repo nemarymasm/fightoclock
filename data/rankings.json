@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-07T22:13:12+09:00",
+  "generated_at": "2026-11-08T06:57:07+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -700,7 +700,7 @@
         },
         {
           "name": "Michael Morales",
-          "ufc_url": "https://www.ufc.com/athlete/michael-morales",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/michael-morales",
           "rank": 3,
           "fighter_id": "michael-morales",
           "name_ko": "마이클 모랄레스",
@@ -945,13 +945,13 @@
         },
         {
           "name": "Abus Magomedov",
-          "ufc_url": "https://www.ufc.com/athlete/abus-magomedov",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/abus-magomedov",
           "rank": 11,
-          "fighter_id": "abusupiyan-magomedov",
+          "fighter_id": "abus-magomedov",
           "name_ko": "아부스 마고메도프",
           "record": "30승 7패 1무",
-          "country": "Germany",
-          "country_ko": "독일"
+          "country": "",
+          "country_ko": ""
         },
         {
           "name": "Jared Cannonier",
@@ -965,7 +965,7 @@
         },
         {
           "name": "Ikram Aliskerov",
-          "ufc_url": "https://www.ufc.com/athlete/ikram-aliskerov",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/ikram-aliskerov",
           "rank": 13,
           "fighter_id": "ikram-aliskerov",
           "name_ko": "이크람 알리스케로프",
@@ -1284,22 +1284,22 @@
           "country_ko": "브라질"
         },
         {
-          "name": "Derrick Lewis",
-          "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
-          "rank": 12,
-          "fighter_id": "derrick-lewis",
-          "name_ko": "데릭 루이스",
-          "record": "29승 14패",
-          "country": "",
-          "country_ko": ""
-        },
-        {
           "name": "Tyrell Fortune",
           "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
           "rank": 12,
           "fighter_id": "tyrell-fortune",
           "name_ko": "타이렐 포춘",
           "record": "18승 4패",
+          "country": "",
+          "country_ko": ""
+        },
+        {
+          "name": "Derrick Lewis",
+          "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
+          "rank": 12,
+          "fighter_id": "derrick-lewis",
+          "name_ko": "데릭 루이스",
+          "record": "29승 14패",
           "country": "",
           "country_ko": ""
         },
@@ -1760,7 +1760,7 @@
         },
         {
           "name": "Karol Rosa",
-          "ufc_url": "https://www.ufc.com/athlete/karol-rosa",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/karol-rosa",
           "rank": 10,
           "fighter_id": "karol-rosa",
           "name_ko": "카롤 호자",
@@ -2519,7 +2519,7 @@
             },
             {
               "name": "Michael Morales",
-              "ufc_url": "https://www.ufc.com/athlete/michael-morales",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/michael-morales",
               "rank": 3,
               "fighter_id": "michael-morales",
               "name_ko": "마이클 모랄레스",
@@ -2764,13 +2764,13 @@
             },
             {
               "name": "Abus Magomedov",
-              "ufc_url": "https://www.ufc.com/athlete/abus-magomedov",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/abus-magomedov",
               "rank": 11,
-              "fighter_id": "abusupiyan-magomedov",
+              "fighter_id": "abus-magomedov",
               "name_ko": "아부스 마고메도프",
               "record": "30승 7패 1무",
-              "country": "Germany",
-              "country_ko": "독일"
+              "country": "",
+              "country_ko": ""
             },
             {
               "name": "Jared Cannonier",
@@ -2784,7 +2784,7 @@
             },
             {
               "name": "Ikram Aliskerov",
-              "ufc_url": "https://www.ufc.com/athlete/ikram-aliskerov",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/ikram-aliskerov",
               "rank": 13,
               "fighter_id": "ikram-aliskerov",
               "name_ko": "이크람 알리스케로프",
@@ -3103,22 +3103,22 @@
               "country_ko": "브라질"
             },
             {
-              "name": "Derrick Lewis",
-              "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
-              "rank": 12,
-              "fighter_id": "derrick-lewis",
-              "name_ko": "데릭 루이스",
-              "record": "29승 14패",
-              "country": "",
-              "country_ko": ""
-            },
-            {
               "name": "Tyrell Fortune",
               "ufc_url": "https://www.ufc.com/athlete/tyrell-fortune",
               "rank": 12,
               "fighter_id": "tyrell-fortune",
               "name_ko": "타이렐 포춘",
               "record": "18승 4패",
+              "country": "",
+              "country_ko": ""
+            },
+            {
+              "name": "Derrick Lewis",
+              "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
+              "rank": 12,
+              "fighter_id": "derrick-lewis",
+              "name_ko": "데릭 루이스",
+              "record": "29승 14패",
               "country": "",
               "country_ko": ""
             },
@@ -3579,7 +3579,7 @@
             },
             {
               "name": "Karol Rosa",
-              "ufc_url": "https://www.ufc.com/athlete/karol-rosa",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/karol-rosa",
               "rank": 10,
               "fighter_id": "karol-rosa",
               "name_ko": "카롤 호자",
@@ -3649,7 +3649,7 @@
           "wc_en": "Flyweight",
           "champion": {
             "name": "Joshua Van",
-            "ufc_url": "https://www.ufc.com/athlete/joshua-van",
+            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/joshua-van",
             "fighter_id": "joshua-van",
             "name_ko": "조슈아 반",
             "record": "18승 2패",
@@ -3659,7 +3659,7 @@
           "ranked": [
             {
               "name": "Manel Kape",
-              "ufc_url": "https://www.ufc.com/athlete/manel-kape",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/manel-kape",
               "rank": 1,
               "fighter_id": "manel-kape",
               "name_ko": "마넬 캅",
@@ -3954,7 +3954,7 @@
             },
             {
               "name": "Marlon Vera",
-              "ufc_url": "https://www.ufc.com/athlete/marlon-vera",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/marlon-vera",
               "rank": 14,
               "fighter_id": "marlon-vera",
               "name_ko": "마를론 베라",
@@ -3979,7 +3979,7 @@
           "wc_en": "Featherweight",
           "champion": {
             "name": "Alexander Volkanovski",
-            "ufc_url": "https://www.ufc.com/athlete/alexander-volkanovski",
+            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexander-volkanovski",
             "fighter_id": "alexander-volkanovski",
             "name_ko": "알렉산더 볼카노프스키",
             "record": "29승 4패",
@@ -4224,7 +4224,7 @@
             },
             {
               "name": "Benoît Saint Denis",
-              "ufc_url": "https://www.ufc.com/athlete/benoit-saint-denis",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/benoit-saint-denis",
               "rank": 8,
               "fighter_id": "beno-t-saint-denis",
               "name_ko": "브누아 생드니",
@@ -4934,7 +4934,7 @@
             },
             {
               "name": "Brando Peričić",
-              "ufc_url": "https://www.ufc.com/athlete/brando-pericic",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/brando-pericic",
               "rank": 13,
               "fighter_id": "brando-peri-i",
               "name_ko": "브란도 페리치치",
@@ -5244,7 +5244,7 @@
             },
             {
               "name": "Casey O'Neill",
-              "ufc_url": "https://www.ufc.com/athlete/casey-oneill",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/casey-oneill",
               "rank": 11,
               "fighter_id": "casey-o-neill",
               "name_ko": "케이시 오닐",
@@ -5429,7 +5429,7 @@
             },
             {
               "name": "Nora Cornolle",
-              "ufc_url": "https://www.ufc.com/athlete/nora-cornolle",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/nora-cornolle",
               "rank": 13,
               "fighter_id": "nora-cornolle",
               "name_ko": "노라 코놀",
