@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-08T22:37:02+09:00",
+  "generated_at": "2026-11-09T07:14:04+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -615,7 +615,7 @@
         },
         {
           "name": "Rafael Fiziev",
-          "ufc_url": "https://www.ufc.com/athlete/rafael-fiziev",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/rafael-fiziev",
           "rank": 11,
           "fighter_id": "rafael-fiziev",
           "name_ko": "라파엘 피지에프",
@@ -759,16 +759,6 @@
           "country_ko": "잉글랜드"
         },
         {
-          "name": "Kamaru Usman",
-          "ufc_url": "https://www.ufc.com/athlete/kamaru-usman",
-          "rank": 9,
-          "fighter_id": "kamaru-usman",
-          "name_ko": "카마루 우스만",
-          "record": "21승 5패",
-          "country": "Nigeria",
-          "country_ko": "나이지리아"
-        },
-        {
           "name": "Mike Malott",
           "ufc_url": "https://www.ufc.com/athlete/mike-malott",
           "rank": 9,
@@ -777,6 +767,16 @@
           "record": "15승 2패 1무",
           "country": "Canada",
           "country_ko": "캐나다"
+        },
+        {
+          "name": "Kamaru Usman",
+          "ufc_url": "https://www.ufc.com/athlete/kamaru-usman",
+          "rank": 9,
+          "fighter_id": "kamaru-usman",
+          "name_ko": "카마루 우스만",
+          "record": "21승 5패",
+          "country": "Nigeria",
+          "country_ko": "나이지리아"
         },
         {
           "name": "Yaroslav Amosov",
@@ -2434,7 +2434,7 @@
             },
             {
               "name": "Rafael Fiziev",
-              "ufc_url": "https://www.ufc.com/athlete/rafael-fiziev",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/rafael-fiziev",
               "rank": 11,
               "fighter_id": "rafael-fiziev",
               "name_ko": "라파엘 피지에프",
@@ -2578,16 +2578,6 @@
               "country_ko": "잉글랜드"
             },
             {
-              "name": "Kamaru Usman",
-              "ufc_url": "https://www.ufc.com/athlete/kamaru-usman",
-              "rank": 9,
-              "fighter_id": "kamaru-usman",
-              "name_ko": "카마루 우스만",
-              "record": "21승 5패",
-              "country": "Nigeria",
-              "country_ko": "나이지리아"
-            },
-            {
               "name": "Mike Malott",
               "ufc_url": "https://www.ufc.com/athlete/mike-malott",
               "rank": 9,
@@ -2596,6 +2586,16 @@
               "record": "15승 2패 1무",
               "country": "Canada",
               "country_ko": "캐나다"
+            },
+            {
+              "name": "Kamaru Usman",
+              "ufc_url": "https://www.ufc.com/athlete/kamaru-usman",
+              "rank": 9,
+              "fighter_id": "kamaru-usman",
+              "name_ko": "카마루 우스만",
+              "record": "21승 5패",
+              "country": "Nigeria",
+              "country_ko": "나이지리아"
             },
             {
               "name": "Yaroslav Amosov",
