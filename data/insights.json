@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T15:46:59+09:00",
+  "generated_at": "2026-11-10T07:28:33+09:00",
   "source": "UFC 공식 일정 · The Odds API · 공개 MMA 커뮤니티",
   "events": {
     "ufc-fight-night-medi-vs-rodriguez": {
@@ -246,6 +246,16 @@
       },
       "viewing_hook": "퀼런 살킬드 대 브누아 생드니",
       "thesis": "퀼런 살킬드 대 브누아 생드니"
+    },
+    "ufc-fight-night-adesanya-vs-magomedov": {
+      "schedule": {
+        "label": "한국시간 12월 6일(일) 오전 3시",
+        "main_card": "한국시간 12월 6일(일) 오전 3시",
+        "bout_count": 12,
+        "source": "https://www.ufc.com/event/ufc-fight-night-december-05-2026"
+      },
+      "viewing_hook": "이스라엘 아데산야 대 샤라 마고메도프",
+      "thesis": "이스라엘 아데산야 대 샤라 마고메도프"
     }
   }
 }
