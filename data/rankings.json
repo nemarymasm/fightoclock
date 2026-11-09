@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T07:14:04+09:00",
+  "generated_at": "2026-11-09T09:28:05+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -1229,7 +1229,7 @@
           "rank": 6,
           "fighter_id": "waldo-cortes-acosta",
           "name_ko": "왈도 코르테스-아코스타",
-          "record": "17승 4패",
+          "record": "17승 5패",
           "country": "Dominican Republic",
           "country_ko": "Dominican Republic"
         },
@@ -1354,7 +1354,7 @@
           "rank": 2,
           "fighter_id": "tatiana-suarez",
           "name_ko": "타티아나 수아레스",
-          "record": "13승 1패",
+          "record": "14승 1패",
           "country": "United States",
           "country_ko": "미국"
         },
@@ -1364,7 +1364,7 @@
           "rank": 3,
           "fighter_id": "virna-jandiroba",
           "name_ko": "비르나 잔디로바",
-          "record": "23승 4패",
+          "record": "23승 5패",
           "country": "Brazil",
           "country_ko": "브라질"
         },
@@ -1609,7 +1609,7 @@
           "rank": 11,
           "fighter_id": "karine-silva",
           "name_ko": "카리니 실바",
-          "record": "19승 7패",
+          "record": "20승 7패",
           "country": "Brazil",
           "country_ko": "브라질"
         },
@@ -1649,7 +1649,7 @@
           "rank": 15,
           "fighter_id": "gabriella-fernandes",
           "name_ko": "가브리엘라 페르난데스",
-          "record": "11승 4패",
+          "record": "11승 5패",
           "country": "",
           "country_ko": ""
         }
@@ -3048,7 +3048,7 @@
               "rank": 6,
               "fighter_id": "waldo-cortes-acosta",
               "name_ko": "왈도 코르테스-아코스타",
-              "record": "17승 4패",
+              "record": "17승 5패",
               "country": "Dominican Republic",
               "country_ko": "Dominican Republic"
             },
@@ -3173,7 +3173,7 @@
               "rank": 2,
               "fighter_id": "tatiana-suarez",
               "name_ko": "타티아나 수아레스",
-              "record": "13승 1패",
+              "record": "14승 1패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -3183,7 +3183,7 @@
               "rank": 3,
               "fighter_id": "virna-jandiroba",
               "name_ko": "비르나 잔디로바",
-              "record": "23승 4패",
+              "record": "23승 5패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -3428,7 +3428,7 @@
               "rank": 11,
               "fighter_id": "karine-silva",
               "name_ko": "카리니 실바",
-              "record": "19승 7패",
+              "record": "20승 7패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -3468,7 +3468,7 @@
               "rank": 15,
               "fighter_id": "gabriella-fernandes",
               "name_ko": "가브리엘라 페르난데스",
-              "record": "11승 4패",
+              "record": "11승 5패",
               "country": "",
               "country_ko": ""
             }
@@ -3773,7 +3773,7 @@
               "rank": 12,
               "fighter_id": "mitch-raposo",
               "name_ko": "미치 라포소",
-              "record": "11승 3패",
+              "record": "12승 3패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -4888,7 +4888,7 @@
               "rank": 8,
               "fighter_id": "waldo-cortes-acosta",
               "name_ko": "왈도 코르테스-아코스타",
-              "record": "17승 4패",
+              "record": "17승 5패",
               "country": "Dominican Republic",
               "country_ko": "Dominican Republic"
             },
@@ -4928,7 +4928,7 @@
               "rank": 12,
               "fighter_id": "johnny-walker",
               "name_ko": "조니 워커",
-              "record": "23승 10패",
+              "record": "24승 10패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -4993,7 +4993,7 @@
               "rank": 2,
               "fighter_id": "virna-jandiroba",
               "name_ko": "비르나 잔디로바",
-              "record": "23승 4패",
+              "record": "23승 5패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -5003,7 +5003,7 @@
               "rank": 3,
               "fighter_id": "tatiana-suarez",
               "name_ko": "타티아나 수아레스",
-              "record": "13승 1패",
+              "record": "14승 1패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -5278,7 +5278,7 @@
               "rank": 14,
               "fighter_id": "karine-silva",
               "name_ko": "카리니 실바",
-              "record": "19승 7패",
+              "record": "20승 7패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
