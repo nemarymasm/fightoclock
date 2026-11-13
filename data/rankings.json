@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T15:53:29+09:00",
+  "generated_at": "2026-11-14T04:49:48+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -129,16 +129,6 @@
           "country_ko": ""
         },
         {
-          "name": "Steve Erceg",
-          "ufc_url": "https://www.ufc.com/athlete/steve-erceg",
-          "rank": 12,
-          "fighter_id": "steve-erceg",
-          "name_ko": "스티브 얼섹",
-          "record": "14승 5패",
-          "country": "Australia",
-          "country_ko": "호주"
-        },
-        {
           "name": "Sumudaerji",
           "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
           "rank": 12,
@@ -147,6 +137,16 @@
           "record": "20승 7패",
           "country": "China",
           "country_ko": "중국"
+        },
+        {
+          "name": "Steve Erceg",
+          "ufc_url": "https://www.ufc.com/athlete/steve-erceg",
+          "rank": 12,
+          "fighter_id": "steve-erceg",
+          "name_ko": "스티브 얼섹",
+          "record": "14승 5패",
+          "country": "Australia",
+          "country_ko": "호주"
         },
         {
           "name": "Charles Johnson",
@@ -1140,7 +1140,7 @@
         },
         {
           "name": "Reinier de Ridder",
-          "ufc_url": "https://www.ufc.com/athlete/reinier-de-ridder",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/reinier-de-ridder",
           "rank": 14,
           "fighter_id": "reinier-de-ridder",
           "name_ko": "레이니어 더 리더",
@@ -1305,7 +1305,7 @@
         },
         {
           "name": "Derrick Lewis",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/derrick-lewis",
+          "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
           "rank": 14,
           "fighter_id": "derrick-lewis",
           "name_ko": "데릭 루이스",
@@ -1380,7 +1380,7 @@
         },
         {
           "name": "Gillian Robertson",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gillian-robertson",
+          "ufc_url": "https://www.ufc.com/athlete/gillian-robertson",
           "rank": 5,
           "fighter_id": "gillian-robertson",
           "name_ko": "질리언 로버트슨",
@@ -1669,16 +1669,6 @@
       },
       "ranked": [
         {
-          "name": "Julianna Peña",
-          "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
-          "rank": 1,
-          "fighter_id": "julianna-pe-a",
-          "name_ko": "줄리아나 페냐",
-          "record": "13승 6패",
-          "country": "United States",
-          "country_ko": "미국"
-        },
-        {
           "name": "Joselyne Edwards",
           "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
           "rank": 1,
@@ -1687,6 +1677,16 @@
           "record": "18승 6패",
           "country": "Panama",
           "country_ko": "Panama"
+        },
+        {
+          "name": "Julianna Peña",
+          "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
+          "rank": 1,
+          "fighter_id": "julianna-pe-a",
+          "name_ko": "줄리아나 페냐",
+          "record": "13승 6패",
+          "country": "United States",
+          "country_ko": "미국"
         },
         {
           "name": "Ailin Perez",
@@ -1948,16 +1948,6 @@
               "country_ko": ""
             },
             {
-              "name": "Steve Erceg",
-              "ufc_url": "https://www.ufc.com/athlete/steve-erceg",
-              "rank": 12,
-              "fighter_id": "steve-erceg",
-              "name_ko": "스티브 얼섹",
-              "record": "14승 5패",
-              "country": "Australia",
-              "country_ko": "호주"
-            },
-            {
               "name": "Sumudaerji",
               "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
               "rank": 12,
@@ -1966,6 +1956,16 @@
               "record": "20승 7패",
               "country": "China",
               "country_ko": "중국"
+            },
+            {
+              "name": "Steve Erceg",
+              "ufc_url": "https://www.ufc.com/athlete/steve-erceg",
+              "rank": 12,
+              "fighter_id": "steve-erceg",
+              "name_ko": "스티브 얼섹",
+              "record": "14승 5패",
+              "country": "Australia",
+              "country_ko": "호주"
             },
             {
               "name": "Charles Johnson",
@@ -2959,7 +2959,7 @@
             },
             {
               "name": "Reinier de Ridder",
-              "ufc_url": "https://www.ufc.com/athlete/reinier-de-ridder",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/reinier-de-ridder",
               "rank": 14,
               "fighter_id": "reinier-de-ridder",
               "name_ko": "레이니어 더 리더",
@@ -3124,7 +3124,7 @@
             },
             {
               "name": "Derrick Lewis",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/derrick-lewis",
+              "ufc_url": "https://www.ufc.com/athlete/derrick-lewis",
               "rank": 14,
               "fighter_id": "derrick-lewis",
               "name_ko": "데릭 루이스",
@@ -3199,7 +3199,7 @@
             },
             {
               "name": "Gillian Robertson",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/gillian-robertson",
+              "ufc_url": "https://www.ufc.com/athlete/gillian-robertson",
               "rank": 5,
               "fighter_id": "gillian-robertson",
               "name_ko": "질리언 로버트슨",
@@ -3488,16 +3488,6 @@
           },
           "ranked": [
             {
-              "name": "Julianna Peña",
-              "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
-              "rank": 1,
-              "fighter_id": "julianna-pe-a",
-              "name_ko": "줄리아나 페냐",
-              "record": "13승 6패",
-              "country": "United States",
-              "country_ko": "미국"
-            },
-            {
               "name": "Joselyne Edwards",
               "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
               "rank": 1,
@@ -3506,6 +3496,16 @@
               "record": "18승 6패",
               "country": "Panama",
               "country_ko": "Panama"
+            },
+            {
+              "name": "Julianna Peña",
+              "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
+              "rank": 1,
+              "fighter_id": "julianna-pe-a",
+              "name_ko": "줄리아나 페냐",
+              "record": "13승 6패",
+              "country": "United States",
+              "country_ko": "미국"
             },
             {
               "name": "Ailin Perez",
@@ -4244,7 +4244,7 @@
             },
             {
               "name": "Mauricio Ruffy",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/mauricio-ruffy",
+              "ufc_url": "https://www.ufc.com/athlete/mauricio-ruffy",
               "rank": 10,
               "fighter_id": "maur-cio-ruffy",
               "name_ko": "마우리시오 루피",
@@ -4339,7 +4339,7 @@
             },
             {
               "name": "Michael Morales",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/michael-morales",
+              "ufc_url": "https://www.ufc.com/athlete/michael-morales",
               "rank": 3,
               "fighter_id": "michael-morales",
               "name_ko": "마이클 모랄레스",
@@ -4594,7 +4594,7 @@
             },
             {
               "name": "Christian Leroy Duncan",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/christian-leroy-duncan",
+              "ufc_url": "https://www.ufc.com/athlete/christian-leroy-duncan",
               "rank": 12,
               "fighter_id": "christian-leroy-duncan",
               "name_ko": "크리스천 리로이 던컨",
@@ -5154,7 +5154,7 @@
             },
             {
               "name": "Alexa Grasso",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexa-grasso",
+              "ufc_url": "https://www.ufc.com/athlete/alexa-grasso",
               "rank": 2,
               "fighter_id": "alexa-grasso",
               "name_ko": "알렉사 그라소",
