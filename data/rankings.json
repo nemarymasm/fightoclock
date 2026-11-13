@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T05:02:17+09:00",
+  "generated_at": "2026-11-13T10:39:02+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -1080,7 +1080,7 @@
         },
         {
           "name": "Bogdan Guskov",
-          "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bogdan-guskov",
           "rank": 8,
           "fighter_id": "bogdan-guskov",
           "name_ko": "보그단 구스코프",
@@ -2899,7 +2899,7 @@
             },
             {
               "name": "Bogdan Guskov",
-              "ufc_url": "https://www.ufc.com/athlete/bogdan-guskov",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bogdan-guskov",
               "rank": 8,
               "fighter_id": "bogdan-guskov",
               "name_ko": "보그단 구스코프",

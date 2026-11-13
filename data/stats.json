@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T11:07:42+09:00",
+  "generated_at": "2026-11-13T10:40:31+09:00",
   "source": {
     "name": "UFC 공식 Record Book",
     "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
@@ -23,7 +23,7 @@
           "fighter_id": "jim-miller",
           "value": "28",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
-          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/1bf55f3a-d896-48bb-902c-7393bfcd9e5b/MILLER_JIM_11-14.png"
         },
         {
           "rank": 2,
@@ -87,7 +87,7 @@
           "fighter_id": "jim-miller",
           "value": "20",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
-          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/1bf55f3a-d896-48bb-902c-7393bfcd9e5b/MILLER_JIM_11-14.png"
         },
         {
           "rank": 3,
@@ -197,7 +197,7 @@
           "fighter_id": "jim-miller",
           "value": "14",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
-          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/1bf55f3a-d896-48bb-902c-7393bfcd9e5b/MILLER_JIM_11-14.png"
         },
         {
           "rank": 3,
@@ -435,7 +435,7 @@
           "fighter_id": "jim-miller",
           "value": "7:32:57",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
-          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/74359f28-1d53-41bf-88f2-e177a42a9189/MILLER_JIM_05-09.png"
+          "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/1bf55f3a-d896-48bb-902c-7393bfcd9e5b/MILLER_JIM_11-14.png"
         },
         {
           "rank": 5,
