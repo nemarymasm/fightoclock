@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T15:37:27+09:00",
+  "generated_at": "2026-11-15T03:13:40+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -275,7 +275,7 @@
         },
         {
           "name": "Raul Rosas Jr.",
-          "ufc_url": "https://www.ufc.com/athlete/raul-rosas-jr",
+          "ufc_url": "https://www.ufc.com/index%2ephp/athlete/raul-rosas-jr",
           "rank": 10,
           "fighter_id": "raul-rosas-jr",
           "name_ko": "라울 로사스 주니어",
@@ -2094,7 +2094,7 @@
             },
             {
               "name": "Raul Rosas Jr.",
-              "ufc_url": "https://www.ufc.com/athlete/raul-rosas-jr",
+              "ufc_url": "https://www.ufc.com/index%2ephp/athlete/raul-rosas-jr",
               "rank": 10,
               "fighter_id": "raul-rosas-jr",
               "name_ko": "라울 로사스 주니어",
