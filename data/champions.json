@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-15T09:43:39+09:00",
+  "generated_at": "2026-11-16T09:42:49+09:00",
   "source": "Wikipedia: List of UFC champions",
   "source_url": "https://en.wikipedia.org/wiki/List_of_UFC_champions",
   "division_count": 11,
@@ -329,7 +329,7 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Ciryl_Gane",
           "crowned_at": "Sep 14, 2026",
           "reign": 1,
-          "defenses": 0,
+          "defenses": 1,
           "reign_total": 1,
           "current": true,
           "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/UFC_Freedom_250%2C_the_mixed_martial_arts_event_produced_by_the_Ultimate_Fighting_Championship%2C_Sunday%2C_June_14%2C_2026%2C_in_the_Grand_Foyer_of_the_White_House_-_64%28cropped%29.jpg/250px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
@@ -1798,7 +1798,7 @@
           "wiki_url": "https://en.wikipedia.org/wiki/Kayla_Harrison",
           "crowned_at": "Jun 7, 2025",
           "reign": 1,
-          "defenses": 0,
+          "defenses": 1,
           "reign_total": 1,
           "current": true,
           "portrait_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg/250px-President_Donald_Trump_congratulates_Kayla_Harrison_after_her_victory_during_UFC_316_%2854577590491%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T03:56:00+09:00",
+  "generated_at": "2026-11-16T09:41:35+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -784,7 +784,7 @@
           "rank": 11,
           "fighter_id": "uro-medi",
           "name_ko": "우로시 메디치",
-          "record": "14승 3패",
+          "record": "14승 3패 1무",
           "country": "Serbia",
           "country_ko": "Serbia"
         },
@@ -824,7 +824,7 @@
           "rank": 15,
           "fighter_id": "kevin-holland",
           "name_ko": "케빈 홀랜드",
-          "record": "29승 15패",
+          "record": "29승 15패 1무",
           "country": "United States",
           "country_ko": "미국"
         }
@@ -889,7 +889,7 @@
           "rank": 5,
           "fighter_id": "caio-borralho",
           "name_ko": "카이오 보랄료",
-          "record": "18승 2패",
+          "record": "19승 2패",
           "country": "Brazil",
           "country_ko": "브라질"
         },
@@ -1168,7 +1168,7 @@
         "ufc_url": "https://www.ufc.com/athlete/ciryl-gane",
         "fighter_id": "ciryl-gane",
         "name_ko": "시릴 가네",
-        "record": "14승 2패",
+        "record": "15승 2패",
         "country": "France",
         "country_ko": "프랑스"
       },
@@ -1209,7 +1209,7 @@
           "rank": 4,
           "fighter_id": "josh-hokit",
           "name_ko": "조시 호킷",
-          "record": "10승 0패",
+          "record": "10승 1패",
           "country": "United States",
           "country_ko": "미국"
         },
@@ -1663,7 +1663,7 @@
         "ufc_url": "https://www.ufc.com/athlete/kayla-harrison",
         "fighter_id": "kayla-harrison",
         "name_ko": "케일라 해리슨",
-        "record": "19승 1패",
+        "record": "20승 1패",
         "country": "United States",
         "country_ko": "미국"
       },
@@ -1764,7 +1764,7 @@
           "rank": 10,
           "fighter_id": "macy-chiasson",
           "name_ko": "메이시 치아슨",
-          "record": "11승 6패",
+          "record": "11승 7패",
           "country": "United States",
           "country_ko": "미국"
         },
@@ -2603,7 +2603,7 @@
               "rank": 11,
               "fighter_id": "uro-medi",
               "name_ko": "우로시 메디치",
-              "record": "14승 3패",
+              "record": "14승 3패 1무",
               "country": "Serbia",
               "country_ko": "Serbia"
             },
@@ -2643,7 +2643,7 @@
               "rank": 15,
               "fighter_id": "kevin-holland",
               "name_ko": "케빈 홀랜드",
-              "record": "29승 15패",
+              "record": "29승 15패 1무",
               "country": "United States",
               "country_ko": "미국"
             }
@@ -2708,7 +2708,7 @@
               "rank": 5,
               "fighter_id": "caio-borralho",
               "name_ko": "카이오 보랄료",
-              "record": "18승 2패",
+              "record": "19승 2패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -2987,7 +2987,7 @@
             "ufc_url": "https://www.ufc.com/athlete/ciryl-gane",
             "fighter_id": "ciryl-gane",
             "name_ko": "시릴 가네",
-            "record": "14승 2패",
+            "record": "15승 2패",
             "country": "France",
             "country_ko": "프랑스"
           },
@@ -3028,7 +3028,7 @@
               "rank": 4,
               "fighter_id": "josh-hokit",
               "name_ko": "조시 호킷",
-              "record": "10승 0패",
+              "record": "10승 1패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -3482,7 +3482,7 @@
             "ufc_url": "https://www.ufc.com/athlete/kayla-harrison",
             "fighter_id": "kayla-harrison",
             "name_ko": "케일라 해리슨",
-            "record": "19승 1패",
+            "record": "20승 1패",
             "country": "United States",
             "country_ko": "미국"
           },
@@ -3583,7 +3583,7 @@
               "rank": 10,
               "fighter_id": "macy-chiasson",
               "name_ko": "메이시 치아슨",
-              "record": "11승 6패",
+              "record": "11승 7패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -4403,7 +4403,7 @@
               "rank": 9,
               "fighter_id": "uro-medi",
               "name_ko": "우로시 메디치",
-              "record": "14승 3패",
+              "record": "14승 3패 1무",
               "country": "Serbia",
               "country_ko": "Serbia"
             },
@@ -4463,7 +4463,7 @@
               "rank": 15,
               "fighter_id": "kevin-holland",
               "name_ko": "케빈 홀랜드",
-              "record": "29승 15패",
+              "record": "29승 15패 1무",
               "country": "United States",
               "country_ko": "미국"
             }
@@ -4538,7 +4538,7 @@
               "rank": 6,
               "fighter_id": "caio-borralho",
               "name_ko": "카이오 보랄료",
-              "record": "18승 2패",
+              "record": "19승 2패",
               "country": "Brazil",
               "country_ko": "브라질"
             },
@@ -4807,7 +4807,7 @@
             "ufc_url": "https://www.ufc.com/athlete/ciryl-gane",
             "fighter_id": "ciryl-gane",
             "name_ko": "시릴 가네",
-            "record": "14승 2패",
+            "record": "15승 2패",
             "country": "France",
             "country_ko": "프랑스"
           },
@@ -4858,7 +4858,7 @@
               "rank": 5,
               "fighter_id": "josh-hokit",
               "name_ko": "조시 호킷",
-              "record": "10승 0패",
+              "record": "10승 1패",
               "country": "United States",
               "country_ko": "미국"
             },
@@ -5302,7 +5302,7 @@
             "ufc_url": "https://www.ufc.com/athlete/kayla-harrison",
             "fighter_id": "kayla-harrison",
             "name_ko": "케일라 해리슨",
-            "record": "19승 1패",
+            "record": "20승 1패",
             "country": "United States",
             "country_ko": "미국"
           },
@@ -5443,7 +5443,7 @@
               "rank": 14,
               "fighter_id": "macy-chiasson",
               "name_ko": "메이시 치아슨",
-              "record": "11승 6패",
+              "record": "11승 7패",
               "country": "United States",
               "country_ko": "미국"
             },

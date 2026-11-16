@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-15T09:43:40+09:00",
+  "generated_at": "2026-11-16T09:42:50+09:00",
   "source": {
     "name": "UFC 공식 Record Book",
     "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
-    "last_update": "11/08/2026 08:46 GMT",
+    "last_update": "11/15/2026 08:46 GMT",
     "coverage": "Records reflect all UFC fights from UFC 28 to the present (UFC 28 was the first event to use the Unified Rules of MMA)."
   },
   "categories": [
@@ -369,7 +369,7 @@
           "name": "Terrance McKinney",
           "name_ko": "테런스 맥키니",
           "fighter_id": "terrance-mckinney",
-          "value": "2:28",
+          "value": "2:25",
           "athlete_url": "https://www.ufc.com/athlete/Terrance-McKinney",
           "photo_url": "/data/avatars/generated/terrance-mckinney-thumb.webp"
         },
@@ -433,7 +433,7 @@
           "name": "Jim Miller",
           "name_ko": "짐 밀러",
           "fighter_id": "jim-miller",
-          "value": "7:32:57",
+          "value": "7:34:50",
           "athlete_url": "https://www.ufc.com/athlete/Jim-Miller",
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/1bf55f3a-d896-48bb-902c-7393bfcd9e5b/MILLER_JIM_11-14.png"
         },
@@ -475,31 +475,31 @@
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/562231f7-c7a4-46b9-80b0-e23325e3d256/VAN_JOSHUA_BELT_05-09.png"
         },
         {
-          "rank": 3,
+          "rank": 2,
+          "name": "Josh Hokit",
+          "name_ko": "조시 호킷",
+          "fighter_id": "josh-hokit",
+          "value": "8.26",
+          "athlete_url": "https://www.ufc.com/athlete/Josh-Hokit",
+          "photo_url": "/data/avatars/generated/josh-hokit-thumb.webp"
+        },
+        {
+          "rank": 4,
           "name": "Terrance McKinney",
           "name_ko": "테런스 맥키니",
           "fighter_id": "terrance-mckinney",
-          "value": "7.95",
+          "value": "8.06",
           "athlete_url": "https://www.ufc.com/athlete/Terrance-McKinney",
           "photo_url": "/data/avatars/generated/terrance-mckinney-thumb.webp"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Tom Aspinall",
           "name_ko": "톰 아스피날",
           "fighter_id": "tom-aspinall",
           "value": "7.63",
           "athlete_url": "https://www.ufc.com/athlete/Tom-Aspinall",
           "photo_url": "https://azuswufclivepubstorstd.blob.core.windows.net/public-files/cc25ffd8-c84e-4bce-b813-bcf22527b549/ASPINALL_TOM_BELT_10-25.png"
-        },
-        {
-          "rank": 5,
-          "name": "Casey O'Neill",
-          "name_ko": "케이시 오닐",
-          "fighter_id": "casey-o-neill",
-          "value": "7.6",
-          "athlete_url": "https://www.ufc.com/athlete/Casey-ONeill",
-          "photo_url": "/data/avatars/generated/casey-o-neill-thumb.webp"
         }
       ]
     },
