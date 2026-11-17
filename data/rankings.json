@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17T17:02:32+09:00",
+  "generated_at": "2026-11-18T06:01:36+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -5444,8 +5444,8 @@
               "fighter_id": "nina-milo-evi",
               "name_ko": "니나 밀로셰비치",
               "record": "10승 1패",
-              "country": "",
-              "country_ko": ""
+              "country": "Serbia",
+              "country_ko": "Serbia"
             },
             {
               "name": "Macy Chiasson",
