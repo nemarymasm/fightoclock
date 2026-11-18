@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T16:38:59+09:00",
+  "generated_at": "2026-11-19T05:38:49+09:00",
   "source": "UFC 공식 일정·대진·결과 / 장애 시 Wikipedia",
   "translations_applied": true,
   "event_count": 8,
@@ -198,7 +198,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 프로하즈카 대 스털링",
       "venue_ko": "아브하 아레나",
       "location_ko": "카타르 도하",
@@ -215,9 +215,7 @@
       "venue": "The Venue",
       "location": "Riyadh Saudi Arabia",
       "prelims_start_time_utc": "2026-12-05T15:00:00Z",
-      "main_card": [],
-      "prelims": [],
-      "announced_card": [
+      "main_card": [
         {
           "weight": "Middleweight Bout",
           "fighter_a": "Israel Adesanya",
@@ -313,7 +311,9 @@
           "fighter_a_ko": "Magomed Tuchalov",
           "fighter_b_ko": "이온 쿠텔라바",
           "weight_ko": "Light Heavyweight Bout"
-        },
+        }
+      ],
+      "prelims": [
         {
           "weight": "Flyweight Bout",
           "fighter_a": "Bruno Silva",
@@ -411,8 +411,9 @@
           "weight_ko": "Bantamweight Bout"
         }
       ],
+      "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 아데산야 대 마고메도프",
       "venue_ko": "The Venue",
       "location_ko": "Riyadh Saudi Arabia",
@@ -430,9 +431,7 @@
       "location": "Las Vegas, NV United States",
       "prelims_start_time_utc": "2026-12-13T00:00:00Z",
       "early_prelims_start_time_utc": "2026-12-12T22:00:00Z",
-      "main_card": [],
-      "prelims": [],
-      "announced_card": [
+      "main_card": [
         {
           "weight": "Lightweight Bout",
           "fighter_a": "Charles Oliveira",
@@ -498,22 +497,6 @@
           "weight_ko": "Bantamweight Bout"
         },
         {
-          "weight": "Light Heavyweight Bout",
-          "fighter_a": "Quentin Pasley",
-          "fighter_b": "Junior Tafa",
-          "winner": null,
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/quentin-pasley",
-          "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-09/PASLEY_QUENTEN_L_09-08.png?itok=zn-OfZXx",
-          "fighter_b_ufc_url": "https://www.ufc.com/athlete/junior-tafa",
-          "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-06/TAFA_JUNIOR_R_06-06.png?itok=O41jc27J",
-          "method": "",
-          "round": "",
-          "time": "",
-          "fighter_a_ko": "Quentin Pasley",
-          "fighter_b_ko": "주니어 타파",
-          "weight_ko": "Light Heavyweight Bout"
-        },
-        {
           "weight": "Middleweight Bout",
           "fighter_a": "Damian Pinas",
           "fighter_b": "Baisangur Susurkaev",
@@ -530,8 +513,10 @@
           "weight_ko": "Middleweight Bout"
         }
       ],
+      "prelims": [],
+      "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC 335: 올리베이라 대 로페스",
       "venue_ko": "T-모바일 아레나",
       "location_ko": "미국 네바다 라스베이거스",
@@ -601,7 +586,7 @@
         }
       ],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 로드리게스 대 가르시아",
       "venue_ko": "American Airlines Center",
       "location_ko": "Dallas, TX United States",
@@ -612,12 +597,12 @@
       "date_iso": "2027-01-23",
       "official_url": "https://www.ufc.com/event/ufc-fight-night-january-23-2027",
       "source_url": "https://www.ufc.com/event/ufc-fight-night-january-23-2027",
-      "start_time_utc": "2027-01-23T22:00:00Z",
+      "start_time_utc": "2027-01-24T01:00:00Z",
       "time_status": "confirmed_official",
       "time_source": "https://www.ufc.com/event/ufc-fight-night-january-23-2027",
       "venue": "Meta APEX",
       "location": "Las Vegas, NV United States",
-      "prelims_start_time_utc": "2027-01-23T20:00:00Z",
+      "prelims_start_time_utc": "2027-01-23T22:00:00Z",
       "main_card": [
         {
           "weight": "Welterweight Bout",
@@ -639,7 +624,7 @@
       "prelims": [],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 본핌 대 브래디",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -742,7 +727,7 @@
         }
       ],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC 336: 반 대 캅",
       "venue_ko": "스코샤뱅크 아레나",
       "location_ko": "캐나다 온타리오 토론토",
@@ -828,7 +813,7 @@
         }
       ],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 살킬드 대 생드니",
       "venue_ko": "애프터페이 아레나",
       "location_ko": "호주 시드니 올림픽파크",
@@ -866,7 +851,7 @@
         }
       ],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 파이퍼 대 니컬",
       "venue_ko": "Rocket Arena",
       "location_ko": "Cleveland, OH United States",
@@ -1105,7 +1090,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC 334: 가네 대 호킷",
       "venue_ko": "매디슨 스퀘어 가든",
       "location_ko": "미국 뉴욕",
@@ -1352,7 +1337,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 코르테스-아코스타 대 워커",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -1567,7 +1552,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 모이카노 대 놀란",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -1820,7 +1805,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC 333: 볼카노프스키 대 에블로예프",
       "venue_ko": "에티하드 아레나",
       "location_ko": "아랍에미리트 아부다비",
@@ -2051,7 +2036,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 버클리 대 말롯",
       "venue_ko": "로저스 플레이스",
       "location_ko": "캐나다 앨버타 에드먼턴",
@@ -2266,7 +2251,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 앨런 대 던컨",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
@@ -2367,22 +2352,6 @@
         }
       ],
       "prelims": [
-        {
-          "weight": "Flyweight Bout",
-          "fighter_a": "Imanol Rodriguez",
-          "fighter_b": "Alden Coria",
-          "winner": "a",
-          "fighter_a_ufc_url": "https://www.ufc.com/athlete/imanol-rodriguez",
-          "fighter_a_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/RODRIGUEZ_IMANOL_L_10-03.png?itok=YYteCGYD",
-          "fighter_b_ufc_url": "https://www.ufc.com/athlete/alden-coria",
-          "fighter_b_photo": "https://ufc.com/images/styles/event_fight_card_upper_body_of_standing_athlete/s3/2026-10/CORIA_ALDEN_R_10-03.png?itok=O02kC3T8",
-          "method": "KO/TKO",
-          "round": "1",
-          "time": "3:11",
-          "fighter_a_ko": "이마놀 로드리게스",
-          "fighter_b_ko": "올든 코리아",
-          "weight_ko": "Flyweight Bout"
-        },
         {
           "weight": "Middleweight Bout",
           "fighter_a": "Damian Pinas",
@@ -2519,7 +2488,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC 332: 실바 대 왕",
       "venue_ko": "델타 센터",
       "location_ko": "미국 유타 솔트레이크시티",
@@ -2734,7 +2703,7 @@
       ],
       "announced_card": [],
       "card_status": "announced",
-      "card_updated_at": "2026-11-18T16:38:59+09:00",
+      "card_updated_at": "2026-11-19T05:38:49+09:00",
       "name_ko": "UFC Fight Night: 주니어 대 바르셀로스",
       "venue_ko": "메타 에이펙스",
       "location_ko": "미국 네바다 라스베이거스",
