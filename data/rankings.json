@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T11:14:04+09:00",
+  "generated_at": "2026-11-19T16:34:43+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -1679,16 +1679,6 @@
           "country_ko": ""
         },
         {
-          "name": "Julianna Peña",
-          "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
-          "rank": 2,
-          "fighter_id": "julianna-pe-a",
-          "name_ko": "줄리아나 페냐",
-          "record": "13승 6패",
-          "country": "United States",
-          "country_ko": "미국"
-        },
-        {
           "name": "Joselyne Edwards",
           "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
           "rank": 2,
@@ -1697,6 +1687,16 @@
           "record": "18승 6패",
           "country": "Panama",
           "country_ko": "Panama"
+        },
+        {
+          "name": "Julianna Peña",
+          "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
+          "rank": 2,
+          "fighter_id": "julianna-pe-a",
+          "name_ko": "줄리아나 페냐",
+          "record": "13승 6패",
+          "country": "United States",
+          "country_ko": "미국"
         },
         {
           "name": "Ailin Perez",
@@ -3498,16 +3498,6 @@
               "country_ko": ""
             },
             {
-              "name": "Julianna Peña",
-              "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
-              "rank": 2,
-              "fighter_id": "julianna-pe-a",
-              "name_ko": "줄리아나 페냐",
-              "record": "13승 6패",
-              "country": "United States",
-              "country_ko": "미국"
-            },
-            {
               "name": "Joselyne Edwards",
               "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
               "rank": 2,
@@ -3516,6 +3506,16 @@
               "record": "18승 6패",
               "country": "Panama",
               "country_ko": "Panama"
+            },
+            {
+              "name": "Julianna Peña",
+              "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
+              "rank": 2,
+              "fighter_id": "julianna-pe-a",
+              "name_ko": "줄리아나 페냐",
+              "record": "13승 6패",
+              "country": "United States",
+              "country_ko": "미국"
             },
             {
               "name": "Ailin Perez",
