@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T05:44:54+09:00",
+  "generated_at": "2026-11-20T10:59:57+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -129,16 +129,6 @@
           "country_ko": ""
         },
         {
-          "name": "Sumudaerji",
-          "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
-          "rank": 12,
-          "fighter_id": "su-mudaerji",
-          "name_ko": "수무다얼지",
-          "record": "20승 7패",
-          "country": "China",
-          "country_ko": "중국"
-        },
-        {
           "name": "Steve Erceg",
           "ufc_url": "https://www.ufc.com/athlete/steve-erceg",
           "rank": 12,
@@ -147,6 +137,16 @@
           "record": "14승 5패",
           "country": "Australia",
           "country_ko": "호주"
+        },
+        {
+          "name": "Sumudaerji",
+          "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
+          "rank": 12,
+          "fighter_id": "su-mudaerji",
+          "name_ko": "수무다얼지",
+          "record": "20승 7패",
+          "country": "China",
+          "country_ko": "중국"
         },
         {
           "name": "Charles Johnson",
@@ -1679,16 +1679,6 @@
           "country_ko": ""
         },
         {
-          "name": "Joselyne Edwards",
-          "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
-          "rank": 2,
-          "fighter_id": "joselyne-edwards",
-          "name_ko": "조슬린 에드워즈",
-          "record": "18승 6패",
-          "country": "Panama",
-          "country_ko": "Panama"
-        },
-        {
           "name": "Julianna Peña",
           "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
           "rank": 2,
@@ -1697,6 +1687,16 @@
           "record": "13승 6패",
           "country": "United States",
           "country_ko": "미국"
+        },
+        {
+          "name": "Joselyne Edwards",
+          "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
+          "rank": 2,
+          "fighter_id": "joselyne-edwards",
+          "name_ko": "조슬린 에드워즈",
+          "record": "18승 6패",
+          "country": "Panama",
+          "country_ko": "Panama"
         },
         {
           "name": "Ailin Perez",
@@ -1948,16 +1948,6 @@
               "country_ko": ""
             },
             {
-              "name": "Sumudaerji",
-              "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
-              "rank": 12,
-              "fighter_id": "su-mudaerji",
-              "name_ko": "수무다얼지",
-              "record": "20승 7패",
-              "country": "China",
-              "country_ko": "중국"
-            },
-            {
               "name": "Steve Erceg",
               "ufc_url": "https://www.ufc.com/athlete/steve-erceg",
               "rank": 12,
@@ -1966,6 +1956,16 @@
               "record": "14승 5패",
               "country": "Australia",
               "country_ko": "호주"
+            },
+            {
+              "name": "Sumudaerji",
+              "ufc_url": "https://www.ufc.com/athlete/su-mudaerji",
+              "rank": 12,
+              "fighter_id": "su-mudaerji",
+              "name_ko": "수무다얼지",
+              "record": "20승 7패",
+              "country": "China",
+              "country_ko": "중국"
             },
             {
               "name": "Charles Johnson",
@@ -3498,16 +3498,6 @@
               "country_ko": ""
             },
             {
-              "name": "Joselyne Edwards",
-              "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
-              "rank": 2,
-              "fighter_id": "joselyne-edwards",
-              "name_ko": "조슬린 에드워즈",
-              "record": "18승 6패",
-              "country": "Panama",
-              "country_ko": "Panama"
-            },
-            {
               "name": "Julianna Peña",
               "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
               "rank": 2,
@@ -3516,6 +3506,16 @@
               "record": "13승 6패",
               "country": "United States",
               "country_ko": "미국"
+            },
+            {
+              "name": "Joselyne Edwards",
+              "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
+              "rank": 2,
+              "fighter_id": "joselyne-edwards",
+              "name_ko": "조슬린 에드워즈",
+              "record": "18승 6패",
+              "country": "Panama",
+              "country_ko": "Panama"
             },
             {
               "name": "Ailin Perez",
@@ -3944,7 +3944,7 @@
             },
             {
               "name": "Bryce Mitchell",
-              "ufc_url": "https://www.ufc.com/athlete/bryce-mitchell",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bryce-mitchell",
               "rank": 13,
               "fighter_id": "bryce-mitchell",
               "name_ko": "브라이스 미첼",
@@ -3979,7 +3979,7 @@
           "wc_en": "Featherweight",
           "champion": {
             "name": "Alexander Volkanovski",
-            "ufc_url": "https://www.ufc.com/athlete/alexander-volkanovski",
+            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/alexander-volkanovski",
             "fighter_id": "alexander-volkanovski",
             "name_ko": "알렉산더 볼카노프스키",
             "record": "29승 4패",
