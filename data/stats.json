@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T09:56:12+09:00",
+  "generated_at": "2026-11-24T14:09:21+09:00",
   "source": {
     "name": "UFC 공식 Record Book",
     "url": "https://statleaders.ufc.com/?fighter_status=0&lang=en",
-    "last_update": "11/15/2026 08:46 GMT",
+    "last_update": "11/22/2026 08:48 GMT",
     "coverage": "Records reflect all UFC fights from UFC 28 to the present (UFC 28 was the first event to use the Unified Rules of MMA)."
   },
   "categories": [
@@ -552,7 +552,7 @@
           "name": "Navajo Stirling",
           "name_ko": "나바호 스털링",
           "fighter_id": "navajo-stirling",
-          "value": "3.95",
+          "value": "3.76",
           "athlete_url": "https://www.ufc.com/athlete/Navajo-Stirling",
           "photo_url": "/data/avatars/generated/navajo-stirling-thumb.webp"
         }
