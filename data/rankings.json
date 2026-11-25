@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T12:55:55+09:00",
+  "generated_at": "2026-11-25T17:45:14+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -1482,11 +1482,11 @@
           "name": "Mizuki",
           "ufc_url": "https://www.ufc.com/athlete/mizuki-inoue",
           "rank": 15,
-          "fighter_id": "mizuki-inoue",
+          "fighter_id": "mizuki",
           "name_ko": "미즈키",
           "record": "16승 6패",
-          "country": "Japan",
-          "country_ko": "일본"
+          "country": "",
+          "country_ko": ""
         }
       ]
     },
@@ -3301,11 +3301,11 @@
               "name": "Mizuki",
               "ufc_url": "https://www.ufc.com/athlete/mizuki-inoue",
               "rank": 15,
-              "fighter_id": "mizuki-inoue",
+              "fighter_id": "mizuki",
               "name_ko": "미즈키",
               "record": "16승 6패",
-              "country": "Japan",
-              "country_ko": "일본"
+              "country": "",
+              "country_ko": ""
             }
           ]
         },
@@ -5081,11 +5081,11 @@
               "name": "Mizuki",
               "ufc_url": "https://www.ufc.com/athlete/mizuki-inoue",
               "rank": 11,
-              "fighter_id": "mizuki-inoue",
+              "fighter_id": "mizuki",
               "name_ko": "미즈키",
               "record": "16승 6패",
-              "country": "Japan",
-              "country_ko": "일본"
+              "country": "",
+              "country_ko": ""
             },
             {
               "name": "Tabatha Ricci",
