@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T07:32:58+09:00",
+  "generated_at": "2026-11-25T12:55:55+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -394,7 +394,7 @@
           "rank": 5,
           "fighter_id": "kevin-vallejos",
           "name_ko": "케빈 바예호스",
-          "record": "18승 1패",
+          "record": "19승 1패",
           "country": "Argentina",
           "country_ko": "아르헨티나"
         },
@@ -494,7 +494,7 @@
           "rank": 15,
           "fighter_id": "josh-emmett",
           "name_ko": "Josh Emmett",
-          "record": "",
+          "record": "19승 7패",
           "country": "",
           "country_ko": ""
         }
@@ -2213,7 +2213,7 @@
               "rank": 5,
               "fighter_id": "kevin-vallejos",
               "name_ko": "케빈 바예호스",
-              "record": "18승 1패",
+              "record": "19승 1패",
               "country": "Argentina",
               "country_ko": "아르헨티나"
             },
@@ -2313,7 +2313,7 @@
               "rank": 15,
               "fighter_id": "josh-emmett",
               "name_ko": "Josh Emmett",
-              "record": "",
+              "record": "19승 7패",
               "country": "",
               "country_ko": ""
             }
@@ -4013,7 +4013,7 @@
               "rank": 3,
               "fighter_id": "kevin-vallejos",
               "name_ko": "케빈 바예호스",
-              "record": "18승 1패",
+              "record": "19승 1패",
               "country": "Argentina",
               "country_ko": "아르헨티나"
             },
