@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:44:27+09:00",
+  "generated_at": "2026-11-28T06:25:40+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -90,7 +90,7 @@
         },
         {
           "name": "Brandon Moreno",
-          "ufc_url": "https://www.ufc.com/athlete/brandon-moreno",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/brandon-moreno",
           "rank": 8,
           "fighter_id": "brandon-moreno",
           "name_ko": "브랜든 모레노",
@@ -690,7 +690,7 @@
         },
         {
           "name": "Carlos Prates",
-          "ufc_url": "https://www.ufc.com/athlete/carlos-prates",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/carlos-prates",
           "rank": 2,
           "fighter_id": "carlos-prates",
           "name_ko": "카를로스 프라치스",
@@ -1565,7 +1565,7 @@
         },
         {
           "name": "Maycee Barber",
-          "ufc_url": "https://www.ufc.com/athlete/maycee-barber",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/maycee-barber",
           "rank": 7,
           "fighter_id": "maycee-barber",
           "name_ko": "메이시 바버",
@@ -1585,7 +1585,7 @@
         },
         {
           "name": "Tracy Cortez",
-          "ufc_url": "https://www.ufc.com/athlete/tracy-cortez",
+          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tracy-cortez",
           "rank": 9,
           "fighter_id": "tracy-cortez",
           "name_ko": "트레이시 코르테스",
@@ -1909,7 +1909,7 @@
             },
             {
               "name": "Brandon Moreno",
-              "ufc_url": "https://www.ufc.com/athlete/brandon-moreno",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/brandon-moreno",
               "rank": 8,
               "fighter_id": "brandon-moreno",
               "name_ko": "브랜든 모레노",
@@ -2509,7 +2509,7 @@
             },
             {
               "name": "Carlos Prates",
-              "ufc_url": "https://www.ufc.com/athlete/carlos-prates",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/carlos-prates",
               "rank": 2,
               "fighter_id": "carlos-prates",
               "name_ko": "카를로스 프라치스",
@@ -3384,7 +3384,7 @@
             },
             {
               "name": "Maycee Barber",
-              "ufc_url": "https://www.ufc.com/athlete/maycee-barber",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/maycee-barber",
               "rank": 7,
               "fighter_id": "maycee-barber",
               "name_ko": "메이시 바버",
@@ -3404,7 +3404,7 @@
             },
             {
               "name": "Tracy Cortez",
-              "ufc_url": "https://www.ufc.com/athlete/tracy-cortez",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/tracy-cortez",
               "rank": 9,
               "fighter_id": "tracy-cortez",
               "name_ko": "트레이시 코르테스",
@@ -3659,7 +3659,7 @@
           "ranked": [
             {
               "name": "Manel Kape",
-              "ufc_url": "https://www.ufc.com/athlete/manel-kape",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/manel-kape",
               "rank": 1,
               "fighter_id": "manel-kape",
               "name_ko": "마넬 캅",
@@ -3789,7 +3789,7 @@
             },
             {
               "name": "Rei Tsuruya",
-              "ufc_url": "https://www.ufc.com/athlete/rei-tsuruya",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/rei-tsuruya",
               "rank": 14,
               "fighter_id": "rei-tsuruya",
               "name_ko": "츠루야 레이",
@@ -4604,7 +4604,7 @@
             },
             {
               "name": "Bo Nickal",
-              "ufc_url": "https://www.ufc.com/athlete/bo-nickal",
+              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/bo-nickal",
               "rank": 13,
               "fighter_id": "bo-nickal",
               "name_ko": "보 니컬",
