@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T12:27:44+09:00",
+  "generated_at": "2026-11-27T17:44:27+09:00",
   "source": "UFC 공식 미디어 랭킹 · Meta 랭킹",
   "source_url": "https://www.ufc.com/rankings",
   "division_count": 11,
@@ -349,16 +349,6 @@
       },
       "ranked": [
         {
-          "name": "Diego Lopes",
-          "ufc_url": "https://www.ufc.com/athlete/diego-lopes",
-          "rank": 1,
-          "fighter_id": "diego-lopes",
-          "name_ko": "디에고 로페스",
-          "record": "28승 8패",
-          "country": "Brazil",
-          "country_ko": "브라질"
-        },
-        {
           "name": "Movsar Evloev",
           "ufc_url": "https://www.ufc.com/athlete/movsar-evloev",
           "rank": 1,
@@ -367,6 +357,16 @@
           "record": "20승 1패",
           "country": "Russia",
           "country_ko": "러시아"
+        },
+        {
+          "name": "Diego Lopes",
+          "ufc_url": "https://www.ufc.com/athlete/diego-lopes",
+          "rank": 1,
+          "fighter_id": "diego-lopes",
+          "name_ko": "디에고 로페스",
+          "record": "28승 8패",
+          "country": "Brazil",
+          "country_ko": "브라질"
         },
         {
           "name": "Lerone Murphy",
@@ -1605,7 +1605,7 @@
         },
         {
           "name": "Karine Silva",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/karine-silva",
+          "ufc_url": "https://www.ufc.com/athlete/karine-silva",
           "rank": 11,
           "fighter_id": "karine-silva",
           "name_ko": "카리니 실바",
@@ -1679,6 +1679,16 @@
           "country_ko": ""
         },
         {
+          "name": "Julianna Peña",
+          "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
+          "rank": 2,
+          "fighter_id": "julianna-pe-a",
+          "name_ko": "줄리아나 페냐",
+          "record": "13승 6패",
+          "country": "United States",
+          "country_ko": "미국"
+        },
+        {
           "name": "Joselyne Edwards",
           "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
           "rank": 2,
@@ -1687,16 +1697,6 @@
           "record": "18승 6패",
           "country": "Panama",
           "country_ko": "Panama"
-        },
-        {
-          "name": "Julianna Peña",
-          "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/julianna-pena",
-          "rank": 2,
-          "fighter_id": "julianna-pe-a",
-          "name_ko": "줄리아나 페냐",
-          "record": "13승 6패",
-          "country": "United States",
-          "country_ko": "미국"
         },
         {
           "name": "Ailin Perez",
@@ -2168,16 +2168,6 @@
           },
           "ranked": [
             {
-              "name": "Diego Lopes",
-              "ufc_url": "https://www.ufc.com/athlete/diego-lopes",
-              "rank": 1,
-              "fighter_id": "diego-lopes",
-              "name_ko": "디에고 로페스",
-              "record": "28승 8패",
-              "country": "Brazil",
-              "country_ko": "브라질"
-            },
-            {
               "name": "Movsar Evloev",
               "ufc_url": "https://www.ufc.com/athlete/movsar-evloev",
               "rank": 1,
@@ -2186,6 +2176,16 @@
               "record": "20승 1패",
               "country": "Russia",
               "country_ko": "러시아"
+            },
+            {
+              "name": "Diego Lopes",
+              "ufc_url": "https://www.ufc.com/athlete/diego-lopes",
+              "rank": 1,
+              "fighter_id": "diego-lopes",
+              "name_ko": "디에고 로페스",
+              "record": "28승 8패",
+              "country": "Brazil",
+              "country_ko": "브라질"
             },
             {
               "name": "Lerone Murphy",
@@ -3424,7 +3424,7 @@
             },
             {
               "name": "Karine Silva",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/karine-silva",
+              "ufc_url": "https://www.ufc.com/athlete/karine-silva",
               "rank": 11,
               "fighter_id": "karine-silva",
               "name_ko": "카리니 실바",
@@ -3498,6 +3498,16 @@
               "country_ko": ""
             },
             {
+              "name": "Julianna Peña",
+              "ufc_url": "https://www.ufc.com/athlete/julianna-pena",
+              "rank": 2,
+              "fighter_id": "julianna-pe-a",
+              "name_ko": "줄리아나 페냐",
+              "record": "13승 6패",
+              "country": "United States",
+              "country_ko": "미국"
+            },
+            {
               "name": "Joselyne Edwards",
               "ufc_url": "https://www.ufc.com/athlete/joselyne-edwards",
               "rank": 2,
@@ -3506,16 +3516,6 @@
               "record": "18승 6패",
               "country": "Panama",
               "country_ko": "Panama"
-            },
-            {
-              "name": "Julianna Peña",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/julianna-pena",
-              "rank": 2,
-              "fighter_id": "julianna-pe-a",
-              "name_ko": "줄리아나 페냐",
-              "record": "13승 6패",
-              "country": "United States",
-              "country_ko": "미국"
             },
             {
               "name": "Ailin Perez",
@@ -4339,7 +4339,7 @@
             },
             {
               "name": "Michael Morales",
-              "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/michael-morales",
+              "ufc_url": "https://www.ufc.com/athlete/michael-morales",
               "rank": 3,
               "fighter_id": "michael-morales",
               "name_ko": "마이클 모랄레스",
@@ -4804,7 +4804,7 @@
           "wc_en": "Heavyweight",
           "champion": {
             "name": "Ciryl Gane",
-            "ufc_url": "https://www.ufc.com/index%2Ephp/athlete/ciryl-gane",
+            "ufc_url": "https://www.ufc.com/athlete/ciryl-gane",
             "fighter_id": "ciryl-gane",
             "name_ko": "시릴 가네",
             "record": "15승 2패",
